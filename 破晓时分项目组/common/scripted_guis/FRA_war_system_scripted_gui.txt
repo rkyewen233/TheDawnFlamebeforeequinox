@@ -1,0 +1,14 @@
+scripted_gui = {
+
+	ENG_industry = {
+		context_type = decision_category
+		window_name = "ENG_industry"
+
+		properties = {
+			ENG_industry_incomplete_progressbar = {
+				frame = ENG_develop_industry_var
+			}
+		}
+	}
+	
+}

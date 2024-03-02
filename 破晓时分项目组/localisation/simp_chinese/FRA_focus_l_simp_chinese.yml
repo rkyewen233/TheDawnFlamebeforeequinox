@@ -1,0 +1,175 @@
+﻿l_simp_chinese:
+ FRA_war_against_netherland:0 "北方的固有领土" #法荷战争
+ FRA_bunker_of_groningen:0 "一道铁壁..." #格罗宁根防线
+ FRA_maintain_control:0 "...打上印记" #地区改名
+ FRA_true_ruler_of_batavia:0 "巴达维亚真正的主人"
+ FRA_integrate_holland:0 "臣服或死！" #整合荷兰 
+ FRA_frangium:0 "紧紧相拥" #吞并比利时
+
+ FRA_meeting_of_LON:0 "又一届大会..." #国际联盟大会
+ FRA_reorganize_rest_of_union:0 "审视仍然忠诚之人"
+ FRA_keep_same_in_units:0 "再续度量衡政策" #推行货币单位统一
+ FRA_allow_variety_of_culture:0 "多元胜过单调"
+ FRA_invite_spanish:0 "一封信" #邀请伊比利亚联邦
+ FRA_invite_sweden:0 "白桦之中的王国" #邀请瑞典
+ FRA_ECO.58:0 "通过国王案"
+ FRA_ECO.64:0 "来自法兰西议院的局势"
+
+ FRA_support_lavel:0 "赖伐尔内阁彻底掌权"
+ FRA_support_king:0 "本国真正的主人"
+
+ FRA_southern_issues:0 "迫在眉睫的南方问题"
+ FRA_cancel_ganmeline:0 "撤职甘莫林"
+ FRA_mandate_pettin:0 "走马上任"
+ FRA_sud_thema:0 "成立南方军区"
+ FRA_allow_military_aid:0 "启运军援"
+ FRA_algeria_commeti:0 "巴特纳-阿尔及尔委员会"
+ FRA_allow_ganmeline:0 "留任大元帅"
+ FRA_declare_commue_illegal:0 "宣布公社非法"
+ FRA_temp_rule_power:0 "临时治权"
+ FRA_transfer_focusing:0 "转移注意力"
+ FRA_argue_french_communist:0 "批判法共"
+ FRA_attack_dawn_commue:0 "击垮公社！"
+ FRA_strightly_rule_algeria:0 "直辖阿非利加"
+ FRA_a_long_time_deal:0 "徐徐图之"
+ FRA_the_best_french_colonies:0 "模仿殖民地"
+ FRA_stop_commeti:0 "停止委员会"
+ FRA_change_population_structure:0 "更新人口结构"
+ FRA_imgrate_population_act:0 "批准《人口迁移法案》"
+ FRA_chance_of_northern_africa:0 "北非的机会"
+ FRA_Aoland_infrastructure_plan:0 "奥兰基础建设计划"
+ FRA_handle_thema_are_exploitative_by_nature:0 "处理驻军压榨问题"
+ FRA_money_to_algerians:0 "安抚阿尔及利亚人"
+
+ FRA_begain:0 "终焉之始"
+ FRA_ECO.1:0 "决定未来之路" #重拾三级会议
+ FRA_ECO.1_desc:0 "啊，法兰西，你曾是在欧罗巴大陆上偏安一隅的存在，那时，你叫西法兰克；后来你拿到了几乎整个莱茵河以东，那时，你可以称得上欧罗巴霸主；再后来啊，你被欧陆上的其他国家所击败，但你仍然保持这一片赤诚之心；最后你怀着这片赤诚之心，你击碎了其他国家组建了大陆体系，你从那时起，便是世界上独一无二的存在……\n\n哈，但如今终焉大萧条已然破坏的你的欧陆霸权，破坏了的最后这片赤诚之心，当法兰西的工人们走上街头，当法兰西的妇女们高举旗帜，站在比男人更前时，你是否想要改变这一切，让法兰西重夺那片赤诚之心，让那赤子们，找回属于自己的荣誉"
+ FRA_ECO.2:0 "唯有战斗，才能强国" #狼性经济
+ FRA_ECO.3:0 "天下无处非平衡" #调和经济
+ FRA_ECO.4:0 "“好男儿，上战场！”" #鼓励战斗
+ FRA_ECO.5:0 "大街小巷的报纸" #扩大底层影响力
+ FRA_ECO.5_desc:0 "要养家糊口的男人不能丢掉工作。以史为鉴，自古因饥馑而引发的动乱就不胜枚举——但也幸好，我国的发达新闻业能将这不稳定因素在萌芽阶段就彻底扼杀。\n通过操纵报纸对当前经济环境做出倾向性颇高的正面分析，以及对未来巨企扩招的乐观预测。\n我们可以稳定住当下的环境。\n对经济学了解不深的普通人不会从这些报道中看出什么问题的。而至于失业了的他们在巨企工作后又会想些什么？哦，那就不是我们的问题了，巨企的管理者们对此很有心得。"
+ FRA_ECO.6:0 "以工代赈" #以工代赈
+ FRA_ECO.7:0 "浓烟滚滚" #扩大工厂
+ FRA_ECO.8:0 "条条大路通巴黎" #基础设施扩建
+ FRA_ECO.9:0 "扩大军事生产规模" #扩建军工厂
+ FRA_ECO.10:0 "——油罐箱，油罐箱！" #法国石油厂
+ FRA_ECO.11:0 "与金钱的交易" #与国内寡头缔结友谊
+ FRA_ECO.12:0 "终焉亦会迎来朝明" #经济复苏
+ FRA_ECO.13:0 "通过议会案" #提倡劳工保护主义
+ FRA_ECO.14:0 "列装步枪" #列装步枪
+ FRA_ECO.15:0 "起高楼" #改进建筑技术
+ FRA_ECO.16:0 "子弹与烈火" #扩大军事建筑
+ FRA_ECO.17:0 "飞鸟尽，良弓藏" #遏制三级会议权力
+ FRA_ECO.18:0 "护国..." #国家保护法案
+ FRA_ECO.19:0 "巴黎街头巷尾" #国家社会主义复苏
+ FRA_ECO.20:0 "爱丽舍高堂之上" #国王陛下的政府
+ FRA_ECO.21:0 "冉冉黑星" #行动党的胜利
+ FRA_ECO.22:0 "社会主义工业化" #
+ FRA_ECO.23:0 "...也还是可以当朋友的嘛" #与其他党派和解
+ FRA_ECO.24:0 "再起工厂" #新工业计划
+ FRA_ECO.25:0 "" #
+ FRA_ECO.26:0 "组建革命卫队"
+ FRA_ECO.27:0 ""
+ FRA_ECO.28:0 "不长久的和平，能算和平吗？" #准备战争
+ FRA_ECO.29:0 "里昂协定" #压制封国
+ FRA_ECO.30:0 "再兴土木" #大兴土木
+ FRA_ECO.31:0 "去信" #与伊比利亚共和国结盟
+ FRA_ECO.32:0 "提拔夏尔·戴高乐" #闪电战学说
+ FRA_ECO.33:0 "孑然一身" #孑然一身
+ FRA_ECO.34:0 "马德里的王冠" #宣称伊比利亚王位
+ FRA_ECO.35:0 "大兴国民工业" #扩张国民工业
+ FRA_ECO.36:0 "不再孱弱" #民用工业 - II
+ FRA_ECO.37:0 "弹指间，已过十年" #民用工业 - III
+ FRA_ECO.38:0 "不让战场身影孤独" #扩军方案
+ FRA_ECO.39:0 "广结外邦" #寻求盟友
+ FRA_ECO.40:0 "再兴政府运动" #准备征服
+ FRA_ECO.41:0 "时机已到" #崭新的法兰西王国
+ FRA_ECO.42:0 "洛林铁壁" #建设洛林防线
+ FRA_ECO.61:0 "通过第三等级案"
+
+ FRA_left.0:0 "你可听见人民怒吼"
+ FRA_left.1:0 "学习多瑙成功经验"
+ FRA_left.2:0 "从来就没有什么救世主"
+ FRA_left.3:0 "五年计划模式"
+ FRA_left.4:0 "起来，饥寒交迫的奴隶"
+ FRA_left.5:0 "也不靠神仙皇帝"
+ FRA_left.6:0 "旧世界，打个落花流水"
+ FRA_left.7:0 "这是最后的斗争"
+ FRA_left.8:0 "团结起来到明天"
+ FRA_left.9:0 "快把那炉火烧得通红"
+ FRA_left.10:0 "压迫的国家，空洞的法律"
+ FRA_left.11:0 "是谁创造了人类世界？是我们劳动群众！"
+ FRA_left.12:0 "满腔的热血已经沸腾，要为真理而斗争！"
+ FRA_left.13:0 "废除封建贵族庄园"
+ FRA_left.14:0 "法兰西土地改革"
+ FRA_left.15:0 "解放非洲"
+ FRA_left.16:0 "鲜红的太阳照遍全球！"
+ FRA_left.17:0 "唯有奉献与劳动"
+ FRA_left.18:0 "他们来自五湖四海"
+ FRA_left.19:0 "他们忠于法兰西"
+ FRA_left.20:0 "真正的世界革命"
+ FRA_left.21:0 "法兰西革命联盟"
+ FRA_left.22:0 "泛欧革命"
+ FRA_left.23:0 "消灭法西斯噬人猛兽"
+ FRA_left.24:0 "消灭封建君王的压迫"
+ FRA_left.25:0 "巴黎誓言"
+ FRA_left.26:0 "社会主义国防工业"
+ FRA_left.27:0 "人民冶炼厂"
+ FRA_left.28:0 "弥合非洲人民"
+ FRA_left.29:0 "摆脱农业国身份"
+ FRA_left.30:0 "建立农业合作社"
+ FRA_left.31:0 "资本主义工商业改造"
+ FRA_left.32:0 "接纳泛左翼改革"
+
+ FRA_left_industry.0:0 "第一个五年计划"
+ FRA_left_industry.1:0 "加强对企业的控制"
+ FRA_left_industry.2:0 "人民工业"
+ FRA_left_industry.3:0 "收购所有企业"
+ FRA_left_industry.4:0 "取缔私人公司"
+ FRA_left_industry.5:0 "国企化改造"
+ FRA_left_industry.6:0 "实行计划经济"
+ FRA_left_industry.7:0 "国防重工业"
+ FRA_left_industry.8:0 "启用国家工业部"
+ FRA_left_industry.9:0 "社会风气改造"
+ FRA_left_industry.10:0 "革命军队"
+ FRA_left_industry.11:0 "国民轻工业计划"
+ FRA_left_industry.12:0 "与多瑙人民共和国建交"
+ FRA_left_industry.13:0 "建设国防工业"
+ FRA_left_industry.14:0 "普及6年制义务教育"
+ FRA_left_industry.15:0 "加强社会主义宣传"
+ FRA_left_industry.16:0 "根除“强盗军队”"
+ FRA_left_industry.17:0 "支部到连上"
+ FRA_left_industry.18:0 "保证食品供应"
+ FRA_left_industry.19:0 "共产国际"
+ FRA_left_industry.20:0 "莱茵合作协定"
+ FRA_left_industry.21:0 "洛林-瓦隆堡垒"
+ FRA_left_industry.22:0 "国际合作体系"
+ FRA_left_industry.23:0 "国际分工安排"
+ FRA_left_industry.24:0 "风雨无阻的革命"
+
+ FRA_left_five_years_plan.0:0 "扩建研究所"
+ FRA_left_five_years_plan.1:0 "社会学习精神"
+ FRA_left_five_years_plan.2:0 "达摩克里斯计划"
+ FRA_left_five_years_plan.3:0 "贯彻计划经济"
+ FRA_left_five_years_plan.4:0 "收回国有矿业"
+ FRA_left_five_years_plan.5:0 "法兰西标准石油公司"
+ FRA_left_five_years_plan.6:0 "共产国际经合组织"
+ FRA_left_five_years_plan.7:0 "扩大经济投资"
+ FRA_left_five_years_plan.8:0 "瓦隆公社化"
+ FRA_left_five_years_plan.9:0 "正式处理瓦隆问题"
+ FRA_left_five_years_plan.10:0 "彻底倒向计划经济"
+ FRA_left_five_years_plan.11:0 "提振共产国际经合精神"
+ FRA_left_five_years_plan.12:0 "实用主义风气"
+ FRA_left_five_years_plan.13:0 "世界革命旅途"
+ FRA_left_five_years_plan.14:0 "动员国际志愿军"
+ FRA_left_five_years_plan.15:0 "投资全球革命党"
+ FRA_left_five_years_plan.16:0 "支援中华民国"
+ FRA_left_five_years_plan.17:0 "掀起第二次伊比利亚革命战争"
+ FRA_left_five_years_plan.18:0 "再次进军北欧"
+ FRA_left_five_years_plan.19:0 "平稳国内事务"
+ FRA_left_five_years_plan.20:0 "第一届国际工人运动会"
+ FRA_left_five_years_plan.21:0 "投资核武器建设"
+ FRA_left_five_years_plan.22:0 "巴黎-共和国大学"
+ FRA_left_five_years_plan.23:0 "普及高级教育"
+ FRA_left_five_years_plan.24:0 "胜利征程"

@@ -1,0 +1,16 @@
+characters={
+	WAX_Duan_Qi_Rui={
+		name = WAX_Duan_Qi_Rui
+		portraits={
+			civilian={
+				large = "gfx/leaders/WAX/WAX_Duan_Qi_Rui.png"
+			}
+		}
+		country_leader={
+			ideology = paternalistic_conservatism
+			traits = {  }
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

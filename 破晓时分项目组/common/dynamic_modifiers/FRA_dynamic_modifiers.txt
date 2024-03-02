@@ -1,0 +1,26 @@
+country = { #大萧条相关
+    ITA_XiaoTiao_1_dynamic = {
+        name = FRA_eco_disaster_name
+
+        icon = ENG_idea_12
+
+        enable = { always = yes }
+
+        modifier = {
+            mobilization_laws_cost_factor = ITA_mobilization_laws_cost_factor
+            trade_laws_cost_factor = ITA_trade_laws_cost_factor
+            economy_cost_factor = ITA_economy_cost_factor
+            political_advisor_cost_factor = ITA_political_advisor_cost_factor
+            tank_manufacturer_cost_factor = ITA_tank_manufacturer_cost_factor
+            production_speed_buildings_factor = ITA_production_speed_buildings_factor
+            stability_factor = ITA_stability_factor
+            political_power_cost = ITA_political_power_cost
+            line_change_production_efficiency_factor = ITA_line_change_production_efficiency_factor
+            industrial_capacity_factory = ITA_industrial_capacity_factory
+            industrial_capacity_dockyard = industrial_capacity_dockyard
+            production_factory_max_efficiency_factor = ITA_production_factory_max_efficiency_factor
+            production_factory_efficiency_gain_factor = ITA_production_factory_efficiency_gain_factor
+            consumer_goods_factor = ITA_consumer_goods_factor
+        }
+    }
+}

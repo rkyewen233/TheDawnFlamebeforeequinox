@@ -1,0 +1,24 @@
+state={
+	id=974
+	name="STATE_974"
+	provinces={
+		6512 9457 9511 
+	}
+	resources={
+		aluminium=15 # was: 24
+	}
+	manpower=74859
+	state_category = city
+
+	history={
+
+		owner = GER
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1	
+		}
+		add_core_of = GER
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

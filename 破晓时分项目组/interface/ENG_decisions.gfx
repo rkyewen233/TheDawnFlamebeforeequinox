@@ -1,0 +1,17 @@
+spriteTypes = {	
+	
+	SpriteType = {
+		name = "GFX_ITA_1_n"
+		texturefile = "gfx/decisions/ITA_1.dds"	
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_2_n"
+		texturefile = "gfx/decisions/ITA_2.dds"	
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_3_n"
+		texturefile = "gfx/decisions/ITA_3.png"	
+	}
+}

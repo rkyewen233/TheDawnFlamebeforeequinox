@@ -1,0 +1,249 @@
+add_namespace = d_ROM
+country_event = { #普洛耶什蒂大罢工
+    id = d_ROM.1
+    picture = GFX_report_event_generic_italian_fascists
+    title = d_ROM.1.t
+    desc = d_ROM.1.d
+    fire_only_once = yes
+    trigger = {
+        tag = ROM
+        date > 1934.3.1
+    }
+
+    
+
+    option = {
+        name = d_ROM.1.a
+        swap_ideas = {
+            remove_idea = RMN_profits_of_ploiesti
+            add_idea = RMN_marching_of_arbeiters
+        }
+        news_event = {
+            id = Dawn_event_news.14
+        }
+        custom_effect_tooltip = ROM_tip_1
+		hidden_effect = {
+            81 = {
+                set_demilitarized_zone = yes
+            }
+            46 = {
+                set_demilitarized_zone = yes
+            }
+        }
+    }
+} 
+
+country_event = { #海间联邦解体
+    id = d_ROM.2
+    picture = GFX_report_event_generic_italian_fascists
+    title = d_ROM.2.t
+    desc = d_ROM.2.d
+    fire_only_once = yes
+    trigger = {
+        tag = ROM
+        date > 1934.6.1
+    }
+
+    
+
+    option = {
+        name = d_ROM.2.a
+        remove_ideas = {
+            RMN_intermarium
+        }
+        news_event = {
+            id = Dawn_event_news.15
+        }
+        custom_effect_tooltip = ROM_tip_2
+        hidden_effect = {
+            dismantle_faction = yes
+            POL = {
+                create_faction = 波兰联邦
+                add_to_faction = LIT
+            }
+        }
+    }
+}
+
+country_event = { #德涅斯特里亚大暴动
+    id = d_ROM.3
+    picture = GFX_report_event_generic_italian_fascists
+    title = d_ROM.3.t
+    desc = d_ROM.3.d
+    fire_only_once = yes
+    trigger = {
+        tag = ROM
+        date > 1934.12.1
+    }
+
+    
+
+    option = {
+        name = d_ROM.3.a
+        swap_ideas = {
+            remove_idea = RMN_dniestria_separatism
+            add_idea = RMN_dniestria_marchings
+        }
+        news_event = {
+            id = Dawn_event_news.16
+        }
+        custom_effect_tooltip = ROM_tip_3
+		hidden_effect = {
+            192 = {
+                set_demilitarized_zone = yes
+            }
+            834 = {
+                set_demilitarized_zone = yes
+            }
+            198 = {
+                set_demilitarized_zone = yes
+            }
+        }
+    }
+}
+
+country_event = { #巴纳特大暴动
+    id = d_ROM.4
+    picture = GFX_report_event_generic_italian_fascists
+    title = d_ROM.4.t
+    desc = d_ROM.4.d
+    fire_only_once = yes
+    trigger = {
+        tag = ROM
+        date > 1935.5.1
+    }
+
+    
+
+    option = {
+        name = d_ROM.4.a
+        swap_ideas = {
+            remove_idea = RMN_unstable_banat
+            add_idea = RMN_extre_unstable_banat
+        }
+        custom_effect_tooltip = ROM_tip_3
+		hidden_effect = {
+            82 = {
+                set_demilitarized_zone = yes
+            }
+            764 = {
+                set_demilitarized_zone = yes
+            }
+        }
+    }
+}
+
+country_event = { #内战开始
+    id = d_ROM.5
+    picture = GFX_report_event_generic_italian_fascists
+    title = d_ROM.5.t
+    desc = d_ROM.5.d
+    fire_only_once = yes
+    trigger = {
+        tag = ROM
+        date > 1935.8.1
+    }
+
+    
+
+    option = {
+        name = d_ROM.5.a
+        custom_effect_tooltip = ROM_tip_4
+		hidden_effect = {
+            create_faction = 罗马尼亚王国
+            add_to_faction = RM1
+            add_to_faction = RM4
+            news_event = {
+                id = Dawn_event_news.17
+            }
+            PRR = {
+                create_faction = 罗马尼亚革命军
+                add_to_faction = RM5
+                transfer_state = 81
+                transfer_state = 46
+            }
+            RM1 = {
+                transfer_state = 82
+                declare_war_on = {
+                    target = RM2
+                    type = annex_everything
+                }
+            }
+            RM2 = {
+                transfer_state = 764
+                declare_war_on = {
+                    target = RM1
+                    type = annex_everything
+                }
+            }
+            RM3 = {
+                transfer_state = 834
+                declare_war_on = {
+                    target = RM4
+                    type = annex_everything
+                }
+                declare_war_on = {
+                    target = RM5
+                    type = annex_everything
+                }
+            }
+            RM4 = {
+                transfer_state = 198
+                declare_war_on = {
+                    target = RM3
+                    type = annex_everything
+                }
+                declare_war_on = {
+                    target = RM5
+                    type = annex_everything
+                }
+            }
+            RM5 = {
+                transfer_state = 192
+                declare_war_on = {
+                    target = RM4
+                    type = annex_everything
+                }
+                declare_war_on = {
+                    target = RM3
+                    type = annex_everything
+                }
+            }
+            RM6 = {
+                transfer_state = 77
+            }
+            82 = {
+                set_demilitarized_zone = no
+                add_core_of = RM1
+            }
+            764 = {
+                set_demilitarized_zone = no
+                add_core_of = RM2
+            }
+            192 = {
+                set_demilitarized_zone = no
+                add_core_of = RM3
+            }
+            834 = {
+                set_demilitarized_zone = no
+                add_core_of = RM5
+            }
+            198 = {
+                set_demilitarized_zone = no
+                add_core_of = RM4
+            }
+            81 = {
+                set_demilitarized_zone = no
+                add_core_of = PRR
+            }
+            46 = {
+                set_demilitarized_zone = no
+                add_core_of = PRR
+            }
+            declare_war_on = {
+                target = PRR
+                type = annex_everything
+            }
+        }
+    }
+}

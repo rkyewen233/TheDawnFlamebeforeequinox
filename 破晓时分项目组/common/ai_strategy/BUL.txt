@@ -1,0 +1,239 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+# send_volunteers_desire
+
+BUL_befriend_FRA = {
+	allowed = {
+		original_tag = BUL
+		has_dlc = "Battle for the Bosporus"
+	}
+	enable = {
+		always = yes
+	}
+
+	ai_strategy = {
+		type = diplo_action_desire
+		id = FRA
+		target = improve_relation
+		value = 1200
+	}
+}
+
+BUL_befriend_ENG = {
+	allowed = {
+		original_tag = BUL
+		has_dlc = "Battle for the Bosporus"
+	}
+	enable = {
+		always = yes
+	}
+
+	ai_strategy = {
+		type = diplo_action_desire
+		id = ENG
+		target = improve_relation
+		value = 1200
+	}
+}
+
+BUL_want_to_conquer_ROM = {
+	# ————————————————————————————————————
+	# 只要罗马尼亚没被干爆就会想打罗马尼亚一顿
+	# ————————————————————————————————————
+	allowed = {
+		original_tag = BUL
+		NOT = {
+			has_country_flag = BUL_defeated_ROM
+		}
+	}
+	enable = {
+		always = yes
+	}
+
+	ai_strategy = {
+		type = antagonize
+		id = ROM
+		value = 3000
+	}
+
+	ai_strategy = {
+		type = conquer
+		id = ROM
+		value = 3000
+	}
+}
+
+BUL_develop = {
+	# ————————————————————————————————————
+	# 扩军倾向：一直想扩军
+	# ————————————————————————————————————
+	allowed = {
+		original_tag = BUL
+	}
+	enable = {
+		always = yes
+	}
+
+
+
+	# ————————————————————————————————————
+	# 造建筑倾向
+	# ————————————————————————————————————
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = 10
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 100
+	}
+
+
+
+
+
+	# ————————————————————————————————————
+	# 造武器倾向
+	# ————————————————————————————————————
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 4
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = paratroopers
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = marines
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry
+		value = -100
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = motorized
+		value = 0 #because doctrine this = 2
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mechanized
+		value = -5 #because doctrine this = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = -7 #because doctrine this = 3
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 75 #88 to 70
+	}
+
+	# Naval unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = 15
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = -50 #because doctrine this = 50
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = 20
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 20
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = naval_bomber
+		value = -50
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = 5 #30 to 50
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = anti_tank
+		value = 20
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = anti_air
+		value = 25
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = artillery
+		value = 100 #20 to 40
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = armor
+		value = -10
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = motorized
+		value = -10
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories #Build these up over time, don't stall
+		id = anti_air
+		value = 2
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = artillery
+		value = 4
+	}
+}

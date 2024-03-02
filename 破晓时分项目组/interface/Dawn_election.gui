@@ -1,0 +1,669 @@
+guiTypes = {
+	containerWindowType = {
+		name = "go_in_botton_election"
+		position = { x = 1875 y = 750 }
+		size = { width = 100 height = 100 }
+		origo = center_up
+		moveable = no
+		show_sound = open_sub_window
+
+		background = {
+			name = "background"
+			quadTextureSprite = "GFX_tiled_plain_bg"
+		}
+
+		buttonType = {
+			name = "generic_election_botton_1"
+			position = { x = 0 y = 0 }
+			clicksound = click_ok
+			oversound = ui_menu_over
+			quadTextureSprite = "GFX_generic_election_go_in_botton"
+		}
+	}
+	containerWindowType = {
+		name = "electionview"
+		position = { x = 45 y = 0 }
+		show_position = { x= 545 y = 0 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		size = { width = 700 height = 910 }
+		moveable = yes
+		show_sound = open_sub_window
+
+		background = {
+			name = "background"
+			quadTextureSprite = "GFX_tiled_bg"
+		}
+
+		iconType = {
+			name = "info_title"
+			position = { x = 100 y = 55 }
+			spriteType = "GFX_party_title"
+		}
+
+		instantTextboxType = {
+			name = "parties_joined_election_text"
+			format = center
+			position = { x = 120 y = 67 }
+			font = "hoi_20b"
+			text = "参选党派"
+			maxWidth = 90
+			maxHeight = 0
+		}
+
+		iconType = {
+			name = "act_title"
+			position = { x = 465 y = 55 }
+			spriteType = "GFX_party_title"
+		}
+
+		instantTextboxType = {
+			name = "act_election_text"
+			format = center
+			position = { x = 485 y = 67 }
+			font = "hoi_20b"
+			text = "法案"
+			maxWidth = 90
+			maxHeight = 0
+		}
+
+		containerWindowType = {
+			name = "act_passing"
+			position = { x = 180 y = 100 }
+			size = { width = 300 height = 500 }
+			margin = { top = 15 left = 13 bottom = 13 right = 25}
+			orientation = center_up
+			origo = center_up	
+			verticalScrollbar = "right_vertical_slider"
+			vertical_scroll_step = 41
+			scroll_wheel_factor = 40
+			smooth_scrolling = yes			
+			
+			gridboxtype = {
+				name = "decision_grid"
+				position = { x = 0 y = 0 }
+				size = { width = 520 height = 300 }
+				slotsize = { width=502 height=1 }
+				#slotsize = { width = 1 height = 1 }
+				max_slots_horizontal = 1
+			}
+
+			background = {
+				name = "Background"
+				spriteType ="GFX_tiled_window2_1b_border"
+				size = {width=-1 height=-10 }
+			}
+
+			containerWindowType = {
+				name = "act_1936_economics"
+				position = {x=10 y=-30}
+				size = { width = 100%% height = 100 }
+				Orientation = CENTER
+				orientation = center_up
+				origo = center_up
+	
+				background = {
+					name = "Background"
+					spriteType ="GFX_tiled_window2_1b_border"
+				}
+
+				instantTextBoxType = {
+					name = "act_1936_economics_info"
+					format = center
+					position = { x =-30 y = 20 }
+					font = "Main_16"
+					text = "1936年度经济政策辩论"
+					maxWidth = 300
+					maxHeight = 20
+				}
+
+				buttonType = {
+					name = "act_1936_economics_button"
+					position = { x = 30 y = 50 }
+					spriteType = "GFX_act_info"
+					clicksound = click_ok
+					oversound = ui_menu_over
+				}
+
+				iconType = {
+					name = "icon_passed_act"
+					position = { x = 145 y = 25 }
+					spriteType = "GFX_passed_act"
+					clicksound = click_ok
+					oversound = ui_menu_over
+				}
+			}
+
+			containerWindowType = {
+				name = "act_public_infrastructure"
+				position = {x=10 y=-130}
+				size = { width = 100%% height = 100 }
+				Orientation = CENTER
+				orientation = center_up
+				origo = center_up
+	
+				background = {
+					name = "Background"
+					spriteType ="GFX_tiled_window2_1b_border"
+				}
+
+				instantTextBoxType = {
+					name = "act_public_infrastructure_info"
+					format = center
+					position = { x =-30 y = 20 }
+					font = "Main_16"
+					text = "公共建设法案"
+					maxWidth = 300
+					maxHeight = 20
+				}
+
+				buttonType = {
+					name = "act_public_infrastructure_button"
+					position = { x = 30 y = 50 }
+					spriteType = "GFX_act_info"
+					clicksound = click_ok
+					oversound = ui_menu_over
+				}
+
+				iconType = {
+					name = "act_public_infrastructure_icon_passed_act"
+					position = { x = 145 y = 25 }
+					spriteType = "GFX_passed_act"
+					clicksound = click_ok
+					oversound = ui_menu_over
+				}
+			}
+		}
+
+		containerWindowType = {
+			name = "parties_election"
+			position = { x = -180 y = 100 }
+			size = { width = 300 height = 500 }
+			margin = { top = 15 left = 13 bottom = 13 right = 25}
+			orientation = center_up
+			origo = center_up			
+			verticalScrollbar = "right_vertical_slider"
+			vertical_scroll_step = 41
+			scroll_wheel_factor = 40
+			smooth_scrolling = yes
+
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_transparent"
+			}			
+			
+			gridboxtype = {
+				name = "decision_grid"
+				position = { x = 0 y = 0 }
+				size = { width = 520 height = 300 }
+				slotsize = { width=502 height=1 }
+				#slotsize = { width = 1 height = 1 }
+				max_slots_horizontal = 1
+			}
+
+			background = {
+				name = "Background"
+				spriteType ="GFX_tiled_window2_1b_border"
+				size = {width=-1 height=-10 }
+			}
+
+			containerWindowType = {
+				name = "laborer_party"
+				position = {x=10 y=-40}
+				size = { width = 100%% height = 170 }
+				Orientation = CENTER
+				orientation = center_up
+				origo = center_up
+	
+				background = {
+					name = "Background"
+					spriteType ="GFX_tiled_window2_1b_border"
+				}
+
+				instantTextBoxType = {
+					name = "laborer_party_info"
+					format = center
+					position = { x =-30 y = 20 }
+					font = "Main_16"
+					text = "工党"
+					maxWidth = 300
+					maxHeight = 20
+				}
+
+				instantTextBoxType = {
+					name = "laborer_party_info_1"
+					format = center
+					position = { x =-56 y = 60 }
+					font = "hoi_20b"
+					text = "党派影响力：[?ENG_social_democratic]"
+					maxWidth = 300
+					maxHeight = 20
+				}
+
+				buttonType = {
+					name = "info_botton_lab"
+					position = { x = 10 y = 110 }
+					spriteType = "GFX_party_info"
+					clicksound = click_ok
+					oversound = ui_menu_over
+				}
+			}
+
+			containerWindowType = {
+				name = "conservatic_party"
+				position = {x=10 y=125}
+				size = { width = 100%% height = 170 }
+				Orientation = CENTER
+				orientation = center_up
+				origo = center_up
+	
+				background = {
+					name = "Background"
+					spriteType ="GFX_tiled_window2_1b_border"
+				}
+
+				instantTextBoxType = {
+					name = "conservatic_party_info"
+					format = center
+					position = { x =-30 y = 20 }
+					font = "Main_16"
+					text = "保守党"
+					maxWidth = 300
+					maxHeight = 20
+				}
+
+				instantTextBoxType = {
+					name = "conservatic_party_info_1"
+					format = center
+					position = { x =-56 y = 60 }
+					font = "hoi_20b"
+					text = "党派影响力：[?ENG_consercatic_democratic]"
+					maxWidth = 300
+					maxHeight = 20
+				}
+
+				buttonType = {
+					name = "info_botton_con"
+					position = { x = 10 y = 110 }
+					spriteType = "GFX_party_info"
+					clicksound = click_ok
+					oversound = ui_menu_over
+				}
+			}
+
+			containerWindowType = {
+				name = "social_party"
+				position = {x=10 y=290}
+				size = { width = 100%% height = 170 }
+				Orientation = CENTER
+				orientation = center_up
+				origo = center_up
+	
+				background = {
+					name = "Background"
+					spriteType ="GFX_tiled_window2_1b_border"
+				}
+
+				instantTextBoxType = {
+					name = "socia_party_info"
+					format = center
+					position = { x =-30 y = 20 }
+					font = "Main_16"
+					text = "大不列颠共产党"
+					maxWidth = 300
+					maxHeight = 20
+				}
+
+				instantTextBoxType = {
+					name = "socia_party_info_1"
+					format = center
+					position = { x =-56 y = 60 }
+					font = "hoi_20b"
+					text = "党派影响力：[?ENG_socialism]"
+					maxWidth = 300
+					maxHeight = 20
+				}
+
+				buttonType = {
+					name = "info_botton_con"
+					position = { x = 10 y = 110 }
+					spriteType = "GFX_party_info"
+					clicksound = click_ok
+					oversound = ui_menu_over
+				}
+			}
+
+			containerWindowType = {
+				name = "peoples_party"
+				position = {x=10 y=455}
+				size = { width = 100%% height = 170 }
+				Orientation = CENTER
+				orientation = center_up
+				origo = center_up
+	
+				background = {
+					name = "Background"
+					spriteType ="GFX_tiled_window2_1b_border"
+				}
+
+				instantTextBoxType = {
+					name = "peoples_party_info"
+					format = center
+					position = { x =-30 y = 20 }
+					font = "Main_16"
+					text = "人民党"
+					maxWidth = 300
+					maxHeight = 20
+				}
+
+				instantTextBoxType = {
+					name = "peoples_party_info_1"
+					format = center
+					position = { x =-56 y = 60 }
+					font = "hoi_20b"
+					text = "党派影响力：[?ENG_democratic_libertism]"
+					maxWidth = 300
+					maxHeight = 20
+				}
+
+				buttonType = {
+					name = "info_botton_peo"
+					position = { x = 10 y = 110 }
+					spriteType = "GFX_party_info"
+					clicksound = click_ok
+					oversound = ui_menu_over
+				}
+			}
+
+			containerWindowType = {
+				name = "kings_party"
+				position = {x=10 y=620}
+				size = { width = 100%% height = 170 }
+				Orientation = CENTER
+				orientation = center_up
+				origo = center_up
+	
+				background = {
+					name = "Background"
+					spriteType ="GFX_tiled_window2_1b_border"
+				}
+
+				instantTextBoxType = {
+					name = "kings_party_info"
+					format = center
+					position = { x =-30 y = 20 }
+					font = "Main_16"
+					text = "王党"
+					maxWidth = 300
+					maxHeight = 20
+				}
+
+				instantTextBoxType = {
+					name = "kings_party_info_1"
+					format = center
+					position = { x =-56 y = 60 }
+					font = "hoi_20b"
+					text = "党派影响力：[?ENG_kings_party]"
+					maxWidth = 300
+					maxHeight = 20
+				}
+
+				buttonType = {
+					name = "info_botton_peo"
+					position = { x = 10 y = 110 }
+					spriteType = "GFX_party_info"
+					clicksound = click_ok
+					oversound = ui_menu_over
+				}
+			}
+
+			containerWindowType = {
+				name = "brifirst_party"
+				position = {x=10 y=785}
+				size = { width = 100%% height = 170 }
+				Orientation = CENTER
+				orientation = center_up
+				origo = center_up
+	
+				background = {
+					name = "Background"
+					spriteType ="GFX_tiled_window2_1b_border"
+				}
+
+				instantTextBoxType = {
+					name = "brifirst_party_party_info"
+					format = center
+					position = { x =-30 y = 20 }
+					font = "Main_16"
+					text = "至上党"
+					maxWidth = 300
+					maxHeight = 20
+				}
+
+				instantTextBoxType = {
+					name = "brifirst_party_party_info_1"
+					format = center
+					position = { x =-56 y = 60 }
+					font = "hoi_20b"
+					text = "党派影响力：[?ENG_kings_britain_first_party]"
+					maxWidth = 300
+					maxHeight = 20
+				}
+
+				buttonType = {
+					name = "info_botton_fir"
+					position = { x = 10 y = 110 }
+					spriteType = "GFX_party_info"
+					clicksound = click_ok
+					oversound = ui_menu_over
+				}
+			}
+		}
+
+		buttonType = {
+			name = "election_closed_botton"
+			position = { x = 675 y = 0 }
+			spriteType = "GFX_election_closed_botton"
+			clicksound = click_ok
+			oversound = ui_menu_over
+		}
+		
+		instantTextboxType = {
+			name = "power_balance_name"
+			format = center
+			position = { x = 200 y = 5 }
+			font = "tahoma_60"
+			text = "国家大选"
+			maxWidth = 300
+			maxHeight = 20
+		}
+		
+	}
+
+	containerWindowType = {
+		name = "confirming_act_1"
+		position = { x = 1480 y = 100 }
+		size = { width = 120 height = 80 }
+		origo = "electionview"
+		moveable = no
+		show_sound = open_sub_window
+		show_position = { x= 1480 y = 250 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+
+		background = {
+			name = "background"
+			quadTextureSprite = "GFX_tiled_plain_bg"
+		}
+
+		instantTextboxType = {
+			name = "lab_info"
+			format = center
+			position = { x = 10 y = 20 }
+			font = "Main_16"
+			text = "点击通过法案"
+			maxWidth = 100
+			maxHeight = 0
+		}
+
+		buttonType = {
+			name = "generic_election_botton_2"
+			position = { x = 0 y = 30 }
+			clicksound = complete_focus
+			oversound = ui_menu_over
+			quadTextureSprite = "GFX_confirm_act"
+		}
+
+		iconType = {
+			name = "icon_passed_act"
+			position = { x = 5 y = 5 }
+			spriteType = "GFX_passed_act"
+			clicksound = click_ok
+			oversound = ui_menu_over
+		}
+	}
+
+
+	containerWindowType = {
+		name = "lab_info_container"
+		position = { x = 1440 y = 100 }
+		size = { width = 500 height = 200 }
+		parent_window_name = electionview
+		moveable = no
+		show_sound = open_sub_window
+
+		background = {
+			name = "background"
+			quadTextureSprite = "GFX_tiled_plain_bg"
+		}
+
+		instantTextboxType = {
+			name = "lab_info"
+			format = center
+			position = { x = 185 y = 10 }
+			font = "Main_16"
+			text = "1936年度经济辩论"
+			maxWidth = 90
+			maxHeight = 0
+		}
+
+		instantTextboxType = {
+			name = "lab_info_1"
+			format = center
+			position = { x = 185 y = 10 }
+			font = "Main_16"
+			text = "公共建设法案"
+			maxWidth = 90
+			maxHeight = 0
+		}
+
+		instantTextboxType = {
+			name = "passing_probility_1"
+			format = center
+			position = { x = 0 y = 130 }
+			font = "Main_16"
+			text = "当前支持率：[?ENG_act_passing_probility]%"
+			maxWidth = 200
+			maxHeight = 0
+		}
+
+		instantTextboxType = {
+			name = "act_desc_1"
+			format = center
+			position = { x = 150 y = 60 }
+			font = "Main_16"
+			text = "1936经济辩论旨在总结1936年发生的一切经济相关事件并总结教训"
+			maxWidth = 200
+			maxHeight = 0
+		}
+
+		instantTextboxType = {
+			name = "act_desc_2"
+			format = center
+			position = { x = 150 y = 60 }
+			font = "Main_16"
+			text = "公共建设法案将在国内扩建基础设施"
+			maxWidth = 200
+			maxHeight = 0
+		}
+
+		buttonType = {
+			name = "politicalpower_investment_botton"
+			position = { x = 45 y = 150 }
+			spriteType = "GFX_politicalpower_investment"
+			clicksound = click_ok
+			oversound = ui_menu_over
+		}
+
+		containerWindowType = {
+			name = "lab_info_container"
+			position = { x = 282 y = 100 }
+			size = { width = 200 height = 100 }
+			origo = "electionview"
+			moveable = no
+			show_sound = open_sub_window
+
+			background = {
+				name = "background"
+				quadTextureSprite = "GFX_tiled_plain_bg"
+			}
+
+			instantTextboxType = {
+				name = "effect_election"
+				format = center
+				position = { x = 57 y = 10 }
+				font = "Main_16"
+				text = "利好"
+				maxWidth = 90
+				maxHeight = 0
+			}
+
+			instantTextboxType = {
+				name = "effect_election_desc"
+				format = center
+				position = { x = 0 y = 35 }
+				font = "Main_16"
+				text = "小幅度提升王党的影响力"
+				maxWidth = 200
+				maxHeight = 0
+			}
+			instantTextboxType = {
+				name = "effect_election_desc_1"
+				format = center
+				position = { x = 0 y = 55 }
+				font = "Main_16"
+				text = "小幅度提升工党的影响力"
+				maxWidth = 200
+				maxHeight = 0
+			}
+			instantTextboxType = {
+				name = "effect_election_desc_2"
+				format = center
+				position = { x = 0 y = 75 }
+				font = "Main_16"
+				text = "具体效果请看国策"
+				maxWidth = 200
+				maxHeight = 0
+			}
+		}
+
+		iconType = {
+			name = "icon_info_symbol"
+			position = { x = 20 y = 0 }
+			spriteType = "GFX_national_symbol"
+			clicksound = click_ok
+			oversound = ui_menu_over
+		}
+
+		buttonType = {
+			name = "info_closed_botton"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_election_closed_botton"
+			clicksound = click_ok
+			oversound = ui_menu_over
+		}
+	}
+
+}

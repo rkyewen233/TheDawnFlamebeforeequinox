@@ -1,0 +1,401 @@
+ideas = {
+	country = {
+		ASoul = {
+			picture = chi_army_corruption
+            allowed = { always = yes }
+			modifier = {
+				consumer_goods_factor = -0.1
+				weekly_manpower = 1000
+				stability_weekly_factor = 0.05
+				political_power_factor = 0.5
+			}
+		}
+		#封建时代的军队
+		jiushidai_de_jundui_MAN_ideas = {
+			picture = chi_army_corruption
+            allowed = { always = yes }
+			modifier = {
+				army_org_factor = -0.35
+				army_morale_factor = -0.35
+				org_loss_when_moving = 0.15
+				breakthrough_factor = -0.35
+				army_attack_factor = -0.75
+				army_defence_factor = -0.75
+				land_reinforce_rate = -0.05
+				breakthrough_factor = -0.3
+			}
+		}
+		jiushidai_de_jundui1_MAN_ideas = {
+			picture = chi_army_corruption
+            allowed = { always = yes }
+			modifier = {
+				army_org_factor = -0.30
+				army_morale_factor = -0.30
+				org_loss_when_moving = 0.10
+				breakthrough_factor = -0.25
+				army_attack_factor = -0.65
+				army_defence_factor = -0.65
+				land_reinforce_rate = -0.01
+				breakthrough_factor = -0.2
+			}
+		}
+		South_ideas = {
+			picture = a_150
+			allowed = { always = yes }
+			modifier = {
+				army_attack_factor = 0.2
+				army_defence_factor = 0.2
+			}
+		}
+		wenhuachuantong_MAN_ideas = {
+			picture = a_150
+            allowed = { always = yes }
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+		tank_MAN_ideas = {
+			picture = a_150
+            allowed = { always = yes }
+			modifier = {
+				army_attack_factor = 0.05
+				mechanized_attack_factor = 0.1
+				mechanized_defence_factor = 0.1
+				tank_manufacturer_cost_factor = -0.5
+			}
+		}
+		tank1_MAN_ideas = {
+			picture = a_150
+            allowed = { always = yes }
+			modifier = {
+				army_attack_factor = 0.05
+				mechanized_attack_factor = 0.15
+				mechanized_defence_factor = 0.2
+				tank_manufacturer_cost_factor = -0.5
+			}
+		}
+		horse_MAN_ideas = {
+			picture = a_150
+            allowed = { always = yes }
+			modifier = {
+				army_attack_factor = 0.05
+				army_speed_factor = 0.05
+				cavalry_attack_factor = 0.1
+				cavalry_defence_factor = 0.1
+				modifier_army_sub_unit_cavalry_speed_factor = 0.25
+			}
+		}
+		horse1_MAN_ideas = {
+			picture = a_150
+            allowed = { always = yes }
+			modifier = {
+				army_attack_factor = 0.05
+				army_speed_factor = 0.1
+				cavalry_attack_factor = 0.15
+				cavalry_defence_factor = 0.1
+				modifier_army_sub_unit_cavalry_speed_factor = 0.35
+				# mechanized_speed_factor = 0.1 #BYD xzf你给好好看看你写了什么好东西，速度修正只能用于装甲单位和骑兵，你给写了个摩托化上去
+			}
+		}
+		gongchang_MAN_ideas = {
+			picture = a_150
+            allowed = { always = yes }
+			modifier = {
+				industrial_capacity_factory = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+			}
+		}
+		youliangjundui_MAN_ideas = {
+			picture = a_150
+            allowed = { always = yes }
+			modifier = {
+				consumer_goods_factor = -0.05
+				army_org_factor = 0.10
+				army_morale_factor = 0.10
+				org_loss_when_moving = -0.10
+				breakthrough_factor = 0.05
+			}
+		}
+		hezuo_MAN_ideas = {
+			picture = a_150
+            allowed = { always = yes }
+			modifier = {
+				political_power_factor = 0.25
+				stability_weekly_factor = 0.05
+				consumer_goods_factor = 0.05
+				economy_cost_factor = -0.25
+			}
+		}
+		against_MAN_ideas = {
+			picture = a_150
+            allowed = { always = yes }
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.05
+				consumer_goods_factor = -0.15
+				economy_cost_factor = 0.25
+			}
+		}
+		nengdong_MAN_ideas = {
+			picture = a_150
+            allowed = { always = yes }
+			modifier = {
+				land_reinforce_rate = 0.05
+			}
+		}
+		jidong_MAN_ideas = {
+			picture = a_150
+            allowed = { always = yes }
+			modifier = {
+				army_attack_factor = 0.05
+				army_speed_factor = 0.3
+			}
+		}
+		huoli_MAN_ideas = {
+			picture = a_150
+            allowed = { always = yes }
+			modifier = {
+				army_attack_factor = 0.15
+			}
+		}
+		honor_MAN_ideas = {
+			picture = a_150
+            allowed = { always = yes }
+			modifier = {
+				army_org_factor = 0.25
+				weekly_manpower = 1000
+				stability_weekly_factor = 0.05
+				war_support_weekly_factor = 0.05
+			}
+		}
+		light_MAN_ideas = {
+			picture = a_150
+            allowed = { always = yes }
+			modifier = {
+				weekly_manpower = 500
+				stability_weekly_factor = 0.1
+				war_support_weekly_factor = 0.1
+				consumer_goods_factor = -0.1
+			}
+		}
+		future_MAN_ideas = {
+			picture = a_150
+            allowed = { always = yes }
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				stability_factor = 0.2
+				war_support_factor = 0.2
+			}
+		}
+		#落后的军队
+		luohou_dejundui_MAN_ideas = {
+			picture = chi_army_corruption
+            allowed = { always = yes }
+			modifier = {
+				army_org_factor = -0.30
+				army_morale_factor = -0.15
+				org_loss_when_moving = 0.05
+				breakthrough_factor = -0.15
+				army_attack_factor = -0.45
+				army_defence_factor = -0.45
+				breakthrough_factor = -0.1
+			}
+		}
+		#落后的军队（减轻）
+		luohou_1_dejundui_MAN_ideas = {
+			picture = chi_army_corruption
+            allowed = { always = yes }
+			modifier = {
+				army_org_factor = -0.1
+				army_morale_factor = -0.1
+				org_loss_when_moving = 0.025
+				breakthrough_factor = -0.1
+				army_attack_factor = -0.35
+				army_defence_factor = -0.35
+			}
+		}
+		luohou_2_dejundui_MAN_ideas = {
+			picture = chi_army_corruption
+            allowed = { always = yes }
+			modifier = {
+				army_org_factor = -0.05
+				army_morale_factor = -0.05
+				breakthrough_factor = -0.05
+				army_attack_factor = -0.2
+				army_defence_factor = -0.2
+			}
+		}
+		xianjin_dejundui_MAN_ideas = {
+			picture = chi_army_corruption
+            allowed = { always = yes }
+			modifier = {
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				org_loss_when_moving = -0.1
+				breakthrough_factor = 0.2
+				army_attack_factor = 0.2
+				army_defence_factor = 0.2
+			}
+		}
+		xianjin_1_dejundui_MAN_ideas = {
+			picture = chi_army_corruption
+            allowed = { always = yes }
+			modifier = {
+				army_org_factor = 0.2
+				army_morale_factor = 0.2
+				org_loss_when_moving = -0.2
+				breakthrough_factor = 0.3
+				army_attack_factor = 0.3
+				army_defence_factor = 0.3
+			}
+		}
+		xianjin_2_dejundui_MAN_ideas = {
+			picture = chi_army_corruption
+            allowed = { always = yes }
+			modifier = {
+				army_org_factor = 0.4
+				army_morale_factor = 0.4
+				org_loss_when_moving = -0.4
+				breakthrough_factor = 0.6
+				army_attack_factor = 0.6
+				army_defence_factor = 0.6
+			}
+		}
+		#互不支援
+		hubu_zhiyuan_MAN_ideas = {
+		    allowed = { always = yes }
+			modifier = {
+				recon_factor = -0.25
+				land_reinforce_rate = -0.25
+				command_power_gain = -0.25
+				army_speed_factor = -0.5
+			}
+		}
+		#不得民心
+		bude_minxin_MAN_ideas = {
+		    picture = prc_low_popular_support
+			allowed = { always = yes }
+			modifier = {
+				political_power_cost = 2
+				political_power_factor = -0.25
+				stability_factor = -0.05
+				attrition = 0.2
+				mobilization_speed = -0.5
+			}
+		}
+		#不得民心（减轻1）
+		bude_minxin_1_MAN_ideas = {
+		    picture = prc_low_popular_support
+			allowed = { always = yes }
+			modifier = {
+				political_power_cost = 1.5
+				political_power_factor = -0.2
+				stability_factor = -0.03
+				attrition = 0.15
+				mobilization_speed = -0.3
+			}
+		}
+		#不得民心（减轻2）
+		bude_minxin_2_MAN_ideas = {
+		    picture = prc_low_popular_support
+			allowed = { always = yes }
+			modifier = {
+				political_power_cost = 1
+				political_power_factor = -0.1
+				stability_factor = -0.01
+				attrition = 0.1
+				mobilization_speed = -0.1
+			}
+		}
+#腐败的政府
+		fubai_dezhengfu_MAN_ideas = {
+			picture = anti_soviet_pact
+		    allowed = { always = yes }
+			modifier = {
+				political_power_cost = 0.5
+				political_power_factor = -0.05
+				economy_cost_factor = 0.25
+				trade_laws_cost_factor = 0.25
+				mobilization_laws_cost_factor = 0.25
+				political_advisor_cost_factor = 0.25
+				consumer_goods_factor = 0.3
+			}
+		}
+#腐败的政府（减轻）
+		fubai_dezhengfu_1_MAN_ideas = {
+			picture = anti_soviet_pact
+		    allowed = { always = yes }
+			modifier = {
+				economy_cost_factor = 0.2
+				trade_laws_cost_factor = 0.2
+				mobilization_laws_cost_factor = 0.2
+				political_advisor_cost_factor = 0.2
+				consumer_goods_factor = 0.2
+			}
+		}
+#腐败的政府（减轻2）
+		fubai_dezhengfu_2_MAN_ideas = {
+			picture = anti_soviet_pact
+		    allowed = { always = yes }
+			modifier = {
+				economy_cost_factor = 0.1
+				trade_laws_cost_factor = 0.1
+				mobilization_laws_cost_factor = 0.1
+				political_advisor_cost_factor = 0.1
+				consumer_goods_factor = 0.1
+			}
+		}
+		#国民素质低下
+		guominsuzhi_MAN_ideas = {
+			picture = generic_disjointed_gov
+		    allowed = { always = yes }
+			modifier = {
+				consumer_goods_factor = 0.2
+				political_power_gain = -1
+				planning_speed = -0.1
+			}
+		}
+		guominsuzhi_1_MAN_ideas = {
+			picture = generic_disjointed_gov
+		    allowed = { always = yes }
+			modifier = {
+				consumer_goods_factor = 0.15
+				political_power_gain = -0.5
+				planning_speed = -0.05
+			}
+		}
+		wenmanglv_gao_1_ideas = {
+			picture = chi_incompetent_officers
+			allowed = { always = yes }
+			modifier = {
+				research_speed_factor = -0.8
+			}
+		}
+		wenmanglv_gao_2_ideas = {
+			picture = chi_incompetent_officers
+            allowed = { always = yes }
+			modifier = {
+				research_speed_factor = -0.6
+
+			}
+		}
+		wenmanglv_gao_3_ideas = {
+			picture = chi_incompetent_officers
+			allowed = { always = yes }
+			modifier = {
+				research_speed_factor = -0.4
+			}
+		}
+		wenmanglv_gao_4_ideas = {
+			picture = chi_incompetent_officers
+			allowed = { always = yes }
+			modifier = {
+				research_speed_factor = -0.2
+			}
+		}
+	}
+}

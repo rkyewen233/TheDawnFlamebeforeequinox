@@ -1,0 +1,44 @@
+add_namespace = Dawn_event_ibe
+country_event = {
+    id = Dawn_event_ibe.1
+    picture = GFX_report_event_generic_italian_fascists
+    title = Dawn_event_ibe.1.t
+    desc = Dawn_event_ibe.1.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = Dawn_event_ibe.1.a
+		hidden_effect = {
+			country_event = {
+				id = Dawn_event_ibe.2
+				days = 1
+			}
+		}
+    }
+}
+country_event = {
+    id = Dawn_event_ibe.2
+    picture = GFX_report_event_generic_italian_fascists
+    title = Dawn_event_ibe.2.t
+    desc = Dawn_event_ibe.2.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { #或许弗朗哥将军是对的，但是王国不需要另一位独裁者
+        name = Dawn_event_ibe.2.a
+		hidden_effect = {
+			country_event = {
+				id = Dawn_event_ibe.3
+				days = 1
+			}
+		}
+    }
+	option = { #国王的主张也许有利于王国，但是弗朗哥的主张跟切实际
+        name = Dawn_event_ibe.2.b
+		hidden_effect = {
+			country_event = {
+				id = Dawn_event_ibe.3
+				days = 1
+			}
+		}
+    }
+}

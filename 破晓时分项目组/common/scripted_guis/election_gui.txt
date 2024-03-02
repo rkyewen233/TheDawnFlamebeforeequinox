@@ -1,0 +1,144 @@
+scripted_gui = {
+	electionview = {
+		window_name = electionview
+		context_type = player_context
+		visible = {
+			has_country_flag = election_view_flag
+		}
+		triggers = {
+            icon_passed_act_visible = {
+				has_country_flag = passed_eco_debate
+            }
+			act_public_infrastructure_icon_passed_act_visible = {
+				has_country_flag = passed_public_infrastructure
+			}
+        }
+		effects = {
+			generic_election_botton_1_click = {
+				set_country_flag = election_view_flag
+			}
+			act_1936_economics_button_click = {
+				set_country_flag = election_view_info_lab
+				set_variable = {
+					var_eng_act_view = 0
+				}
+			}
+			act_public_infrastructure_button_click = {
+				set_country_flag = election_view_info_lab
+				set_variable = {
+					var_eng_act_view = 1
+				}
+			}
+			election_closed_botton_click = {
+				clr_country_flag = election_view_flag
+				clr_country_flag = election_view_info_lab
+			}
+		}
+	}
+	go_in_botton_election = {
+		window_name = go_in_botton_election
+		context_type = player_context
+		visible = {
+			tag = ENG
+			has_country_flag = ENG_election
+		}
+		effects = {
+			generic_election_botton_1_click = {
+				set_country_flag = election_view_flag
+			}
+		}
+	}
+	lab_info_container = {
+		window_name = lab_info_container
+		context_type = player_context
+		visible = {
+			has_country_flag = election_view_info_lab
+		}
+		triggers = {
+			lab_info_visible = {
+				check_variable = {
+					var_eng_act_view = 0
+				}
+            }
+			lab_info_1_visible = {
+				check_variable = {
+					var_eng_act_view = 1
+				}
+            }
+			act_desc_1_visible = {
+				check_variable = {
+					var_eng_act_view = 0
+				}
+            }
+			act_desc_2_visible = {
+				check_variable = {
+					var_eng_act_view = 1
+				}
+            }
+            icon_passed_act_visible = {
+				has_country_flag = passed_eco_debate
+            }
+			politicalpower_investment_botton_visible = {
+				OR = {
+					AND = {
+						has_country_flag = passed_eco_debate
+						NOT = {
+							check_variable = {
+								var_eng_act_view = 0
+							}
+						}
+					}
+				}
+            }
+        }
+		effects = {
+			politicalpower_investment_botton_click = {
+				add_political_power = -10
+				add_to_variable = {
+					ENG_act_passing_probility = 5
+				}
+			}
+			info_closed_botton_click = {
+				clr_country_flag = election_view_info_lab
+			}
+		}
+	}
+	confirming_act_1 = {
+		window_name = confirming_act_1
+		context_type = player_context
+		visible = {
+			check_variable = {
+				ENG_act_passing_probility > 99
+			}
+			has_country_flag = election_view_info_lab
+		}
+		triggers = {
+            generic_election_botton_2_visible = {
+                NOT = {
+					has_country_flag = passed_eco_debate
+				}
+				check_variable = {
+					var_eng_act_view = 0
+				}
+            }
+			background_visible = {
+                NOT = {
+					has_country_flag = passed_eco_debate
+				}
+            }
+			icon_passed_act_visible = {
+				has_country_flag = passed_eco_debate
+            }
+        }
+		effects = {
+			generic_election_botton_2_click = {
+				clr_country_flag = election_view_info_lab
+				set_country_flag = passed_eco_debate
+				complete_national_focus = ENG_economics_1936
+				set_variable = {
+					ENG_act_passing_probility = 0
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,37 @@
+﻿l_simp_chinese:
+ ENG_develop_categories:0 "投资计划"
+ ENG_develop_categories_desc:0 "国家预算除却必要开支之外其余的基本都可用于投资，将政府的盈余用于投资国家工业、民生发展是保证国家活力的重要部分。\n英国是世界工业化的先驱，曾经作为世界霸主的她一度坐拥着做庞大的殖民地和最为恐怖的工业。但是后来她的衰落让无数宵小之辈趁机而上，时值20世纪中期，我们的国家决心再一次开启工业化！\n\n当前拥有§Y[?ENG_economics_stored]m英镑§!预算\n\n每周政府将拨款§Y[?ENG_economics_income]m英镑§!预算加入预算池。\n\n当前工业投资池投资发展度为：§Y[?ENG_investment_readying]§!\n\n               ——工业发展度——\n英国的工业发展可以被认为是一种进度，工业越发达相对应的产业和企业就越发达。"
+
+ ENG_build_mil_facotory:0 "拨款至民用工厂"
+ ENG_build_mil_facotory_2:0 "民用工厂投资建设"
+ ENG_build_civil_facotory:0 "国防工业专项款"
+ ENG_build_civil_facotory_2:0 "采取扩大重工业之措施"
+ ENG_enfield:0 "皇家恩菲尔德兵工厂扩建"
+ ENG_get_budget:0 "采取特殊手段"
+ ENG_international_investment_mission:0 "下一轮国际融资"
+ ENG_industry_investment_mission:0 "§O工业投资池§!：§G结算§!"
+ ENG_invest_industry:0 "§O工业投资池§!：§Y投资§!"
+
+ ENG_electioning:0 "英国大选"
+ ENG_electioning_desc:0 "1936大选将至，选民和政府必须做出选择...\n\n§R左派§!综合力量：[?ENG_left_wing]\n——————————————\n英国工党：[?ENG_social_democratic]\n英国社会党：[?ENG_socialism]\n\n§g右派§!综合力量：[?ENG_right_wing]\n——————————————\n王党：[?ENG_kings_party]\n至上党：[?ENG_kings_britain_first_party]\n\n§B民主§!(无综合力量）\n——————————————\n保守党：[?ENG_consercatic_democratic]\n人民党：[?ENG_democratic_libertism]"
+ ENG_consercatic_democratic_is_doing_sth:0 "保守党在行动..."
+ ENG_kings_party_is_doing_sth:0 "王党在行动..."
+ ENG_english_first_party_is_doing_sth:0 "至上党在行动..."
+
+ ENG_social_democratic_maintain_authority_of_party:0 "巩固党的权威"
+ ENG_social_democratic_meet_capitalists:0 "与资本家展开谈判"
+ ENG_social_democratic_handle_churchill:0 "钝刀割肉" 
+ ENG_social_democratic_national_decision_catagories:0 "工党与英国"
+ ENG_social_democratic_national_decision_catagories_desc:0 "\"\nThe people's Flag is deepest red 人民之旗，鲜红之旗\n\nIt shrounded oft our martyred dead 裹敛着战士的尸体\n\nAnd ere their limbs grew stiff and cold 战士的尸体还未僵硬\n\nTheir hearts'blood dyed its every fold 每一皱皆由心血染成\n\nThen raise the scalet standard high 高高举起这面红旗\n\nBeneath its shade we'll live and die我们的生死皆在其荫下\n\nThough cowards flinch and traitors sneer就让叛徒和懦夫嘲笑去\n\nWe'll keep the red flag flying here 我们要让那红旗永远飘扬\n                                                                                                                             \"\n————工党党歌\n\n英国工党在36-37大选中由英国民众寄予厚望继续执掌英国这艘世纪巨轮，然而不论是内部还是外部英国工党都将面临十分严峻的挑战：王党，至上党以及一切右翼联盟都在挑衅英国工党对于国家的掌控力；法国，伊比利亚等国家每一刻都在撩拨英国政府紧张的心。英国人民的未来应该由自己决定，既然我们现在作为英国的掌控者那么就该让这艘巨轮驶向一个充满着牛奶、面包与星辰大海的未来"
+ ENG_social_democratic_always_here:0 "——————英国工党建设祖国之措施——————"
+
+ ENG_economics:0 "经济面板"
+ ENG_economics_desc:0 "\n行业纳税收入：[?tax_income_1]M\n工厂价值收入：[?factory_income_1]M\n当前收入总：[?Dawn_total_income_1]M法郎\n国家银行储备：[?Dawn_national_staored_money]M法郎\n\n\n人口：[?max_manpower_k]千人\n可用于计算的民工数量：[?num_of_civilian_factories_available_for_projects]"
+
+ ENG_variables_of_conference_of_polymouth:0 "普利茅斯会议"
+ ENG_variables_of_conference_of_polymouth_desc:0 "法兰西态度：[?ENG_ply_rml_french_attitude]\n法兰西影响力：[?ENG_ply_rml_french_effective]\n\n德意志态度：[?ENG_ply_rml_german_attitude]\n德意志影响力：[?ENG_ply_rml_german_effective]\n\n不列颠影响力：[?ENG_ply_rml_british_effective]\n\n目前已提出款项数量：[?ENG_ply_rml_amout_of_treaty\n"
+ ENG_cfrply_ask_for_remilitalized:0 "§R英国专属§!「普利茅斯会议」 -> 商议再军事化"
+ ENG_negotiate_in_other_topics:0 "「普利茅斯会议」 -> 在其他事情上对法国妥协"
+ ENG_invest_ger:0 "「普利茅斯会议」 -> 投资德意志政府"
+ ENG_cfrply_ask_for_remilitalized_end:0 "§R英国专属§!「普利茅斯会议」 -> 结束在军事化议题"
+ ENG_develop_london:0 "伦敦工业发展"

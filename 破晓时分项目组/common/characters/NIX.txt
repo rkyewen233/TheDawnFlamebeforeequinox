@@ -1,0 +1,16 @@
+characters={
+	NIX_Sun_Chuan_Fang={
+		name = NIX_Sun_Chuan_Fang
+		portraits={
+			civilian={
+				large = "gfx/leaders/NIX/NIX_Sun_Chuan_Fang.png"
+			}
+		}
+		country_leader={
+			ideology = paternalistic_conservatism
+			traits = {  }
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

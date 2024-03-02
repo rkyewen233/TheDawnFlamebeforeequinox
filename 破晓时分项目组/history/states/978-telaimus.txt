@@ -1,0 +1,21 @@
+state={
+	id=978
+	name="STATE_978"
+	provinces={
+		1126 1128 1967 7040 7033 9960 13276 13278 13284 13287 13288 13289 13294 13297 13298 13299 
+	}
+	history={
+		owner = F10
+		add_core_of = F10
+		add_core_of = ALG
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+	manpower=0111
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=town
+}

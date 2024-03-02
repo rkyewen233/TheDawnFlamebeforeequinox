@@ -1,0 +1,48 @@
+ideas = {
+    country = {
+        SPM_french_support = {
+            name = "法国阴影下的意大利"
+            picture = ENG_idea_3
+            allowed = { always = yes }
+            modifier = {
+                research_speed_factor = 0.05
+                production_speed_buildings_factor = 0.15
+                consumer_goods_factor = -0.20
+            }
+        }
+    }
+    country = {
+        ITA_generic_want_to_unify = {
+            name = "意大利之梦..."
+            picture = ENG_idea_3
+            allowed = { always = yes }
+            modifier = {
+                army_attack_factor = -0.15
+                army_defence_factor = -0.15
+                army_core_attack_factor = 0.1
+                army_core_defence_factor = 0.1
+                custom_modifier_tooltip = ITA_generic_want_to_unify.tt
+            }
+            targeted_modifier = {
+                tag = LBV
+                attack_bonus_against = 0.15
+                defense_bonus_against = 0.15
+            }
+            targeted_modifier = {
+                tag = ITA
+                attack_bonus_against = 0.15
+                defense_bonus_against = 0.15
+            }
+            targeted_modifier = {
+                tag = LBV
+                attack_bonus_against = 0.15
+                defense_bonus_against = 0.15
+            }
+            targeted_modifier = {
+                tag = TTS
+                attack_bonus_against = 0.15
+                defense_bonus_against = 0.15
+            }
+        }
+    }
+}

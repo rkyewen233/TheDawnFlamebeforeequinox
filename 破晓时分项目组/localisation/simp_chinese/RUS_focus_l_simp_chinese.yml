@@ -1,0 +1,68 @@
+﻿l_simp_chinese:
+ SOV_dancing_on_wire:0 "钢丝之舞"
+
+ SOV_prime_minister:0 "维持现状"
+ SOV_prime_minister_1:0 "维护新政"
+ SOV_prime_minister_2:0 "束之高阁"
+ SOV_prime_minister_3:0 "追随启明之星"
+
+ SOV_tsar:0 "帝皇一瞥"
+ SOV_tsar_1:0 "帝国真正的主人"
+ SOV_tsar_2:0 "驳斥改革成果"
+ SOV_tsar_3:0 "一场不愉快的会晤"
+
+ SOV_Winter_Palace:0 "冬宫盛宴"
+ SOV_greate_conference:0 "太平盛会"
+ SOV_peace:0 "宁静与祥和"
+
+ SOV_ECO_1:0 "局势糜烂"
+ SOV_ECO_2:0 "暂停工业化进程"
+ SOV_ECO_3:0 "撤换部长"
+ SOV_ECO_4:0 "与工业部通气"
+ SOV_ECO_5:0 "加赋加税"
+ SOV_ECO_6:0 "破局之法"
+ SOV_ECO_7:0 "远东的财富"
+ SOV_ECO_8:0 "一份过得去的财报"
+
+
+ SOV_a_murder:0 "一场刻意的谋杀"
+ SOV_royal_fire:0 "宫廷失火"
+ SOV_ask_to_investigate:0 "查清真相"
+ SOV_murderer:0 "指控..."
+
+ SOV_prime_minister_is_murderer:0 "...首相！"
+ SOV_its_prime_minister:0 "“是首相！”"
+ SOV_corrupt_court:0 "贿赂法官"
+ SOV_old_bill:0 "翻翻旧账"
+ SOV_the_truth:0 "“真相”"
+
+ SOV_tsar_is_murderer:0 "...沙皇！"
+ SOV_give_investigeate:0 "给予调查权"
+ SOV_protect_investigater:0 "护其周全"
+ SOV_stop_star_activity:0 "软禁沙皇"
+ SOV_another_true_truth:0 "“真相”"
+
+ SOV_sant_anderia:0 "圣安德烈亚调查局"
+ SOV_investigate:0 "谁是真凶？"
+ SOV_allow_royal_police:0 "允许皇家警察运作"
+ SOV_decide_attitude:0 "事关前途"
+ SOV_a_strict_punishment:0 "重重扣下"
+ SOV_a_limitless_punishment:0 "重拿轻放"
+ SOV_be_showned:0 "“显而易见”"
+
+ SOV_end_of_murder:0 "“水落石出”"
+
+
+ SOV_economics_saving:0 "经济之悲歌"
+ SOV_economics_second_1:0 "租出阿列亚什卡"
+ SOV_economics_second_2:0 "再做努力"
+ SOV_economics_second_3:0 "曲终人散"
+ SOV_economics_second_4:0 "一场豪赌"
+ SOV_economics_second_5:0 "倾囊工业"
+ SOV_economics_second_6:0 "挣脱枷锁"
+ SOV_economics_second_7:0 "全力以赴"
+ SOV_economics_second_8:0 "一条光明之路"
+ SOV_economics_second_9:0 "有心栽花花不活，无心插柳柳成荫"
+ SOV_economics_second_10:0 "路遥知马力"
+ SOV_economics_second_11:0 "日久见人心"
+ SOV_economics_second_12:0 "拨云见日"

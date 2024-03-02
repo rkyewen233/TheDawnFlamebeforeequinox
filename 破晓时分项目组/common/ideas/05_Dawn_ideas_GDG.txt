@@ -1,0 +1,444 @@
+ideas = {
+	country = {
+		#封建时代的军队
+		jiushidai_de_jundui_ideas = { 
+			picture = a_150
+            
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = -0.25
+				army_morale_factor = -0.25
+				org_loss_when_moving = -0.1
+				breakthrough_factor = -0.25
+				army_attack_factor = -0.5
+				army_defence_factor = -0.5
+			}
+		}
+		#落后的军队
+		luohou_dejundui_ideas = { 
+			picture = a_150
+            
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = -0.15
+				army_morale_factor = -0.15
+				org_loss_when_moving = -0.05
+				breakthrough_factor = -0.15
+				army_attack_factor = -0.45
+				army_defence_factor = -0.45
+			}
+		}
+		#落后的军队（减轻）
+		luohou_1_dejundui_ideas = { 
+			picture = a_150
+            
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = -0.1
+				army_morale_factor = -0.1
+				org_loss_when_moving = -0.025
+				breakthrough_factor = -0.1
+				army_attack_factor = -0.35
+				army_defence_factor = -0.35
+			}
+		}
+		#互不支援
+		hubu_zhiyuan_ideas = {
+			picture = a_150
+            
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				recon_factor = -0.25
+				land_reinforce_rate = -0.25
+				command_power_gain = -0.25
+				army_speed_factor = -0.5
+			}
+		}
+	#不得民心
+		bude_minxin_ideas = {
+			picture = a_150
+            
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_cost = 2
+				political_power_factor = -0.25
+				stability_factor = -0.05
+				attrition = 0.2
+				mobilization_speed = -0.25
+			}
+		}
+		#不得民心（减轻1）
+		bude_minxin_1_ideas = {
+			picture = a_150
+            
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_cost = 1.5
+				political_power_factor = -0.2
+				stability_factor = -0.03
+				attrition = 0.15
+				mobilization_speed = -0.2
+			}
+		}
+		#不得民心（减轻2）
+		bude_minxin_2_ideas = {
+			picture = a_150
+            
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_cost = 1
+				political_power_factor = -0.1
+				stability_factor = -0.01
+				attrition = 0.1
+				mobilization_speed = -0.1
+			}
+		}
+#腐败的政府
+		fubai_dezhengfu_ideas = {
+			picture = a_150
+            
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_cost = 0.5
+				political_power_factor = -0.05
+				economy_cost_factor = 0.25
+				trade_laws_cost_factor = 0.25
+				mobilization_laws_cost_factor = 0.25
+				political_advisor_cost_factor = 0.25
+				consumer_goods_factor = 0.08
+			}
+		}
+		#腐败的政府（减轻）
+		fubai_dezhengfu_1_ideas = {
+			picture = a_150
+            
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				economy_cost_factor = 0.2
+				trade_laws_cost_factor = 0.2
+				mobilization_laws_cost_factor = 0.2
+				political_advisor_cost_factor = 0.2
+				consumer_goods_factor = 0.04
+			}
+		}
+		#腐败的政府（减轻2）
+		fubai_dezhengfu_2_ideas = {
+			picture = a_150
+            
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				economy_cost_factor = 0.1
+				trade_laws_cost_factor = 0.1
+				mobilization_laws_cost_factor = 0.1
+				political_advisor_cost_factor = 0.1
+				consumer_goods_factor = 0.02
+			}
+		}
+		#国民素质低下
+		guominsuzhi_ideas = {
+			picture = a_150
+            
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.2
+				political_power_gain = -1
+				planning_speed = -0.1
+			}
+		}
+		guominsuzhi_1_ideas = {
+			picture = a_150
+            
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.15
+				political_power_gain = -0.5
+				planning_speed = -0.05
+			}
+		}
+		wenmanglv_gao_ideas = {
+			picture = a_150
+            
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.5
+
+			}
+			research_bonus = {
+				construction_tech = -0.5
+				excavation_tech = -0.5
+				synth_resources = -0.5
+				industry = -0.5
+				electronics = -0.5
+				nuclear = -0.5
+				rocketry = -0.5
+				infantry_weapons = -0.5
+				support_tech = -0.5
+				cat_mobile_warfare = -0.5
+				motorized_equipment = -0.5
+				artillery = -0.5
+				cat_anti_tank = -0.5
+				armor = -0.5
+				cat_heavy_armor = -0.5
+				para_tech = -0.5
+				mountaineers_tech = -0.5
+			}
+		}
+		zhengtong_sanminzhuyi_ideas = {
+			picture = a_150
+            
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = -0.02
+				resistance_target_on_our_occupied_states = 0.05
+			}
+		}
+		beifa_shili_ideas = {
+			picture = a_150
+            
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				drift_defence_factor = -0.25
+				conscription_factor = -0.2
+				mobilization_speed = -0.1
+				line_change_production_efficiency_factor = -0.1
+				industrial_capacity_factory = -0.1
+			}
+		}
+		linshi_yuefa_ideas = {
+			picture = a_150
+            
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				war_support_weekly = 0.05
+				stability_weekly = 0.05
+			}
+		}
+		nongmin_zhichi_ideas = {
+			picture = a_150
+            
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.75
+				stability_factor = 0.1
+				consumer_goods_factor = -0.02
+			}
+		}
+		jian_zu_ideas = {
+			picture = a_150
+            
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				stability_factor = -0.2
+
+			}
+		}
+		fei_shui_ideas = {
+			picture = a_150
+            
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		dui_tudi_zhengshui_ideas = {
+			picture = a_150
+            
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+		tuanjie_gongren_ideas = {
+			picture = a_150
+            
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		xin_mian_mao_ideas = {
+			picture = a_150
+            
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.1
+				industrial_capacity_factory = 0.1
+				resistance_growth_on_our_occupied_states = 0.15
+			}
+		}
+		queli_gongnong_ideas = {
+			picture = a_150
+            
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		puji_dupin_weihai_ideas = {
+			picture = a_150
+            
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly = 0.1
+				political_power_cost = 0.5
+				consumer_goods_factor = 0.05
+			}
+		}
+		quanguo_jindu_ideas = {
+			picture = a_150
+            
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+		renmin_juexing_ideas = {
+			picture = a_150
+            
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.15
+				army_infantry_attack_factor = 0.1
+			}
+		}
+	}
+}

@@ -1,0 +1,244 @@
+division_template = {
+	name = "法军第一驻军师"
+	division_names_group = ENG_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+        infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 3 }
+	}
+	support = {
+       	artillery = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "法军第二驻军师"
+	division_names_group = ENG_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		artillery_brigade = { x = 1 y = 0 }
+        artillery_brigade = { x = 1 y = 1 }
+	}
+	support = {
+       	artillery = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "法军第三驻军师"
+	division_names_group = ENG_INF_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+        cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+	}
+	support = {
+       	recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "法军第四驻军师"
+	division_names_group = ENG_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+	}
+	support = {
+       	
+	}
+}
+units = {
+	division= {	
+		name = "法兰西阿非利加步兵团 3A"
+		location = 7040
+		division_template = "法军第三驻军师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "法兰西阿非利加步兵团 3B"
+		location = 1128
+		division_template = "法军第三驻军师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "法兰西阿非利加步兵团 3C"
+		location = 7033
+		division_template = "法军第三驻军师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "法兰西阿非利加步兵团 3D"
+		location = 12034
+		division_template = "法军第三驻军师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "法兰西阿非利加步兵团 3E"
+		location = 12034
+		division_template = "法军第三驻军师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "法兰西阿非利加步兵团 3F"
+		location = 12034
+		division_template = "法军第三驻军师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+
+
+	division= {	
+		name = "法兰西阿非利加步兵团 2A"
+		location = 12034
+		division_template = "法军第二驻军师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.99
+	}
+	division= {	
+		name = "法兰西阿非利加步兵团 2B"
+		location = 12034
+		division_template = "法军第二驻军师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.99
+	}
+	division= {	
+		name = "法兰西阿非利加步兵团 2C"
+		location = 1141
+		division_template = "法军第二驻军师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.99
+	}
+
+	division= {	
+		name = "法兰西阿非利加步兵团 1A"
+		location = 4150
+		division_template = "法军第一驻军师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.99
+	}
+	division= {	
+		name = "法兰西阿非利加步兵团 1B"
+		location = 7040
+		division_template = "法军第一驻军师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.99
+	}
+	division= {	
+		name = "法兰西阿非利加步兵团 1C"
+		location = 10059
+		division_template = "法军第一驻军师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.99
+	}
+	division= {	
+		name = "法兰西阿非利加步兵团 1D"
+		location = 10059
+		division_template = "法军第一驻军师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.99
+	}
+	division= {	
+		name = "法兰西阿非利加步兵团 1E"
+		location = 10059
+		division_template = "法军第一驻军师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.99
+	}
+
+
+	division= {	
+		name = "法兰西阿非利加步兵团 4A"
+		location = 3991
+		division_template = "法军第四驻军师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "法兰西阿非利加步兵团 4B"
+		location = 4150
+		division_template = "法军第四驻军师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "法兰西阿非利加步兵团 4C"
+		location = 10045
+		division_template = "法军第四驻军师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "法兰西阿非利加步兵团 4D"
+		location = 12020
+		division_template = "法军第四驻军师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "法兰西阿非利加步兵团 4E"
+		location = 7040
+		division_template = "法军第四驻军师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "法兰西阿非利加步兵团 4F"
+		location = 1128
+		division_template = "法军第四驻军师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "法兰西阿非利加步兵团 4G"
+		location = 7033
+		division_template = "法军第四驻军师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "法兰西阿非利加步兵团 4H"
+		location = 7149
+		division_template = "法军第四驻军师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "法兰西阿非利加步兵团 4I"
+		location = 10059
+		division_template = "法军第四驻军师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "法兰西阿非利加步兵团 4J"
+		location = 12034
+		division_template = "法军第四驻军师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "法兰西阿非利加步兵团 4K"
+		location = 1141
+		division_template = "法军第四驻军师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+}

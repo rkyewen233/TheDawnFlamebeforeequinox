@@ -1,0 +1,8 @@
+spriteTypes = {	
+	
+	spriteType = {
+		name = "GFX_button_1_250x50"
+		texturefile = "gfx/interface/button_type/button_1_250x50.png"
+	}
+	
+}

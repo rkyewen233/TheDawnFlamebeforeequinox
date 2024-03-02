@@ -1,0 +1,27 @@
+state={
+	id=953
+	name="STATE_953"
+	provinces={
+		1053 4081 4156 4183 7004 7199 9942 10057 10112 11945 12030 
+	}
+	history={
+		owner = WAX
+		add_core_of = WAX
+		add_core_of = GDG
+		add_core_of = PRC
+		add_core_of = MAN
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = { 
+			7199 5 
+		}
+
+	}
+
+	manpower=7910200
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

@@ -1,0 +1,509 @@
+ideologies = {
+    anarchism = {
+        types = {
+
+			tribe_democratic = {
+            }
+
+			capitalist_anarchism = {
+			}
+
+			mutualism_anarchism = {
+			}
+
+			communist_anrchism = {
+			}
+
+			totallist_anarchism = {
+			}
+
+		}
+
+		color = { 20 20 20 }
+
+		rules = {
+			can_create_collaboration_government = yes
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = no
+			can_lower_tension = no
+			can_guarantee_other_ideologies = no
+		}
+
+		can_host_government_in_exile = no
+
+		war_impact_on_world_tension = 0.05		# no major danger, remember this this the 40s!
+
+		modifiers = {
+			send_volunteers_tension = 10.0
+			# annex_cost_factor = 0.5 # Deprecated, use common\peace_conference\00_generic_peace.txt instead
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 5
+			embargo_cost_factor = -0.5
+			embargo_threshold_factor = -0.5
+		}
+
+		faction_modifiers = {
+			# faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+
+    }
+
+	libertist_socialism = {
+		types = {
+
+			committee_communism = {
+			}
+
+			left_wing_communism = { #左翼共产主义
+			}
+
+			syndicalism_communism = { #工团主义
+			}
+
+
+
+		}
+
+		color = { 189 0 32 }
+
+		rules = {
+			can_create_collaboration_government = no
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = no
+			can_lower_tension = yes
+			can_guarantee_other_ideologies = yes
+		}
+
+		can_host_government_in_exile = yes
+
+		war_impact_on_world_tension = 0.05		# no major danger, remember this this the 40s!
+
+		modifiers = {
+			send_volunteers_tension = 0.03
+			# annex_cost_factor = 0.5 # Deprecated, use common\peace_conference\00_generic_peace.txt instead
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 5
+			embargo_cost_factor = -0.5
+			embargo_threshold_factor = -0.5
+		}
+
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+	}
+
+	authority_socialism = {
+		types = {
+
+			vanguardian_communism = { #先锋队主义
+			}
+
+			national_communism = { #民族共产主义
+			}
+
+			national_self_governing_movement = { #民族独立运动
+			}
+
+			koreanist_communism = { #朝鲜共产主义（主！体！）
+			}
+
+			communist_temporary_government = { #共产主义临时政府
+			}
+
+			military_political_communism = { #军政共产主义
+			}
+
+		}
+
+		color = { 120 0 20 }
+
+		rules = {
+			can_create_collaboration_government = yes
+			can_declare_war_on_same_ideology = yes
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_guarantee_other_ideologies = yes
+		}
+
+		can_host_government_in_exile = yes
+
+		war_impact_on_world_tension = 0.05		# no major danger, remember this this the 40s!
+
+		modifiers = {
+			send_volunteers_tension = 0.03
+			# annex_cost_factor = 0.5 # Deprecated, use common\peace_conference\00_generic_peace.txt instead
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 5
+			embargo_cost_factor = -0.5
+			embargo_threshold_factor = -0.5
+		}
+
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+	}
+
+	progressism = {
+		types = {
+
+			loborers_party = { #英国工党
+			}
+
+			social_democratic = { #社民
+			}
+
+			laborers_unitism = { #工联主义（？
+			}
+
+		}
+
+		color = { 169 73 89 }
+
+		rules = {
+			can_create_collaboration_government = yes
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_guarantee_other_ideologies = yes
+		}
+
+		can_host_government_in_exile = yes
+
+		war_impact_on_world_tension = 0.05		# no major danger, remember this this the 40s!
+
+		modifiers = {
+			send_volunteers_tension = 0.02
+			# annex_cost_factor = 0.5 # Deprecated, use common\peace_conference\00_generic_peace.txt instead
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 5
+			embargo_cost_factor = -0.5
+			embargo_threshold_factor = -0.5
+		}
+
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+	}
+
+	libertism = {
+		types = {
+
+			national_libetism = {
+
+			}
+
+			social_libertism = {
+
+			}
+
+			trade_libertism = {
+
+			}
+
+			colonial_libertism = {
+
+			}
+
+		}
+
+		color = { 40 133 179 }
+
+		rules = {
+			can_create_collaboration_government = yes
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_guarantee_other_ideologies = yes
+		}
+
+		can_host_government_in_exile = yes
+
+		war_impact_on_world_tension = 0.05		# no major danger, remember this this the 40s!
+
+		modifiers = {
+			send_volunteers_tension = 0.01
+			# annex_cost_factor = 0.5 # Deprecated, use common\peace_conference\00_generic_peace.txt instead
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 5
+			embargo_cost_factor = -0.5
+			embargo_threshold_factor = -0.5
+		}
+
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+	}
+
+	conservatism_group = {
+		types = {
+
+			agriculturism = { #农业主义
+			}
+
+			constitutional_monarchism = { #宪政君主主义
+			}
+
+			religious_democratic = { #教权民主主义
+			}
+
+			british_conservatism = { #英式保守主义
+			}
+
+			british_succesor_liberitism = { #英式承袭自由主义
+			}
+
+		}
+
+		color = { 21 34 100 }
+
+		rules = {
+			can_create_collaboration_government = yes
+			can_declare_war_on_same_ideology = yes
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_guarantee_other_ideologies = yes
+		}
+
+		can_host_government_in_exile = yes
+
+		war_impact_on_world_tension = 0.05		# no major danger, remember this this the 40s!
+
+		modifiers = {
+			send_volunteers_tension = 0.01
+			# annex_cost_factor = 0.5 # Deprecated, use common\peace_conference\00_generic_peace.txt instead
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 5
+			embargo_cost_factor = -0.5
+			embargo_threshold_factor = -0.5
+		}
+
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+	}
+
+	cooperatism = {
+		types = {
+
+			fascism = {
+			}
+
+			national_syndicalism = { #国家工团主义
+			}
+
+			corporatism = { #法团主义
+			}
+
+			french_act_union = { #法兰西行动同盟
+			}
+
+		}
+
+		color = { 164 112 28 }
+
+		#color = { 114 34 17 }
+
+		rules = {
+			can_create_collaboration_government = yes
+			can_declare_war_on_same_ideology = yes
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_guarantee_other_ideologies = yes
+		}
+
+		can_host_government_in_exile = yes
+
+		war_impact_on_world_tension = 0.05		# no major danger, remember this this the 40s!
+
+		modifiers = {
+			send_volunteers_tension = 0.01
+			# annex_cost_factor = 0.5 # Deprecated, use common\peace_conference\00_generic_peace.txt instead
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 5
+			embargo_cost_factor = -0.5
+			embargo_threshold_factor = -0.5
+		}
+
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+	}
+
+	nationalism = {
+		types = {
+
+			right_wing_self_determinationism = { #民族独立运动-右
+			}	
+
+			nazism = { #纳粹主义
+			}
+
+			imperialism = {
+			}
+
+			militarism = {
+			}
+
+			revengism = {
+			}
+
+		}
+
+		color = { 114 34 17 }
+
+		rules = {
+			can_create_collaboration_government = yes
+			can_declare_war_on_same_ideology = yes
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_guarantee_other_ideologies = yes
+		}
+
+		can_host_government_in_exile = yes
+
+		war_impact_on_world_tension = 0.05		# no major danger, remember this this the 40s!
+
+		modifiers = {
+			send_volunteers_tension = 0.01
+			# annex_cost_factor = 0.5 # Deprecated, use common\peace_conference\00_generic_peace.txt instead
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 5
+			embargo_cost_factor = -0.5
+			embargo_threshold_factor = -0.5
+		}
+
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+	}
+
+	absolutism = {
+		types = {
+
+			military_aboslute = { #军事独裁主义
+			}
+
+			absolutly_monarchism = { #绝对君主主义
+			}
+
+			theocracy = { #神权统治
+			}
+
+			market_libertism_enterperis_ruled = { #市场自由主义（企业统制
+			}
+
+			policement_nation = { #警察国家
+			}
+
+			political_training = { #训政主义
+			}
+
+			transitional_government = { #过渡政府
+			}
+
+		}
+
+		color = { 162 162 162 }
+
+		rules = {
+			can_create_collaboration_government = yes
+			can_declare_war_on_same_ideology = yes
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_guarantee_other_ideologies = yes
+		}
+
+		can_host_government_in_exile = yes
+
+		war_impact_on_world_tension = 0.05		# no major danger, remember this this the 40s!
+
+		modifiers = {
+			send_volunteers_tension = 0.015
+			# annex_cost_factor = 0.5 # Deprecated, use common\peace_conference\00_generic_peace.txt instead
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 5
+			embargo_cost_factor = -0.5
+			embargo_threshold_factor = -0.5
+		}
+
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+	}
+	
+	avant-gardism = {
+		types = {
+
+			fish_cakism = { #鱼饼主义
+			}
+
+		}
+
+		color = { 255 255 255 }
+
+		rules = {
+			can_create_collaboration_government = yes
+			can_declare_war_on_same_ideology = yes
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_guarantee_other_ideologies = yes
+		}
+
+		can_host_government_in_exile = yes
+
+		war_impact_on_world_tension = 0.05		# no major danger, remember this this the 40s!
+
+		modifiers = {
+			send_volunteers_tension = 3.5
+			# annex_cost_factor = 0.5 # Deprecated, use common\peace_conference\00_generic_peace.txt instead
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 5
+			embargo_cost_factor = -0.5
+			embargo_threshold_factor = -0.5
+		}
+
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+	}
+}

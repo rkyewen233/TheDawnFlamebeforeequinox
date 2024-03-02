@@ -1,0 +1,24 @@
+state={
+	id=979
+	name="STATE_979"
+	provinces={
+		1141 4970 5053 7149 9943 10059 12034 12888 13274 13277 13279 13283 13290 13295 13296 13300 13302 13303 13304 
+	}
+	history={
+		owner = F10
+		add_core_of = F10
+		add_core_of = ALG
+		victory_points = {
+			12034 1 
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+	manpower=0111
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=town
+}

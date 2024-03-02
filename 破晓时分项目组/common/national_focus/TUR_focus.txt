@@ -1,0 +1,296 @@
+focus_tree = {
+	id = IBE_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TUR
+		}
+	}
+	default = no
+
+	focus = {
+		id = TUR_the_montreux_convention
+		icon = GFX_focus_TUR_the_montreux_convention
+		available = {
+			TUR = { is_subject = no }
+		}
+		x = 15
+		y = 0
+		cost = 10
+		ai_will_do = {
+			base = 10
+		}
+		cancelable = no
+		bypass = {
+			341 = { is_demilitarized_zone = no }
+			797 = { is_demilitarized_zone = no }
+			340 = { is_demilitarized_zone = no }
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			ENG = { country_event = { id = bftb_turkey.1 } }
+			custom_effect_tooltip = TUR_the_montreux_convention_tt
+		}
+	}
+
+	focus = {
+		id = TUR_annatalu
+		icon = GFX_tur_2
+		available = {
+			TUR = { is_subject = no }
+		}
+		x = 15
+		y = 1
+		cost = 2
+		ai_will_do = {
+			base = 10
+		}
+		prerequisite = {
+			focus = TUR_the_montreux_convention
+		}
+		cancelable = no
+		bypass = {
+			
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = {
+				id = Dawn_event_tur.1
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_buspurus
+		icon = GFX_unknow
+		available = {
+			TUR = { is_subject = no }
+		}
+		x = 13
+		y = 2
+		cost = 2
+		ai_will_do = {
+			base = 10
+		}
+		prerequisite = {
+			focus = TUR_annatalu
+		}
+		cancelable = no
+		bypass = {
+			
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = {
+				id = Dawn_event_tur.3
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_handle_slave
+		icon = GFX_tur_1
+		available = {
+			TUR = { is_subject = no }
+		}
+		x = 17
+		y = 2
+		cost = 2
+		ai_will_do = {
+			base = 10
+		}
+		prerequisite = {
+			focus = TUR_annatalu
+		}
+		cancelable = no
+		bypass = {
+			
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = {
+				id = Dawn_event_tur.2
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_fog
+		icon = GFX_unknow
+		available = {
+			TUR = { is_subject = no }
+		}
+		x = 15
+		y = 3
+		cost = 2
+		ai_will_do = {
+			base = 10
+		}
+		prerequisite = {
+			focus = TUR_buspurus
+		}
+		prerequisite = {
+			focus = TUR_handle_slave
+		}
+		cancelable = no
+		bypass = {
+			
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = {
+				id = Dawn_event_tur.4
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_death_of_united
+		icon = GFX_unknow
+		available = {
+			TUR = { is_subject = no }
+		}
+		x = 24
+		y = 0
+		cost = 1
+		ai_will_do = {
+			base = 10
+		}
+		cancelable = no
+		bypass = {
+			
+		}
+		available = {
+			has_completed_focus = TUR_fog
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = {
+				id = Dawn_event_tur.5
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_rebeling_of_greece
+		icon = GFX_unknow
+		available = {
+			TUR = { is_subject = no }
+		}
+		x = 30
+		y = 0
+		cost = 1
+		ai_will_do = {
+			base = 10
+		}
+		cancelable = no
+		bypass = {
+			
+		}
+		available = {
+			has_completed_focus = TUR_fog
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = {
+				id = Dawn_event_tur.6
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_never_before
+		icon = GFX_unknow
+		available = {
+			TUR = { is_subject = no }
+		}
+		x = 27
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		cancelable = no
+		prerequisite = {
+			focus = TUR_death_of_united
+		}
+		prerequisite = {
+			focus = TUR_rebeling_of_greece
+		}
+		bypass = {
+			
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = {
+				id = Dawn_event_tur.7
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_next_decade
+		icon = GFX_unknow
+		available = {
+			TUR = { is_subject = no }
+		}
+		x = 40
+		y = 0
+		cost = 1
+		ai_will_do = {
+			base = 10
+		}
+		bypass = {
+			
+		}
+
+		available = {
+			has_completed_focus = TUR_never_before
+		}
+		mutually_exclusive = {
+			focus = TUR_Unyielding_and_Blood
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = TUR_Unyielding_and_Blood
+		icon = GFX_unknow
+		available = {
+			TUR = { is_subject = no }
+		}
+		x = 50
+		y = 0
+		cost = 1
+		ai_will_do = {
+			base = 10
+		}
+		bypass = {
+			
+		}
+		available = {
+			has_completed_focus = TUR_never_before
+		}
+		mutually_exclusive = {
+			focus = TUR_next_decade
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+
+		}
+	}
+}

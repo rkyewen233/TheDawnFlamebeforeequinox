@@ -1,0 +1,29 @@
+
+state={
+	id=616
+	name="STATE_616"
+
+	history={
+		owner = MAN
+		add_core_of = MAN
+		add_core_of = GDG
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			8127 5
+		}
+		
+
+	}
+
+	provinces={
+		3742 5031 7511 8055 8081 8127 10724 12750 12776 
+	}
+	manpower=2077600
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

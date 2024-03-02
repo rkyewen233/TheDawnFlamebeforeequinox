@@ -1,0 +1,799 @@
+add_namespace = Dawn_event_eng
+country_event = {
+    id = Dawn_event_eng.1 #民意调查
+    picture = GFX_report_event_generic_italian_fascists
+    title = Dawn_event_eng.1.t
+    desc = Dawn_event_eng.1.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = Dawn_event_eng.1.a #联邦派的方案
+        add_popularity = {
+            ideology = socialism
+            popularity = 0.10
+        }
+        country_event = {
+            id = Dawn_event_eng.2
+            days = 15
+        }
+    }
+    option = {
+        name = Dawn_event_eng.1.b #社民派的方案
+        add_popularity = {
+            ideology = social_democratic
+            popularity = 0.04
+        }
+        country_event = {
+            id = Dawn_event_eng.2
+            days = 15
+        }
+    }
+    option = {
+        name = Dawn_event_eng.1.c #工人派的方案
+        add_popularity = {
+            ideology = communism
+            popularity = 0.10
+        }
+        country_event = {
+            id = Dawn_event_eng.2
+            days = 15
+        }
+    }
+}
+country_event = {
+    id = Dawn_event_eng.2 #国防机构领导人任命
+    picture = GFX_report_event_generic_italian_fascists
+    title = Dawn_event_eng.2.t
+    desc = Dawn_event_eng.2.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = Dawn_event_eng.1.a #联邦派的方案
+        add_popularity = {
+            ideology = socialism
+            popularity = 0.10
+        }
+        country_event = {
+            id = Dawn_event_eng.3
+            days = 15
+        }
+    }
+    option = {
+        name = Dawn_event_eng.1.b #社民派的方案
+        add_popularity = {
+            ideology = social_democratic
+            popularity = 0.04
+        }
+        country_event = {
+            id = Dawn_event_eng.3
+            days = 15
+        }
+    }
+    option = {
+        name = Dawn_event_eng.1.c #工人派的方案
+        add_popularity = {
+            ideology = communism
+            popularity = 0.10
+        }
+        country_event = {
+            id = Dawn_event_eng.3
+            days = 15
+        }
+    }
+}
+country_event = {
+    id = Dawn_event_eng.3 #工业部长任命
+    picture = GFX_report_event_generic_italian_fascists
+    title = Dawn_event_eng.3.t
+    desc = Dawn_event_eng.3.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = Dawn_event_eng.1.a #联邦派的方案
+        add_popularity = {
+            ideology = socialism
+            popularity = 0.10
+        }
+        country_event = {
+            id = Dawn_event_eng.4
+            days = 15
+        }
+    }
+    option = {
+        name = Dawn_event_eng.1.b #社民派的方案
+        add_popularity = {
+            ideology = social_democratic
+            popularity = 0.04
+        }
+        country_event = {
+            id = Dawn_event_eng.4
+            days = 15
+        }
+    }
+    option = {
+        name = Dawn_event_eng.1.c #工人派的方案
+        add_popularity = {
+            ideology = communism
+            popularity = 0.10
+        }
+        country_event = {
+            id = Dawn_event_eng.4
+            days = 15
+        }
+    }
+}
+country_event = {
+    id = Dawn_event_eng.4 #外交事务处理
+    picture = GFX_report_event_generic_italian_fascists
+    title = Dawn_event_eng.4.t
+    desc = Dawn_event_eng.4.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = Dawn_event_eng.1.a #联邦派的方案
+        add_popularity = {
+            ideology = socialism
+            popularity = 0.10
+        }
+        country_event = {
+            id = Dawn_event_eng.5
+            days = 15
+        }
+    }
+    option = {
+        name = Dawn_event_eng.1.b #社民派的方案
+        add_popularity = {
+            ideology = social_democratic
+            popularity = 0.04
+        }
+        country_event = {
+            id = Dawn_event_eng.5
+            days = 15
+        }
+    }
+    option = {
+        name = Dawn_event_eng.1.c #工人派的方案
+        add_popularity = {
+            ideology = communism
+            popularity = 0.10
+        }
+        country_event = {
+            id = Dawn_event_eng.5
+            days = 15
+        }
+    }
+}
+country_event = {
+    id = Dawn_event_eng.5 #结果
+    picture = GFX_report_event_generic_italian_fascists
+    title = Dawn_event_eng.5.t
+    desc = Dawn_event_eng.5.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = Dawn_event_eng.5.a #联邦派获胜
+        trigger = {
+            socialism > social_democratic
+            socialism > communism
+        }
+        set_politics = { 
+			ruling_party = socialism
+            election_frequency = 48
+            elections_allowed = no
+		}
+        hidden_effect = {
+            set_country_flag = ENG_confederationism_win
+        }
+    }
+    option = {
+        name = Dawn_event_eng.5.b #社民派获胜
+        trigger = {
+            social_democratic > socialism
+            social_democratic > communism
+        }
+        set_politics = { 
+			ruling_party = social_democratic
+            election_frequency = 48
+            elections_allowed = no
+		}
+        hidden_effect = {
+            set_country_flag = ENG_democratic_win
+        }
+    }
+    option = {
+        name = Dawn_event_eng.5.c #工人派胜利
+        trigger = {
+            communism > socialism
+            communism > commsocial_democraticunism
+        }
+        set_politics = { 
+			ruling_party = communism
+            election_frequency = 48
+            elections_allowed = no
+		}
+        hidden_effect = {
+            set_country_flag = ENG_communism_win
+        }
+    }
+}
+country_event = {
+    id = Dawn_event_eng.6 #忆往昔
+    picture = GFX_report_event_generic_italian_fascists
+    title = Dawn_event_eng.6.t
+    desc = Dawn_event_eng.6.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = Dawn_event_eng.6.a 
+    }
+}
+country_event = {
+    id = Dawn_event_eng.7 #工党赢得选举
+    picture = GFX_report_event_generic_italian_fascists
+    title = "玫瑰花的浪漫"
+    desc = Dawn_event_eng.7.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = "赠人玫瑰，手有余香"
+        hidden_effect = {
+            set_country_flag = ENG_social_democratic
+            mark_focus_tree_layout_dirty = yes
+            news_event = Dawn_event_news.6
+        }
+    }
+}
+country_event = {
+    id = Dawn_event_eng.8 #开始大选
+    picture = GFX_report_event_generic_italian_fascists
+    title = Dawn_event_eng.8.t
+    desc = Dawn_event_eng.8.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = Dawn_event_eng.8.a 
+        mark_focus_tree_layout_dirty = yes
+    }
+}
+country_event = {
+    id = Dawn_event_eng.9 #一万年太久，只争朝夕
+    picture = GFX_report_event_generic_italian_fascists
+    title = "一万年太久，只争朝夕"
+    desc = Dawn_event_eng.9.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = Dawn_event_eng.9.a 
+        country_event = {
+            id = Dawn_event_eng.8
+            days = 5
+        }
+    }
+}
+country_event = {
+    id = Dawn_event_eng.10 #最终印证
+    picture = GFX_report_event_generic_italian_fascists
+    title = "最终印证" #Dawn_event_eng.10.t
+    desc = Dawn_event_eng.10.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = Dawn_event_eng.10.a 
+    }
+}
+country_event = {
+    id = Dawn_event_eng.11 #天下熙熙
+    picture = GFX_report_event_generic_italian_fascists
+    title = "天下熙熙" #Dawn_event_eng.11.t
+    desc = "" #Dawn_event_eng.11.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = Dawn_event_eng.11.a 
+    }
+}
+country_event = {
+    id = Dawn_event_eng.12 #往日幽魂
+    picture = GFX_report_event_generic_italian_fascists
+    title = "往日幽魂" #Dawn_event_eng.12.t
+    desc = Dawn_event_eng.12.d #"1936年的英国已经出于十分衰败的状态，尽管英国曾经十分强大，然而如今的她只能成为欧陆一隅的小小岛国。\n\n自从1811年第一次印度战争开始，英国人再也未尝一胜。第一次印度战争中，法国人很轻易地支持印度王公土邦把我们的公司逼退至孟加拉，第二次印度战争法国人则直接下场在加尔各答之战中把我们的陆军彻底击败。" #Dawn_event_eng.12.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = "致祖国，让我们行动起来吧"
+    }
+}
+country_event = {
+    id = Dawn_event_eng.13 #峥嵘岁月
+    picture = GFX_report_event_generic_italian_fascists
+    title = "峥嵘岁月" #Dawn_event_eng.13.t
+    desc = Dawn_event_eng.13.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = "“小小年纪就知道这些对你不好，你的功课写完了吗？”"
+    }
+}
+country_event = {
+    id = Dawn_event_eng.14 #日暮西山
+    picture = GFX_report_event_generic_italian_fascists
+    title = "日暮西山" #Dawn_event_eng.14.t
+    desc = Dawn_event_eng.14.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = "或许黑格尔主义哲学能让他更好过呢"
+        country_event = {
+            id = Dawn_event_eng.36
+            days = 30
+        }
+    }
+}
+country_event = {
+    id = Dawn_event_eng.15 #孤魂徘徊
+    picture = GFX_report_event_generic_italian_fascists
+    title = "孤魂徘徊" #Dawn_event_eng.15.t
+    desc = Dawn_event_eng.15.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = "于是就这么开始了"
+    }
+}
+country_event = {
+    id = Dawn_event_eng.16 #天气晚来秋
+    picture = GFX_report_event_generic_italian_fascists
+    title = "天气晚来秋"#Dawn_event_eng.16.t
+    desc = Dawn_event_eng.16.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = Dawn_event_eng.16.a 
+    }
+}
+country_event = {
+    id = Dawn_event_eng.17 #别样年华
+    picture = GFX_report_event_generic_italian_fascists
+    title = "别样年华"#Dawn_event_eng.17.t
+    desc = Dawn_event_eng.17.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = Dawn_event_eng.17.a 
+    }
+}
+country_event = {
+    id = Dawn_event_eng.18 #终焉之后
+    picture = GFX_report_event_generic_italian_fascists
+    title = "终焉之后"#Dawn_event_eng.18.t
+    desc = Dawn_event_eng.18.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = Dawn_event_eng.18.a 
+    }
+}
+country_event = {
+    id = Dawn_event_eng.19 #竹林之间
+    picture = GFX_report_event_generic_italian_fascists
+    title = "竹林之间"#Dawn_event_eng.19.t
+    desc = Dawn_event_eng.19.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = Dawn_event_eng.19.a 
+    }
+}
+country_event = {
+    id = Dawn_event_eng.20 #清泉石上流
+    picture = GFX_report_event_generic_italian_fascists
+    title = "清泉石上流"#Dawn_event_eng.20.t
+    desc = Dawn_event_eng.20.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = Dawn_event_eng.20.a 
+    }
+}
+country_event = {
+    id = Dawn_event_eng.21 #1936财政报告
+    picture = GFX_report_event_generic_italian_fascists
+    title = "1936财政报告"#Dawn_event_eng.21.t
+    desc = Dawn_event_eng.21.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = "了解"
+    }
+}
+country_event = {
+    id = Dawn_event_eng.22 #会晤资本家
+    picture = GFX_report_event_generic_italian_fascists
+    title = "不愉快的会晤"#Dawn_event_eng.21.t
+    desc = Dawn_event_eng.22.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = "哈！"
+    }
+}
+country_event = {
+    id = Dawn_event_eng.23 #一场盛会
+    picture = GFX_report_event_generic_italian_fascists
+    title = "工党"#Dawn_event_eng.21.t
+    desc = Dawn_event_eng.23.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = "且让懦夫叛徒嘲笑去..."
+        add_dynamic_modifier = {
+            modifier = ENG_social_democratic
+        }
+    }
+}
+country_event = {
+    id = Dawn_event_eng.24 #赤旗党之志
+    picture = GFX_report_event_generic_italian_fascists
+    title = "赤旗党之志"#Dawn_event_eng.21.t
+    desc = Dawn_event_eng.24.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = "且让懦夫叛徒嘲笑去..."
+    }
+}
+country_event = {
+    id = Dawn_event_eng.25 #赤旗党之辩
+    picture = GFX_report_event_generic_italian_fascists
+    title = "赤旗党之辩"#Dawn_event_eng.21.t
+    desc = Dawn_event_eng.25.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = "且让懦夫叛徒嘲笑去..."
+    }
+}
+country_event = {
+    id = Dawn_event_eng.26 #赤旗党之人
+    picture = GFX_report_event_generic_italian_fascists
+    title = "赤旗党之人"#Dawn_event_eng.21.t
+    desc = Dawn_event_eng.26.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = "且让懦夫叛徒嘲笑去..."
+    }
+}
+country_event = {
+    id = Dawn_event_eng.27 #赤旗党之人
+    picture = GFX_report_event_generic_italian_fascists
+    title = "赤卫队在街道"#Dawn_event_eng.21.t
+    desc = Dawn_event_eng.27.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = "且让懦夫叛徒嘲笑去..."
+    }
+}
+country_event = {
+    id = Dawn_event_eng.28 #深入民众
+    picture = GFX_report_event_generic_italian_fascists
+    title = "深入民众"#Dawn_event_eng.21.t
+    desc = Dawn_event_eng.28.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = "且让懦夫叛徒嘲笑去..."
+    }
+}
+country_event = {
+    id = Dawn_event_eng.29 #民兵去留之辩
+    picture = GFX_report_event_generic_italian_fascists
+    title = "民兵去留之辩"#Dawn_event_eng.21.t
+    desc = Dawn_event_eng.29.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = "立刻撤销！"
+        hidden_effect = {
+            set_country_flag = ENG_flag_of_no_minbing
+        }
+    }
+}
+country_event = {
+    id = Dawn_event_eng.30 #民兵去留之辩
+    picture = GFX_report_event_generic_italian_fascists
+    title = "艰难的决定"#Dawn_event_eng.21.t
+    desc = Dawn_event_eng.30.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = "“即刻起，立刻取缔大不列颠共产党在左翼联盟之席位！”"
+        hidden_effect = {
+            set_country_flag = ENG_flag_of_no_minbing
+        }
+    }
+}
+country_event = {
+    id = Dawn_event_eng.31 #改变军事开支
+    picture = GFX_report_event_generic_italian_fascists
+    title = "调整军事开支"#Dawn_event_eng.21.t
+    desc = Dawn_event_eng.31.d
+    is_triggered_only = yes
+    option = {
+        name = "提高军事开支1%"
+        add_to_variable = {
+            ENG_governmental_out_come_mil_per = 0.01
+        }
+    }
+    option = {
+        name = "降低军事开支1%"
+        add_to_variable = {
+            ENG_governmental_out_come_mil_per = -0.01
+        }
+    }
+    option = {
+        name = "不做改变"
+    }
+}
+country_event = {
+    id = Dawn_event_eng.32 #改变军事开支
+    picture = GFX_report_event_generic_italian_fascists
+    title = "调整公共教育开支"#Dawn_event_eng.21.t
+    desc = Dawn_event_eng.32.d
+    is_triggered_only = yes
+    option = {
+        name = "提高公共教育开支1%"
+        add_to_variable = {
+            ENG_governmental_out_come_edu_per = 0.01
+        }
+    }
+    option = {
+        name = "降低公共教育开支1%"
+        add_to_variable = {
+            ENG_governmental_out_come_edu_per = -0.01
+        }
+    }
+    option = {
+        name = "不做改变"
+    }
+}
+country_event = {
+    id = Dawn_event_eng.33 #改变军事开支
+    picture = GFX_report_event_generic_italian_fascists
+    title = "调整其他开支"#Dawn_event_eng.21.t
+    desc = Dawn_event_eng.33.d
+    is_triggered_only = yes
+    option = {
+        name = "提高其他开支1%"
+        add_to_variable = {
+            ENG_governmental_out_come_oth_per = 0.01
+        }
+    }
+    option = {
+        name = "降低其他开支1%"
+        add_to_variable = {
+            ENG_governmental_out_come_oth_per = -0.01
+        }
+    }
+    option = {
+        name = "不做改变"
+    }
+}
+country_event = {
+    id = Dawn_event_eng.34 #改变军事开支
+    picture = GFX_report_event_generic_italian_fascists
+    title = "调整政治开支"#Dawn_event_eng.21.t
+    desc = Dawn_event_eng.34.d
+    is_triggered_only = yes
+    option = {
+        name = "提高政治开支1%"
+        add_to_variable = {
+            ENG_governmental_out_come_pli_per = 0.01
+        }
+    }
+    option = {
+        name = "降低政治开支1%"
+        add_to_variable = {
+            ENG_governmental_out_come_pli_per = -0.01
+        }
+    }
+    option = {
+        name = "不做改变"
+    }
+}
+country_event = {
+    id = Dawn_event_eng.35 #国际投资结果
+    picture = GFX_report_event_generic_italian_fascists
+    title = "新一轮国际金融之结果"#Dawn_event_eng.21.t
+    desc = Dawn_event_eng.35.d
+    is_triggered_only = yes
+    option = {
+        name = "收到"
+        random_list = {
+            40 = {
+                random_owned_controlled_state = {
+                    limit = {
+                        is_core_of = ROOT
+                    }
+                    add_extra_state_shared_building_slots = 2
+                }
+            }
+            40 = {
+                random_owned_controlled_state = {
+                    limit = {
+                        is_core_of = ROOT
+                        infrastructure < 5
+                    }
+                    add_building_construction = {
+                        type = infrastructure
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+            }
+            15 = {
+                random_owned_controlled_state = {
+                    limit = {
+                        is_core_of = ROOT
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+            }
+            5 = {
+                random_owned_controlled_state = {
+                    limit = {
+                        is_core_of = ROOT
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    limit = {
+                        is_core_of = ROOT
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+            }
+        }
+    }
+}
+country_event = {
+    id = Dawn_event_eng.36 #日暮西山
+    picture = GFX_report_event_generic_italian_fascists
+    title = Dawn_event_eng.36.t #Dawn_event_eng.14.t
+    desc = Dawn_event_eng.36.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = "或许黑格尔主义哲学能让他更好过呢"
+        country_event = {
+            id = Dawn_event_eng.36
+            days = 30
+        }
+    }
+}
+country_event = {
+    id = Dawn_event_eng.37 #撕毁康沃尔条约
+    picture = GFX_report_event_generic_italian_fascists
+    title = Dawn_event_eng.37.t #Dawn_event_eng.14.t
+    desc = Dawn_event_eng.37.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = Dawn_event_eng.37.a
+        hidden_effect = {
+            news_event = Dawn_event_news.11
+            country_event = {
+                id = Dawn_event_eng.38
+                hours = 15
+            }
+        }
+    }
+}
+country_event = {
+    id = Dawn_event_eng.38 #撕毁康沃尔条约
+    picture = GFX_report_event_generic_italian_fascists
+    title = "独走的军团（上）" #Dawn_event_eng.14.t
+    desc = Dawn_event_eng.38.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = Dawn_event_eng.38.a
+        country_event = {
+            id = Dawn_event_eng.39
+            days = 1
+        }
+        add_manpower = -53
+        hidden_effect = {
+            970 = {
+                set_demilitarized_zone = yes
+            }
+        }
+    }
+}
+country_event = {
+    id = Dawn_event_eng.39 #撕毁康沃尔条约
+    picture = GFX_report_event_generic_italian_fascists
+    title = "独走的军团（下）军团结局" #Dawn_event_eng.14.t
+    desc = Dawn_event_eng.39.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = Dawn_event_eng.39.a
+        add_stability = 0.05
+        country_event = {
+            id = Dawn_event_eng.40
+            days = 5
+        }
+        hidden_effect = {
+            123 = {
+                set_demilitarized_zone = no
+            }
+        }
+    }
+}
+country_event = {
+    id = Dawn_event_eng.40 #撕毁康沃尔条约
+    picture = GFX_report_event_generic_italian_fascists
+    title = "陌路" #Dawn_event_eng.14.t
+    desc = Dawn_event_eng.40.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = Dawn_event_eng.40.a
+        hidden_effect = {
+            966 = {
+                set_demilitarized_zone = no
+                add_core_of = FK1
+            }
+            967 = {
+                set_demilitarized_zone = no
+                add_core_of = FK1
+            }
+            970 = {
+                set_demilitarized_zone = no
+                add_core_of = FK1
+            }
+            FK1 = {
+                transfer_state = 966
+                transfer_state = 967
+                transfer_state = 970
+                load_oob = "FK1_1936"
+            }
+        }
+        country_event = {
+            id = Dawn_event_eng.41
+            days = 1
+        }
+    }
+}
+country_event = {
+    id = Dawn_event_eng.41 #撕毁康沃尔条约
+    picture = GFX_report_event_generic_italian_fascists
+    title = "镇压叛乱" #Dawn_event_eng.14.t
+    desc = Dawn_event_eng.41.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = Dawn_event_eng.41.a
+        declare_war_on = {
+            type = annex_everything
+            target = FK1
+        }
+    }
+}

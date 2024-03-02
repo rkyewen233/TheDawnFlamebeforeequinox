@@ -1,0 +1,24 @@
+#这B外交标签在on_actions的00_on_actions.txt
+#这个的写法是DIPLOMACY_外交标签_ENABLE_TRIGGER
+
+DIPLOMACY_OFFER_JOIN_FACTION_ENABLE_TRIGGER = {
+    NOT = {
+		custom_trigger_tooltip = {
+			tooltip = "对不起，做不到"
+		}
+	}
+}
+DIPLOMACY_JOIN_FACTION_ENABLE_TRIGGER = {
+    NOT = {
+		custom_trigger_tooltip = {
+			tooltip = "对不起，做不到"
+		}
+	}
+}
+DIPLOMACY_CREATE_FACTION_ENABLE_TRIGGER = {
+    NOT = {
+		custom_trigger_tooltip = {
+			 tooltip = "对不起，做不到"
+		}
+	}
+}

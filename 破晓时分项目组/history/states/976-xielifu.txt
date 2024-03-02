@@ -1,0 +1,24 @@
+state={
+	id=976
+	name="STATE_976"
+	provinces={
+		4116 7132 11923 13307 13310 13311 13314 
+	}
+	history={
+		owner = ALG
+		add_core_of = F10
+		add_core_of = ALG
+		buildings = {
+			infrastructure = 1
+				7132 = {
+				naval_base = 6
+
+			}
+		}
+
+	}
+	manpower=011
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=town
+}

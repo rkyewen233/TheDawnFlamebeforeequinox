@@ -1,0 +1,524 @@
+characters={
+	GDG_weng_wenhao={
+		name=CHI_weng_wenhao
+		portraits={
+			civilian={
+				large="gfx/leaders/GDG/Portrait_China_weng_wenhao.png"
+			}
+		}
+		country_leader={
+			ideology=sunism
+			traits = { xin_guomin_geming_zhe }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	GDG_chiang_kaishek={
+		name=CHI_chiang_kaishek
+		portraits={
+			civilian={
+				large=GFX_portrait_CHI_chiang_kaishek
+			}
+		}
+		country_leader={
+			ideology=paternalistic_conservatism
+			traits={ generallissimo }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	GDG_zhang_guotao={
+		name=CHI_zhang_guotao
+		portraits={
+			civilian={
+				large=GFX_portrait_CHI_zhang_guotao
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={ cornered_fox }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	GDG_wang_jingwei={
+		name=CHI_wang_jingwei
+		portraits={
+			civilian={
+				large="GFX_portrait_chi_wang_jingwei"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	GDG_mao_zedong={
+		name=PRC_mao_zedong
+		portraits={
+			army={
+				large="GFX_portrait_prc_mao_zedong"
+				small=GFX_portrait_PRC_mao_zedong_small
+			}
+			civilian={
+				large="GFX_portrait_prc_mao_zedong"
+				small=GFX_portrait_PRC_mao_zedong_small
+			}
+		}
+		field_marshal={
+			traits={ trait_cautious politically_connected defensive_doctrine }
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+		country_leader={
+			ideology=marxism
+			traits={ cornered_fox }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	GDG_tu_yuming={
+		name=CHI_tu_yuming
+		portraits={
+			army={
+				large="GFX_portrait_chi_du_yuming"
+				small="GFX_idea_CHI_du_yuming"
+			}
+		}
+		field_marshal={
+			traits={ trait_cautious harsh_leader armor_officer defensive_doctrine }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	
+	GDG_hsueh_yueh={
+		name=CHI_hsueh_yueh
+		portraits={
+			army={
+				large="GFX_portrait_chi_xue_yue"
+				small="GFX_idea_CHI_xue_yue"
+			}
+		}
+		field_marshal={
+			traits={ brilliant_strategist trait_reckless war_hero offensive_doctrine }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	
+	GDG_tai_anlan={
+		name=CHI_tai_anlan
+		portraits={
+			army={
+				large="GFX_portrait_chi_tai_an_lan"
+				small="GFX_idea_CHI_tai_an_lan"
+			}
+		}
+		field_marshal={
+			traits={ career_officer trait_reckless offensive_doctrine }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	
+	GDG_wang_yaowu={
+		name=CHI_wang_yaowu
+		portraits={
+			army={
+				large="GFX_portrait_chi_wang_yaowu"
+				small="GFX_idea_CHI_wang_yaowu"
+			}
+		}
+		field_marshal={
+			traits={ trait_cautious infantry_officer defensive_doctrine }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	
+	GDG_hu_zongnan={
+		name=CHI_hu_zongnan
+		portraits={
+			army={
+				large="GFX_portrait_chi_hu_zongnan"
+				small="GFX_idea_CHI_hu_zongnan"
+			}
+		}
+		corps_commander={
+			traits={ politically_connected }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	
+	GDG_gu_zhutong={
+		name=CHI_gu_zhutong
+		portraits={
+			army={
+				large="GFX_portrait_chi_gu_zhutong"
+				small="GFX_idea_CHI_gu_zhutong"
+			}
+		}
+		corps_commander={
+			traits={ career_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	
+	GDG_wei_lihuang={
+		name=CHI_wei_lihuang
+		portraits={
+			army={
+				large="GFX_portrait_chi_wei_lihuang"
+				small="GFX_idea_CHI_wei_lihuang"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	
+	GDG_fu_zuoyi={
+		name=CHI_fu_zuoyi
+		portraits={
+			army={
+				large="GFX_portrait_chi_fu_zuoyi"
+				small="GFX_idea_CHI_fu_zuoyi"
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	GDG_zhu_de={
+		name=PRC_zhu_de
+		portraits={
+			army={
+				large="GFX_portrait_prc_zhu_de"
+				small="GFX_idea_PRC_zhu_de"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = PRC_zhu_de
+			allowed = {
+				original_tag = PRC
+			}
+			traits = {
+				army_chief_morale_3
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			traits={ infantry_officer organizer }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+
+	GDG_chen_yi={
+		name=PRC_chen_yi
+		portraits={
+			army={
+				large="GFX_portrait_prc_chen_yi"
+				small=GFX_portrait_PRC_chen_yi_small
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = PRC_chen_yi
+			ledger = army
+			allowed = {
+				original_tag = PRC
+			}
+			traits = {
+				army_armored_2
+			}
+				cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+		corps_commander={
+			traits={ infantry_officer }
+			skill=3
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	GDG_peng_dehuai={
+		name=PRC_peng_dehuai
+		portraits={
+			army={
+				large="GFX_portrait_prc_peng_dehuai"
+				small=GFX_portrait_PRC_peng_dehuai_small
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer trait_mountaineer }
+			skill=4
+			attack_skill=3
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	GDG_lin_biao={
+		name=PRC_lin_biao
+		portraits={
+			army={
+				large=GFX_portrait_PRC_lin_biao
+				small=GFX_portrait_PRC_lin_biao_small
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer trait_mountaineer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	GDG_su_yu={
+		name=PRC_su_yu
+		portraits={
+			army={
+				small="GFX_idea_PRC_su_yu"
+				large="gfx/leaders/GDG/GFX_portrait_prc_su_yu.png"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer trait_mountaineer }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+		advisor={
+			slot = army_chief
+			idea_token = PRC_su_yu
+			allowed = {
+				original_tag = PRC
+			}
+			traits = {
+				army_chief_reform_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	GDG_liu_bocheng={
+		name=PRC_liu_bocheng
+		portraits={
+			army={
+				large="gfx/leaders/GDG/GFX_portrait_prc_liu_bocheng.png"
+				small="GFX_idea_PRC_liu_bocheng"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer trait_mountaineer }
+			skill=2
+			attack_skill=4
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+		advisor={
+			cost = 100
+
+			slot = theorist
+			idea_token = PRC_liu_bocheng
+			ledger = army
+			allowed = {
+				original_tag = PRC
+			}
+
+			traits = {
+				military_theorist
+			}
+		}
+	}
+	GDG_deng_yanda={
+		name=GDG_deng_yanda
+		portraits={
+			army={
+				large="gfx/leaders/GDG/GFX_portrait_prc_deng_yanda.png"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	GDG_chen_jitang={
+		name=CHI_chen_jitang
+		portraits={
+			army={
+				large="gfx/leaders/GDG/GFX_portrait_GDG_chen_jitang.png"
+				small="GFX_idea_generic_army_asia_5"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+		advisor={
+			slot = army_chief
+			idea_token = CHI_chen_jitang
+			allowed = {
+				original_tag = GDG
+			}
+			traits = {
+				army_chief_organizational_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	GDG_li_zongren={
+		name = CHI_li_zongren
+		portraits={
+			civilian={
+				large="gfx/leaders/GXC/Portrait_Guanxi_Clique_Li_Zongren.png"
+			}
+			army={
+				small=GFX_portrait_GXC_li_zongren_small
+				large="gfx/leaders/GXC/Portrait_Guanxi_Clique_Li_Zongren.png"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+		advisor={	
+			slot = army_chief
+			idea_token = CHI_li_zongren
+			allowed = {
+				original_tag = GDG
+			}
+			traits = {
+				army_chief_defensive_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	GDG_he_yingqin={
+		name=CHI_he_yingqin
+		portraits={
+			army={
+				large="gfx/leaders/GDG/GFX_portrait_he_yingqin.png"
+				small="GFX_idea_CHI_he_yingqin"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+		advisor={	
+			slot = army_chief
+			idea_token = CHI_he_yingqin
+			allowed = {
+				original_tag = GDG
+			}
+			traits = {
+				army_chief_maneuver_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+}

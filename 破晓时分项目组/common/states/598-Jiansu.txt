@@ -1,0 +1,37 @@
+
+state={
+	id=598
+	name="STATE_598"
+
+	history={
+		owner = WAX
+		add_core_of = WAX
+		add_core_of = GDG
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2
+
+		}
+		1938.10.25 = {
+			controller = JAP
+
+		}
+		victory_points = {
+			7025 15
+		}
+		victory_points = {
+			1076 5
+		}
+		victory_points = {
+			4031 5
+		}
+	}
+
+	provinces={
+		1029 1076 1121 4005 4031 4082 4123 4148 7025 7142 7181 7200 9953 9956 10095 11973 12055 12067 13144 
+	}
+	manpower=23669300
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

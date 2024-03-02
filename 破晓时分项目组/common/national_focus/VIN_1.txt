@@ -1,0 +1,1086 @@
+focus_tree = {
+	id = VIN_1
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = VIN
+		}
+	}
+	default = no
+	focus = {
+		id = geming_shengli
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 10.00
+		x = 18
+		y = 0
+		ai_will_do = {
+		}
+		available = {
+			has_war = no
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = xiaozhang_qianhui
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 5.00
+		prerequisite = {
+			focus = geming_shengli
+		}
+		mutually_exclusive = {
+			focus = yaoqing_xiaozhang
+		}
+		x = 15
+		y = 1
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			GDG = {
+				country_event = {
+				id = LKMT.8
+			}
+			}
+		}
+	}
+	focus = {
+		id = shehuizhuyi_jianshe
+		icon = GFX_goal_generic_soviet_construction
+		cost = 5.00
+		prerequisite = {
+			focus = xiaozhang_qianhui
+		}
+		x = 11
+		y = 2
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = {
+				shehuizhuyi_jianshe_ideas
+			}
+		}
+	}
+	focus = {
+		id = jiashen_hezuo
+		icon = GFX_goal_generic_national_unity
+		cost = 5.00
+		prerequisite = {
+			focus = xiaozhang_qianhui
+		}
+		x = 13
+		y = 2
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+				producer = GDG
+			}
+		}
+	}
+	focus = {
+		id = zhongyue_youyi
+		icon = GFX_goal_anschluss
+		cost = 5.00
+		prerequisite = {
+			focus = shehuizhuyi_jianshe
+		}
+		prerequisite = {
+			focus = jiashen_hezuo
+		}
+		x = 12
+		y = 3
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			GDG = {
+				add_to_faction = VIN
+			}
+		}
+	}
+	focus = {
+		id = zhongguo_yuanzhu
+		icon = GFX_goal_tripartite_pact
+		cost = 3.00
+		prerequisite = {
+			focus = zhongyue_youyi
+		}
+		x = 12
+		y = 4
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 200
+				producer = GDG
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment 
+				amount = 500
+				producer = GDG
+			}
+		}
+	}
+	focus = {
+		id = jinkou_ziyuan
+		icon = GFX_goal_generic_consumer_goods
+		cost = 5.00
+		prerequisite = {
+			focus = zhongguo_yuanzhu
+		}
+		x = 12
+		y = 5
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			671 = {
+				add_resource = {
+					type = steel
+					amount = 5
+				}
+			}
+		}
+	}
+	focus = {
+		id = lianzhou_henei_traffic
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = xiaozhang_qianhui
+		}
+		x = 15
+		y = 2
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			build_railway = {
+				path = { 4075 4119 1157 7093 10004 11926 1018 4023 10105 7039 }
+			}
+		}
+	}
+	focus = {
+		id = tudi_gaizao
+		icon = GFX_goal_demand_sudetenland
+		cost = 10.00
+		prerequisite = {
+			focus = xiaozhang_qianhui
+		}
+		x = 17
+		y = 2
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.2
+		}
+	}
+	focus = {
+		id = tudi_gaige
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		prerequisite = {
+			focus = lianzhou_henei_traffic
+		}
+		prerequisite = {
+			focus = tudi_gaizao
+		}
+		x = 16
+		y = 3
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			924 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			925 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			926 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			286 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}		
+			}
+		}
+	}
+	focus = {
+		id = hezuoshe_yundon
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		prerequisite = {
+			focus = tudi_gaige
+		}
+		x = 16
+		y = 4
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = {
+				hezuoshe_ideas
+			}
+		}
+	}
+	focus = {
+		id = guoyou_qiye
+		icon = GFX_goal_generic_construction
+		cost = 10.00
+		prerequisite = {
+			focus = hezuoshe_yundon
+		}
+		x = 14
+		y = 5
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = {
+				zichan_guoyouhua_ideas
+			}
+		}
+	}
+	focus = {
+		id = renmin_gongshe
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = hezuoshe_yundon
+		}
+		x = 16
+		y = 5
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = zichan_guoyouhua_ideas
+				add_idea = renmin_gongshe_ideas
+			}
+		}
+	}
+	focus = {
+		id = yaoqing_xiaozhang
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 5.00
+		prerequisite = {
+			focus = geming_shengli
+		}
+		mutually_exclusive = {
+			focus = xiaozhang_qianhui
+		}
+		x = 21
+		y = 1
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			set_politics = {
+				ruling_party = conservatism
+				elections_allowed = no
+			}
+		}
+	}
+	focus = {
+		id = fangzhao_zhongguo
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 5.00
+		prerequisite = {
+			focus = yaoqing_xiaozhang
+		}
+		x = 19
+		y = 2
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = {
+				zhongyue_hezuo_ideas
+			}
+		}
+	}
+	focus = {
+		id = qianhua_shituan
+		icon = GFX_goal_generic_major_alliance
+		cost = 5.00
+		prerequisite = {
+			focus = yaoqing_xiaozhang
+		}
+		x = 21
+		y = 2
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			GDG = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = fu_hua_shituan
+				}
+				
+			}
+			GDG = {
+				add_ai_strategy = {
+					type = alliance
+					id = ROOT
+					value = 1000
+				}
+				add_ai_strategy = {
+					type = protect
+					id = ROOT
+					value = 100
+				}
+			}
+		}
+	}
+	focus = {
+		id = fazhan_gaosu
+		icon = GFX_goal_generic_construct_military
+		cost = 10.00
+		prerequisite = {
+			focus = yaoqing_xiaozhang
+		}
+		x = 23
+		y = 2
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			671 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = gonggu_shengli_guoshi
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 5.00
+		prerequisite = {
+			focus = fangzhao_zhongguo
+		}
+		prerequisite = {
+			focus = qianhua_shituan
+		}
+		prerequisite = {
+			focus = fazhan_gaosu
+		}
+		x = 20
+		y = 3
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 60
+		}
+	}
+	focus = {
+		id = chengshi_jijian
+		icon = GFX_goal_generic_construction2
+		cost = 10.00
+		prerequisite = {
+			focus = fangzhao_zhongguo
+		}
+		prerequisite = {
+			focus = fazhan_gaosu
+		}
+		prerequisite = {
+			focus = qianhua_shituan
+		}
+		x = 18
+		y = 3
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			926 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			286 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+		}
+	}
+	focus = {
+		id = jianmian_dizu
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		prerequisite = {
+			focus = gonggu_shengli_guoshi
+		}
+		prerequisite = {
+			focus = chengshi_jijian
+		}
+		x = 19
+		y = 4
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = {
+				jianmian_dizu_ideas
+			}
+		}
+	}
+	focus = {
+		id = beifang_gongyefangan
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = qianhua_shituan
+		}
+		prerequisite = {
+			focus = fazhan_gaosu
+		}
+		x = 23
+		y = 3
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			671 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = gaige_shuishou
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = gonggu_shengli_guoshi
+		}
+		prerequisite = {
+			focus = beifang_gongyefangan
+		}
+		x = 21
+		y = 4
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_timed_idea = {
+				idea = gaigeshuishou_ideas
+				days = 1825
+			}
+		}
+	}
+	focus = {
+		id = yiren_zhuanzhi
+		icon = GFX_goal_generic_cavalry
+		cost = 5.00
+		prerequisite = {
+			focus = jianmian_dizu
+		}
+		prerequisite = {
+			focus = gaige_shuishou
+		}
+		x = 21
+		y = 5
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_popularity = { 
+				ideology = conservatism 
+				popularity = 0.2 
+			}
+			add_popularity = { 
+				ideology = communism
+				popularity = -0.2
+			}
+		}
+	}
+	focus = {
+		id = qingxi_fanduipai
+		icon = GFX_goal_demand_sudetenland
+		cost = 5.00
+		prerequisite = {
+			focus = beifang_gongyefangan
+		}
+		prerequisite = {
+			focus = gonggu_shengli_guoshi
+		}
+		x = 23
+		y = 4
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_popularity = { 
+				ideology = neutrality
+				popularity = -0.2
+			}
+			add_popularity = { 
+				ideology = communism
+				popularity = -0.2
+			}
+		}
+	}
+	focus = {
+		id = daya_fubai
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 5.00
+		prerequisite = {
+			focus = qingxi_fanduipai
+		}
+		prerequisite = {
+			focus = gaige_shuishou
+		}
+		x = 25
+		y = 5
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 100
+			add_command_power = 50
+		}
+	}
+	focus = {
+		id = nongmin_hezuoshe
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 5.00
+		prerequisite = {
+			focus = daya_fubai
+		}
+		prerequisite = {
+			focus = yiren_zhuanzhi
+		}
+		x = 23
+		y = 6
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = {
+				hezuoshe_ideas
+			}
+			swap_ideas = {
+				remove_idea = zhongyue_hezuo_ideas
+				add_idea = zhongyue_hezuo_1_ideas
+			}
+		}
+	}
+	focus = {
+		id = yinjin_jishu
+		icon = GFX_focus_research
+		cost = 5.00
+		prerequisite = {
+			focus = nongmin_hezuoshe
+		}
+		x = 21
+		y = 7
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = qiye_guoyouhua
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10.00
+		prerequisite = {
+			focus = nongmin_hezuoshe
+		}
+		x = 25
+		y = 7
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = {
+				zichan_guoyouhua_ideas
+			}
+		}
+	}
+	focus = {
+		id = yuenan_gongyejihua
+		icon = GFX_goal_generic_air_production
+		cost = 10.00
+		prerequisite = {
+			focus = qiye_guoyouhua
+		}
+		prerequisite = {
+			focus = yinjin_jishu
+		}
+		x = 23
+		y = 8
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = zhongyue_hezuo_1_ideas
+				add_idea = zhongyue_hezuo_2_ideas
+			}
+		}
+	}
+	focus = {
+		id = xigong_gongye
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5.00
+		prerequisite = {
+			focus = hezuoshe_yundon
+		}
+		x = 18
+		y = 5
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			286 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = wancheng_yiwu
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5.00
+		prerequisite = {
+			focus = jinkou_ziyuan
+		}
+		prerequisite = {
+			focus = guoyou_qiye
+		}
+		prerequisite = {
+			focus = renmin_gongshe
+		}
+		prerequisite = {
+			focus = xigong_gongye
+		}
+		x = 14
+		y = 6
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = {
+				first_five_years_plan_ideas
+			}
+		}
+	}
+	focus = {
+		id = zhengdun_junbei
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		prerequisite = {
+			focus = wancheng_yiwu
+		}
+		x = 12
+		y = 7
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_timed_idea = {
+				idea = zhengdun_junbei_ideas
+				days = 365
+			}
+		}
+	}
+	focus = {
+		id = yaoqing_jiaoguan
+		icon = GFX_goal_generic_army_artillery
+		cost = 5.00
+		prerequisite = {
+			focus = wancheng_yiwu
+		}
+		x = 16
+		y = 7
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			army_experience = 120
+		}
+	}
+	focus = {
+		id = tigao_guofang_kaizhi
+		icon = GFX_goal_generic_defence
+		cost = 5.00
+		prerequisite = {
+			focus = yaoqing_jiaoguan
+			focus = yuenan_gongyejihua
+			focus = zhengdun_junbei
+		}
+		x = 14
+		y = 9
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_war_support = 0.25
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = kuozhan_luning_gongchang
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5.00
+		prerequisite = {
+			focus = tigao_guofang_kaizhi
+		}
+		x = 12
+		y = 10
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			926 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = fazhan_huopao
+		icon = GFX_goal_generic_army_artillery2
+		cost = 5.00
+		prerequisite = {
+			focus = tigao_guofang_kaizhi
+		}
+		x = 16
+		y = 10
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = jundui_zhengzhi
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 5.00
+		prerequisite = {
+			focus = wancheng_yiwu
+			focus = yuenan_gongyejihua
+		}
+		x = 19
+		y = 9
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = {
+				jilv_yanming_de_jundui_ideas
+			}
+		}
+	}
+	focus = {
+		id = daji_jundui_fubai
+		icon = GFX_goal_generic_build_tank
+		cost = 5.00
+		prerequisite = {
+			focus = jundui_zhengzhi
+		}
+		x = 19
+		y = 10
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_command_power = 100
+		}
+	}
+	focus = {
+		id = fazhan_jixiebudui
+		icon = GFX_goal_generic_army_motorized
+		cost = 5.00
+		prerequisite = {
+			focus = fazhan_huopao
+		}
+		prerequisite = {
+			focus = daji_jundui_fubai
+		}
+		x = 16
+		y = 11
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = motorized_equipment
+			}
+			
+		}
+	}
+	focus = {
+		id = tuozhan_shunhua_gangkou
+		icon = GFX_goal_generic_build_navy
+		cost = 5.00
+		prerequisite = {
+			focus = kuozhan_luning_gongchang
+		}
+		x = 12
+		y = 11
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			928 = {
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					province = 10137
+				}
+			}
+		}
+	}
+	focus = {
+		id = maixiang_xinjingji
+		icon = GFX_goal_generic_consumer_goods
+		cost = 5.00
+		prerequisite = {
+			focus = tuozhan_shunhua_gangkou
+		}
+		prerequisite = {
+			focus = fazhan_jixiebudui
+		}
+		x = 14
+		y = 12
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_research_slot = 1
+			add_political_power = 150
+		}
+	}
+}

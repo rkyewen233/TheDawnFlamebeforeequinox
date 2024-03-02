@@ -1,0 +1,76 @@
+FR1	= "countries/fr1.txt"
+
+# -----------------------
+# Britain
+# -----------------------
+FK1 = "countries/french-cornwall.txt"
+HSW = "countries/Yuandong.txt"
+
+# ————————————————————————
+# 殖民地&殖民地衍生国
+# ————————————————————————
+
+FC1 = "countries/french_africa_forces.txt"
+FC2 = "countries/french_gabon.txt"
+FC3 = "countries/french_guinea_union.txt"
+FC4 = "countries/french_madagascar.txt"
+FC5 = "countries/french_cameron.txt"
+FC6 = "countries/french_smalialand.txt"
+FC7 = "countries/french_western_africa_confederation.txt"
+FC8 = "countries/french_senegal.txt"
+FC9 = "countries/french_tunisia.txt"
+F10 = "countries/french_algeria.txt"
+F11 = "countries/french_indochina.txt"
+F12 = "countries/french_rhine.txt"
+F13 = "countries/french_middle_east.txt"
+F14 = "countries/french_hindustan.txt"
+F15 = "countries/french_siek.txt"
+
+AL1 = "countries/albania_domination.txt"
+
+ASY = "countries/assyrie.txt"
+
+CMG = "countries/military_government_canada.txt"
+CM1 = "countries/newfoundland_and_labrutor.txt"
+CM2 = "countries/nova_scotia.txt"
+CM3 = "countries/provincia_de_quebec.txt"
+CM4 = "countries/north_west_colonial_government.txt"
+
+# ————————————————————————
+# 意大利
+# ————————————————————————
+
+IT1 = "countries/lumbady.txt"
+
+# ————————————————————————
+# 巴尔干
+# ————————————————————————
+
+PRR = "countries/peoplesrepublicofromania.txt"
+RM1 = "countries/rom_banat.txt"
+RM2 = "countries/free_banat.txt"
+RM3 = "countries/free_denesteria.txt"
+RM4 = "countries/rom_denesteria.txt"
+RM5 = "countries/prr_denesteria.txt"
+RM6 = "countries/dobruga_gov.txt"
+
+# ————————————————————————
+# 伊比利亚
+# ————————————————————————
+
+SAA = "countries/spain_arbeiter_army.txt"
+
+# ————————————————————————
+# 美洲
+# ————————————————————————
+
+LOU = "countries/louisanna.txt"
+RDT = "countries/republique_de_tejas.txt"
+CMC = "countries/california_mineral_campany.txt"
+FPE = "countries/free_port_of_eregone.txt"
+
+# ————————————————————————
+# 北亚&中亚
+# ————————————————————————
+
+R01 = "countries/siberia.txt"

@@ -1,0 +1,71 @@
+ideas = {
+    country = {
+        TUR_national_front = { #国民阵线
+            name = TUR_national_front_name
+            picture = ENG_idea_29
+            allowed = { always = yes }
+            modifier = {
+                political_power_factor = -0.15
+                stability_factor = -0.20
+                war_support_factor = -0.10
+                political_advisor_cost_factor = 0.25
+                conservatism_group_drift = 0.02
+                cooperatism_drift = 0.02
+                authority_socialism_drift = 0.02
+            }
+        }
+        TUR_westasia_weak_man = { #西亚卒夫
+            name = TUR_westasia_weak_man_name
+            picture = ENG_idea_29
+            allowed = { always = yes }
+            modifier = {
+                political_power_factor = -0.10
+                production_factory_efficiency_gain_factor = -0.10
+                production_factory_max_efficiency_factor = -0.10
+            }
+        }
+        TUR_near_mordernize_army = { #近现代军队
+            name = TUR_near_mordernize_army_name
+            picture = ENG_idea_29
+            allowed = { always = yes }
+            modifier = {
+                army_attack_factor = 0.05
+                army_defence_factor = 0.05
+                army_core_defence_factor = 0.10
+                max_dig_in = 5.0
+            }
+        }
+        TUR_second_tanzimat = { #第二次“坦齐马特”
+            name = TUR_second_tanzimat_name
+            picture = ENG_idea_29
+            allowed = { always = yes }
+            modifier = {
+                local_building_slots_factor = 0.15
+                production_speed_buildings_factor = 0.10
+                production_speed_industrial_complex_factor = 0.10
+                production_factory_efficiency_gain_factor = 0.15
+            }
+        }
+        TUR_fragile_politics = { #政治裂痕
+            name = TUR_fragile_politics_name
+            picture = ENG_idea_29
+            allowed = { always = yes }
+            modifier = {
+                political_power_gain = -0.15
+                stability_factor = -0.10
+                economy_cost_factor = 0.25
+                libertism_drift = -0.03
+                absolutism_drift = -0.03
+            }
+        }
+        TUR_great_position_of_diplo = { #外交形势大好
+            name = TUR_great_position_of_diplo_name
+            picture = ENG_idea_29
+            allowed = { always = yes }
+            modifier = {
+                political_power_gain = 0.35
+                opinion_gain_monthly_factor = 0.20
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+ideas = {
+	country = {
+        IBE_unstblized_portugal = {
+            name = IBE_unstblized_portugal_name
+            picture = ENG_idea_7
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.05
+                war_support_factor = -0.1
+            }
+        }
+    }
+}

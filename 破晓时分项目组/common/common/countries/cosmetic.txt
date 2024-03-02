@@ -1,0 +1,4 @@
+POLITCOM = {
+    color = rgb { 117 21 57 }
+    color_ui = rgb { 117 21 57 }
+}

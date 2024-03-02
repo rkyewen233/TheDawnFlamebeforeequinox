@@ -1,0 +1,253 @@
+focus_tree = {
+	id = Polish_temporary_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = POL
+		}
+	}
+	default = no
+	focus = {
+		id = POL_0
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 125
+		y = 1
+
+	}
+	focus = {
+		id = POL_8
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 127
+		y = 4
+
+	}
+	focus = {
+		id = POL_1
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = POL_0
+		}
+		x = 123
+		y = 2
+
+	}
+	focus = {
+		id = POL_2
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = POL_1
+		}
+		x = 122
+		y = 3
+
+	}
+	focus = {
+		id = POL_3
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = POL_1
+		}
+		x = 124
+		y = 3
+
+	}
+	focus = {
+		id = POL_9
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = POL_3
+		}
+		prerequisite = {
+			focus = POL_2
+		}
+		x = 123
+		y = 4
+
+	}
+	focus = {
+		id = POL_4
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = POL_0
+		}
+		x = 125
+		y = 2
+
+	}
+	focus = {
+		id = POL_13
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = POL_8
+		}
+		x = 127
+		y = 5
+
+	}
+	focus = {
+		id = POL_14
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = POL_13
+		}
+		mutually_exclusive = {
+			focus = POL_15
+		}
+		x = 126
+		y = 6
+
+	}
+	focus = {
+		id = POL_5
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = POL_0
+		}
+		x = 127
+		y = 2
+
+	}
+	focus = {
+		id = POL_6
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = POL_5
+		}
+		x = 127
+		y = 3
+
+	}
+	focus = {
+		id = POL_7
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = POL_4
+		}
+		prerequisite = {
+			focus = POL_3
+		}
+		prerequisite = {
+			focus = POL_2
+		}
+		prerequisite = {
+			focus = POL_6
+		}
+		x = 125
+		y = 4
+
+	}
+	focus = {
+		id = POL_10
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = POL_7
+		}
+		prerequisite = {
+			focus = POL_8
+		}
+		prerequisite = {
+			focus = POL_9
+		}
+		x = 122
+		y = 5
+
+	}
+	focus = {
+		id = POL_17
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = POL_7
+		}
+		prerequisite = {
+			focus = POL_9
+		}
+		x = 124
+		y = 5
+
+	}
+	focus = {
+		id = POL_11
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = POL_10
+		}
+		x = 122
+		y = 6
+
+	}
+	focus = {
+		id = POL_12
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = POL_11
+		}
+		x = 122
+		y = 7
+
+	}
+	focus = {
+		id = POL_15
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = POL_13
+		}
+		mutually_exclusive = {
+			focus = POL_14
+		}
+		x = 128
+		y = 6
+
+	}
+	focus = {
+		id = POL_16
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = POL_15
+			focus = POL_14
+		}
+		x = 127
+		y = 7
+
+	}
+	focus = {
+		id = POL_18
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = POL_17
+		}
+		x = 124
+		y = 6
+
+	}
+	focus = {
+		id = POL_19
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = POL_18
+		}
+		x = 124
+		y = 7
+
+	}
+}

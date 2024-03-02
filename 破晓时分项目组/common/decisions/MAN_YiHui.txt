@@ -1,0 +1,143 @@
+MAN_YiHui_categories = {
+	gongye = {
+        cost = 20
+        visible = {
+            
+        }
+        available = {
+            industrial_complex > 5
+        }
+        fire_only_once = no
+        days_remove = 30
+        modifier = { #持续时间内的效果
+            industrial_capacity_factory = -0.5
+            consumer_goods_factor = 0.05
+		}
+        remove_effect = {
+			random_owned_state = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+				}
+            }
+        }
+    }
+    JunDuiGaiGe = {
+        cost = 20
+        visible = {
+            
+        }
+        available = {
+            industrial_complex > 0
+        }
+        fire_only_once = yes
+        days_remove = 70
+        modifier = { #持续时间内的效果
+        consumer_goods_factor = 0.05
+		}
+        remove_effect = {
+            swap_ideas = {
+                remove_idea = jiushidai_de_jundui_MAN_ideas
+                add_idea = jiushidai_de_jundui1_MAN_ideas
+            }
+			set_country_flag = army
+        }
+    }
+    JunDuiGaiGe1 = {
+        cost = 20
+        visible = {
+            has_country_flag = ARMY111
+        }
+        available = {
+            industrial_complex > 0
+            has_country_flag = ARMY111
+        }
+        fire_only_once = yes
+        days_remove = 35
+        modifier = { #持续时间内的效果
+        consumer_goods_factor = 0.1
+		}
+        remove_effect = {
+            add_ideas = xianjin_dejundui_MAN_ideas
+			set_country_flag = army1
+        }
+    }
+    JunDuiGaiGe2 = {
+        cost = 20
+        visible = {
+            has_country_flag = army1
+        }
+        available = {
+            industrial_complex > 0 
+            has_country_flag = army1
+        }
+        fire_only_once = yes
+        days_remove = 70
+        modifier = { #持续时间内的效果
+        consumer_goods_factor = 0.1
+		}
+        remove_effect = {
+            swap_ideas = {
+                remove_idea = xianjin_dejundui_MAN_ideas
+                add_idea = xianjin_1_dejundui_MAN_ideas
+            }
+			set_country_flag = army2
+        }
+    }
+    JunDuiGaiGe3 = {
+        cost = 20
+        visible = {
+            has_country_flag = army2
+        }
+        available = {
+            industrial_complex > 0 
+            has_country_flag = army2
+        }
+        fire_only_once = yes
+        days_remove = 140
+        modifier = { #持续时间内的效果
+        consumer_goods_factor = 0.1
+		}
+        remove_effect = {
+            swap_ideas = {
+                remove_idea = xianjin_1_dejundui_MAN_ideas
+                add_idea = xianjin_2_dejundui_MAN_ideas
+            }
+        }
+    }
+    South = {
+        cost = 50
+        visible = {
+            has_country_flag = South
+        }
+        fire_only_once = yes
+        days_remove = 30
+        modifier = { #持续时间内的效果
+        war_support_weekly = 0.05
+        stability_weekly = -0.05
+		}
+        remove_effect = {
+            set_country_flag = MAN_flag_SOUTH
+            add_war_support = 0.05
+            add_stability = -0.1
+        }
+    }
+    Xiaochufubai = {
+        cost = 50
+        fire_only_once = yes
+        days_remove = 30
+        modifier = {
+            consumer_goods_factor = 0.3
+        }
+        remove_effect = {
+            set_country_flag = Fubai
+            swap_ideas = {
+                remove_idea = fubai_dezhengfu_MAN_ideas
+                add_idea = fubai_dezhengfu_1_MAN_ideas
+            }
+            add_political_power = 25
+        }
+    }
+}

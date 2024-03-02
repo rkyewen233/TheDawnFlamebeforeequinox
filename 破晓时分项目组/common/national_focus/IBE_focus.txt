@@ -1,0 +1,1280 @@
+focus_tree = {
+	id = IBE_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SPR
+		}
+	}
+	default = no
+
+	focus = {
+		id = IBE_solve_austurias_problem
+		icon = GFX_spa_1
+		cost = 1.00
+		x = 35
+		y = 0
+		cancelable = no
+		bypass = {
+			NAV = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			declare_war_on = {
+				target = NAV
+				type = annex_everything
+			}
+			hidden_effect = {
+				news_event = {
+					id = Dawn_event_news.2
+				}
+				country_event = {
+					id = SPR.1
+					days = 10
+				}
+			}
+		}
+	}
+    focus = {
+		id = IBE_increase_attack_force
+		icon = GFX_spa_2
+		cost = 3.00
+		prerequisite = {
+			focus = IBE_solve_austurias_problem
+		}
+		bypass = {
+			NAV = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = SPR_tooltip_1
+			hidden_effect = {
+				load_oob = "SPR_fight_1"
+			}
+		}
+		x = 31
+		y = 1
+
+	}
+	focus = {
+		id = IBE_expansion_zhandouxulie
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = IBE_solve_austurias_problem
+		}
+		bypass = {
+			NAV = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = SPR_tooltip_2
+			hidden_effect = {
+				load_oob = "SPR_fight_2"
+			}
+		}
+		x = 25
+		y = 1
+
+	}
+	focus = {
+		id = IBE_protect_madrid
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = IBE_solve_austurias_problem
+		}
+		bypass = {
+			NAV = {
+				exists = no
+			}
+		}
+		cancelable = no
+		available = {
+			41 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = SPR_tooltip_3
+				NAV = {
+					OR = {
+						controls_province = 9827
+						controls_province = 9846
+						controls_province = 3820
+						controls_province = 13227
+						controls_province = 11806
+						controls_province = 6841
+						controls_province = 6993
+						controls_province = 3858
+						controls_province = 9852
+						controls_province = 9757
+						controls_province = 11863
+						controls_province = 13229
+						controls_province = 9881
+						controls_province = 6948
+						controls_province = 985
+						controls_province = 11780
+						controls_province = 9917
+						controls_province = 11756
+						controls_province = 794
+						controls_province = 3874
+					}
+				}
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = SPR_tooltip_2
+			hidden_effect = {
+				load_oob = "SPR_fight_2"
+			}
+		}
+		x = 45
+		y = 1
+
+	}
+	focus = {
+		id = IBE_madrid_army
+		icon = GFX_goal_unknown
+		cost = 1.5
+		prerequisite = {
+			focus = IBE_protect_madrid
+		}
+		bypass = {
+			NAV = {
+				exists = no
+			}
+		}
+		cancelable = no
+		available = {
+			41 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = SPR_tooltip_3
+				NAV = {
+					OR = {
+						controls_province = 9827
+						controls_province = 9846
+						controls_province = 3820
+						controls_province = 13227
+						controls_province = 11806
+						controls_province = 6841
+						controls_province = 6993
+						controls_province = 3858
+						controls_province = 9852
+						controls_province = 9757
+						controls_province = 11863
+						controls_province = 13229
+						controls_province = 9881
+						controls_province = 6948
+						controls_province = 985
+						controls_province = 11780
+						controls_province = 9917
+						controls_province = 11756
+						controls_province = 794
+						controls_province = 3874
+					}
+				}
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = SPR_tooltip_4
+			hidden_effect = {
+				load_oob = "SPR_fight_3"
+			}
+		}
+		x = 45
+		y = 2
+
+	}
+	focus = {
+		id = IBE_minbing_budui
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = IBE_expansion_zhandouxulie
+		}
+		bypass = {
+			NAV = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			add_manpower = 30000
+		}
+		x = 25
+		y = 2
+
+	}
+	focus = {
+		id = IBE_increase_attack_force_2
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = IBE_publice_monarchism
+			focus = IBE_assasinate_revolutioners
+		}
+		prerequisite = {
+			focus = IBE_produce_more
+		}
+		prerequisite = {
+			focus = IBE_buy_gun
+		}
+		prerequisite = {
+			focus = IBE_minbing_budui
+		}
+		bypass = {
+			NAV = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = SPR_tooltip_1
+			hidden_effect = {
+				load_oob = "SPR_fight_1"
+			}
+		}
+		x = 25
+		y = 3
+
+	}
+	focus = {
+		id = IBE_produce_more
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = IBE_expansion_zhandouxulie
+		}
+		bypass = {
+			NAV = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 500
+				producer = IBE
+			}
+		}
+		x = 23
+		y = 2
+
+	}
+	focus = {
+		id = IBE_buy_gun
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = IBE_expansion_zhandouxulie
+		}
+		bypass = {
+			NAV = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2500
+				producer = FRA
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 500
+				producer = ITA
+			}
+			add_timed_idea = {
+				idea = IBE_5_factory
+				days = 180
+			}
+		}
+		x = 27
+		y = 2
+
+	}
+	focus = {
+		id = IBE_publice_monarchism
+		icon = GFX_spa_3
+		cost = 2.00
+		prerequisite = {
+			focus = IBE_increase_attack_force
+		}
+		bypass = {
+			NAV = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = IBE_weak_army
+				add_idea = IBE_weak_army_2
+			}
+			NAV = {
+				add_popularity = {
+					ideology = monarchism
+					popularity = 0.2
+				}
+			}
+			add_popularity = {
+				ideology = monarchism
+				popularity = 0.1
+			}
+		}
+		x = 29
+		y = 2
+
+	}
+	focus = {
+		id = IBE_another_victorious
+		icon = GFX_spa_7
+		cost = 3.00
+		cancelable = no
+		prerequisite = {
+			focus = IBE_the_head_suddently_die
+		}
+		prerequisite = {
+			focus = IBE_remove_communism_form_root
+		}
+		prerequisite = {
+			focus = IBE_increase_attack_force_2
+		}
+		prerequisite = {
+			focus = IBE_madrid_army
+		}
+		allow_branch = {
+			
+		}
+		completion_reward = {
+			custom_effect_tooltip = SPR_tooltip_5
+			hidden_effect = {
+				remove_ideas = IBE_weak_army
+				remove_ideas = IBE_weak_army_2
+				remove_ideas = IBE_weak_army_3
+			}
+		}
+		x = 34
+		y = 4
+
+	}
+    focus = {
+		id = IBE_assasinate_revolutioners
+		icon = GFX_spa_4
+		cost = 1.00
+		prerequisite = {
+			focus = IBE_increase_attack_force
+		}
+		bypass = {
+			NAV = {
+				exists = no
+			}
+		}
+		available = {
+			has_completed_focus = IBE_publice_monarchism
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = IBE_weak_army_2
+				add_idea = IBE_weak_army_3
+			}
+			NAV = {
+				add_political_power = -50
+				add_stability = -0.2
+				add_war_support = -0.1
+			}
+			add_political_power = 10
+			add_popularity = {
+				ideology = radical_socialism
+				popularity = -0.01
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.01
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.01
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.01
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.01
+			}
+			add_popularity = {
+				ideology = monarchism
+				popularity = 0.01
+			}
+		}
+		x = 33
+		y = 2
+
+	}
+	focus = {
+		id = IBE_the_head_suddently_die
+		icon = GFX_spa_5
+		cost = 2.00
+		prerequisite = {
+			focus = IBE_assasinate_revolutioners
+		}
+		prerequisite = {
+			focus = IBE_publice_monarchism
+		}
+		bypass = {
+			NAV = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			NAV = {
+				add_war_support = -0.2
+				add_popularity = {
+					ideology = monarchism
+					popularity = 0.2
+				}
+			}
+			add_command_power = 50
+			add_political_power = 50
+			add_war_support = 0.1
+		}
+		x = 31
+		y = 3
+
+	}
+    focus = {
+		id = IBE_break_the_back_of_raw_dog
+		icon = GFX_spa_9
+		cost = 2.00
+		prerequisite = {
+			focus = IBE_solve_austurias_problem
+		}
+		available = {
+			has_completed_focus = IBE_the_head_suddently_die
+			NAV = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			790 = {
+				remove_core = NAV
+				add_manpower = -1000
+			}
+			792 = {
+				remove_core = NAV
+				add_manpower = -1000
+			}
+			add_stability = 0.1
+		}
+		x = 39
+		y = 1
+
+	}
+	focus = {
+		id = IBE_remove_communism_form_root
+		icon = GFX_spa_8
+		cost = 3.00
+		prerequisite = {
+			focus = IBE_break_the_back_of_raw_dog
+		}
+		available = {
+			has_completed_focus = IBE_the_head_suddently_die
+			NAV = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = radical_socialism
+				popularity = -0.2
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.2
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.2
+			}
+			add_stability = 0.1
+		}
+		x = 39
+		y = 2
+
+	}
+	
+	focus = {
+		id = IBE_remove_jingjineige
+		icon = GFX_spa_6
+		cost = 1.50
+		x = 35
+		y = 6
+		available = {
+			has_completed_focus = IBE_another_victorious
+		}
+		cancelable = no
+
+	}
+	focus = {
+		id = IBE_end_of_daxiaotiao
+		icon = GFX_goal_unknown
+		cost = 3.00
+		x = 35
+		y = 18
+		available = {
+			has_completed_focus = IBE_form_new_commeti
+		}
+	}
+	focus = {
+		id = IBE_franco
+		icon = GFX_goal_unknown
+		cost = 1.50
+		prerequisite = {
+			focus = IBE_remove_jingjineige
+		}
+		mutually_exclusive = {
+			focus = IBE_king
+		}
+		completion_reward = {
+			
+		}
+		x = 30
+		y = 7
+
+	}
+	focus = {
+		id = IBE_rule_of_franco
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_franco
+		}
+		x = 28
+		y = 8
+
+	}
+	focus = {
+		id = IBE_cathedual
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_rule_of_franco
+		}
+		x = 26
+		y = 9
+
+	}
+	focus = {
+		id = IBE_la_long_chang_qiang_dang
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_rule_of_franco
+		}
+		x = 30
+		y = 9
+
+	}
+	focus = {
+		id = IBE_at_spain
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = IBE_la_long_chang_qiang_dang
+		}
+		prerequisite = {
+			focus = IBE_cathedual
+		}
+		x = 28
+		y = 10
+
+	}
+	
+	focus = {
+		id = IBE_meet_Aolivala
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_at_spain
+		}
+		x = 29
+		y = 11
+
+	}
+	
+	focus = {
+		id = IBE_save_economics
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = IBE_end_of_daxiaotiao
+		}
+		x = 32
+		y = 19
+
+	}
+	focus = {
+		id = IBE_nationalization_the_campany
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = IBE_save_economics
+		}
+		mutually_exclusive = {
+			focus = IBE_econimic_zhuanjia
+		}
+		x = 34
+		y = 20
+
+	}
+	focus = {
+		id = IBE_help_industrial_company
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = IBE_end_of_daxiaotiao
+		}
+		x = 38
+		y = 19
+
+	}
+	focus = {
+		id = IBE_help_national_protection_industry
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = IBE_help_industrial_company
+		}
+		x = 36
+		y = 20
+
+	}
+	focus = {
+		id = IBE_gun_factory_of_king
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = IBE_help_national_protection_industry
+		}
+		x = 37
+		y = 21
+
+	}
+	focus = {
+		id = IBE_comtract_with_russia
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = IBE_help_national_protection_industry
+		}
+		x = 35
+		y = 21
+
+	}
+	focus = {
+		id = IBE_first_industry
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_gun_factory_of_king
+		}
+		prerequisite = {
+			focus = IBE_comtract_with_russia
+		}
+		x = 36
+		y = 22
+
+	}
+	
+	focus = {
+		id = IBE_modernization_agriculture
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_help_industrial_company
+		}
+		x = 40
+		y = 20
+
+	}
+	focus = {
+		id = IBE_not_agriculture_nation
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = IBE_modernization_agriculture
+		}
+		x = 39
+		y = 21
+
+	}
+	focus = {
+		id = IBE_king
+		icon = GFX_goal_unknown
+		cost = 1.50
+		prerequisite = {
+			focus = IBE_remove_jingjineige
+		}
+		mutually_exclusive = {
+			focus = IBE_franco
+		}
+		x = 40
+		y = 7
+
+	}
+	focus = {
+		id = IBE_AfonsoXIII
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_king
+		}
+		x = 42
+		y = 8
+
+	}
+	focus = {
+		id = IBE_meeting_with_portugal
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = IBE_AfonsoXIII
+		}
+		x = 40
+		y = 9
+
+	}
+	focus = {
+		id = IBE_remove_franco_form_government
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = IBE_AfonsoXIII
+		}
+		x = 44
+		y = 9
+
+	}
+	focus = {
+		id = IBE_meet_with_africa_squad
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_remove_franco_form_government
+		}
+		prerequisite = {
+			focus = IBE_meeting_with_portugal
+		}
+		x = 42
+		y = 10
+
+	}
+	focus = {
+		id = IBE_assasinate_aolivala
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_meet_with_africa_squad
+		}
+		x = 41
+		y = 11
+
+	}
+	focus = {
+		id = IBE_form_new_commeti
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_king
+			focus = IBE_franco
+		}
+		x = 35
+		y = 8
+
+	}
+	focus = {
+		id = IBE_shiquanneige
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_form_new_commeti
+		}
+		mutually_exclusive = {
+			focus = IBE_xuquanneige
+		}
+		x = 33
+		y = 9
+
+	}
+	focus = {
+		id = IBE_xuquanneige
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_form_new_commeti
+		}
+		mutually_exclusive = {
+			focus = IBE_shiquanneige
+		}
+		x = 37
+		y = 9
+
+	}
+	focus = {
+		id = IBE_rule_commend
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = IBE_shiquanneige
+		}
+		x = 32
+		y = 10
+
+	}
+	focus = {
+		id = IBE_as_a_advisor
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = IBE_xuquanneige
+		}
+		x = 38
+		y = 10
+
+	}
+	focus = {
+		id = IBE_new_neige
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_as_a_advisor
+			focus = IBE_rule_commend
+		}
+		x = 35
+		y = 11
+
+	}
+	focus = {
+		id = IBE_new_tomorrow
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_assasinate_aolivala
+			focus = IBE_meet_Aolivala
+		}
+		prerequisite = {
+			focus = IBE_new_neige
+		}
+		x = 35
+		y = 12
+
+	}
+	focus = {
+		id = IBE_improve_diplolmacy_policy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_new_tomorrow
+		}
+		x = 21
+		y = 13
+
+	}
+	focus = {
+		id = IBE_reannounciation_colonism
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_new_tomorrow
+		}
+		x = 50
+		y = 13
+
+	}
+	focus = {
+		id = IBE_FRA
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_improve_diplolmacy_policy
+		}
+		mutually_exclusive = {
+			focus = IBE_RUS
+		}
+		x = 14
+		y = 14
+
+	}
+	focus = {
+		id = IBE_RUS
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_improve_diplolmacy_policy
+		}
+		mutually_exclusive = {
+			focus = IBE_FRA
+		}
+		x = 28
+		y = 14
+
+	}
+	focus = {
+		id = IBE_again
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_FRA
+		}
+		x = 17
+		y = 15
+
+	}
+	focus = {
+		id = IBE_victory
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_RUS
+		}
+		x = 25
+		y = 15
+
+	}
+	focus = {
+		id = IBE_join_fraction
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_RUS
+			focus = IBE_FRA
+		}
+		x = 21
+		y = 15
+
+	}
+	focus = {
+		id = IBE_refuse_isolationism
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_victory
+			focus = IBE_again
+		}
+		prerequisite = {
+			focus = IBE_join_fraction
+		}
+		x = 21
+		y = 16
+
+	}
+	focus = {
+		id = IBE_renewable
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = IBE_refuse_isolationism
+		}
+		x = 19
+		y = 17
+
+	}
+	focus = {
+		id = IBE_join_viena_system
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = IBE_refuse_isolationism
+		}
+		x = 23
+		y = 17
+
+	}
+	focus = {
+		id = IBE_tsablize_portugal
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_renewable
+		}
+		x = 20
+		y = 18
+
+	}
+	focus = {
+		id = IBE_finish_diplomacy_system
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_renewable
+		}
+		x = 17
+		y = 18
+
+	}
+	focus = {
+		id = IBE_international_fengong
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_join_viena_system
+		}
+		x = 22
+		y = 18
+
+	}
+	focus = {
+		id = IBE_land_of_sun_set
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_join_viena_system
+			focus = IBE_renewable
+		}
+		x = 25
+		y = 18
+
+	}
+	focus = {
+		id = IBE_diplolacy_of_strong
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_tsablize_portugal
+		}
+		prerequisite = {
+			focus = IBE_finish_diplomacy_system
+		}
+		prerequisite = {
+			focus = IBE_international_fengong
+		}
+		prerequisite = {
+			focus = IBE_land_of_sun_set
+		}
+		x = 21
+		y = 20
+
+	}
+	focus = {
+		id = IBE_not_welcome_to_saracha
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_reannounciation_colonism
+			focus = IBE_improve_diplolmacy_policy
+		}
+		mutually_exclusive = {
+			focus = IBE_welcome_saracha
+		}
+		x = 33
+		y = 14
+
+	}
+	focus = {
+		id = IBE_welcome_saracha
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_improve_diplolmacy_policy
+			focus = IBE_reannounciation_colonism
+		}
+		mutually_exclusive = {
+			focus = IBE_not_welcome_to_saracha
+		}
+		x = 30
+		y = 14
+
+	}
+	focus = {
+		id = IBE_self_domaniance_to_small_race
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_improve_diplolmacy_policy
+			focus = IBE_reannounciation_colonism
+		}
+		mutually_exclusive = {
+			focus = IBE_refuse_releasism
+		}
+		x = 37
+		y = 14
+
+	}
+	focus = {
+		id = IBE_refuse_releasism
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_reannounciation_colonism
+			focus = IBE_improve_diplolmacy_policy
+		}
+		mutually_exclusive = {
+			focus = IBE_self_domaniance_to_small_race
+		}
+		x = 40
+		y = 14
+
+	}
+	focus = {
+		id = IBE_to_future
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_self_domaniance_to_small_race
+			focus = IBE_refuse_releasism
+			focus = IBE_not_welcome_to_saracha
+			focus = IBE_welcome_saracha
+		}
+		x = 35
+		y = 15
+
+	}
+	focus = {
+		id = IBE_frend_of_confederation
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = IBE_help_industrial_company
+		}
+		x = 38
+		y = 20
+
+	}
+	focus = {
+		id = IBE_invetigate_industrial_complex
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = IBE_frend_of_confederation
+		}
+		x = 38
+		y = 22
+
+	}
+	focus = {
+		id = IBE_national_siggrate_factory
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = IBE_invetigate_industrial_complex
+		}
+		x = 37
+		y = 23
+
+	}
+	focus = {
+		id = IBE_machanic_factory_of_kingdom
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_invetigate_industrial_complex
+		}
+		x = 39
+		y = 23
+
+	}
+	focus = {
+		id = IBE_modern_agriculture
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = IBE_not_agriculture_nation
+		}
+		prerequisite = {
+			focus = IBE_stop_no_help_policy
+		}
+		x = 40
+		y = 22
+
+	}
+	focus = {
+		id = IBE_stop_no_help_policy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_modernization_agriculture
+		}
+		x = 41
+		y = 21
+
+	}
+	focus = {
+		id = IBE_help_tech
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = IBE_end_of_daxiaotiao
+		}
+		x = 35
+		y = 19
+
+	}
+	focus = {
+		id = IBE_econimic_zhuanjia
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = IBE_save_economics
+		}
+		mutually_exclusive = {
+			focus = IBE_nationalization_the_campany
+		}
+		x = 30
+		y = 20
+
+	}
+	focus = {
+		id = IBE_nationalization
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_nationalization_the_campany
+		}
+		x = 33
+		y = 21
+
+	}
+	focus = {
+		id = IBE_goes_to_free_economics
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_econimic_zhuanjia
+		}
+		x = 29
+		y = 21
+
+	}
+	focus = {
+		id = IBE_left_from_great_exhibition
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_nationalization_the_campany
+			focus = IBE_econimic_zhuanjia
+		}
+		x = 31
+		y = 21
+
+	}
+	focus = {
+		id = IBE_national_rebirth
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = IBE_nationalization
+			focus = IBE_goes_to_free_economics
+		}
+		prerequisite = {
+			focus = IBE_left_from_great_exhibition
+		}
+		x = 31
+		y = 22
+
+	}
+}

@@ -1,0 +1,20 @@
+#民族精神模板
+#注意事项：1.一个country里面可以塞至多三个模板
+
+ideas = {
+    country = { #髪兰西
+
+        FRA_eco_disaster_1 = {
+
+            name = XXXX
+
+            picture = XXXX
+
+            allowed = { always = yes }
+
+            modifier = {
+                
+			}
+		}
+	}
+}

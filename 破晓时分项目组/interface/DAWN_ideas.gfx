@@ -1,0 +1,39 @@
+spriteTypes = {	
+	
+	SpriteType = {
+		name = "GFX_idea_DAW_idea_1"
+		texturefile = "gfx/interface/goals/DAW_idea_1.png"			
+	}
+	SpriteType = {
+		name = "GFX_idea_DAW_idea_2"
+		texturefile = "gfx/interface/ideas/DAW_idea_2.png"			
+	}
+	SpriteType = {
+		name = "GFX_idea_DAW_idea_3"
+		texturefile = "gfx/interface/ideas/DAW_idea_3.png"			
+	}
+	SpriteType = {
+		name = "GFX_idea_DAW_idea_4"
+		texturefile = "gfx/interface/ideas/DAW_idea_4.png"			
+	}
+	SpriteType = {
+		name = "GFX_idea_DAW_idea_5"
+		texturefile = "gfx/interface/ideas/DAW_idea_5.png"			
+	}
+	SpriteType = {
+		name = "GFX_idea_DAW_idea_6"
+		texturefile = "gfx/interface/ideas/DAW_idea_6.png"			
+	}
+	SpriteType = {
+		name = "GFX_idea_DAW_idea_7"
+		texturefile = "gfx/interface/ideas/DAW_idea_7.png"			
+	}
+	SpriteType = {
+		name = "GFX_idea_DAW_idea_8"
+		texturefile = "gfx/interface/ideas/DAW_idea_8.png"			
+	}
+	SpriteType = {
+		name = "GFX_idea_DAW_idea_9"
+		texturefile = "gfx/interface/ideas/DAW_idea_9.png"			
+	}
+}

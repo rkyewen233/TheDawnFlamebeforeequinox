@@ -1,0 +1,2032 @@
+focus_tree = {
+	id = GDG_1
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			OR = {
+				tag = GDG
+			}
+		}
+	}
+	continuous_focus_position = { x = 55 y = 2000 }
+	default = no
+	focus = {
+		id = zhiyuan_yuemeng
+		icon = zhiyuan_yuemeng
+		cost = 5.00
+		x = 10
+		y = 5
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 40
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = {
+				id = yuemeng.1
+			}	
+			create_faction = EASTERNCOMMUNISMINTERNATIONNAL
+		}
+	}
+	focus = {
+		id = Sunism_1
+		icon = Sunism_1
+		cost = 5.00
+		x = 4
+		y = 0
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 100	
+		}
+	}
+	focus = {
+		id = sunism_4
+		icon = sunism_4
+		cost = 5.00
+		prerequisite = {
+			focus = Sunism_1
+		}
+		x = 2
+		y = 1
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_popularity = { 
+				ideology = fascism
+				popularity = -0.25
+			}
+		}
+	}
+	focus = {
+		id = sunism_2
+		icon = sunism_2
+		cost = 5.00
+		prerequisite = {
+			focus = Sunism_1
+		}
+		x = 4
+		y = 1
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.3
+		}
+	}
+	focus = {
+		id = sunism_5
+		icon = sunism_5
+		cost = 5.00
+		prerequisite = {
+			focus = sunism_4
+		}
+		prerequisite = {
+			focus = sunism_2
+		}
+		x = 2
+		y = 2
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.2
+			add_war_support = 0.3
+		}
+	}
+	focus = {
+		id = sunism_3
+		icon = sunism_3
+		cost = 5.00
+		prerequisite = {
+			focus = Sunism_1
+		}
+		x = 6
+		y = 1
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_popularity = { 
+				ideology = neutrality
+				popularity = -0.25
+			}
+		}
+	}
+	focus = {
+		id = sunism_6
+		icon = sunism_6
+		cost = 10.00
+		prerequisite = {
+			focus = sunism_3
+		}
+		prerequisite = {
+			focus = sunism_2
+		}
+		x = 6
+		y = 2
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			592 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			593 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = sunism_7
+		icon = sunism_7
+		cost = 5.00
+		prerequisite = {
+			focus = sunism_5
+		}
+		prerequisite = {
+			focus = sunism_6
+		}
+		x = 4
+		y = 3
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = {
+				random = 1 
+				id = LKMT.1
+			}
+		}
+	}
+	focus = {
+		id = sunism_8
+		icon = sunism_8
+		cost = 10.00
+		prerequisite = {
+			focus = sunism_7
+		}
+		mutually_exclusive = {
+			focus = sunism_9
+		}
+		x = 2
+		y = 4
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			592 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			593 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = sunism_9
+		icon = sunism_9
+		cost = 5.00
+		prerequisite = {
+			focus = sunism_7
+		}
+		mutually_exclusive = {
+			focus = sunism_8
+		}
+		x = 6
+		y = 4
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_war_support = 0.2
+			add_political_power = 45
+		}
+	}
+	focus = {
+		id = sunism_10
+		icon = sunism_10
+		cost = 10.00
+		prerequisite = {
+			focus = sunism_8
+			focus = sunism_9
+		}
+		x = 4
+		y = 5
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = {
+				id = LKMT.2
+			}
+		}
+	}
+	focus = {
+		id = sunism_13
+		icon = sunism_13
+		cost = 5.00
+		prerequisite = {
+			focus = sunism_10
+		}
+		x = 6
+		y = 6
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = bude_minxin_ideas
+				add_idea = bude_minxin_1_ideas
+			}
+		}
+	}
+	focus = {
+		id = sunism_12
+		icon = sunism_12
+		cost = 5.00
+		prerequisite = {
+			focus = sunism_10
+		}
+		x = 4
+		y = 6
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = luohou_dejundui_ideas
+				add_idea = luohou_1_dejundui_ideas
+			}
+		}
+	}
+	focus = {
+		id = sunism_14
+		icon = sunism_14
+		cost = 5.00
+		prerequisite = {
+			focus = sunism_13
+		}
+		prerequisite = {
+			focus = sunism_12
+		}
+		x = 7
+		y = 7
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = bude_minxin_1_ideas
+				add_idea = bude_minxin_2_ideas
+			}
+		}
+	}
+	focus = {
+		id = sunism_16
+		icon = sunism_16
+		cost = 10.00
+		prerequisite = {
+			focus = sunism_12
+		}
+		x = 3
+		y = 7
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_research_slot = 1
+			remove_ideas = {
+				wenmanglv_gao_ideas
+			}
+		}
+	}
+	focus = {
+		id = sunism_15
+		icon = sunism_15
+		cost = 10.00
+		prerequisite = {
+			focus = sunism_12
+		}
+		x = 5
+		y = 7
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = war_economy
+		}
+	}
+	focus = {
+		id = sunism_20
+		icon = sunism_20
+		cost = 10.00
+		prerequisite = {
+			focus = sunism_15
+		}
+		prerequisite = {
+			focus = sunism_14
+		}
+		x = 6
+		y = 8
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = guominsuzhi_ideas
+				add_idea = guominsuzhi_1_ideas
+			}
+		}
+	}
+	focus = {
+		id = sunism_24
+		icon = sunism_24
+		cost = 0.00
+		prerequisite = {
+			focus = sunism_20
+		}
+		x = 7
+		y = 9
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			remove_ideas = {
+				guominsuzhi_1_ideas
+			}
+		}
+	}
+	focus = {
+		id = sunism_25
+		icon = sunism_25
+		cost = 10.00
+		prerequisite = {
+			focus = sunism_24
+		}
+		x = 8
+		y = 10
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			remove_ideas = {
+				fubai_dezhengfu_2_ideas
+			}
+		}
+	}
+	focus = {
+		id = sunism_26
+		icon = sunism_26
+		cost = 10.00
+		prerequisite = {
+			focus = sunism_25
+		}
+		mutually_exclusive = {
+			focus = sunism_27
+		}
+		x = 6
+		y = 11
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = {
+				nongmin_zhichi_ideas
+			}
+		}
+	}
+	focus = {
+		id = sunism_27
+		icon = sunism_27
+		cost = 10.00
+		prerequisite = {
+			focus = sunism_25
+		}
+		mutually_exclusive = {
+			focus = sunism_26
+		}
+		x = 10
+		y = 11
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = {
+				jian_zu_ideas
+			}
+		}
+	}
+	focus = {
+		id = sunism_28
+		icon = sunism_28
+		cost = 5.00
+		prerequisite = {
+			focus = sunism_26
+			focus = sunism_27
+		}
+		x = 8
+		y = 12
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_popularity = { 
+				ideology = neutrality
+				popularity = -0.25
+			}
+			add_popularity = { 
+				ideology = fascism
+				popularity = -0.25
+			}
+			add_popularity = { 
+				ideology = democratic
+				popularity = -0.25
+			}
+		}
+	}
+	focus = {
+		id = sunism_29
+		icon = sunism_29
+		cost = 10.00
+		prerequisite = {
+			focus = sunism_28
+		}
+		x = 6
+		y = 13
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = {
+				fei_shui_ideas
+			}
+		}
+	}
+	focus = {
+		id = sunism_30
+		icon = sunism_30
+		cost = 10.00
+		prerequisite = {
+			focus = sunism_28
+		}
+		x = 10
+		y = 13
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = dui_tudi_zhengshui_ideas
+		}
+	}
+	focus = {
+		id = sunism_31
+		icon = sunism_31
+		cost = 10.00
+		prerequisite = {
+			focus = sunism_29
+		}
+		prerequisite = {
+			focus = sunism_30
+		}
+		x = 8
+		y = 14
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = {
+				xin_mian_mao_ideas
+			}
+			remove_ideas = {
+				luohou_1_dejundui_ideas
+			}
+		}
+	}
+	focus = {
+		id = sunism_32
+		icon = sunism_32
+		cost = 10.00
+		prerequisite = {
+			focus = sunism_24
+		}
+		x = 14
+		y = 10
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = {
+				tuanjie_gongren_ideas
+			}
+		}
+	}
+	focus = {
+		id = sunism_33
+		icon = sunism_33
+		cost = 5.00
+		prerequisite = {
+			focus = sunism_32
+		}
+		x = 12
+		y = 11
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = {
+				queli_gongnong_ideas
+			}
+		}
+	}
+	focus = {
+		id = sunism_34
+		icon = sunism_34
+		cost = 10.00
+		prerequisite = {
+			focus = sunism_32
+		}
+		x = 16
+		y = 11
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	focus = {
+		id = sunism_35
+		icon = sunism_35
+		cost = 3.00
+		prerequisite = {
+			focus = sunism_33
+		}
+		prerequisite = {
+			focus = sunism_34
+		}
+		x = 14
+		y = 12
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_popularity = { 
+				ideology = radical_socialism
+				popularity = 0.15
+			}
+		}
+	}
+	focus = {
+		id = sunism_36
+		icon = sunism_36
+		cost = 5.00
+		prerequisite = {
+			focus = sunism_35
+		}
+		prerequisite = {
+			focus = sunism_30
+		}
+		x = 14
+		y = 14
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_timed_idea = {
+				idea = puji_dupin_weihai_ideas
+				days = 182
+			}
+		}
+	}
+	focus = {
+		id = sunism_37
+		icon = sunism_37
+		cost = 5.00
+		prerequisite = {
+			focus = sunism_36
+		}
+		mutually_exclusive = {
+			focus = sunism_38
+		}
+		x = 12
+		y = 15
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = {
+				quanguo_jindu_ideas
+			}
+		}
+	}
+	focus = {
+		id = sunism_38
+		icon = sunism_38
+		cost = 5.00
+		prerequisite = {
+			focus = sunism_36
+		}
+		mutually_exclusive = {
+			focus = sunism_37
+		}
+		x = 16
+		y = 15
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = {
+				fubai_dezhengfu_1_ideas
+			}
+		}
+	}
+	focus = {
+		id = sunism_40
+		icon = sunism_40
+		cost = 10.00
+		prerequisite = {
+			focus = sunism_24
+		}
+		x = 21
+		y = 10
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			news_event = {
+				id = LKMT.999
+			}
+		}
+	}
+	focus = {
+		id = sunism_41
+		icon = sunism_41
+		cost = 5.00
+		prerequisite = {
+			focus = sunism_40
+		}
+		x = 18
+		y = 11
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			GXC = {
+				country_event = {
+					id = wtt_china.10
+				}
+			}
+			#add_country_leader_trait = 
+		}
+	}
+	focus = {
+		id = sunism_42
+		icon = sunism_42
+		cost = 5.00
+		prerequisite = {
+			focus = sunism_40
+		}
+		x = 21
+		y = 11
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			YUN = {
+				country_event = {
+					id = wtt_china.10
+				}
+			}
+		}
+	}
+	focus = {
+		id = sunism_43
+		icon = sunism_43
+		cost = 5.00
+		prerequisite = {
+			focus = sunism_40
+		}
+		x = 24
+		y = 11
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			NHH = {
+				country_event = {
+					id = wtt_china.10
+				}
+			}
+			XIX = {
+				country_event = {
+					id = wtt_china.10
+				}
+			}
+		}
+	}
+	focus = {
+		id = sunism_44
+		icon = sunism_44
+		cost = 10.00
+		prerequisite = {
+			focus = sunism_41
+		}
+		prerequisite = {
+			focus = sunism_42
+		}
+		prerequisite = {
+			focus = sunism_43
+		}
+		x = 21
+		y = 13
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			unlock_decision_category_tooltip = LKMT_North_War_categories
+			remove_ideas = {
+				beifa_shili_ideas
+			}
+		}
+	}
+	focus = {
+		id = sunism_45
+		icon = sunism_45
+		cost = 10.00
+		prerequisite = {
+			focus = sunism_44
+		}
+		x = 21
+		y = 14
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = tongYizhongGuo	
+				AND = {
+					owns_state = 622
+					owns_state = 744
+					owns_state = 746
+					owns_state = 621
+					owns_state = 615
+					owns_state = 614
+					owns_state = 607
+					owns_state = 597
+					owns_state = 611
+					owns_state = 608
+					owns_state = 609
+					owns_state = 743
+					owns_state = 609
+					owns_state = 612
+					owns_state = 610
+					owns_state = 716
+					owns_state = 745
+					owns_state = 328
+					owns_state = 717
+					owns_state = 714
+					owns_state = 761
+					owns_state = 715
+					owns_state = 598
+					owns_state = 613
+					owns_state = 606
+					owns_state = 749
+					owns_state = 596
+					owns_state = 595
+					owns_state = 600
+					owns_state = 620
+					owns_state = 602
+					owns_state = 750
+					owns_state = 748
+					owns_state = 603
+					owns_state = 599
+					owns_state = 593
+					owns_state = 592
+					owns_state = 594
+					owns_state = 591
+					owns_state = 603
+					owns_state = 748
+					owns_state = 325
+					owns_state = 747
+					owns_state = 751
+					owns_state = 752
+					owns_state = 605
+					owns_state = 753
+					owns_state = 751
+					owns_state = 752
+					owns_state = 754
+					owns_state = 603
+					owns_state = 755
+					owns_state = 756
+					owns_state = 616
+					owns_state = 909
+					owns_state = 910
+					owns_state = 911
+					owns_state = 912
+					owns_state = 913
+					owns_state = 914
+					owns_state = 915
+					owns_state = 916
+					owns_state = 917
+					owns_state = 918
+					owns_state = 919
+					owns_state = 920
+					owns_state = 921
+					owns_state = 922
+					owns_state = 923
+	
+				}
+			}
+			
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			news_event = {
+				id = LKMT.5
+			}
+			country_event = {
+				id = LKMT.6
+			}
+			set_cosmetic_tag = GDG_Republic_China
+		}
+	}
+	focus = {
+		id = sunism_46
+		icon = sunism_46
+		cost = 10.00
+		prerequisite = {
+			focus = sunism_45
+		}
+		x = 18
+		y = 15
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+			NOT = {
+				country_exists = MON
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			MON = {
+				country_event = {
+					id = wtt_china.10
+				}
+			}
+		}
+	}
+	focus = {
+		id = sunism_11
+		icon = sunism_11
+		cost = 5.00
+		prerequisite = {
+			focus = sunism_10
+		}
+		x = 2
+		y = 6
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = fubai_dezhengfu_1_ideas
+				add_idea = fubai_dezhengfu_2_ideas
+			}
+		}
+	}
+	focus = {
+		id = sunism_17
+		icon = sunism_17
+		cost = 5.00
+		prerequisite = {
+			focus = sunism_11
+		}
+		prerequisite = {
+			focus = sunism_12
+		}
+		x = 1
+		y = 7
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_war_support = 0.01
+			add_timed_idea = {
+				idea = linshi_yuefa_ideas
+				days = 365
+			}
+		}
+	}
+	focus = {
+		id = sunism_18
+		icon = sunism_18
+		cost = 10.00
+		prerequisite = {
+			focus = sunism_17
+		}
+		prerequisite = {
+			focus = sunism_16
+		}
+		x = 2
+		y = 8
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			593 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		
+	}
+	focus = {
+		id = sunism_19
+		icon = sunism_19
+		cost = 10.00
+		prerequisite = {
+			focus = sunism_16
+		}
+		prerequisite = {
+			focus = sunism_15
+		}
+		prerequisite = {
+			foucus = sunism_14
+		}
+		x = 4
+		y = 8
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			remove_ideas = {
+				bude_minxin_2_ideas
+			}
+		}
+	}
+	focus = {
+		id = sunism_21
+		icon = sunism_21
+		cost = 10.00
+		prerequisite = {
+			focus = sunism_19
+		}
+		x = 3
+		y = 9
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = sunism_22
+		icon = sunism_22
+		cost = 10.00
+		prerequisite = {
+			focus = sunism_19
+		}
+		x = 4
+		y = 10
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+				producer = FRA
+			}
+		}
+	}
+	focus = {
+		id = sunism_23
+		icon = sunism_23
+		cost = 5.00
+		prerequisite = {
+			focus = sunism_19
+		}
+		x = 5
+		y = 9
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			army_experience = 50
+		}
+	}
+	focus = {
+		id = sunism_39
+		icon = sunism_39
+		cost = 0.00
+		prerequisite = {
+			focus = sunism_38
+			focus = sunism_37
+		}
+		prerequisite = {
+			focus = sunism_31
+		}
+		x = 14
+		y = 16
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = {
+				renmin_juexing_ideas
+			}
+		}
+	}
+	focus = {
+		id = sunism_47
+		icon = sunism_47
+		cost = 10.00
+		prerequisite = {
+			focus = sunism_45
+		}
+		x = 24
+		y = 15
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			transfer_state = 729
+			transfer_state = 326
+			transfer_state = 728
+		}
+	}
+	focus = {
+		id = sunism_48
+		icon = sunism_48
+		cost = 10.00
+		prerequisite = {
+			focus = sunism_46
+		}
+		prerequisite = {
+			focus = sunism_47
+		}
+		x = 21
+		y = 16
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			news_event = {
+				id = LKMT.998
+			}
+		}
+	}
+	focus = {
+		id = iclkmt_1
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		x = 18
+		y = 0
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 50
+			}
+		}
+		available = {
+			has_completed_focus = sunism_45
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_timed_idea = {
+				idea = fazhan_minzu_gongye_ideas
+				days = 1500
+			}
+			swap_ideas = {
+				remove_idea = bei_kongzhi_de_jingji_ideas
+				add_idea = bei_kongzhi_de_jingji_1_ideas
+			}
+		}
+	}
+	focus = {
+		id = iclkmt_2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = iclkmt_1
+		}
+		x = 13
+		y = 1
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_ideas = jieFang_fuNv_laoDongli_ideas
+		}
+	}
+	focus = {
+		id = iclkmt_3
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = iclkmt_1
+		}
+		x = 17
+		y = 1
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_timed_idea = {
+				idea = kuoda_chanxian_ideas
+				days = 1825
+			}
+		}
+	}
+	focus = {
+		id = iclkmt_7
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = iclkmt_3
+		}
+		prerequisite = {
+			focus = iclkmt_2
+		}
+		x = 15
+		y = 2
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = jieFang_fuNv_laoDongli_ideas
+				add_idea = jiefangfunv_yundong_ideas
+			}
+		}
+	}
+	focus = {
+		id = iclkmt_9
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = iclkmt_7
+		}
+		x = 13
+		y = 3
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_ideas = baxiaoshi_gongzuo_ideas
+		}
+	}
+	focus = {
+		id = iclkmt_4
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = iclkmt_1
+		}
+		x = 19
+		y = 1
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			random_owned_state = {
+                limit = {
+                    arms_factory < 2
+                }
+				add_extra_state_shared_building_slots = 3
+                add_building_construction = {
+                    type = arms_factory
+                    level = 3
+                    instant_build = yes
+                }
+            }
+		}
+	}
+	focus = {
+		id = iclkmt_8
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = iclkmt_3
+		}
+		prerequisite = {
+			focus = iclkmt_4
+		}
+		x = 18
+		y = 2
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_timed_idea = {
+				idea = chinese_industry_plan_idea
+				days = 1825
+			}
+		}
+	}
+	focus = {
+		id = iclkmt_10
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = iclkmt_8
+		}
+		prerequisite = {
+			focus = iclkmt_7
+		}
+		x = 17
+		y = 3
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = chinese_industry_plan_idea
+				add_idea = chinese_industry_plan_1_idea
+			}
+		}
+	}
+	focus = {
+		id = iclkmt_14
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = iclkmt_10
+		}
+		prerequisite = {
+			focus = iclkmt_9
+		}
+		x = 15
+		y = 4
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+			industrial_complex > 30
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_offsite_building = { type = arms_factory level = 5 }
+			add_offsite_building = { type = industrial_complex level = 5 }
+		}
+	}
+	focus = {
+		id = iclkmt_5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = iclkmt_1
+		}
+		x = 23
+		y = 1
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			random_owned_state = {
+                limit = {
+                    has_resources_amount = {
+                        resource = steel
+                        amount < 1
+                    }
+                }
+                add_resource = {
+                    type = steel
+                    amount = 10
+                }
+            }
+		}
+	}
+	focus = {
+		id = iclkmt_6
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = iclkmt_5
+		}
+		prerequisite = {
+			focus = iclkmt_4
+		}
+		x = 21
+		y = 2
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_offsite_building = { type = arms_factory level = 2 }
+		}
+	}
+	focus = {
+		id = iclkmt_11
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = iclkmt_6
+		}
+		prerequisite = {
+			focus = iclkmt_8
+		}
+		x = 19
+		y = 3
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			build_railway = {
+				path = {
+					7152 1187 1087 7044 12023 10050 7137 7650 1597 7095 10404 
+				}
+			}
+		}
+	}
+	focus = {
+		id = iclkmt_12
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = iclkmt_6
+		}
+		x = 23
+		y = 3
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			build_railway = {
+				path = {
+					4190 12062 4538 1519 4634 7571 1575 7208 8049
+				}
+			}
+		}
+	}
+	focus = {
+		id = iclkmt_13
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = iclkmt_11
+		}
+		prerequisite = {
+			focus = iclkmt_12
+		}
+		x = 21
+		y = 4
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			283 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+			616 = {
+				add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+			}
+			756 = {
+				add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+			}
+			591 = {
+				add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+			}
+			603 = {
+				add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+			}
+			748 = {
+				add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+			}
+		}
+	}
+	focus = {
+		id = iclkmt_15
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = iclkmt_14
+		}
+		prerequisite = {
+			focus = iclkmt_13
+		}
+		x = 18
+		y = 5
+		ai_will_do = { 
+			base = 10
+			modifier = {
+				tag = GDG
+				factor = 20
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = bei_kongzhi_de_jingji_1_ideas
+				add_idea = bei_kongzhi_de_jingji_2_ideas
+			}
+		}
+	}
+}

@@ -1,0 +1,30 @@
+state={
+	id=945
+	name="STATE_945"
+	history={
+		owner = XIX
+		add_core_of = XIX
+		add_core_of = GDG
+		add_core_of = PRC
+		add_core_of = MAN
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+
+		}
+		victory_points = {
+			10757 3
+		}
+		victory_points = {
+			4130 5
+		}
+	}
+	provinces={
+		1612 4130 4631 5030 7596 7609 10757 12414 12467
+	}
+	manpower=2456100
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

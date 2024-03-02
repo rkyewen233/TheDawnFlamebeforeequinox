@@ -1,0 +1,211 @@
+scripted_gui = {
+    ENG_FRA_global_hargemony_categories = { #英国决议
+        context_type = decision_category
+        window_name = "ENG_global_hargemony"
+        visible = {
+            always = yes
+        }
+
+        properties = {
+			middle_east_local_tension_progressbar = {
+				frame = middle_east_local_tension_var
+			}
+		}
+
+        triggers = {
+            # -------
+            # 地图
+            # -------
+            GH_GFX_GH_persia_map_visible = {
+				has_country_flag = GH_persia_view
+            }
+            GH_GFX_GH_afghanistan_map_visible = {
+				has_country_flag = GH_persia_view
+            }
+            GH_GFX_GH_iraq_map_visible = {
+				has_country_flag = GH_persia_view
+            }
+            GH_GFX_GH_turkestan_map_visible = {
+				has_country_flag = GH_persia_view
+            }
+            GH_south_africa_map_visible = {
+				has_country_flag = GH_africa_view
+            }
+            GH_rodesia_map_visible = {
+				has_country_flag = GH_africa_view
+            }
+            # -------
+            # 地区显示
+            # -------
+            middle_east_text_visible = {
+				has_country_flag = GH_persia_view
+            }
+            africa_text_visible = {
+				has_country_flag = GH_africa_view
+            }
+            persia_text_visible = {
+				has_country_flag = GH_persia_map
+            }
+            afghanistan_text_visible = {
+				has_country_flag = afghanistan_map
+            }
+            iraq_text_visible = {
+				has_country_flag = GH_iraq_map
+            }
+            turkestan_text_visible = {
+				has_country_flag = turkestan_map
+            }
+            south_africa_text_visible = {
+				has_country_flag = GH_africa_view
+            }
+            # -------
+            # 面板装饰
+            # -------
+            GH_turkestan_map_unable_visible = {
+				has_country_flag = GH_persia_view
+            }
+            middle_east_local_tension_progressbar_visible = {
+				has_country_flag = GH_persia_view
+            }
+            middle_east_local_tension_progressbar_background_visible = {
+				has_country_flag = GH_persia_view
+            }
+
+            GH_GFX_GH_PER_flag_unsupported_visible = {
+				has_country_flag = GH_persia_view
+                NOT = {
+                    has_country_flag = GH_ENG_support_gov
+                }
+            }
+            GH_GFX_GH_flag_frame_visible = {
+				has_country_flag = GH_persia_view
+                NOT = {
+                    has_country_flag = GH_ENG_support_gov
+                }
+            }
+
+            GH_GFX_GH_SOP_flag_supported_visible = {
+				has_country_flag = GH_persia_view
+                has_country_flag = GH_ENG_support_ris
+            }
+            GH_GFX_GH_SOP_flag_frame_choosed_visible = {
+				has_country_flag = GH_persia_view
+                has_country_flag = GH_ENG_support_ris
+            }
+
+            GH_GFX_GH_SOP_flag_unsupported_visible = {
+				has_country_flag = GH_persia_view
+                NOT = {
+                    has_country_flag = GH_ENG_support_ris
+                }
+            }
+            GH_GFX_GH_SOP_flag_frame_visible = {
+				has_country_flag = GH_persia_view
+                NOT = {
+                    has_country_flag = GH_ENG_support_ris
+                }
+            }
+
+            GH_GFX_GH_PER_flag_supported_1_visible = {
+				has_country_flag = GH_persia_view
+                has_country_flag = GH_ENG_support_gov
+            }
+            GH_GFX_GH_flag_frame_choosed_visible = {
+				has_country_flag = GH_persia_view
+                has_country_flag = GH_ENG_support_gov
+            }
+
+        }
+        effects = {
+            # -------
+            # 地图
+            # -------
+            GH_GFX_GH_turkestan_map_click = {
+                clr_country_flag = GH_persia_map
+                clr_country_flag = GH_iraq_map
+                clr_country_flag = afghanistan_map
+                set_country_flag = turkestan_map
+            }
+            GH_GFX_GH_persia_map_click = {
+                set_country_flag = GH_persia_map
+                clr_country_flag = GH_iraq_map
+                clr_country_flag = afghanistan_map
+                clr_country_flag = turkestan_map
+            }
+            GH_GFX_GH_iraq_map_click = {
+                clr_country_flag = GH_persia_map
+                set_country_flag = GH_iraq_map
+                clr_country_flag = afghanistan_map
+                clr_country_flag = turkestan_map
+            }
+            GH_GFX_GH_afghanistan_map_click = {
+                clr_country_flag = GH_persia_map
+                clr_country_flag = GH_iraq_map
+                set_country_flag = afghanistan_map
+                clr_country_flag = turkestan_map
+            }
+            # -------
+            # 顶部按钮
+            # -------
+            GH_GFX_GH_Australia_new_zealand_button_click = {
+                #清理底部地图字样
+                clr_country_flag = GH_persia_map
+                clr_country_flag = GH_iraq_map
+                clr_country_flag = afghanistan_map
+                clr_country_flag = turkestan_map
+
+                clr_country_flag = GH_africa_view
+                clr_country_flag = GH_canada_view
+                set_country_flag = GH_a_and_z_view
+                clr_country_flag = GH_india_view
+                clr_country_flag = GH_persia_view
+            }
+            GH_canada_button_click = {
+                #清理底部地图字样
+                clr_country_flag = GH_persia_map
+                clr_country_flag = GH_iraq_map
+                clr_country_flag = afghanistan_map
+                clr_country_flag = turkestan_map
+
+                clr_country_flag = GH_africa_view
+                set_country_flag = GH_canada_view
+                clr_country_flag = GH_a_and_z_view
+                clr_country_flag = GH_india_view
+                clr_country_flag = GH_persia_view
+            }
+            GH_South_africa_button_click = {
+                #清理底部地图字样
+                clr_country_flag = GH_persia_map
+                clr_country_flag = GH_iraq_map
+                clr_country_flag = afghanistan_map
+                clr_country_flag = turkestan_map
+
+                set_country_flag = GH_africa_view
+                clr_country_flag = GH_canada_view
+                clr_country_flag = GH_a_and_z_view
+                clr_country_flag = GH_india_view
+                clr_country_flag = GH_persia_view
+            }
+            GH_india_button_click = {
+                #清理底部地图字样
+                clr_country_flag = GH_persia_map
+                clr_country_flag = GH_iraq_map
+                clr_country_flag = afghanistan_map
+                clr_country_flag = turkestan_map
+
+                clr_country_flag = GH_africa_view
+                clr_country_flag = GH_canada_view
+                clr_country_flag = GH_a_and_z_view
+                set_country_flag = GH_india_view
+                clr_country_flag = GH_persia_view
+            }
+            GH_GFX_Persia_base_upper_1_click = {
+                clr_country_flag = GH_africa_view
+                clr_country_flag = GH_canada_view
+                clr_country_flag = GH_a_and_z_view
+                clr_country_flag = GH_india_view
+                set_country_flag = GH_persia_view
+            }
+        }
+    }
+}

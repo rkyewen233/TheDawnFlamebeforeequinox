@@ -1,0 +1,16 @@
+characters={
+	TTS_Ciano={
+		name = "加莱亚佐 齐亚诺"
+		portraits={
+			civilian={
+				large = "gfx/leaders/TTS/TTS_Ciano.png"
+			}
+		}
+		country_leader={
+			ideology = cianolism
+			traits = {  }
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

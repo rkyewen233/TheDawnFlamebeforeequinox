@@ -1,0 +1,152 @@
+ENG_electioning = {
+    #ENG_election_timer = {
+	#	cost = 0 #花费（政治点）
+    #    visible = { #什么情况可见
+	#		original_tag = ENG		
+    #    }
+    #    available = { #满足什么条件能点
+	#		
+    #    }
+    #    fire_only_once = no #只能选择一次（yes/no)
+    #    days_remove = 0 #几天后移除
+	#	select_effect = { #选择时的效果
+	#		
+	#	}
+	#	modifier = { #持续时间内的效果
+    #
+	#	}
+    #    remove_effect = { #移除后的效果
+	#		country_event = {
+     #           id = Dawn_event_eng.7
+    #        }
+	 #   }
+    #}
+    ENG_election_timer = {
+        activation = {
+            tag = ENG
+            has_completed_focus = ENG_the_end_of_election
+        }
+        available = {
+            has_country_flag = ENG_social_democratic
+        }
+        is_good = yes
+        days_mission_timeout = 30
+        timeout_effect = {
+			hidden_effect = {
+                if = {
+                    limit = {
+                        check_variable = {
+                            ENG_left_wing > ENG_right_wing
+                        }
+                    }
+                    country_event = {
+                        id = Dawn_event_eng.7
+                        hours = 6
+                    }
+                }
+                else_if = {
+                    limit = {
+                        check_variable = {
+                            ENG_right_wing > ENG_left_wing
+                        }
+                    }
+                }
+            }
+        }
+        complete_effect = {
+            
+        }
+    }
+    ENG_consercatic_democratic_is_doing_sth = {
+        activation = {
+            tag = ENG
+            NOT = { has_country_flag = ENG_social_democratic }
+            has_completed_focus = ENG_memory_9
+        }
+        available = {
+            always = no
+        }
+        is_good = no
+        days_mission_timeout = 7
+        timeout_effect = {
+			custom_effect_tooltip = ENG_demo_increase_1
+            hidden_effect = {
+                add_to_variable = {
+                    ENG_consercatic_democratic = 3
+                }
+            }
+        }
+        complete_effect = {
+            
+        }
+    }
+    ENG_kings_party_is_doing_sth = {
+        activation = {
+            tag = ENG
+            NOT = { has_country_flag = ENG_social_democratic }
+            has_completed_focus = ENG_memory_9
+        }
+        available = {
+            always = no
+        }
+        is_good = no
+        days_mission_timeout = 7
+        timeout_effect = {
+			custom_effect_tooltip = ENG_right_increase_1 #小幅增加王党影响力
+			hidden_effect = {
+				add_to_variable = {
+					ENG_kings_party = 3
+				}
+			}
+        }
+        complete_effect = {
+            
+        }
+    }
+    ENG_english_first_party_is_doing_sth = {
+        activation = {
+            tag = ENG
+            NOT = { has_country_flag = ENG_social_democratic }
+            has_completed_focus = ENG_memory_9
+        }
+        available = {
+            always = no
+        }
+        is_good = no
+        days_mission_timeout = 7
+        timeout_effect = {
+			custom_effect_tooltip = ENG_right_increase_2 #小幅增加至上党影响力
+			hidden_effect = {
+				add_to_variable = {
+					ENG_kings_britain_first_party = 3
+				}
+			}
+        }
+        complete_effect = {
+            
+        }
+    }
+    ENG_cheat_sd_win = {
+        cost = 0 #花费（政治点）
+        visible = { #什么情况可见
+			original_tag = ENG	
+            is_debug = yes	
+        }
+        available = { #满足什么条件能点
+			
+        }
+        fire_only_once = no #只能选择一次（yes/no)
+        days_remove = 0 #几天后移除
+		select_effect = { #选择时的效果
+			
+		}
+		modifier = { #持续时间内的效果
+    
+		}
+        remove_effect = { #移除后的效果
+			add_to_variable = {
+                ENG_social_democratic = 1000
+            }
+	   }
+    }
+}

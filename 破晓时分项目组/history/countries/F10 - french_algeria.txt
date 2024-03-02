@@ -1,0 +1,73 @@
+﻿capital = 454
+
+set_research_slots = 2
+set_stability = 0.3
+set_war_support = 0.7
+# Starting tech
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	basic_train = 1
+}
+add_manpower = 800000
+
+set_politics = {
+	ruling_party = absolutism
+	last_election = "1932.11.27"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	absolutism = 45
+	conservatism_group = 23 #68
+	authority_socialism = 12 #80
+	libertist_socialism = 5 #85
+	libertism = 8 #93
+	progressism = 7 #100
+}
+
+set_oob = "F10_1936"
+recruit_character = F10_maurice_gamelin
+
+set_party_name = {
+	ideology = absolutism
+	name = "甘末林军政府"
+	long_name = "甘末林军政府"
+}
+
+set_party_name = {
+	ideology = conservatism_group
+	name = "阿尔及利亚民众联盟"
+	long_name = "阿尔及利亚民众联盟"
+}
+
+set_party_name = {
+	ideology = authority_socialism
+	name = "阿尔及尔公社-巴纳特分部"
+	long_name = "阿尔及尔公社-巴纳特分部"
+}
+
+set_party_name = {
+	ideology = libertist_socialism
+	name = "阿尔及尔公社-巴纳特分部"
+	long_name = "阿尔及尔公社-巴纳特分部"
+}
+
+set_party_name = {
+	ideology = libertism
+	name = "阿尔及利亚民族独立党"
+	long_name = "阿尔及利亚民族独立党"
+}
+
+set_party_name = {
+	ideology = progressism
+	name = "阿尔及利亚民族独立党-左翼"
+	long_name = "阿尔及利亚民族独立党-左翼"
+}

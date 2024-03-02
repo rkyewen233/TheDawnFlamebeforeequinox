@@ -1,0 +1,44 @@
+guiTypes = { #元老院
+	containerWindowType = {
+		name = "ITA_backboard"
+		position = { x = 0 y = 0}
+		orientation = center
+		size = { width = 228 height = 300 }
+		origo = center 
+		moveable = no
+		clipping = no
+
+		iconType = {
+			name ="ita_senete_icon_line"
+			spriteType = "GFX_ITA_3_n"
+			position = { x = 80 y = 100 }
+			Orientation = "CENTER_UP"
+		}
+
+		iconType = {
+			name ="ita_senete_icon"
+			spriteType = "GFX_ITA_1_n"
+			position = { x = 21 y = 4 }
+			Orientation = "CENTER_UP"
+		}
+
+		iconType = {
+			name ="ita_senete_icon_output"
+			spriteType = "GFX_ITA_2_n"
+			position = { x = 80 y = 150 }
+			Orientation = "CENTER_UP"
+		}
+
+		instantTextBoxType = {
+			name = "ITA_act"
+			position = { x = 13 y = 15}
+			format = left
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 29
+			maxHeight = 10
+			fixedsize = yes
+			Orientation = "CENTER_UP"
+		}
+	}
+}

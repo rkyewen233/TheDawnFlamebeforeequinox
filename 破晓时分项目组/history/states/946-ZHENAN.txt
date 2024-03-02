@@ -1,0 +1,29 @@
+state={
+	id=946
+	name="STATE_946"
+	history = {
+		owner = NIX
+		add_core_of = NIX
+		add_core_of = GDG
+		add_core_of = PRC
+		add_core_of = MAN
+		victory_points = {
+			1055 5
+		}
+		buildings = {
+			infrastructure = 2
+			1055 = {
+				naval_base = 3
+				coastal_bunker = 1
+				bunker = 1
+			}
+		}
+	}
+	provinces={
+		1055 1168 1195 4013 4099 7086 9944 9972 11920 11947 
+	}
+	manpower=21007000
+	buildings_max_level_factor=1.000
+	state_category = town
+	local_supplies=0.000
+}

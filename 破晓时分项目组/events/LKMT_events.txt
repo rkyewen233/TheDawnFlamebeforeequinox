@@ -1,0 +1,316 @@
+add_namespace = LKMT
+country_event = {
+	id = LKMT.1
+	title = LKMT.1.t
+	desc = LKMT.1.d
+	picture = GFX_report_event_china_chiang_mao
+
+	is_triggered_only = yes
+	
+	option = {
+		name = LKMT.1.a
+		swap_ideas = {
+			remove_idea = fubai_dezhengfu_ideas
+			add_idea = fubai_dezhengfu_1_ideas	
+		}
+	}
+}
+#归正大会
+country_event = {
+	id = LKMT.2 #总结徐州战役失败的原因
+	title = LKMT.2.t
+	desc = LKMT.2.d
+	picture = GFX_report_event_china_chiang_mao
+
+	is_triggered_only = yes
+	#问题出在蒋介石等
+	option = {
+		name = LKMT.2.a
+		add_popularity = { 
+			ideology = neutrality
+			popularity = -0.15
+		}
+		add_popularity = { 
+			ideology = radical_socialism
+			popularity = 0.1
+		}
+		add_popularity = { 
+			ideology = communism
+			popularity = 0.1
+		}
+		country_event = {
+			id = LKMT.3
+		}
+	}
+	#绝不是蒋校长一人的问题
+	option = {
+		name = LKMT.2.b
+		add_popularity = { 
+			ideology = neutrality
+			popularity = 0.15
+		}
+		add_popularity = { 
+			ideology = radical_socialism
+			popularity = -0.05
+		}
+		add_popularity = { 
+			ideology = fascism
+			popularity = 0.15
+		}
+		add_popularity = { 
+			ideology = communism
+			popularity = -0.05
+		}
+		country_event = {
+			id = LKMT.3
+		}
+	}
+}
+
+country_event = {
+	id = LKMT.3 #总结现状
+	title = LKMT.3.t
+	desc = LKMT.3.d
+	picture = GFX_report_event_china_chiang_mao
+
+	is_triggered_only = yes
+	#必须以强有力的手段消灭地主豪强
+	option = {
+		name = LKMT.3.a
+		add_popularity = { 
+			ideology = neutrality
+			popularity = -0.2
+		}
+		add_popularity = { 
+			ideology = radical_socialism
+			popularity = 0.2
+		}
+		add_popularity = { 
+			ideology = communism
+			popularity = 0.1
+		}
+		add_stability = -0.2
+		country_event = {
+			id = LKMT.4
+		}
+	}
+	#地方的势力依然强大，要软硬兼施
+	option = {
+		name = LKMT.3.b
+		add_popularity = { 
+			ideology = neutrality
+			popularity = 0.3
+		}
+		add_popularity = { 
+			ideology = radical_socialism
+			popularity = -0.15
+		}
+		add_popularity = { 
+			ideology = fascism
+			popularity = 0.15
+		}
+		add_popularity = { 
+			ideology = communism
+			popularity = -0.05
+		}
+		add_stability = 0.1
+		add_political_power = -45
+		country_event = {
+			id = LKMT.4
+		}
+	}
+}
+
+country_event = {
+	id = LKMT.4 #放眼未来
+	title = LKMT.4.t
+	desc = LKMT.4.d
+	picture = GFX_report_event_china_chiang_mao
+
+	is_triggered_only = yes
+	#继续北伐
+	option = {
+		name = LKMT.4.a
+		add_popularity = { 
+			ideology = neutrality
+			popularity = -0.2
+		}
+		add_popularity = { 
+			ideology = radical_socialism
+			popularity = 0.2
+		}
+		add_popularity = { 
+			ideology = communism
+			popularity = 0.1
+		}
+		add_stability = 0.2
+		add_war_support = -0.05
+		add_political_power = 45
+	}
+	#先南后北
+	option = {
+		name = LKMT.4.b
+		add_popularity = { 
+			ideology = democratic
+			popularity = 0.2
+		}
+		add_popularity = { 
+			ideology = radical_socialism
+			popularity = -0.15
+		}
+		add_popularity = { 
+			ideology = communism
+			popularity = -0.05
+		}
+		add_stability = 0.1
+		add_war_support = 0.2
+		add_political_power = -45
+	}
+}
+news_event = { #中国重返世界舞台
+	id = LKMT.998
+	title = LKMT.998.t
+	desc = LKMT.998.d
+	picture = GFX_report_event_china_chiang_mao
+	is_triggered_only = yes
+    major = yes
+	option = {
+		name = LKMT.998.a
+		trigger = {
+			tag = ROOT
+        }
+	}
+	option = {
+		name = LKMT.998.b
+		trigger = {
+			NOT = {
+				tag = ROOT
+			}
+        }
+	}
+}
+news_event = {
+	id = LKMT.999 #中超联赛开启！
+	title = LKMT.999.t
+	desc = LKMT.999.d
+	picture = GFX_news_event_003
+	is_triggered_only = yes
+    major = yes
+	option = {
+		name = LKMT.999.a
+		trigger = {
+			tag = GDG
+        }
+	}
+	option = {
+		name = LKMT.999.b
+		trigger = {
+			NOT = {
+				tag = GDG
+			}
+        }
+	}
+}
+
+news_event = { #中华民国统一中国
+	id = LKMT.5
+	title = LKMT.5.t
+	desc = LKMT.5.d
+	picture = GFX_report_event_china_chiang_mao
+	is_triggered_only = yes
+    major = yes
+	option = {
+		name = LKMT.5.a
+		trigger = {
+			NOT = {
+				tag = GDG
+			}
+        }
+	}
+	option = {
+		name = LKMT.5.a
+		trigger = {
+			NOT = {
+				tag = GDG
+			}
+        }
+	}
+	option = {
+		name = LKMT.5.b
+		trigger = {
+			
+        }
+	}
+}
+country_event = {
+	id = LKMT.6
+	title = LKMT.6.t
+	desc = LKMT.6.d
+	picture = GFX_report_event_china_chiang_mao
+
+	is_triggered_only = yes
+	#Nanking
+	option = {
+		name = LKMT.6.a
+		set_capital = {
+			state = 608
+		}
+	}
+	#Peking
+	option = {
+		name = LKMT.6.b
+		set_capital = {
+			state = 915
+		}
+	}
+}
+
+country_event = {
+	id = LKMT.7
+	title = LKMT.7.t
+	desc = LKMT.7.d
+	picture = GFX_report_event_china_chiang_mao
+	fire_only_once = yes
+	trigger = {
+		date > 1936.7.1
+		original_tag = XIX
+	}
+	immediate = {
+		HNN = {
+			transfer_state = 602
+		}
+	}
+	option = {
+		name = LKMT.7.a
+		
+		XIX = {
+			declare_war_on = { 
+				target = HNN
+				type = take_state
+			}
+		}
+		hidden_effect = {
+			HNN = {
+				load_oob = "HNN_1936"
+			}
+		}
+	}
+}
+country_event = {
+	id = LKMT.8
+	title = LKMT.8.t
+	desc = LKMT.8.d
+	picture = GFX_report_event_china_chiang_mao
+	is_triggered_only = yes
+	option = {
+		name = LKMT.8.a
+		set_politics = {
+			ruling_party = conservatism
+			elections_allowed = no
+		}
+	}
+	option = {
+		name = LKMT.8.b
+		add_political_power = 50
+	}
+}

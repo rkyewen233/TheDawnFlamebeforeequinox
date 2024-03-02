@@ -1,0 +1,240 @@
+guiTypes = {
+	containerWindowType = {
+		name = "ENG_global_hargemony"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height = 500 }
+		alwaysTransparent = yes
+
+		iconType = {
+			name = "GH_info_base"
+			position = { x = 1 y = 14 }
+			spriteType = "GFX_GH_Base"
+		}
+
+		buttonType = {
+			name = "GH_South_africa_button"
+			position = { x = -2 y = -7 }
+			clicksound = click_ok
+			quadTextureSprite = "GFX_GH_South_africa_base_upper"
+		}
+
+		buttonType = {
+			name = "GH_india_button"
+			position = { x = 90 y = -7 }
+			clicksound = click_ok
+			quadTextureSprite = "GFX_GH_India_base_upper_base_upper"
+		}
+
+		buttonType = {
+			name = "GH_canada_button"
+			position = { x = 184 y = -7 }
+			clicksound = click_ok
+			quadTextureSprite = "GFX_GH_Canada_base_upper"
+		}
+
+		buttonType = {
+			name = "GH_GFX_GH_Australia_new_zealand_button"
+			position = { x = 276 y = -7 }
+			clicksound = click_ok
+			quadTextureSprite = "GFX_GH_Australia_new_zealand_base_upper"
+		}
+
+		buttonType = {
+			name = "GH_GFX_Persia_base_upper_1"
+			position = { x = 368 y = -7 }
+			clicksound = click_ok
+			quadTextureSprite = "GFX_GH_Persia_base_upper_1"
+		}
+
+		buttonType = {
+			name = "GH_GFX_GH_persia_map"
+			position = { x = 180 y = 200 }
+			clicksound = click_ok
+			quadTextureSprite = "GFX_GH_persia_map"
+		}
+
+		buttonType = {
+			name = "GH_GFX_GH_afghanistan_map"
+			position = { x = 344 y = 217 }
+			clicksound = click_ok
+			quadTextureSprite = "GFX_GH_afghanistan_map"
+		}
+
+		iconType = {
+			name = "GH_GFX_GH_PER_flag_unsupported"
+			position = { x = 10 y = 360 }
+			quadTextureSprite = "GFX_GH_PER_flag_unsupported"
+		}
+
+		iconType = {
+			name = "GH_GFX_GH_PER_flag_supported"
+			position = { x = 10 y = 360 }
+			quadTextureSprite = "GFX_GH_PER_flag_supported"
+		}
+
+		iconType = {
+			name = "GH_GFX_GH_flag_frame_choosed"
+			position = { x = 9 y = 360 }
+			quadTextureSprite = "GFX_GH_flag_frame_choosed"
+		}
+
+		iconType = {
+			name = "GH_GFX_GH_flag_frame"
+			position = { x = 9 y = 360 }
+			quadTextureSprite = "GFX_GH_flag_frame"
+		}
+
+		iconType = {
+			name = "GH_GFX_GH_SOP_flag_supported"
+			position = { x = 130 y = 360 }
+			quadTextureSprite = "GFX_GH_SOP_flag_supported"
+		}
+
+		iconType = {
+			name = "GH_GFX_GH_SOP_flag_frame_choosed"
+			position = { x = 129 y = 360 }
+			quadTextureSprite = "GFX_GH_flag_frame_choosed"
+		}
+
+		iconType = {
+			name = "GH_GFX_GH_SOP_flag_unsupported"
+			position = { x = 130 y = 360 }
+			quadTextureSprite = "GFX_GH_SOP_flag_unsupported"
+		}
+		
+		iconType = {
+			name = "GH_GFX_GH_SOP_flag_frame"
+			position = { x = 129 y = 360 }
+			quadTextureSprite = "GFX_GH_flag_frame"
+		}
+		
+		iconType = {
+			name = "GH_GFX_GH_SOP_flag_unsupported"
+			position = { x = 130 y = 360 }
+			quadTextureSprite = "GFX_GH_SOP_flag_unsupported"
+		}
+
+		buttonType = {
+			name = "GH_GFX_GH_iraq_map"
+			position = { x = 124 y = 232 }
+			clicksound = click_ok
+			quadTextureSprite = "GFX_GH_iraq_map"
+		}
+
+		buttonType = {
+			name = "GH_GFX_GH_turkestan_map"
+			position = { x = 270 y = 152 }
+			clicksound = click_ok
+			quadTextureSprite = "GFX_GH_turkestan_map"
+		}
+
+		iconType = {
+			name = "GH_turkestan_map_unable"
+			position = { x = 270 y = 152 }
+			spriteType = "GFX_GH_turkestan_map_unable"
+			pdx_tooltip = GH_tip.3
+			pdx_tooltip_delayed = GH_tip.4
+		}
+
+		iconType = {
+			name = "middle_east_local_tension_progressbar"
+			position = { x = 10 y = 465 }
+			spriteType = "GFX_middle_east_local_tension_progressbar"
+		}
+
+		iconType = {
+			name = "middle_east_local_tension_progressbar_background"
+			position = { x = 0 y = 402 }
+			spriteType = "GFX_GH_middle_east_local_tension_progressbar_background"
+			pdx_tooltip = GH_tip.5
+			pdx_tooltip_delayed = GH_tip.6
+		}
+
+		buttonType = {
+			name = "GH_south_africa_map"
+			position = { x = 150 y = 242 }
+			clicksound = click_ok
+			quadTextureSprite = "GFX_GH_south_africa_map"
+		}
+
+		iconType = {
+			name = "GH_rodesia_map"
+			position = { x = 146 y = 140 }
+			quadTextureSprite = "GFX_GH_rodesia_map"
+			pdx_tooltip = GH_tip.1
+			pdx_tooltip_delayed = GH_tip.2
+		}
+
+		instantTextboxType = {
+			name = "middle_east_text"
+			format = center
+			position = { x = 160 y = 67 }
+			font = "hoi_20b"
+			text = "当前地区：中东"
+			maxWidth = 200
+			maxHeight = 100
+		}
+
+		instantTextboxType = {
+			name = "africa_text"
+			format = center
+			position = { x = 160 y = 67 }
+			font = "hoi_20b"
+			text = "当前地区：中南非洲"
+			maxWidth = 200
+			maxHeight = 100
+		}
+
+		instantTextboxType = {
+			name = "persia_text"
+			format = center
+			position = { x = 260 y = 437 }
+			font = "hoi_24header"
+			text = "目前选中：波斯"
+			maxWidth = 200
+			maxHeight = 100
+		}
+
+		instantTextboxType = {
+			name = "afghanistan_text"
+			format = center
+			position = { x = 260 y = 437 }
+			font = "hoi_24header"
+			text = "目前选中：阿富汗"
+			maxWidth = 200
+			maxHeight = 100
+		}
+
+		instantTextboxType = {
+			name = "iraq_text"
+			format = center
+			position = { x = 260 y = 437 }
+			font = "hoi_24header"
+			text = "目前选中：伊拉克"
+			maxWidth = 200
+			maxHeight = 100
+		}
+
+		instantTextboxType = {
+			name = "turkestan_text"
+			format = center
+			position = { x = 260 y = 437 }
+			font = "hoi_24header"
+			text = "目前选中：突厥斯坦"
+			maxWidth = 200
+			maxHeight = 100
+		}
+
+		instantTextboxType = {
+			name = "south_africa_text"
+			format = center
+			position = { x = 160 y = 437 }
+			font = "hoi_24header"
+			text = "目前查看：南非问题局势"
+			maxWidth = 200
+			maxHeight = 100
+		}
+
+		
+	}
+}

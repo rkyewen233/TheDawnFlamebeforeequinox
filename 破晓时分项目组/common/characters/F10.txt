@@ -1,0 +1,95 @@
+characters={
+
+	F10_maurice_gamelin={
+		name=F10_maurice_gamelin
+		portraits={
+			army={
+				small="gfx/leaders/F10/F10_gameline.png"
+			}
+			army={
+				large="gfx/leaders/F10/F10_gameline.png"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = maurice_gamelin
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				has_completed_focus = FRA_aggressive_focus
+			}
+			cost = 100.000
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+		country_leader= {
+			ideology = military_aboslute
+			traits= { temp_ruler_de_algere }
+			expire="1965.1.1.1"
+			id= 1
+		}
+
+		field_marshal={
+			traits={ old_guard inflexible_strategist career_officer defensive_doctrine }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	F10_phillipe_petain={
+		name=F10_phillipe_petain
+		portraits={
+			army={
+				small="gfx/leaders/F10/F10_pettin.png"
+			}
+			army={
+				large="gfx/leaders/F10/F10_pettin.png"
+			}
+		}
+		country_leader= {
+			ideology = military_aboslute
+			traits= { temp_ruler_de_algere }
+			expire="1965.1.1.1"
+			id = -1
+		}
+		field_marshal={
+			traits={ old_guard inflexible_strategist career_officer defensive_doctrine }
+			skill=1
+			attack_skill=2
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	F10_temp_commeti={
+		name=F10_temp_commeti
+		portraits={
+			army={
+				small="gfx/leaders/F10/F10_temp_defencive_commity.png"
+			}
+			army={
+				large="gfx/leaders/F10/F10_temp_defencive_commity.png"
+			}
+		}
+		country_leader= {
+			ideology = military_aboslute
+			traits= {  }
+			expire="1965.1.1.1"
+			id = -2
+		}
+	}
+
+}

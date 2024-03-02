@@ -1,0 +1,15 @@
+characters={
+	ALS_ali_khan_nurmuhammadovich_bukhihanov={
+		name=ALS_ali_khan_nurmuhammadovich_bukhihanov
+		portraits={
+			civilian={
+				large="gfx/leaders/ALS/ALS_ali_khan_nurmuhammadovich_bukhihanov.png"
+			}
+		}
+		country_leader={
+			ideology=paternalistic_conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

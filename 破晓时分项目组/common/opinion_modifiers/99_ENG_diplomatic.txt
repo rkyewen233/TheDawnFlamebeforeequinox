@@ -1,0 +1,6 @@
+opinion_modifiers = {
+	
+	ENG_conference_1 = {
+		value = 50
+	}
+}

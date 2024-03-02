@@ -1,0 +1,51 @@
+﻿capital = 431 #Hanoi
+
+
+set_research_slots = 3
+
+# Starting tech
+# clone of France
+
+set_party_name = {
+	ideology = neutrality
+	long_name = "印度保守派"
+	name = "印度保守派"
+}
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.2.16"
+	election_frequency = 36
+	elections_allowed = no
+}
+add_opinion_modifier = {
+	target = MAN
+	modifier = qinjin_zhongguo
+}
+set_popularities = {
+	democratic = 15
+	fascism = 10
+	communism = 5
+	neutrality = 50
+	monarchism = 20
+}
+recruit_character = VIN_chiang_kaishek
+recruit_character = VIN_Ho_Chi_Minh
+#NOTICE# please watch out for spelling, im using Vietnamese names as they spell them, game might not support these characters!
+add_timed_idea = {
+	idea = yuenan_qiyi_ideas
+	days = 365
+}
+create_country_leader = {
+	name = "Lucky Star" 
+	desc = ""
+	picture = GFX_portrait_Phan_Boi_Chau
+	expire = "1953.3.1"
+	ideology = fascism_ideology 
+	traits = {
+		
+	}
+}
+
+
+
+

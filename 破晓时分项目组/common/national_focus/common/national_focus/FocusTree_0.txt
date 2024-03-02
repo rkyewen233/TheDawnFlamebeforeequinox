@@ -1,0 +1,356 @@
+focus_tree = {
+	id = FocusTree_0
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = 
+		}
+	}
+	default = no
+	focus = {
+		id = ITA_diplomacyBegain
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 10
+		y = 2
+
+	}
+	focus = {
+		id = ITA_ibe_1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_diplomacyBegain
+		}
+		x = 1
+		y = 3
+
+	}
+	focus = {
+		id = ITA_ibe_2
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_ibe_1
+		}
+		x = 1
+		y = 4
+
+	}
+	focus = {
+		id = ITA_ibe_1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_diplomacyBegain
+		}
+		x = 5
+		y = 3
+
+	}
+	focus = {
+		id = ITA_ibe_3
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_ibe_1
+		}
+		mutually_exclusive = {
+			focus = ITA_ibe_2
+		}
+		x = 3
+		y = 4
+
+	}
+	focus = {
+		id = ITA_ibe_4
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_ibe_3
+		}
+		x = 1
+		y = 5
+
+	}
+	focus = {
+		id = ITA_ibe_2
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_ibe_1
+		}
+		mutually_exclusive = {
+			focus = ITA_ibe_3
+		}
+		x = 6
+		y = 4
+
+	}
+	focus = {
+		id = ITA_ibe_6
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_ibe_2
+			focus = ITA_ibe_3
+		}
+		x = 4
+		y = 5
+
+	}
+	focus = {
+		id = ITA_malta_1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ITA_diplomacyBegain
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = ITA_malta_2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ITA_malta_1
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = ITA_tur_northernEperus
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_diplomacyBegain
+		}
+		x = 12
+		y = 3
+
+	}
+	focus = {
+		id = ITA_tur_maintainAlbania
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_diplomacyBegain
+		}
+		x = 14
+		y = 3
+
+	}
+	focus = {
+		id = ITA_inviteTur
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_tur_northernEperus
+		}
+		prerequisite = {
+			focus = ITA_tur_maintainAlbania
+		}
+		mutually_exclusive = {
+			focus = ITA_attack_greek
+		}
+		x = 13
+		y = 4
+
+	}
+	focus = {
+		id = ITA_attack_greek
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_diplomacyBegain
+		}
+		mutually_exclusive = {
+			focus = ITA_inviteTur
+		}
+		x = 15
+		y = 4
+
+	}
+	focus = {
+		id = ITA_asiaMinor
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_attack_greek
+			focus = ITA_inviteTur
+		}
+		x = 14
+		y = 5
+
+	}
+	focus = {
+		id = ITA_fra_join
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_diplomacyBegain
+		}
+		mutually_exclusive = {
+			focus = ITA_attackGauls
+		}
+		x = 17
+		y = 3
+
+	}
+	focus = {
+		id = ITA_attackGauls
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_diplomacyBegain
+		}
+		mutually_exclusive = {
+			focus = ITA_fra_join
+		}
+		x = 19
+		y = 3
+
+	}
+	focus = {
+		id = ITA_fra_2
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_attackGauls
+		}
+		x = 19
+		y = 4
+
+	}
+	focus = {
+		id = ITA_fra_2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ITA_fra_2
+		}
+		x = 19
+		y = 5
+
+	}
+	focus = {
+		id = ITA_ciprus_1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_diplomacyBegain
+		}
+		x = 23
+		y = 3
+
+	}
+	focus = {
+		id = ITA_ruleMiddleEast_1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_ciprus_1
+		}
+		x = 22
+		y = 4
+
+	}
+	focus = {
+		id = ITA_ruleMiddleEast_2
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_ciprus_1
+		}
+		x = 24
+		y = 4
+
+	}
+	focus = {
+		id = ITA_ruleMiddleEast_3
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_ruleMiddleEast_2
+		}
+		prerequisite = {
+			focus = ITA_ruleMiddleEast_1
+		}
+		x = 23
+		y = 5
+
+	}
+	focus = {
+		id = ITA_aus_1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_diplomacyBegain
+		}
+		x = 28
+		y = 3
+
+	}
+	focus = {
+		id = ITA_aus_2
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_aus_1
+		}
+		x = 27
+		y = 4
+
+	}
+	focus = {
+		id = ITA_aus_3
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_aus_1
+		}
+		x = 29
+		y = 4
+
+	}
+	focus = {
+		id = ITA_aus_4
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_aus_3
+		}
+		prerequisite = {
+			focus = ITA_aus_2
+		}
+		x = 28
+		y = 5
+
+	}
+	focus = {
+		id = ITA_fra_3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ITA_fra_2
+		}
+		x = 19
+		y = 6
+
+	}
+	focus = {
+		id = ITA_ibe_5
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_ibe_2
+		}
+		x = 6
+		y = 6
+
+	}
+}

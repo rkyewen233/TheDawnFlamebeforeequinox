@@ -1,0 +1,29 @@
+state={
+	id=919
+	name="STATE_919"
+	history={
+		owner = WAX
+		add_core_of = WAX
+		add_core_of = GDG
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 3
+			arms_factory = 3
+			industrial_complex = 2
+
+		}
+		victory_points = {
+			10757 3
+		}
+		victory_points = {
+			4130 5
+		}
+	}
+	provinces={
+		1612 4130 5030 7019 7596 7609 8072 10474 10757 12408 12414 12467 
+	}
+	manpower=2456100
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

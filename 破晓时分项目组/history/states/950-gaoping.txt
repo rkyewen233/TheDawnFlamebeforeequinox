@@ -1,0 +1,22 @@
+state={
+	id=950
+	name="STATE_950"
+	provinces={
+		1157 7015 7093 7518 9948 12048 12065 
+	}
+	history = {
+		add_core_of = VIN
+		owner = F11
+		add_core_of = F11
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			9948 1
+		}
+	}
+	manpower=5764000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

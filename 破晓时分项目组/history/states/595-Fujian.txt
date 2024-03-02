@@ -1,0 +1,35 @@
+state= {
+	id=595
+	name="STATE_595"
+	manpower = 11755600
+	state_category = city
+	history=
+	{
+		owner = NIX
+		add_core_of = NIX
+		add_core_of = GDG
+		add_core_of = PRC
+		add_core_of = MAN
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			
+			4196 = {
+				naval_base = 3
+				coastal_bunker = 1
+				bunker = 1
+			}
+		}
+		victory_points = { 
+			4196 15
+		}
+		victory_points = { 
+			12057 3 
+		}
+	}
+	provinces={
+		1094 1138 1166 1193 4070 4113 4169 4196 7027 10012 10042 10069 10084 
+	}
+
+	local_supplies=0.0 
+}

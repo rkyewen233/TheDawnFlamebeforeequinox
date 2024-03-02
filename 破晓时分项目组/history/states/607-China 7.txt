@@ -1,0 +1,35 @@
+
+state={
+	id=607
+	name="STATE_607"
+
+	history={
+		owner = ZHI
+		add_core_of = ZHI
+		add_core_of = MAN
+		add_core_of = GDG
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 4
+			arms_factory = 3
+		}
+		victory_points = {
+			9958 5 
+		}
+		victory_points = {
+			1004 15 
+		}
+		victory_points = {
+			7656 15 
+		}
+	}
+
+	provinces={
+		1004 1603 4066 6932 7085 7126 7540 7656 9958 9995 10098 10364 11931 
+	}
+	manpower=34289800
+	buildings_max_level_factor=2.000
+	state_category=megalopolis
+	local_supplies=3.000
+}

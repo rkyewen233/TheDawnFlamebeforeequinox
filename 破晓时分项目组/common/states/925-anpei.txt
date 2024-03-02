@@ -1,0 +1,26 @@
+state={
+	id=925
+	name="STATE_925"
+	provinces={
+		1073 4529 10075 10103 12008 12075 12319 
+	}
+	history = {
+		add_core_of = VIN
+		owner = FRA
+		victory_points = {
+			10075 1
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			1185 = {
+				naval_base = 1
+			}
+
+		}
+	}
+	manpower=8646000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

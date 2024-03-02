@@ -1,0 +1,98 @@
+capital = 592
+
+oob = "GDG_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	paratroopers = 1
+	gw_artillery = 1
+	mass_assault = 1
+	fleet_in_being = 1
+	
+}
+set_stability = 0.1
+set_war_support = 0.2
+
+recruit_character = GDG_weng_wenhao
+recruit_character = GDG_mao_zedong
+recruit_character = GDG_hu_hanmin
+recruit_character = GDG_chiang_kaishek
+recruit_character = GDG_zhang_guotao
+recruit_character = GDG_wang_jingwei
+recruit_character = GDG_tu_yuming
+recruit_character = GDG_hsueh_yueh
+recruit_character = GDG_tai_anlan
+recruit_character = GDG_wang_yaowu
+recruit_character = GDG_hu_zongnan
+recruit_character = GDG_gu_zhutong
+recruit_character = GDG_wei_lihuang
+recruit_character = GDG_fu_zuoyi
+recruit_character = GDG_zhu_de
+recruit_character = GDG_chen_yi
+recruit_character = GDG_peng_dehuai
+recruit_character = GDG_lin_biao
+recruit_character = GDG_su_yu
+recruit_character = GDG_liu_bocheng
+recruit_character = GDG_deng_yanda
+recruit_character = GDG_chen_jitang
+recruit_character = GDG_he_yingqin
+add_ideas = {
+	zhengtong_sanminzhuyi_ideas
+	bude_minxin_ideas
+	luohou_dejundui_ideas
+	beifa_shili_ideas
+	fubai_dezhengfu_ideas
+	guominsuzhi_ideas
+	wenmanglv_gao_ideas
+}
+
+set_convoys = 5
+
+set_party_name = {
+	ideology = radical_socialism
+	long_name = "中华民国国民党激进派(国共联合)"
+	name = "孙派国民党"
+}
+set_party_name = {
+	ideology = democratic
+	long_name = "中华民国国民党自由派"
+	name = "自由派国民党"
+}
+set_party_name = {
+	ideology = fascism
+	long_name = "汪精卫右倾机会主义派"
+	name = "汪派国民党"
+}
+set_party_name = {
+	ideology = communism
+	long_name = "中国共产党"
+	name = "中共"
+}
+set_party_name = {
+	ideology = conservatism
+	long_name = "蒋介石主义右倾派"
+	name = "蒋派国民党"
+}
+set_politics = {
+	ruling_party = radical_socialism
+	last_election = "1936.1.1"
+	elections_allowed = no
+}
+set_popularities = {
+	extremely_nationalism = 10
+	Autocrism = 2
+	democratic = 20
+	fascism = 10
+	conservatism = 5
+	communism = 13
+	radical_socialism = 20
+	neutrality = 2
+	anarchism_group = 18
+}

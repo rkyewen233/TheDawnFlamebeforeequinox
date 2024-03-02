@@ -1,0 +1,872 @@
+focus_tree = {
+	id = Russian_Empire
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SOV
+		}
+	}
+	default = no
+	focus = {
+		id = SOV_dancing_on_wire
+		icon = GFX_goal_unknown
+		cost = 1.00
+		x = 52
+		y = 1
+			completion_reward = {
+					country_event = {
+							id = RUS.1
+						}
+				}
+
+	}
+	focus = {
+		id = SOV_a_murder
+		icon = GFX_goal_unknown
+		cost = 1.00
+		x = 53
+		y = 7
+
+	}
+	focus = {
+		id = SOV_economics_saving
+		icon = GFX_goal_unknown
+		cost = 1.00
+		x = 66
+		y = 1
+
+	}
+	focus = {
+		id = SOV_a_limited_military_restore
+		icon = GFX_goal_unknown
+		cost = 1.00
+		x = 32
+		y = 2
+
+	}
+	focus = {
+		id = SOV_feed_junguan
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_a_limited_military_restore
+		}
+		x = 32
+		y = 3
+
+	}
+	focus = {
+		id = SOV_shishi
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_feed_junguan
+		}
+		x = 30
+		y = 4
+
+	}
+	focus = {
+		id = SOV_flag_of_tsar
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_shishi
+		}
+		x = 30
+		y = 5
+
+	}
+	focus = {
+		id = SOV_retake_prive_rights
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_flag_of_tsar
+		}
+		x = 30
+		y = 6
+
+	}
+	focus = {
+		id = SOV_army_cut
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_feed_junguan
+		}
+		x = 32
+		y = 4
+
+	}
+	focus = {
+		id = SOV_meet_with_finacial_minister
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_army_cut
+		}
+		x = 32
+		y = 5
+
+	}
+	focus = {
+		id = SOV_on_exception
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_meet_with_finacial_minister
+		}
+		x = 32
+		y = 6
+
+	}
+	focus = {
+		id = SOV_improve_process
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_feed_junguan
+		}
+		x = 34
+		y = 4
+
+	}
+	focus = {
+		id = SOV_release_and_subtract
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_improve_process
+		}
+		x = 34
+		y = 5
+
+	}
+	focus = {
+		id = SOV_36_and_37
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_release_and_subtract
+		}
+		x = 34
+		y = 6
+
+	}
+	focus = {
+		id = SOV_a_stupid_army
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_on_exception
+		}
+		prerequisite = {
+			focus = SOV_36_and_37
+		}
+		prerequisite = {
+			focus = SOV_retake_prive_rights
+		}
+		x = 32
+		y = 7
+
+	}
+	focus = {
+		id = SOV_prime_minister
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_dancing_on_wire
+		}
+		mutually_exclusive = {
+			focus = SOV_tsar
+		}
+		x = 48
+		y = 2
+
+	}
+	focus = {
+		id = SOV_prime_minister_1
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_prime_minister
+		}
+		x = 48
+		y = 3
+
+	}
+	focus = {
+		id = SOV_prime_minister_2
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_prime_minister_1
+		}
+		x = 48
+		y = 4
+
+	}
+	focus = {
+		id = SOV_prime_minister_3
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_prime_minister_2
+		}
+		x = 48
+		y = 5
+
+	}
+	focus = {
+		id = SOV_tsar
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_dancing_on_wire
+		}
+		mutually_exclusive = {
+			focus = SOV_prime_minister
+		}
+		x = 50
+		y = 2
+
+	}
+	focus = {
+		id = SOV_tsar_1
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_tsar
+		}
+		x = 50
+		y = 3
+
+	}
+	focus = {
+		id = SOV_tsar_2
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_tsar_1
+		}
+		x = 50
+		y = 4
+
+	}
+	focus = {
+		id = SOV_tsar_3
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_tsar_2
+		}
+		x = 50
+		y = 5
+
+	}
+	focus = {
+		id = SOV_peace
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_prime_minister_3
+			focus = SOV_tsar_3
+		}
+		x = 47
+		y = 6
+
+	}
+	focus = {
+		id = SOV_a_great_deal
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_tsar_3
+			focus = SOV_prime_minister_3
+		}
+		x = 49
+		y = 6
+
+	}
+	focus = {
+		id = SOV_Winter_Palace
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_tsar_3
+			focus = SOV_prime_minister_3
+		}
+		x = 51
+		y = 6
+
+	}
+	focus = {
+		id = SOV_military
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_dancing_on_wire
+		}
+		x = 52
+		y = 2
+			completion_reward = {
+					mark_focus_tree_layout_dirty = yes
+				}
+
+	}
+	focus = {
+		id = SOV_royal_fire
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_a_murder
+		}
+		x = 52
+		y = 8
+
+	}
+	focus = {
+		id = SOV_ask_to_investigate
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_a_murder
+		}
+		x = 54
+		y = 8
+
+	}
+	focus = {
+		id = SOV_murderer
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_ask_to_investigate
+		}
+		prerequisite = {
+			focus = SOV_royal_fire
+		}
+		x = 53
+		y = 9
+
+	}
+	focus = {
+		id = SOV_tsar_is_murderer
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_murderer
+		}
+		mutually_exclusive = {
+			focus = SOV_prime_minister_is_murderer
+		}
+		x = 50
+		y = 10
+			completion_reward = {
+					mark_focus_tree_layout_dirty = yes
+				}
+			available = {
+					has_completed_focus = SOV_a_strict_punishment
+				}
+
+	}
+	focus = {
+		id = SOV_prime_minister_is_murderer
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_murderer
+		}
+		mutually_exclusive = {
+			focus = SOV_tsar_is_murderer
+		}
+		x = 52
+		y = 10
+			completion_reward = {
+					mark_focus_tree_layout_dirty = yes
+				}
+			available = {
+					has_completed_focus = SOV_a_limitless_punishment
+				}
+
+	}
+	focus = {
+		id = SOV_ECO_1
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_dancing_on_wire
+		}
+		x = 54
+		y = 2
+
+	}
+	focus = {
+		id = SOV_ECO_6
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_ECO_1
+		}
+		x = 54
+		y = 3
+
+	}
+	focus = {
+		id = SOV_ECO_7
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_ECO_6
+		}
+		x = 54
+		y = 4
+
+	}
+	focus = {
+		id = SOV_ECO_2
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_dancing_on_wire
+		}
+		x = 57
+		y = 2
+
+	}
+	focus = {
+		id = SOV_ECO_3
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_ECO_2
+		}
+		mutually_exclusive = {
+			focus = SOV_ECO_4
+		}
+		x = 56
+		y = 3
+
+	}
+	focus = {
+		id = SOV_sant_anderia
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_murderer
+		}
+		x = 56
+		y = 10
+
+	}
+	focus = {
+		id = SOV_allow_royal_police
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_sant_anderia
+		}
+		x = 57
+		y = 11
+
+	}
+	focus = {
+		id = SOV_investigate
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_sant_anderia
+		}
+		x = 55
+		y = 11
+
+	}
+	focus = {
+		id = SOV_decide_attitude
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_allow_royal_police
+		}
+		prerequisite = {
+			focus = SOV_investigate
+		}
+		x = 56
+		y = 12
+
+	}
+	focus = {
+		id = SOV_a_limitless_punishment
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_decide_attitude
+		}
+		mutually_exclusive = {
+			focus = SOV_a_strict_punishment
+		}
+		x = 57
+		y = 13
+
+	}
+	focus = {
+		id = SOV_a_strict_punishment
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_decide_attitude
+		}
+		mutually_exclusive = {
+			focus = SOV_a_limitless_punishment
+		}
+		x = 55
+		y = 13
+
+	}
+	focus = {
+		id = SOV_be_showned
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_a_limitless_punishment
+			focus = SOV_a_strict_punishment
+		}
+		x = 56
+		y = 14
+
+	}
+	focus = {
+		id = SOV_ECO_4
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_ECO_2
+		}
+		mutually_exclusive = {
+			focus = SOV_ECO_3
+		}
+		x = 58
+		y = 3
+
+	}
+	focus = {
+		id = SOV_ECO_5
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_ECO_4
+			focus = SOV_ECO_3
+		}
+		x = 57
+		y = 4
+
+	}
+	focus = {
+		id = SOV_ECO_8
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_ECO_5
+		}
+		prerequisite = {
+			focus = SOV_ECO_7
+		}
+		x = 55
+		y = 5
+			completion_reward = {
+					mark_focus_tree_layout_dirty = yes
+				}
+
+	}
+	focus = {
+		id = SOV_economics_second_1
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_economics_saving
+		}
+		x = 64
+		y = 2
+
+	}
+	focus = {
+		id = SOV_economics_second_3
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_economics_saving
+		}
+		x = 66
+		y = 2
+
+	}
+	focus = {
+		id = SOV_economics_second_2
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_economics_saving
+		}
+		x = 68
+		y = 2
+
+	}
+	focus = {
+		id = SOV_economics_second_4
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_economics_second_3
+		}
+		prerequisite = {
+			focus = SOV_economics_second_2
+		}
+		prerequisite = {
+			focus = SOV_economics_second_1
+		}
+		x = 66
+		y = 3
+
+	}
+	focus = {
+		id = SOV_economics_second_5
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_economics_second_4
+		}
+		mutually_exclusive = {
+			focus = SOV_economics_second_6
+		}
+		x = 64
+		y = 4
+
+	}
+	focus = {
+		id = SOV_economics_second_6
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_economics_second_4
+		}
+		mutually_exclusive = {
+			focus = SOV_economics_second_5
+		}
+		x = 68
+		y = 4
+
+	}
+	focus = {
+		id = SOV_economics_second_9
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_economics_second_6
+			focus = SOV_economics_second_5
+		}
+		x = 66
+		y = 5
+
+	}
+	focus = {
+		id = SOV_greate_conference
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_Winter_Palace
+		}
+		prerequisite = {
+			focus = SOV_peace
+		}
+		prerequisite = {
+			focus = SOV_a_great_deal
+		}
+		x = 49
+		y = 7
+			completion_reward = {
+					mark_focus_tree_layout_dirty = yes
+				}
+
+	}
+	focus = {
+		id = SOV_economics_second_7
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_economics_second_5
+		}
+		x = 64
+		y = 5
+
+	}
+	focus = {
+		id = SOV_economics_second_8
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_economics_second_6
+		}
+		x = 68
+		y = 5
+
+	}
+	focus = {
+		id = SOV_economics_second_10
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_economics_second_7
+		}
+		x = 64
+		y = 6
+
+	}
+	focus = {
+		id = SOV_economics_second_11
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_economics_second_8
+		}
+		x = 68
+		y = 6
+
+	}
+	focus = {
+		id = SOV_economics_second_12
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_economics_second_11
+			focus = SOV_economics_second_10
+		}
+		prerequisite = {
+			focus = SOV_economics_second_9
+		}
+		x = 66
+		y = 7
+			completion_reward = {
+					mark_focus_tree_layout_dirty = yes
+				}
+
+	}
+	focus = {
+		id = SOV_economics_second_13
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_economics_second_12
+		}
+		x = 66
+		y = 8
+
+	}
+	focus = {
+		id = SOV_its_prime_minister
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_prime_minister_is_murderer
+		}
+		x = 52
+		y = 11
+
+	}
+	focus = {
+		id = SOV_corrupt_court
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_its_prime_minister
+		}
+		x = 52
+		y = 12
+
+	}
+	focus = {
+		id = SOV_old_bill
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_corrupt_court
+		}
+		x = 52
+		y = 13
+
+	}
+	focus = {
+		id = SOV_the_truth
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_old_bill
+		}
+		x = 52
+		y = 14
+
+	}
+	focus = {
+		id = SOV_give_investigeate
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_tsar_is_murderer
+		}
+		x = 50
+		y = 11
+
+	}
+	focus = {
+		id = SOV_protect_investigater
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_give_investigeate
+		}
+		x = 50
+		y = 12
+
+	}
+	focus = {
+		id = SOV_stop_star_activity
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_protect_investigater
+		}
+		x = 50
+		y = 13
+
+	}
+	focus = {
+		id = SOV_another_true_truth
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_stop_star_activity
+		}
+		x = 50
+		y = 14
+
+	}
+	focus = {
+		id = SOV_end_of_murder
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_the_truth
+			focus = SOV_another_true_truth
+		}
+		prerequisite = {
+			focus = SOV_be_showned
+		}
+		x = 54
+		y = 15
+			completion_reward = {
+					mark_focus_tree_layout_dirty = yes
+				}
+
+	}
+}

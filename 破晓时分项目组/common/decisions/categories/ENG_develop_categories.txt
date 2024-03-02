@@ -1,0 +1,47 @@
+ENG_develop_categories = {
+	icon = SOV_paranoia
+	picture = GFX_decision_cat_picture_chi_infiltration
+	visible = {
+		OR = {
+			AND = {
+				original_tag = ENG
+				has_completed_focus = ENG_unfinishedWork
+			}
+			is_debug = yes
+			always = no
+		}
+	}
+
+	scripted_gui = ENG_industry
+
+	priority = 1000
+}
+ENG_electioning = {
+	icon = infiltration
+	visible = {
+		always = yes
+		original_tag = ENG
+	}
+	priority = 2000
+	
+}
+ENG_economics = {
+	icon = infiltration
+	visible = {
+		always = yes
+	}
+	priority = 3000
+	
+}
+ENG_social_democratic_national_decision_catagories = {
+	icon = infiltration
+	visible = {
+		OR = {
+			has_country_flag = ENG_social_democratic
+			is_debug = yes
+		}
+		original_tag = ENG
+	}
+	priority = 2000
+	
+}

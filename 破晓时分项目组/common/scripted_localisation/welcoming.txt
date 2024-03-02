@@ -1,0 +1,4 @@
+defined_text = {
+	name = DAWN_ENTER_ROOT_NAME
+	text = { trigger = { tag = ENG } localization_key = DAWN_ENTER_ROOT_NAME_KEY }
+}

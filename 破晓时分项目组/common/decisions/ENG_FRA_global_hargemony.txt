@@ -1,0 +1,78 @@
+ENG_FRA_global_hargemony_categories = {
+	GH_add_to_tension_of_persia = { #打开合作决议
+		cost = 0 #花费（政治点）
+        visible = { #什么情况可见
+			debug = yes
+        }
+        available = { #满足什么条件能点
+			always = yes
+        }
+        fire_only_once = no #只能选择一次（yes/no)
+        days_remove = 0 #几天后移除
+		complete_effect = { #选择时的效果
+			add_to_variable = {
+				middle_east_local_tension_var = 10
+			}
+		}
+		modifier = { #持续时间内的效果
+
+		}
+        remove_effect = { #移除后的效果
+        }
+		ai_will_do = { #AI倾向
+			factor = 0
+		}
+	}
+    GH_open_cooperation_decisions = { #打开合作决议
+		cost = 0 #花费（政治点）
+        visible = { #什么情况可见
+			original_tag = ENG	
+			NOT = {
+				has_country_flag = GH_view_cooperation
+			}	
+        }
+        available = { #满足什么条件能点
+			always = yes
+        }
+        fire_only_once = no #只能选择一次（yes/no)
+        days_remove = 0 #几天后移除
+		complete_effect = { #选择时的效果
+			hidden_effect = {
+				set_country_flag = GH_view_cooperation
+			}
+		}
+		modifier = { #持续时间内的效果
+
+		}
+        remove_effect = { #移除后的效果
+        }
+		ai_will_do = { #AI倾向
+			factor = 0
+		}
+	}
+	GH_close_cooperation_decisions = { #打开合作决议
+		cost = 0 #花费（政治点）
+        visible = { #什么情况可见
+			original_tag = ENG	
+			has_country_flag = GH_view_cooperation
+        }
+        available = { #满足什么条件能点
+			always = yes
+        }
+        fire_only_once = no #只能选择一次（yes/no)
+        days_remove = 0 #几天后移除
+		complete_effect = { #选择时的效果
+			hidden_effect = {
+				clr_country_flag = GH_view_cooperation
+			}
+		}
+		modifier = { #持续时间内的效果
+
+		}
+        remove_effect = { #移除后的效果
+        }
+		ai_will_do = { #AI倾向
+			factor = 0
+		}
+	}
+}

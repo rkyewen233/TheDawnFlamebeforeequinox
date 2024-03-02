@@ -1,0 +1,3538 @@
+focus_tree = {
+	id = FRA_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FRA
+		}
+	}
+	default = no
+	focus = {
+		id = FRA_war_against_netherland
+		icon = GFX_FRA_70
+		cost = 1.00
+		x = 28
+		y = 2
+		available = {
+			has_completed_focus = FRA_attack_dawn_commue
+		}
+		completion_reward = {
+			add_command_power = 50.0
+		}
+	}
+	focus = {
+		id = FRA_true_ruler_of_batavia
+		icon = GFX_FRA_73
+		cost = 1.00
+		x = 0
+		y = 2
+		relative_position_id = FRA_war_against_netherland
+		prerequisite = {
+			focus = FRA_war_against_netherland
+		}
+		prerequisite = {
+			focus = FRA_meeting_of_LON
+		}
+		mutually_exclusive = {
+			focus = FRA_frangium
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "法兰西已经赢得二次大战"
+				has_country_flag = FRA_win_II
+			}
+		}
+		completion_reward = {
+			annex_country = {
+				target = BEL
+				transfer_troops = yes
+			}
+			annex_country = {
+				target = HOL
+				transfer_troops = yes
+			}
+			34 = {
+				add_core_of = ROOT
+			}
+			6 = {
+				add_core_of = ROOT
+			}
+			8 = {
+				add_core_of = ROOT
+			}
+		}
+	}
+	focus = {
+		id = FRA_frangium
+		icon = GFX_FRA_73
+		cost = 4.00
+		x = -2
+		y = 2
+		relative_position_id = FRA_war_against_netherland
+		prerequisite = {
+			focus = FRA_begain
+			focus = FRA_war_against_netherland
+		}
+		prerequisite = {
+			focus = FRA_meeting_of_LON
+		}
+		available = {
+		}
+		mutually_exclusive = {
+			focus = FRA_true_ruler_of_batavia
+		}
+		completion_reward = {
+			annex_country = {
+				target = BEL
+				transfer_troops = yes
+			}
+			34 = {
+				add_core_of = ROOT
+			}
+			6 = {
+				add_core_of = ROOT
+			}
+			8 = {
+				add_core_of = ROOT
+			}
+		}
+	}
+	focus = {
+		id = FRA_integrate_holland
+		icon = GFX_FRA_74
+		cost = 1.00
+		x = 0
+		y = 1
+		relative_position_id = FRA_true_ruler_of_batavia
+		prerequisite = {
+			focus = FRA_true_ruler_of_batavia
+		}
+		completion_reward = {
+			add_stability = -0.10
+			7 = {
+				add_core_of = ROOT
+				add_manpower = -54301
+			}
+			35 = {
+				add_core_of = ROOT
+				add_manpower = -8923
+			}
+			36 = {
+				add_core_of = ROOT
+				add_manpower = -2932
+			}
+		}
+	}
+	focus = {
+		id = FRA_bunker_of_groningen
+		icon = GFX_FRA_71
+		cost = 10.00
+		x = -1
+		y = 1
+		relative_position_id = FRA_war_against_netherland
+		prerequisite = {
+			focus = FRA_war_against_netherland
+		}
+		completion_reward = {
+			36 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 11318
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 9309
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 9403
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 9363
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 3512
+				}
+			}
+			51 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 3512
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = 6469
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 9482
+				}
+			}
+		}
+	}
+	focus = {
+		id = FRA_maintain_control
+		icon = GFX_FRA_72
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = FRA_war_against_netherland
+		prerequisite = {
+			focus = FRA_war_against_netherland
+		}
+		completion_reward = {
+			7 = {
+				set_state_name = "荷兰特区"
+			}
+			set_province_name = {
+				id = 391
+				name = "德 路易市"
+			}
+			set_province_name = {
+				id = 3211
+				name = "特赫松"
+			}
+			set_province_name = {
+				id = 9498
+				name = "德 鹿特丹"
+			}
+		}
+	}
+	focus = {
+		id = FRA_begain
+		icon = GFX_FRA_1
+		cost = 1.00
+		x = 20
+		y = 2
+		available = {
+			has_completed_focus = FRA_attack_dawn_commue
+		}
+		completion_reward = {
+			add_political_power = 120
+			add_stability = 0.05
+			unlock_decision_category_tooltip = FRA_diplomacy_categories
+			unlock_decision_tooltip = remilitalized_rhineland
+		}
+	}
+	focus = {
+		id = FRA_ECO.1
+		icon = GFX_FRA_2
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_begain
+			focus = FRA_war_against_netherland
+		}
+		completion_reward = {
+			custom_effect_tooltip = all_class_opinion_added_5
+			all_class_opinion_added_5 = yes
+			country_event = {
+				id = Dawn_event_fra.1
+				days = 1
+			}
+			custom_effect_tooltip = FRA_tooltip_5_tt
+			hidden_effect = {
+				swap_ideas = {
+					add_idea = FRA_eco_disaster_2
+					remove_idea = FRA_eco_disaster_1
+				}
+			}
+		}
+		x = 16
+		y = 3
+
+	}
+	focus = { 
+		id = FRA_ECO.59 
+		icon = GFX_FRA_2 
+		cost = 10.00 
+		prerequisite = { 
+			focus = FRA_ECO.6 
+		}
+		completion_reward = { 
+			add_ideas = FRA_super_industrialization 
+		} 
+		x = 16 
+		y = 10 
+	}
+	focus = {
+		id = FRA_ECO.2 #国策ID
+		icon = GFX_FRA_3 #国策图标
+		cost = 4.00 #国策时长（1.00 = 7天，向下取整）
+		prerequisite = { #国策前置
+			focus = FRA_ECO.1 #前置国策
+			#当一行前置国策不止一个时，则为满足其中一个就可以点该国策
+		}
+		mutually_exclusive = { #互斥
+			focus = FRA_ECO.3 #互斥国策
+		}
+		available = { #国策条件
+			custom_trigger_tooltip = {
+				tooltip = FRA_eco_choose_1_tt
+				has_country_flag = FRA_flag_1
+			}
+		}
+		completion_reward = { #国策效果
+			custom_effect_tooltip = third_class_opinion_added_5
+			third_class_opinion_added_5 = yes
+			custom_effect_tooltip = first_class_opinion_minus_5
+			first_class_opinion_minus_5 = yes
+			add_war_support = 0.10 #基础战支+10%
+			add_popularity = { #增加意识形态支持率
+				ideology = cooperatism #民族主义
+				popularity = 0.05 #特定支持率（每0.01为1%的支持率反应在饼图上）
+			} 
+		}
+		x = 13 #绝对位置
+		y = 4
+
+	}
+	focus = {
+		id = FRA_ECO.44
+		icon = GFX_FRA_12
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.2
+		}
+		completion_reward = {
+			add_ideas = {
+				FRA_control_fengchen
+			}
+			add_popularity = {
+				ideology = cooperatism
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = absolutism
+				popularity = -0.02
+			}
+		}
+		x = 10
+		y = 7
+
+	}
+	focus = {
+		id = FRA_ECO.45
+		icon = GFX_FRA_13
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.44
+		}
+		mutually_exclusive = {
+			focus = FRA_ECO.46
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = FRA_control_fengchen_1
+				remove_idea = FRA_control_fengchen
+			}
+		}
+		x = 9
+		y = 8
+
+	}
+	focus = {
+		id = FRA_ECO.47
+		icon = GFX_FRA_14
+		cost = 4.00
+		prerequisite = {
+			focus = FRA_ECO.45
+		}
+		x = 8
+		y = 9
+		completion_reward = {
+			add_popularity = {
+				ideology = cooperatism
+				popularity = 0.02
+			}
+			swap_ideas = {
+				add_idea = FRA_control_fengchen_1_1
+				remove_idea = FRA_control_fengchen_1
+			}
+		}
+	}
+	focus = {
+		id = FRA_ECO.46
+		icon = GFX_FRA_15
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.44
+		}
+		mutually_exclusive = {
+			focus = FRA_ECO.45
+		}
+		x = 11
+		y = 8
+		completion_reward = {
+			swap_ideas = {
+				add_idea = FRA_control_fengchen_2
+				remove_idea = FRA_control_fengchen
+			}
+		}
+	}
+	focus = {
+		id = FRA_ECO.4
+		icon = GFX_FRA_7
+		cost = 2.00
+		prerequisite = {
+			focus = FRA_ECO.2
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = cooperatism
+				popularity = 0.02
+			}
+			add_ideas = {
+				FRA_shangzhanchang
+			}
+		}
+		x = 14
+		y = 5
+
+	}
+	focus = {
+		id = FRA_ECO.7
+		icon = GFX_FRA_9
+		cost = 2.00
+		prerequisite = {
+			focus = FRA_ECO.6
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		x = 15
+		y = 7
+
+	}
+	focus = {
+		id = FRA_ECO.3
+		icon = GFX_FRA_4
+		cost = 4.00
+		prerequisite = {
+			focus = FRA_ECO.1
+		}
+		mutually_exclusive = {
+			focus = FRA_ECO.2
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = FRA_eco_choose_2_tt
+				has_country_flag = FRA_flag_2
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = third_class_opinion_minus_5
+			third_class_opinion_minus_5 = yes
+			custom_effect_tooltip = first_class_opinion_added_5
+			first_class_opinion_added_5 = yes
+			add_stability = 0.10
+			add_popularity = {
+				ideology = absolutism
+				popularity = 0.05
+			}
+		}
+		x = 19
+		y = 4
+
+	}
+	focus = {
+		id = FRA_ECO.6
+		icon = GFX_FRA_5
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_ECO.4
+			focus = FRA_ECO.5
+		}
+		completion_reward = {
+			custom_effect_tooltip = all_class_opinion_added_5
+			all_class_opinion_added_5 = yes
+			add_political_power = 50
+			add_ideas = FRA_yigongdaizhen
+			custom_effect_tooltip = FRA_tooltip_5_tt
+			hidden_effect = {
+				swap_ideas = {
+					add_idea = FRA_eco_disaster_3
+					remove_idea = FRA_eco_disaster_2
+				}
+			}
+		}
+		x = 16
+		y = 6
+
+	}
+	focus = {
+		id = FRA_ECO.9
+		icon = GFX_FRA_27
+		cost = 7.20
+		prerequisite = {
+			focus = FRA_ECO.6
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		x = 13
+		y = 7
+
+	}
+	focus = {
+		id = FRA_ECO.13
+		icon = GFX_FRA_82
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.8
+			focus = FRA_ECO.7
+		}
+		mutually_exclusive = {
+			focus = FRA_ECO.58
+			focus = FRA_ECO.61
+		}
+		completion_reward = {
+			add_ideas = FRA_protect_worker
+			add_popularity = {
+				ideology = libertism
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = progressism
+				popularity = 0.02
+			}
+		}
+		x = 15
+		y = 8
+
+	}
+	focus = {
+		id = FRA_ECO.61
+		icon = GFX_FRA_83
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.8
+			focus = FRA_ECO.7
+		}
+		mutually_exclusive = {
+			focus = FRA_ECO.58
+			focus = FRA_ECO.13
+		}
+		completion_reward = {
+			add_ideas = FRA_law_of_unprotected_laborer_third_class
+			add_popularity = {
+				ideology = cooperatism
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = authority_socialism
+				popularity = 0.02
+			}
+		}
+		x = 13
+		y = 8
+
+	}
+	focus = {
+		id = FRA_ECO.58
+		icon = GFX_FRA_81
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.8
+			focus = FRA_ECO.7
+		}
+		mutually_exclusive = {
+			focus = FRA_ECO.13
+			focus = FRA_ECO.61
+		}
+		completion_reward = {
+			add_ideas = FRA_law_of_unprotected_laborer
+			add_popularity = {
+				ideology = conservatism_group
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = authority_socialism
+				popularity = -0.05
+			}
+		}
+		x = 17
+		y = 8
+
+	}
+	focus = {
+		id = FRA_ECO.5
+		icon = GFX_FRA_6
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.3
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.2
+		}
+		x = 18
+		y = 5
+
+	}
+	focus = {
+		id = FRA_ECO.8
+		icon = GFX_FRA_8
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.6
+		}
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_on_continent = europe
+					is_owned_and_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		x = 17
+		y = 7
+
+	}
+	focus = {
+		id = FRA_ECO.11
+		icon = GFX_FRA_10
+		cost = 7.20
+		prerequisite = {
+			focus = FRA_ECO.13
+			focus = FRA_ECO.58
+			focus = FRA_ECO.61
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+		x = 17
+		y = 9
+
+	}
+	focus = {
+		id = FRA_ECO.10
+		icon = GFX_FRA_29
+		cost = 7.20
+		prerequisite = {
+			focus = FRA_ECO.6
+		}
+		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = fuel_silo
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = fuel_silo
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = fuel_silo
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		x = 19
+		y = 7
+
+	}
+	focus = {
+		id = FRA_ECO.14
+		icon = GFX_FRA_30
+		cost = 4.00
+		prerequisite = {
+			focus = FRA_ECO.10
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+				producer = FRA
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 1500
+				producer = FRA
+			}
+		}
+		x = 19
+		y = 8
+
+	}
+	focus = {
+		id = FRA_ECO.16
+		icon = GFX_FRA_31
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.14
+		}
+		prerequisite = {
+			focus = FRA_ECO.13
+			focus = FRA_ECO.58
+			focus = FRA_ECO.61
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 7500
+				producer = FRA
+			}
+		}
+		x = 19
+		y = 9
+
+	}
+	focus = {
+		id = FRA_ECO.57
+		icon = GFX_FRA_19
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.3
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = cooperatism
+				popularity = -0.02
+			}
+			add_popularity = {
+				ideology = absolutism
+				popularity = 0.02
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			909 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			16 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			27 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			17 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_ideas = {
+				FRA_trade_1
+			}
+		}
+		x = 22
+		y = 7
+
+	}
+	focus = {
+		id = FRA_ECO.51
+		icon = GFX_FRA_20
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.57
+		}
+		mutually_exclusive = {
+			focus = FRA_ECO.52
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = FRA_trade_2
+				remove_idea = FRA_trade_1
+			}
+		}
+		x = 21
+		y = 8
+
+	}
+	focus = {
+		id = FRA_ECO.55
+		icon = GFX_FRA_23
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.51
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = absolutism
+				popularity = 0.02
+			}
+			swap_ideas = {
+				add_idea = FRA_trade_2_2
+				remove_idea = FRA_trade_2
+			}
+		}
+		x = 21
+		y = 10
+
+	}
+	focus = {
+		id = FRA_ECO.52
+		icon = GFX_FRA_21
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.57
+		}
+		mutually_exclusive = {
+			focus = FRA_ECO.51
+		}
+		x = 23
+		y = 8
+		completion_reward = {
+			swap_ideas = {
+				add_idea = FRA_trade_3
+				remove_idea = FRA_trade_1
+			}
+		}
+	}
+	focus = {
+		id = FRA_ECO.54
+		icon = GFX_FRA_22
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.52
+			focus = FRA_ECO.51
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = absolutism
+				popularity = 0.05
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_ideas = {
+				FRA_build_railway
+			}
+		}
+		x = 22
+		y = 9
+
+	}
+	focus = {
+		id = FRA_ECO.53
+		icon = GFX_FRA_24
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.52
+		}
+		x = 24
+		y = 9
+		completion_reward = {
+			add_popularity = {
+				ideology = absolutism
+				popularity = 0.02
+			}
+			swap_ideas = {
+				add_idea = FRA_trade_3_3
+				remove_idea = FRA_trade_3
+			}
+		}
+	}
+	focus = {
+		id = FRA_ECO.56
+		icon = GFX_FRA_25
+		cost = 7.20
+		prerequisite = {
+			focus = FRA_ECO.55
+			focus = FRA_ECO.53
+		}
+		prerequisite = {
+			focus = FRA_ECO.54
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = absolutism
+				popularity = 0.02
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		x = 23
+		y = 11
+
+	}
+	focus = {
+		id = FRA_ECO.12
+		icon = GFX_FRA_11
+		cost = 3.00
+		available = {
+			has_completed_focus = FRA_ECO.6
+		}
+		completion_reward = {
+			add_political_power = 50
+			remove_ideas = FRA_eco_disaster_3
+			add_ideas = {
+				FRA_expandism_1
+			}
+		}
+		x = 24
+		y = 4
+
+	}
+	focus = {
+		id = FRA_ECO.64
+		icon = GFX_FRA_11
+		cost = 7.20
+		prerequisite = {
+			focus = FRA_ECO.12
+		}
+		completion_reward = {
+			add_political_power = 120
+			custom_effect_tooltip =  FRA_tooltip_8_tt
+			mark_focus_tree_layout_dirty = yes
+		}
+		relative_position_id = FRA_ECO.12
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = FRA_ECO.15
+		icon = GFX_FRA_28
+		cost = 7.20
+		prerequisite = {
+			focus = FRA_ECO.13
+			focus = FRA_ECO.58
+			focus = FRA_ECO.61
+		}
+		mutually_exclusive = {
+			focus = FRA_ECO.60
+		}
+		x = 15
+		y = 9
+		completion_reward = {
+			add_popularity = {
+				ideology = conservatism_group
+				popularity = 0.01
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = FRA_ECO.60
+		icon = GFX_FRA_27
+		cost = 7.20
+		prerequisite = {
+			focus = FRA_ECO.13
+			focus = FRA_ECO.58
+			focus = FRA_ECO.61
+		}
+		mutually_exclusive = {
+			focus = FRA_ECO.15
+		}
+		x = 13
+		y = 9
+		completion_reward = {
+			add_popularity = {
+				ideology = cooperatism
+				popularity = 0.01
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = FRA_ECO.17
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 4.00
+		prerequisite = {
+			focus = FRA_ECO.12
+		}
+		relative_position_id = FRA_ECO.12
+		x = -1
+		y = 2
+
+	}
+	focus = {
+		id = FRA_ECO.18
+		icon = GFX_goal_generic_build_tank
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.12
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = FRA_expandism_2
+				remove_idea = FRA_expandism_1
+			}
+		}
+		relative_position_id = FRA_ECO.12
+		x = 1
+		y = 2
+
+	}
+	focus = {
+		id = FRA_ECO.19
+		icon = GFX_FRA_32
+		cost = 1.00
+		prerequisite = {
+			focus = FRA_ECO.17
+		}
+		mutually_exclusive = {
+			focus = FRA_ECO.20
+			focus = FRA_ECO.21
+		}
+		allow_branch = {
+			always = no
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+		}
+		x = 8
+		y = 12
+
+	}
+	focus = {
+		id = FRA_ECO.20
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.17
+		}
+		allow_branch = {
+			always = no
+		}
+		prerequisite = {
+			focus = FRA_ECO.18
+		}
+		mutually_exclusive = {
+			focus = FRA_ECO.19
+			focus = FRA_ECO.21
+		}
+		x = 16
+		y = 12
+
+	}
+	focus = {
+		id = FRA_ECO.21
+		icon = GFX_goal_support_fascism
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.18
+		}
+		mutually_exclusive = {
+			focus = FRA_ECO.20
+			focus = FRA_ECO.19
+		}
+		x = 24
+		y = 12
+		allow_branch = {
+			always = no
+		}
+			available = {
+					always = no
+				}
+
+	}
+	focus = {
+		id = FRA_ECO.22
+		icon = GFX_FRA_39
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.19
+		}
+		available = {
+			has_completed_focus = FRA_left.12
+		}
+		x = 8
+		y = 14
+
+	}
+	focus = {
+		id = FRA_left.26
+		icon = GFX_FRA_65			
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.22
+		}
+		prerequisite = {
+			focus = FRA_left.3
+		}
+		x = 8
+		y = 15
+
+	}
+	focus = {
+		id = FRA_left.27
+		icon = GFX_FRA_66			
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left.26
+		}
+		x = 8
+		y = 16
+
+	}
+	focus = {
+		id = FRA_ECO.23
+		icon = GFX_goal_generic_major_alliance
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.20
+		}
+		x = 15
+		y = 13
+
+	}
+	focus = {
+		id = FRA_ECO.24
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.20
+		}
+		x = 17
+		y = 13
+
+	}
+	focus = {
+		id = FRA_ECO.25
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.21
+		}
+		x = 24
+		y = 14
+
+	}
+	focus = {
+		id = FRA_ECO.26
+		icon = GFX_FRA_38
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.19
+		}
+		x = 9
+		y = 13
+
+	}
+	focus = {
+		id = FRA_ECO.43
+		icon = GFX_goal_generic_major_war
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.21
+		}
+		x = 23
+		y = 13
+
+	}
+	focus = {
+		id = FRA_ECO.28
+		icon = GFX_goal_generic_military_sphere
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.20
+		}
+		x = 16
+		y = 14
+
+	}
+	focus = {
+		id = FRA_ECO.29
+		icon = GFX_goal_generic_cavalry
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.23
+		}
+		prerequisite = {
+			focus = FRA_ECO.28
+		}
+		x = 15
+		y = 15
+
+	}
+	focus = {
+		id = FRA_ECO.30
+		icon = GFX_goal_generic_construct_civilian
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.24
+		}
+		prerequisite = {
+			focus = FRA_ECO.28
+		}
+		x = 17
+		y = 15
+
+	}
+	focus = {
+		id = FRA_ECO.31
+		icon = GFX_goal_generic_military_deal
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.29
+		}
+		prerequisite = {
+			focus = FRA_ECO.30
+		}
+		mutually_exclusive = {
+			focus = FRA_ECO.33
+			focus = FRA_ECO.34
+		}
+		x = 16
+		y = 16
+
+	}
+	focus = {
+		id = FRA_ECO.32
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_ECO.31
+			focus = FRA_ECO.34
+			focus = FRA_ECO.33
+		}
+		x = 17
+		y = 17
+
+	}
+	focus = {
+		id = FRA_ECO.33
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.29
+		}
+		mutually_exclusive = {
+			focus = FRA_ECO.31
+			focus = FRA_ECO.34
+		}
+		x = 12
+		y = 16
+
+	}
+	focus = {
+		id = FRA_ECO.34
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.30
+		}
+		mutually_exclusive = {
+			focus = FRA_ECO.31
+			focus = FRA_ECO.33
+		}
+		x = 20
+		y = 16
+
+	}
+	focus = {
+		id = FRA_ECO.35
+		icon = GFX_goal_generic_production
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.33
+			focus = FRA_ECO.31
+			focus = FRA_ECO.34
+		}
+		x = 12
+		y = 18
+
+	}
+	focus = {
+		id = FRA_ECO.36
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.42
+		}
+		prerequisite = {
+			focus = FRA_ECO.32
+		}
+		x = 16
+		y = 18
+
+	}
+	focus = {
+		id = FRA_ECO.37
+		icon = GFX_goal_generic_production2
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.29
+		}
+		x = 13
+		y = 17
+
+	}
+	focus = {
+		id = FRA_ECO.38
+		icon = GFX_goal_rhineland
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.30
+		}
+		x = 19
+		y = 17
+
+	}
+	focus = {
+		id = FRA_ECO.39
+		icon = GFX_goal_tripartite_pact
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.37
+		}
+		x = 14
+		y = 18
+
+	}
+	focus = {
+		id = FRA_ECO.40
+		icon = GFX_goal_generic_major_war
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.38
+		}
+		x = 20
+		y = 18
+
+	}
+	focus = {
+		id = FRA_ECO.41
+		icon = GFX_goal_generic_demand_territory
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.35
+		}
+		prerequisite = {
+			focus = FRA_ECO.36
+		}
+		prerequisite = {
+			focus = FRA_ECO.39
+		}
+		prerequisite = {
+			focus = FRA_ECO.40
+		}
+		x = 16
+		y = 19
+
+	}
+	focus = {
+		id = FRA_ECO.42
+		icon = GFX_goal_generic_defence
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.31
+			focus = FRA_ECO.34
+			focus = FRA_ECO.33
+		}
+		x = 15
+		y = 17
+
+	}
+	focus = {
+		id = FRA_ECO.48
+		icon = GFX_FRA_18
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.46
+		}
+		x = 11
+		y = 10
+		completion_reward = {
+			add_popularity = {
+				ideology = cooperatism
+				popularity = 0.02
+			}
+			swap_ideas = {
+				add_idea = FRA_control_fengchen_2_2
+				remove_idea = FRA_control_fengchen_2
+			}
+		}
+	}
+	focus = {
+		id = FRA_ECO.49
+		icon = GFX_FRA_17
+		cost = 7.20
+		prerequisite = {
+			focus = FRA_ECO.48
+			focus = FRA_ECO.47
+		}
+		prerequisite = {
+			focus = FRA_ECO.50
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = cooperatism
+				popularity = 0.02
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		x = 9
+		y = 11
+
+	}
+	focus = {
+		id = FRA_ECO.50
+		icon = GFX_FRA_16
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_ECO.45
+			focus = FRA_ECO.46
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = cooperatism
+				popularity = 0.05
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		x = 10
+		y = 9
+
+	}
+
+	focus = {
+		id = FRA_left.0
+		icon = GFX_FRA_33
+		cost = 3.00
+		x = 7
+		y = 13
+		prerequisite = {
+			focus = FRA_ECO.19
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = FRA_left.3
+		icon = GFX_FRA_36
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left.0
+		}
+		x = 4
+		y = 14
+
+	}
+	focus = {
+		id = FRA_left.13
+		icon = GFX_FRA_37
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left.3
+		}
+		available = {
+			has_completed_focus = FRA_left.12
+		}
+		x = 2
+		y = 15
+
+	}
+	focus = {
+		id = FRA_left.29
+		icon = GFX_FRA_52
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left.3
+		}
+		available = {
+			has_completed_focus = FRA_left.12
+		}
+		x = 0
+		y = 15
+
+	}
+	focus = {
+		id = FRA_left.30
+		icon = GFX_FRA_53
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left.29
+		}
+		x = 0
+		y = 16
+
+	}
+	focus = {
+		id = FRA_left.31
+		icon = GFX_FRA_55
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left.30
+		}
+		prerequisite = {
+			focus = FRA_left.14
+		}
+		x = 1
+		y = 17
+
+	}
+	focus = {
+		id = FRA_left.32
+		icon = GFX_FRA_56
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left.31
+		}
+		x = 2
+		y = 18
+
+	}
+	focus = {
+		id = FRA_left.14
+		icon = GFX_FRA_51
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left.13
+		}
+		x = 2
+		y = 16
+
+	}
+	focus = {
+		id = FRA_left.28
+		icon = GFX_FRA_54
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left.15
+		}
+		x = 4
+		y = 16
+
+	}
+	focus = {
+		id = FRA_left.15
+		icon = GFX_FRA_49
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left.3
+		}
+		available = {
+			has_completed_focus = FRA_left.12
+		}
+		x = 4
+		y = 15
+
+	}
+	focus = {
+		id = FRA_left.1
+		icon = GFX_FRA_35
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left.0
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+		x = 6
+		y = 14
+
+	}
+	focus = {
+		id = FRA_left.2
+		icon = GFX_FRA_40
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left.1
+		}
+		prerequisite = {
+			focus = FRA_left.3
+		}
+		x = 6
+		y = 15
+
+	}
+	focus = {
+		id = FRA_left.5
+		icon = GFX_FRA_41
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left.2
+		}
+		x = 6
+		y = 16
+
+	}
+	focus = {
+		id = FRA_left.7
+		icon = GFX_FRA_42
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left.5
+		}
+		mutually_exclusive = {
+			focus = FRA_left.8
+		}
+		x = 3
+		y = 17
+
+	}
+	focus = {
+		id = FRA_left.9
+		icon = GFX_FRA_44
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left.7
+		}
+		x = 4
+		y = 18
+
+	}
+	focus = {
+		id = FRA_left.8
+		icon = GFX_FRA_43
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left.5
+		}
+		mutually_exclusive = {
+			focus = FRA_left.7
+		}
+		x = 9
+		y = 17
+
+	}
+	focus = {
+		id = FRA_left.10
+		icon = GFX_FRA_45
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left.8
+			focus = FRA_left.7
+		}
+		x = 6
+		y = 18
+
+	}
+	focus = {
+		id = FRA_left.11
+		icon = GFX_FRA_46
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left.8
+		}
+		x = 8
+		y = 18
+
+	}
+	focus = {
+		id = FRA_left.12
+		icon = GFX_FRA_47
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left.9
+			focus = FRA_left.11
+		}
+		prerequisite = {
+			focus = FRA_left.10
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_left_civil_war_1_tt
+			hidden_effect = {
+				country_event = {
+					id = Dawn_event_fra.4
+				}
+			}
+		}
+		x = 6
+		y = 19
+
+	}
+	focus = {
+		id = FRA_left.16
+		icon = GFX_FRA_50
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left.2
+		}
+		available = {
+			has_completed_focus = FRA_left.12
+		}
+		x = 10
+		y = 16
+
+	}
+	focus = {
+		id = FRA_left.17
+		icon = GFX_FRA_67
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left.16
+		}
+		
+		x = 10
+		y = 18
+
+	}
+	focus = {
+		id = FRA_left.18
+		icon = GFX_FRA_68
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left.17
+		}
+		mutually_exclusive = {
+			focus = FRA_left.19
+		}
+		x = 9
+		y = 19
+
+	}
+	focus = {
+		id = FRA_left.20
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left.18
+		}
+		x = 8
+		y = 20
+
+	}
+	focus = {
+		id = FRA_left.19
+		icon = GFX_FRA_69
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left.17
+		}
+		mutually_exclusive = {
+			focus = FRA_left.18
+		}
+		x = 11
+		y = 19
+
+	}
+	focus = {
+		id = FRA_left.22
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left.19
+			focus = FRA_left.18
+		}
+		x = 10
+		y = 20
+
+	}
+	focus = {
+		id = FRA_left.24
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left.22
+		}
+		x = 9
+		y = 21
+
+	}
+	focus = {
+		id = FRA_left.23
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left.22
+		}
+		x = 11
+		y = 21
+
+	}
+	focus = {
+		id = FRA_left.4
+		icon = GFX_FRA_34
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left.0
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+			add_stability = 0.2
+		}
+		x = 10
+		y = 14
+
+	}
+	focus = {
+		id = FRA_left.6
+		icon = GFX_FRA_48
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left.4
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+		x = 10
+		y = 15
+
+	}
+	focus = {
+		id = FRA_left.21
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left.19
+		}
+		x = 12
+		y = 20
+
+	}
+	focus = {
+		id = FRA_left.25
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left.21
+			focus = FRA_left.20
+		}
+		x = 10
+		y = 22
+
+	}
+
+	focus = {
+		id = FRA_left_industry.0
+		icon = GFX_FRA_57
+		cost = 3.00
+		x = 2
+		y = 19
+		prerequisite = {
+			focus = FRA_left.32
+		}
+
+	}
+	focus = {
+		id = FRA_left_industry.1
+		icon = GFX_FRA_58
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_left_industry.0
+		}
+		x = 1
+		y = 20
+
+	}
+	focus = {
+		id = FRA_left_industry.3
+		icon = GFX_FRA_62
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_left_industry.1
+		}
+		mutually_exclusive = {
+			focus = FRA_left_industry.4
+		}
+		x = 0
+		y = 21
+
+	}
+	focus = {
+		id = FRA_left_industry.5
+		icon = GFX_FRA_59
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_industry.3
+		}
+		x = 0
+		y = 22
+
+	}
+	focus = {
+		id = FRA_left_industry.2
+		icon = GFX_FRA_59
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_industry.0
+		}
+		x = 3
+		y = 20
+
+	}
+	focus = {
+		id = FRA_left_industry.4
+		icon = GFX_FRA_60
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_industry.2
+		}
+		mutually_exclusive = {
+			focus = FRA_left_industry.3
+		}
+		x = 4
+		y = 21
+
+	}
+	focus = {
+		id = FRA_left_industry.6
+		icon = GFX_FRA_61
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_industry.4
+		}
+		x = 4
+		y = 22
+
+	}
+	focus = {
+		id = FRA_left_industry.7
+		icon = GFX_FRA_64
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_industry.6
+			focus = FRA_left_industry.5
+		}
+		x = 2
+		y = 23
+
+	}
+	focus = {
+		id = FRA_left_industry.8
+		icon = GFX_FRA_59
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_industry.7
+		}
+		x = 2
+		y = 24
+
+	}
+	focus = {
+		id = FRA_left_industry.11
+		icon = GFX_FRA_63
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_industry.8
+		}
+		x = 4
+		y = 25
+
+	}
+	focus = {
+		id = FRA_left_industry.9
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_industry.8
+		}
+		x = 0
+		y = 25
+
+	}
+	focus = {
+		id = FRA_left_industry.18
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_left_industry.11
+		}
+		x = 4
+		y = 26
+
+	}
+	focus = {
+		id = FRA_left_industry.12
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_industry.8
+		}
+		x = 6
+		y = 25
+
+	}
+	focus = {
+		id = FRA_left_industry.20
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_industry.12
+		}
+		x = 6
+		y = 26
+
+	}
+	focus = {
+		id = FRA_left_industry.22
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_industry.20
+		}
+		x = 6
+		y = 27
+
+	}
+	focus = {
+		id = FRA_left_industry.10
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_industry.8
+		}
+		x = 2
+		y = 25
+
+	}
+	focus = {
+		id = FRA_left_industry.13
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_industry.8
+		}
+		x = 8
+		y = 25
+
+	}
+	focus = {
+		id = FRA_left_industry.14
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_industry.9
+		}
+		x = 0
+		y = 26
+
+	}
+	focus = {
+		id = FRA_left_industry.15
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_industry.14
+		}
+		x = 0
+		y = 27
+
+	}
+	focus = {
+		id = FRA_left_industry.16
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_industry.10
+		}
+		x = 2
+		y = 26
+
+	}
+	focus = {
+		id = FRA_left_industry.17
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_industry.16
+		}
+		x = 2
+		y = 27
+
+	}
+	focus = {
+		id = FRA_left_industry.19
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_industry.20
+		}
+		prerequisite = {
+			focus = FRA_left_industry.16
+		}
+		x = 4
+		y = 27
+
+	}
+	focus = {
+		id = FRA_left_industry.21
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_industry.13
+		}
+		x = 8
+		y = 26
+
+	}
+	focus = {
+		id = FRA_left_industry.23
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_industry.20
+		}
+		x = 8
+		y = 27
+
+	}
+	focus = {
+		id = FRA_left_industry.24
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_industry.19
+		}
+		x = 4
+		y = 28
+
+	}
+	focus = {
+		id = FRA_left_five_years_plan.0
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 10
+		y = 25
+		prerequisite = {
+			focus = FRA_left_industry.8
+		}
+	}
+	focus = {
+		id = FRA_left_five_years_plan.3
+		icon = GFX_goal_unknown
+		cost = 3.00
+		x = 14
+		y = 24
+		prerequisite = {
+			focus = FRA_left_industry.7
+		}
+	}
+	focus = {
+		id = FRA_left_five_years_plan.12
+		icon = GFX_goal_unknown
+		cost = 3.00
+		x = 0
+		y = 28
+		prerequisite = {
+			focus = FRA_left_industry.15
+		}
+	}
+	focus = {
+		id = FRA_left_five_years_plan.13
+		icon = GFX_goal_unknown
+		cost = 3.00
+		x = 20
+		y = 24
+		prerequisite = {
+			focus = FRA_left_industry.7
+		}
+	}
+	focus = {
+		id = FRA_left_five_years_plan.19
+		icon = GFX_goal_unknown
+		cost = 3.00
+		x = 16
+		y = 24
+		prerequisite = {
+			focus = FRA_left_industry.7
+		}
+	}
+	focus = {
+		id = FRA_left_five_years_plan.20
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 18
+		y = 24
+		prerequisite = {
+			focus = FRA_left_industry.7
+		}
+	}
+	focus = {
+		id = FRA_left_five_years_plan.1
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_five_years_plan.0
+		}
+		x = 10
+		y = 26
+
+	}
+	focus = {
+		id = FRA_left_five_years_plan.2
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_five_years_plan.1
+		}
+		x = 10
+		y = 27
+
+	}
+	focus = {
+		id = FRA_left_five_years_plan.22
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_five_years_plan.1
+		}
+		x = 12
+		y = 27
+
+	}
+	focus = {
+		id = FRA_left_five_years_plan.6
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_five_years_plan.3
+		}
+		prerequisite = {
+			focus = FRA_left_five_years_plan.19
+		}
+		prerequisite = {
+			focus = FRA_left_five_years_plan.20
+		}
+		prerequisite = {
+			focus = FRA_left_five_years_plan.13
+		}
+		x = 13
+		y = 25
+
+	}
+	focus = {
+		id = FRA_left_five_years_plan.7
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_five_years_plan.6
+		}
+		x = 13
+		y = 26
+
+	}
+	focus = {
+		id = FRA_left_five_years_plan.4
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_five_years_plan.3
+		}
+		prerequisite = {
+			focus = FRA_left_five_years_plan.19
+		}
+		prerequisite = {
+			focus = FRA_left_five_years_plan.20
+		}
+		prerequisite = {
+			focus = FRA_left_five_years_plan.13
+		}
+		x = 15
+		y = 25
+
+	}
+	focus = {
+		id = FRA_left_five_years_plan.5
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_five_years_plan.4
+		}
+		x = 15
+		y = 26
+
+	}
+	focus = {
+		id = FRA_left_five_years_plan.9
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_five_years_plan.3
+		}
+		prerequisite = {
+			focus = FRA_left_five_years_plan.19
+		}
+		prerequisite = {
+			focus = FRA_left_five_years_plan.20
+		}
+		prerequisite = {
+			focus = FRA_left_five_years_plan.13
+		}
+		x = 17
+		y = 25
+
+	}
+	focus = {
+		id = FRA_left_five_years_plan.8
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_five_years_plan.9
+		}
+		x = 17
+		y = 26
+
+	}
+	focus = {
+		id = FRA_left_five_years_plan.10
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_five_years_plan.7
+		}
+		prerequisite = {
+			focus = FRA_left_five_years_plan.5
+		}
+		prerequisite = {
+			focus = FRA_left_five_years_plan.8
+		}
+		mutually_exclusive = {
+			focus = FRA_left_five_years_plan.11
+		}
+		x = 14
+		y = 27
+
+	}
+	focus = {
+		id = FRA_left_five_years_plan.11
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_five_years_plan.8
+		}
+		prerequisite = {
+			focus = FRA_left_five_years_plan.5
+		}
+		prerequisite = {
+			focus = FRA_left_five_years_plan.7
+		}
+		mutually_exclusive = {
+			focus = FRA_left_five_years_plan.10
+		}
+		x = 16
+		y = 27
+
+	}
+	focus = {
+		id = FRA_left_five_years_plan.14
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_five_years_plan.13
+		}
+		prerequisite = {
+			focus = FRA_left_five_years_plan.20
+		}
+		prerequisite = {
+			focus = FRA_left_five_years_plan.19
+		}
+		prerequisite = {
+			focus = FRA_left_five_years_plan.3
+		}
+		x = 21
+		y = 25
+
+	}
+	focus = {
+		id = FRA_left_five_years_plan.15
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_five_years_plan.14
+		}
+		x = 21
+		y = 26
+
+	}
+	focus = {
+		id = FRA_left_five_years_plan.16
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_five_years_plan.15
+		}
+		x = 19
+		y = 27
+
+	}
+	focus = {
+		id = FRA_left_five_years_plan.17
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_five_years_plan.15
+		}
+		x = 21
+		y = 27
+
+	}
+	focus = {
+		id = FRA_left_five_years_plan.18
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_five_years_plan.15
+		}
+		x = 23
+		y = 27
+
+	}
+	focus = {
+		id = FRA_left_five_years_plan.21
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_five_years_plan.2
+		}
+		prerequisite = {
+			focus = FRA_left_five_years_plan.22
+		}
+		x = 10
+		y = 28
+
+	}
+	focus = {
+		id = FRA_left_five_years_plan.23
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_five_years_plan.22
+		}
+		prerequisite = {
+			focus = FRA_left_five_years_plan.2
+		}
+		x = 12
+		y = 28
+
+	}
+	focus = {
+		id = FRA_left_five_years_plan.24
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_left_five_years_plan.11
+			focus = FRA_left_five_years_plan.10
+		}
+		prerequisite = {
+			focus = FRA_left_five_years_plan.16
+		}
+		prerequisite = {
+			focus = FRA_left_five_years_plan.17
+		}
+		prerequisite = {
+			focus = FRA_left_five_years_plan.18
+		}
+		x = 18
+		y = 28
+
+	}
+	focus = {
+		id = FRA_meeting_of_FCs
+		icon = GFX_FRA_75
+		cost = 3.00
+		available = {
+			NOT = {
+				OR = {
+					has_idea = FRA_eco_disaster_1
+					has_idea = FRA_eco_disaster_2
+					has_idea = FRA_eco_disaster_3
+				}
+			}
+		}
+		x = 42
+		y = 3
+		
+	}
+	focus = {
+		id = FRA_meeting_of_LON
+		icon = GFX_FRA_75
+		cost = 3.00
+		available = {
+			date > 1937.1.1
+			always = no
+		}
+		x = 33
+		y = 3
+		
+	}
+	focus = {
+		id = FRA_reorganize_rest_of_union
+		icon = GFX_FRA_76
+		cost = 3.00
+		relative_position_id = FRA_meeting_of_LON
+		prerequisite = {
+			focus = FRA_meeting_of_LON
+		}
+		x = 0
+		y = 1
+		
+	}
+	focus = {
+		id = FRA_reorganize_african
+		icon = GFX_FRA_76
+		cost = 3.00
+		relative_position_id = FRA_meeting_of_FCs
+		prerequisite = {
+			focus = FRA_meeting_of_FCs
+			focus = FRA_meeting_of_LON
+		}
+		x = -6
+		y = 1
+		mutually_exclusive = {
+			focus = FRA_keep_loyalists
+		}
+		
+	}
+	focus = {
+		id = FRA_keep_loyalists
+		icon = GFX_FRA_76
+		cost = 3.00
+		relative_position_id = FRA_meeting_of_FCs
+		prerequisite = {
+			focus = FRA_meeting_of_FCs
+			focus = FRA_meeting_of_LON
+		}
+		x = -4
+		y = 1
+		mutually_exclusive = {
+			focus = FRA_reorganize_african
+		}
+		
+	}
+	focus = {
+		id = FRA_allow_variety_of_culture
+		icon = GFX_FRA_76
+		cost = 3.00
+		relative_position_id = FRA_reorganize_rest_of_union
+		prerequisite = {
+			focus = FRA_reorganize_rest_of_union
+		}
+		x = 0
+		y = 1
+		mutually_exclusive = {
+			focus = FRA_keep_same_in_units
+		}
+	}
+	focus = {
+		id = FRA_invite_spanish
+		icon = GFX_FRA_76
+		cost = 3.00
+		relative_position_id = FRA_reorganize_rest_of_union
+		prerequisite = {
+			focus = FRA_reorganize_rest_of_union
+		}
+		completion_reward = {
+			country_event = {
+				id = Dawn_event_fra.7
+			}
+			custom_effect_tooltip = FRA_tooltip_4_tt
+		}
+		x = 4
+		y = 1
+		
+	}
+	focus = {
+		id = FRA_invite_sweden
+		icon = GFX_FRA_76
+		cost = 3.00
+		relative_position_id = FRA_reorganize_rest_of_union
+		prerequisite = {
+			focus = FRA_reorganize_rest_of_union
+		}
+		completion_reward = {
+			country_event = {
+				id = Dawn_event_fra.10
+			}
+			custom_effect_tooltip = FRA_tooltip_6_tt
+		}
+		x = 6
+		y = 1
+		
+	}
+	focus = {
+		id = FRA_keep_same_in_units
+		icon = GFX_goal_unknown
+		cost = 3.00
+		relative_position_id = FRA_meeting_of_LON
+		prerequisite = {
+			focus = FRA_meeting_of_LON
+		}
+		x = -2
+		y = 2
+		mutually_exclusive = {
+			focus = FRA_allow_variety_of_culture
+		}
+	}
+
+	focus = {
+		id = FRA_southern_issues
+		icon = GFX_FRA_84
+		cost = 1.00
+		x = 32
+		y = 6
+	}
+
+	focus = {
+		id = FRA_cancel_ganmeline
+		icon = GFX_FRA_87
+		cost = 1.00
+		relative_position_id = FRA_southern_issues
+		prerequisite = {
+			focus = FRA_southern_issues
+		}
+		mutually_exclusive = {
+			focus = FRA_allow_ganmeline
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_tooltip_9_tt
+			hidden_effect = {
+				F10 = {
+					retire_country_leader = yes
+					set_party_name = { 
+						ideology = absolutism 
+						long_name = "法兰西-阿尔及利亚临时委员会" 
+						name = "法兰西-阿尔及利亚临时委员会" 
+					}
+					create_country_leader = {
+						name="阿尔及利亚防卫阵线临时委员会"
+						picture = "gfx/leaders/F10/F10_temp_defencive_commity.png"
+						expire = "1965.1.1"
+						ideology = military_aboslute
+						traits = {
+							
+						}
+					}
+				}
+			}
+		}
+		x = -2
+		y = 1
+	}
+	focus = {
+		id = FRA_mandate_pettin
+		icon = GFX_FRA_86
+		cost = 1.00
+		relative_position_id = FRA_cancel_ganmeline
+		prerequisite = {
+			focus = FRA_cancel_ganmeline
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_tooltip_10_tt
+			add_popularity = {
+				ideology = absolutism
+				popularity = 0.05
+			}
+			hidden_effect = {
+				F10 = {
+					retire_country_leader = yes
+					set_party_name = { 
+						ideology = absolutism 
+						long_name = "贝当政府" 
+						name = "贝当政府" 
+					}
+					create_country_leader = {
+						name="菲利普·贝当"
+						picture = "gfx/leaders/F10/F10_pettin.png"
+						expire = "1965.1.1"
+						ideology = military_aboslute
+						traits = {
+							temp_ruler_de_algere
+						}
+					}
+				}
+			}
+		}
+		x = -2
+		y = 1
+	}
+	focus = {
+		id = FRA_sud_thema
+		icon = GFX_FRA_88
+		cost = 1.00
+		relative_position_id = FRA_cancel_ganmeline
+		prerequisite = {
+			focus = FRA_cancel_ganmeline
+		}
+		completion_reward = {
+			army_experience = 20
+			F10 = {
+				add_ideas = {
+					themata_de_sud
+				}
+			}
+		}
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = FRA_transfer_focusing
+		icon = GFX_goal_unknown
+		cost = 1.00
+		relative_position_id = FRA_southern_issues
+		prerequisite = {
+			focus = FRA_cancel_ganmeline
+			focus = FRA_allow_ganmeline
+		}
+		x = 0
+		y = 2
+	}
+	focus = {
+		id = FRA_argue_french_communist
+		icon = GFX_goal_unknown
+		cost = 1.00
+		relative_position_id = FRA_transfer_focusing
+		prerequisite = {
+			focus = FRA_transfer_focusing
+		}
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = FRA_attack_dawn_commue
+		icon = GFX_goal_unknown
+		cost = 1.00
+		relative_position_id = FRA_argue_french_communist
+		prerequisite = {
+			focus = FRA_allow_military_aid
+			focus = FRA_temp_rule_power
+		}
+
+
+		completion_reward = {
+			hidden_effect = {
+				F10 = {
+					declare_war_on = {
+						target = ALG
+						type = annex_everything
+					}
+				}
+			}
+			custom_effect_tooltip = FRA_tooltip_14_tt
+			effect_tooltip = {
+				declare_war_on = {
+					target = ALG
+					type = annex_everything
+				}
+			}
+		}
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = FRA_strightly_rule_algeria
+		icon = GFX_goal_unknown
+		cost = 4.00
+		relative_position_id = FRA_attack_dawn_commue
+		prerequisite = {
+			focus = FRA_attack_dawn_commue
+		}
+		available = {
+			ALG = {
+				exists = no
+			}
+			459 = {
+				is_owned_and_controlled_by = F10
+			}
+			460 = {
+				is_owned_and_controlled_by = F10
+			}	
+		}
+		completion_reward = {
+			annex_country = {
+				target = F10
+				transfer_state = yes
+			}
+		}
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = FRA_change_population_structure
+		icon = GFX_goal_unknown
+		cost = 10.00
+		relative_position_id = FRA_strightly_rule_algeria
+		prerequisite = {
+			focus = FRA_strightly_rule_algeria
+		}
+		prerequisite = {
+			focus = FRA_ECO.56
+			focus = FRA_ECO.49
+		}
+		x = -8
+		y = 1
+	}
+	focus = {
+		id = FRA_chance_of_northern_africa
+		icon = GFX_goal_unknown
+		cost = 10.00
+		relative_position_id = FRA_strightly_rule_algeria
+		prerequisite = {
+			focus = FRA_change_population_structure
+		}
+		prerequisite = {
+			focus = FRA_imgrate_population_act
+		}
+		x = -7
+		y = 2
+	}
+	focus = {
+		id = FRA_money_to_algerians
+		icon = GFX_goal_unknown
+		cost = 10.00
+		relative_position_id = FRA_strightly_rule_algeria
+		prerequisite = {
+			focus = FRA_Aoland_infrastructure_plan
+		}
+		prerequisite = {
+			focus = FRA_handle_thema_are_exploitative_by_nature
+		}
+		x = 7
+		y = 2
+	}
+	focus = {
+		id = FRA_imgrate_population_act
+		icon = GFX_goal_unknown
+		cost = 2.00
+		relative_position_id = FRA_strightly_rule_algeria
+		prerequisite = {
+			focus = FRA_strightly_rule_algeria
+		}
+		prerequisite = {
+			focus = FRA_ECO.56
+			focus = FRA_ECO.49
+		}
+		x = -6
+		y = 1
+	}
+	focus = {
+		id = FRA_a_long_time_deal
+		icon = GFX_goal_unknown
+		cost = 4.00
+		relative_position_id = FRA_strightly_rule_algeria
+		prerequisite = {
+			focus = FRA_strightly_rule_algeria
+		}
+		prerequisite = {
+			focus = FRA_ECO.56
+			focus = FRA_ECO.49
+		}
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = FRA_the_best_french_colonies
+		icon = GFX_goal_unknown
+		cost = 4.00
+		relative_position_id = FRA_a_long_time_deal
+		prerequisite = {
+			focus = FRA_a_long_time_deal
+		}
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = FRA_stop_commeti
+		icon = GFX_goal_unknown
+		cost = 4.00
+		relative_position_id = FRA_the_best_french_colonies
+		prerequisite = {
+			focus = FRA_a_long_time_deal
+		}
+		x = 2
+		y = 0
+	}
+	focus = {
+		id = FRA_Aoland_infrastructure_plan
+		icon = GFX_goal_unknown
+		cost = 4.00
+		relative_position_id = FRA_strightly_rule_algeria
+		prerequisite = {
+			focus = FRA_strightly_rule_algeria
+		}
+		prerequisite = {
+			focus = FRA_ECO.56
+			focus = FRA_ECO.49
+		}
+		x = 6
+		y = 1
+	}
+	focus = {
+		id = FRA_handle_thema_are_exploitative_by_nature
+		icon = GFX_goal_unknown
+		cost = 4.00
+		relative_position_id = FRA_strightly_rule_algeria
+		prerequisite = {
+			focus = FRA_strightly_rule_algeria
+		}
+		prerequisite = {
+			focus = FRA_ECO.56
+			focus = FRA_ECO.49
+		}
+		x = 8
+		y = 1
+	}
+	focus = {
+		id = FRA_allow_military_aid
+		icon = GFX_FRA_89
+		cost = 1.00
+		relative_position_id = FRA_cancel_ganmeline
+		prerequisite = {
+			focus = FRA_sud_thema
+		}
+		prerequisite = {
+			focus = FRA_mandate_pettin
+		}
+		completion_reward = {
+			hidden_effect = {
+				F10 = {
+					swap_ideas = {
+						add_idea = themata_de_sud_2
+						remove_idea = themata_de_sud
+					}
+				}
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					add_idea = themata_de_sud_2
+					remove_idea = themata_de_sud
+				}
+			}
+			add_stability = 0.05
+			F10 = {
+				add_popularity = {
+					ideology = absolutism
+					popularity = 0.02
+				}
+				add_equipment_to_stockpile = {
+					producer = ROOT
+					type = infantry_equipment
+					amount = 5000
+				}
+				add_equipment_to_stockpile = {
+					producer = ROOT
+					type = artillery_equipment
+					amount = 100
+				}
+				add_equipment_to_stockpile = {
+					producer = ROOT
+					type = support_equipment
+					amount = 1000
+				}
+			}
+		}
+		x = -1
+		y = 2
+	}
+	focus = {
+		id = FRA_algeria_commeti
+		icon = GFX_FRA_90
+		cost = 1.00
+		relative_position_id = FRA_allow_ganmeline
+		prerequisite = {
+			focus = FRA_allow_ganmeline
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_tooltip_12_tt
+			add_popularity = {
+				ideology = absolutism
+				popularity = 0.01
+			}
+			add_popularity = {
+				ideology = nationalism
+				popularity = 0.01
+			}
+			hidden_effect = {
+				army_experience = 10
+				F10 = {
+					add_stability = -0.05
+					add_manpower = 5000
+				}
+			}
+		}
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = FRA_declare_commue_illegal
+		icon = GFX_FRA_91
+		cost = 1.00
+		relative_position_id = FRA_allow_ganmeline
+		prerequisite = {
+			focus = FRA_allow_ganmeline
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = absolutism
+				popularity = 0.03
+			}
+			add_popularity = {
+				ideology = nationalism
+				popularity = 0.03
+			}
+			add_popularity = {
+				ideology = libertist_socialism
+				popularity = -0.03
+			}
+			add_popularity = {
+				ideology = authority_socialism
+				popularity = -0.03
+			}
+			add_stability = -0.15
+			ALG = {
+				add_timed_idea = {
+					days = 180
+					idea = planned_attack
+				}
+			}
+			hidden_effect = {
+				army_experience = 10
+				add_manpower = -1000
+			}
+		}
+		x = 2
+		y = 1
+	}
+	focus = {
+		id = FRA_temp_rule_power
+		icon = GFX_FRA_92
+		cost = 1.00
+		relative_position_id = FRA_allow_ganmeline
+		prerequisite = {
+			focus = FRA_declare_commue_illegal
+		}
+		prerequisite = {
+			focus = FRA_algeria_commeti
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_tooltip_13_tt
+			
+		}
+		x = 1
+		y = 2
+	}
+	focus = {
+		id = FRA_allow_ganmeline
+		icon = GFX_FRA_85
+		cost = 1.00
+		relative_position_id = FRA_southern_issues
+		prerequisite = {
+			focus = FRA_southern_issues
+		}
+		mutually_exclusive = {
+			focus = FRA_cancel_ganmeline
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_tooltip_11_tt
+			hidden_effect = {
+				army_experience = 10
+				F10 = {
+					add_stability = -0.10
+					add_popularity = {
+						ideology = absolutism
+						popularity = -0.05
+					}
+				}
+			}
+		}
+		x = 2
+		y = 1
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	focus = {
+		id = FRA_support_lavel
+		icon = GFX_goal_unknown
+		cost = 3.00
+		mutually_exclusive = {
+			focus = FRA_support_king
+		}
+		allow_branch = {
+			has_completed_focus = FRA_ECO.64
+		}
+		available = {
+			has_completed_focus = FRA_ECO.64
+		}
+		x = 80
+		y = 0
+	}
+	focus = {
+		id = FRA_touch_with_french_activation_front
+		icon = GFX_goal_unknown
+		cost = 3.00
+		relative_position_id = FRA_support_lavel
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = FRA_support_lavel
+		}
+	}
+	focus = {
+		id = FRA_support_king
+		icon = GFX_goal_unknown
+		cost = 3.00
+		mutually_exclusive = {
+			focus = FRA_support_lavel
+		}
+		allow_branch = {
+			has_completed_focus = FRA_ECO.64
+		}
+		available = {
+			has_completed_focus = FRA_ECO.64
+		}
+		relative_position_id = FRA_support_lavel
+		x = 8
+		y = 0
+	}
+}

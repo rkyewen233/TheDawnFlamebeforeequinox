@@ -1,0 +1,44 @@
+focus_tree = {
+	id = GER_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+	default = no
+	focus = { #国际共运的长子
+		id = GER_1
+		icon = GFX_BUL_1
+		cost = 1.00
+		x = 2
+		y = 0
+		mutual_exclusive = {
+			focus = GER_2
+		}
+		available = {
+			always = no
+		}
+		completion_reward = {
+			set_faction_name = 共产国际
+		}
+
+	}
+	focus = { #刻入宣言中的国际平等
+		id = GER_2
+		icon = GFX_BUL_1
+		cost = 1.00
+		x = 4
+		y = 0
+		mutual_exclusive = {
+			focus = GER_1
+		}
+		completion_reward = {
+			set_faction_name = 第三国际
+			hidden_effect = {
+				news_event = Dawn_event_news.18
+			}
+		}
+	}
+}

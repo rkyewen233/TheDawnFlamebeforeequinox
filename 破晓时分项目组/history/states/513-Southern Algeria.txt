@@ -1,0 +1,24 @@
+
+state={
+	id=513
+	name="STATE_513"
+
+	history={
+		owner = F10
+		add_core_of = F10
+		add_core_of = ALG
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		3991 4018 4150 7008 10045 12018 12020 13074 13273 13275 13280 13281 13282 13285 13286 13291 13292 13293 13301 13305 13306 
+	}
+	manpower=811486
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

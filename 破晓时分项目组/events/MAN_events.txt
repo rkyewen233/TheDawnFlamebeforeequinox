@@ -1,0 +1,121 @@
+add_namespace = MAN
+country_event = {
+	id = MAN.1
+	title = MAN.1.t
+	desc = MAN.1.d
+	picture = GFX_report_event_china_chiang_mao
+
+	is_triggered_only = yes
+	
+	option = {
+		name = MAN.1.a	
+		add_stability = -0.15
+		add_war_support = -0.05
+		country_event = {
+		    id = MAN.2
+		}
+	}
+}
+
+country_event = {
+	id = MAN.2 
+	title = MAN.2.t
+	desc = MAN.2.d
+	picture = GFX_report_event_china_chiang_mao
+
+	is_triggered_only = yes
+	
+	option = {
+		name = MAN.2.a
+		add_popularity = { 
+			ideology = monarchism
+			popularity = 0.55
+		}
+		add_popularity = { 
+			ideology = neutrality
+			popularity = -0.35
+		}
+		add_popularity = { 
+			ideology = fascism
+			popularity = 0.1
+		}
+		add_popularity = { 
+			ideology = radical_socialism
+			popularity = -0.2
+		}
+		add_popularity = { 
+			ideology = communism
+			popularity = -0.1
+		}
+		 hidden_effect = {
+            set_country_flag = MAN_flag_1
+        }
+	}
+	option = {
+		name = MAN.2.b
+		add_popularity = { 
+			ideology = neutrality
+			popularity = 0.35
+		}
+		add_popularity = { 
+			ideology = monarchism
+			popularity = -0.20
+		}
+		add_popularity = { 
+			ideology = radical_socialism
+			popularity = -0.2
+		}
+		add_popularity = { 
+			ideology = communism
+			popularity = 0.05
+		}
+		add_popularity = { 
+			ideology = democratic
+			popularity = 0.20
+		}
+		add_popularity = { 
+			ideology = communism
+			popularity = -0.1
+		}
+ 		hidden_effect = {
+            set_country_flag = MAN_flag_2
+        }
+	}
+}
+country_event = {
+	id = MAN.4
+	title = MAN.4.t
+	desc = MAN.4.d
+	is_triggered_only = yes
+	option = {
+		name = MAN.4.a	
+		add_stability = -0.05
+	}
+}
+country_event = {
+	id = MAN.5
+	title = MAN.5.t
+	desc = MAN.5.d
+	is_triggered_only = yes
+	option = {
+		name = MAN.5.a	
+		add_stability = 0.25
+		add_ideas = ASoul
+	}
+}
+country_event = {
+	id = MAN.3
+	title = MAN.3.t
+	desc = MAN.3.d
+	is_triggered_only = yes
+	option = {
+		name = MAN.3.a	
+		add_ideas = South_ideas
+		add_war_support = 0.15
+		declare_war_on = { 
+				target = GDG
+				type = annex_everything
+			}
+	}
+}
+

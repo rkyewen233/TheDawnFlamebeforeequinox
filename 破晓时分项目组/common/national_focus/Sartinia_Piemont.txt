@@ -1,0 +1,510 @@
+focus_tree = {
+	id = Sartinia_Piemont
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SPM
+		}
+	}
+	default = no
+	focus = {
+		id = SPM_Italy_under_shade_of_France
+		icon = GFX_goal_unknown
+		cost = 3.00
+		x = 46
+		y = 0
+
+	}
+	focus = {
+		id = SPM_Tomislav_is_marching
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = SPM_Italy_under_shade_of_France
+		}
+		x = 34
+		y = 1
+
+	}
+	focus = {
+		id = SPM_not_allow_protestants
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SPM_Tomislav_is_marching
+		}
+		mutually_exclusive = {
+			focus = SPM_religious_tolerence
+		}
+		x = 32
+		y = 2
+
+	}
+	focus = {
+		id = SPM_clearly_no_protestants
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = SPM_not_allow_protestants
+		}
+		x = 32
+		y = 3
+
+	}
+	focus = {
+		id = SPM_religious_tolerence
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SPM_Tomislav_is_marching
+		}
+		mutually_exclusive = {
+			focus = SPM_not_allow_protestants
+		}
+		x = 36
+		y = 2
+
+	}
+	focus = {
+		id = SPM_seperate_religion_and_politics
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = SPM_religious_tolerence
+		}
+		x = 36
+		y = 3
+
+	}
+	focus = {
+		id = SPM_communicate_with_family
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SPM_seperate_religion_and_politics
+			focus = SPM_clearly_no_protestants
+		}
+		x = 34
+		y = 4
+
+	}
+	focus = {
+		id = SPM_Italian_front
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SPM_communicate_with_family
+		}
+		x = 34
+		y = 5
+
+	}
+	focus = {
+		id = SPM_war_time_allies
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SPM_Italian_front
+		}
+		mutually_exclusive = {
+			focus = SPM_war_time_army
+		}
+		x = 36
+		y = 6
+
+	}
+	focus = {
+		id = SPM_no_communism
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SPM_Italy_under_shade_of_France
+		}
+		x = 58
+		y = 1
+
+	}
+	focus = {
+		id = SPM_southern_army
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SPM_no_communism
+		}
+		x = 49
+		y = 5
+
+	}
+	focus = {
+		id = SPM_war_time_army
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SPM_southern_army
+		}
+		mutually_exclusive = {
+			focus = SPM_war_time_allies
+		}
+		x = 46
+		y = 6
+
+	}
+	focus = {
+		id = SPM_city
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SPM_war_time_allies
+			focus = SPM_war_time_army
+		}
+		x = 39
+		y = 7
+
+	}
+	focus = {
+		id = SPM_mountain
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SPM_war_time_army
+			focus = SPM_war_time_allies
+		}
+		x = 43
+		y = 7
+
+	}
+	focus = {
+		id = SPM_politics_2
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SPM_no_communism
+		}
+		x = 68
+		y = 3
+
+	}
+	focus = {
+		id = SPM_politics_3
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SPM_politics_2
+		}
+		x = 66
+		y = 4
+
+	}
+	focus = {
+		id = SPM_politics_1
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SPM_no_communism
+		}
+		x = 70
+		y = 2
+
+	}
+	focus = {
+		id = SPM_politics_4
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SPM_politics_2
+		}
+		prerequisite = {
+			focus = SPM_politics_1
+		}
+		x = 70
+		y = 4
+
+	}
+	focus = {
+		id = SPM_politics_5
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = SPM_no_communism
+		}
+		x = 74
+		y = 2
+
+	}
+	focus = {
+		id = SPM_politics_6
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = SPM_no_communism
+		}
+		x = 76
+		y = 2
+
+	}
+	focus = {
+		id = SPM_politics_7
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = SPM_politics_5
+		}
+		prerequisite = {
+			focus = SPM_politics_6
+		}
+		x = 75
+		y = 3
+
+	}
+	focus = {
+		id = SPM_politics_8
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = SPM_politics_7
+		}
+		x = 75
+		y = 4
+
+	}
+	focus = {
+		id = SPM_politics_9
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SPM_no_communism
+		}
+		x = 80
+		y = 2
+
+	}
+	focus = {
+		id = SPM_politics_11
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SPM_politics_9
+		}
+		x = 79
+		y = 3
+
+	}
+	focus = {
+		id = SPM_politics_10
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SPM_politics_9
+		}
+		x = 80
+		y = 4
+
+	}
+	focus = {
+		id = SPM_politics_13
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SPM_politics_8
+		}
+		prerequisite = {
+			focus = SPM_politics_10
+		}
+		prerequisite = {
+			focus = SPM_politics_4
+		}
+		prerequisite = {
+			focus = SPM_politics_3
+		}
+		x = 73
+		y = 5
+
+	}
+	focus = {
+		id = SPM_politics_15
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SPM_politics_13
+		}
+		mutually_exclusive = {
+			focus = SPM_politics_14
+		}
+		x = 68
+		y = 6
+
+	}
+	focus = {
+		id = SPM_politics_17
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SPM_politics_15
+		}
+		x = 67
+		y = 7
+
+	}
+	focus = {
+		id = SPM_politics_14
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SPM_politics_13
+		}
+		mutually_exclusive = {
+			focus = SPM_politics_15
+		}
+		x = 71
+		y = 6
+
+	}
+	focus = {
+		id = SPM_politics_16
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SPM_politics_14
+		}
+		x = 70
+		y = 7
+
+	}
+	focus = {
+		id = SPM_not_forgiveness
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SPM_politics_13
+		}
+		mutually_exclusive = {
+			focus = SPM_people_are_crimless
+		}
+		x = 75
+		y = 6
+
+	}
+	focus = {
+		id = SPM_people_are_crimless
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SPM_politics_13
+		}
+		mutually_exclusive = {
+			focus = SPM_not_forgiveness
+		}
+		x = 78
+		y = 6
+
+	}
+	focus = {
+		id = SPM_politics_18
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SPM_people_are_crimless
+			focus = SPM_not_forgiveness
+		}
+		x = 76
+		y = 7
+
+	}
+	focus = {
+		id = SPM_politics_19
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SPM_people_are_crimless
+			focus = SPM_not_forgiveness
+		}
+		x = 79
+		y = 7
+
+	}
+	focus = {
+		id = SPM_politics_12
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SPM_politics_9
+		}
+		x = 81
+		y = 3
+
+	}
+	focus = {
+		id = SPM_politics_20
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = SPM_politics_13
+		}
+		x = 73
+		y = 7
+
+	}
+	focus = {
+		id = SPM_politics_21
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SPM_politics_16
+			focus = SPM_politics_17
+		}
+		prerequisite = {
+			focus = SPM_politics_20
+		}
+		prerequisite = {
+			focus = SPM_politics_18
+		}
+		prerequisite = {
+			focus = SPM_politics_19
+		}
+		x = 71
+		y = 8
+
+	}
+	focus = {
+		id = SPM_politics_22
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SPM_politics_16
+			focus = SPM_politics_17
+		}
+		prerequisite = {
+			focus = SPM_politics_18
+		}
+		prerequisite = {
+			focus = SPM_politics_19
+		}
+		prerequisite = {
+			focus = SPM_politics_20
+		}
+		x = 75
+		y = 8
+
+	}
+	focus = {
+		id = SPM_politics_22
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SPM_mountain
+		}
+		prerequisite = {
+			focus = SPM_city
+		}
+		prerequisite = {
+			focus = SPM_politics_21
+		}
+		prerequisite = {
+			focus = SPM_politics_22
+		}
+		x = 46
+		y = 10
+
+	}
+}

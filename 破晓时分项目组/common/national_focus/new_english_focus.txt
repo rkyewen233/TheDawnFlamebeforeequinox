@@ -1,0 +1,9535 @@
+focus_tree = {
+	id = new_english_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = ENG
+		}
+	}
+	default = no
+	focus = {
+		id = ENG_left_wing_1
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_begain
+		}
+		x = 46
+		y = 2
+
+	}
+	focus = {
+		id = ENG_left_wing_2
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_left_wing_1
+		}
+		relative_position_id = ENG_left_wing_1
+		x = 18
+		y = 1
+
+	}
+	focus = {
+		id = ENG_left_wing_4
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_left_wing_2
+		}
+		relative_position_id = ENG_left_wing_2
+		x = 3
+		y = 1
+
+	}
+	focus = {
+		id = ENG_left_wing_8
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_left_wing_2
+		}
+		relative_position_id = ENG_left_wing_2
+		x = -6
+		y = 1
+
+	}
+	focus = {
+		id = ENG_left_wing_9
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_left_wing_8
+		}
+		relative_position_id = ENG_left_wing_8
+		x = 2
+		y = 1
+
+	}
+	focus = {
+		id = ENG_left_wing_11
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_left_wing_9
+		}
+		relative_position_id = ENG_left_wing_9
+		x = 2
+		y = 1
+
+	}
+	focus = {
+		id = ENG_left_wing_14
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_left_wing_11
+		}
+		relative_position_id = ENG_left_wing_11
+		x = 1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_left_wing_16
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_left_wing_14
+		}
+		relative_position_id = ENG_left_wing_14
+		x = -1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_left_wing_28
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_left_wing_16
+		}
+		prerequisite = {
+			focus = ENG_left_wing_27
+		}
+		relative_position_id = ENG_left_wing_16
+		mutually_exclusive = {
+			focus = ENG_left_wing_31
+			focus = ENG_left_wing_32
+			focus = ENG_left_wing_36
+		}
+		x = 0
+		y = 3
+
+	}
+	focus = {
+		id = ENG_left_wing_15
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_left_wing_11
+		}
+		relative_position_id = ENG_left_wing_11
+		x = -1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_left_wing_12
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_left_wing_9
+		}
+		relative_position_id = ENG_left_wing_9
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = ENG_left_wing_13
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_left_wing_9
+		}
+		relative_position_id = ENG_left_wing_9
+		x = 4
+		y = 1
+
+	}
+	focus = {
+		id = ENG_left_wing_10
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_left_wing_8
+		}
+		relative_position_id = ENG_left_wing_8
+		x = -2
+		y = 1
+
+	}
+	focus = {
+		id = ENG_left_wing_17
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_left_wing_10
+		}
+		relative_position_id = ENG_left_wing_10
+		mutually_exclusive = {
+			focus = ENG_left_wing_18
+		}
+		x = -1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_left_wing_33
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_left_wing_17
+		}
+		relative_position_id = ENG_left_wing_17
+		x = -1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_left_wing_34
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_left_wing_33
+		}
+		relative_position_id = ENG_left_wing_33
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = ENG_left_wing_35
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_left_wing_34
+		}
+		relative_position_id = ENG_left_wing_34
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = ENG_left_wing_36
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_left_wing_35
+		}
+		mutually_exclusive = {
+			focus = ENG_left_wing_31
+			focus = ENG_left_wing_32
+			focus = ENG_left_wing_28
+		}
+		relative_position_id = ENG_left_wing_35
+		x = 0
+		y = 2
+
+	}
+	focus = {
+		id = ENG_left_wing_18
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_left_wing_10
+		}
+		relative_position_id = ENG_left_wing_10
+		mutually_exclusive = {
+			focus = ENG_left_wing_17
+		}
+		x = 1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_left_wing_19
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_left_wing_18
+		}
+		relative_position_id = ENG_left_wing_18
+		x = 1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_left_wing_20
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_left_wing_19
+		}
+		relative_position_id = ENG_left_wing_19
+		x = 2
+		y = 1
+
+	}
+	focus = {
+		id = ENG_left_wing_23
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_left_wing_20
+		}
+		relative_position_id = ENG_left_wing_20
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = ENG_left_wing_21
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_left_wing_19
+		}
+		relative_position_id = ENG_left_wing_19
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = ENG_left_wing_24
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_left_wing_21
+		}
+		relative_position_id = ENG_left_wing_21
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = ENG_left_wing_25
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_left_wing_22
+		}
+		relative_position_id = ENG_left_wing_22
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = ENG_left_wing_26
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_left_wing_25
+		}
+		prerequisite = {
+			focus = ENG_left_wing_24
+		}
+		prerequisite = {
+			focus = ENG_left_wing_23
+		}
+		relative_position_id = ENG_left_wing_24
+		x = -1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_left_wing_27
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_left_wing_25
+		}
+		prerequisite = {
+			focus = ENG_left_wing_24
+		}
+		prerequisite = {
+			focus = ENG_left_wing_23
+		}
+		relative_position_id = ENG_left_wing_24
+		x = 1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_left_wing_22
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_left_wing_19
+		}
+		relative_position_id = ENG_left_wing_19
+		x = -2
+		y = 1
+
+	}
+	focus = {
+		id = ENG_left_wing_5
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_left_wing_4
+		}
+		relative_position_id = ENG_left_wing_4
+		x = 1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_left_wing_6
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_left_wing_4
+		}
+		relative_position_id = ENG_left_wing_4
+		x = -1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_left_wing_7
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_left_wing_6
+		}
+		relative_position_id = ENG_left_wing_6
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = ENG_left_wing_29
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_left_wing_7
+		}
+		prerequisite = {
+			focus = ENG_left_wing_13
+		}
+		relative_position_id = ENG_left_wing_7
+		x = -1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_left_wing_30
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_left_wing_29
+		}
+		relative_position_id = ENG_left_wing_29
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = ENG_left_wing_32
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_left_wing_30
+		}
+		relative_position_id = ENG_left_wing_30
+		x = 1
+		y = 3
+		mutually_exclusive = {
+			focus = ENG_left_wing_28
+			focus = ENG_left_wing_31
+			focus = ENG_left_wing_36
+		}
+
+	}
+	focus = {
+		id = ENG_left_wing_31
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_left_wing_29
+		}
+		relative_position_id = ENG_left_wing_29
+		x = -1
+		y = 4
+		mutually_exclusive = {
+			focus = ENG_left_wing_28
+			focus = ENG_left_wing_32
+			focus = ENG_left_wing_36
+		}
+
+	}
+	focus = {
+		id = ENG_left_wing_3
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_left_wing_1
+		}
+		relative_position_id = ENG_left_wing_1
+		x = -17
+		y = 1
+
+	}
+	focus = {
+		id = ENG_laborer_0
+		icon = GFX_ENG_goal_13
+		cost = 1.00
+		x = 42
+		y = 1
+		allow_branch = {
+			has_country_flag = ENG_social_democratic
+			always = no
+		}
+		completion_reward = {
+			country_event = {
+				id = Dawn_event_eng.23
+			}
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = ENG_laborer_3
+		icon = GFX_ENG_goal_2
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_0
+		}
+		completion_reward = {
+			country_event = {
+				id = Dawn_event_eng.24
+			}
+			add_timed_idea = {
+				days = 100
+				idea = ENG_debate_of_laborers_party
+			}
+		}
+		x = 36
+		y = 2
+
+	}
+	focus = {
+		id = ENG_laborer_4
+		icon = GFX_ENG_goal_6
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_3
+		}
+		prerequisite = {
+			focus = ENG_laborer_2
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+		x = 35
+		y = 3
+
+	}
+	focus = {
+		id = ENG_laborer_5
+		icon = GFX_ENG_goal_7
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_4
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = ENG_rule_of_laborers_party_1
+				remove_idea = ENG_rule_of_laborers_party
+			}
+			add_political_power = 10
+		}
+		x = 35
+		y = 4
+
+	}
+	focus = {
+		id = ENG_laborer_2
+		icon = GFX_ENG_goal_3
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_0
+		}
+		completion_reward = {
+			country_event = {
+				id = Dawn_event_eng.25
+			}
+			add_popularity = {
+				ideology = authority_socialism
+				popularity = 0.02
+			}
+			add_ideas = {
+				ENG_rule_of_laborers_party
+			}
+		}
+		x = 38
+		y = 2
+
+	}
+	focus = {
+		id = ENG_laborer_6
+		icon = GFX_ENG_goal_11
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_3
+		}
+		prerequisite = {
+			focus = ENG_laborer_2
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_political_tip.3
+			add_stability = 0.05
+			add_political_power = 10
+		}
+		x = 37
+		y = 3
+
+	}
+	focus = {
+		id = ENG_laborer_7
+		icon = GFX_ENG_1000
+		cost = 3
+		prerequisite = {
+			focus = ENG_laborer_6
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ENG_political_tip.5
+				has_country_flag = ENG_flag_of_political_storm
+			}
+			has_completed_focus = ENG_laborer_5
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = ENG_rule_of_laborers_party_2
+				remove_idea = ENG_rule_of_laborers_party_1
+			}
+			custom_effect_tooltip = ENG_political_tip.4
+			add_stability = 0.10
+			add_popularity = {
+				ideology = progressism
+				popularity = 0.01
+			}
+		}
+		x = 37
+		y = 4
+
+	}
+	focus = {
+		id = ENG_laborer_12
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_7
+		}
+		prerequisite = {
+			focus = ENG_laborer_5
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = ENG_rule_of_laborers_party_3
+				remove_idea = ENG_rule_of_laborers_party_2
+			}
+			add_popularity = {
+				ideology = absolutism
+				popularity = -0.03
+			}
+			add_popularity = {
+				ideology = libertism
+				popularity = 0.01
+			}
+			add_popularity = {
+				ideology = libertist_socialism
+				popularity = 0.01
+			}
+			add_popularity = {
+				ideology = progressism
+				popularity = 0.01
+			}
+		}
+		x = 36
+		y = 5
+
+	}
+	focus = {
+		id = ENG_laborer_1
+		icon = GFX_ENG_goal_1
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_0
+		}
+		completion_reward = {
+			country_event = {
+				id = Dawn_event_eng.26
+			}
+			add_popularity = {
+				ideology = authority_socialism
+				popularity = 0.01
+			}
+		}
+		x = 40
+		y = 2
+
+	}
+	focus = {
+		id = ENG_laborer_14
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_2
+		}
+		prerequisite = {
+			focus = ENG_laborer_1
+		}
+		prerequisite = {
+			focus = ENG_laborer_3
+		}
+		available = {
+			has_completed_focus = ENG_laborer_12
+			has_completed_focus = ENG_laborer_13
+		}
+		completion_reward = {
+			country_event = {
+				id = Dawn_event_eng.29
+			}
+		}
+		x = 38
+		y = 5
+
+	}
+	focus = {
+		id = ENG_laborer_8
+		icon = GFX_ENG_goal_15
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_2
+		}
+		prerequisite = {
+			focus = ENG_laborer_1
+		}
+		completion_reward = {
+			country_event = {
+				id = Dawn_event_eng.27
+			}
+		}
+		x = 39
+		y = 3
+
+	}
+	focus = {
+		id = ENG_laborer_9
+		icon = GFX_ENG_goal_16
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_8
+		}
+		x = 39
+		y = 4
+		completion_reward = {
+			add_popularity = {
+				ideology = authority_socialism
+				popularity = 0.02
+			}
+			country_event = {
+				id = Dawn_event_eng.28
+			}
+		}
+	}
+	focus = {
+		id = ENG_laborer_16
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_14
+		}
+		mutually_exclusive = {
+			focus = ENG_laborer_15
+		}
+		available = {
+			always = no
+		}
+		x = 40
+		y = 6
+
+	}
+	focus = {
+		id = ENG_laborer_30
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_16
+		}
+		x = 39
+		y = 7
+
+	}
+	focus = {
+		id = ENG_laborer_32
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_30
+		}
+		x = 38
+		y = 8
+
+	}
+	focus = {
+		id = ENG_laborer_33
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_30
+		}
+		x = 39
+		y = 9
+
+	}
+	focus = {
+		id = ENG_laborer_10
+		icon = GFX_ENG_goal_12
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_1
+		}
+		prerequisite = {
+			focus = ENG_laborer_2
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_political_tip.6
+		}
+		x = 41
+		y = 3
+
+	}
+	focus = {
+		id = ENG_laborer_11
+		icon = GFX_ENG_goal_14
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_10
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "已经与资本家会晤完毕"
+				has_country_flag = ENG_sd_met_fi
+			}
+		}
+		completion_reward = {
+			add_stability = -0.1
+			add_political_power = -10
+			add_popularity = {
+				ideology = progressism
+				popularity = -0.02
+			}
+		}
+		x = 41
+		y = 4
+
+	}
+	focus = {
+		id = ENG_laborer_13
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_11
+		}
+		prerequisite = {
+			focus = ENG_laborer_9
+		}
+		x = 40
+		y = 5
+		completion_reward = {
+			add_stability = 0.05
+			add_popularity = {
+				ideology = conservatism_group
+				popularity = 0.02
+			}
+		}
+	}
+	focus = {
+		id = ENG_laborer_31
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_16
+		}
+		x = 41
+		y = 7
+
+	}
+	focus = {
+		id = ENG_laborer_34
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_31
+		}
+		x = 41
+		y = 8
+
+	}
+	focus = {
+		id = ENG_laborer_36
+		icon = GFX_ENG_goal_8
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_0
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ENG_political_tip.1
+				has_completed_focus = ENG_laborer_18
+			}
+		}
+		x = 44
+		y = 2
+
+	}
+	focus = {
+		id = ENG_laborer_37
+		icon = GFX_ENG_goal_9
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_36
+		}
+		x = 43
+		y = 3
+
+	}
+	focus = {
+		id = ENG_laborer_38
+		icon = GFX_ENG_goal_10
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_36
+		}
+		x = 45
+		y = 3
+
+	}
+	focus = {
+		id = ENG_laborer_39
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_37
+		}
+		prerequisite = {
+			focus = ENG_laborer_38
+		}
+		x = 44
+		y = 4
+
+	}
+	focus = {
+		id = ENG_laborer_40
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_39
+		}
+		x = 43
+		y = 5
+
+	}
+	focus = {
+		id = ENG_laborer_49
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_40
+		}
+		x = 42
+		y = 6
+
+	}
+	focus = {
+		id = ENG_laborer_50
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_40
+		}
+		x = 44
+		y = 6
+
+	}
+	focus = {
+		id = ENG_laborer_53
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_39
+		}
+		x = 45
+		y = 5
+
+	}
+	focus = {
+		id = ENG_laborer_55
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_53
+		}
+		x = 45
+		y = 8
+
+	}
+	focus = {
+		id = ENG_laborer_54
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_39
+		}
+		x = 47
+		y = 5
+
+	}
+	focus = {
+		id = ENG_laborer_56
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_54
+		}
+		x = 46
+		y = 6
+
+	}
+	focus = {
+		id = ENG_laborer_57
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_56
+		}
+		x = 46
+		y = 7
+
+	}
+	focus = {
+		id = ENG_laborer_78
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_0
+		}
+		x = 48
+		y = 2
+
+	}
+	focus = {
+		id = ENG_laborer_79
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_78
+		}
+		mutually_exclusive = {
+			focus = ENG_laborer_80
+		}
+		x = 47
+		y = 3
+
+	}
+	focus = {
+		id = ENG_laborer_60
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_54
+		}
+		x = 47
+		y = 8
+
+	}
+	focus = {
+		id = ENG_laborer_61
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_60
+		}
+		x = 57
+		y = 9
+
+	}
+	focus = {
+		id = ENG_laborer_62
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_61
+		}
+		x = 57
+		y = 10
+
+	}
+	focus = {
+		id = ENG_laborer_69
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_62
+		}
+		x = 57
+		y = 12
+
+	}
+	focus = {
+		id = ENG_laborer_80
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_78
+		}
+		mutually_exclusive = {
+			focus = ENG_laborer_79
+		}
+		x = 49
+		y = 3
+
+	}
+	focus = {
+		id = ENG_laborer_81
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_80
+			focus = ENG_laborer_79
+		}
+		x = 48
+		y = 4
+
+	}
+	focus = {
+		id = ENG_laborer_58
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_54
+		}
+		x = 48
+		y = 6
+
+	}
+	focus = {
+		id = ENG_laborer_59
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_58
+		}
+		x = 48
+		y = 7
+
+	}
+	focus = {
+		id = ENG_laborer_92
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_39
+		}
+		x = 49
+		y = 5
+
+	}
+	focus = {
+		id = ENG_laborer_63
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_60
+		}
+		x = 59
+		y = 9
+
+	}
+	focus = {
+		id = ENG_laborer_66
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_63
+		}
+		x = 59
+		y = 10
+
+	}
+	focus = {
+		id = ENG_laborer_71
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_66
+		}
+		x = 58
+		y = 11
+
+	}
+	focus = {
+		id = ENG_laborer_70
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_66
+		}
+		x = 59
+		y = 12
+
+	}
+	focus = {
+		id = ENG_laborer_64
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_60
+		}
+		x = 61
+		y = 9
+
+	}
+	focus = {
+		id = ENG_laborer_72
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_64
+		}
+		x = 61
+		y = 10
+
+	}
+	focus = {
+		id = ENG_laborer_73
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_72
+		}
+		x = 61
+		y = 11
+
+	}
+	focus = {
+		id = ENG_laborer_65
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_60
+		}
+		x = 63
+		y = 9
+
+	}
+	focus = {
+		id = ENG_laborer_74
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_65
+		}
+		x = 63
+		y = 10
+
+	}
+	focus = {
+		id = ENG_laborer_75
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_74
+		}
+		x = 63
+		y = 11
+
+	}
+	focus = {
+		id = ENG_laborer_76
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_75
+		}
+		x = 62
+		y = 12
+
+	}
+	focus = {
+		id = ENG_laborer_15
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_14
+		}
+		mutually_exclusive = {
+			focus = ENG_laborer_16
+		}
+		available = {
+			always = no
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = ENG_bypass_later
+				has_country_flag = ENG_flag_of_no_minbing
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_bypass_later
+		}
+		x = 36
+		y = 6
+
+	}
+	focus = {
+		id = ENG_laborer_17
+		icon = GFX_ENG_goal_46
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_15
+		}
+		completion_reward = {
+			country_event = {
+				id = Dawn_event_eng.30
+			}
+			add_ideas = {
+				ENG_no_radicalism
+			}
+		}
+		x = 36
+		y = 7
+
+	}
+	focus = {
+		id = ENG_laborer_18
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_17
+		}
+		x = 36
+		y = 8
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ENG_political_tip.2
+				has_completed_focus = ENG_laborer_81
+			}
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = ENG_rule_of_laborers_party_4
+				remove_idea = ENG_rule_of_laborers_party_3
+			}
+			custom_effect_tooltip = ENG_political_tip.7
+		}
+	}
+	focus = {
+		id = ENG_laborer_19
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_18
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_political_tip.11
+			if = {
+				limit = {
+					has_completed_focus = ENG_laborer_80
+				}
+				custom_effect_tooltip = ENG_political_tip.12
+				add_stability = -0.10
+				add_popularity = {
+					ideology = conservatism_group
+					popularity = -0.05
+				}
+				add_popularity = {
+					ideology = libertism
+					popularity = 0.03
+				}
+				add_popularity = {
+					ideology = progressism
+					popularity = 0.02
+				}
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = ENG_laborer_79
+				}
+				custom_effect_tooltip = ENG_political_tip.13
+				add_stability = 0.05
+				add_popularity = {
+					ideology = conservatism_group
+					popularity = 0.02
+				}
+				add_popularity = {
+					ideology = libertism
+					popularity = 0.03
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = ENG_absorb_libertism
+				}
+				custom_effect_tooltip = ENG_political_tip.14
+				add_popularity = {
+					ideology = libertism
+					popularity = 0.03
+				}
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = ENG_absorb_conservatism
+				}
+				custom_effect_tooltip = ENG_political_tip.15
+				add_popularity = {
+					ideology = conservatism_group
+					popularity = 0.03
+				}
+			}
+			add_ideas = {
+				ENG_minzhu_tuoxie
+			}
+		}
+		x = 37
+		y = 9
+
+	}
+	focus = {
+		id = ENG_laborer_20
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_18
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_political_tip.8
+			add_stability = 0.05
+			add_timed_idea = {
+				idea = ENG_no_monarchism
+				days = 365
+			}
+			hidden_effect = {
+				add_popularity = {
+					ideology = absolutism
+					popularity = -0.02
+				}
+				add_popularity = {
+					ideology = nationalism
+					popularity = -0.01
+				}
+			}
+		}
+		x = 35
+		y = 9
+
+	}
+	focus = {
+		id = ENG_laborer_21
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_18
+		}
+		available = {
+			NOT = {
+				has_idea = ENG_no_monarchism
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_political_tip.9
+			add_timed_idea = {
+				idea = ENG_no_absolutism
+				days = 100
+			}
+			add_popularity = {
+				ideology = absolutism
+				popularity = -0.01
+			}
+		}
+		x = 33
+		y = 9
+
+	}
+	focus = {
+		id = ENG_laborer_22
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_21
+		}
+		available = {
+			NOT = {
+				has_idea = ENG_no_absolutism
+			}
+		}
+		completion_reward = {
+			add_stability = -0.2
+			add_political_power = 10
+			add_popularity = {
+				ideology = absolutism
+				popularity = -0.03
+			}
+		}
+		x = 32
+		y = 10
+
+	}
+	focus = {
+		id = ENG_laborer_23
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_21
+		}
+		available = {
+			NOT = {
+				has_idea = ENG_no_absolutism
+			}
+		}
+		completion_reward = {
+			add_war_support = -0.15
+			add_political_power = 10
+			add_popularity = {
+				ideology = absolutism
+				popularity = -0.01
+			}
+			add_manpower = -10000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+				producer = ENG
+			}
+		}
+		x = 34
+		y = 10
+
+	}
+	focus = {
+		id = ENG_laborer_24
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_23
+		}
+		prerequisite = {
+			focus = ENG_laborer_22
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_political_tip.10
+			add_popularity = {
+				ideology = progressism
+				popularity = 0.02
+			}
+		}
+		x = 33
+		y = 11
+
+	}
+	focus = {
+		id = ENG_laborer_25
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_23
+		}
+		x = 34
+		y = 12
+
+	}
+	focus = {
+		id = ENG_laborer_26
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_20
+		}
+		prerequisite = {
+			focus = ENG_laborer_19
+		}
+		x = 36
+		y = 10
+
+	}
+	focus = {
+		id = ENG_laborer_27
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_20
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = progressism
+				popularity = 0.03
+			}
+			hidden_effect = {
+				add_popularity = {
+					ideology = monarchism
+					popularity = -0.02
+				}
+				add_popularity = {
+					ideology = Autocratic
+					popularity = -0.02
+				}
+				add_popularity = {
+					ideology = conservatism
+					popularity = -0.02
+				}
+			}
+		}
+		x = 35
+		y = 11
+
+	}
+	focus = {
+		id = ENG_laborer_28
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_19
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = ENG_laborer_79
+				}
+				custom_effect_tooltip = ENG_political_tip.12
+				add_popularity = {
+					ideology = liberte_democratic
+					popularity = 0.03
+				}
+			}
+			custom_effect_tooltip = ENG_political_tip.16
+			swap_ideas = {
+				remove_idea = ENG_minzhu_tuoxie
+				add_idea = ENG_the_democratic_union_of_under_controlled
+			}
+		}
+		x = 37
+		y = 11
+
+	}
+	focus = {
+		id = ENG_laborer_29
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_26
+		}
+		x = 36
+		y = 12
+
+	}
+	focus = {
+		id = ENG_laborer_35
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_31
+			focus = ENG_laborer_30
+		}
+		x = 40
+		y = 10
+
+	}
+	focus = {
+		id = ENG_laborer_41
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_52
+		}
+		mutually_exclusive = {
+			focus = ENG_laborer_43
+			focus = ENG_laborer_93
+		}
+		x = 43
+		y = 9
+
+	}
+	focus = {
+		id = ENG_laborer_93
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_52
+		}
+		mutually_exclusive = {
+			focus = ENG_laborer_41
+		}
+		x = 45
+		y = 9
+
+	}
+	focus = {
+		id = ENG_laborer_43
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_52
+		}
+		mutually_exclusive = {
+			focus = ENG_laborer_41
+		}
+		mutually_exclusive = {
+			focus = ENG_laborer_93
+		}
+		x = 41
+		y = 9
+
+	}
+	focus = {
+		id = ENG_laborer_44
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_41
+			focus = ENG_laborer_43
+			focus = ENG_laborer_93
+		}
+		x = 42
+		y = 10
+
+	}
+	focus = {
+		id = ENG_laborer_45
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_43
+			focus = ENG_laborer_41
+			focus = ENG_laborer_93
+		}
+		x = 44
+		y = 10
+
+	}
+	focus = {
+		id = ENG_laborer_46
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_44
+		}
+		x = 42
+		y = 11
+
+	}
+	focus = {
+		id = ENG_laborer_47
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_45
+		}
+		x = 44
+		y = 11
+
+	}
+	focus = {
+		id = ENG_laborer_48
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_41
+			focus = ENG_laborer_43
+			focus = ENG_laborer_43
+		}
+		x = 43
+		y = 12
+
+	}
+	focus = {
+		id = ENG_laborer_51
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_50
+		}
+		prerequisite = {
+			focus = ENG_laborer_49
+		}
+		x = 43
+		y = 7
+
+	}
+	focus = {
+		id = ENG_laborer_52
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_51
+		}
+		x = 43
+		y = 8
+
+	}
+	focus = {
+		id = ENG_laborer_67
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_45
+		}
+		prerequisite = {
+			focus = ENG_laborer_61
+		}
+		x = 46
+		y = 11
+
+	}
+	focus = {
+		id = ENG_laborer_68
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_67
+		}
+		prerequisite = {
+			focus = ENG_laborer_47
+		}
+		x = 45
+		y = 12
+
+	}
+	focus = {
+		id = ENG_laborer_77
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_75
+		}
+		x = 64
+		y = 12
+
+	}
+	focus = {
+		id = ENG_laborer_82
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_70
+		}
+		prerequisite = {
+			focus = ENG_laborer_69
+		}
+		prerequisite = {
+			focus = ENG_laborer_76
+		}
+		prerequisite = {
+			focus = ENG_laborer_77
+		}
+		prerequisite = {
+			focus = ENG_laborer_73
+		}
+		x = 61
+		y = 13
+
+	}
+	focus = {
+		id = ENG_laborer_83
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_29
+		}
+		x = 35
+		y = 13
+
+	}
+	focus = {
+		id = ENG_laborer_84
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_29
+		}
+		prerequisite = {
+			focus = ENG_laborer_48
+		}
+		x = 37
+		y = 13
+
+	}
+	focus = {
+		id = ENG_laborer_85
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_29
+		}
+		prerequisite = {
+			focus = ENG_laborer_48
+		}
+		x = 39
+		y = 13
+
+	}
+	focus = {
+		id = ENG_laborer_86
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_48
+		}
+		prerequisite = {
+			focus = ENG_laborer_29
+		}
+		x = 41
+		y = 13
+
+	}
+	focus = {
+		id = ENG_laborer_87
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_48
+		}
+		x = 43
+		y = 13
+
+	}
+	focus = {
+		id = ENG_laborer_88
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_48
+		}
+		prerequisite = {
+			focus = ENG_laborer_68
+		}
+		x = 45
+		y = 13
+
+	}
+	focus = {
+		id = ENG_laborer_89
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_84
+		}
+		x = 37
+		y = 14
+
+	}
+	focus = {
+		id = ENG_laborer_90
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_89
+		}
+		x = 37
+		y = 15
+
+	}
+	focus = {
+		id = ENG_laborer_91
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_laborer_86
+		}
+		x = 41
+		y = 14
+
+	}
+	focus = {
+		id = ENG_a_memory_to_before
+		icon = GFX_ENG_goal_5
+		cost = 2.00
+		x = 21
+		y = 1
+		allow_branch = {
+			NOT = { has_country_flag = ENG_election }
+			NOT = { has_completed_focus = ENG_memory_9 }
+			NOT = { has_country_flag = ENG_social_democratic }
+		}
+		completion_reward = {
+			set_variable = { #国民生产总值
+                var = ENG_national_gnp
+                value = 5502 #百万镑
+            }
+            set_variable = { #国民生产总值增长（百分比
+                var = ENG_national_gnp_growth_percentage
+                value = 1.026
+            }
+            set_variable = { #政府收入
+                var = ENG_governmental_income
+                value = 0 #GNP的25.9%
+            }
+            set_variable = { #政府收入-百分比
+                var = ENG_governmental_income_per
+                value = 0.259 #GNP的25.9%
+            }
+            set_variable = { #政府支出-军事
+                var = ENG_governmental_out_come_mil
+                value = 0 #政府收入的17.7%
+            }
+            set_variable = { #政府支出-军事-百分比
+                var = ENG_governmental_out_come_mil_per
+                value = 0.177 #政府收入的17.7%
+            }
+            set_variable = { #政府支出-教育
+                var = ENG_governmental_out_come_edu
+                value = 0 #政府收入的3.33%
+            }
+            set_variable = { #政府支出-教育-百分比
+                var = ENG_governmental_out_come_edu_per
+                value = 0.0333 #政府收入的3.33%
+            }
+            set_variable = { #政府支出-其他
+                var = ENG_governmental_out_come_oth
+                value = 0 #政府收入的33.53%
+            }
+            set_variable = { #政府支出-其他
+                var = ENG_governmental_out_come_oth_per
+                value = 0.3353 #政府收入的33.53%
+            }
+            set_variable = { #政府支出-政治
+                var = ENG_governmental_out_come_pli
+                value = 0 #政府收入的23.12%
+            }
+            set_variable = { #政府支出-政治
+                var = ENG_governmental_out_come_pli_per
+                value = 0.2312 #政府收入的23.12%
+            }
+            set_variable = { #政府支出-综合
+                var = ENG_governmental_out_come
+                value = 0
+            }
+            set_variable = { #政府预算占比
+                var = ENG_budget_percentage
+                value = 0
+            }
+            set_variable = { #贷款
+                var = ENG_loan
+                value = 6029
+            }
+            set_variable = { #贷款-占比（百分比
+                var = ENG_loan_of_total_in_percentage
+                value = 0
+            }
+			country_event = {
+				id = Dawn_event_eng.12
+			}
+			set_variable = { #王党
+				var = ENG_kings_party
+				value = 44
+			}
+			set_variable = { #至上党
+				var = ENG_kings_britain_first_party
+				value = 11
+			}
+			set_variable = { #共产党
+				var = ENG_socialism
+				value = 7
+			}
+			set_variable = { #工党
+				var = ENG_social_democratic
+				value = 32
+			}
+			set_variable = { #保守党
+				var = ENG_consercatic_democratic
+				value = 13
+			}
+			set_variable = { #人民党
+				var = ENG_democratic_libertism
+				value = 8
+			}
+		}
+	}
+	focus = {
+		id = ENG_the_prove_of_end
+		icon = GFX_ENG_goal_26
+		cost = 1.00
+		x = 40
+		y = 2
+		allow_branch = {
+			has_country_flag = ENG_election
+			NOT = { has_country_flag = ENG_social_democratic }
+		}
+		completion_reward = {
+			country_event = {
+				id = Dawn_event_eng.10
+				days = 3
+			}
+		}
+	}
+	focus = {
+		id = ENG_economics_1936
+		icon = GFX_ENG_1000
+		cost = 1.00
+		x = 51
+		y = 2
+		allow_branch = {
+			has_country_flag = ENG_election
+			NOT = { has_country_flag = ENG_social_democratic }
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ENG_political_tip.18
+				has_country_flag = passed_eco_debate
+				always = no
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_political_tip.17
+			custom_effect_tooltip = ENG_a_lot_of_storage_increase #ENG_a_lot_of_storage_increase:0 "这将§G增加§!§Y20m英镑§!\n"
+			hidden_effect = {
+				add_to_variable = {
+					ENG_economics_stored = 20
+				}
+			}
+			add_political_power = 120
+			country_event = {
+				id = Dawn_event_eng.21
+			}
+			custom_effect_tooltip = ENG_left_increase_1 #小幅增加工党影响力
+			hidden_effect = {
+				add_to_variable = {
+					ENG_social_democratic = 3
+				}
+			}
+			custom_effect_tooltip = ENG_right_increase_1 #小幅度增加王党影响力
+			hidden_effect = {
+				add_to_variable = {
+					ENG_kings_party = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_war_of_no_battle
+		icon = GFX_ENG_1000
+		cost = 2.00
+		x = 57
+		y = 5
+		allow_branch = {
+			has_country_flag = ENG_election
+			NOT = { has_country_flag = ENG_social_democratic }
+		}
+		completion_reward = {
+			add_ideas = {
+				ENG_army_reformation_in_election
+				ENG_army_conflict
+			}
+		}
+	}
+	focus = {
+		id = ENG_diplomacy_diffrences
+		icon = GFX_ENG_1000
+		cost = 2.00
+		x = 50
+		y = 6
+		allow_branch = {
+			has_country_flag = ENG_election
+			NOT = { has_country_flag = ENG_social_democratic }
+		}
+		completion_reward = {
+			add_political_power = 10
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = ENG_attitude_to_educational_reform
+		icon = GFX_ENG_1000
+		cost = 1.00
+		x = 61
+		y = 2
+		allow_branch = {
+			has_country_flag = ENG_election
+			NOT = { has_country_flag = ENG_social_democratic }
+		}
+		completion_reward = {
+			add_ideas = {
+				ENG_educational_reform_preparation
+			}
+		}
+	}
+	focus = {
+		id = ENG_memory_1
+		icon = GFX_ENG_goal_17
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_a_memory_to_before
+		}
+		completion_reward = {
+			country_event = {
+				id = Dawn_event_eng.13
+			}
+		}
+		x = 16
+		y = 2
+
+	}
+	focus = {
+		id = ENG_memory_3
+		icon = GFX_ENG_goal_18
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_memory_1
+		}
+		completion_reward = {
+			country_event = {
+				id = Dawn_event_eng.14
+			}
+		}
+		x = 14
+		y = 3
+
+	}
+	focus = {
+		id = ENG_memory_4
+		icon = GFX_ENG_goal_19
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_memory_1
+		}
+		x = 18
+		y = 3
+		completion_reward = {
+			country_event = {
+				id = Dawn_event_eng.15
+			}
+		}
+	}
+	focus = {
+		id = ENG_memory_7
+		icon = GFX_ENG_goal_20
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_memory_4
+		}
+		prerequisite = {
+			focus = ENG_memory_3
+		}
+		completion_reward = {
+			country_event = {
+				id = Dawn_event_eng.16
+			}
+		}
+		x = 16
+		y = 4
+
+	}
+	focus = {
+		id = ENG_memory_2
+		icon = GFX_ENG_goal_21
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_a_memory_to_before
+		}
+		completion_reward = {
+			country_event = {
+				id = Dawn_event_eng.17
+			}
+		}
+		x = 26
+		y = 2
+
+	}
+	focus = {
+		id = ENG_memory_5
+		icon = GFX_ENG_goal_22
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_memory_2
+		}
+		completion_reward = {
+			country_event = {
+				id = Dawn_event_eng.18
+			}
+		}
+		x = 24
+		y = 3
+
+	}
+	focus = {
+		id = ENG_memory_6
+		icon = GFX_ENG_goal_24
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_memory_2
+		}
+		completion_reward = {
+			country_event = {
+				id = Dawn_event_eng.19
+			}
+		}
+		x = 28
+		y = 3
+
+	}
+	focus = {
+		id = ENG_memory_8
+		icon = GFX_ENG_goal_23
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_memory_6
+		}
+		prerequisite = {
+			focus = ENG_memory_5
+		}
+		completion_reward = {
+			country_event = {
+				id = Dawn_event_eng.20
+			}
+		}
+		x = 26
+		y = 4
+
+	}
+	focus = {
+		id = ENG_memory_9
+		icon = GFX_ENG_goal_25
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_memory_8
+		}
+		prerequisite = {
+			focus = ENG_memory_7
+		}
+		completion_reward = {
+			country_event = {
+				id = Dawn_event_eng.9
+			}
+			set_country_flag = ENG_election
+		}
+		x = 21
+		y = 5
+
+	}
+	focus = {
+		id = ENG_support_left_wing
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_the_prove_of_end
+		}
+		mutually_exclusive = {
+			focus = ENG_support_right_wing
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_new_tip.1
+			add_popularity = {
+				ideology = progressism
+				popularity = 0.03
+			}
+		}
+		x = 38
+		y = 3
+
+	}
+	focus = { #不得已之联盟
+		id = ENG_the_union_of_dont_want
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_support_left_wing
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_left_increase_1 #小幅增加工党影响力
+			hidden_effect = {
+				add_to_variable = {
+					ENG_social_democratic = 3
+				}
+			}
+		}
+		x = 36
+		y = 4
+
+	}
+	focus = {
+		id = ENG_absorb_conservatism
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_the_union_of_dont_want
+		}
+		mutually_exclusive = {
+			focus = ENG_absorb_libertism
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_new_tip.3
+		}
+		x = 35
+		y = 5
+
+	}
+	focus = {
+		id = ENG_absorb_libertism
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_the_union_of_dont_want
+		}
+		mutually_exclusive = {
+			focus = ENG_absorb_conservatism
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_new_tip.4
+		}
+		x = 37
+		y = 5
+
+	}
+	focus = { #光荣之裔
+		id = ENG_son_of_glored
+		icon = GFX_ENG_1000
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_absorb_libertism
+			focus = ENG_absorb_conservatism
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = ENG_absorb_conservatism
+				}
+				custom_effect_tooltip = ENG_demo_increase_1
+				hidden_effect = {
+					add_to_variable = {
+						ENG_consercatic_democratic = 3
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = ENG_absorb_libertism
+				}
+				custom_effect_tooltip = ENG_demo_increase_2
+				hidden_effect = {
+					add_to_variable = {
+						ENG_democratic_libertism = 3
+					}
+				}
+			}
+		}
+		x = 36
+		y = 6
+
+	}
+	focus = {
+		id = ENG_arose_people
+		icon = GFX_ENG_1000
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_son_of_glored
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_left_increase_1 #小幅增加工党影响力
+			hidden_effect = {
+				add_to_variable = {
+					ENG_social_democratic = 3
+				}
+			}
+			add_stability = 0.1
+		}
+		x = 36
+		y = 7
+
+	}
+	focus = {
+		id = ENG_united_laborer
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_arose_people
+		}
+		x = 37
+		y = 8
+		completion_reward = {
+			custom_effect_tooltip = ENG_left_increase_2 #中幅增加社会党影响力
+			add_popularity = {
+				ideology = libertist_socialism
+				popularity = 0.03
+			}
+			hidden_effect = {
+				add_to_variable = {
+					ENG_socialism = 10
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_on_stage
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_arose_people
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_left_increase_1 #小幅增加工党影响力
+			custom_effect_tooltip = ENG_right_decrease_1 #小幅度减少王党影响力
+			hidden_effect = {
+				add_to_variable = {
+					ENG_social_democratic = 3
+				}
+				add_to_variable = {
+					ENG_kings_party = -3
+				}
+			}
+			add_stability = -0.05
+			add_popularity = {
+				ideology = libertism
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = conservatism_group
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = progressism
+				popularity = 0.01
+			}
+		}
+		x = 35
+		y = 8
+
+	}
+	focus = {
+		id = ENG_tianxiaxixi
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_united_laborer
+		}
+		prerequisite = {
+			focus = ENG_on_stage
+		}
+		completion_reward = {
+			country_event = {
+				id = Dawn_event_eng.11
+				days = 5
+			}
+		}
+		x = 36
+		y = 9
+
+	}
+	focus = {
+		id = ENG_a_true_union
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_on_stage
+		}
+		mutually_exclusive = {
+			focus = ENG_all_for_profit
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = ENG_absorb_conservatism
+				}
+				custom_effect_tooltip = ENG_demo_increase_1
+				hidden_effect = {
+					add_to_variable = {
+						ENG_consercatic_democratic = 3
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = ENG_absorb_libertism
+				}
+				custom_effect_tooltip = ENG_demo_increase_2
+				hidden_effect = {
+					add_to_variable = {
+						ENG_democratic_libertism = 3
+					}
+				}
+			}
+		}
+		x = 34
+		y = 10
+
+	}
+	focus = {
+		id = ENG_all_for_profit
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_tianxiaxixi
+		}
+		mutually_exclusive = {
+			focus = ENG_a_true_union
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_left_increase_1 #小幅增加工党影响力
+			hidden_effect = {
+				add_to_variable = {
+					ENG_social_democratic = 3
+				}
+			}
+			add_stability = -0.05
+			if = {
+				limit = {
+					has_completed_focus = ENG_absorb_conservatism
+				}
+				custom_effect_tooltip = ENG_demo_decrease_1 #小幅度降低保民派的支持度
+				hidden_effect = {
+					add_to_variable = {
+						ENG_consercatic_democratic = -3
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = ENG_absorb_libertism
+				}
+				custom_effect_tooltip = ENG_demo_decrease_2 #小幅度降低自民派的支持度
+				hidden_effect = {
+					add_to_variable = {
+						ENG_democratic_libertism = -3
+					}
+				}
+			}
+		}
+		x = 36
+		y = 10
+
+	}
+	focus = {
+		id = ENG_support_right_wing
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_the_prove_of_end
+		}
+		mutually_exclusive = {
+			focus = ENG_support_left_wing
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_new_tip.2
+		}
+		available = {
+			custom_trigger _tooltip = {
+				tooltip = "该内容将在下一版本实装"
+				always = no
+			}
+		}
+		x = 42
+		y = 3
+
+	}
+	focus = {
+		id = ENG_a_profital_alliance
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_support_right_wing
+		}
+		x = 44
+		y = 4
+
+	}
+	focus = {
+		id = ENG_start_activity
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_a_profital_alliance
+		}
+		x = 44
+		y = 5
+
+	}
+	focus = {
+		id = ENG_terroism
+		icon = GFX_ENG_1000
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_start_activity
+		}
+		x = 44
+		y = 6
+
+	}
+	focus = {
+		id = ENG_light_house_on_island
+		icon = GFX_ENG_1000
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_terroism
+		}
+		x = 44
+		y = 7
+
+	}
+	focus = {
+		id = ENG_united_conservatism
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_light_house_on_island
+		}
+		x = 43
+		y = 8
+
+	}
+	focus = {
+		id = ENG_to_churchill
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_terroism
+		}
+		x = 45
+		y = 8
+
+	}
+	focus = {
+		id = ENG_a_unstablized_union
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_united_conservatism
+		}
+		prerequisite = {
+			focus = ENG_to_churchill
+		}
+		x = 44
+		y = 9
+
+	}
+	focus = {
+		id = ENG_profit_union_is_for_profit
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_a_unstablized_union
+		}
+		x = 44
+		y = 10
+
+	}
+	focus = {
+		id = ENG_public_infrastructure_act
+		icon = GFX_ENG_1000
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_economics_1936
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_left_increase_1 #小幅增加工党影响力
+			custom_effect_tooltip = ENG_right_increase_1 #小幅增加王党影响力
+			hidden_effect = {
+				add_to_variable = {
+					ENG_social_democratic = 3
+				}
+				add_to_variable = {
+					ENG_kings_party = 3
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		x = 49
+		y = 3
+
+	}
+	focus = {
+		id = ENG_mingzhebaoshen
+		icon = GFX_ENG_1000
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_diplomacy_diffrences
+		}
+		mutually_exclusive = {
+			focus = ENG_zhuangshibuyi
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_left_decrease_1 #小幅度减少工党影响力
+			custom_effect_tooltip = ENG_right_increase_1 #小幅度增加王党影响力
+			hidden_effect = {
+				add_to_variable = {
+					ENG_social_democratic = -3
+				}
+				add_to_variable = {
+					ENG_kings_party = 3
+				}
+			}
+		}
+		x = 49
+		y = 7
+
+	}
+	focus = {
+		id = ENG_people_rights_law
+		icon = GFX_ENG_1000
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_economics_1936
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_demo_increase_2
+			hidden_effect = {
+				add_to_variable = {
+					ENG_democratic_libertism = 3
+				}
+			}
+			add_stability = 0.1
+		}
+		x = 50
+		y = 4
+
+	}
+	focus = {
+		id = ENG_zhuangshibuyi
+		icon = GFX_ENG_1000
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_diplomacy_diffrences
+		}
+		mutually_exclusive = {
+			focus = ENG_mingzhebaoshen
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_left_increase_1 #小幅度增加工党影响力
+			custom_effect_tooltip = ENG_right_decrease_1 #小幅度减少王党影响力
+			hidden_effect = {
+				add_to_variable = {
+					ENG_social_democratic = 3
+				}
+				add_to_variable = {
+					ENG_kings_party = -3
+				}
+			}
+		}
+		x = 51
+		y = 7
+
+	}
+	focus = {
+		id = ENG_yinglianbang
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_zhuangshibuyi
+			focus = ENG_mingzhebaoshen
+		}
+		x = 50
+		y = 8
+		completion_reward = {
+			create_faction = "协约国"
+			add_ideas = {
+				ENG_ganshezhuyi
+			}
+			set_rule = {
+				can_send_volunteers = yes
+			}
+		}
+	}
+	focus = {
+		id = ENG_complete_middle_south_railway
+		icon = GFX_ENG_1000
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_economics_1936
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_left_increase_1 #小幅增加工党影响力
+			custom_effect_tooltip = ENG_right_increase_1 #小幅增加王党影响力
+			hidden_effect = {
+				add_to_variable = {
+					ENG_social_democratic = 3
+				}
+				add_to_variable = {
+					ENG_kings_party = 3
+				}
+			}
+			build_railway = {
+				level = 2
+				path = {
+					6103
+					11221
+					9268
+					11279
+					9279
+					11345
+					6237
+					11382
+					9269
+					11297
+				}
+			}
+		}
+		x = 51
+		y = 3
+
+	}
+	focus = {
+		id = ENG_national_representative
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_economics_1936
+		}
+		x = 52
+		y = 4
+		completion_reward = {
+			custom_effect_tooltip = ENG_demo_increase_1
+			hidden_effect = {
+				add_to_variable = {
+					ENG_consercatic_democratic = 3
+				}
+			}
+			add_ideas = {
+				ENG_national_representative_idea
+			}
+		}
+	}
+	focus = {
+		id = ENG_ireland_people_plan
+		icon = GFX_ENG_1000
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_economics_1936
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_left_increase_1 #小幅增加工党影响力
+			hidden_effect = {
+				add_to_variable = {
+					ENG_social_democratic = 3
+				}
+			}
+			113 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			119 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			134 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			135 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		x = 53
+		y = 3
+
+	}
+	focus = {
+		id = ENG_army_cut
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_war_of_no_battle
+		}
+		mutually_exclusive = {
+			focus = ENG_slave_army
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_left_increase_1 #小幅增加工党影响力
+			hidden_effect = {
+				add_to_variable = {
+					ENG_social_democratic = 3
+				}
+			}
+			add_equipment_to_stockpile = {
+				producer = ENG
+				type = infantry_equipment
+				amount = 2100
+			}
+			add_manpower = -21000
+		}
+		x = 55
+		y = 6
+
+	}
+	focus = {
+		id = ENG_civilian_army
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_army_cut
+		}
+		completion_reward = {
+			add_manpower = 50000
+			add_stability = 0.05
+			add_war_support = -0.05
+		}
+		x = 55
+		y = 7
+
+	}
+	focus = {
+		id = ENG_slave_army
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_war_of_no_battle
+		}
+		mutually_exclusive = {
+			focus = ENG_army_cut
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_right_increase_1 #小幅度增加王党影响力
+			hidden_effect = {
+				add_to_variable = {
+					ENG_kings_party = 3
+				}
+			}
+		}
+		x = 59
+		y = 6
+
+	}
+	focus = {
+		id = ENG_observe_the_army
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_slave_army
+			focus = ENG_army_cut
+		}
+		completion_reward = {
+			remove_ideas = {
+				ENG_army_reformation_in_election
+				ENG_army_conflict
+			}
+		}
+		x = 57
+		y = 7
+
+	}
+	focus = {
+		id = ENG_lord
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_attitude_to_educational_reform
+		}
+		mutually_exclusive = {
+			focus = ENG_people
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = ENG_educational_reform_preparation_monarchism
+				remove_idea = ENG_educational_reform_preparation
+			}
+			add_timed_idea = {
+				idea = ENG_monarchism_publicity
+				days = 100
+			}
+			custom_effect_tooltip = ENG_right_increase_1 #小幅度增加王党影响力
+			hidden_effect = {
+				add_to_variable = {
+					ENG_kings_party = 3
+				}
+			}
+		}
+		x = 59
+		y = 3
+
+	}
+	focus = {
+		id = ENG_african_army
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_slave_army
+		}
+		completion_reward = {
+			add_manpower = 50000
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+		x = 59
+		y = 7
+
+	}
+	focus = {
+		id = ENG_the_end_of_election
+		icon = GFX_ENG_1000
+		cost = 11.50
+		prerequisite = {
+			focus = ENG_profit_union_is_for_profit
+			focus = ENG_all_for_profit
+			focus = ENG_a_true_union
+		}
+		available = {
+			has_completed_focus = ENG_public_infrastructure_act
+			has_completed_focus = ENG_complete_middle_south_railway
+			has_completed_focus = ENG_yinglianbang
+			has_completed_focus = ENG_observe_the_army
+			OR = {
+				has_completed_focus = ENG_civilian_army
+				has_completed_focus = ENG_african_army
+			}
+			OR = {
+				has_completed_focus = ENG_mandate_people_wisdom
+				has_completed_focus = ENG_lord
+			}
+		}
+
+		x = 40
+		y = 11
+
+	}
+	focus = {
+		id = ENG_people
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_attitude_to_educational_reform
+		}
+		mutually_exclusive = {
+			focus = ENG_lord
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_left_increase_1 #小幅增加工党影响力
+			hidden_effect = {
+				add_to_variable = {
+					ENG_social_democratic = 3
+				}
+			}
+			swap_ideas = {
+				add_idea = ENG_educational_reform_preparation_socialism
+				remove_idea = ENG_educational_reform_preparation
+			}
+		}
+		x = 63
+		y = 3
+
+	}
+	focus = {
+		id = ENG_mandate_people_wisdom
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_people
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_demo_increase_2
+			hidden_effect = {
+				add_to_variable = {
+					ENG_democratic_libertism = 3
+				}
+			}
+			swap_ideas = {
+				add_idea = ENG_educational_reform_preparation_socialism_mandate_wisdom
+				remove_idea = ENG_educational_reform_preparation_socialism
+			}
+		}
+		x = 63
+		y = 4
+
+	}
+	focus = {
+		id = ENG_external_profit
+		icon = GFX_ENG_1000
+		cost = 1.00
+		x = 105
+		y = 2
+		allow_branch = {
+			has_country_flag = ENG_social_democratic
+		}
+		prerequisite = {
+			focus = ENG_industry_begain
+		}
+		available = {
+			
+		}
+	}
+	focus = {
+		id = ENG_new_dip_1
+		icon = GFX_ENG_1000
+		cost = 1.00
+		relative_position_id = ENG_external_profit
+		x = -4
+		y = 1
+		cancelable = yes
+		prerequisite = {
+			focus = ENG_external_profit
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_new_dip_2
+		icon = GFX_ENG_1000
+		cost = 1.00
+		relative_position_id = ENG_external_profit
+		x = -2
+		y = 1
+		cancelable = yes
+		prerequisite = {
+			focus = ENG_external_profit
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_new_dip_3
+		icon = GFX_ENG_1000
+		cost = 1.00
+		relative_position_id = ENG_external_profit
+		x = 0
+		y = 1
+		cancelable = yes
+		prerequisite = {
+			focus = ENG_external_profit
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_new_dip_4
+		icon = GFX_ENG_1000
+		cost = 1.00
+		relative_position_id = ENG_external_profit
+		x = 2
+		y = 1
+		cancelable = yes
+		prerequisite = {
+			focus = ENG_external_profit
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_new_dip_5
+		icon = GFX_ENG_1000
+		cost = 1.00
+		relative_position_id = ENG_external_profit
+		x = 4
+		y = 1
+		cancelable = yes
+		prerequisite = {
+			focus = ENG_external_profit
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_new_dip_6
+		icon = GFX_ENG_1000
+		cost = 1.00
+		relative_position_id = ENG_external_profit
+		x = 0
+		y = 2
+		cancelable = yes
+		prerequisite = {
+			focus = ENG_new_dip_1
+		}
+		prerequisite = {
+			focus = ENG_new_dip_2
+		}
+		prerequisite = {
+			focus = ENG_new_dip_3
+		}
+		prerequisite = {
+			focus = ENG_new_dip_4
+		}
+		prerequisite = {
+			focus = ENG_new_dip_5
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_dip.1
+		}
+	}
+	focus = {
+		id = ENG_new_dip_33
+		icon = GFX_ENG_1000
+		cost = 1.00
+		relative_position_id = ENG_new_dip_6
+		x = 2
+		y = 1
+		cancelable = yes
+		prerequisite = {
+			focus = ENG_new_dip_6
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_new_dip_34
+		icon = GFX_ENG_1000
+		cost = 1.00
+		relative_position_id = ENG_new_dip_6
+		x = 0
+		y = 1
+		cancelable = yes
+		prerequisite = {
+			focus = ENG_new_dip_6
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_new_dip_7
+		icon = GFX_ENG_1000
+		cost = 1.00
+		relative_position_id = ENG_new_dip_6
+		x = -2
+		y = 1
+		cancelable = yes
+		prerequisite = {
+			focus = ENG_new_dip_6
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_new_dip_8
+		icon = GFX_ENG_1000
+		cost = 1.00
+		relative_position_id = ENG_new_dip_7
+		x = 1
+		y = 1
+		cancelable = yes
+		mutually_exclusive = {
+			focus = ENG_new_dip_9
+		}
+		prerequisite = {
+			focus = ENG_new_dip_7
+		}
+		prerequisite = {
+			focus = ENG_new_dip_33
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_new_dip_11
+		icon = GFX_ENG_1000
+		cost = 1.00
+		relative_position_id = ENG_new_dip_8
+		x = -2
+		y = 1
+		cancelable = yes
+		prerequisite = {
+			focus = ENG_new_dip_8
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_new_dip_12
+		icon = GFX_ENG_1000
+		cost = 1.00
+		relative_position_id = ENG_new_dip_11
+		x = -1
+		y = 1
+		cancelable = yes
+		prerequisite = {
+			focus = ENG_new_dip_11
+		}
+		prerequisite = {
+			focus = ENG_new_dip_10
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_new_dip_13
+		icon = GFX_ENG_1000
+		cost = 1.00
+		relative_position_id = ENG_new_dip_11
+		x = 1
+		y = 1
+		cancelable = yes
+		prerequisite = {
+			focus = ENG_new_dip_11
+		}
+		prerequisite = {
+			focus = ENG_new_dip_10
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_new_dip_14
+		icon = GFX_ENG_1000
+		cost = 1.00
+		relative_position_id = ENG_new_dip_11
+		x = 0
+		y = 2
+		cancelable = yes
+		prerequisite = {
+			focus = ENG_new_dip_12
+		}
+		prerequisite = {
+			focus = ENG_new_dip_13
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_new_dip_15
+		icon = GFX_ENG_1000
+		cost = 1.00
+		relative_position_id = ENG_new_dip_14
+		x = 0
+		y = 1
+		cancelable = yes
+		prerequisite = {
+			focus = ENG_new_dip_14
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_new_dip_18
+		icon = GFX_ENG_1000
+		cost = 1.00
+		relative_position_id = ENG_new_dip_15
+		x = 0
+		y = 2
+		cancelable = yes
+		prerequisite = {
+			focus = ENG_new_dip_15
+		}
+		prerequisite = {
+			focus = ENG_new_dip_16
+		}
+		prerequisite = {
+			focus = ENG_new_dip_17
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_new_dip_16
+		icon = GFX_ENG_1000
+		cost = 1.00
+		relative_position_id = ENG_new_dip_14
+		x = -2
+		y = 1
+		cancelable = yes
+		prerequisite = {
+			focus = ENG_new_dip_14
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_new_dip_17
+		icon = GFX_ENG_1000
+		cost = 1.00
+		relative_position_id = ENG_new_dip_14
+		x = 2
+		y = 1
+		cancelable = yes
+		prerequisite = {
+			focus = ENG_new_dip_12
+		}
+		prerequisite = {
+			focus = ENG_new_dip_13
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_new_dip_9
+		icon = GFX_ENG_1000
+		cost = 1.00
+		relative_position_id = ENG_new_dip_7
+		x = 3
+		y = 1
+		cancelable = yes
+		mutually_exclusive = {
+			focus = ENG_new_dip_8
+		}
+		prerequisite = {
+			focus = ENG_new_dip_7
+		}
+		prerequisite = {
+			focus = ENG_new_dip_33
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_new_dip_19
+		icon = GFX_ENG_1000
+		cost = 1.00
+		relative_position_id = ENG_new_dip_9
+		x = 2
+		y = 1
+		cancelable = yes
+		prerequisite = {
+			focus = ENG_new_dip_9
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_new_dip_20
+		icon = GFX_ENG_1000
+		cost = 1.00
+		relative_position_id = ENG_new_dip_19
+		x = 1
+		y = 1
+		cancelable = yes
+		prerequisite = {
+			focus = ENG_new_dip_19
+		}
+		prerequisite = {
+			focus = ENG_new_dip_10
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_new_dip_21
+		icon = GFX_ENG_1000
+		cost = 1.00
+		relative_position_id = ENG_new_dip_19
+		x = -1
+		y = 1
+		cancelable = yes
+		prerequisite = {
+			focus = ENG_new_dip_19
+		}
+		prerequisite = {
+			focus = ENG_new_dip_10
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_new_dip_22
+		icon = GFX_ENG_1000
+		cost = 1.00
+		relative_position_id = ENG_new_dip_19
+		x = 0
+		y = 2
+		cancelable = yes
+		prerequisite = {
+			focus = ENG_new_dip_21
+		}
+		prerequisite = {
+			focus = ENG_new_dip_20
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_new_dip_23
+		icon = GFX_ENG_1000
+		cost = 1.00
+		relative_position_id = ENG_new_dip_22
+		x = 0
+		y = 1
+		cancelable = yes
+		prerequisite = {
+			focus = ENG_new_dip_22
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_new_dip_26
+		icon = GFX_ENG_1000
+		cost = 1.00
+		relative_position_id = ENG_new_dip_23
+		x = 0
+		y = 2
+		cancelable = yes
+		prerequisite = {
+			focus = ENG_new_dip_25
+		}
+		prerequisite = {
+			focus = ENG_new_dip_23
+		}
+		prerequisite = {
+			focus = ENG_new_dip_24
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_new_dip_24
+		icon = GFX_ENG_1000
+		cost = 1.00
+		relative_position_id = ENG_new_dip_22
+		x = 2
+		y = 1
+		cancelable = yes
+		prerequisite = {
+			focus = ENG_new_dip_22
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_new_dip_25
+		icon = GFX_ENG_1000
+		cost = 1.00
+		relative_position_id = ENG_new_dip_22
+		x = -2
+		y = 1
+		cancelable = yes
+		prerequisite = {
+			focus = ENG_new_dip_21
+		}
+		prerequisite = {
+			focus = ENG_new_dip_20
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_new_dip_10
+		icon = GFX_ENG_1000
+		cost = 1.00
+		relative_position_id = ENG_new_dip_7
+		x = 2
+		y = 2
+		cancelable = yes
+		prerequisite = {
+			focus = ENG_new_dip_7
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_new_dip_27
+		icon = GFX_ENG_1000
+		cost = 1.00
+		relative_position_id = ENG_new_dip_10
+		x = 0
+		y = 1
+		cancelable = yes
+		prerequisite = {
+			focus = ENG_new_dip_10
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_new_dip_28
+		icon = GFX_ENG_1000
+		cost = 1.00
+		relative_position_id = ENG_new_dip_27
+		x = -1
+		y = 1
+		cancelable = yes
+		mutually_exclusive = {
+			focus = ENG_new_dip_29
+		}
+		prerequisite = {
+			focus = ENG_new_dip_27
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_new_dip_29
+		icon = GFX_ENG_1000
+		cost = 1.00
+		relative_position_id = ENG_new_dip_27
+		x = 1
+		y = 1
+		cancelable = yes
+		mutually_exclusive = {
+			focus = ENG_new_dip_28
+		}
+		prerequisite = {
+			focus = ENG_new_dip_27
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_new_dip_30
+		icon = GFX_ENG_1000
+		cost = 1.00
+		relative_position_id = ENG_new_dip_27
+		x = 0
+		y = 3
+		cancelable = yes
+		prerequisite = {
+			focus = ENG_new_dip_28
+			focus = ENG_new_dip_29
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_new_dip_31
+		icon = GFX_ENG_1000
+		cost = 1.00
+		relative_position_id = ENG_new_dip_30
+		x = 0
+		y = 1
+		cancelable = yes
+		prerequisite = {
+			focus = ENG_new_dip_30
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_new_dip_32
+		icon = GFX_ENG_1000
+		cost = 1.00
+		relative_position_id = ENG_new_dip_31
+		x = 0
+		y = 1
+		cancelable = yes
+		prerequisite = {
+			focus = ENG_new_dip_31
+		}
+		prerequisite = {
+			focus = ENG_new_dip_18
+			focus = ENG_new_dip_26
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_educational_reformation
+		icon = GFX_ENG_1000
+		cost = 1.00
+		x = 50
+		y = 17
+		allow_branch = {
+			has_country_flag = ENG_social_democratic
+			always = no
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ENG_political_tip.1
+				has_completed_focus = ENG_laborer_18
+			}
+		}
+	}
+	focus = {
+		id = ENG_education_31
+		icon = GFX_ENG_1000
+		cost = 1.00
+		x = 51
+		y = 23
+		allow_branch = {
+			has_country_flag = ENG_social_democratic
+			always = no
+		}
+	}
+	focus = {
+		id = ENG_education_56
+		icon = GFX_ENG_1000
+		cost = 1.00
+		mutually_exclusive = {
+			focus = ENG_education_48
+			focus = ENG_education_47
+			focus = ENG_education_57
+		}
+		prerequisite = {
+			focus = ENG_education_20
+		}
+		prerequisite = {
+			focus = ENG_education_15
+		}
+		prerequisite = {
+			focus = ENG_education_21
+		}
+		x = 57
+		y = 23
+		allow_branch = {
+			has_country_flag = ENG_social_democratic
+			always = no
+		}
+	}
+	focus = {
+		id = ENG_education_1
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_educational_reformation
+		}
+		mutually_exclusive = {
+			focus = ENG_education_2
+		}
+		x = 47
+		y = 18
+
+	}
+	focus = {
+		id = ENG_education_2
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_educational_reformation
+		}
+		mutually_exclusive = {
+			focus = ENG_education_1
+		}
+		x = 53
+		y = 18
+
+	}
+	focus = {
+		id = ENG_education_3
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_1
+			focus = ENG_education_2
+		}
+		mutually_exclusive = {
+			focus = ENG_education_4
+		}
+		x = 46
+		y = 19
+
+	}
+	focus = {
+		id = ENG_education_7
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_3
+		}
+		x = 45
+		y = 20
+
+	}
+	focus = {
+		id = ENG_education_10
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_education_7
+		}
+		x = 46
+		y = 21
+
+	}
+	focus = {
+		id = ENG_education_4
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_1
+			focus = ENG_education_2
+		}
+		mutually_exclusive = {
+			focus = ENG_education_3
+		}
+		x = 48
+		y = 19
+
+	}
+	focus = {
+		id = ENG_education_9
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_education_4
+			focus = ENG_education_3
+		}
+		x = 47
+		y = 20
+
+	}
+	focus = {
+		id = ENG_education_21
+		icon = GFX_ENG_1000
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_education_2
+			focus = ENG_education_1
+		}
+		x = 50
+		y = 22
+
+	}
+	focus = {
+		id = ENG_education_8
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_4
+		}
+		x = 49
+		y = 20
+
+	}
+	focus = {
+		id = ENG_education_11
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_education_8
+		}
+		x = 48
+		y = 21
+
+	}
+	focus = {
+		id = ENG_education_5
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_2
+			focus = ENG_education_1
+		}
+		x = 52
+		y = 19
+	}
+	focus = {
+		id = ENG_education_12
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_education_5
+		}
+		x = 52
+		y = 20
+
+	}
+	focus = {
+		id = ENG_education_13
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_12
+		}
+		x = 51
+		y = 21
+
+	}
+	focus = {
+		id = ENG_education_14
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_12
+		}
+		x = 53
+		y = 21
+
+	}
+	focus = {
+		id = ENG_education_15
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_14
+		}
+		prerequisite = {
+			focus = ENG_education_13
+		}
+		x = 52
+		y = 22
+
+	}
+	focus = {
+		id = ENG_education_6
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_2
+			focus = ENG_education_1
+		}
+		x = 54
+		y = 19
+
+	}
+	focus = {
+		id = ENG_education_16
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_6
+		}
+		mutually_exclusive = {
+			focus = ENG_education_17
+		}
+		x = 55
+		y = 20
+
+	}
+	focus = {
+		id = ENG_education_18
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_16
+		}
+		x = 55
+		y = 21
+
+	}
+	focus = {
+		id = ENG_education_17
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_6
+		}
+		mutually_exclusive = {
+			focus = ENG_education_16
+		}
+		x = 57
+		y = 20
+
+	}
+	focus = {
+		id = ENG_education_20
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_education_17
+			focus = ENG_education_16
+		}
+		x = 56
+		y = 22
+
+	}
+	focus = {
+		id = ENG_education_22
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_11
+			focus = ENG_education_10
+		}
+		prerequisite = {
+			focus = ENG_education_9
+		}
+		prerequisite = {
+			focus = ENG_education_21
+		}
+		prerequisite = {
+			focus = ENG_education_15
+		}
+		prerequisite = {
+			focus = ENG_education_20
+		}
+		x = 47
+		y = 23
+
+	}
+	focus = {
+		id = ENG_education_24
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_22
+		}
+		x = 46
+		y = 24
+
+	}
+	focus = {
+		id = ENG_education_25
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_22
+		}
+		x = 48
+		y = 24
+
+	}
+	focus = {
+		id = ENG_education_30
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_21
+		}
+		prerequisite = {
+			focus = ENG_education_15
+		}
+		prerequisite = {
+			focus = ENG_education_20
+		}
+		x = 49
+		y = 23
+
+	}
+	focus = {
+		id = ENG_education_32
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_30
+		}
+		prerequisite = {
+			focus = ENG_education_31
+		}
+		x = 50
+		y = 24
+
+	}
+	focus = {
+		id = ENG_education_47
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_15
+		}
+		prerequisite = {
+			focus = ENG_education_21
+		}
+		prerequisite = {
+			focus = ENG_education_20
+		}
+		mutually_exclusive = {
+			focus = ENG_education_48
+			focus = ENG_education_56
+			focus = ENG_education_57
+		}
+		x = 53
+		y = 23
+
+	}
+	focus = {
+		id = ENG_education_49
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_47
+		}
+		x = 52
+		y = 24
+
+	}
+	focus = {
+		id = ENG_education_48
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_20
+		}
+		prerequisite = {
+			focus = ENG_education_15
+		}
+		prerequisite = {
+			focus = ENG_education_21
+		}
+		mutually_exclusive = {
+			focus = ENG_education_47
+			focus = ENG_education_56
+			focus = ENG_education_57
+		}
+		x = 55
+		y = 23
+
+	}
+	focus = {
+		id = ENG_education_51
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_48
+		}
+		x = 56
+		y = 24
+
+	}
+	focus = {
+		id = ENG_education_52
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_51
+		}
+		x = 56
+		y = 26
+
+	}
+	focus = {
+		id = ENG_education_19
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_17
+		}
+		x = 57
+		y = 21
+
+	}
+	focus = {
+		id = ENG_education_57
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_20
+		}
+		prerequisite = {
+			focus = ENG_education_15
+		}
+		prerequisite = {
+			focus = ENG_education_21
+		}
+		mutually_exclusive = {
+			focus = ENG_education_56
+			focus = ENG_education_48
+			focus = ENG_education_47
+		}
+		x = 59
+		y = 23
+
+	}
+	focus = {
+		id = ENG_education_58
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_57
+			focus = ENG_education_56
+		}
+		x = 58
+		y = 24
+
+	}
+	focus = {
+		id = ENG_education_53
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_48
+			focus = ENG_education_47
+			focus = ENG_education_56
+			focus = ENG_education_57
+		}
+		x = 54
+		y = 24
+
+	}
+	focus = {
+		id = ENG_education_59
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_58
+		}
+		x = 58
+		y = 25
+
+	}
+	focus = {
+		id = ENG_education_60
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_20
+		}
+		prerequisite = {
+			focus = ENG_education_15
+		}
+		prerequisite = {
+			focus = ENG_education_21
+		}
+		x = 63
+		y = 23
+
+	}
+	focus = {
+		id = ENG_education_61
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_60
+		}
+		mutually_exclusive = {
+			focus = ENG_education_62
+		}
+		x = 61
+		y = 24
+
+	}
+	focus = {
+		id = ENG_education_63
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_61
+		}
+		x = 60
+		y = 25
+
+	}
+	focus = {
+		id = ENG_education_65
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_63
+		}
+		x = 59
+		y = 26
+
+	}
+	focus = {
+		id = ENG_education_69
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_63
+		}
+		mutually_exclusive = {
+			focus = ENG_education_70
+		}
+		x = 61
+		y = 27
+
+	}
+	focus = {
+		id = ENG_education_71
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_69
+		}
+		x = 61
+		y = 28
+
+	}
+	focus = {
+		id = ENG_education_62
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_60
+		}
+		mutually_exclusive = {
+			focus = ENG_education_61
+		}
+		x = 65
+		y = 24
+
+	}
+	focus = {
+		id = ENG_education_67
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_62
+			focus = ENG_education_61
+		}
+		x = 63
+		y = 25
+
+	}
+	focus = {
+		id = ENG_education_64
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_62
+		}
+		x = 66
+		y = 25
+
+	}
+	focus = {
+		id = ENG_education_68
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_64
+			focus = ENG_education_63
+		}
+		x = 63
+		y = 26
+
+	}
+	focus = {
+		id = ENG_education_70
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_64
+		}
+		mutually_exclusive = {
+			focus = ENG_education_69
+		}
+		x = 65
+		y = 27
+
+	}
+	focus = {
+		id = ENG_education_73
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_70
+			focus = ENG_education_69
+		}
+		x = 63
+		y = 28
+
+	}
+	focus = {
+		id = ENG_education_72
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_70
+		}
+		x = 65
+		y = 28
+
+	}
+	focus = {
+		id = ENG_education_74
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_20
+		}
+		prerequisite = {
+			focus = ENG_education_15
+		}
+		prerequisite = {
+			focus = ENG_education_21
+		}
+		x = 66
+		y = 23
+
+	}
+	focus = {
+		id = ENG_education_75
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_20
+		}
+		prerequisite = {
+			focus = ENG_education_15
+		}
+		prerequisite = {
+			focus = ENG_education_21
+		}
+		x = 69
+		y = 23
+
+	}
+	focus = {
+		id = ENG_education_77
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_75
+		}
+		x = 67
+		y = 24
+
+	}
+	focus = {
+		id = ENG_education_66
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_64
+		}
+		x = 67
+		y = 26
+
+	}
+	focus = {
+		id = ENG_education_76
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_75
+		}
+		x = 69
+		y = 24
+
+	}
+	focus = {
+		id = ENG_education_78
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_75
+		}
+		x = 71
+		y = 24
+
+	}
+	focus = {
+		id = ENG_education_79
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_76
+		}
+		prerequisite = {
+			focus = ENG_education_78
+		}
+		prerequisite = {
+			focus = ENG_education_77
+		}
+		x = 69
+		y = 25
+
+	}
+	focus = {
+		id = ENG_education_23
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_21
+		}
+		prerequisite = {
+			focus = ENG_education_15
+		}
+		prerequisite = {
+			focus = ENG_education_20
+		}
+		x = 45
+		y = 23
+
+	}
+	focus = {
+		id = ENG_education_26
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_22
+		}
+		x = 47
+		y = 25
+
+	}
+	focus = {
+		id = ENG_education_27
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_26
+		}
+		mutually_exclusive = {
+			focus = ENG_education_28
+		}
+		x = 46
+		y = 26
+
+	}
+	focus = {
+		id = ENG_education_28
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_26
+		}
+		mutually_exclusive = {
+			focus = ENG_education_27
+		}
+		x = 48
+		y = 26
+
+	}
+	focus = {
+		id = ENG_education_29
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_education_28
+			focus = ENG_education_27
+		}
+		x = 47
+		y = 27
+
+	}
+	focus = {
+		id = ENG_education_33
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_32
+		}
+		x = 49
+		y = 25
+
+	}
+	focus = {
+		id = ENG_education_34
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_32
+		}
+		x = 51
+		y = 25
+
+	}
+	focus = {
+		id = ENG_education_35
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_33
+		}
+		prerequisite = {
+			focus = ENG_education_34
+		}
+		x = 50
+		y = 26
+
+	}
+	focus = {
+		id = ENG_education_36
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_35
+		}
+		x = 50
+		y = 27
+
+	}
+	focus = {
+		id = ENG_education_37
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_35
+		}
+		x = 49
+		y = 28
+
+	}
+	focus = {
+		id = ENG_education_38
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_35
+		}
+		x = 51
+		y = 28
+
+	}
+	focus = {
+		id = ENG_education_39
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_38
+		}
+		x = 50
+		y = 29
+
+	}
+	focus = {
+		id = ENG_education_40
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_38
+		}
+		x = 52
+		y = 29
+
+	}
+	focus = {
+		id = ENG_education_41
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_40
+		}
+		mutually_exclusive = {
+			focus = ENG_education_42
+		}
+		x = 50
+		y = 30
+
+	}
+	focus = {
+		id = ENG_education_42
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_40
+		}
+		mutually_exclusive = {
+			focus = ENG_education_41
+		}
+		x = 52
+		y = 30
+
+	}
+	focus = {
+		id = ENG_education_43
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_42
+			focus = ENG_education_41
+		}
+		x = 51
+		y = 31
+
+	}
+	focus = {
+		id = ENG_education_44
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_38
+		}
+		x = 54
+		y = 29
+
+	}
+	focus = {
+		id = ENG_education_45
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_37
+		}
+		x = 48
+		y = 29
+
+	}
+	focus = {
+		id = ENG_education_46
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_45
+		}
+		x = 48
+		y = 30
+
+	}
+	focus = {
+		id = ENG_education_50
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_49
+		}
+		x = 52
+		y = 26
+
+	}
+	focus = {
+		id = ENG_education_54
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_53
+		}
+		x = 54
+		y = 25
+
+	}
+	focus = {
+		id = ENG_education_55
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_education_52
+			focus = ENG_education_50
+			focus = ENG_education_59
+		}
+		prerequisite = {
+			focus = ENG_education_54
+		}
+		x = 54
+		y = 27
+
+	}
+	focus = {
+		id = ENG_industry_begain
+		icon = GFX_ENG_goal_40
+		cost = 2.00
+		x = 120
+		y = 1
+		allow_branch = {
+			has_country_flag = ENG_social_democratic
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_eco_tip.1
+		}
+	}
+	focus = {
+		id = ENG_industry_1
+		icon = GFX_ENG_goal_28
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_begain
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_a_litle_bit_of_storage_increase
+			hidden_effect = {
+				add_to_variable = {
+					ENG_economics_stored = 5
+				}
+			}
+			add_political_power = 10
+			add_ideas = ENG_eco_economics_management
+			custom_effect_tooltip = ENG_one_unit_per_month_increase
+			hidden_effect = {
+				add_to_variable = { 
+					ENG_economics_income = 1
+				}
+			}
+		}
+		x = 86
+		y = 2
+
+	}
+	focus = {
+		id = ENG_industry_2
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_1
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_eco_tip.4
+			custom_effect_tooltip = ENG_a_litle_bit_of_storage_increase
+			hidden_effect = {
+				add_to_variable = {
+					ENG_economics_stored = 5
+				}
+			}
+			hidden_effect = {
+				add_to_variable = {
+					ENG_loan = 12
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = ENG_industry_4
+				}
+				swap_ideas = {
+					add_idea = ENG_eco_economics_management_1_2
+					remove_idea = ENG_eco_economics_management_2_1
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_completed_focus = ENG_industry_4 }
+				}
+				swap_ideas = {
+					add_idea = ENG_eco_economics_management_1_1
+					remove_idea = ENG_eco_economics_management
+				}
+			}
+		}
+		x = 82
+		y = 3
+
+	}
+	focus = {
+		id = ENG_industry_3
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_1
+		}
+		x = 86
+		y = 3
+		completion_reward = {
+			custom_effect_tooltip = ENG_eco_tip.2
+			custom_effect_tooltip = ENG_eco_tip.3
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			activate_mission = ENG_international_investment_mission
+		}
+	}
+	focus = {
+		id = ENG_industry_4
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_1
+		}
+		x = 90
+		y = 3
+		completion_reward = {
+			custom_effect_tooltip = ENG_eco_tip.4
+			custom_effect_tooltip = ENG_a_litle_bit_of_storage_increase
+			hidden_effect = {
+				add_to_variable = {
+					ENG_economics_stored = 5
+				}
+			}
+			hidden_effect = {
+				add_to_variable = {
+					ENG_loan = 12
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = ENG_industry_2
+				}
+				swap_ideas = {
+					add_idea = ENG_eco_economics_management_1_2
+					remove_idea = ENG_eco_economics_management_1_1
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_completed_focus = ENG_industry_2 }
+				}
+				swap_ideas = {
+					add_idea = ENG_eco_economics_management_2_1
+					remove_idea = ENG_eco_economics_management
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_industry_5
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_2
+		}
+		prerequisite = {
+			focus = ENG_industry_4
+		}
+		completion_reward = {
+			add_ideas = ENG_commonwealth_eng
+			EGY = {
+				add_ideas = ENG_commonwealth
+			}
+		}
+		x = 84
+		y = 5
+
+	}
+	focus = {
+		id = ENG_industry_7
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_4
+		}
+		prerequisite = {
+			focus = ENG_industry_2
+		}
+		
+		x = 86
+		y = 4
+
+	}
+	focus = {
+		id = ENG_industry_6
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_4
+		}
+		prerequisite = {
+			focus = ENG_industry_2
+		}
+		x = 88
+		y = 5
+
+	}
+	focus = {
+		id = ENG_industry_8
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_6
+		}
+		prerequisite = {
+			focus = ENG_industry_5
+		}
+		x = 86
+		y = 6
+
+	}
+	focus = {
+		id = ENG_industry_15
+		icon = GFX_ENG_1000
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_industry_5
+		}
+		prerequisite = {
+			focus = ENG_industry_6
+		}
+		x = 78
+		y = 6
+
+	}
+	focus = {
+		id = ENG_industry_16
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_15
+		}
+		x = 77
+		y = 7
+
+	}
+	focus = {
+		id = ENG_industry_17
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_15
+		}
+		x = 79
+		y = 7
+
+	}
+	focus = {
+		id = ENG_industry_20
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_16
+		}
+		prerequisite = {
+			focus = ENG_industry_17
+		}
+		x = 76
+		y = 8
+
+	}
+	focus = {
+		id = ENG_industry_19
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_17
+		}
+		prerequisite = {
+			focus = ENG_industry_16
+		}
+		x = 80
+		y = 8
+
+	}
+	focus = {
+		id = ENG_industry_10
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_8
+		}
+		x = 85
+		y = 7
+
+	}
+	focus = {
+		id = ENG_industry_13
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_10
+		}
+		x = 84
+		y = 9
+
+	}
+	focus = {
+		id = ENG_industry_9
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_10
+		}
+		x = 86
+		y = 8
+
+	}
+	focus = {
+		id = ENG_industry_14
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_10
+		}
+		x = 88
+		y = 9
+
+	}
+	focus = {
+		id = ENG_industry_12
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_9
+		}
+		prerequisite = {
+			focus = ENG_industry_14
+		}
+		prerequisite = {
+			focus = ENG_industry_13
+		}
+		x = 86
+		y = 10
+
+	}
+	focus = {
+		id = ENG_industry_11
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_8
+		}
+		x = 87
+		y = 7
+
+	}
+	focus = {
+		id = ENG_industry_26
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_6
+		}
+		prerequisite = {
+			focus = ENG_industry_5
+		}
+		x = 94
+		y = 6
+
+	}
+	focus = {
+		id = ENG_industry_28
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_26
+		}
+		x = 93
+		y = 8
+
+	}
+	focus = {
+		id = ENG_industry_30
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_28
+		}
+		x = 93
+		y = 9
+
+	}
+	focus = {
+		id = ENG_industry_32
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_30
+		}
+		mutually_exclusive = {
+			focus = ENG_industry_33
+		}
+		x = 93
+		y = 10
+
+	}
+	focus = {
+		id = ENG_industry_27
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_26
+		}
+		x = 94
+		y = 7
+
+	}
+	focus = {
+		id = ENG_industry_29
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_26
+		}
+		x = 95
+		y = 8
+
+	}
+	focus = {
+		id = ENG_industry_31
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_29
+		}
+		x = 95
+		y = 9
+
+	}
+	focus = {
+		id = ENG_industry_33
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_30
+		}
+		mutually_exclusive = {
+			focus = ENG_industry_32
+		}
+		x = 95
+		y = 10
+
+	}
+	focus = {
+		id = ENG_industry_35
+		icon = GFX_ENG_goal_29
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_begain
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_ind_tip.1
+			custom_effect_tooltip = ENG_a_litle_bit_of_storage_increase
+			custom_effect_tooltip = ENG_one_unit_per_month_increase
+			hidden_effect = {
+				add_to_variable = {
+					ENG_economics_stored = 5
+				}
+			}
+			hidden_effect = {
+				activate_mission = ENG_industry_investment_mission
+			}
+			hidden_effect = {
+				add_to_variable = { 
+					ENG_economics_income = 1
+				}
+			}
+		}
+		x = 127
+		y = 2
+
+	}
+	focus = {
+		id = ENG_industry_36
+		icon = GFX_ENG_goal_30
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_35
+		}
+		completion_reward = {
+			add_political_power = 50
+			custom_effect_tooltip = ENG_ind_tip.3
+			hidden_effect = {
+				add_to_variable = {
+					ENG_investment_readying = 10
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		x = 126
+		y = 3
+
+	}
+	focus = {
+		id = ENG_industry_38
+		icon = GFX_ENG_goal_42
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_industry_39
+			focus = ENG_industry_40
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_eco_tip.4
+			hidden_effect = {
+				add_to_variable = {
+					ENG_loan = 12
+				}
+			}
+		}
+		x = 120
+		y = 5
+
+	}
+	focus = {
+		id = ENG_industry_37
+		icon = GFX_ENG_goal_31
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_35
+		}
+		completion_reward = {
+			add_political_power = 50
+			custom_effect_tooltip = ENG_ind_tip.3
+			hidden_effect = {
+				add_to_variable = {
+					ENG_investment_readying = 10
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		x = 128
+		y = 3
+
+	}
+	focus = {
+		id = ENG_industry_40
+		icon = GFX_ENG_goal_41
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_industry_36
+		}
+		prerequisite = {
+			focus = ENG_industry_37
+		}
+		mutually_exclusive = {
+			focus = ENG_industry_39
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_ind_tip.5
+			custom_effect_tooltip = ENG_ind_tip.3
+			126 = {
+				add_resource = {
+					type = steel
+					amount = 15
+				}
+			}
+			hidden_effect = {
+				add_to_variable = {
+					ENG_investment_readying = 10
+				}
+			}
+			activate_mission = ENG_develop_london
+		}
+		x = 123
+		y = 4
+
+	}
+	focus = {
+		id = ENG_industry_39
+		icon = GFX_ENG_goal_39
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_industry_36
+		}
+		prerequisite = {
+			focus = ENG_industry_37
+		}
+		mutually_exclusive = {
+			focus = ENG_industry_40
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_ind_tip.4
+			custom_effect_tooltip = ENG_ind_tip.3
+			hidden_effect = {
+				add_to_variable = {
+					ENG_investment_readying = 10
+				}
+			}
+			activate_mission = ENG_develop_london
+		}
+		x = 121
+		y = 4
+
+	}
+	focus = {
+		id = ENG_industry_44
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_industry_39
+			focus = ENG_industry_40
+		}
+		x = 114
+		y = 5
+
+	}
+	focus = {
+		id = ENG_industry_50
+		icon = GFX_ENG_goal_43
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_industry_40
+			focus = ENG_industry_39
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_eco_tip.4
+			hidden_effect = {
+				add_to_variable = {
+					ENG_loan = 12
+				}
+			}
+		}
+		x = 122
+		y = 5
+
+	}
+	focus = {
+		id = ENG_industry_42
+		icon = GFX_ENG_goal_32
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_industry_36
+		}
+		prerequisite = {
+			focus = ENG_industry_37
+		}
+		mutually_exclusive = {
+			focus = ENG_industry_43
+		}
+		#completion_reward = {
+		#	121 = {
+		#		add_building_construction = {
+		#			add_extra_state_shared_building_slots = 3
+		#			add_building_construction = {
+		#				type = industrial_complex
+		#				level = 2
+		#				instant_build = yes
+		#			}
+		#			add_building_construction = {
+		#				type = infrastructure
+		#				level = 1
+		#				instant_build = yes
+		#			}
+		#		}
+		#	}
+		#}
+		completion_reward = {
+			custom_effect_tooltip = ENG_ind_tip.3
+			hidden_effect = {
+				add_to_variable = {
+					ENG_investment_readying = 10
+				}
+			}
+			121 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		x = 131
+		y = 4
+
+	}
+	focus = {
+		id = ENG_industry_43
+		icon = GFX_ENG_goal_33
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_industry_36
+		}
+		prerequisite = {
+			focus = ENG_industry_37
+		}
+		mutually_exclusive = {
+			focus = ENG_industry_42
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_ind_tip.3
+			hidden_effect = {
+				add_to_variable = {
+					ENG_investment_readying = 10
+				}
+			}
+			136 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_resource = {
+					type = steel
+					amount = 10
+				}
+			}
+		}
+		x = 133
+		y = 4
+
+	}
+	focus = {
+		id = ENG_industry_53
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_36
+		}
+		prerequisite = {
+			focus = ENG_industry_37
+		}
+		x = 126
+		y = 4
+
+	}
+	focus = {
+		id = ENG_industry_57
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_53
+		}
+		prerequisite = {
+			focus = ENG_industry_88
+		}
+		prerequisite = {
+			focus = ENG_industry_89
+		}
+		x = 126
+		y = 7
+
+	}
+	focus = {
+		id = ENG_industry_52
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_36
+		}
+		prerequisite = {
+			focus = ENG_industry_37
+		}
+		x = 128
+		y = 4
+
+	}
+	focus = {
+		id = ENG_industry_54
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_53
+		}
+		prerequisite = {
+			focus = ENG_industry_52
+		}
+		x = 127
+		y = 5
+
+	}
+	focus = {
+		id = ENG_industry_89
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_54
+		}
+		prerequisite = {
+			focus = ENG_industry_55
+		}
+		prerequisite = {
+			focus = ENG_industry_56
+		}
+		x = 127
+		y = 6
+
+	}
+	focus = {
+		id = ENG_industry_55
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_53
+		}
+		prerequisite = {
+			focus = ENG_industry_52
+		}
+		x = 125
+		y = 5
+
+	}
+	focus = {
+		id = ENG_industry_58
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_52
+		}
+		prerequisite = {
+			focus = ENG_industry_88
+		}
+		prerequisite = {
+			focus = ENG_industry_89
+		}
+		x = 128
+		y = 7
+
+	}
+	focus = {
+		id = ENG_industry_56
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_52
+		}
+		prerequisite = {
+			focus = ENG_industry_53
+		}
+		x = 129
+		y = 5
+
+	}
+	focus = {
+		id = ENG_industry_51
+		icon = GFX_ENG_goal_35
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_industry_45
+		}
+		relative_position_id = ENG_industry_45
+		x = -5
+		y = 1
+
+	}
+	focus = {
+		id = ENG_industry_41
+		icon = GFX_ENG_goal_34
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_industry_39
+			focus = ENG_industry_40
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_eco_tip.5
+			hidden_effect = {
+				add_to_variable = {
+					ENG_loan = 25
+				}
+			}
+			970 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			969 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = fuel_silo
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			968 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = fuel_silo
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			126 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+		x = 134
+		y = 5
+
+	}
+	focus = {
+		id = ENG_industry_45
+		icon = GFX_ENG_goal_36
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_industry_43
+			focus = ENG_industry_42
+		}
+		x = 140
+		y = 5
+
+	}
+	focus = {
+		id = ENG_industry_77
+		icon = GFX_ENG_goal_36
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_industry_45
+		}
+		relative_position_id = ENG_industry_45
+		x = -7
+		y = 1
+
+	}
+	focus = {
+		id = ENG_industry_81
+		icon = GFX_ENG_goal_36
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_industry_45
+		}
+		relative_position_id = ENG_industry_45
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = ENG_industry_86
+		icon = GFX_ENG_goal_36
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_industry_81
+		}
+		relative_position_id = ENG_industry_81
+		x = 1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_industry_87
+		icon = GFX_ENG_goal_36
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_industry_81
+		}
+		relative_position_id = ENG_industry_81
+		x = -1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_industry_82
+		icon = GFX_ENG_goal_36
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_industry_45
+		}
+		relative_position_id = ENG_industry_45
+		x = 2
+		y = 1
+
+	}
+	focus = {
+		id = ENG_industry_78
+		icon = GFX_ENG_goal_61
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_industry_77
+		}
+		prerequisite = {
+			focus = ENG_industry_51
+		}
+		relative_position_id = ENG_industry_77
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = ENG_industry_79
+		icon = GFX_ENG_goal_62
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_industry_77
+		}
+		prerequisite = {
+			focus = ENG_industry_51
+		}
+		relative_position_id = ENG_industry_77
+		x = 2
+		y = 1
+
+	}
+	focus = {
+		id = ENG_industry_80
+		icon = GFX_ENG_goal_36
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_industry_79
+		}
+		prerequisite = {
+			focus = ENG_industry_78
+		}
+		relative_position_id = ENG_industry_79
+		x = -1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_industry_48
+		icon = GFX_ENG_goal_37
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_industry_42
+			focus = ENG_industry_43
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_eco_tip.4
+			hidden_effect = {
+				add_to_variable = {
+					ENG_loan = 12
+				}
+			}
+		}
+		x = 136
+		y = 5
+
+	}
+	focus = {
+		id = ENG_industry_59
+		icon = GFX_ENG_goal_44
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_industry_48
+		}
+		prerequisite = {
+			focus = ENG_industry_49
+		}
+		relative_position_id = ENG_industry_48
+		x = 1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_industry_60
+		icon = GFX_ENG_goal_45
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_industry_59
+		}
+		relative_position_id = ENG_industry_59
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = ENG_industry_61
+		icon = GFX_ENG_goal_48
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_industry_59
+		}
+		prerequisite = {
+			focus = ENG_industry_77
+		}
+		relative_position_id = ENG_industry_59
+		x = -1
+		y = 2
+
+	}
+	focus = {
+		id = ENG_industry_62
+		icon = GFX_ENG_goal_37
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_industry_59
+		}
+		prerequisite = {
+			focus = ENG_industry_77
+		}
+		relative_position_id = ENG_industry_59
+		x = 1
+		y = 2
+
+	}
+	focus = {
+		id = ENG_industry_63
+		icon = GFX_ENG_goal_63
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_industry_61
+		}
+		allow_branch = {
+			has_country_flag = ENG_allow_tanks
+		}
+		relative_position_id = ENG_industry_61
+		x = 0
+		y = 8
+
+	}
+	focus = {
+		id = ENG_industry_64
+		icon = GFX_ENG_goal_60
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_industry_61
+		}
+		prerequisite = {
+			focus = ENG_industry_80
+		}
+		allow_branch = {
+			has_country_flag = ENG_allow_tanks
+		}
+		relative_position_id = ENG_industry_61
+		x = 4
+		y = 8
+
+	}
+	focus = {
+		id = ENG_industry_65
+		icon = GFX_ENG_goal_37
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_industry_61
+		}
+		prerequisite = {
+			focus = ENG_industry_80
+		}
+		relative_position_id = ENG_industry_61
+		x = -5
+		y = 1
+
+	}
+	focus = {
+		id = ENG_industry_84
+		icon = GFX_ENG_goal_37
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_industry_61
+		}
+		prerequisite = {
+			focus = ENG_industry_80
+		}
+		relative_position_id = ENG_industry_61
+		x = -3
+		y = 1
+
+	}
+	focus = {
+		id = ENG_industry_83
+		icon = GFX_ENG_goal_37
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_industry_65
+		}
+		prerequisite = {
+			focus = ENG_industry_84
+		}
+		relative_position_id = ENG_industry_65
+		x = 1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_industry_85
+		icon = GFX_ENG_goal_37
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_industry_83
+		}
+		relative_position_id = ENG_industry_83
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = ENG_industry_66
+		icon = GFX_ENG_goal_37
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_industry_61
+		}
+		prerequisite = {
+			focus = ENG_industry_57
+		}
+		relative_position_id = ENG_industry_61
+		x = -10
+		y = 1
+
+	}
+	focus = {
+		id = ENG_industry_67
+		icon = GFX_ENG_goal_37
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_industry_61
+		}
+		prerequisite = {
+			focus = ENG_industry_58
+		}
+		relative_position_id = ENG_industry_61
+		x = -8
+		y = 1
+
+	}
+	focus = {
+		id = ENG_industry_68
+		icon = GFX_ENG_goal_55
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_industry_63
+		}
+		prerequisite = {
+			focus = ENG_industry_64
+		}
+		relative_position_id = ENG_industry_63
+		x = 2
+		y = 2
+
+	}
+	focus = {
+		id = ENG_industry_69
+		icon = GFX_ENG_goal_37
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_industry_66
+		}
+		prerequisite = {
+			focus = ENG_industry_67
+		}
+		relative_position_id = ENG_industry_67
+		x = -2
+		y = 1
+
+	}
+	focus = {
+		id = ENG_industry_71
+		icon = GFX_ENG_goal_37
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_industry_69
+		}
+		relative_position_id = ENG_industry_69
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = ENG_industry_72
+		icon = GFX_ENG_goal_37
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_industry_71
+		}
+		relative_position_id = ENG_industry_71
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = ENG_industry_73
+		icon = GFX_ENG_goal_37
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_industry_69
+			focus = ENG_industry_70
+		}
+		relative_position_id = ENG_industry_69
+		x = 2
+		y = 1
+
+	}
+	focus = {
+		id = ENG_industry_70
+		icon = GFX_ENG_goal_37
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_industry_66
+		}
+		prerequisite = {
+			focus = ENG_industry_67
+		}
+		relative_position_id = ENG_industry_68
+		x = -8
+		y = -8
+
+	}
+	focus = {
+		id = ENG_industry_74
+		icon = GFX_ENG_goal_37
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_industry_70
+		}
+		relative_position_id = ENG_industry_70
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = ENG_industry_75
+		icon = GFX_ENG_goal_37
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_industry_74
+		}
+		prerequisite = {
+			focus = ENG_industry_85
+		}
+		relative_position_id = ENG_industry_74
+		x = 1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_industry_76
+		icon = GFX_ENG_goal_37
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_industry_74
+		}
+		relative_position_id = ENG_industry_74
+		x = -1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_industry_49
+		icon = GFX_ENG_goal_38
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_industry_42
+			focus = ENG_industry_43
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_eco_tip.4
+			hidden_effect = {
+				add_to_variable = {
+					ENG_loan = 12
+				}
+			}
+		}
+		x = 138
+		y = 5
+
+	}
+	focus = {
+		id = ENG_industry_18
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_17
+		}
+		prerequisite = {
+			focus = ENG_industry_16
+		}
+		x = 78
+		y = 8
+
+	}
+	focus = {
+		id = ENG_industry_21
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_20
+		}
+		x = 76
+		y = 9
+
+	}
+	focus = {
+		id = ENG_industry_22
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_19
+		}
+		x = 80
+		y = 9
+
+	}
+	focus = {
+		id = ENG_industry_23
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_18
+		}
+		x = 78
+		y = 9
+
+	}
+	focus = {
+		id = ENG_industry_24
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_18
+			focus = ENG_industry_20
+			focus = ENG_industry_19
+		}
+		mutually_exclusive = {
+			focus = ENG_industry_25
+		}
+		x = 77
+		y = 10
+
+	}
+	focus = {
+		id = ENG_industry_25
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_18
+			focus = ENG_industry_19
+			focus = ENG_industry_20
+		}
+		mutually_exclusive = {
+			focus = ENG_industry_24
+		}
+		x = 79
+		y = 10
+
+	}
+	focus = {
+		id = ENG_industry_34
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_industry_32
+			focus = ENG_industry_33
+		}
+		prerequisite = {
+			focus = ENG_industry_12
+		}
+		prerequisite = {
+			focus = ENG_industry_25
+			focus = ENG_industry_24
+		}
+		x = 86
+		y = 11
+
+	}
+	focus = {
+		id = ENG_industry_46
+		icon = GFX_ENG_1000
+		cost = 1.50
+		prerequisite = {
+			focus = ENG_industry_39
+			focus = ENG_industry_40
+		}
+		x = 116
+		y = 5
+		completion_reward = {
+			custom_effect_tooltip = ENG_eco_tip.4
+			hidden_effect = {
+				add_to_variable = {
+					ENG_loan = 12
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_industry_47
+		icon = GFX_ENG_1000
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_industry_39
+			focus = ENG_industry_40
+		}
+		x = 118
+		y = 5
+
+	}
+	focus = {
+		id = ENG_industry_88
+		icon = GFX_ENG_1000
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_industry_47
+		}
+		prerequisite = {
+			focus = ENG_industry_46
+		}
+		prerequisite = {
+			focus = ENG_industry_38
+		}
+		prerequisite = {
+			focus = ENG_industry_50
+		}
+		prerequisite = {
+			focus = ENG_industry_44
+		}
+		x = 118
+		y = 6
+
+	}
+	focus = {
+		id = ENG_dip_0
+		icon = GFX_ENG_1000
+		cost = 1.00
+		x = 96
+		y = 33
+		allow_branch = {
+			has_country_flag = 1ENG_social_democratic
+		}
+	}
+	focus = {
+		id = ENG_dip_79
+		icon = GFX_ENG_1000
+		cost = 1.00
+		x = 110
+		y = 42
+		allow_branch = {
+			has_country_flag = 1ENG_social_democratic
+		}
+	}
+	focus = {
+		id = ENG_dip_1
+		icon = GFX_ENG_1000
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_dip_0
+		}
+		x = 91
+		y = 34
+
+	}
+	focus = {
+		id = ENG_dip_2
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_1
+		}
+		x = 90
+		y = 35
+
+	}
+	focus = {
+		id = ENG_dip_5
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_2
+		}
+		x = 88
+		y = 36
+
+	}
+	focus = {
+		id = ENG_dip_4
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_2
+		}
+		x = 90
+		y = 36
+
+	}
+	focus = {
+		id = ENG_dip_6
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_4
+		}
+		prerequisite = {
+			focus = ENG_dip_5
+		}
+		x = 89
+		y = 37
+
+	}
+	focus = {
+		id = ENG_dip_3
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_1
+		}
+		x = 92
+		y = 35
+
+	}
+	focus = {
+		id = ENG_dip_7
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_3
+		}
+		x = 92
+		y = 36
+
+	}
+	focus = {
+		id = ENG_dip_9
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_7
+		}
+		x = 91
+		y = 38
+
+	}
+	focus = {
+		id = ENG_dip_8
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_7
+		}
+		x = 92
+		y = 37
+
+	}
+	focus = {
+		id = ENG_dip_10
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_7
+		}
+		x = 93
+		y = 38
+
+	}
+	focus = {
+		id = ENG_dip_14
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_10
+		}
+		x = 93
+		y = 39
+
+	}
+	focus = {
+		id = ENG_dip_16
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_14
+		}
+		x = 93
+		y = 40
+
+	}
+	focus = {
+		id = ENG_dip_20
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_16
+		}
+		x = 92
+		y = 41
+
+	}
+	focus = {
+		id = ENG_dip_21
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_16
+		}
+		x = 94
+		y = 41
+
+	}
+	focus = {
+		id = ENG_dip_23
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_21
+		}
+		prerequisite = {
+			focus = ENG_dip_20
+		}
+		x = 93
+		y = 42
+
+	}
+	focus = {
+		id = ENG_dip_28
+		icon = GFX_ENG_1000
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_dip_0
+		}
+		x = 101
+		y = 34
+
+	}
+	focus = {
+		id = ENG_dip_30
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_1
+			focus = ENG_dip_28
+		}
+		mutually_exclusive = {
+			focus = ENG_dip_29
+		}
+		x = 94
+		y = 35
+
+	}
+	focus = {
+		id = ENG_dip_31
+		icon = GFX_ENG_1000
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_dip_30
+		}
+		x = 94
+		y = 36
+
+	}
+	focus = {
+		id = ENG_dip_32
+		icon = GFX_ENG_1000
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_dip_31
+		}
+		x = 94
+		y = 37
+
+	}
+	focus = {
+		id = ENG_dip_29
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_28
+			focus = ENG_dip_1
+		}
+		mutually_exclusive = {
+			focus = ENG_dip_30
+		}
+		x = 96
+		y = 35
+
+	}
+	focus = {
+		id = ENG_dip_33
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_28
+			focus = ENG_dip_1
+		}
+		x = 99
+		y = 35
+
+	}
+	focus = {
+		id = ENG_dip_34
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_33
+		}
+		prerequisite = {
+			focus = ENG_dip_29
+		}
+		x = 97
+		y = 36
+
+	}
+	focus = {
+		id = ENG_dip_35
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_34
+			focus = ENG_dip_31
+		}
+		x = 95
+		y = 38
+
+	}
+	focus = {
+		id = ENG_dip_36
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_34
+		}
+		x = 97
+		y = 37
+
+	}
+	focus = {
+		id = ENG_dip_37
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_33
+		}
+		x = 99
+		y = 37
+
+	}
+	focus = {
+		id = ENG_dip_39
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_37
+		}
+		x = 97
+		y = 38
+
+	}
+	focus = {
+		id = ENG_dip_38
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_37
+		}
+		x = 99
+		y = 38
+
+	}
+	focus = {
+		id = ENG_dip_40
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_38
+		}
+		prerequisite = {
+			focus = ENG_dip_39
+		}
+		prerequisite = {
+			focus = ENG_dip_35
+		}
+		x = 97
+		y = 39
+
+	}
+	focus = {
+		id = ENG_dip_58
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_14
+		}
+		x = 99
+		y = 40
+
+	}
+	focus = {
+		id = ENG_dip_59
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_58
+		}
+		x = 97
+		y = 41
+
+	}
+	focus = {
+		id = ENG_dip_60
+		icon = GFX_ENG_1000
+		cost = 4.00
+		prerequisite = {
+			focus = ENG_dip_59
+		}
+		x = 97
+		y = 42
+
+	}
+	focus = {
+		id = ENG_dip_61
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_60
+		}
+		mutually_exclusive = {
+			focus = ENG_dip_25
+		}
+		x = 96
+		y = 43
+
+	}
+	focus = {
+		id = ENG_dip_62
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_60
+		}
+		x = 98
+		y = 43
+
+	}
+	focus = {
+		id = ENG_dip_63
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_61
+		}
+		prerequisite = {
+			focus = ENG_dip_62
+		}
+		x = 97
+		y = 44
+
+	}
+	focus = {
+		id = ENG_dip_64
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_63
+		}
+		x = 97
+		y = 45
+
+	}
+	focus = {
+		id = ENG_dip_65
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_61
+		}
+		prerequisite = {
+			focus = ENG_dip_62
+		}
+		x = 99
+		y = 45
+
+	}
+	focus = {
+		id = ENG_dip_41
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_28
+		}
+		x = 100
+		y = 36
+
+	}
+	focus = {
+		id = ENG_dip_42
+		icon = GFX_ENG_1000
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_dip_28
+		}
+		mutually_exclusive = {
+			focus = ENG_dip_43
+		}
+		x = 102
+		y = 35
+
+	}
+	focus = {
+		id = ENG_dip_43
+		icon = GFX_ENG_1000
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_dip_28
+			focus = ENG_dip_1
+		}
+		mutually_exclusive = {
+			focus = ENG_dip_42
+		}
+		x = 104
+		y = 35
+
+	}
+	focus = {
+		id = ENG_dip_44
+		icon = GFX_ENG_1000
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_dip_43
+			focus = ENG_dip_42
+		}
+		x = 103
+		y = 36
+
+	}
+	focus = {
+		id = ENG_dip_45
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_41
+		}
+		prerequisite = {
+			focus = ENG_dip_44
+		}
+		x = 100
+		y = 39
+
+	}
+	focus = {
+		id = ENG_dip_46
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_44
+		}
+		prerequisite = {
+			focus = ENG_dip_41
+		}
+		x = 102
+		y = 37
+
+	}
+	focus = {
+		id = ENG_dip_47
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_46
+		}
+		x = 101
+		y = 38
+
+	}
+	focus = {
+		id = ENG_dip_48
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_46
+		}
+		x = 103
+		y = 38
+
+	}
+	focus = {
+		id = ENG_dip_72
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_58
+		}
+		x = 103
+		y = 41
+
+	}
+	focus = {
+		id = ENG_dip_73
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_72
+		}
+		x = 103
+		y = 43
+
+	}
+	focus = {
+		id = ENG_dip_75
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_73
+		}
+		mutually_exclusive = {
+			focus = ENG_dip_66
+		}
+		x = 103
+		y = 46
+
+	}
+	focus = {
+		id = ENG_dip_49
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_43
+			focus = ENG_dip_42
+		}
+		x = 106
+		y = 36
+
+	}
+	focus = {
+		id = ENG_dip_50
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_49
+		}
+		x = 105
+		y = 37
+
+	}
+	focus = {
+		id = ENG_dip_51
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_49
+		}
+		x = 107
+		y = 37
+
+	}
+	focus = {
+		id = ENG_dip_52
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_51
+		}
+		prerequisite = {
+			focus = ENG_dip_50
+		}
+		x = 106
+		y = 38
+
+	}
+	focus = {
+		id = ENG_dip_80
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_79
+		}
+		x = 108
+		y = 43
+
+	}
+	focus = {
+		id = ENG_dip_82
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_80
+		}
+		x = 106
+		y = 44
+
+	}
+	focus = {
+		id = ENG_dip_84
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_82
+		}
+		x = 106
+		y = 45
+
+	}
+	focus = {
+		id = ENG_dip_53
+		icon = GFX_ENG_1000
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_dip_28
+			focus = ENG_dip_1
+		}
+		x = 109
+		y = 35
+
+	}
+	focus = {
+		id = ENG_dip_54
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_53
+		}
+		x = 108
+		y = 36
+
+	}
+	focus = {
+		id = ENG_dip_81
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_80
+		}
+		x = 108
+		y = 44
+
+	}
+	focus = {
+		id = ENG_dip_85
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_81
+		}
+		x = 108
+		y = 45
+
+	}
+	focus = {
+		id = ENG_dip_55
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_53
+		}
+		x = 110
+		y = 38
+
+	}
+	focus = {
+		id = ENG_dip_56
+		icon = GFX_ENG_1000
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_dip_48
+		}
+		prerequisite = {
+			focus = ENG_dip_47
+		}
+		prerequisite = {
+			focus = ENG_dip_52
+		}
+		prerequisite = {
+			focus = ENG_dip_55
+		}
+		x = 104
+		y = 39
+
+	}
+	focus = {
+		id = ENG_dip_57
+		icon = GFX_ENG_1000
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_dip_55
+		}
+		prerequisite = {
+			focus = ENG_dip_52
+		}
+		prerequisite = {
+			focus = ENG_dip_48
+		}
+		prerequisite = {
+			focus = ENG_dip_47
+		}
+		x = 107
+		y = 39
+
+	}
+	focus = {
+		id = ENG_dip_83
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_80
+		}
+		x = 110
+		y = 44
+
+	}
+	focus = {
+		id = ENG_dip_86
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_83
+		}
+		x = 110
+		y = 45
+
+	}
+	focus = {
+		id = ENG_dip_87
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_85
+		}
+		prerequisite = {
+			focus = ENG_dip_86
+		}
+		prerequisite = {
+			focus = ENG_dip_84
+		}
+		x = 108
+		y = 46
+
+	}
+	focus = {
+		id = ENG_dip_88
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_75
+		}
+		prerequisite = {
+			focus = ENG_dip_87
+		}
+		x = 103
+		y = 47
+
+	}
+	focus = {
+		id = ENG_dip_139
+		icon = GFX_ENG_1000
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_dip_79
+		}
+		x = 112
+		y = 43
+
+	}
+	focus = {
+		id = ENG_dip_140
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_139
+		}
+		x = 113
+		y = 44
+
+	}
+	focus = {
+		id = ENG_dip_141
+		icon = GFX_ENG_1000
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_dip_139
+		}
+		x = 116
+		y = 44
+
+	}
+	focus = {
+		id = ENG_dip_142
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_140
+		}
+		prerequisite = {
+			focus = ENG_dip_141
+		}
+		x = 112
+		y = 45
+
+	}
+	focus = {
+		id = ENG_dip_143
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_142
+		}
+		x = 112
+		y = 46
+
+	}
+	focus = {
+		id = ENG_dip_144
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_141
+		}
+		prerequisite = {
+			focus = ENG_dip_140
+		}
+		x = 117
+		y = 45
+
+	}
+	focus = {
+		id = ENG_dip_145
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_144
+		}
+		x = 117
+		y = 46
+
+	}
+	focus = {
+		id = ENG_dip_101
+		icon = GFX_ENG_1000
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_dip_87
+		}
+		prerequisite = {
+			focus = ENG_dip_143
+		}
+		prerequisite = {
+			focus = ENG_dip_145
+		}
+		x = 109
+		y = 47
+
+	}
+	focus = {
+		id = ENG_dip_102
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_87
+		}
+		prerequisite = {
+			focus = ENG_dip_143
+		}
+		prerequisite = {
+			focus = ENG_dip_145
+		}
+		x = 112
+		y = 47
+
+	}
+	focus = {
+		id = ENG_dip_104
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_102
+		}
+		prerequisite = {
+			focus = ENG_dip_101
+		}
+		mutually_exclusive = {
+			focus = ENG_dip_103
+		}
+		x = 113
+		y = 48
+
+	}
+	focus = {
+		id = ENG_dip_107
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_104
+		}
+		x = 114
+		y = 49
+
+	}
+	focus = {
+		id = ENG_dip_109
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_107
+		}
+		mutually_exclusive = {
+			focus = ENG_dip_108
+		}
+		x = 115
+		y = 50
+
+	}
+	focus = {
+		id = ENG_dip_128
+		icon = GFX_ENG_1000
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_dip_87
+		}
+		prerequisite = {
+			focus = ENG_dip_143
+		}
+		prerequisite = {
+			focus = ENG_dip_145
+		}
+		x = 119
+		y = 47
+
+	}
+	focus = {
+		id = ENG_dip_129
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_128
+		}
+		mutually_exclusive = {
+			focus = ENG_dip_130
+		}
+		x = 116
+		y = 48
+
+	}
+	focus = {
+		id = ENG_dip_130
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_128
+		}
+		mutually_exclusive = {
+			focus = ENG_dip_129
+		}
+		x = 122
+		y = 48
+
+	}
+	focus = {
+		id = ENG_dip_131
+		icon = GFX_ENG_1000
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_dip_130
+			focus = ENG_dip_129
+		}
+		x = 119
+		y = 49
+
+	}
+	focus = {
+		id = ENG_dip_132
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_131
+		}
+		x = 117
+		y = 50
+
+	}
+	focus = {
+		id = ENG_dip_133
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_131
+		}
+		x = 121
+		y = 50
+
+	}
+	focus = {
+		id = ENG_dip_135
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_133
+		}
+		prerequisite = {
+			focus = ENG_dip_132
+		}
+		x = 120
+		y = 51
+
+	}
+	focus = {
+		id = ENG_dip_134
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_132
+		}
+		prerequisite = {
+			focus = ENG_dip_133
+		}
+		x = 118
+		y = 51
+
+	}
+	focus = {
+		id = ENG_dip_136
+		icon = GFX_ENG_1000
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_dip_135
+		}
+		prerequisite = {
+			focus = ENG_dip_134
+		}
+		x = 119
+		y = 52
+
+	}
+	focus = {
+		id = ENG_dip_11
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_6
+		}
+		x = 88
+		y = 38
+
+	}
+	focus = {
+		id = ENG_dip_12
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_6
+		}
+		prerequisite = {
+			focus = ENG_dip_9
+		}
+		x = 89
+		y = 39
+
+	}
+	focus = {
+		id = ENG_dip_13
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_9
+		}
+		x = 91
+		y = 39
+
+	}
+	focus = {
+		id = ENG_dip_15
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_14
+		}
+		x = 91
+		y = 40
+
+	}
+	focus = {
+		id = ENG_dip_17
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_14
+		}
+		x = 95
+		y = 40
+
+	}
+	focus = {
+		id = ENG_dip_18
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_12
+		}
+		x = 89
+		y = 40
+
+	}
+	focus = {
+		id = ENG_dip_19
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_15
+		}
+		prerequisite = {
+			focus = ENG_dip_12
+		}
+		x = 90
+		y = 41
+
+	}
+	focus = {
+		id = ENG_dip_22
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_15
+		}
+		x = 91
+		y = 42
+
+	}
+	focus = {
+		id = ENG_dip_24
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_17
+		}
+		x = 95
+		y = 42
+
+	}
+	focus = {
+		id = ENG_dip_25
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_23
+		}
+		prerequisite = {
+			focus = ENG_dip_19
+		}
+		mutually_exclusive = {
+			focus = ENG_dip_26
+			focus = ENG_dip_61
+		}
+		x = 91
+		y = 43
+
+	}
+	focus = {
+		id = ENG_dip_26
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_11
+		}
+		mutually_exclusive = {
+			focus = ENG_dip_25
+		}
+		x = 87
+		y = 43
+
+	}
+	focus = {
+		id = ENG_dip_27
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_26
+		}
+		x = 88
+		y = 44
+
+	}
+	focus = {
+		id = ENG_dip_66
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_27
+		}
+		mutually_exclusive = {
+			focus = ENG_dip_75
+		}
+		x = 88
+		y = 46
+
+	}
+	focus = {
+		id = ENG_dip_67
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_58
+		}
+		x = 101
+		y = 41
+
+	}
+	focus = {
+		id = ENG_dip_68
+		icon = GFX_ENG_1000
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_dip_67
+		}
+		x = 100
+		y = 42
+
+	}
+	focus = {
+		id = ENG_dip_69
+		icon = GFX_ENG_1000
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_dip_67
+		}
+		x = 102
+		y = 42
+
+	}
+	focus = {
+		id = ENG_dip_70
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_69
+		}
+		prerequisite = {
+			focus = ENG_dip_68
+		}
+		x = 101
+		y = 43
+
+	}
+	focus = {
+		id = ENG_dip_71
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_70
+		}
+		x = 101
+		y = 44
+
+	}
+	focus = {
+		id = ENG_dip_74
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_72
+		}
+		x = 104
+		y = 42
+
+	}
+	focus = {
+		id = ENG_dip_76
+		icon = GFX_ENG_1000
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_dip_25
+		}
+		x = 91
+		y = 44
+
+	}
+	focus = {
+		id = ENG_dip_114514
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_25
+		}
+		x = 93
+		y = 44
+
+	}
+	focus = {
+		id = ENG_dip_1145
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_114514
+		}
+		x = 93
+		y = 45
+
+	}
+	focus = {
+		id = ENG_dip_89
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_88
+		}
+		prerequisite = {
+			focus = ENG_dip_100
+		}
+		x = 102
+		y = 48
+
+	}
+	focus = {
+		id = ENG_dip_90
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_88
+		}
+		prerequisite = {
+			focus = ENG_dip_100
+		}
+		x = 104
+		y = 48
+
+	}
+	focus = {
+		id = ENG_dip_91
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_89
+		}
+		x = 101
+		y = 49
+
+	}
+	focus = {
+		id = ENG_dip_92
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_89
+		}
+		x = 99
+		y = 49
+
+	}
+	focus = {
+		id = ENG_dip_93
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_90
+		}
+		x = 105
+		y = 49
+
+	}
+	focus = {
+		id = ENG_dip_94
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_90
+		}
+		x = 107
+		y = 49
+
+	}
+	focus = {
+		id = ENG_dip_95
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_91
+		}
+		prerequisite = {
+			focus = ENG_dip_92
+		}
+		x = 100
+		y = 50
+
+	}
+	focus = {
+		id = ENG_dip_96
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_93
+		}
+		prerequisite = {
+			focus = ENG_dip_94
+		}
+		x = 106
+		y = 50
+
+	}
+	focus = {
+		id = ENG_dip_97
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_dip_90
+			focus = ENG_dip_89
+		}
+		x = 103
+		y = 50
+
+	}
+	focus = {
+		id = ENG_dip_98
+		icon = GFX_ENG_1000
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_dip_96
+		}
+		prerequisite = {
+			focus = ENG_dip_97
+		}
+		prerequisite = {
+			focus = ENG_dip_95
+		}
+		x = 103
+		y = 51
+
+	}
+	focus = {
+		id = ENG_dip_99
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_98
+		}
+		x = 103
+		y = 52
+
+	}
+	focus = {
+		id = ENG_dip_100
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_87
+		}
+		prerequisite = {
+			focus = ENG_dip_75
+		}
+		prerequisite = {
+			focus = ENG_dip_143
+		}
+		prerequisite = {
+			focus = ENG_dip_145
+		}
+		x = 107
+		y = 47
+
+	}
+	focus = {
+		id = ENG_dip_103
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_101
+		}
+		prerequisite = {
+			focus = ENG_dip_102
+		}
+		mutually_exclusive = {
+			focus = ENG_dip_104
+		}
+		x = 108
+		y = 48
+
+	}
+	focus = {
+		id = ENG_dip_105
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_103
+		}
+		x = 109
+		y = 49
+
+	}
+	focus = {
+		id = ENG_dip_106
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_105
+		}
+		x = 109
+		y = 50
+
+	}
+	focus = {
+		id = ENG_dip_108
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_107
+		}
+		mutually_exclusive = {
+			focus = ENG_dip_109
+		}
+		x = 113
+		y = 50
+
+	}
+	focus = {
+		id = ENG_dip_110
+		icon = GFX_ENG_1000
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_dip_104
+			focus = ENG_dip_103
+		}
+		x = 111
+		y = 51
+
+	}
+	focus = {
+		id = ENG_dip_111
+		icon = GFX_ENG_1000
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_dip_110
+		}
+		x = 111
+		y = 52
+
+	}
+	focus = {
+		id = ENG_dip_112
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_110
+		}
+		x = 109
+		y = 52
+
+	}
+	focus = {
+		id = ENG_dip_113
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_110
+		}
+		x = 113
+		y = 52
+
+	}
+	focus = {
+		id = ENG_dip_114
+		icon = GFX_ENG_1000
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_dip_111
+		}
+		prerequisite = {
+			focus = ENG_dip_113
+		}
+		prerequisite = {
+			focus = ENG_dip_112
+		}
+		x = 111
+		y = 53
+
+	}
+	focus = {
+		id = ENG_dip_115
+		icon = GFX_ENG_1000
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_dip_114
+		}
+		x = 111
+		y = 54
+
+	}
+	focus = {
+		id = ENG_dip_116
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_115
+		}
+		x = 111
+		y = 56
+
+	}
+	focus = {
+		id = ENG_dip_117
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_dip_114
+		}
+		x = 107
+		y = 54
+
+	}
+	focus = {
+		id = ENG_dip_118
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_dip_117
+		}
+		x = 106
+		y = 55
+
+	}
+	focus = {
+		id = ENG_dip_119
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_dip_117
+		}
+		x = 108
+		y = 55
+
+	}
+	focus = {
+		id = ENG_dip_120
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_dip_117
+		}
+		x = 104
+		y = 55
+
+	}
+	focus = {
+		id = ENG_dip_121
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_dip_117
+		}
+		x = 110
+		y = 55
+
+	}
+	focus = {
+		id = ENG_dip_122
+		icon = GFX_ENG_1000
+		cost = 2.00
+		prerequisite = {
+			focus = ENG_dip_119
+		}
+		prerequisite = {
+			focus = ENG_dip_121
+		}
+		prerequisite = {
+			focus = ENG_dip_118
+		}
+		prerequisite = {
+			focus = ENG_dip_120
+		}
+		x = 107
+		y = 56
+
+	}
+	focus = {
+		id = ENG_dip_123
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_dip_114
+		}
+		x = 115
+		y = 54
+
+	}
+	focus = {
+		id = ENG_dip_124
+		icon = GFX_ENG_1000
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_dip_125
+		}
+		prerequisite = {
+			focus = ENG_dip_126
+		}
+		x = 115
+		y = 56
+
+	}
+	focus = {
+		id = ENG_dip_125
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_dip_123
+		}
+		x = 113
+		y = 55
+
+	}
+	focus = {
+		id = ENG_dip_126
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_dip_123
+		}
+		x = 117
+		y = 55
+
+	}
+	focus = {
+		id = ENG_dip_127
+		icon = GFX_ENG_1000
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_dip_99
+		}
+		x = 103
+		y = 56
+
+	}
+	focus = {
+		id = ENG_dip_137
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_dip_136
+		}
+		x = 119
+		y = 56
+
+	}
+	focus = {
+		id = ENG_dip_138
+		icon = GFX_ENG_1000
+		cost = 4.00
+		prerequisite = {
+			focus = ENG_dip_116
+		}
+		prerequisite = {
+			focus = ENG_dip_122
+		}
+		prerequisite = {
+			focus = ENG_dip_127
+		}
+		prerequisite = {
+			focus = ENG_dip_124
+		}
+		prerequisite = {
+			focus = ENG_dip_137
+		}
+		x = 111
+		y = 57
+
+	}
+	focus = {
+		id = ENG_land_army_1
+		icon = GFX_ENG_1000
+		cost = 3.00
+		x = 155
+		y = 2
+		allow_branch = {
+			has_country_flag = ENG_social_democratic
+		}
+		prerequisite = {
+			focus = ENG_industry_begain
+		}
+		completion_reward = {
+			add_named_threat = { 
+				threat = 10 
+				name = "撕毁康沃尔协定"
+			}
+			country_event = {
+				id = Dawn_event_eng.37
+			}
+			custom_effect_tooltip = ENG_political_tip.19
+		}
+	}
+
+	focus = {
+		id = ENG_land_army_2
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_1
+		prerequisite = {
+			focus = ENG_land_army_1
+		}
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_3
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_1
+		prerequisite = {
+			focus = ENG_land_army_1
+		}
+		x = 2
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_4
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_1
+		prerequisite = {
+			focus = ENG_land_army_1
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_political_tip.20
+		}
+		x = -2
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_5
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_2
+		prerequisite = {
+			focus = ENG_land_army_2
+		}
+		prerequisite = {
+			focus = ENG_land_army_3
+		}
+		prerequisite = {
+			focus = ENG_land_army_4
+		}
+		completion_reward = {
+			mark_focus_tree_layout_dirty = yes
+			custom_effect_tooltip = ENG_political_tip.20
+		}
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_6
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_5
+		prerequisite = {
+			focus = ENG_land_army_5
+		}
+		x = -1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_8
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_6
+		prerequisite = {
+			focus = ENG_land_army_6
+		}
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_9
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_8
+		prerequisite = {
+			focus = ENG_land_army_8
+		}
+		mutually_exclusive = {
+			focus = ENG_land_army_10
+		}
+		x = -3
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_30
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_8
+		prerequisite = {
+			focus = ENG_land_army_8
+		}
+		x = -9
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_41
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_30
+		prerequisite = {
+			focus = ENG_land_army_30
+		}
+		x = 3
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_34
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_30
+		prerequisite = {
+			focus = ENG_land_army_30
+		}
+		x = -2
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_37
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_34
+		prerequisite = {
+			focus = ENG_land_army_34
+		}
+		x = -1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_38
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_34
+		prerequisite = {
+			focus = ENG_land_army_34
+		}
+		x = 1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_39
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_34
+		prerequisite = {
+			focus = ENG_land_army_37
+		}
+		prerequisite = {
+			focus = ENG_land_army_38
+		}
+		x = 0
+		y = 2
+
+	}
+	focus = {
+		id = ENG_land_army_40
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_30
+		prerequisite = {
+			focus = ENG_land_army_36
+		}
+		prerequisite = {
+			focus = ENG_land_army_39
+		}
+		x = -2
+		y = 4
+
+	}
+	focus = {
+		id = ENG_land_army_42
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_40
+		prerequisite = {
+			focus = ENG_land_army_40
+		}
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_43
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_42
+		prerequisite = {
+			focus = ENG_land_army_42
+		}
+		x = 1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_44
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_42
+		prerequisite = {
+			focus = ENG_land_army_42
+		}
+		x = -1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_45
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_42
+		prerequisite = {
+			focus = ENG_land_army_44
+		}
+		prerequisite = {
+			focus = ENG_land_army_43
+		}
+		x = 0
+		y = 2
+
+	}
+	focus = {
+		id = ENG_land_army_47
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_45
+		prerequisite = {
+			focus = ENG_land_army_45
+		}
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_36
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_35
+		prerequisite = {
+			focus = ENG_land_army_35
+		}
+		x = 0
+		y = 2
+
+	}
+	focus = {
+		id = ENG_land_army_46
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_36
+		prerequisite = {
+			focus = ENG_land_army_36
+		}
+		x = 2
+		y = 2
+
+	}
+	focus = {
+		id = ENG_land_army_48
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_46
+		prerequisite = {
+			focus = ENG_land_army_46
+		}
+		x = 1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_49
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_46
+		prerequisite = {
+			focus = ENG_land_army_46
+		}
+		x = -1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_50
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_46
+		prerequisite = {
+			focus = ENG_land_army_49
+		}
+		prerequisite = {
+			focus = ENG_land_army_48
+		}
+		x = 0
+		y = 2
+
+	}
+	focus = {
+		id = ENG_land_army_51
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_50
+		prerequisite = {
+			focus = ENG_land_army_50
+		}
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_35
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_30
+		prerequisite = {
+			focus = ENG_land_army_30
+		}
+		x = 1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_11
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_9
+		prerequisite = {
+			focus = ENG_land_army_9
+		}
+		x = -1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_31
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_11
+		prerequisite = {
+			focus = ENG_land_army_11
+		}
+		prerequisite = {
+			focus = ENG_land_army_41
+		}
+		x = -2
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_32
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_11
+		prerequisite = {
+			focus = ENG_land_army_31
+		}
+		x = -2
+		y = 2
+
+	}
+	focus = {
+		id = ENG_land_army_12
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_9
+		prerequisite = {
+			focus = ENG_land_army_9
+		}
+		x = 1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_13
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_12
+		prerequisite = {
+			focus = ENG_land_army_12
+		}
+		prerequisite = {
+			focus = ENG_land_army_11
+		}
+		x = -1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_14
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_13
+		prerequisite = {
+			focus = ENG_land_army_13
+		}
+		x = 0
+		y = 2
+
+	}
+	focus = {
+		id = ENG_land_army_10
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_8
+		prerequisite = {
+			focus = ENG_land_army_8
+		}
+		mutually_exclusive = {
+			focus = ENG_land_army_9
+		}
+		x = 3
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_15
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_10
+		prerequisite = {
+			focus = ENG_land_army_10
+		}
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_16
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_15
+		prerequisite = {
+			focus = ENG_land_army_15
+		}
+		x = -1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_17
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_15
+		prerequisite = {
+			focus = ENG_land_army_15
+		}
+		x = 1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_18
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_16
+		prerequisite = {
+			focus = ENG_land_army_16
+		}
+		prerequisite = {
+			focus = ENG_land_army_17
+		}
+		x = 1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_19
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_18
+		prerequisite = {
+			focus = ENG_land_army_18
+		}
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_20
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_8
+		prerequisite = {
+			focus = ENG_land_army_19
+			focus = ENG_land_army_14
+		}
+		x = 0
+		y = 6
+
+	}
+	focus = {
+		id = ENG_land_army_25
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_20
+		prerequisite = {
+			focus = ENG_land_army_20
+		}
+		x = 3
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_26
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_25
+		prerequisite = {
+			focus = ENG_land_army_25
+		}
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_27
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_26
+		prerequisite = {
+			focus = ENG_land_army_26
+		}
+		x = 2
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_28
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_26
+		prerequisite = {
+			focus = ENG_land_army_26
+		}
+		x = -2
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_29
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_20
+		prerequisite = {
+			focus = ENG_land_army_27
+		}
+		prerequisite = {
+			focus = ENG_land_army_28
+		}
+		prerequisite = {
+			focus = ENG_land_army_24
+		}
+		prerequisite = {
+			focus = ENG_land_army_51
+		}
+		prerequisite = {
+			focus = ENG_land_army_47
+		}
+		prerequisite = {
+			focus = ENG_land_army_77
+		}
+		prerequisite = {
+			focus = ENG_land_army_78
+		}
+		x = 0
+		y = 4
+
+	}
+	focus = {
+		id = ENG_land_army_21
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_20
+		prerequisite = {
+			focus = ENG_land_army_20
+		}
+		x = -3
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_22
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_21
+		prerequisite = {
+			focus = ENG_land_army_21
+		}
+		x = -1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_23
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_21
+		prerequisite = {
+			focus = ENG_land_army_21
+		}
+		x = 1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_24
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_21
+		prerequisite = {
+			focus = ENG_land_army_22
+		}
+		prerequisite = {
+			focus = ENG_land_army_23
+		}
+		x = 0
+		y = 2
+
+	}
+	focus = {
+		id = ENG_land_army_7
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_5
+		prerequisite = {
+			focus = ENG_land_army_5
+		}
+		x = 1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_52
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_7
+		prerequisite = {
+			focus = ENG_land_army_7
+		}
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_53
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_7
+		prerequisite = {
+			focus = ENG_land_army_7
+		}
+		x = 2
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_54
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_7
+		prerequisite = {
+			focus = ENG_land_army_7
+		}
+		x = 4
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_55
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_7
+		prerequisite = {
+			focus = ENG_land_army_53
+		}
+		prerequisite = {
+			focus = ENG_land_army_54
+		}
+		x = 5
+		y = 2
+
+	}
+	focus = {
+		id = ENG_land_army_56
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_55
+		prerequisite = {
+			focus = ENG_land_army_55
+		}
+		mutually_exclusive = {
+			focus = ENG_land_army_57
+		}
+		x = -1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_58
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_56
+		prerequisite = {
+			focus = ENG_land_army_56
+		}
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_63
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_58
+		prerequisite = {
+			focus = ENG_land_army_61
+		}
+		prerequisite = {
+			focus = ENG_land_army_62
+		}
+		x = 0
+		y = 3
+
+	}
+	focus = {
+		id = ENG_land_army_72
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_58
+		prerequisite = {
+			focus = ENG_land_army_63
+			focus = ENG_land_army_71
+		}
+		mutually_exclusive = {
+			focus = ENG_land_army_73
+		}
+		x = 1
+		y = 4
+
+	}
+	focus = {
+		id = ENG_land_army_74
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_72
+		prerequisite = {
+			focus = ENG_land_army_72
+			focus = ENG_land_army_73
+		}
+		x = 1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_77
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_74
+		prerequisite = {
+			focus = ENG_land_army_74
+		}
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_75
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_72
+		prerequisite = {
+			focus = ENG_land_army_72
+			focus = ENG_land_army_73
+		}
+		x = 6
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_76
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_72
+		prerequisite = {
+			focus = ENG_land_army_72
+			focus = ENG_land_army_73
+		}
+		x = 4
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_78
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_76
+		prerequisite = {
+			focus = ENG_land_army_76
+		}
+		prerequisite = {
+			focus = ENG_land_army_75
+		}
+		x = 1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_73
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_58
+		prerequisite = {
+			focus = ENG_land_army_63
+			focus = ENG_land_army_71
+		}
+		mutually_exclusive = {
+			focus = ENG_land_army_72
+		}
+		x = 5
+		y = 4
+
+	}
+	focus = {
+		id = ENG_land_army_59
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_58
+		prerequisite = {
+			focus = ENG_land_army_58
+		}
+		x = 1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_62
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_59
+		prerequisite = {
+			focus = ENG_land_army_59
+		}
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_60
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_58
+		prerequisite = {
+			focus = ENG_land_army_58
+		}
+		x = -1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_61
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_60
+		prerequisite = {
+			focus = ENG_land_army_60
+		}
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_57
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_55
+		prerequisite = {
+			focus = ENG_land_army_55
+		}
+		mutually_exclusive = {
+			focus = ENG_land_army_56
+		}
+		x = 1
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_64
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_57
+		prerequisite = {
+			focus = ENG_land_army_57
+		}
+		x = 3
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_65
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_57
+		prerequisite = {
+			focus = ENG_land_army_57
+		}
+		x = 7
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_66
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_57
+		prerequisite = {
+			focus = ENG_land_army_65
+		}
+		prerequisite = {
+			focus = ENG_land_army_64
+		}
+		x = 5
+		y = 2
+
+	}
+	focus = {
+		id = ENG_land_army_69
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_66
+		prerequisite = {
+			focus = ENG_land_army_66
+		}
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_70
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_66
+		prerequisite = {
+			focus = ENG_land_army_66
+		}
+		x = 2
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_67
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_57
+		prerequisite = {
+			focus = ENG_land_army_65
+		}
+		prerequisite = {
+			focus = ENG_land_army_64
+		}
+		x = 1
+		y = 2
+
+	}
+	focus = {
+		id = ENG_land_army_68
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_67
+		prerequisite = {
+			focus = ENG_land_army_67
+		}
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = ENG_land_army_71
+		icon = GFX_ENG_1000
+		cost = 1.50
+		relative_position_id = ENG_land_army_64
+		prerequisite = {
+			focus = ENG_land_army_68
+		}
+		prerequisite = {
+			focus = ENG_land_army_69
+		}
+		prerequisite = {
+			focus = ENG_land_army_70
+		}
+		x = 1
+		y = 3
+
+	}
+}

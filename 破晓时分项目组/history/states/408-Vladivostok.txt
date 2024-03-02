@@ -1,0 +1,39 @@
+
+state = {
+	id = 408
+	name = "STATE_408"
+	manpower = 8414650
+	resources = {
+		chromium=20 # was: 28
+	}
+	
+	state_category=large_city
+
+	history={
+		owner = HSW
+		victory_points = {
+			957 15
+		}
+		buildings = {
+			infrastructure = 4
+			dockyard = 1
+			air_base = 5
+			957 = {
+				naval_base = 8
+				coastal_bunker = 3
+			}
+			arms_factory = 3
+			industrial_complex = 2
+		}
+		add_core_of = HSW
+		add_core_of = VLA
+		add_core_of = MAN
+		add_core_of = GDG
+	}
+
+	provinces = {
+		957
+	}
+
+	local_supplies = 0.0 
+}

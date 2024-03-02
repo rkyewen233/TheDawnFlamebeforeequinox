@@ -1,0 +1,49 @@
+refresh_seat = {
+	set_variable = {
+		pink_total = PRC_middle
+	}
+	set_variable = {
+		red_total = PRC_left
+	}
+	set_variable = {
+		crimson_total = PRC_right
+	}
+	multiply_variable = {
+        crimson_total = 100
+	}
+	multiply_variable = {
+        red_total = 100
+    }
+	multiply_variable = {
+        pink_total = 100
+    }
+	
+	round_variable = red_total
+	round_variable = pink_total
+	round_variable = crimson_total
+	set_variable = { crimson_end = 0 }
+	set_variable = { pink_end = 0 }
+	set_variable = { red_end = 0 }
+
+	set_variable = { crimson_end = crimson_total }
+	set_variable = { pink_end = pink_total }
+	set_variable = { red_end = red_total }
+	add_to_variable = { red_end = pink_end }
+	add_to_variable = { crimson_end = red_end }
+	clear_array = GDG.gribx_PRC_yihui_array
+	resize_array = {
+		array = gribx_PRC_yihui_array
+		value = 1
+		size = pink_end
+	}
+	resize_array = {
+		array = gribx_PRC_yihui_array
+		value = 2
+		size = red_end
+	}
+	resize_array = {
+		array = gribx_PRC_yihui_array
+		value = 3
+		size = crimson_end
+	}
+}

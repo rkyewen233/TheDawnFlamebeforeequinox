@@ -1,0 +1,150 @@
+﻿division_template = {
+	name = "南越民兵"				# Regular Infantry Division (brigade sized)
+	division_names_group = MAN_INF_01
+									# Militia-level training and equipment
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "北越游击队"					# "District Army" (garrison)
+	division_names_group = MAN_GAR_01
+									# Militia-level training and equipment
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10075
+		division_template = "北越游击队"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 10075
+		division_template = "北越游击队"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 10075
+		division_template = "北越游击队"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 9948
+		division_template = "北越游击队"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 9948
+		division_template = "北越游击队"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 9948
+		division_template = "北越游击队"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10162
+		division_template = "南越民兵"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 10162
+		division_template = "南越民兵"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 10162
+		division_template = "南越民兵"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 10162
+		division_template = "南越民兵"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 10162
+		division_template = "南越民兵"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.3
+	}
+}
+
+
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "VIN"
+		}
+		requested_factories = 2
+		progress = 0.52
+		efficiency = 100
+	}
+}

@@ -1,0 +1,49 @@
+ideas = {
+    country = {
+        BUL_winners_of_WWI = { #巴尔干的雄鹰
+            name = BUL_winners_of_WWI_name
+            picture = ENG_idea_25
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = 0.1
+                war_support_factor = 0.1
+                conscription = 0.01
+                army_core_attack_factor = 0.1
+                army_core_defence_factor = 0.1
+            }
+        }
+        BUL_treaty_of_sophia = { #索菲亚协约
+            name = BUL_treaty_of_sophia_name
+            picture = ENG_idea_26
+            allowed = { always = yes }
+            modifier = {
+                war_support_factor = 0.1
+                experience_gain_army_factor = 0.1
+                custom_modifier_tooltip = BUL_treaty_of_sophia.tt
+            }
+        }
+        BUL_old_tsar = { #垂垂老矣，战功赫赫
+            name = BUL_old_tsar_name
+            picture = ENG_idea_27
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.05
+            }
+        }
+    }
+    country = {
+        BUL_economy_crisis_1 = { #经济危机之末
+            name = BUL_economy_crisis_name
+            picture = ENG_idea_28
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.20
+                production_speed_industrial_complex_factor = -0.1
+                production_speed_buildings_factor = -0.15
+                economy_cost_factor = 0.20
+                consumer_goods_factor = 0.5
+                industrial_capacity_factory = -0.2
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+state={
+	id=964
+	name="STATE_964"
+	manpower = 1043370
+	
+	state_category = town
+
+	history={
+		owner = ADF
+		add_core_of = ADF
+		add_core_of = MAN
+		add_core_of = GDG
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 2
+		}
+		victory_points = {
+			9835 5
+		}
+	}
+
+	provinces={
+		11886 6837 9835 11815 9781 11764
+	}
+
+	local_supplies=0.0 
+}

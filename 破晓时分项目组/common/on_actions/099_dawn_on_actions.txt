@@ -1,0 +1,398 @@
+on_actions = {
+    on_yearly = {
+        effect = {
+        }
+    }
+    on_monthly = {
+        effect = {
+
+
+        }
+    }
+    on_startup = {
+        effect = {
+            FRA = {
+                country_event = {
+                    id = Dawn_event_fra.14
+                    days = 1
+                }
+
+                
+                set_variable = {
+                    FRA_kings_effectivity_in_national_concil = 40
+                }
+                set_variable = {
+                    FRA_FA_effectivity_in_national_concil = 30
+                }
+                set_variable = {
+                    FRA_french_independence_party_co_desire = 15
+                }
+                set_variable = {
+                    FRA_french_sd_party_co_desire = 23
+                }
+                set_variable = {
+                    FRA_french_radical_party_co_desire = 25
+                }
+                set_variable = {
+                    FRA_french_first_class_support_rate = 54
+                }
+                set_variable = {
+                    FRA_french_second_class_support_rate = 20
+                }
+                set_variable = {
+                    FRA_french_third_class_support_rate = 20
+                }
+
+
+                set_variable = { #国民生产总值
+                    var = ENG_national_gnp
+                    value = 7008 #百万镑
+                }
+                set_variable = { #国民生产总值增长（百分比
+                    var = ENG_national_gnp_growth_percentage
+                    value = 0.0012
+                }
+                set_variable = { #政府收入-百分比
+                    var = ENG_governmental_income_per
+                    value = 0.0189 #GNP的25.9%
+                }
+                set_variable = { #政府支出-军事
+                    var = ENG_governmental_out
+                    value = 0 #政府收入的17.7%
+                }
+                set_variable = { #政府支出-教育-百分比
+                    var = ENG_governmental_out_come_edu_per
+                    value = 0.0333 #政府收入的3.33%
+                }
+                set_variable = { #政府支出-其他
+                    var = ENG_governmental_out_come_oth_per
+                    value = 0.3353 #政府收入的33.53%
+                }
+                set_variable = { #政府支出-政治
+                    var = ENG_governmental_out_come_pli_per
+                    value = 0.2312 #政府收入的23.12%
+                }
+                set_variable = { #政府收入-税率
+                    var = ENG_average_tax_rate
+                    value = 0.12 #政府GNP的12.00%
+                }
+                set_variable = { #贷款
+                    var = ENG_loan
+                    value = 7230
+                }
+            }
+        }
+    }
+    #在开局时的效果
+    on_startup = {
+        effect = {
+            # --------------------------
+            # 开始界面
+            # --------------------------
+            every_country = {
+                limit = {
+                    is_ai = no
+                }
+                set_country_flag = welcome_flg
+            }
+            # --------------------------
+            # 禁止军队相关
+            # --------------------------
+
+            ENG = {
+                country_lock_all_division_template = yes
+            }
+            ITA = {
+                country_lock_all_division_template = yes
+            }
+            SPM = {
+                country_lock_all_division_template = yes
+            }
+            TTS = {
+                country_lock_all_division_template = yes
+            }
+            LBV = {
+                country_lock_all_division_template = yes
+            }
+            GER = {
+                country_lock_all_division_template = yes
+            }
+
+        }
+    }
+    on_yearly = {
+        effect = {
+        }
+    }
+    
+    on_monthly = {
+        effect = { #效果
+            #add_to_variable = { #增加变量
+            #    目标变量 = 增加数字
+            #}
+            #set_variable = {
+            #    ENG_local_building_speed_factor = ENG_develop_industry_var
+            #}
+            #set_variable = {
+            #    ENG_local_building_slots_factor = ENG_develop_industry_var
+            #}
+            #set_variable = {
+            #    ENG_stability_factor = ENG_develop_industry_var
+            #}
+            #set_variable = {
+            #    ENG_industry_production_factor = ENG_develop_industry_var
+            #}
+            #divide_variable = {
+            #    var = ENG_local_building_speed_factor
+            #    value = 400
+            #}
+            #divide_variable = {
+            #    var = ENG_stability_factor
+            #    value = 1000
+            #}
+            #divide_variable = {
+            #    var = ENG_industry_production_factor
+            #    value = 500
+            #}
+            #divide_variable = {
+            #    var = ENG_local_building_slots_factor
+            #    value = 500
+            #}
+
+
+            if = {
+                limit = {
+                    NOT = {
+                        has_completed_focus = ENG_absorb_conservatism
+                        has_completed_focus = ENG_absorb_libertism
+                        has_completed_focus = ENG_united_conservatism
+                    }
+                }
+                set_variable = {
+                    var = ENG_left_wing_1
+                    value = 0
+                }
+                set_variable = {
+                    var = ENG_left_wing_2
+                    value = 0
+                }
+                add_to_variable = {
+                    ENG_left_wing_1 = ENG_socialism
+                }
+                add_to_variable = {
+                    ENG_left_wing_2 = ENG_social_democratic
+                }
+                add_to_variable = {
+                    ENG_left_wing_1 = ENG_left_wing_2
+                }
+                set_variable = { #标准左翼
+                    var = ENG_left_wing
+                    value = ENG_left_wing_1
+                }
+
+                set_variable = {
+                    var = ENG_right_wing_1
+                    value = 0
+                }
+                set_variable = {
+                    var = ENG_right_wing_2
+                    value = 0
+                }
+                add_to_variable = {
+                    ENG_right_wing_1 = ENG_kings_britain_first_party
+                }
+                add_to_variable = {
+                    ENG_right_wing_2 = ENG_kings_party
+                }
+                add_to_variable = {
+                    ENG_right_wing_1 = ENG_right_wing_2
+                }
+                set_variable = { #标准右翼
+                    var = ENG_right_wing
+                    value = ENG_right_wing_1
+                }
+            }
+            #左翼
+            else_if = { #立场为左翼并拉拢了保守党（保守民主主义）
+                limit = {
+                    has_completed_focus = ENG_support_left_wing
+                    has_completed_focus = ENG_absorb_conservatism
+                }
+                set_variable = {
+                    var = ENG_left_wing_1
+                    value = 0
+                }
+                set_variable = {
+                    var = ENG_left_wing_2
+                    value = 0
+                }
+                set_variable = {
+                    var = ENG_left_wing_3
+                    value = 0
+                }
+                add_to_variable = {
+                    ENG_left_wing_1 = ENG_socialism
+                }
+                add_to_variable = {
+                    ENG_left_wing_2 = ENG_social_democratic
+                }
+                add_to_variable = {
+                    ENG_left_wing_3 = ENG_consercatic_democratic
+                }
+                add_to_variable = {
+                    ENG_left_wing_1 = ENG_left_wing_2
+                }
+                add_to_variable = {
+                    ENG_left_wing_1 = ENG_left_wing_3
+                }
+                set_variable = { #标准左翼
+                    var = ENG_left_wing
+                    value = ENG_left_wing_1
+                }
+
+                set_variable = {
+                    var = ENG_right_wing_1
+                    value = 0
+                }
+                set_variable = {
+                    var = ENG_right_wing_2
+                    value = 0
+                }
+                add_to_variable = {
+                    ENG_right_wing_1 = ENG_kings_britain_first_party
+                }
+                add_to_variable = {
+                    ENG_right_wing_2 = ENG_kings_party
+                }
+                add_to_variable = {
+                    ENG_right_wing_1 = ENG_right_wing_2
+                }
+                set_variable = { #标准右翼
+                    var = ENG_right_wing
+                    value = ENG_right_wing_1
+                }
+            }
+            else_if = { #立场为左翼并拉拢了人民党（自由民主主义）
+                limit = {
+                    has_completed_focus = ENG_support_left_wing
+                    has_completed_focus = ENG_absorb_libertism
+                }
+                set_variable = {
+                    var = ENG_left_wing_1
+                    value = 0
+                }
+                set_variable = {
+                    var = ENG_left_wing_2
+                    value = 0
+                }
+                set_variable = {
+                    var = ENG_left_wing_3
+                    value = 0
+                }
+                add_to_variable = {
+                    ENG_left_wing_1 = ENG_socialism
+                }
+                add_to_variable = {
+                    ENG_left_wing_2 = ENG_social_democratic
+                }
+                add_to_variable = {
+                    ENG_left_wing_3 = ENG_democratic_libertism
+                }
+                add_to_variable = {
+                    ENG_left_wing_1 = ENG_left_wing_2
+                }
+                add_to_variable = {
+                    ENG_left_wing_1 = ENG_left_wing_3
+                }
+                set_variable = { #标准左翼
+                    var = ENG_left_wing
+                    value = ENG_left_wing_1
+                }
+                
+                set_variable = {
+                    var = ENG_right_wing_1
+                    value = 0
+                }
+                set_variable = {
+                    var = ENG_right_wing_2
+                    value = 0
+                }
+                add_to_variable = {
+                    ENG_right_wing_1 = ENG_kings_britain_first_party
+                }
+                add_to_variable = {
+                    ENG_right_wing_2 = ENG_kings_party
+                }
+                add_to_variable = {
+                    ENG_right_wing_1 = ENG_right_wing_2
+                }
+                set_variable = { #标准右翼
+                    var = ENG_right_wing
+                    value = ENG_right_wing_1
+                }
+            }
+            #右翼
+            else_if = { #立场为右翼并拉拢了保守党（保守民主主义）
+                limit = {
+                    has_completed_focus = ENG_support_right_wing
+                    has_completed_focus = ENG_united_conservatism
+                }
+                set_variable = {
+                    var = ENG_left_wing_2
+                    value = 0
+                }
+                add_to_variable = {
+                    ENG_left_wing_1 = ENG_socialism
+                }
+                add_to_variable = {
+                    ENG_left_wing_2 = ENG_social_democratic
+                }
+                add_to_variable = {
+                    ENG_left_wing_1 = ENG_left_wing_2
+                }
+                set_variable = { #标准左翼
+                    var = ENG_left_wing
+                    value = ENG_left_wing_1
+                }
+
+                set_variable = {
+                    var = ENG_right_wing_1
+                    value = 0
+                }
+                set_variable = {
+                    var = ENG_right_wing_2
+                    value = 0
+                }
+                set_variable = {
+                    var = ENG_right_wing_3
+                    value = 0
+                }
+                add_to_variable = {
+                    ENG_right_wing_1 = ENG_kings_britain_first_party
+                }
+                add_to_variable = {
+                    ENG_right_wing_2 = ENG_kings_party
+                }
+                add_to_variable = {
+                    ENG_right_wing_3 = ENG_consercatic_democratic
+                }
+                add_to_variable = {
+                    ENG_right_wing_1 = ENG_right_wing_2
+                }
+                add_to_variable = {
+                    ENG_right_wing_1 = ENG_right_wing_3
+                }
+                set_variable = { #标准右翼
+                    var = ENG_right_wing
+                    value = ENG_right_wing_1
+                }
+            }
+        }
+    }
+    on_daily = { #每日
+    }
+    on_weekly = {
+        effect = {
+        }
+    }
+}

@@ -1,0 +1,85 @@
+add_namespace = yuemeng
+country_event = {
+	id = yuemeng.1
+	title = yuemeng.1.t
+	desc = yuemeng.1.d
+	picture = GFX_report_news_event_bulgarian_soldiers
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+		VIN = {
+			transfer_state = 925
+			transfer_state = 924
+			transfer_state = 929
+			load_oob = "VIN_1936"
+		}
+		FRA = {
+			declare_war_on = { 
+				target = VIN
+				type = take_state
+			}
+		}
+		news_event = {
+			id = yuemeng.3
+		}
+		}
+		
+	}
+	option = {
+		name = yuemeng.1.a
+
+	}
+	option = {
+		name = yuemeng.1.b
+		VIN = { change_tag_from = GDG }
+	}
+}
+country_event = {
+	id = yuemeng.2
+	title = yuemeng.2.t
+	desc = yuemeng.2.d
+	picture = GFX_report_report_event_chinese_soldiers_02
+	fire_only_once = yes
+	trigger = {
+		VIN = {
+			controls_state = 924
+			controls_state = 925
+			controls_state = 926
+			controls_state = 928
+			controls_state = 929
+			controls_state = 671
+			controls_state = 286
+		}
+	}
+	immediate = {
+		FRA = {
+			white_peace = VIN
+		}
+		VIN = {
+			transfer_state = 924
+			transfer_state = 925
+			transfer_state = 926
+			transfer_state = 928
+			transfer_state = 929
+			transfer_state = 671
+			transfer_state = 286
+		}
+	}
+	option = {
+		name = yuemeng.2.a
+
+	}
+}
+
+news_event = {
+	id = yuemeng.3
+	title = yuemeng.3.t
+	desc = yuemeng.3.d
+	picture = GFX_report_news_event_018
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = yuemeng.3.a
+
+	}
+}

@@ -1,0 +1,27 @@
+scripted_gui = {
+    french_congress = { #法国决议
+        context_type = decision_category
+        window_name = "french_congress"
+        visible = {
+            always = yes
+        }
+
+        properties = {
+			
+		}
+
+        triggers = {
+            # -------
+            # 地图
+            # -------
+            
+
+        }
+        effects = {
+            # -------
+            # 地图
+            # -------
+            
+        }
+    }
+}

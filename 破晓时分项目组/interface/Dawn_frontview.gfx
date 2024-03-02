@@ -1,0 +1,29 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_tiled_start_menu"
+		textureFile = "gfx/interface/tiles/tiled_start_menu.png"
+	}
+	spriteType = {
+		name = "GFX_frontdesk"
+		textureFile = "gfx/interface/frontdesk.png"
+	}
+	spriteType = {
+		name = "GFX_frontdesk_1"
+		textureFile = "gfx/interface/frontdesk_1.png"
+	}
+	spriteType = {
+		name = "GFX_country_selection_bg_Dawn"
+		textureFile = "gfx/interface/country_selection_bg_Dawn.png"
+	}
+	spriteType = {
+		name = "GFX_country_selection_entry_Dawn"
+		textureFile = "gfx/interface/country_selection_entry_Dawn.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_country_leader_decorate"
+		textureFile = "gfx/interface/country_leader_decorate.png"
+		numberOfFrame = 1
+	}
+}

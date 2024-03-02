@@ -1,0 +1,24 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "ENG_industry_bg"
+		texturefile = "gfx/guis/ENG_industry_bg.png"
+	}
+
+	progressbartype = {
+		name = "GFX_ENG_industry_incomplete_progressbar"
+		textureFile1 = "gfx/guis/ENG_industry_complete.png"
+		textureFile2 = "gfx/guis/ENG_industry_incomplete.png"
+		size = { x = 252 y = 33 }
+		effectFile = "gfx/FX/progress.lua"
+		
+		horizontal = yes
+
+		#color = { 0.0 0.0 0.0 0.0 }
+		#colortwo = { 0.0 0.0 0.0 0.0 }
+
+		#steps = 100
+		
+	}
+
+}

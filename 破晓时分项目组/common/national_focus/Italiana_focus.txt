@@ -1,0 +1,3021 @@
+focus_tree = {
+	id = Italiana_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ITA
+		}
+	}
+	default = no
+	focus = {
+		id = ITA_pushLawOfReform
+		icon = GFX_ita_2
+		cost = 5.00
+		x = 39
+		y = 0
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_tip.5
+				OR = {
+					has_country_flag = ITA_flagDemocratic
+					has_country_flag = ITA_flagAutocratic
+				}
+			}
+		}
+		cancelable = no
+		completion_reward = {
+			country_event = {
+				id = Dawn_event_ita.1
+			}
+		}
+	} #reload focus
+	#意大利法西斯线 - 31X的位置
+	focus = {
+		id = ITA_facsism
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 31
+		y = 0
+		mutually_exclusive = {
+			focus = ITA_pushLawOfReform
+		}
+		bypass = {
+			
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_tip.22
+				always = no
+			}
+		}
+		cancelable = no
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_reformingEconomics
+		icon = GFX_ita_13
+		cost = 5.00
+		x = 49
+		y = 0
+		available = {
+			has_completed_focus = ITA_establishedOfficeOfEconomics
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ITA_XiaoTiao_3
+				add_idea = ITA_XiaoTiao_4
+			}
+		}
+	}
+	focus = {
+		id = ITA_sucssefulOfLaw
+		icon = GFX_ita_3
+		cost = 2.00
+		prerequisite = {
+			focus = ITA_pushLawOfReform
+		}
+		mutually_exclusive = {
+			focus = ITA_maintainThisSituation
+		}
+		bypass = {
+			OR = {
+				has_idea = ITA_democraticPrimeMinister_1
+				has_idea = ITA_democraticPrimeMinister
+			}
+		}
+		cancelable = no
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_tip.1
+				has_country_flag = ITA_flagDemocratic
+			}
+		}
+		completion_reward = {
+			add_political_power = -30
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.02
+			}
+			add_ideas = {
+				ITA_democraticPrimeMinister
+			}
+		}
+		x = 37
+		y = 1
+
+	}
+	focus = {
+		id = ITA_haveAConversationWithCommunists
+		icon = GFX_ita_5
+		cost = 4.00
+		prerequisite = {
+			focus = ITA_sucssefulOfLaw
+		}
+		completion_reward = {
+			country_event = {
+				id = Dawn_event_ita.2
+			}
+		}
+		x = 35
+		y = 2
+
+	}
+	focus = {
+		id = ITA_pacificTheRepublicanParties
+		icon = GFX_ita_6
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_haveAConversationWithCommunists
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.01
+			}
+		}
+		x = 33
+		y = 3
+
+	}
+	focus = {
+		id = ITA_conferenceOfVerona
+		icon = GFX_ita_7
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_haveAConversationWithCommunists
+		}
+		completion_reward = {
+			add_stability = 0.1
+			custom_effect_tooltip = ITA_effect_tooltip_1
+		}
+		x = 37
+		y = 3
+
+	}
+	focus = {
+		id = ITA_negotiation_break
+		icon = GFX_ita_12
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_conferenceOfVerona
+		}
+		prerequisite = {
+			focus = ITA_pacificTheRepublicanParties
+		}
+		mutually_exclusive = {
+			focus = ITA_reUnifycation
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_tip.4
+				has_country_flag = ITA_disunify
+			}
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			add_popularity = {
+				ideology = monarchism
+				popularity = 0.05
+			}
+		}
+		x = 36
+		y = 4
+
+	}
+	focus = {
+		id = ITA_reUnifycation
+		icon = GFX_ita_11
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_pacificTheRepublicanParties
+		}
+		prerequisite = {
+			focus = ITA_conferenceOfVerona
+		}
+		mutually_exclusive = {
+			focus = ITA_negotiation_break
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_tip.3
+				has_country_flag = ITA_unify
+			}
+		}
+		completion_reward = {
+			add_stability = 0.05
+			custom_effect_tooltip = ITA_effect_tooltip_2
+			hidden_effect = {
+				annex_country = {
+					target = LBV
+					transfer_troops = yes
+				}
+			}
+		}
+		x = 34
+		y = 4
+
+	}
+	focus = {
+		id = ITA_maintainThisSituation
+		icon = GFX_ita_4
+		cost = 2.00
+		prerequisite = {
+			focus = ITA_pushLawOfReform
+		}
+		mutually_exclusive = {
+			focus = ITA_sucssefulOfLaw
+		}
+		cancelable = no
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_tip.2
+				has_country_flag = ITA_flagAutocratic
+			}
+		}
+		x = 41
+		y = 1
+		completion_reward = {
+			add_political_power = 30
+			add_popularity = {
+				ideology = monarchism
+				popularity = 0.02
+			}
+		}
+	}
+	focus = {
+		id = ITA_handleGreatDepression
+		icon = GFX_ita_8
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_maintainThisSituation
+			focus = ITA_sucssefulOfLaw
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ITA_XiaoTiao_1
+				add_idea = ITA_XiaoTiao_2
+			}
+		}
+		x = 39
+		y = 2
+
+	}
+	focus = {
+		id = ITA_establishedOfficeOfEconomics
+		icon = GFX_ita_9
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_handleGreatDepression
+		}
+		completion_reward = {
+			add_political_power = 120
+			add_stability = 0.1
+			swap_ideas = {
+				remove_idea = ITA_XiaoTiao_2
+				add_idea = ITA_XiaoTiao_3
+			}
+		}
+		x = 39
+		y = 3
+
+	}
+	focus = {
+		id = ITA_implementLoyaltyEducation
+		icon = GFX_ita_10
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_maintainThisSituation
+		}
+		x = 41
+		y = 3
+		completion_reward = {
+			add_war_support = 0.1
+			add_popularity = {
+				ideology = monarchism
+				popularity = 0.05
+			}
+			custom_effect_tooltip = ITA_effect_tooltip_3
+		}
+	}
+	focus = {
+		id = ITA_forcingUnification
+		icon = GFX_ita_14
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_implementLoyaltyEducation
+			focus = ITA_negotiation_break
+		}
+		x = 39
+		y = 5
+
+	}
+	focus = {
+		id = ITA_facsimDestroyCommunism
+		icon = GFX_goal
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_facsism
+		}
+		x = 31
+		y = 5
+
+	}
+	focus = {
+		id = ITA_ambitionOfEmmanuelTheThird
+		icon = GFX_ita_15
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_implementLoyaltyEducation
+		}
+		x = 43
+		y = 4
+
+	}
+	focus = {
+		id = ITA_negotiationOfSavoyia
+		icon = GFX_ita_17
+		cost = 3.00
+		prerequisite = {
+			focus = ITA_ambitionOfEmmanuelTheThird
+			focus = ITA_negotiation_break
+			focus = ITA_reUnifycation
+		}
+		x = 41
+		y = 5
+
+	}
+	focus = {
+		id = ITA_resultOfTicino
+		icon = GFX_ita_16
+		cost = 3.00
+		prerequisite = {
+			focus = ITA_ambitionOfEmmanuelTheThird
+			focus = ITA_negotiation_break
+			focus = ITA_reUnifycation
+		}
+		x = 45
+		y = 5
+
+	}
+	focus = {
+		id = ITA_reunificationOfHomeland
+		icon = GFX_ita_18
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_forcingUnification
+			focus = ITA_reUnifycation
+		}
+		x = 40
+		y = 6
+
+	}
+	focus = {
+		id = ITA_kingdomOfnewborn
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_negotiationOfSavoyia
+		}
+		prerequisite = {
+			focus = ITA_resultOfTicino
+		}
+		prerequisite = {
+			focus = ITA_reunificationOfHomeland
+		}
+		prerequisite = {
+			focus = ITA_ambitionOfEmmanuelTheThird
+			focus = ITA_negotiation_break
+			focus = ITA_facsimDestroyCommunism
+		}
+		mutually_exclusive = {
+			focus = ITA_theSecondConferenceOfVerona
+		}
+		x = 43
+		y = 7
+
+	}
+	focus = {
+		id = ITA_theSecondConferenceOfVerona
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_negotiationOfSavoyia
+		}
+		prerequisite = {
+			focus = ITA_resultOfTicino
+		}
+		prerequisite = {
+			focus = ITA_conferenceOfVerona
+		}
+		prerequisite = {
+			focus = ITA_reunificationOfHomeland
+		}
+		mutually_exclusive = {
+			focus = ITA_kingdomOfnewborn
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ITA_democraticPrimeMinister
+				add_idea = ITA_democraticPrimeMinister_1
+			}
+			set_politics = {
+				ruling_party = democratic 
+				last_election = "1936.1.1" 
+				election_frequency = 48 
+				elections_allowed = yes
+			}
+		}
+		x = 37
+		y = 7
+
+	}
+	focus = {
+		id = ITA_finishConstitutionalTheory
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_theSecondConferenceOfVerona
+		}
+		x = 39
+		y = 8
+
+	}
+	focus = {
+		id = ITA_AbolishtheLawoftheKingdomofGaribaldi
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_finishConstitutionalTheory
+		}
+		x = 38
+		y = 9
+
+	}
+	focus = {
+		id = ITA_respectingTheTraditionOfNorthernRepublic
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_finishConstitutionalTheory
+		}
+		x = 40
+		y = 9
+		completion_reward = {
+			add_political_power = 30
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.04
+			}
+		}
+	}
+	focus = {
+		id = ITA_kingPower
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = ITA_kingdomOfnewborn
+		}
+		x = 42
+		y = 8
+
+	}
+	focus = {
+		id = ITA_conveneSenate
+		icon = GFX_ita_1
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_pushLawOfReform
+			focus = ITA_facsism
+		}
+		prerequisite = {
+			focus = ITA_reformingEconomics
+		}
+		completion_reward = {
+			add_political_power = 100
+			unlock_decision_category_tooltip = ITA_senet_categories
+		}
+		x = 47
+		y = 1
+
+	}
+	focus = {
+		id = ITA_citizensIncomeAct
+		icon = GFX_ita_19
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_maintainThisSituation
+			focus = ITA_sucssefulOfLaw
+		}
+		prerequisite = {
+			focus = ITA_conveneSenate
+		}
+		x = 44
+		y = 2
+
+	}
+	focus = {
+		id = UTA_clearDemocracy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_kingdomOfnewborn
+		}
+		x = 44
+		y = 8
+
+	}
+	focus = {
+		id = ITA_kingdomItaliano
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = UTA_clearDemocracy
+		}
+		prerequisite = {
+			focus = ITA_kingPower
+		}
+		x = 43
+		y = 9
+
+	}
+	focus = {
+		id = ITA_dealWithCathedral
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_kingdomItaliano
+		}
+		x = 41
+		y = 10
+
+	}
+	focus = {
+		id = ITA_ingratiateCatholicState
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_kingdomItaliano
+		}
+		x = 43
+		y = 10
+
+	}
+	focus = {
+		id = ITA_mergeViceroy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_kingdomItaliano
+		}
+		x = 45
+		y = 10
+
+	}
+	focus = {
+		id = ITA_autocracy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_ingratiateCatholicState
+		}
+		prerequisite = {
+			focus = ITA_dealWithCathedral
+		}
+		prerequisite = {
+			focus = ITA_mergeViceroy
+		}
+		x = 43
+		y = 11
+
+	}
+	focus = {
+		id = ITA_knightOfNewEra
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = ITA_autocracy
+		}
+		x = 43
+		y = 12
+
+	}
+	focus = {
+		id = ITA_clearRebblers
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_autocracy
+		}
+		x = 45
+		y = 12
+
+	}
+	focus = {
+		id = ITA_minsheng
+		icon = GFX_ita_23
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_citizensIncomeAct
+		}
+		x = 47
+		y = 4
+
+	}
+	focus = {
+		id = ITA_roadRefreshmentalLaw
+		icon = GFX_ita_20
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_conveneSenate
+		}
+		completion_reward = {
+			158 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+			161 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+			162 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+			157 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						159 = {
+							is_fully_controlled_by = ROOT
+						}
+						160 = {
+							is_fully_controlled_by = ROOT
+						}
+					}
+					159 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 5
+							instant_build = yes
+						}
+					}
+					160 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						39 = {
+							is_fully_controlled_by = ROOT
+						}
+						850 = {
+							is_fully_controlled_by = ROOT
+						}
+					}
+					39 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 5
+							instant_build = yes
+						}
+					}
+					850 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+			}
+			custom_effect_tooltip = ITA_tip.31
+		}
+		x = 48
+		y = 2
+
+	}
+	focus = {
+		id = ITA_startMilitaryExercise
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 56
+		y = 7
+		prerequisite = {
+			focus = ITA_newbornLavina
+		}
+	}
+	focus = {
+		id = ITA_exerciseOfTaranto
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_startMilitaryExercise
+		}
+		x = 56
+		y = 8
+
+	}
+	focus = {
+		id = ITA_SubsidizingPrivateEnterprises
+		icon = GFX_ita_21
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_conveneSenate
+		}
+		x = 50
+		y = 2
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ITA_enterpriss_1
+				add_idea = ITA_enterpriss_2
+			}
+		}
+	}
+	focus = {
+		id = ITA_conferenceOfLavina
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_minsheng
+		}
+		prerequisite = {
+			focus = ITA_ambitionOfEmmanuelTheThird
+			focus = ITA_negotiation_break
+			focus = ITA_reUnifycation
+		}
+		x = 50
+		y = 5
+
+	}
+	focus = {
+		id = ITA_italianoAdministrativeReform
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_conferenceOfLavina
+		}
+		x = 49
+		y = 6
+
+	}
+	focus = {
+		id = ITA_simpficationLawInstitution
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_conferenceOfLavina
+		}
+		x = 51
+		y = 6
+
+	}
+	focus = {
+		id = ITA_reformDivide
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_simpficationLawInstitution
+		}
+		prerequisite = {
+			focus = ITA_italianoAdministrativeReform
+		}
+		x = 50
+		y = 7
+
+	}
+	focus = {
+		id = ITA_improvingCenter
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_reformDivide
+		}
+		x = 51
+		y = 8
+
+	}
+	focus = {
+		id = ITA_attack_landlord
+		icon = GFX_ita_25
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_reformingEconomics
+		}
+		available = {
+			has_political_power > 50
+		}
+		completion_reward = {
+			add_stability = -0.1
+			add_political_power = -50
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+		}
+		x = 55
+		y = 1
+
+	}
+	focus = {
+		id = ITA_reformingEconomicStructure
+		icon = GFX_ita_26
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_attack_landlord
+		}
+		x = 54
+		y = 2
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ITA_XiaoTiao_4
+				add_idea = ITA_XiaoTiao_5
+			}
+		}
+	}
+	focus = {
+		id = ITA_stepToCapitalism
+		icon = GFX_ita_22
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_reformingEconomicStructure
+		}
+		prerequisite = {
+			focus = ITA_SubsidizingPrivateEnterprises
+		}
+		prerequisite = {
+			focus = ITA_roadRefreshmentalLaw
+		}
+		completion_reward = {
+			remove_ideas = {
+				ITA_XiaoTiao_5
+			}
+			add_research_slot = 1
+		}
+		x = 52
+		y = 3
+
+	}
+	focus = {
+		id = ITA_improveArmy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_exerciseOfTaranto
+		}
+		x = 56
+		y = 9
+
+	}
+	focus = {
+		id = ITA_theFirstFourYearsPlan
+		icon = GFX_ita_53
+		cost = 2.00
+		prerequisite = {
+			focus = ITA_attack_landlord
+		}
+		completion_reward = {
+			add_ideas = {
+				ITA_four_years_plam_1
+			}
+			hidden_effect = {
+				set_country_flag = ITA_four_years_plan_one
+			}
+		}
+		x = 57
+		y = 2
+
+	}
+	focus = {
+		id = ITA_tryIndustialization
+		icon = GFX_ita_54
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_theFirstFourYearsPlan
+		}
+		x = 57
+		y = 3
+		completion_reward = {
+			swap_ideas = {
+				add_idea = ITA_four_years_plam_2
+				remove_idea = ITA_four_years_plam_1
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_SupportingNationalCapital
+		icon = GFX_ita_28
+		cost = 3.00
+		prerequisite = {
+			focus = ITA_tryIndustialization
+		}
+		prerequisite = {
+			focus = ITA_stepToCapitalism
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ITA_enterpriss_2
+				add_idea = ITA_enterpriss_3
+			}
+			add_ideas = {
+				ITA_national_capitalism
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		x = 55
+		y = 4
+
+	}
+	focus = {
+		id = ITA_EnterpriseControlAct
+		icon = GFX_ita_30
+		cost = 7.2
+		prerequisite = {
+			focus = ITA_tryIndustialization
+		}
+		prerequisite = {
+			focus = ITA_stepToCapitalism
+		}
+		completion_reward = {
+			add_ideas = {
+				ITA_EnterpriseControlAct_idea
+			}
+		}
+		x = 58
+		y = 4
+
+	}
+	focus = {
+		id = ITA_capitalIndustry
+		icon = GFX_ita_31
+		cost = 4
+		prerequisite = {
+			focus = ITA_EnterpriseControlAct
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = ITA_four_years_plam_3
+				remove_idea = ITA_four_years_plam_2
+			}
+		}
+		x = 57
+		y = 5
+
+	}
+	focus = {
+		id = ITA_maintainRawMaterial
+		icon = GFX_ita_37
+		cost = 7.2
+		prerequisite = {
+			focus = ITA_EnterpriseControlAct
+		}
+		x = 59
+		y = 5
+		completion_reward = {
+			add_ideas = {
+				ITA_10consume
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_resource = {
+					type = steel
+					amount = 42
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_resource = {
+					type = oil
+					amount = 15
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_resource = {
+					type = tungsten
+					amount = 27
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_resource = {
+					type = aluminium
+					amount = 10
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_resource = {
+					type = chromium
+					amount = 10
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_upgradePruducing
+		icon = GFX_ita_36
+		cost = 5
+		prerequisite = {
+			focus = ITA_EnterpriseControlAct
+		}
+		available = {
+			has_completed_focus = ITA_newbornLavina
+		}
+		completion_reward = {
+			add_ideas = {
+				ITA_upgrade_producing
+			}
+			swap_ideas = {
+				add_idea = ITA_four_years_plam_5
+				remove_idea = ITA_four_years_plam_4
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		x = 61
+		y = 5
+
+	}
+	focus = {
+		id = ITA_italianFactory
+		icon = GFX_ita_34
+		cost = 7.2
+		prerequisite = {
+			focus = ITA_upgradePruducing
+			focus = ITA_capitalIndustry
+		}
+		completion_reward = {
+			add_ideas = {
+				ITA_italian_factory
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		x = 59
+		y = 6
+
+	}
+	focus = {
+		id = ITA_expandFactory
+		icon = GFX_ita_35
+		cost = 5
+		prerequisite = {
+			focus = ITA_upgradePruducing
+		}
+		completion_reward = {
+			add_ideas = {
+				ITA_expansion_factory
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		x = 61
+		y = 6
+
+	}
+	focus = {
+		id = ITA_developSouthernMoutain
+		icon = GFX_ita_38
+		cost = 7.2
+		prerequisite = {
+			focus = ITA_expandFactory
+		}
+		prerequisite = {
+			focus = ITA_italianFactory
+		}
+		available = {
+			117 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			156 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			849 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			115 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+		completion_reward = {
+			117 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			156 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			849 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			115 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		x = 60
+		y = 7
+
+	}
+	focus = {
+		id = ITA_songOfLucania
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ITA_developSouthernMoutain
+		}
+		available = {
+			156 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+		completion_reward = {
+			156 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		x = 59
+		y = 8
+
+	}
+	focus = {
+		id = ITA_democraticReforming
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_theSecondConferenceOfVerona
+		}
+		x = 35
+		y = 8
+
+	}
+	focus = {
+		id = ITA_solvePoverty
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = ITA_democraticReforming
+		}
+		x = 36
+		y = 9
+
+	}
+	focus = {
+		id = ITA_equalitySociety
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_democraticReforming
+		}
+		x = 34
+		y = 9
+
+	}
+	focus = {
+		id = ITA_lawOfSocialWelfare
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_solvePoverty
+		}
+		prerequisite = {
+			focus = ITA_equalitySociety
+		}
+		x = 35
+		y = 10
+
+	}
+	focus = {
+		id = ITA_expansionPost
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = ITA_lawOfSocialWelfare
+		}
+		x = 35
+		y = 11
+
+	}
+	focus = {
+		id = ITA_FederalBillDebate
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_lawOfSocialWelfare
+		}
+		prerequisite = {
+			focus = ITA_establishItalianaRepublica
+		}
+		x = 39
+		y = 11
+
+	}
+	focus = {
+		id = ITA_establishItalianaRepublica
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_AbolishtheLawoftheKingdomofGaribaldi
+		}
+		prerequisite = {
+			focus = ITA_respectingTheTraditionOfNorthernRepublic
+		}
+		x = 39
+		y = 10
+
+	}
+	focus = {
+		id = ITA_acceptAfricaMembers
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_FederalBillDebate
+		}
+		x = 39
+		y = 12
+
+	}
+	focus = {
+		id = ITA_star_of_middeterraianSea
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_knightOfNewEra
+			focus = ITA_acceptAfricaMembers
+		}
+		x = 41
+		y = 13
+
+	}
+	focus = {
+		id = ITA_SubsidyDeficitCapital
+		icon = GFX_ita_29
+		cost = 7.2
+		prerequisite = {
+			focus = ITA_SupportingNationalCapital
+		}
+		completion_reward = {
+			remove_ideas = {
+				ITA_enterpriss_3
+			}
+			swap_ideas = {
+				add_idea = ITA_national_capitalism_2
+				remove_idea = ITA_national_capitalism
+			}
+		}
+		x = 55
+		y = 5
+
+	}
+	focus = {
+		id = ITA_newbornLavina
+		icon = GFX_ita_33
+		cost = 7.2
+		prerequisite = {
+			focus = ITA_SubsidyDeficitCapital
+		}
+		prerequisite = {
+			focus = ITA_capitalIndustry
+		}
+		completion_reward = {
+			add_ideas = {
+				ITA_newbornLavina_idea
+			}
+			swap_ideas = {
+				add_idea = ITA_four_years_plam_4
+				remove_idea = ITA_four_years_plam_3
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		x = 56
+		y = 6
+
+	}
+	focus = {
+		id = ITA_toVarna
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ITA_developSouthernMoutain
+		}
+		available = {
+			849 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+		completion_reward = {
+			849 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		x = 61
+		y = 8
+
+	}
+	focus = {
+		id = ITA_completeFirstFourYearsPlan
+		icon = GFX_goal_unknown
+		cost = 7.2
+		prerequisite = {
+			focus = ITA_songOfLucania
+		}
+		prerequisite = {
+			focus = ITA_toVarna
+		}
+		prerequisite = {
+			focus = ITA_newbornLavina
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_tip.19
+				had_country_flag = {
+					flag = ITA_four_years_plan_one
+					days = 1461
+				}
+			}
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = ITA_four_years_plam_6
+				remove_idea = ITA_four_years_plam_5
+			}
+		}
+		x = 58
+		y = 9
+
+	}
+	focus = {
+		id = ITA_secondFourYearsPlan
+		icon = GFX_ita_32
+		cost = 7.20
+		prerequisite = {
+			focus = ITA_completeFirstFourYearsPlan
+		}
+		x = 64
+		y = 10
+		completion_reward = {
+			custom_effect_tooltip = ITA_tip.32
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			country_event = {
+				id = Dawn_event_ita.9
+			}
+			hidden_effect = {
+				swap_ideas = {
+					add_idea = ITA_four_years_plan_7
+					remove_idea = ITA_four_years_plam_6
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_expandisionArmyBuilding
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_completeFirstFourYearsPlan
+		}
+		prerequisite = {
+			focus = ITA_improveArmy
+		}
+		x = 57
+		y = 10
+
+	}
+	focus = {
+		id = ITA_improveLocalInstitution
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_reformDivide
+		}
+		x = 49
+		y = 8
+
+	}
+	focus = {
+		id = ITA_portOfTaranto
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_expandisionArmyBuilding
+		}
+		x = 55
+		y = 11
+
+	}
+	focus = {
+		id = ITA_RoyalNavy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_portOfTaranto
+		}
+		x = 54
+		y = 12
+
+	}
+	focus = {
+		id = ITA_investigateResearching
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_portOfTaranto
+		}
+		x = 56
+		y = 12
+
+	}
+	focus = {
+		id = ITA_flagOfItaly
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_portOfTaranto
+		}
+		x = 55
+		y = 13
+
+	}
+	focus = {
+		id = ITA_exerciseOfLandAndAirForces
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = ITA_expandisionArmyBuilding
+		}
+		x = 57
+		y = 15
+
+	}
+	focus = {
+		id = ITA_CollaborativeCombat
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_exerciseOfLandAndAirForces
+		}
+		x = 56
+		y = 16
+
+	}
+	focus = {
+		id = ITA_supportLand
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_exerciseOfLandAndAirForces
+		}
+		x = 58
+		y = 16
+
+	}
+	focus = {
+		id = ITA_cancelSupervisionTeam
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_supportLand
+		}
+		prerequisite = {
+			focus = ITA_CollaborativeCombat
+		}
+		x = 57
+		y = 17
+
+	}
+	focus = {
+		id = ITA_diplomacyBegain
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 15
+		y = 2
+		prerequisite = {
+			focus = ITA_maintainThisSituation
+			focus = ITA_sucssefulOfLaw
+		}
+		completion_reward = {
+			add_political_power = 120
+			unlock_decision_category_tooltip = FRA_diplomacy_categories
+		}
+	}
+	focus = {
+		id = ITA_ibe_1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_diplomacyBegain
+		}
+		available = {
+			is_ai = no
+			custom_trigger_tooltip = {
+				tooltip = ITA_tip.13
+				NOT = {
+					has_country_flag = ITA_diplmacyProcess
+				}
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = ITA_tip.10
+			custom_effect_tooltip = ITA_tip.12
+			hidden_effect = {
+				set_country_flag = ITA_diplmacyProcess
+			}
+		}
+		x = 5
+		y = 3
+
+	}
+	focus = {
+		id = ITA_ibe_3
+		icon = GFX_goal_unknown
+		cost = 5.00
+		available = {
+			country_exists = SPR
+			NOT = {
+				country_exists = NAV
+			}
+		}
+		prerequisite = {
+			focus = ITA_ibe_1
+		}
+		mutually_exclusive = {
+			focus = ITA_ibe_2
+		}
+		completion_reward = {
+			custom_effect_tooltip = ITA_tip.18
+		}
+		x = 3
+		y = 4
+
+	}
+	focus = {
+		id = ITA_ibe_4
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_ibe_3
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_tip.27
+				has_country_flag = ITA_bariaria
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = ITA_tip.18
+		}
+		x = 1
+		y = 5
+
+	}
+	focus = {
+		id = ITA_ibe_2
+		icon = GFX_goal_unknown
+		cost = 5.00
+		available = {
+			country_exists = NAV
+			NOT = {
+				country_exists = SPR
+			}
+		}
+		prerequisite = {
+			focus = ITA_ibe_1
+		}
+		mutually_exclusive = {
+			focus = ITA_ibe_3
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = radical_socialism
+				popularity = -0.05
+			}
+		}
+		x = 6
+		y = 4
+
+	}
+	focus = {
+		id = ITA_ibe_6
+		icon = GFX_ita_41
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_ibe_2
+			focus = ITA_ibe_3
+		}
+		available = {
+			OR = {
+				has_completed_focus = ITA_ibe_4
+				has_completed_focus = ITA_ibe_5
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = ITA_tip.17
+			hidden_effect = {
+				clr_country_flag = ITA_diplmacyProcess
+				every_state = {
+					limit = {
+						is_core_of	 = SPR
+					}
+					add_core_of = ITA
+				}
+			}
+			custom_effect_tooltip = ITA_tip.26
+		}
+		x = 4
+		y = 5
+
+	}
+	focus = {
+		id = ITA_malta_1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_diplomacyBegain
+		}
+		x = 9
+		y = 3
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_tip.13
+				NOT = {
+					has_country_flag = ITA_diplmacyProcess
+				}
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = ITA_tip.10
+			custom_effect_tooltip = ITA_tip.11
+			hidden_effect = {
+				set_country_flag = ITA_diplmacyProcess
+			}
+		}
+	}
+	focus = {
+		id = ITA_malta_2
+		icon = GFX_ita_40
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_malta_1
+		}
+		x = 9
+		y = 4
+		available = {
+			has_full_control_of_state = 116
+		}
+		completion_reward = {
+			custom_effect_tooltip = ITA_tip.17
+			hidden_effect = {
+				clr_country_flag = ITA_diplmacyProcess
+			}
+			116 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_tur_northernEperus
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_diplomacyBegain
+		}
+		x = 12
+		y = 3
+
+	}
+	focus = {
+		id = ITA_tur_maintainAlbania
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_diplomacyBegain
+		}
+		x = 14
+		y = 3
+
+	}
+	focus = {
+		id = ITA_inviteTur
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_tur_northernEperus
+		}
+		prerequisite = {
+			focus = ITA_tur_maintainAlbania
+		}
+		mutually_exclusive = {
+			focus = ITA_attack_greek
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_tip.13
+				NOT = {
+					has_country_flag = ITA_diplmacyProcess
+				}
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = ITA_tip.18
+			custom_effect_tooltip = ITA_tip.10
+			custom_effect_tooltip = ITA_tip.15
+			hidden_effect = {
+				set_country_flag = ITA_diplmacyProcess
+			}
+		}
+		x = 13
+		y = 4
+
+	}
+	focus = {
+		id = ITA_attack_greek
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_diplomacyBegain
+		}
+		mutually_exclusive = {
+			focus = ITA_inviteTur
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_tip.13
+				NOT = {
+					has_country_flag = ITA_diplmacyProcess
+				}
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = ITA_tip.18
+			custom_effect_tooltip = ITA_tip.10
+			custom_effect_tooltip = ITA_tip.15
+			hidden_effect = {
+				set_country_flag = ITA_diplmacyProcess
+			}
+		}
+		x = 15
+		y = 4
+
+	}
+	focus = {
+		id = ITA_asiaMinor
+		icon = GFX_ita_42
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_attack_greek
+			focus = ITA_inviteTur
+		}
+		available = {
+			all_state = {
+				is_core_of = TUR
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = ITA_tip.17
+			custom_effect_tooltip = ITA_tip.20
+			hidden_effect = {
+				clr_country_flag = ITA_diplmacyProcess
+				every_state = {
+					limit = {
+						is_core_of = TUR
+					}
+					add_core_of = ROOT
+				}
+			}
+		}
+		x = 14
+		y = 5
+
+	}
+	focus = {
+		id = ITA_fra_join
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_diplomacyBegain
+		}
+		mutually_exclusive = {
+			focus = ITA_attackGauls
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_tip.13
+				NOT = {
+					has_country_flag = ITA_diplmacyProcess
+				}
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = ITA_tip.10
+			custom_effect_tooltip = ITA_tip.14
+			custom_effect_tooltip = ITA_tip.17
+		}
+		x = 17
+		y = 3
+
+	}
+	focus = {
+		id = ITA_attackGauls
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_diplomacyBegain
+		}
+		mutually_exclusive = {
+			focus = ITA_fra_join
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_tip.13
+				NOT = {
+					has_country_flag = ITA_diplmacyProcess
+				}
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = ITA_tip.10
+			custom_effect_tooltip = ITA_tip.14
+			hidden_effect = {
+				set_country_flag = ITA_diplmacyProcess
+			}
+		}
+		x = 19
+		y = 3
+
+	}
+	focus = {
+		id = ITA_fra_1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_attackGauls
+		}
+		x = 19
+		y = 4
+
+	}
+	focus = {
+		id = ITA_fra_2
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_fra_1
+		}
+		completion_reward = {
+			custom_effect_tooltip = ITA_tip.18
+		}
+		x = 19
+		y = 5
+
+	}
+	focus = {
+		id = ITA_ciprus_1
+		icon = GFX_ita_44
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_diplomacyBegain
+		}
+		available = {
+			custom_effect_tooltip = ITA_tip.18
+			custom_trigger_tooltip = {
+				tooltip = ITA_tip.13
+				NOT = {
+					has_country_flag = ITA_diplmacyProcess
+				}
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = ITA_tip.10
+			custom_effect_tooltip = ITA_tip.11
+			hidden_effect = {
+				set_country_flag = ITA_diplmacyProcess
+			}
+		}
+		x = 23
+		y = 3
+
+	}
+	focus = {
+		id = ITA_ruleMiddleEast_1
+		icon = GFX_ita_46
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_ciprus_1
+		}
+		bypass = {
+			has_war_with = ENG
+		}
+		completion_reward = {
+			transfer_state = 446
+			transfer_state = 453
+			transfer_state = 454
+			transfer_state = 455
+		}
+		x = 21
+		y = 4
+
+	}
+	focus = {
+		id = ITA_ruleMiddleEast_2
+		icon = GFX_ita_47
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_ciprus_1
+		}
+		bypass = {
+			has_war_with = IRQ
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_tip.21
+				has_country_flag = ITA_syria_flag
+			}
+		}
+		completion_reward = {
+			IRQ = {
+				leave_faction = yes
+			}
+			declare_war_on = {
+				target = IRQ
+				type = annex_everything
+			}
+		}
+		x = 25
+		y = 4
+
+	}
+	focus = {
+		id = ITA_ciprus2
+		icon = GFX_ita_48
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_ciprus_1
+		}
+		available = {
+			183 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+		completion_reward = {
+			183 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		x = 23
+		y = 4
+
+	}
+	focus = {
+		id = ITA_ruleMiddleEast_3
+		icon = GFX_ita_45
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_ruleMiddleEast_2
+		}
+		prerequisite = {
+			focus = ITA_ruleMiddleEast_1
+		}
+		completion_reward = {
+			custom_effect_tooltip = ITA_tip.18
+			custom_effect_tooltip = ITA_tip.17
+			hidden_effect = {
+				clr_country_flag = ITA_diplmacyProcess
+			}
+		}
+		x = 23
+		y = 5
+
+	}
+	focus = {
+		id = ITA_ruleMiddleEast_4
+		icon = GFX_ita_49
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_ruleMiddleEast_3
+		}
+		available = {
+			all_state = {
+				OR = {
+					is_core_of = IRQ
+					is_core_of = SAU
+					is_core_of = YEM
+					is_core_of = OMA
+				}
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = ITA_tip.30
+			hidden_effect = {
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = IRQ
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = IRQ
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = IRQ
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = IRQ
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = SAU
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = SAU
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = SAU
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = SAU
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = SAU
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		x = 23
+		y = 6
+
+	}
+	focus = {
+		id = ITA_ruleMiddleEast_5
+		icon = GFX_ita_50
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_ruleMiddleEast_4
+		}
+		completion_reward = {
+			custom_effect_tooltip = ITA_tip.24
+			hidden_effect = {
+				658 = {
+					add_core_of = ROOT
+					add_extra_state_shared_building_slots = 1
+				}
+				765 = {
+					add_core_of = ROOT
+					add_extra_state_shared_building_slots = 1
+				}
+				656 = {
+					add_core_of = ROOT
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+		}
+		x = 22
+		y = 7
+
+	}
+	focus = {
+		id = ITA_ruleMiddleEast_6
+		icon = GFX_ita_51
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_ruleMiddleEast_4
+		}
+		completion_reward = {
+			custom_effect_tooltip = ITA_tip.25
+			hidden_effect = {
+				291 = {
+					add_core_of = ROOT
+				}
+				676 = {
+					add_core_of = ROOT
+				}
+				675 = {
+					add_core_of = ROOT
+				}
+			}
+		}
+		x = 24
+		y = 7
+
+	}
+	focus = {
+		id = ITA_ruleMiddleEast_7
+		icon = GFX_ita_52
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_ruleMiddleEast_5
+			focus = ITA_ruleMiddleEast_6
+		}
+		completion_reward = {
+			custom_effect_tooltip = ITA_tip.23
+			hidden_effect = {
+				799 = {
+					add_core_of = ROOT
+				}
+				677 = {
+					add_core_of = ROOT
+				}
+				553 = {
+					add_core_of = ROOT
+				}
+				454 = {
+					add_core_of = ROOT
+				}
+				453 = {
+					add_core_of = ROOT
+				}
+				446 = {
+					add_core_of = ROOT
+				}
+			}
+		}
+		x = 23
+		y = 8
+
+	}
+	focus = {
+		id = ITA_aus_1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_diplomacyBegain
+		}
+		x = 28
+		y = 3
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_tip.13
+				NOT = {
+					has_country_flag = ITA_diplmacyProcess
+				}
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = ITA_tip.10
+			custom_effect_tooltip = ITA_tip.16
+			hidden_effect = {
+				set_country_flag = ITA_diplmacyProcess
+			}
+		}
+	}
+	focus = {
+		id = ITA_aus_2
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_aus_1
+		}
+		completion_reward = {
+			custom_effect_tooltip = ITA_tip.28
+			add_political_power = 10
+		}
+		x = 27
+		y = 4
+
+	}
+	focus = {
+		id = ITA_aus_3
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_aus_1
+		}
+		completion_reward = {
+			custom_effect_tooltip = ITA_tip.29
+			hidden_effect = {
+				39 = {
+					add_core_of = ROOT
+					add_core_of = LBV
+				}
+				850 = {
+					add_core_of = ROOT
+					add_core_of = LBV
+				}
+			}
+		}
+		x = 29
+		y = 4
+
+	}
+	focus = {
+		id = ITA_aus_4
+		icon = GFX_ita_43
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_aus_3
+		}
+		prerequisite = {
+			focus = ITA_aus_2
+		}
+		completion_reward = {
+			custom_effect_tooltip = ITA_tip.18
+			custom_effect_tooltip = ITA_tip.17
+			hidden_effect = {
+				clr_country_flag = ITA_diplmacyProcess
+			}
+		}
+		x = 28
+		y = 5
+
+	}
+	focus = {
+		id = ITA_fra_3
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_fra_2
+		}
+		completion_reward = {
+			custom_effect_tooltip = ITA_tip.18
+			custom_effect_tooltip = ITA_tip.17
+			hidden_effect = {
+				clr_country_flag = ITA_diplmacyProcess
+			}
+		}
+		x = 19
+		y = 6
+
+	}
+	focus = {
+		id = ITA_ibe_5
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_ibe_2
+		}
+		completion_reward = {
+			custom_effect_tooltip = ITA_tip.18
+		}
+		x = 6
+		y = 6
+
+	}
+	focus = {
+		id = ITA_second_four_years_plan_1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 60
+		y = 11
+		prerequisite = {
+			focus = ITA_secondFourYearsPlan
+		}
+		completion_reward = {
+			country_event = {
+				id = Dawn_event_ita.10
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			swap_ideas = {
+				add_idea = ITA_agricuturalSociety_2
+				remove_idea = ITA_agricuturalSociety_1
+			}
+		}
+	}
+	focus = {
+		id = ITA_second_four_years_plan_2
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 68
+		y = 11
+		available = {
+			has_completed_focus = ITA_second_four_years_plan_10
+		}
+		prerequisite = {
+			focus = ITA_secondFourYearsPlan
+		}
+	}
+	focus = {
+		id = ITA_second_four_years_plan_3
+		icon = GFX_goal_unknown
+		cost = 3.00
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_tip.33
+				has_country_flag = ITA_agric_1
+			}
+		}
+		prerequisite = {
+			focus = ITA_second_four_years_plan_1
+		}
+		mutually_exclusive = {
+			focus = ITA_second_four_years_plan_4
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = ITA_agricuturalSociety_l_1
+				remove_idea = ITA_agricuturalSociety_2
+			}
+		}
+		x = 58
+		y = 12
+
+	}
+	focus = {
+		id = ITA_second_four_years_plan_5
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = ITA_second_four_years_plan_3
+		}
+		x = 58
+		y = 14
+
+	}
+	focus = {
+		id = ITA_second_four_years_plan_4
+		icon = GFX_goal_unknown
+		cost = 3.00
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_tip.34
+				has_country_flag = ITA_agric_2
+			}
+		}
+		prerequisite = {
+			focus = ITA_second_four_years_plan_1
+		}
+		mutually_exclusive = {
+			focus = ITA_second_four_years_plan_3
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = ITA_agricuturalSociety_r_1
+				remove_idea = ITA_agricuturalSociety_2
+			}
+		}
+		x = 62
+		y = 12
+
+	}
+	focus = {
+		id = ITA_second_four_years_plan_8
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_second_four_years_plan_3
+			focus = ITA_second_four_years_plan_4
+		}
+		x = 59
+		y = 13
+
+	}
+	focus = {
+		id = ITA_second_four_years_plan_6
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_second_four_years_plan_4
+			focus = ITA_second_four_years_plan_3
+		}
+		x = 61
+		y = 13
+
+	}
+	focus = {
+		id = ITA_second_four_years_plan_9
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = ITA_second_four_years_plan_8
+		}
+		prerequisite = {
+			focus = ITA_second_four_years_plan_6
+		}
+		x = 60
+		y = 14
+
+	}
+	focus = {
+		id = ITA_second_four_years_plan_7
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = ITA_second_four_years_plan_4
+		}
+		x = 62
+		y = 14
+
+	}
+	focus = {
+		id = ITA_second_four_years_plan_10
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_second_four_years_plan_7
+			focus = ITA_second_four_years_plan_5
+		}
+		prerequisite = {
+			focus = ITA_second_four_years_plan_9
+		}
+		x = 60
+		y = 15
+
+	}
+	focus = {
+		id = ITA_second_four_years_plan_11
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_second_four_years_plan_2
+		}
+		x = 66
+		y = 12
+
+	}
+	focus = {
+		id = ITA_second_four_years_plan_12
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = ITA_second_four_years_plan_11
+		}
+		x = 65
+		y = 13
+
+	}
+	focus = {
+		id = ITA_second_four_years_plan_14
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = ITA_second_four_years_plan_12
+		}
+		mutually_exclusive = {
+			focus = ITA_second_four_years_plan_15
+		}
+		x = 65
+		y = 14
+
+	}
+	focus = {
+		id = ITA_second_four_years_plan_16
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = ITA_second_four_years_plan_14
+		}
+		x = 65
+		y = 15
+
+	}
+	focus = {
+		id = ITA_second_four_years_plan_13
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = ITA_second_four_years_plan_11
+		}
+		x = 67
+		y = 13
+
+	}
+	focus = {
+		id = ITA_second_four_years_plan_15
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = ITA_second_four_years_plan_13
+		}
+		mutually_exclusive = {
+			focus = ITA_second_four_years_plan_14
+		}
+		x = 67
+		y = 14
+
+	}
+	focus = {
+		id = ITA_second_four_years_plan_17
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = ITA_second_four_years_plan_15
+		}
+		x = 67
+		y = 15
+
+	}
+	focus = {
+		id = ITA_second_four_years_plan_24
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_second_four_years_plan_2
+		}
+		x = 70
+		y = 12
+
+	}
+	focus = {
+		id = ITA_second_four_years_plan_18
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = ITA_second_four_years_plan_24
+		}
+		x = 69
+		y = 13
+
+	}
+	focus = {
+		id = ITA_second_four_years_plan_20
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = ITA_second_four_years_plan_18
+		}
+		x = 69
+		y = 14
+
+	}
+	focus = {
+		id = ITA_second_four_years_plan_22
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_second_four_years_plan_20
+		}
+		mutually_exclusive = {
+			focus = ITA_second_four_years_plan_23
+		}
+		x = 69
+		y = 15
+
+	}
+	focus = {
+		id = ITA_second_four_years_plan_19
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = ITA_second_four_years_plan_24
+		}
+		x = 71
+		y = 13
+
+	}
+	focus = {
+		id = ITA_second_four_years_plan_21
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = ITA_second_four_years_plan_19
+		}
+		x = 71
+		y = 14
+
+	}
+	focus = {
+		id = ITA_second_four_years_plan_23
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_second_four_years_plan_21
+		}
+		mutually_exclusive = {
+			focus = ITA_second_four_years_plan_22
+		}
+		x = 71
+		y = 15
+
+	}
+	focus = {
+		id = ITA_second_four_years_plan_25
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ITA_second_four_years_plan_16
+			focus = ITA_second_four_years_plan_17
+		}
+		prerequisite = {
+			focus = ITA_second_four_years_plan_22
+			focus = ITA_second_four_years_plan_23
+		}
+		prerequisite = {
+			focus = ITA_second_four_years_plan_10
+		}
+		x = 64
+		y = 16
+
+	}
+}

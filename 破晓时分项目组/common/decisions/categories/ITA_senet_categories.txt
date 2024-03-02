@@ -1,0 +1,10 @@
+ITA_senet_categories = {
+	icon = infiltration
+	scripted_gui = ITA_senet_categories
+	visible = {
+		#has_completed_focus = FRA_ECO.12		
+		always = yes
+		original_tag = ITA
+	}
+	priority = 120
+}

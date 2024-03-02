@@ -1,0 +1,1760 @@
+focus_tree = {
+	id = ENG_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ENG
+		}
+	}
+	default = no
+	focus = {
+		id = ENG_unfinishedWork
+		icon = GFX_ENG_1
+		cost = 5.00
+		x = 57
+		y = 0
+		allow_branch = {
+			had_country_flag = ENG_red
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_begain_develop
+			custom_effect_tooltip = ENG_government_will_givez_budget
+			custom_effect_tooltip = ENG_a_lot_of_storage_increase
+			custom_effect_tooltip = ENG_add_10_industry_var
+			hidden_effect = {
+				add_to_variable = {
+					ENG_economics_stored = 20
+				}
+				add_to_variable = { 
+					ENG_economics_income = 1
+				}
+				add_to_variable = { 
+					ENG_develop_industry_var = 10
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_voting1936
+		icon = GFX_ENG_3
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_unfinishedWork
+		}
+		completion_reward = {
+			add_political_power = 10
+			add_popularity = {
+				ideology = social_democratic
+				popularity = 0.03
+			}
+			custom_effect_tooltip = ENG_a_litle_bit_of_storage_decrease
+			hidden_effect = {
+				add_to_variable = {
+					ENG_economics_stored = -5
+				}
+			}
+		}
+		x = 21
+		y = 1
+
+	}
+	focus = {
+		id = ENG_throwThemInPrison
+		icon = GFX_ENG_1000
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_voting1936
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.01
+			}
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+		x = 19
+		y = 2
+
+	}
+	focus = {
+		id = ENG_arrestFacism
+		icon = GFX_ENG_1000
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_voting1936
+		}
+		x = 21
+		y = 2
+		completion_reward = {
+			custom_effect_tooltip = ENG_fascism_can_give_us_money
+			custom_effect_tooltip = ENG_a_litle_bit_of_storage_increase
+			hidden_effect = {
+				add_to_variable = {
+					ENG_economics_stored = 5
+				}
+			}
+			add_popularity = {
+				ideology = radical_socialism
+				popularity = 0.01
+			}
+			add_command_power = 5
+			add_ideas = ENG_remove_fascism
+		}
+	}
+	focus = {
+		id = ENG_republicPoliticalSituation
+		icon = GFX_ENG_1000
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_voting1936
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.01
+			}
+			add_political_power = 5
+		}
+		x = 23
+		y = 2
+
+	}
+	focus = {
+		id = ENG_greatVoting
+		icon = GFX_ENG_3
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_arrestFacism
+		}
+		prerequisite = {
+			focus = ENG_throwThemInPrison
+		}
+		prerequisite = {
+			focus = ENG_republicPoliticalSituation
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_great_vote
+			custom_effect_tooltip = ENG_a_litle_bit_of_storage_decrease
+			hidden_effect = {
+				add_to_variable = {
+					ENG_economics_stored = -5
+				}
+			}
+			country_event = {
+            id = Dawn_event_eng.1
+        }
+		}
+		x = 21
+		y = 3
+
+	}
+	focus = {
+		id = ENG_confederationism
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_greatVoting
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ENG_tip.12
+				has_country_flag = ENG_confederationism_win
+			}
+		}
+		mutually_exclusive = {
+			focus = ENG_communism
+			focus = ENG_democratic
+		}
+		x = 15
+		y = 4
+
+	}
+	focus = {
+		id = ENG_communism
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_greatVoting
+		}
+		mutually_exclusive = {
+			focus = ENG_confederationism
+			focus = ENG_democratic
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ENG_tip.14
+				has_country_flag = ENG_communism_win
+			}
+		}
+		x = 27
+		y = 4
+
+	}
+	focus = {
+		id = ENG_noEconomicsSupervise
+		icon = GFX_ENG_4
+		cost = 2.00
+		cancelable = no
+		prerequisite = {
+			focus = ENG_unfinishedWork
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ENG_tip.1
+				has_completed_focus = ENG_third_whole_party_meeting
+			}
+			custom_trigger_tooltip = {
+				tooltip = ENG_tip.2
+				check_variable = {
+					ENG_economics_stored > 5
+				}
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_a_litle_bit_of_storage_decrease
+			hidden_effect = {
+				add_to_variable = {
+					ENG_economics_stored = -5
+				}
+			}
+			mark_focus_tree_layout_dirty = yes
+			swap_ideas = {
+				remove_idea = ENG_economics_supervise
+				add_idea = ENG_economics_supervise_1
+			}
+			swap_ideas = {
+				remove_idea = ENG_rationing_system
+				add_idea = ENG_rationing_system_1
+			}
+		}
+		x = 40
+		y = 1
+
+	}
+	focus = {
+		id = ENG_westernGermanicCooperationSystem
+		icon = GFX_ENG_2
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_noEconomicsSupervise
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ENG_tip.2
+				check_variable = {
+					ENG_economics_stored > 5
+				}
+			}
+		}
+		allow_branch = {
+			has_completed_focus = ENG_unfinishedWork
+		}
+		completion_reward = {
+			mark_focus_tree_layout_dirty = yes
+			custom_effect_tooltip = ENG_a_litle_bit_of_storage_decrease
+			hidden_effect = {
+				add_to_variable = {
+					ENG_economics_stored = -5
+				}
+			}
+			add_ideas = ENG_tech_cooperation_with_germany
+			GER = {
+				add_ideas = GER_tech_cooperation_with_britain
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.01
+			}
+			add_popularity = {
+				ideology = radical_socialism
+				popularity = 0.01
+			}
+		}
+		x = 31
+		y = 2
+
+	}
+	focus = {
+		id = ENG_moneyFoodAndTickets
+		icon = GFX_ENG_5
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_westernGermanicCooperationSystem
+		}
+		completion_reward = {
+			add_political_power = 50
+			swap_ideas = {
+				remove_idea = ENG_rationing_system_1
+				add_idea = ENG_rationing_system_2
+			}
+		}
+		allow_branch = {
+			has_completed_focus = ENG_westernGermanicCooperationSystem
+		}
+		x = 30
+		y = 3
+
+	}
+	focus = {
+		id = ENG_openForignTrading
+		icon = GFX_ENG_6
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_westernGermanicCooperationSystem
+		}
+		completion_reward = {
+			add_political_power = 10
+			add_ideas = ENG_opening
+			custom_effect_tooltip = ENG_one_unit_per_month_increase
+			hidden_effect = {
+				add_to_variable = { 
+					ENG_economics_income = 1
+				}
+			}
+		}
+		allow_branch = {
+			has_completed_focus = ENG_westernGermanicCooperationSystem
+		}
+		x = 32
+		y = 3
+
+	}
+	focus = {
+		id = ENG_noSpies
+		icon = GFX_ENG_9
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_openForignTrading
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_a_litle_bit_of_storage_decrease
+			hidden_effect = {
+				add_to_variable = {
+					ENG_economics_stored = -5
+				}
+			}
+			swap_ideas = {
+				remove_idea = ENG_opening
+				add_idea = ENG_opening_1
+			}
+		}
+		x = 31
+		y = 4
+
+	}
+	focus = {
+		id = ENG_ensureDetails
+		icon = GFX_ENG_7
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_moneyFoodAndTickets
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ENG_tip.2
+				check_variable = {
+					ENG_economics_stored > 5
+				}
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_a_litle_bit_of_storage_increase
+			hidden_effect = {
+				add_to_variable = {
+					ENG_economics_stored = 5
+				}
+			}
+			swap_ideas = {
+				remove_idea = ENG_rationing_system_2
+				add_idea = ENG_rationing_system_3
+			}
+			swap_ideas = {
+				remove_idea = ENG_tech_cooperation_with_germany
+				add_idea = ENG_tech_cooperation_with_germany_1
+			}
+			add_opinion_modifier = {
+				target = GER
+				modifier = ENG_conference_1
+			}
+			GER = {
+				add_opinion_modifier = {
+					target = ENG
+					modifier = ENG_conference_1
+				}
+			}
+		}
+		x = 30
+		y = 5
+
+	}
+	focus = {
+		id = ENG_SISandM16
+		icon = GFX_ENG_8
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_openForignTrading
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ENG_tip.3
+				check_variable = {
+					ENG_economics_stored > 20
+				}
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_a_lot_of_storage_decrease
+			hidden_effect = {
+				add_to_variable = {
+					ENG_economics_stored = -20
+				}
+			}
+			create_intelligence_agency = yes
+			add_ideas = ENG_SIS_1
+		}
+		x = 33
+		y = 4
+
+	}
+	focus = {
+		id = ENG_britainGermanyVisaExumptionAgreement
+		icon = GFX_ENG_11
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_ensureDetails
+		}
+		x = 38
+		y = 6
+
+	}
+	focus = {
+		id = ENG_freeEconomics
+		icon = GFX_ENG_12
+		cost = 4.00
+		prerequisite = {
+			focus = ENG_noEconomicsSupervise
+		}
+		allow_branch = {
+			has_completed_focus = ENG_unfinishedWork
+		}
+		completion_reward = {
+			mark_focus_tree_layout_dirty = yes
+			add_political_power = 50
+			add_stability = -0.1
+			custom_effect_tooltip = ENG_a_litle_bit_of_storage_increase
+			swap_ideas = {
+				remove_idea = ENG_economics_supervise_1
+				add_idea = ENG_economics_supervise_2
+			}
+			hidden_effect = {
+				add_to_variable = {
+					ENG_economics_stored = 5
+				}
+			}
+		}
+		x = 37
+		y = 2
+
+	}
+	focus = {
+		id = ENG_liberate_women
+		icon = GFX_ENG_agriculture_3
+		cost = 4.00
+		prerequisite = {
+			focus = ENG_noEconomicsSupervise
+		}
+		allow_branch = {
+			has_completed_focus = ENG_unfinishedWork
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_a_litle_bit_of_storage_increase
+			custom_effect_tooltip = ENG_add_10_industry_var
+			custom_effect_tooltip = ENG_morderner_agriculture
+			add_popularity = {
+				ideology = radical_socialism
+				popularity = 0.01
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.01
+			}
+			add_manpower = 1000
+			add_stability = 0.05
+			add_ideas = ENG_liberate_women_idea
+			hidden_effect = {
+				add_to_variable = {
+					ENG_economics_stored = 5
+				}
+				add_to_variable = {
+					ENG_develop_industry_var = 10
+				}
+			}
+		}
+		x = 44
+		y = 2
+
+	}
+	focus = {
+		id = ENG_internationalMarketConnection
+		icon = GFX_ENG_13
+		cost = 4.00
+		prerequisite = {
+			focus = ENG_freeEconomics
+		}
+		completion_reward = {
+			add_stability = -0.1
+			custom_effect_tooltip = ENG_a_litle_bit_of_storage_decrease
+			hidden_effect = {
+				add_to_variable = {
+					ENG_economics_stored = -5
+				}
+			}
+			add_ideas = {
+				ENG_global_trade
+			}
+		}
+		allow_branch = {
+			has_completed_focus = ENG_freeEconomics
+		}
+		x = 35
+		y = 3
+
+	}
+	focus = {
+		id = ENG_resotreIndustrialEconomics
+		icon = GFX_ENG_23
+		cost = 4.00
+		prerequisite = {
+			focus = ENG_freeEconomics
+		}
+		allow_branch = {
+			has_completed_focus = ENG_freeEconomics
+		}
+		x = 39
+		y = 3
+
+	}
+	focus = {
+		id = ENG_invetigateIndustry
+		icon = GFX_ENG_24
+		cost = 4.00
+		prerequisite = {
+			focus = ENG_resotreIndustrialEconomics
+		}
+		available = {
+			has_completed_focus = ENG_five_years_plan
+		}
+		x = 39
+		y = 4
+
+	}
+	focus = {
+		id = ENG_ensureIndustryProduction
+		icon = GFX_ENG_1000
+		cost = 4.00
+		prerequisite = {
+			focus = ENG_invetigateIndustry
+		}
+		prerequisite = {
+			focus = ENG_liberteOverseaTerritory
+		}
+		x = 38
+		y = 5
+
+	}
+	focus = {
+		id = ENG_investigateGovernmentalEnterpriss
+		icon = GFX_ENG_1000
+		cost = 4.00
+		prerequisite = {
+			focus = ENG_invetigateIndustry
+		}
+		prerequisite = {
+			focus = ENG_liberteOverseaTerritory
+		}
+		x = 40
+		y = 5
+
+	}
+	focus = {
+		id = ENG_liberteOverseaTerritory
+		icon = GFX_ENG_21
+		cost = 4.00
+		prerequisite = {
+			focus = ENG_overseaNationalCamoanies
+		}
+		x = 37
+		y = 4
+		allow_branch = {
+			has_completed_focus = ENG_freeEconomics
+		}
+	}
+	focus = {
+		id = ENG_overseaNationalCamoanies
+		icon = GFX_ENG_20
+		cost = 4.00
+		prerequisite = {
+			focus = ENG_freeEconomics
+		}
+		x = 37
+		y = 3
+		allow_branch = {
+			has_completed_focus = ENG_freeEconomics
+		}
+	}
+	focus = {
+		id = ENG_putDawnDiffrences
+		icon = GFX_ENG_14
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_internationalMarketConnection
+		}
+		mutually_exclusive = {
+			focus = ENG_keepMind
+		}
+		x = 34
+		y = 5
+
+	}
+	focus = {
+		id = ENG_keepMind
+		icon = GFX_ENG_15
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_internationalMarketConnection
+		}
+		mutually_exclusive = {
+			focus = ENG_putDawnDiffrences
+		}
+		x = 36
+		y = 5
+
+	}
+	focus = {
+		id = ENG_buyResources
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_keepMind
+			focus = ENG_putDawnDiffrences
+		}
+		x = 51
+		y = 6
+
+	}
+	focus = {
+		id = ENG_outputCommunism
+		icon = GFX_ENG_10
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_putDawnDiffrences
+			focus = ENG_keepMind
+		}
+		prerequisite = {
+			focus = ENG_ensureDetails
+		}
+		prerequisite = {
+			focus = ENG_SISandM16
+		}
+		x = 32
+		y = 6
+
+	}
+	focus = {
+		id = ENG_aroseFromRuins
+		icon = GFX_ENG_22
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_putDawnDiffrences
+			focus = ENG_keepMind
+		}
+		x = 35
+		y = 6
+		allow_branch = {
+			has_completed_focus = ENG_freeEconomics
+		}
+	}
+	focus = {
+		id = ENG_ambitiousFrom1649
+		icon = GFX_ENG_agriculture_1
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_noEconomicsSupervise
+		}
+		available = {
+			has_completed_focus = ENG_liberate_women
+		}
+		completion_reward = {
+			mark_focus_tree_layout_dirty = yes
+		}
+		allow_branch = {
+			has_completed_focus = ENG_unfinishedWork
+		}
+		x = 46
+		y = 2
+
+	}
+	focus = {
+		id = ENG_dividLand
+		icon = GFX_ENG_agriculture_4
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_ambitiousFrom1649
+		}
+		prerequisite = {
+			focus = ENG_liberate_women
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ENG_tip.5
+				NOT = {
+					has_country_flag = ENG_agriculture_flag
+				}
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_tip.6
+			hidden_effect = {
+				set_country_flag = ENG_agriculture_flag
+			}
+		}
+		allow_branch = {
+			has_completed_focus = ENG_ambitiousFrom1649
+		}
+		x = 42
+		y = 3
+
+	}
+	focus = {
+		id = ENG_communizationFireld
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_dividLand
+		}
+		x = 42
+		y = 4
+
+	}
+	focus = {
+		id = ENG_helpactiveWorking
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_communizationFireld
+		}
+		x = 42
+		y = 5
+
+	}
+	focus = {
+		id = ENG_forBetterlife
+		icon = GFX_ENG_agriculture_2
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_ambitiousFrom1649
+		}
+		prerequisite = {
+			focus = ENG_liberate_women
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ENG_tip.5
+				NOT = {
+					has_country_flag = ENG_agriculture_flag
+				}
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_tip.7
+			hidden_effect = {
+				set_country_flag = ENG_agriculture_flag
+			}
+		}
+		allow_branch = {
+			has_completed_focus = ENG_ambitiousFrom1649
+		}
+		x = 45
+		y = 3
+
+	}
+	focus = {
+		id = ENG_refreshAgricuturalTax
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_forBetterlife
+		}
+		x = 45
+		y = 4
+
+	}
+	focus = {
+		id = ENG_pretendFoodCrisis
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_refreshAgricuturalTax
+		}
+		x = 45
+		y = 5
+		completion_reward = {
+			custom_effect_tooltip = ENG_tip.10
+			hidden_effect = {
+				clr_country_flag = ENG_agriculture_flag
+			}
+		}
+	}
+	focus = {
+		id = ENG_wonderInLand
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_pretendFoodCrisis
+		}
+		prerequisite = {
+			focus = ENG_pullDownLandSubstraction
+		}
+		prerequisite = {
+			focus = ENG_unavailableBuyingLands
+		}
+		prerequisite = {
+			focus = ENG_collectiveCooperation
+		}
+		prerequisite = {
+			focus = ENG_developPlantation
+		}
+		allow_branch = {
+			has_completed_focus = ENG_ambitiousFrom1649
+		}
+		x = 45
+		y = 7
+
+	}
+	focus = {
+		id = ENG_MordernizationTheAgricuturalTchnology
+		icon = GFX_ENG_agriculture_5
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_ambitiousFrom1649
+		}
+		prerequisite = {
+			focus = ENG_liberate_women
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ENG_tip.5
+				NOT = {
+					has_country_flag = ENG_agriculture_flag
+				}
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_tip.8
+			hidden_effect = {
+				set_country_flag = ENG_agriculture_flag
+			}
+		}
+		allow_branch = {
+			has_completed_focus = ENG_ambitiousFrom1649
+		}
+		x = 48
+		y = 3
+
+	}
+	focus = {
+		id = ENG_marchOnLands
+		icon = GFX_ENG_agriculture_6
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_MordernizationTheAgricuturalTchnology
+		}
+		x = 48
+		y = 4
+
+	}
+	focus = {
+		id = ENG_developNothMiddleLand
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_marchOnLands
+		}
+		x = 48
+		y = 5
+
+	}
+	focus = {
+		id = ENG_developPlantation
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_developNothMiddleLand
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_tip.11
+			hidden_effect = {
+				clr_country_flag = ENG_agriculture_flag
+			}
+		}
+		x = 49
+		y = 6
+
+	}
+	focus = {
+		id = ENG_collectiveCooperation
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_developNothMiddleLand
+		}
+		x = 47
+		y = 6
+
+	}
+	focus = {
+		id = ENG_pullDownLandSubstraction
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_helpactiveWorking
+		}
+		x = 43
+		y = 6
+
+	}
+	focus = {
+		id = ENG_unavailableBuyingLands
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_helpactiveWorking
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_tip.9
+			hidden_effect = {
+				clr_country_flag = ENG_agriculture_flag
+			}
+		}
+		x = 41
+		y = 6
+
+	}
+	focus = {
+		id = ENG_five_years_plan
+		icon = GFX_ENG_16
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_noEconomicsSupervise
+		}
+		allow_branch = {
+			has_completed_focus = ENG_unfinishedWork
+		}
+		completion_reward = {
+			mark_focus_tree_layout_dirty = yes
+		}
+		x = 59
+		y = 2
+
+	}
+	focus = {
+		id = ENG_northern
+		icon = GFX_ENG_17
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_five_years_plan
+		}
+		mutually_exclusive = {
+			focus = ENG_southern
+			focus = ENG_middle
+		}
+		allow_branch = {
+			has_completed_focus = ENG_five_years_plan
+		}
+		x = 54
+		y = 3
+
+	}
+	focus = {
+		id = ENG_middle
+		icon = GFX_ENG_18
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_five_years_plan
+		}
+		mutually_exclusive = {
+			focus = ENG_northern
+			focus = ENG_southern
+		}
+		allow_branch = {
+			has_completed_focus = ENG_five_years_plan
+		}
+		x = 59
+		y = 3
+
+	}
+	focus = {
+		id = ENG_southern
+		icon = GFX_ENG_19
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_five_years_plan
+		}
+		mutually_exclusive = {
+			focus = ENG_middle
+			focus = ENG_northern
+		}
+		allow_branch = {
+			has_completed_focus = ENG_five_years_plan
+		}
+		x = 64
+		y = 3
+
+	}
+	focus = {
+		id = ENG_expansion_the_ports
+		icon = GFX_ENG_1000
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_northern
+			focus = ENG_middle
+			focus = ENG_southern
+		}
+		x = 54
+		y = 7
+
+	}
+	focus = {
+		id = ENG_civilFactory
+		icon = GFX_ENG_1000
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_middle
+			focus = ENG_southern
+			focus = ENG_northern
+		}
+		x = 60
+		y = 4
+
+	}
+	focus = {
+		id = ENG_heavyIndustryProject
+		icon = GFX_ENG_1000
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_civilFactory
+			focus = ENG_useBudget
+		}
+		x = 56
+		y = 5
+
+	}
+	focus = {
+		id = ENG_threeFactories
+		icon = GFX_ENG_1000
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_heavyIndustryProject
+		}
+		x = 56
+		y = 7
+
+	}
+	focus = {
+		id = ENG_useBudget
+		icon = GFX_ENG_1000
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_middle
+			focus = ENG_northern
+			focus = ENG_southern
+		}
+		x = 58
+		y = 4
+
+	}
+	focus = {
+		id = ENG_nationalizeResidentials
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_civilFactory
+		}
+		x = 59
+		y = 5
+
+	}
+	focus = {
+		id = ENG_polit
+		icon = GFX_ENG_1000
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_nationalizeResidentials
+		}
+		mutually_exclusive = {
+			focus = ENG_philpi
+		}
+		x = 58
+		y = 6
+
+	}
+	focus = {
+		id = ENG_philpi
+		icon = GFX_ENG_1000
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_nationalizeResidentials
+		}
+		mutually_exclusive = {
+			focus = ENG_polit
+		}
+		x = 60
+		y = 6
+
+	}
+	focus = {
+		id = ENG_solveResidential
+		icon = GFX_ENG_1000
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_philpi
+			focus = ENG_polit
+		}
+		x = 59
+		y = 7
+
+	}
+	focus = {
+		id = ENG_reorganizeCivilInduistry
+		icon = GFX_ENG_1000
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_civilFactory
+			focus = ENG_useBudget
+		}
+		x = 62
+		y = 5
+
+	}
+	focus = {
+		id = ENG_buildingEnterpriss
+		icon = GFX_ENG_1000
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_reorganizeCivilInduistry
+		}
+		x = 62
+		y = 7
+
+	}
+	focus = {
+		id = ENG_technicalbudget
+		icon = GFX_ENG_1000
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_southern
+			focus = ENG_middle
+			focus = ENG_northern
+		}
+		mutually_exclusive = {
+			focus = hoENG-holyTechnology
+		}
+		x = 63
+		y = 4
+
+	}
+	focus = {
+		id = ENG_getInfantryBudget
+		icon = GFX_ENG_1000
+		cost = 4.00
+		prerequisite = {
+			focus = ENG_southern
+			focus = ENG_middle
+			focus = ENG_northern
+		}
+		x = 64
+		y = 6
+
+	}
+	focus = {
+		id = hoENG-holyTechnology
+		icon = GFX_ENG_1000
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_southern
+			focus = ENG_middle
+			focus = ENG_northern
+		}
+		mutually_exclusive = {
+			focus = ENG_technicalbudget
+		}
+		x = 65
+		y = 4
+
+	}
+	focus = {
+		id = ENG_westernTechnology
+		icon = GFX_ENG_1000
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_unfinishedWork
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ENG_tip.1
+				has_completed_focus = ENG_third_whole_party_meeting
+			}
+		}
+		x = 75
+		y = 1
+
+	}
+	focus = {
+		id = ENG_tech1
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_westernTechnology
+		}
+		mutually_exclusive = {
+			focus = ENG_tech2
+		}
+		x = 70
+		y = 2
+
+	}
+	focus = {
+		id = ENG_tech2
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_westernTechnology
+		}
+		mutually_exclusive = {
+			focus = ENG_tech1
+		}
+		x = 73
+		y = 2
+
+	}
+	focus = {
+		id = ENG_tech3
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_westernTechnology
+		}
+		mutually_exclusive = {
+			focus = ENG_tech4
+		}
+		x = 77
+		y = 2
+
+	}
+	focus = {
+		id = ENG_tech4
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_westernTechnology
+		}
+		mutually_exclusive = {
+			focus = ENG_tech3
+		}
+		x = 80
+		y = 2
+
+	}
+	focus = {
+		id = ENG_tech5
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_tech3
+			focus = ENG_tech4
+		}
+		prerequisite = {
+			focus = ENG_tech1
+			focus = ENG_tech2
+		}
+		x = 75
+		y = 3
+
+	}
+	focus = {
+		id = ENG_tech6
+		icon = GFX_ENG_1000
+		cost = 2.00
+		prerequisite = {
+			focus = hoENG-holyTechnology
+			focus = ENG_technicalbudget
+		}
+		prerequisite = {
+			focus = ENG_tech5
+		}
+		x = 70
+		y = 5
+
+	}
+	focus = {
+		id = ENG_completeFiveYearsPlan
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_buildingEnterpriss
+		}
+		prerequisite = {
+			focus = ENG_solveResidential
+		}
+		prerequisite = {
+			focus = ENG_threeFactories
+		}
+		prerequisite = {
+			focus = ENG_expansion_the_ports
+		}
+		x = 59
+		y = 8
+
+	}
+	focus = {
+		id = ENG_buildTrasparentShips
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_expansion_the_ports
+		}
+		prerequisite = {
+			focus = ENG_buyResources
+		}
+		x = 51
+		y = 8
+
+	}
+	focus = {
+		id = ENG_moreBudget
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_getInfantryBudget
+		}
+		x = 64
+		y = 7
+
+	}
+	focus = {
+		id = ENG_democratic
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_greatVoting
+		}
+		mutually_exclusive = {
+			focus = ENG_communism
+			focus = ENG_confederationism
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ENG_tip.13
+				has_country_flag = ENG_democratic_win
+			}
+		}
+		x = 21
+		y = 4
+
+	}
+	focus = {
+		id = ENG_civilForces
+		icon = GFX_ENG_1000
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_confederationism
+			focus = ENG_communism
+		}
+		x = 18
+		y = 5
+
+	}
+	focus = {
+		id = ENG_uniteWorkFection
+		icon = GFX_ENG_1000
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_confederationism
+		}
+		x = 16
+		y = 5
+
+	}
+	focus = {
+		id = ENG_noSD
+		icon = GFX_ENG_1000
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_confederationism
+		}
+		x = 14
+		y = 5
+
+	}
+	focus = {
+		id = ENG_keepPolicyOfUnion
+		icon = GFX_ENG_1000
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_communism
+		}
+		x = 26
+		y = 5
+
+	}
+	focus = {
+		id = ENG_toKPD
+		icon = GFX_ENG_1000
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_communism
+		}
+		x = 28
+		y = 5
+
+	}
+	focus = {
+		id = ENG_toBritonPeople
+		icon = GFX_ENG_1000
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_noSD
+		}
+		prerequisite = {
+			focus = ENG_uniteWorkFection
+		}
+		x = 13
+		y = 6
+
+	}
+	focus = {
+		id = ENG_8yearsEducation
+		icon = GFX_ENG_1000
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_uniteWorkFection
+		}
+		prerequisite = {
+			focus = ENG_noSD
+		}
+		x = 15
+		y = 6
+
+	}
+	focus = {
+		id = ENG_newCashes
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_8yearsEducation
+		}
+		prerequisite = {
+			focus = ENG_toBritonPeople
+		}
+		x = 14
+		y = 7
+
+	}
+	focus = {
+		id = ENG_litleEconomicsSupervise
+		icon = GFX_ENG_1000
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_uniteWorkFection
+		}
+		prerequisite = {
+			focus = ENG_noSD
+		}
+		x = 17
+		y = 6
+
+	}
+	focus = {
+		id = ENG_knightsMindOfSocialism
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_litleEconomicsSupervise
+		}
+		prerequisite = {
+			focus = ENG_8yearsEducation
+		}
+		x = 16
+		y = 7
+
+	}
+	focus = {
+		id = ENG_surondingByComerades
+		icon = GFX_ENG_1000
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_knightsMindOfSocialism
+		}
+		prerequisite = {
+			focus = ENG_newCashes
+		}
+		x = 15
+		y = 8
+
+	}
+	focus = {
+		id = ENG_peaceButRememberWar
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_toKPD
+		}
+		prerequisite = {
+			focus = ENG_keepPolicyOfUnion
+		}
+		x = 27
+		y = 6
+
+	}
+	focus = {
+		id = ENG_ambitiousOfSDP
+		icon = GFX_ENG_1000
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_democratic
+		}
+		x = 20
+		y = 7
+
+	}
+	focus = {
+		id = ENG_third_whole_party_meeting
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_democratic
+			focus = ENG_confederationism
+			focus = ENG_communism
+		}
+		x = 21
+		y = 5
+
+	}
+	focus = {
+		id = ENG_authorityOfParty
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_third_whole_party_meeting
+		}
+		x = 21
+		y = 6
+
+	}
+	focus = {
+		id = ENG_formDemocraticElectionDepartment
+		icon = GFX_ENG_1000
+		cost = 3.00
+		prerequisite = {
+			focus = ENG_democratic
+		}
+		x = 22
+		y = 7
+
+	}
+	focus = {
+		id = ENG_indAndBus
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_formDemocraticElectionDepartment
+		}
+		prerequisite = {
+			focus = ENG_ambitiousOfSDP
+		}
+		x = 21
+		y = 8
+
+	}
+	focus = {
+		id = ENG_strengenRoadOfUOB
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_indAndBus
+			focus = ENG_surondingByComerades
+			focus = ENG_peaceButRememberWar
+		}
+		x = 18
+		y = 9
+
+	}
+	focus = {
+		id = ENG_firstBritonScienceFairDisplay
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_strengenRoadOfUOB
+		}
+		x = 14
+		y = 10
+
+	}
+	focus = {
+		id = ENG_noMoreArmies
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_strengenRoadOfUOB
+		}
+		x = 17
+		y = 10
+
+	}
+	focus = {
+		id = ENG_republicInfantryForcesCommeti
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_strengenRoadOfUOB
+		}
+		x = 19
+		y = 10
+
+	}
+	focus = {
+		id = ENG_democraticAndLiberty
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_indAndBus
+		}
+		x = 24
+		y = 9
+
+	}
+	focus = {
+		id = ENG_shelterOfLiberists
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_democraticAndLiberty
+		}
+		x = 23
+		y = 10
+
+	}
+	focus = {
+		id = ENG_navyPay
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_peaceButRememberWar
+		}
+		x = 24
+		y = 7
+
+	}
+	focus = {
+		id = ENG_USA
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_democraticAndLiberty
+		}
+		x = 25
+		y = 10
+
+	}
+	focus = {
+		id = ENG_middlemanOf_GERAndUSA
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_USA
+		}
+		prerequisite = {
+			focus = ENG_shelterOfLiberists
+		}
+		x = 24
+		y = 11
+
+	}
+	focus = {
+		id = ENG_stopAgriculturalPolicy
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_peaceButRememberWar
+		}
+		x = 27
+		y = 7
+
+	}
+	focus = {
+		id = ENG_modernizationOfAgricuture
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_stopAgriculturalPolicy
+		}
+		x = 27
+		y = 8
+
+	}
+	focus = {
+		id = ENG_sodierDemocratic
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_noMoreArmies
+		}
+		prerequisite = {
+			focus = ENG_republicInfantryForcesCommeti
+		}
+		x = 17
+		y = 11
+
+	}
+	focus = {
+		id = ENG_PoliticalCommeti
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_republicInfantryForcesCommeti
+		}
+		prerequisite = {
+			focus = ENG_noMoreArmies
+		}
+		x = 19
+		y = 11
+
+	}
+	focus = {
+		id = ENG_restartSodierPay
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_PoliticalCommeti
+		}
+		prerequisite = {
+			focus = ENG_sodierDemocratic
+		}
+		x = 18
+		y = 12
+
+	}
+	focus = {
+		id = ENG_expandEconomicsBudget
+		icon = GFX_ENG_1000
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_peaceButRememberWar
+		}
+		x = 30
+		y = 7
+
+	}
+}

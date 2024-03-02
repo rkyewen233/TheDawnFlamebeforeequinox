@@ -1,0 +1,27 @@
+ideas = {
+    country = {
+
+        NAV_revolution = {
+            name = NAV_revolution_name
+            picture = chi_army_corruption
+            allowed = { always = yes }
+            modifier = {
+                max_command_power = 40
+				command_power_gain_mult = 0.2
+				planning_speed = 0.2
+				max_planning = 0.2
+				army_defence_factor = 0.05
+				army_attack_factor = 0.05
+                conscription = 0.1
+            }
+        }
+        IBE_5_factory = {
+            name = IBE_5_factory_name
+            picture = fra_market_dynamism
+            allowed = { always = yes }
+            modifier = {
+                consumer_goods_factor = 0.05
+            }
+        }
+    }
+}

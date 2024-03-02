@@ -1,0 +1,33 @@
+add_namespace = Dawn_event_nav
+country_event = {
+    id = Dawn_event_nav.1
+    picture = GFX_report_event_generic_italian_fascists
+    title = Dawn_event_nav.1.t
+    desc = Dawn_event_nav.1.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = Dawn_event_nav.1.a
+        custom_effect_tooltip = FRA_tooltip_1_tt
+        add_equipment_to_stockpile = {
+            type = artillery_equipment
+            amount = 2000
+            producer = SPR
+        }
+        add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = 12000
+            producer = SPR
+        }
+        add_equipment_to_stockpile = {
+            type = motorized_equipment
+            amount = 2000
+            producer = SPR
+        }
+        add_equipment_to_stockpile = {
+            type = support_equipment
+            amount = 2000
+            producer = SPR
+        }
+    }
+}

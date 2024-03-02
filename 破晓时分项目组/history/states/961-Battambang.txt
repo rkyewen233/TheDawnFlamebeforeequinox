@@ -1,0 +1,22 @@
+state={
+	id=961
+	name="STATE_961"
+	history={
+		add_core_of = CAM
+		owner = F11
+		add_core_of = F11
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			4251 1 
+		}
+	}
+	provinces={
+		1353 4251 4302 4359 10134 10177 10467 12191 12460 
+	}
+	manpower=2622500
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

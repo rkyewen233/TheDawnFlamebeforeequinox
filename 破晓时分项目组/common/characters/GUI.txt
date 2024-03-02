@@ -1,0 +1,16 @@
+characters={
+	GUI_Wang_Jia_Lie = {
+		name = GUI_Wang_Jia_Lie
+		portraits={
+			civilian={
+				large = "gfx/leaders/GUI/GUI_Wang_Jia_Lie.png"
+			}
+		}
+		country_leader={
+			ideology = paternalistic_conservatism
+			traits = { warrior_code }
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

@@ -1,0 +1,103 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "国家保卫军团" 		# Used for both regular infantry divisions and larger garrison divisions
+	division_names_group = SPR_INF_01
+	# Note: Spanish divisions were 2x brigades of 2x2 rgts each, + support
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 1 }   # Eng Bn
+	}
+}
+
+division_template = {
+	name = "实验型摩托化军团" 		# Used for both regular infantry divisions and larger garrison divisions
+	division_names_group = SPR_INF_01
+	# Note: Spanish divisions were 2x brigades of 2x2 rgts each, + support
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 0 y = 4 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+		motorized = { x = 1 y = 4 }
+	}
+	support = {
+		engineer = { x = 0 y = 1 }   # Eng Bn
+	}
+}
+
+units = {
+	division = { # "1a División de Infantería"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3938  # Madrid
+		division_template = "实验型摩托化军团"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = { # "1a División de Infantería"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3938  # Madrid
+		division_template = "实验型摩托化军团"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = { # "1a División de Infantería"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3938  # Madrid
+		division_template = "国家保卫军团"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+	}		
+	division = { # "1a División de Infantería"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3938  # Madrid
+		division_template = "国家保卫军团"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+	}		
+	division = { # "1a División de Infantería"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3938  # Madrid
+		division_template = "国家保卫军团"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+	}
+	division = { # "1a División de Infantería"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3938  # Madrid
+		division_template = "国家保卫军团"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+	}
+}

@@ -1,0 +1,561 @@
+ideas = {
+	country = {
+
+		ITA_democraticPrimeMinister = {
+			name = ITA_democraticPrimeMinister_name
+
+            picture = ENG_idea_6
+
+            allowed = { always = yes }
+
+            modifier = {
+                stability_factor = 0.05
+            }
+
+		}
+
+		ITA_democraticPrimeMinister_1 = {
+
+			name = ITA_democraticPrimeMinister_name_1
+
+            picture = ENG_idea_6
+
+            allowed = { always = yes }
+
+            modifier = {
+                stability_factor = 0.1
+				war_support_factor = 0.05
+				consumer_goods_factor = -0.05
+            }
+
+		}
+
+        ITA_four_years_plam_1 = {
+
+			name = ITA_four_plan
+
+            picture = ENG_idea_16
+
+            allowed = { always = yes }
+
+            modifier = {
+                production_speed_industrial_complex_factor = 0.1
+                stability_factor = 0.05
+            }
+		}
+
+        ITA_four_years_plam_2 = {
+
+			name = ITA_four_plan
+
+            picture = ENG_idea_16
+
+            allowed = { always = yes }
+
+            modifier = {
+                production_speed_industrial_complex_factor = 0.1
+                stability_factor = 0.05
+                industrial_capacity_factory = 0.01
+                industrial_capacity_dockyard = 0.01
+                consumer_goods_factor = 0.01
+                production_factory_efficiency_gain_factor = 0.01
+                production_factory_max_efficiency_factor = 0.01
+            }
+
+		}
+
+        ITA_four_years_plam_3 = {
+
+			name = ITA_four_plan
+
+            picture = ENG_idea_16
+
+            allowed = { always = yes }
+
+            modifier = {
+                production_speed_industrial_complex_factor = 0.1
+                stability_factor = 0.05
+                industrial_capacity_factory = 0.03
+                industrial_capacity_dockyard = 0.03
+                consumer_goods_factor = 0.02
+                production_factory_efficiency_gain_factor = 0.05
+                production_factory_max_efficiency_factor = 0.05
+            }
+
+		}
+
+        ITA_four_years_plam_4 = {
+
+			name = ITA_four_plan
+
+            picture = ENG_idea_16
+
+            allowed = { always = yes }
+
+            modifier = {
+                production_speed_industrial_complex_factor = 0.1
+                stability_factor = 0.05
+                industrial_capacity_factory = 0.05
+                industrial_capacity_dockyard = 0.05
+                consumer_goods_factor = 0.03
+                production_factory_efficiency_gain_factor = 0.07
+                production_factory_max_efficiency_factor = 0.07
+                refit_ic_cost = -0.01
+                refit_speed = 0.01
+            }
+
+		}
+
+        ITA_four_years_plam_5 = {
+
+			name = ITA_four_plan
+
+            picture = ENG_idea_16
+
+            allowed = { always = yes }
+
+            modifier = {
+                production_speed_industrial_complex_factor = 0.12
+                stability_factor = 0.05
+                industrial_capacity_factory = 0.07
+                industrial_capacity_dockyard = 0.07
+                consumer_goods_factor = 0.04
+                production_factory_efficiency_gain_factor = 0.09
+                production_factory_max_efficiency_factor = 0.08
+                refit_ic_cost = -0.03
+                refit_speed = 0.03
+            }
+
+		}
+
+        ITA_four_years_plam_6 = {
+
+			name = ITA_four_plan
+
+            picture = ENG_idea_16
+
+            allowed = { always = yes }
+
+            modifier = {
+                production_speed_industrial_complex_factor = 0.15
+                stability_factor = 0.1
+                industrial_capacity_factory = 0.15
+                industrial_capacity_dockyard = 0.15
+                consumer_goods_factor = 0.05
+                production_factory_efficiency_gain_factor = 0.15
+                production_factory_max_efficiency_factor = 0.1
+                refit_ic_cost = -0.05
+                refit_speed = 0.5
+            }
+
+		}
+
+        ITA_four_years_plan_7 = {
+
+			name = ITA_four_plan_2
+
+            picture = ENG_idea_16
+
+            allowed = { always = yes }
+
+            modifier = {
+                production_speed_industrial_complex_factor = 0.15
+                stability_factor = 0.1
+                industrial_capacity_factory = 0.15
+                industrial_capacity_dockyard = 0.15
+                consumer_goods_factor = 0.05
+                production_factory_efficiency_gain_factor = 0.15
+                production_factory_max_efficiency_factor = 0.1
+                refit_ic_cost = -0.05
+                refit_speed = 0.5
+            }
+
+		}
+
+        ITA_upgrade_producing = {
+
+			name = ITA_upgrade_producing_name
+
+            picture = ENG_idea_11
+
+            allowed = { always = yes }
+
+            modifier = {
+                production_speed_industrial_complex_factor = 0.2
+                industrial_capacity_factory = 0.01
+            }
+
+		}
+
+        ITA_italian_factory = {
+
+			name = ITA_italian_factory_name
+
+            picture = ENG_idea_11
+
+            allowed = { always = yes }
+
+            modifier = {
+                industrial_capacity_factory = 0.05
+            }
+
+		}
+
+        ITA_expansion_factory = {
+
+			name = ITA_expansion_factory_name
+
+            picture = ENG_idea_11
+
+            allowed = { always = yes }
+
+            modifier = {
+                production_speed_industrial_complex_factor = 0.05
+                production_speed_arms_factory_factor = 0.05
+            }
+
+		}
+
+        ITA_10consume = {
+
+			name = ITA_10consume
+
+            picture = unknwon
+
+            allowed = { always = yes }
+
+            modifier = {
+                consumer_goods_factor = 0.1
+            }
+
+		}
+
+        ITA_national_capitalism = {
+
+			name = ITA_national_capitalism_name
+
+            picture = ENG_idea_11
+
+            allowed = { always = yes }
+
+            modifier = {
+                consumer_goods_factor = -0.05
+                economy_cost_factor = -0.1
+                local_building_slots_factor = 0.25
+            }
+
+		}
+
+        ITA_national_capitalism_2 = {
+
+			name = ITA_national_capitalism_name
+
+            picture = ENG_idea_11
+
+            allowed = { always = yes }
+
+            modifier = {
+                consumer_goods_factor = -0.1
+                economy_cost_factor = -0.1
+                local_building_slots_factor = 0.30
+            }
+
+		}
+
+        ITA_newbornLavina_idea = {
+
+			name = ITA_newbornLavina_idea_name
+
+            picture = ENG_idea_11
+
+            allowed = { always = yes }
+
+            modifier = {
+                political_power_factor = 0.2
+            }
+
+		}
+
+        ITA_EnterpriseControlAct_idea = {
+
+			name = 企业控制法案
+
+            picture = ENG_idea_11
+
+            allowed = { always = yes }
+
+            modifier = {
+                local_building_slots_factor = 0.1
+            }
+
+		}
+
+		ITA_mobilized = {
+			name = ITA_mobilized_name
+
+            picture = ENG_idea_11
+
+            allowed = { always = yes }
+
+            modifier = {
+                conscription = 0.05
+            }
+		}
+	}
+    country = { #大萧条相关
+        ITA_XiaoTiao_1 = {
+			name = FRA_eco_disaster_name
+
+            picture = ENG_idea_12
+
+            allowed = { always = yes }
+
+            modifier = {
+                mobilization_laws_cost_factor = 0.2
+                trade_laws_cost_factor = 0.2
+                economy_cost_factor = 0.2
+                political_advisor_cost_factor = 0.2
+                tank_manufacturer_cost_factor = 0.2
+                production_speed_buildings_factor = -0.1
+                stability_factor = -0.1
+                political_power_cost = 0.5
+                line_change_production_efficiency_factor = -0.2
+                industrial_capacity_factory = -0.2
+                industrial_capacity_dockyard = -0.3
+                production_factory_max_efficiency_factor = -0.3
+                production_factory_efficiency_gain_factor = -0.4
+                consumer_goods_factor = 0.1
+            }
+		}
+        ITA_XiaoTiao_2 = {
+			name = FRA_eco_disaster_name
+
+            picture = ENG_idea_12
+
+            allowed = { always = yes }
+
+            modifier = {
+                mobilization_laws_cost_factor = 0.2
+                trade_laws_cost_factor = 0.15
+                economy_cost_factor = 0.1
+                political_advisor_cost_factor = 0.1
+                tank_manufacturer_cost_factor = 0.2
+                production_speed_buildings_factor = -0.05
+                stability_factor = -0.1
+                political_power_cost = 0.4
+                line_change_production_efficiency_factor = -0.15
+                industrial_capacity_factory = -0.2
+                industrial_capacity_dockyard = -0.2
+                production_factory_max_efficiency_factor = -0.25
+                production_factory_efficiency_gain_factor = -0.3
+                consumer_goods_factor = 0.11
+            }
+		}
+        ITA_XiaoTiao_3 = {
+			name = FRA_eco_disaster_name
+
+            picture = ENG_idea_12
+
+            allowed = { always = yes }
+
+            modifier = {
+                mobilization_laws_cost_factor = 0.2
+                trade_laws_cost_factor = 0.15
+                economy_cost_factor = 0.08
+                political_advisor_cost_factor = 0.06
+                tank_manufacturer_cost_factor = 0.15
+                production_speed_buildings_factor = -0.04
+                stability_factor = -0.09
+                political_power_cost = 0.4
+                line_change_production_efficiency_factor = -0.15
+                industrial_capacity_factory = -0.2
+                industrial_capacity_dockyard = -0.15
+                production_factory_max_efficiency_factor = -0.25
+                production_factory_efficiency_gain_factor = -0.3
+                consumer_goods_factor = 0.11
+            }
+		}
+        ITA_XiaoTiao_4 = {
+			name = ITA_eco_disaster_name
+
+            picture = ENG_idea_12
+
+            allowed = { always = yes }
+
+            modifier = {
+                mobilization_laws_cost_factor = 0.1
+                trade_laws_cost_factor = 0.1
+                economy_cost_factor = 0.05
+                political_advisor_cost_factor = 0.05
+                tank_manufacturer_cost_factor = 0.15
+                production_speed_buildings_factor = -0.03
+                stability_factor = -0.05
+                line_change_production_efficiency_factor = -0.15
+                industrial_capacity_factory = -0.15
+                industrial_capacity_dockyard = -0.05
+                production_factory_max_efficiency_factor = -0.2
+                production_factory_efficiency_gain_factor = -0.25
+                consumer_goods_factor = 0.15
+            }
+		}
+        ITA_XiaoTiao_5 = {
+			name = ITA_eco_disaster_name
+
+            picture = ENG_idea_12
+
+            allowed = { always = yes }
+
+            modifier = {
+                mobilization_laws_cost_factor = 0.05
+                trade_laws_cost_factor = 0.05
+                tank_manufacturer_cost_factor = 0.1
+                line_change_production_efficiency_factor = -0.1
+                industrial_capacity_factory = -0.1
+                production_factory_max_efficiency_factor = -0.15
+                production_factory_efficiency_gain_factor = -0.2
+                consumer_goods_factor = 0.1
+            }
+		}
+    }
+    country = { #亏空的企业相关
+        ITA_enterpriss_1 = {
+            name = ITA_enterpriss_name
+
+            picture = ENG_idea_13
+
+            allowed = { always = yes }
+
+            modifier = {
+                line_change_production_efficiency_factor = -0.1
+                industrial_capacity_factory = -0.05
+                industrial_capacity_dockyard = -0.05
+                production_factory_max_efficiency_factor = -0.1
+                production_factory_efficiency_gain_factor = -0.1
+                consumer_goods_factor = 0.05
+            }
+        }
+        ITA_enterpriss_2 = {
+            name = ITA_enterpriss_name_1
+
+            picture = ENG_idea_13
+
+            allowed = { always = yes }
+
+            modifier = {
+                line_change_production_efficiency_factor = -0.05
+                industrial_capacity_factory = -0.03
+                industrial_capacity_dockyard = -0.03
+                production_factory_max_efficiency_factor = -0.05
+                production_factory_efficiency_gain_factor = -0.05
+                consumer_goods_factor = 0.07
+            }
+        }
+        ITA_enterpriss_3 = {
+            name = ITA_enterpriss_name_1
+
+            picture = ENG_idea_13
+
+            allowed = { always = yes }
+
+            modifier = {
+                industrial_capacity_factory = -0.03
+                industrial_capacity_dockyard = -0.03
+                production_factory_max_efficiency_factor = -0.03
+                production_factory_efficiency_gain_factor = -0.03
+                consumer_goods_factor = 0.05
+            }
+        }
+    }
+    country = { #行政沉疴相关
+        ITA_adm_1 = {
+            name = ITA_adm_name
+
+            picture = ENG_idea_14
+
+            allowed = { always = yes }
+
+            modifier = {
+                political_power_cost = 0.05
+                stability_factor = -0.2
+            }
+        }
+    }
+    country = { #农业社会相关
+        ITA_agricuturalSociety_1 = {
+            name = ITA_agricuturalSociety_name
+
+            picture = ENG_idea_15
+
+            allowed = { always = yes }
+
+            modifier = {
+                consumer_goods_factor = -0.01
+                conscription = -0.03
+                monthly_population = 0.1
+                local_building_slots_factor = -0.5
+                research_speed_factor = -0.1
+                supply_consumption_factor = -0.1
+                industrial_capacity_factory = -0.15
+                industrial_capacity_dockyard = -0.05
+                production_factory_max_efficiency_factor = -0.1
+                production_factory_efficiency_gain_factor = -0.1
+            }
+        }
+        ITA_agricuturalSociety_2 = {
+            name = ITA_agricuturalSociety_name
+
+            picture = ENG_idea_15
+
+            allowed = { always = yes }
+
+            modifier = {
+                conscription = -0.03
+                monthly_population = 0.1
+                local_building_slots_factor = -0.45
+                research_speed_factor = -0.1
+                supply_consumption_factor = -0.1
+                industrial_capacity_factory = -0.13
+                industrial_capacity_dockyard = -0.05
+                production_factory_max_efficiency_factor = -0.08
+                production_factory_efficiency_gain_factor = -0.08
+            }
+        }
+        ITA_agricuturalSociety_l_1 = {
+            name = ITA_agricuturalSociety_name
+
+            picture = ENG_idea_15
+
+            allowed = { always = yes }
+
+            modifier = {
+                conscription = -0.03
+                monthly_population = 0.15
+                local_building_slots_factor = -0.35
+                research_speed_factor = -0.05
+                supply_consumption_factor = -0.1
+                industrial_capacity_factory = -0.13
+                production_factory_max_efficiency_factor = -0.05
+                production_factory_efficiency_gain_factor = -0.05
+            }
+        }
+        ITA_agricuturalSociety_r_1 = {
+            name = ITA_agricuturalSociety_name
+
+            picture = ENG_idea_15
+
+            allowed = { always = yes }
+
+            modifier = {
+                consumer_goods_factor = -0.01
+                conscription = -0.02
+                monthly_population = 0.1
+                local_building_slots_factor = -0.4
+                supply_consumption_factor = -0.1
+                industrial_capacity_factory = -0.13
+                industrial_capacity_dockyard = -0.05
+                production_factory_max_efficiency_factor = -0.08
+                production_factory_efficiency_gain_factor = -0.08
+            }
+        }
+    }
+}

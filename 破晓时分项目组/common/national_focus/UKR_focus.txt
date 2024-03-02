@@ -1,0 +1,2127 @@
+focus_tree = {
+	id = UKR_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = UKR
+		}
+	}
+	default = no
+	focus = {
+		id = UKR_the_great_depression
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 5
+		y = 0
+
+	}
+	focus = {
+		id = UKR_where_are_we_headed
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 18
+		y = 0
+
+	}
+	focus = {
+		id = UKR_Support_for_loyal_intellectuals
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 15
+		y = 4
+
+	}
+	focus = {
+		id = UKR_Allowlaissez_faire_economic_development
+		icon = GFX_goal_unknown
+		cost = 0.00
+		mutually_exclusive = {
+			focus = UKR_The_state_controls_development
+		}
+		x = 13
+		y = 22
+
+	}
+	focus = {
+		id = UKR_The_army_of_the_country
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 37
+		y = 0
+
+	}
+	focus = {
+		id = UKR_abandon_the_gold_standard
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_the_great_depression
+		}
+		x = 2
+		y = 1
+
+	}
+	focus = {
+		id = UKR_shock_therapy
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_abandon_the_gold_standard
+		}
+		x = 1
+		y = 2
+
+	}
+	focus = {
+		id = UKR_supporting_domestic_industries
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_the_great_depression
+		}
+		mutually_exclusive = {
+			focus = UKR_attracting_foreign_investment
+		}
+		x = 4
+		y = 1
+
+	}
+	focus = {
+		id = UKR_lnvestment_subsidies
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_abandon_the_gold_standard
+			focus = UKR_supporting_domestic_industries
+		}
+		x = 3
+		y = 2
+
+	}
+	focus = {
+		id = UKR_attracting_foreign_investment
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_the_great_depression
+		}
+		mutually_exclusive = {
+			focus = UKR_supporting_domestic_industries
+		}
+		x = 6
+		y = 1
+
+	}
+	focus = {
+		id = UKR_rebuild_infrastructure
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_attracting_foreign_investment
+			focus = UKR_supporting_domestic_industries
+		}
+		x = 5
+		y = 2
+
+	}
+	focus = {
+		id = UKR_rebuilding_the_breadbasket_of_Europe
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_the_great_depression
+		}
+		x = 8
+		y = 1
+
+	}
+	focus = {
+		id = UKR_Establishment_of_state_owned_enterprises
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_attracting_foreign_investment
+			focus = UKR_rebuilding_the_breadbasket_of_Europe
+		}
+		mutually_exclusive = {
+			focus = UKR_Full_privatization
+		}
+		x = 7
+		y = 2
+
+	}
+	focus = {
+		id = UKR_Full_privatization
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_rebuilding_the_breadbasket_of_Europe
+		}
+		mutually_exclusive = {
+			focus = UKR_Establishment_of_state_owned_enterprises
+		}
+		x = 9
+		y = 2
+
+	}
+	focus = {
+		id = UKR_rebuilding_the_breadbasket_of_Europe
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_rebuild_infrastructure
+		}
+		prerequisite = {
+			focus = UKR_rebuild_infrastructure
+			focus = UKR_Establishment_of_state_owned_enterprises
+			focus = UKR_Full_privatization
+		}
+		x = 5
+		y = 3
+
+	}
+	focus = {
+		id = UKR_the_dynasty_remains
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_where_are_we_headed
+		}
+		mutually_exclusive = {
+			focus = UKR_The_Great_Uprising_of_the_Whole_Ukraine
+		}
+		x = 13
+		y = 1
+
+	}
+	focus = {
+		id = UKR_reorganize_the_dynastic_parliament
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_the_dynasty_remains
+		}
+		x = 12
+		y = 2
+
+	}
+	focus = {
+		id = UKR_Gradual_resumption_of_production
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_the_dynasty_remains
+		}
+		x = 14
+		y = 2
+
+	}
+	focus = {
+		id = UKR_Establishment_of_a_constitutional_monarchy
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_reorganize_the_dynastic_parliament
+		}
+		prerequisite = {
+			focus = UKR_Gradual_resumption_of_production
+		}
+		x = 13
+		y = 3
+
+	}
+	focus = {
+		id = UKR_Multi_party_politics
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Establishment_of_a_constitutional_monarchy
+		}
+		mutually_exclusive = {
+			focus = UKR_One_party_dominates
+		}
+		x = 11
+		y = 4
+
+	}
+	focus = {
+		id = UKR_Electoral_abyss
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Multi_party_politics
+		}
+		x = 9
+		y = 5
+
+	}
+	focus = {
+		id = UKR_One_party_dominates
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Establishment_of_a_constitutional_monarchy
+		}
+		mutually_exclusive = {
+			focus = UKR_Multi_party_politics
+		}
+		x = 13
+		y = 4
+
+	}
+	focus = {
+		id = UKR_End_political_chaos
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_One_party_dominates
+		}
+		x = 13
+		y = 5
+
+	}
+	focus = {
+		id = UKR_The_world_under_big_capital
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_End_political_chaos
+		}
+		x = 13
+		y = 6
+
+	}
+	focus = {
+		id = UKR_The_agrarian_class_dominated
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Multi_party_politics
+		}
+		x = 11
+		y = 5
+
+	}
+	focus = {
+		id = UKR_Control_of_the_state_mind
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Support_for_loyal_intellectuals
+		}
+		x = 15
+		y = 5
+
+	}
+	focus = {
+		id = UKR_Our_Ukraine
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_The_world_under_big_capital
+		}
+		prerequisite = {
+			focus = UKR_The_agrarian_class_dominated
+		}
+		prerequisite = {
+			focus = UKR_Control_of_the_state_mind
+		}
+		x = 13
+		y = 8
+
+	}
+	focus = {
+		id = UKR_The_Great_Uprising_of_the_Whole_Ukraine
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_where_are_we_headed
+		}
+		mutually_exclusive = {
+			focus = UKR_the_dynasty_remains
+		}
+		x = 22
+		y = 1
+
+	}
+	focus = {
+		id = UKR_The_Cossack_dynasty_fell
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_The_Great_Uprising_of_the_Whole_Ukraine
+		}
+		mutually_exclusive = {
+			focus = UKR_Kiev_Provisional_Government
+		}
+		x = 21
+		y = 2
+
+	}
+	focus = {
+		id = UKR_We_will_rise_up_and_resist
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_The_Cossack_dynasty_fell
+		}
+		mutually_exclusive = {
+			focus = UKR_The_Pereyaslav_Contract
+		}
+		x = 20
+		y = 3
+
+	}
+	focus = {
+		id = UKR_Rekindle_the_spark
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_We_will_rise_up_and_resist
+		}
+		x = 18
+		y = 4
+
+	}
+	focus = {
+		id = UKR_The_Pereyaslav_Contract
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_The_Cossack_dynasty_fell
+		}
+		mutually_exclusive = {
+			focus = UKR_We_will_rise_up_and_resist
+		}
+		x = 22
+		y = 3
+
+	}
+	focus = {
+		id = UKR_The_Communist_Party_of_Ukraine_came_to_power
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_We_will_rise_up_and_resist
+		}
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = UKR_Fight_against_restorationism
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_The_Communist_Party_of_Ukraine_came_to_power
+		}
+		x = 22
+		y = 5
+
+	}
+	focus = {
+		id = UKR_Comprehensive_agrarian_reform
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_The_Communist_Party_of_Ukraine_came_to_power
+		}
+		x = 20
+		y = 5
+
+	}
+	focus = {
+		id = UKR_Democracy_and_science
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Fight_against_restorationism
+			focus = UKR_Comprehensive_agrarian_reform
+		}
+		x = 22
+		y = 6
+
+	}
+	focus = {
+		id = UKR_Kiev_Provisional_Government
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_The_Great_Uprising_of_the_Whole_Ukraine
+		}
+		mutually_exclusive = {
+			focus = UKR_The_Cossack_dynasty_fell
+		}
+		x = 23
+		y = 2
+
+	}
+	focus = {
+		id = UKR_Centrist
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Kiev_Provisional_Government
+		}
+		x = 24
+		y = 3
+
+	}
+	focus = {
+		id = UKR_Compromise_withcapital
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Centrist
+		}
+		x = 24
+		y = 4
+
+	}
+	focus = {
+		id = UKR_Rebuild_Ukraine
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Centrist
+		}
+		x = 26
+		y = 4
+
+	}
+	focus = {
+		id = UKR_Restrictions_on_land_reform
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Compromise_withcapital
+			focus = UKR_Rebuild_Ukraine
+		}
+		x = 24
+		y = 5
+
+	}
+	focus = {
+		id = UKR_An_agreement_was_reached_with_theCommunist_Party
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Rebuild_Ukraine
+			focus = UKR_Compromise_withcapital
+		}
+		x = 26
+		y = 5
+
+	}
+	focus = {
+		id = UKR_Advocate_political_pragmatism
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_An_agreement_was_reached_with_theCommunist_Party
+		}
+		x = 26
+		y = 6
+
+	}
+	focus = {
+		id = UKR_Fight_against_ultra_revolutionaries
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Rebuild_Ukraine
+		}
+		x = 28
+		y = 5
+
+	}
+	focus = {
+		id = UKR_Reserve_inventory
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_The_army_of_the_country
+		}
+		x = 36
+		y = 1
+
+	}
+	focus = {
+		id = UKR_State_Administration_of_Military_Industry
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_The_army_of_the_country
+		}
+		x = 34
+		y = 1
+
+	}
+	focus = {
+		id = UKR_Motorized_army
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Reserve_inventory
+			focus = UKR_State_Administration_of_Military_Industry
+		}
+		mutually_exclusive = {
+			focus = UKR_Lessons_of_war
+		}
+		x = 33
+		y = 2
+
+	}
+	focus = {
+		id = UKR_Construction_of_military_facilities
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_The_army_of_the_country
+		}
+		x = 37
+		y = 2
+
+	}
+	focus = {
+		id = UKR_Industrial_service_military
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Construction_of_military_facilities
+		}
+		x = 33
+		y = 3
+
+	}
+	focus = {
+		id = UKR_Kyiv_Military_Academy
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Construction_of_military_facilities
+		}
+		x = 37
+		y = 3
+
+	}
+	focus = {
+		id = UKR_German_instructors
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Kyiv_Military_Academy
+		}
+		x = 33
+		y = 4
+
+	}
+	focus = {
+		id = UKR_Ukrainian_Panzer_Army
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_German_instructors
+		}
+		x = 32
+		y = 5
+
+	}
+	focus = {
+		id = UKR_Commission_on_Army_Reform
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Kyiv_Military_Academy
+		}
+		mutually_exclusive = {
+			focus = UKR_Expansion_of_the_General_Staff
+		}
+		x = 36
+		y = 4
+
+	}
+	focus = {
+		id = UKR_Kharkov_Design_Bureau
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Commission_on_Army_Reform
+		}
+		x = 34
+		y = 5
+
+	}
+	focus = {
+		id = UKR_For_the_Motherland
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Kharkov_Design_Bureau
+		}
+		x = 34
+		y = 6
+
+	}
+	focus = {
+		id = UKR_Lessons_of_war
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Reserve_inventory
+			focus = UKR_State_Administration_of_Military_Industry
+		}
+		mutually_exclusive = {
+			focus = UKR_Motorized_army
+		}
+		x = 35
+		y = 2
+
+	}
+	focus = {
+		id = UKR_Military_railway_network
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Construction_of_military_facilities
+		}
+		x = 35
+		y = 3
+
+	}
+	focus = {
+		id = UKR_Eliminate_internal_silos
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Commission_on_Army_Reform
+		}
+		x = 36
+		y = 5
+
+	}
+	focus = {
+		id = UKR_Project_East_Wall
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_The_army_of_the_country
+		}
+		x = 38
+		y = 1
+
+	}
+	focus = {
+		id = UKR_Expansion_of_the_General_Staff
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Kyiv_Military_Academy
+		}
+		mutually_exclusive = {
+			focus = UKR_Commission_on_Army_Reform
+		}
+		x = 38
+		y = 4
+
+	}
+	focus = {
+		id = UKR_Department_of_Tactical_Research
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Expansion_of_the_General_Staff
+		}
+		x = 38
+		y = 5
+
+	}
+	focus = {
+		id = UKR_Young_officer
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Expansion_of_the_General_Staff
+		}
+		x = 40
+		y = 5
+
+	}
+	focus = {
+		id = UKR_Resistance_Battle
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Young_officer
+			focus = UKR_Department_of_Tactical_Research
+		}
+		x = 39
+		y = 6
+
+	}
+	focus = {
+		id = UKR_The_state_controls_the_military
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Resistance_Battle
+		}
+		mutually_exclusive = {
+			focus = UKR_Revolutionary_war
+		}
+		x = 38
+		y = 7
+
+	}
+	focus = {
+		id = UKR_Army_Internal_Review
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_The_state_controls_the_military
+		}
+		x = 37
+		y = 8
+
+	}
+	focus = {
+		id = UKR_Revolutionary_war
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Resistance_Battle
+		}
+		mutually_exclusive = {
+			focus = UKR_The_state_controls_the_military
+		}
+		x = 40
+		y = 7
+
+	}
+	focus = {
+		id = UKR_All_plants_and_trees_are_soldiers
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_The_state_controls_the_military
+			focus = UKR_Revolutionary_war
+		}
+		x = 39
+		y = 8
+
+	}
+	focus = {
+		id = UKR_Promotion_of_radical_officers
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Revolutionary_war
+		}
+		x = 41
+		y = 8
+
+	}
+	focus = {
+		id = UKR_Will_and_fanaticism
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_All_plants_and_trees_are_soldiers
+		}
+		prerequisite = {
+			focus = UKR_Promotion_of_radical_officers
+		}
+		x = 40
+		y = 9
+
+	}
+	focus = {
+		id = UKR_Separate_Air_Force
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_The_army_of_the_country
+		}
+		x = 43
+		y = 1
+
+	}
+	focus = {
+		id = UKR_Aircraft_factories
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Separate_Air_Force
+		}
+		x = 41
+		y = 2
+
+	}
+	focus = {
+		id = UKR_Adviser_to_the_Russian_army
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Kyiv_Military_Academy
+		}
+		x = 41
+		y = 4
+
+	}
+	focus = {
+		id = UKR_Air_Force_Military_Academy
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Separate_Air_Force
+		}
+		x = 43
+		y = 2
+
+	}
+	focus = {
+		id = UKR_Defend_the_skies
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Air_Force_Military_Academy
+		}
+		mutually_exclusive = {
+			focus = UKR_Death_descends_from_heaven
+		}
+		x = 42
+		y = 3
+
+	}
+	focus = {
+		id = UKR_Breakthrough_artillery_corps
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Adviser_to_the_Russian_army
+		}
+		x = 42
+		y = 5
+
+	}
+	focus = {
+		id = UKR_Death_descends_from_heaven
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Air_Force_Military_Academy
+		}
+		mutually_exclusive = {
+			focus = UKR_Defend_the_skies
+		}
+		x = 44
+		y = 3
+
+	}
+	focus = {
+		id = UKR_Long_range_bombers
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Defend_the_skies
+			focus = UKR_Death_descends_from_heaven
+		}
+		x = 43
+		y = 4
+
+	}
+	focus = {
+		id = UKR_Air_defense_facilities
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Separate_Air_Force
+		}
+		x = 45
+		y = 2
+
+	}
+	focus = {
+		id = UKR_National_Fleet_of_Ukraine
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_The_army_of_the_country
+		}
+		x = 49
+		y = 1
+
+	}
+	focus = {
+		id = UKR_marine_corps
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_National_Fleet_of_Ukraine
+		}
+		x = 47
+		y = 2
+
+	}
+	focus = {
+		id = UKR_Nikolaev_Shipyard
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_National_Fleet_of_Ukraine
+		}
+		x = 49
+		y = 2
+
+	}
+	focus = {
+		id = UKR_Focus_on_large_ships
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Nikolaev_Shipyard
+		}
+		mutually_exclusive = {
+			focus = UKR_Focus_on_light_ships
+		}
+		x = 47
+		y = 3
+
+	}
+	focus = {
+		id = UKR_Focus_on_light_ships
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Nikolaev_Shipyard
+		}
+		mutually_exclusive = {
+			focus = UKR_Focus_on_large_ships
+		}
+		x = 49
+		y = 3
+
+	}
+	focus = {
+		id = UKR_Development_of_submarines
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Focus_on_light_ships
+			focus = UKR_Focus_on_large_ships
+		}
+		x = 48
+		y = 4
+
+	}
+	focus = {
+		id = UKR_Odessa_military_port
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_National_Fleet_of_Ukraine
+		}
+		x = 51
+		y = 2
+
+	}
+	focus = {
+		id = UKR_Native_oil
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Odessa_military_port
+		}
+		x = 51
+		y = 3
+
+	}
+	focus = {
+		id = UKR_Great_construction_of_merchant_ships
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Native_oil
+		}
+		x = 51
+		y = 4
+
+	}
+	focus = {
+		id = UKR_Black_Sea_Glory
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Development_of_submarines
+		}
+		prerequisite = {
+			focus = UKR_Great_construction_of_merchant_ships
+		}
+		x = 49
+		y = 5
+
+	}
+	focus = {
+		id = UKR_Third_International_Aid
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_The_Communist_Party_of_Ukraine_came_to_power
+		}
+		x = 18
+		y = 5
+
+	}
+	focus = {
+		id = UKR_Support_for_state_trade_unions
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Fight_against_restorationism
+			focus = UKR_Comprehensive_agrarian_reform
+		}
+		x = 20
+		y = 6
+
+	}
+	focus = {
+		id = UKR_Full_nationalization
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Third_International_Aid
+		}
+		mutually_exclusive = {
+			focus = UKR_Necessary_compromises
+		}
+		x = 18
+		y = 6
+
+	}
+	focus = {
+		id = UKR_Necessary_compromises
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Third_International_Aid
+		}
+		mutually_exclusive = {
+			focus = UKR_Full_nationalization
+		}
+		x = 16
+		y = 6
+
+	}
+	focus = {
+		id = UKR_Industrial_loans
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Necessary_compromises
+		}
+		x = 16
+		y = 7
+
+	}
+	focus = {
+		id = UKR_Industrial_subsidies
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Full_nationalization
+		}
+		x = 18
+		y = 7
+
+	}
+	focus = {
+		id = UKR_Diversification_of_exports
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Full_nationalization
+		}
+		x = 20
+		y = 7
+
+	}
+	focus = {
+		id = UKR_All_the_people_of_Ukraine
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Industrial_loans
+			focus = UKR_Industrial_subsidies
+			focus = UKR_Diversification_of_exports
+			focus = UKR_Advocate_political_pragmatism
+		}
+		x = 21
+		y = 8
+
+	}
+	focus = {
+		id = UKR_Our_brand_new_home
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_All_the_people_of_Ukraine
+			focus = UKR_Our_Ukraine
+		}
+		x = 17
+		y = 9
+
+	}
+	focus = {
+		id = UKR_Reorganize_the_army
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Our_brand_new_home
+		}
+		x = 16
+		y = 10
+
+	}
+	focus = {
+		id = UKR_Suppression_of_reactionaries
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Our_brand_new_home
+		}
+		x = 18
+		y = 10
+
+	}
+	focus = {
+		id = UKR_Ethno_cultural_autonomy
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Reorganize_the_army
+		}
+		x = 15
+		y = 11
+
+	}
+	focus = {
+		id = UKR_been_a_long_road_to_recovery
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Reorganize_the_army
+			focus = UKR_Suppression_of_reactionaries
+		}
+		x = 17
+		y = 11
+
+	}
+	focus = {
+		id = UKR_Build_the_country_in_an_all_round_way
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Suppression_of_reactionaries
+		}
+		x = 19
+		y = 11
+
+	}
+	focus = {
+		id = UKR_The_fate_of_the_Slavic_peoples
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Ethno_cultural_autonomy
+		}
+		mutually_exclusive = {
+			focus = UKR_Embattled_crisis
+		}
+		x = 15
+		y = 12
+
+	}
+	focus = {
+		id = UKR_Embattled_crisis
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Build_the_country_in_an_all_round_way
+		}
+		mutually_exclusive = {
+			focus = UKR_The_fate_of_the_Slavic_peoples
+		}
+		x = 19
+		y = 12
+
+	}
+	focus = {
+		id = UKR_Radicals_are_in_power
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_The_fate_of_the_Slavic_peoples
+		}
+		x = 15
+		y = 13
+
+	}
+	focus = {
+		id = UKR_Conservatism_prevails
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Embattled_crisis
+		}
+		x = 19
+		y = 13
+
+	}
+	focus = {
+		id = UKR_Reconquest_of_Crimea
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_The_fate_of_the_Slavic_peoples
+			focus = UKR_Embattled_crisis
+		}
+		x = 17
+		y = 13
+
+	}
+	focus = {
+		id = UKR_The_New_Industrial_Revolution
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Reconquest_of_Crimea
+		}
+		x = 17
+		y = 14
+
+	}
+	focus = {
+		id = UKR_The_Great_Purge_of_the_Army
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Radicals_are_in_power
+		}
+		x = 15
+		y = 14
+
+	}
+	focus = {
+		id = UKR_The_battle_willbe_won
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Radicals_are_in_power
+		}
+		x = 12
+		y = 14
+
+	}
+	focus = {
+		id = UKR_General_Staff_of_the_Ukrainian_Army
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_The_Great_Purge_of_the_Army
+		}
+		x = 16
+		y = 15
+
+	}
+	focus = {
+		id = UKR_State_investment_in_the_military_industry
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_The_Great_Purge_of_the_Army
+			focus = UKR_The_battle_willbe_won
+		}
+		x = 14
+		y = 15
+
+	}
+	focus = {
+		id = UKR_Expansion_into_Romania
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_The_battle_willbe_won
+		}
+		x = 12
+		y = 15
+
+	}
+	focus = {
+		id = UKR_The_fate_of_Romania
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Expansion_into_Romania
+		}
+		x = 12
+		y = 16
+
+	}
+	focus = {
+		id = UKR_Radical_style
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Radicals_are_in_power
+		}
+		x = 9
+		y = 14
+
+	}
+	focus = {
+		id = UKR_Acquisition_of_foreign_capital
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Radical_style
+		}
+		x = 10
+		y = 15
+
+	}
+	focus = {
+		id = UKR_Nationalization_of_foreign_funded_minerals
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Radical_style
+		}
+		x = 8
+		y = 15
+
+	}
+	focus = {
+		id = UKR_Merger_of_monopolies
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Nationalization_of_foreign_funded_minerals
+		}
+		x = 8
+		y = 16
+
+	}
+	focus = {
+		id = UKR_Propaganda_of_the_idea_of_war
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Acquisition_of_foreign_capital
+		}
+		x = 10
+		y = 16
+
+	}
+	focus = {
+		id = UKR_Prosperity_under_state_control
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Merger_of_monopolies
+			focus = UKR_Propaganda_of_the_idea_of_war
+		}
+		x = 9
+		y = 17
+
+	}
+	focus = {
+		id = UKR_Everything_is_in_the_service_of_war
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Prosperity_under_state_control
+		}
+		x = 9
+		y = 18
+
+	}
+	focus = {
+		id = UKR_Beware_of_a_Polish_attack
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_General_Staff_of_the_Ukrainian_Army
+		}
+		x = 16
+		y = 16
+
+	}
+	focus = {
+		id = UKR_Woo_Germany
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_State_investment_in_the_military_industry
+			focus = UKR_General_Staff_of_the_Ukrainian_Army
+			focus = UKR_Expansion_into_Romania
+		}
+		x = 14
+		y = 16
+
+	}
+	focus = {
+		id = UKR_Affects_the_Balkans
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_The_fate_of_Romania
+		}
+		prerequisite = {
+			focus = UKR_Woo_Germany
+		}
+		prerequisite = {
+			focus = UKR_Beware_of_a_Polish_attack
+		}
+		x = 13
+		y = 17
+
+	}
+	focus = {
+		id = UKR_Affect_the_Caucasus
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Beware_of_a_Polish_attack
+		}
+		prerequisite = {
+			focus = UKR_Woo_Germany
+		}
+		prerequisite = {
+			focus = UKR_The_fate_of_Romania
+		}
+		x = 15
+		y = 17
+
+	}
+	focus = {
+		id = UKR_Liberation_of_all_Slavs
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Affect_the_Caucasus
+		}
+		prerequisite = {
+			focus = UKR_Affects_the_Balkans
+		}
+		x = 14
+		y = 18
+
+	}
+	focus = {
+		id = UKR_Contact_with_the_top_echelons_of_the_military
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Conservatism_prevails
+		}
+		x = 19
+		y = 14
+
+	}
+	focus = {
+		id = UKR_General_mobilization_of_national_defense
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Contact_with_the_top_echelons_of_the_military
+		}
+		x = 18
+		y = 15
+
+	}
+	focus = {
+		id = UKR_Positional_warfare
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Conservatism_prevails
+		}
+		x = 22
+		y = 14
+
+	}
+	focus = {
+		id = UKR_Do_things_conservatively
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Conservatism_prevails
+		}
+		x = 26
+		y = 14
+
+	}
+	focus = {
+		id = UKR_Defend_against_the_Russian_offensive
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Positional_warfare
+			focus = UKR_Contact_with_the_top_echelons_of_the_military
+		}
+		x = 20
+		y = 15
+
+	}
+	focus = {
+		id = UKR_Front_line_supply_center
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Positional_warfare
+		}
+		x = 22
+		y = 15
+
+	}
+	focus = {
+		id = UKR_Build_farmer_communities
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Do_things_conservatively
+		}
+		x = 24
+		y = 15
+
+	}
+	focus = {
+		id = UKR_Nationalization_was_carried_out_steadily
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Do_things_conservatively
+		}
+		x = 26
+		y = 15
+
+	}
+	focus = {
+		id = UKR_Unity_is_strength
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Do_things_conservatively
+		}
+		x = 28
+		y = 15
+
+	}
+	focus = {
+		id = UKR_Alliance_with_Romania
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_General_mobilization_of_national_defense
+		}
+		x = 18
+		y = 16
+
+	}
+	focus = {
+		id = UKR_Construction_of_positional_defenses
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Front_line_supply_center
+			focus = UKR_Defend_against_the_Russian_offensive
+		}
+		x = 20
+		y = 16
+
+	}
+	focus = {
+		id = UKR_Sapper_support
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Front_line_supply_center
+		}
+		x = 22
+		y = 16
+
+	}
+	focus = {
+		id = UKR_Workers_rights
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Build_farmer_communities
+		}
+		x = 24
+		y = 16
+
+	}
+	focus = {
+		id = UKR_Consolidation_of_state_rule
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Nationalization_was_carried_out_steadily
+			focus = UKR_Build_farmer_communities
+			focus = UKR_Unity_is_strength
+		}
+		x = 26
+		y = 16
+
+	}
+	focus = {
+		id = UK_Invest_in_industrial_development
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Unity_is_strength
+		}
+		x = 28
+		y = 16
+
+	}
+	focus = {
+		id = UKR_Labor_led
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Workers_rights
+		}
+		mutually_exclusive = {
+			focus = UKR_State_control
+		}
+		x = 24
+		y = 17
+
+	}
+	focus = {
+		id = UKR_State_control
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Workers_rights
+			focus = UKR_Consolidation_of_state_rule
+		}
+		mutually_exclusive = {
+			focus = UKR_Labor_led
+		}
+		x = 26
+		y = 17
+
+	}
+	focus = {
+		id = UKR_Justice_for_the_people
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Labor_led
+			focus = UKR_State_control
+		}
+		x = 24
+		y = 18
+
+	}
+	focus = {
+		id = UKR_Ethnic_harmony_coexists
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_State_control
+			focus = UKR_Labor_led
+		}
+		x = 26
+		y = 18
+
+	}
+	focus = {
+		id = UKR_Gradual_dismantling_of_exploitation
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Ethnic_harmony_coexists
+		}
+		prerequisite = {
+			focus = UKR_Justice_for_the_people
+		}
+		x = 25
+		y = 19
+
+	}
+	focus = {
+		id = UKR_Not_an_inch_of_land
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Alliance_with_Romania
+			focus = UKR_Construction_of_positional_defenses
+			focus = UKR_Sapper_support
+		}
+		x = 20
+		y = 17
+
+	}
+	focus = {
+		id = UKR_The_triumph_of_the_national_revolution
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Not_an_inch_of_land
+			focus = UKR_Gradual_dismantling_of_exploitation
+			focus = UKR_Liberation_of_all_Slavs
+			focus = UKR_Everything_is_in_the_service_of_war
+		}
+		x = 17
+		y = 20
+
+	}
+	focus = {
+		id = UKR_Mobilize_the_national_spirit
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_The_triumph_of_the_national_revolution
+		}
+		x = 17
+		y = 21
+
+	}
+	focus = {
+		id = UKR_Eliminate_the_original_ideological_curse
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_The_triumph_of_the_national_revolution
+		}
+		x = 19
+		y = 21
+
+	}
+	focus = {
+		id = UKR_Transcendent_class
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Mobilize_the_national_spirit
+		}
+		x = 17
+		y = 22
+
+	}
+	focus = {
+		id = UKR_Detached_from_political_parties
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Eliminate_the_original_ideological_curse
+		}
+		x = 19
+		y = 22
+
+	}
+	focus = {
+		id = UKR_The_National_Convention_is_convened
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Transcendent_class
+		}
+		prerequisite = {
+			focus = UKR_Detached_from_political_parties
+		}
+		x = 18
+		y = 23
+
+	}
+	focus = {
+		id = UKR_Eliminate_economic_constraints
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_The_triumph_of_the_national_revolution
+		}
+		x = 15
+		y = 21
+
+	}
+	focus = {
+		id = UKR_The_state_controls_development
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Eliminate_economic_constraints
+		}
+		mutually_exclusive = {
+			focus = UKR_Allowlaissez_faire_economic_development
+		}
+		x = 15
+		y = 22
+
+	}
+	focus = {
+		id = UKR_Destiny_of_Ukraine
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_The_National_Convention_is_convened
+		}
+		x = 18
+		y = 24
+
+	}
+	focus = {
+		id = UKR_All_for_the_sake_of_the_country
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_The_National_Convention_is_convened
+		}
+		x = 20
+		y = 24
+
+	}
+	focus = {
+		id = UKR_Social_coordination
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_The_National_Convention_is_convened
+		}
+		x = 22
+		y = 24
+
+	}
+	focus = {
+		id = UKR_Ukraine_above_all_else
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_All_for_the_sake_of_the_country
+		}
+		x = 20
+		y = 25
+
+	}
+	focus = {
+		id = UKR_Cultivate_a_creative_spirit
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Social_coordination
+		}
+		x = 22
+		y = 25
+
+	}
+	focus = {
+		id = UKR_Give_back_to_the_farmers
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_The_National_Convention_is_convened
+		}
+		x = 16
+		y = 24
+
+	}
+	focus = {
+		id = UKR_Exploitation_is_completely_eradicated
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_The_state_controls_development
+			focus = UKR_Allowlaissez_faire_economic_development
+		}
+		x = 14
+		y = 24
+
+	}
+	focus = {
+		id = UKR_Organic_economy
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Exploitation_is_completely_eradicated
+		}
+		x = 14
+		y = 25
+
+	}
+	focus = {
+		id = UKR_Recast_the_goal_of_labor_spirit
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Give_back_to_the_farmers
+			focus = UKR_Exploitation_is_completely_eradicated
+		}
+		x = 16
+		y = 25
+
+	}
+	focus = {
+		id = UKR_The_immortal_consciousness_of_the_Ukrainian_nation
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Ukraine_above_all_else
+		}
+		prerequisite = {
+			focus = UKR_Cultivate_a_creative_spirit
+		}
+		prerequisite = {
+			focus = UKR_Recast_the_goal_of_labor_spirit
+		}
+		prerequisite = {
+			focus = UKR_Organic_economy
+		}
+		prerequisite = {
+			focus = UKR_Destiny_of_Ukraine
+		}
+		x = 18
+		y = 26
+
+	}
+	focus = {
+		id = UKR_Motorized_offensive
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Kharkov_Design_Bureau
+		}
+		x = 32
+		y = 6
+
+	}
+	focus = {
+		id = UKR_Warriors_of_Ukraine
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Motorized_offensive
+		}
+		mutually_exclusive = {
+			focus = UKR_Survival_is_here_and_now
+		}
+		x = 32
+		y = 7
+
+	}
+	focus = {
+		id = UKR_Survival_is_here_and_now
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Motorized_offensive
+		}
+		mutually_exclusive = {
+			focus = UKR_Warriors_of_Ukraine
+		}
+		x = 30
+		y = 7
+
+	}
+	focus = {
+		id = UKR_National_mobilization
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Survival_is_here_and_now
+		}
+		x = 30
+		y = 8
+
+	}
+	focus = {
+		id = UKR_Air_Force_Reorganization
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Survival_is_here_and_now
+		}
+		x = 28
+		y = 8
+
+	}
+	focus = {
+		id = UKR_Cross_class_cooperation
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Warriors_of_Ukraine
+		}
+		x = 32
+		y = 8
+
+	}
+	focus = {
+		id = UKR_Maneuver_Doctrine
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Warriors_of_Ukraine
+		}
+		x = 34
+		y = 8
+
+	}
+	focus = {
+		id = UKR_Merit_and_sacrifice
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Air_Force_Reorganization
+		}
+		prerequisite = {
+			focus = UKR_National_mobilization
+		}
+		x = 30
+		y = 9
+
+	}
+	focus = {
+		id = UKR_Courage_and_victory
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Cross_class_cooperation
+		}
+		prerequisite = {
+			focus = UKR_Maneuver_Doctrine
+		}
+		x = 32
+		y = 9
+
+	}
+	focus = {
+		id = UKR_Glory_and_freedom
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_Army_Internal_Review
+		}
+		prerequisite = {
+			focus = UKR_All_plants_and_trees_are_soldiers
+		}
+		x = 38
+		y = 9
+
+	}
+	focus = {
+		id = UKR_Crimean_fortress
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = UKR_National_Fleet_of_Ukraine
+		}
+		x = 53
+		y = 2
+
+	}
+}

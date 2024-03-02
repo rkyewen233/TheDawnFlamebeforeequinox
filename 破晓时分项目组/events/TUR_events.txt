@@ -1,0 +1,82 @@
+add_namespace = Dawn_event_tur
+country_event = {
+    id = Dawn_event_tur.1
+    picture = GFX_report_event_generic_italian_fascists
+    title = Dawn_event_tur.1.t
+    desc = Dawn_event_tur.1.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = Dawn_event_tur.1.a
+    }
+}
+country_event = {
+    id = Dawn_event_tur.2
+    picture = GFX_report_event_generic_italian_fascists
+    title = Dawn_event_tur.2.t
+    desc = Dawn_event_tur.2.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = Dawn_event_tur.2.a
+    }
+}
+country_event = {
+    id = Dawn_event_tur.3
+    picture = GFX_report_event_generic_italian_fascists
+    title = Dawn_event_tur.3.t
+    desc = Dawn_event_tur.3.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = Dawn_event_tur.3.a
+    }
+}
+
+country_event = {
+    id = Dawn_event_tur.4
+    picture = GFX_report_event_generic_italian_fascists
+    title = Dawn_event_tur.4.t
+    desc = Dawn_event_tur.4.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = Dawn_event_tur.4.a
+    }
+}
+
+country_event = {
+    id = Dawn_event_tur.5
+    picture = GFX_report_event_generic_italian_fascists
+    title = Dawn_event_tur.5.t
+    desc = Dawn_event_tur.5.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = Dawn_event_tur.5.a
+    }
+}
+
+country_event = {
+    id = Dawn_event_tur.6
+    picture = GFX_report_event_generic_italian_fascists
+    title = Dawn_event_tur.6.t
+    desc = Dawn_event_tur.6.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = Dawn_event_tur.6.a
+    }
+}
+
+country_event = {
+    id = Dawn_event_tur.7
+    picture = GFX_report_event_generic_italian_fascists
+    title = Dawn_event_tur.7.t
+    desc = Dawn_event_tur.7.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = Dawn_event_tur.7.a
+    }
+}

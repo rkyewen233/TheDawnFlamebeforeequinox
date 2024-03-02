@@ -1,0 +1,614 @@
+ideas = {
+    country = {
+        ENG_from_1928 = {
+            name = ENG_from_1928_name
+            picture = ENG_idea_21
+            allowed = { always = yes }
+            modifier = {
+                custom_modifier_tooltip = ENG_from_1928.tt
+                production_speed_buildings_factor = -0.5
+                stability_factor = -0.3
+                political_power_cost = 0.5
+                line_change_production_efficiency_factor = -0.2
+                industrial_capacity_factory = -0.2
+                industrial_capacity_dockyard = -0.2
+                production_factory_max_efficiency_factor = -0.3
+                production_factory_efficiency_gain_factor = -0.3
+                consumer_goods_factor = 0.5
+            }
+        }
+    }
+    country = {
+        ENG_treaty_of_cornwell = {
+            name = "康沃尔条约"
+            picture = ENG_idea_20
+            allowed = { always = yes }
+            modifier = {
+                custom_modifier_tooltip = ENG_treaty_of_cornwell.tt
+            }
+        }
+    }
+    country = {
+
+        ENG_economics_supervise = {
+            name = ENG_economics_supervise_name
+            picture = ENG_idea_3
+            allowed = { always = yes }
+            modifier = {
+                production_factory_max_efficiency_factor = 0.1
+                stability_factor = -0.2
+                consumer_goods_factor = -0.1
+                production_speed_buildings_factor = 0.15
+                political_power_cost = 1
+                conscription = -0.02
+                mobilization_speed = -0.1
+                attrition = -0.05
+                non_core_manpower = 0.05
+                min_export = -0.5
+                army_defence_factor = -0.05
+            }
+        }
+        ENG_economics_supervise_1 = {
+            name = ENG_economics_supervise_name
+            picture = ENG_idea_3
+            allowed = { always = yes }
+            modifier = {
+                production_factory_max_efficiency_factor = 0.1
+                consumer_goods_factor = -0.05
+                production_speed_buildings_factor = 0.1
+                political_power_cost = 1
+                conscription = -0.01
+                mobilization_speed = -0.1
+                attrition = -0.05
+            }
+        }
+        ENG_economics_supervise_2 = {
+            name = ENG_economics_supervise_name
+            picture = ENG_idea_3
+            allowed = { always = yes }
+            modifier = {
+                production_factory_max_efficiency_factor = 0.05
+                consumer_goods_factor = -0.1
+                production_speed_buildings_factor = 0.15
+                political_power_cost = 0.5
+                conscription = -0.01
+                mobilization_speed = -0.1
+                attrition = -0.05
+            }
+        }
+    }
+    country = {
+        ENG_rationing_system = {
+            name = ENG_rationing_system_name
+            picture = ENG_idea_3
+            allowed = { always = yes }
+            modifier = {
+                production_factory_max_efficiency_factor = 0.1
+                stability_factor = -0.1
+                conscription = -0.01
+                non_core_manpower = 0.05
+            }
+        }
+        ENG_rationing_system_1 = {
+            name = ENG_rationing_system_name
+            picture = ENG_idea_3
+            allowed = { always = yes }
+            modifier = {
+                production_factory_max_efficiency_factor = 0.05
+                non_core_manpower = 0.01
+            }
+        }
+        ENG_rationing_system_2 = {
+            name = ENG_rationing_system_name_2
+            picture = ENG_idea_3
+            allowed = { always = yes }
+            modifier = {
+                production_factory_max_efficiency_factor = 0.15
+                stability_factor = 0.05
+                war_support_factor = -0.05
+                political_power_factor = 0.20
+            }
+        }
+        ENG_rationing_system_3 = {
+            name = ENG_rationing_system_name_2
+            picture = ENG_idea_3
+            allowed = { always = yes }
+            modifier = {
+                production_factory_max_efficiency_factor = 0.20
+                stability_factor = 0.1
+                war_support_factor = -0.05
+                political_power_factor = 0.20
+            }
+        }
+    }
+    country = {
+        ENG_opening = {
+            name = ENG_opening_name
+            picture = ENG_idea_3
+            allowed = { always = yes }
+            modifier = {
+                consumer_goods_factor = -0.05
+                drift_defence_factor = -0.3
+                stability_factor = -0.2
+                production_speed_industrial_complex_factor = 0.1
+                production_speed_buildings_factor = 0.1
+                local_building_slots_factor = 0.2
+                stability_weekly = 0.01
+            }
+        }
+        ENG_opening_1 = {
+            name = ENG_opening_name
+            picture = ENG_idea_3
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.1
+                production_speed_industrial_complex_factor = 0.15
+                production_speed_buildings_factor = 0.15
+                local_building_slots_factor = 0.2
+                stability_weekly = 0.01
+                production_speed_infrastructure_factor = 0.1
+                production_speed_rail_way_factor = 0.05
+                industrial_concern_cost_factor = -0.1
+            }
+            targeted_modifier = {
+                tag = FRA
+                attack_bonus_against = 0.05
+                defense_bonus_against = 0.05
+            }
+        }
+    }
+    country = {
+        ENG_remove_nationalism_4 = {
+            name = ENG_remove_nationalism_4_name
+            picture = ENG_idea_2
+            allowed = { always = yes }
+            modifier = {
+                nationalism_4_drift = -0.10
+            }
+        }
+    }
+    country = {
+        ENG_global_trade = {
+            name = ENG_remove_nationalism_4_name
+            picture = ENG_idea_2
+            allowed = { always = yes }
+            modifier = {
+                consumer_goods_factor = -0.05
+                stability_factor = -0.1
+                production_speed_rail_way_factor = 0.05
+                industrial_concern_cost_factor = -0.1
+                local_building_slots_factor = 0.2
+            }
+        }
+    }
+    country = {
+        ENG_tech_cooperation_with_germany = {
+            name = ENG_tech_cooperation_with_germany_name
+            picture = ENG_idea_2
+            allowed = { always = yes }
+            modifier = {
+                research_speed_factor = 0.05
+            }
+            equipment_bonus = {
+                medium_tank_equipment = {
+                    build_cost_ic = -0.1
+                    instant = yes
+                }
+                heavy_tank_equipment = {
+                    build_cost_ic = -0.05
+                    instant = yes
+                }
+                light_tank_equipment = {
+                    build_cost_ic = -0.15
+                    instant = yes
+                }
+                modern_tank_equipment = {
+                    build_cost_ic = -0.20
+                    instant = yes
+                }
+            }
+        }
+        ENG_tech_cooperation_with_germany_1 = {
+            name = ENG_tech_cooperation_with_germany_name
+            picture = ENG_idea_2
+            allowed = { always = yes }
+            modifier = {
+                research_speed_factor = 0.1
+            }
+            equipment_bonus = {
+                medium_tank_equipment = {
+                    build_cost_ic = -0.15
+                    instant = yes
+                }
+                heavy_tank_equipment = {
+                    build_cost_ic = -0.15
+                    instant = yes
+                }
+                light_tank_equipment = {
+                    build_cost_ic = -0.15
+                    instant = yes
+                }
+                modern_tank_equipment = {
+                    build_cost_ic = -0.20
+                    instant = yes
+                }
+            }
+        }
+        GER_tech_cooperation_with_britain = {
+            name = ENG_tech_cooperation_with_germany_name
+            picture = ENG_idea_2
+            allowed = { always = yes }
+            modifier = {
+                research_speed_factor = 0.05
+                refit_ic_cost = -0.1
+            }
+            equipment_bonus = {
+                fighter_equipment = {
+                    build_cost_ic = -0.15
+                    instant = yes
+                }
+                CAS_equipment = {
+                    build_cost_ic = -0.20
+                    instant = yes
+                }
+            }
+        }
+    }
+    country = {
+        ENG_SIS_1 = {
+            name = ENG_SIS_name
+            picture = ENG_idea_2
+            allowed = { always = yes }
+            modifier = {
+                civilian_intel_to_others = -30
+                operation_risk = -0.1
+                operative_slot = 2
+                root_out_resistance_effectiveness_factor = 0.3
+                boost_ideology_mission_factor = 0.2
+                intelligence_agency_defense = 0.05
+                intel_from_operatives_factor = 0.05
+                intel_network_gain = 0.1
+                decryption = 1
+            }
+        }
+    }
+    country = {
+        #ENG_industry_develop = { #NATIONAL SPIRIT
+        #    enable = { always = yes }
+
+        #    icon = GFX_idea_unknown
+
+        #    #INITIAL
+        #    production_speed_buildings_factor = ENG_local_building_speed_factor
+        #    local_building_slots_factor = ENG_local_building_slots_factor
+        #    production_speed_arms_factory_factor = ENG_local_building_speed_factor
+        #    production_speed_industrial_complex_factor = ENG_local_building_speed_factor
+        #    production_speed_synthetic_refinery_factor = ENG_local_building_speed_factor
+        #    production_speed_dockyard_factor = ENG_local_building_speed_factor
+        #    production_speed_bunker_factor = ENG_local_building_speed_factor
+        #    production_speed_infrastructure_factor = ENG_local_building_speed_factor
+        #    stability_factor = ENG_stability_factor
+        #    production_speed_rail_way_factor = ENG_local_building_speed_factor
+        #    production_speed_supply_node_factor = ENG_local_building_speed_factor
+        #    industrial_capacity_factory = ENG_industry_production_factor
+        #    line_change_production_efficiency_factor = ENG_industry_production_factor
+        #    production_factory_max_efficiency_factor = ENG_industry_production_factor
+        #    production_factory_efficiency_gain_factor = ENG_industry_production_factor
+        #}
+    }
+    country = {
+        ENG_enfield_factory = {
+            name = ENG_enfield_factory_1_name
+            picture = ENG_idea_2
+            allowed = { always = yes }
+            modifier = {
+                production_speed_arms_factory_factor = 0.1
+                materiel_manufacturer_cost_factor = -0.2
+                breakthrough_factor = 0.1
+                recon_factor = 0.1
+                land_reinforce_rate = 0.01
+                industrial_capacity_factory = 0.1
+                army_infantry_attack_factor = 0.05
+                army_infantry_defence_factor = 0.05
+                army_attack_factor = 0.05
+                ai_desired_divisions_factor = 10000
+            }
+        }
+    }
+    country = {
+        ENG_liberate_women_idea = {
+            name = ENG_liberate_women_idea_name
+            picture = ENG_idea_2
+            allowed = { always = yes }
+            modifier = {
+                research_speed_factor = 0.05
+                production_speed_buildings_factor = 0.05
+                conscription = 0.01
+                conscription_factor = 0.05
+                industrial_capacity_factory = 0.05
+            }
+        }
+    }
+    country = {
+        ENG_ganshezhuyi = {
+            name = "英国干涉主义"
+            picture = ENG_idea_2
+            allowed = { always = yes }
+            modifier = {
+                # can_send_volunteers = yes #赫尔，这东西果然不能上idea
+                send_volunteer_divisions_required = -0.5
+                send_volunteers_tension = -1.00
+                send_volunteer_size = 5
+            }
+        }
+        ENG_national_representative_idea = {
+            name = "民族代表权"
+            picture = ENG_idea_2
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = 0.05
+                conscription = 0.01
+                compliance_growth = 0.2
+                resistance_decay = 0.1
+            }
+        }
+        ENG_army_reformation_in_election = {
+            name = "目的性的军队调整"
+            picture = ENG_idea_2
+            allowed = { always = yes }
+            modifier = {
+                army_org_factor = -0.02
+                army_morale_factor = -0.05
+                max_dig_in = -0.1
+                max_dig_in_factor = -0.2
+            }
+        }
+        ENG_army_conflict = {
+            name = "军官中的冲突"
+            picture = ENG_idea_2
+            allowed = { always = yes }
+            modifier = {
+                army_attack_factor = -0.2
+                army_defence_factor = -0.2
+            }
+        }
+        ENG_educational_reform_preparation = {
+            name = "尚未决定态度的教育改革方案"
+            picture = ENG_idea_22
+            allowed = { always = yes }
+            modifier = {
+                reformist_socialism_1_drift = 0.01
+                classicism_drift = 0.01
+                stability_factor = -0.1
+                war_support_factor = -0.1
+                nationalism_4_drift = 0.01
+                nationalism_3_drift = 0.01
+                communism_drift = 0.01
+                research_speed_factor = -0.1
+            }
+        }
+        ENG_educational_reform_preparation_classicism = {
+            name = "偏向君主制"
+            picture = ENG_idea_22
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = 0.05
+            }
+        }
+        ENG_educational_reform_preparation_socialism = {
+            name = "偏向民主制"
+            picture = ENG_idea_22
+            allowed = { always = yes }
+            modifier = {
+                reformist_socialism_1_drift = 0.01
+                stability_factor = -0.1
+                war_support_factor = -0.1
+                communism_drift = 0.01
+            }
+        }
+        ENG_educational_reform_preparation_socialism_mandate_wisdom = {
+            name = "启民智"
+            picture = ENG_idea_22
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = 0.1
+                war_support_factor = 0.05
+                research_speed_factor = 0.05
+            }
+        }
+        ENG_classicism_publicity = {
+            name = "与生俱来之冠"
+            picture = ENG_idea_22
+            allowed = { always = yes }
+            modifier = {
+                conservatism_drift = 0.01
+                classicism_drift = 0.01
+            }
+        }
+    }
+    country = {
+        ENG_debate_of_laborers_party = {
+            name = "赤旗党之志"
+            picture = ENG_idea_2
+            allowed = { always = yes }
+            modifier = {
+                reformist_socialism_1_drift = 0.01
+            }
+        }
+        ENG_rule_of_laborers_party = {
+            name = "工党治下..."
+            picture = ENG_idea_2
+            allowed = { always = yes }
+            modifier = {
+                min_export = 0.05
+            }
+        }
+        ENG_rule_of_laborers_party_1 = {
+            name = "工党治下..."
+            picture = ENG_idea_2
+            allowed = { always = yes }
+            modifier = {
+                min_export = 0.10
+                local_building_slots_factor = 0.05
+            }
+        }
+        ENG_rule_of_laborers_party_2 = {
+            name = "工党治下..."
+            picture = ENG_idea_2
+            allowed = { always = yes }
+            modifier = {
+                min_export = 0.10
+                local_building_slots_factor = 0.05
+                stability_weekly = 0.001
+                production_speed_arms_factory_factor = -0.1
+                production_speed_industrial_complex_factor = 0.1
+            }
+        }
+        ENG_rule_of_laborers_party_3 = {
+            name = "工党治下..."
+            picture = ENG_idea_2
+            allowed = { always = yes }
+            modifier = {
+                min_export = 0.10
+                local_building_slots_factor = 0.05
+                stability_weekly = 0.001
+                production_speed_arms_factory_factor = -0.10
+                production_speed_industrial_complex_factor = 0.20
+                production_speed_buildings_factor = -0.05
+            }
+        }
+        ENG_rule_of_laborers_party_4 = {
+            name = "工党治下..."
+            picture = ENG_idea_2
+            allowed = { always = yes }
+            modifier = {
+                min_export = 0.15
+                local_building_slots_factor = 0.05
+                stability_weekly = 0.001
+                production_speed_arms_factory_factor = -0.10
+                production_speed_industrial_complex_factor = 0.20
+                production_speed_buildings_factor = -0.05
+                opinion_gain_monthly_factor = 0.05
+                monthly_population = 0.01
+            }
+        }
+        ENG_no_radicalism = {
+            name = "批判激进主义"
+            picture = ENG_idea_2
+            allowed = { always = yes }
+            modifier = {
+                communism_drift = -0.01
+            }
+        }
+        ENG_no_classicism = {
+            name = "王党的瓦解"
+            picture = ENG_idea_2
+            allowed = { always = yes }
+            modifier = {
+                classicism_2_drift = -0.01
+                classicism_1_drift = -0.01
+                classicism_3_drift = -0.01
+            }
+        }
+        ENG_no_absolutism = {
+            name = "丘派王党之殇"
+            picture = ENG_idea_2
+            allowed = { always = yes }
+            modifier = {
+                absolutism_drift = -0.05
+            }
+        }
+        ENG_minzhu_tuoxie = {
+            name = "民主派的妥协"
+            picture = ENG_idea_2
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = 0.05
+                economy_cost_factor = -0.20
+                trade_laws_cost_factor = -0.10
+            }
+        }
+        ENG_the_democratic_union_of_under_controlled = {
+            name = "彻底屈服的民主派"
+            picture = ENG_idea_2
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = 0.1
+                economy_cost_factor = -0.20
+                trade_laws_cost_factor = -0.10
+                research_speed_factor = 0.05
+            }
+        }
+
+    }
+    country = { #经济线
+        ENG_eco_economics_management = {
+            name = ENG_eco_economics_management_name
+            picture = ENG_idea_2
+            allowed = { always = yes }
+            modifier = {
+                consumer_goods_factor = -0.1
+            }
+        }
+        ENG_eco_economics_management_2_1 = {
+            name = ENG_eco_economics_management_name
+            picture = ENG_idea_2
+            allowed = { always = yes }
+            modifier = {
+                consumer_goods_factor = -0.15
+                production_speed_buildings_factor = -0.1
+            }
+        }
+        ENG_eco_economics_management_1_1 = {
+            name = ENG_eco_economics_management_name
+            picture = ENG_idea_2
+            allowed = { always = yes }
+            modifier = {
+                consumer_goods_factor = -0.2
+                stability_factor = -0.05
+                production_factory_efficiency_gain_factor = -0.05
+            }
+        }
+        ENG_eco_economics_management_1_2 = {
+            name = ENG_eco_economics_management_name
+            picture = ENG_idea_2
+            allowed = { always = yes }
+            modifier = {
+                consumer_goods_factor = -0.25
+                production_speed_buildings_factor = -0.1
+                stability_factor = -0.05
+                production_factory_efficiency_gain_factor = -0.05
+            }
+        }
+    }
+    country = {
+        ENG_commonwealth_eng = {
+            name = ENG_commonwealth_eng_name
+            picture = ENG_idea_19
+            allowed = { always = yes }
+            modifier = {
+                faction_trade_opinion_factor = 0.4
+                production_factory_max_efficiency_factor = 0.1
+                production_speed_buildings_factor = 0.05
+            }
+        }
+        ENG_commonwealth = {
+            name = ENG_commonwealth_name
+            picture = ENG_idea_19
+            allowed = { always = yes }
+            modifier = {
+                cic_to_overlord_factor = 0.5
+                faction_trade_opinion_factor = 0.4
+                production_speed_buildings_factor = 0.05
+            }
+        }
+        ENG_commonwealth_cooperator = {
+            name = ENG_commonwealth_cooperator_name
+            picture = ENG_idea_19
+            allowed = { always = yes }
+            modifier = {
+                faction_trade_opinion_factor = 0.4
+            }
+        }
+    }
+}

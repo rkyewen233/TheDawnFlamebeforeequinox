@@ -1,0 +1,28 @@
+
+state={
+	id=597
+	name="STATE_597"
+
+	history={
+		owner = MAN
+		add_core_of = MAN
+		add_core_of = GDG
+		add_core_of = PRC
+		victory_points = {
+			1069 15 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			air_base = 3
+		}
+	}
+
+	provinces={
+		1069 1084 4037 4089 7160 7189 9987 10043 10072 10102 11962 12015 12045 12069 12093 
+	}
+	manpower=38373200
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=4.000
+}

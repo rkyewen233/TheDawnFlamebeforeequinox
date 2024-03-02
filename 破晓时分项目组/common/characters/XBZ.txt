@@ -1,0 +1,16 @@
+characters={
+	XBZ_Zhang_Zhi_Zhong={
+		name = XBZ_Zhang_Zhi_Zhong
+		portraits={
+			civilian={
+				large = "gfx/leaders/XBZ/XBZ_Zhang_Zhi_Zhong.png"
+			}
+		}
+		country_leader={
+			ideology = paternalistic_conservatism
+			traits = { warrior_code }
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

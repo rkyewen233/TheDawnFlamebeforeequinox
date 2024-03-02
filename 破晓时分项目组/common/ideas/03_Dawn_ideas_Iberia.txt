@@ -1,0 +1,57 @@
+ideas = {
+    country = {
+
+        SPR_unstblized_portugal = {
+            name = IBE_unstblized_portugal_name
+            picture = ENG_idea_7
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.05
+                war_support_factor = -0.1
+            }
+        }
+        
+        IBE_weak_army = {
+            name = IBE_weak_army_name
+            picture = chi_war_of_resistance
+            allowed = { always = yes }
+            modifier = {
+                max_command_power = -150
+				command_power_gain_mult = -0.5
+				planning_speed = -0.5
+				max_planning = -0.5
+				army_defence_factor = -0.45
+				army_attack_factor = -0.4
+            }
+        }
+
+        IBE_weak_army_2 = {
+            name = IBE_weak_army_name
+            picture = chi_war_of_resistance
+            allowed = { always = yes }
+            modifier = {
+                max_command_power = -100
+				command_power_gain_mult = -0.3
+				planning_speed = -0.3
+				max_planning = -0.3
+				army_defence_factor = -0.3
+				army_attack_factor = -0.2
+            }
+        }
+
+        IBE_weak_army_3 = {
+            name = IBE_weak_army_name
+            picture = chi_war_of_resistance
+            allowed = { always = yes }
+            modifier = {
+                max_command_power = -50
+				command_power_gain_mult = -0.3
+				planning_speed = -0.3
+				max_planning = -0.2
+				army_defence_factor = -0.2
+				army_attack_factor = -0.15
+            }
+        }
+
+    }
+}

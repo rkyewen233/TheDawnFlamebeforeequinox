@@ -1,0 +1,50 @@
+defined_text = {
+	name = supernews_getpicture
+	text = {
+		trigger = {
+			check_variable = {
+				global.supernews_event_id = 1
+			}
+		}
+		localization_key = GFX_supernews_1
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.supernews_event_id = 2
+			}
+		}
+		localization_key = GFX_supernews_2
+	}
+}
+defined_text = {
+	name = supernews_title
+	
+	text = { trigger = { check_variable = { global.supernews_event_id = 1 } } localization_key = supernews_title_1 }
+	text = { trigger = { check_variable = { global.supernews_event_id = 2 } } localization_key = supernews_title_2 }
+}
+
+defined_text = {
+	name = supernews_desc
+	text = {
+		trigger = {
+			check_variable = {
+				global.supernews_event_id = 1
+			}
+		}
+		localization_key = supernews_desc_1
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.supernews_event_id = 2
+			}
+		}
+		localization_key = supernews_desc_2
+	}
+}
+defined_text = {
+	name = supernews_btn
+	text = { trigger = { check_variable = { global.supernews_event_id = 1 } } localization_key = supernews_btn_1 }
+	text = { trigger = { check_variable = { global.supernews_event_id = 2 } } localization_key = supernews_btn_2 }
+}

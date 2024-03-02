@@ -1,0 +1,1076 @@
+FRA_diplomacy_categories = {
+	remilitalized_rhineland = {
+		cost = 20
+        visible = {
+			original_tag = FRA
+			has_completed_focus = FRA_begain
+        }
+        available = {
+			
+        }
+        fire_only_once = yes
+        days_remove = 30
+        remove_effect = {
+			every_state = {
+				limit = {
+					is_owned_and_controlled_by = F12
+				}
+				set_demilitarized_zone = no
+			}
+			news_event = Dawn_event_news.20
+        }
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	invite_yugaslavia = { #法国专属
+		cost = 0
+        visible = {
+            country_exists = YUG
+			original_tag = FRA
+        }
+        available = {
+			YUG = {
+				exists = yes
+			}
+			OR = {
+				date > 1940.1.1
+				NOT = {
+					country_exists = SER
+				}
+			}
+        }
+        fire_only_once = yes
+        days_remove = 3
+        remove_effect = {
+			FRA = {
+				add_to_faction = YUG
+			}
+			YUG = {
+				annex_country = {
+					target = BOS
+					transfer_troops = yes
+				}
+			}
+			add_political_power = 20
+        }
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	invite_sweden_1 = { #法国专属
+		cost = 0
+        visible = {
+			has_country_flag = FRA_allow_inviting_sweidian
+            country_exists = SWE
+			original_tag = FRA
+        }
+        available = {
+			SWE = {
+				exists = yes
+			}
+        }
+        fire_only_once = yes
+        days_remove = 3
+        remove_effect = {
+			FRA = {
+				add_to_faction = SWE
+			}
+			add_political_power = 20
+        }
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	invite_iberia = { #法国专属
+		cost = 0
+        visible = {
+            country_exists = SPR
+			original_tag = FRA
+        }
+        available = {
+			SPR = {
+				exists = yes
+			}
+			NAV = {
+				exists = no
+			}
+			GLC = {
+				exists = no
+			}
+			CAT = {
+				exists = no
+			}
+			POR = {
+				exists = no
+			}
+        }
+        fire_only_once = yes
+        days_remove = 3
+        remove_effect = {
+			add_to_faction = SPR
+			add_political_power = 20
+        }
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	invite_galicia = { #英国专属
+		cost = 0
+        visible = {
+            country_exists = GLC
+			original_tag = ENG
+        }
+        available = {
+			has_completed_focus = ENG_yinglianbang
+			SPR = {
+				exists = no
+			}
+			NAV = {
+				exists = no
+			}
+			GLC = {
+				exists = yes
+			}
+			CAT = {
+				exists = no
+			}
+			POR = {
+				exists = no
+			}
+        }
+        fire_only_once = yes
+        days_remove = 3
+        remove_effect = {
+			add_to_faction = GLC
+			add_political_power = 20
+        }
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	FRA_declare_war_on_Neitherlands = { #法国专属
+		cost = 0
+        visible = {
+            country_exists = HOL
+			original_tag = FRA
+        }
+        available = {
+			HOL = {
+				exists = yes
+			}
+        }
+        fire_only_once = yes
+        days_remove = 15
+        remove_effect = {
+			declare_war_on = {
+				target = HOL
+				type = annex_everything
+			}
+			add_political_power = 50
+        }
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	FRA_reorganize_cameron = { #法国专属
+		cost = 0
+        visible = {
+            country_exists = FC5
+			country_exists = FC2
+			original_tag = FRA
+        }
+        available = {
+			always = yes
+        }
+        fire_only_once = yes
+        days_remove = 150
+        remove_effect = {
+			FC5 = {
+				annex_country = {
+					target = FC2
+					transfer_troops = yes
+				}
+			}
+			every_state = {
+				limit = {
+					is_owned_and_controlled_by = FC2
+				}
+				add_core_of = FC5
+			}
+        }
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	ITA_teach = { #意大利专属-扩大生产
+		cost = 0
+        visible = {
+            always = yes
+			original_tag = ITA
+        }
+        available = {
+			always = no
+        }
+        fire_only_once = yes
+        days_remove = 0
+        remove_effect = {
+        }
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	ITA_annex_albania = { #意大利专属-吞并阿尔巴尼亚
+		cost = 0
+        visible = {
+            country_exists = ALB
+			original_tag = ITA
+        }
+        available = {
+			ALB = {
+				exists = yes
+			}
+			44 = {
+				NOT = {
+					is_owned_by = ROOT
+				}
+			}
+			805 = {
+				NOT = {
+					is_owned_by = ROOT
+				}
+			}
+        }
+        fire_only_once = yes
+        days_remove = 15
+        remove_effect = {
+			ALB = {
+				country_event = {
+					id = Dawn_event_ita.6
+				}
+			}
+        }
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	ITA_annex_albania = { #意大利专属-吞并阿尔巴尼亚
+		cost = 0
+        visible = {
+            country_exists = ALB
+			original_tag = ITA
+        }
+        available = {
+			ALB = {
+				exists = yes
+			}
+			44 = {
+				NOT = {
+					is_owned_by = ROOT
+				}
+			}
+			805 = {
+				NOT = {
+					is_owned_by = ROOT
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = ITA_tip.8
+				has_completed_focus = ITA_diplomacyBegain
+			}
+        }
+        fire_only_once = yes
+        days_remove = 15
+        remove_effect = {
+			ALB = {
+				country_event = {
+					id = Dawn_event_ita.6
+				}
+			}
+        }
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	ITA_expand_production = { #意大利专属-扩大生产
+		cost = 0
+        visible = {
+            country_exists = ETH
+			original_tag = ITA
+        }
+        available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_tip.8
+				has_completed_focus = ITA_diplomacyBegain
+			}
+        }
+        fire_only_once = yes
+        days_remove = 100
+		modifier = {
+			production_factory_efficiency_gain_factor = 0.2
+			production_factory_max_efficiency_factor = 0.2
+			line_change_production_efficiency_factor = 0.2
+			industrial_capacity_factory = 0.2
+			industrial_capacity_dockyard = 0.2
+		}
+        remove_effect = {
+			country_event = {
+				id = Dawn_event_ita.7
+			}
+			hidden_effect = {
+				set_country_flag = ITA_eth_1
+			}
+        }
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	ITA_mobilized = { #意大利专属-扩大生产
+		cost = 0
+        visible = {
+            country_exists = ETH
+			original_tag = ITA
+			has_country_flag = ITA_eth_1
+        }
+        available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_tip.8
+				has_completed_focus = ITA_diplomacyBegain
+			}
+        }
+        fire_only_once = yes
+        days_remove = 60
+		modifier = {
+			industrial_capacity_factory = 0.3
+		}
+        remove_effect = {
+			add_ideas = ITA_mobilized
+			hidden_effect = {
+				set_country_flag = ITA_eth_2
+			}
+        }
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	ITA_second_ETH_war = { #意大利专属-扩大生产
+		cost = 0
+        visible = {
+            country_exists = ETH
+			original_tag = ITA
+			has_country_flag = ITA_eth_2
+        }
+        available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_tip.8
+				has_completed_focus = ITA_diplomacyBegain
+			}
+        }
+		will_lead_to_war_with = ETH
+        fire_only_once = yes
+        days_remove = 15
+        remove_effect = {
+			declare_war_on = {
+				target = ETH
+				type = annex_everything
+			}
+        }
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	ITA_dip_shown_1 = { #意大利专属-法国外交
+		cost = 0
+        visible = {
+			original_tag = ITA
+			has_country_flag = ITA_diplmacyProcess
+			has_completed_focus = ITA_attackGauls
+			NOT = {
+				has_completed_focus = ITA_fra_3
+			}
+        }
+        available = {
+			always = no
+        }
+	}
+	ITA_dip_shown_2 = { #意大利专属-奥地利外交
+		cost = 0
+        visible = {
+			original_tag = ITA
+			has_country_flag = ITA_diplmacyProcess
+			has_completed_focus = ITA_aus_1
+			NOT = {
+				has_completed_focus = ITA_aus_4
+			}
+        }
+        available = {
+			always = no
+        }
+	}
+	ITA_dip_shown_3 = { #意大利专属-英国外交
+		cost = 0
+        visible = {
+			original_tag = ITA
+			has_country_flag = ITA_diplmacyProcess
+			OR = {
+				AND = {
+					has_completed_focus = ITA_malta_1
+					NOT = {
+						has_completed_focus = ITA_malta_2
+					}
+				}
+				AND = {
+					has_completed_focus = ITA_ciprus_1
+					NOT = {
+						has_completed_focus = ITA_ruleMiddleEast_3
+					}
+				}
+			}
+        }
+		available = {
+			always = no
+        }
+	}
+	ITA_malta = { #意大利专属-英国外交-购买马耳他
+		cost = 40
+        visible = {
+			original_tag = ITA
+			has_country_flag = ITA_diplmacyProcess
+			has_completed_focus = ITA_malta_1
+			NOT = {
+				has_completed_focus = ITA_malta_2
+			}
+        }
+		available = {
+			NOT = {
+				has_war_with = ENG
+			}
+        }
+		fire_only_once = yes
+		days_remove = 50
+		modifier = {
+			civilian_factory_use = 10
+		}
+		remove_effect = {
+			transfer_state = 116
+			add_state_core = 116
+			ENG = {
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	ITA_ciprus = { #意大利专属-英国外交-购买塞浦路斯
+		cost = 40
+        visible = {
+			original_tag = ITA
+			has_country_flag = ITA_diplmacyProcess
+			has_completed_focus = ITA_ciprus_1
+        }
+		available = {
+			NOT = {
+				has_war_with = ENG
+			}
+        }
+		fire_only_once = yes
+		days_remove = 50
+		modifier = {
+			civilian_factory_use = 10
+		}
+		remove_effect = {
+			transfer_state = 183
+			add_state_core = 183
+			ENG = {
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	ITA_bariaria = { #意大利专属-西班牙外交-巴利阿里大会
+		cost = 0
+        visible = {
+			original_tag = ITA
+			has_country_flag = ITA_diplmacyProcess
+			has_completed_focus = ITA_ibe_3
+        }
+		available = {
+			NOT = {
+				has_war_with = SPR
+			}
+        }
+		fire_only_once = yes
+		days_remove = 20
+		remove_effect = {
+			hidden_effect = {
+				set_country_flag = ITA_bariaria
+			}
+		}
+	}
+	ITA_invite_iberia = { #意大利专属-西班牙外交-吞并
+		cost = 0
+        visible = {
+			original_tag = ITA
+			has_country_flag = ITA_diplmacyProcess
+			has_completed_focus = ITA_ibe_4
+        }
+		available = {
+			NOT = {
+				has_war_with = SPR
+			}
+        }
+		fire_only_once = yes
+		days_remove = 5
+		remove_effect = {
+			SPR = {
+				country_event = {
+					id = Dawn_event_ita.8
+				}
+			}
+		}
+	}
+	ITA_attack_ibe = { #意大利专属-进攻伊比利亚
+		cost = 0
+        visible = {
+			original_tag = ITA
+			has_country_flag = ITA_diplmacyProcess
+			has_completed_focus = ITA_ibe_5
+        }
+		available = {
+			
+        }
+		fire_only_once = yes
+		days_remove = 5
+		will_lead_to_war_with = SPR
+		remove_effect = {
+			declare_war_on = {
+				target = SPR
+				type = annex_everything
+			}
+		}
+	}
+	ITA_but_tyriol = { #意大利专属-进攻伊比利亚
+		cost = 0
+        visible = {
+			original_tag = ITA
+			has_completed_focus = ITA_aus_4
+        }
+		available = {
+			NOT = {
+				has_war_with = AUS
+			}
+        }
+		fire_only_once = yes
+		days_remove = 5
+		remove_effect = {
+			transfer_state = 39
+			transfer_state = 850
+		}
+	}
+	ITA_syria = { #意大利专属-法国外交-叙利亚谈判
+		cost = 100
+        visible = {
+			original_tag = ITA
+			has_country_flag = ITA_diplmacyProcess
+			has_completed_focus = ITA_ciprus_1
+        }
+		available = {
+			NOT = {
+				has_war_with = FRA
+			}
+        }
+		fire_only_once = yes
+		days_remove = 50
+		modifier = {
+			
+		}
+		remove_effect = {
+			transfer_state = 799
+			transfer_state = 677
+			transfer_state = 554
+			transfer_state = 553
+			transfer_state = 680
+			hidden_effect = {
+				set_country_flag = ITA_syria_flag
+			}
+		}
+	}
+	ITA_saudi = { #意大利专属-统治中东
+		cost = 0
+        visible = {
+			original_tag = ITA
+			has_completed_focus = ITA_ruleMiddleEast_3
+        }
+		available = {
+			
+        }
+		will_lead_to_war_with = SAU
+		fire_only_once = yes
+		days_remove = 5
+		modifier = {
+			
+		}
+		remove_effect = {
+			declare_war_on = {
+				target = SAU
+				type = annex_everything
+			}
+		}
+	}
+	ITA_yeman = { #意大利专属-统治中东
+		cost = 0
+        visible = {
+			original_tag = ITA
+			has_completed_focus = ITA_ruleMiddleEast_3
+        }
+		available = {
+			
+        }
+		will_lead_to_war_with = YEM
+		fire_only_once = yes
+		days_remove = 5
+		modifier = {
+			
+		}
+		remove_effect = {
+			declare_war_on = {
+				target = YEM
+				type = annex_everything
+			}
+		}
+	}
+	ITA_oman = { #意大利专属-统治中东
+		cost = 0
+        visible = {
+			original_tag = ITA
+			has_completed_focus = ITA_ruleMiddleEast_3
+        }
+		available = {
+			
+        }
+		will_lead_to_war_with = OMA
+		fire_only_once = yes
+		days_remove = 5
+		modifier = {
+			
+		}
+		remove_effect = {
+			declare_war_on = {
+				target = OMA
+				type = annex_everything
+			}
+		}
+	}
+	ITA_dip_shown_4 = { #意大利专属-伊比利亚外交
+		cost = 0
+        visible = {
+			original_tag = ITA
+			has_country_flag = ITA_diplmacyProcess
+			has_completed_focus = ITA_ibe_1
+			NOT = {
+				has_completed_focus = ITA_ibe_6
+			}
+        }
+        available = {
+			always = no
+        }
+	}
+	ITA_dip_shown_5 = { #意大利专属-土耳其外交
+		cost = 0
+        visible = {
+			original_tag = ITA
+			has_country_flag = ITA_diplmacyProcess
+			OR = {
+				has_completed_focus = ITA_inviteTur
+				has_completed_focus = ITA_attack_greek
+			}
+			NOT = {
+				has_completed_focus = ITA_asiaMinor
+			}
+        }
+        available = {
+			always = no
+        }
+	}
+	POL_annexLit = { #波兰专属-吞并立陶宛
+		cost = 0
+        visible = {
+			original_tag = POL
+        }
+		available = {
+			date > 1937.1.1
+        }
+		fire_only_once = yes
+		days_remove = 5
+		modifier = {
+			
+		}
+		remove_effect = {
+			annex_country = {
+				target = LIT
+				transfer_troops = yes
+			}
+			add_state_core = 189
+			add_state_core = 815
+			add_state_core = 814
+			add_state_core = 784
+			add_state_core = 11
+			news_event = Dawn_event_news.3
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	POL_attackUKR = { #波兰专属-宣战乌克兰
+		cost = 0
+        visible = {
+			original_tag = POL
+        }
+		available = {
+			date > 1937.6.1
+        }
+		fire_only_once = yes
+		days_remove = 5
+		modifier = {
+			
+		}
+		remove_effect = {
+			declare_war_on = {
+				target = UKR
+				type = annex_everything
+			}
+			news_event = Dawn_event_news.4
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	POL_attackUKR = { #波兰专属-宣战乌克兰
+		cost = 0
+        visible = {
+			original_tag = POL
+        }
+		available = {
+			date > 1937.6.1
+        }
+		fire_only_once = yes
+		days_remove = 5
+		modifier = {
+			
+		}
+		remove_effect = {
+			declare_war_on = {
+				target = UKR
+				type = annex_everything
+			}
+			news_event = Dawn_event_news.4
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	POL_PLC = { #波兰专属-宣告海间联邦
+		cost = 0
+        visible = {
+			original_tag = POL
+        }
+		available = {
+
+        }
+		fire_only_once = yes
+		days_remove = 0
+		modifier = {
+			
+		}
+		remove_effect = {
+			set_cosmetic_tag = POLITCOM
+			news_event = Dawn_event_news.5
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	SER_civil_war = { #塞尔维亚专属-内战
+		cost = 0
+        visible = {
+			original_tag = SER
+        }
+		available = {
+			date > 1936.6.1
+        }
+		fire_only_once = yes
+		days_remove = 0
+		modifier = {
+			
+		}
+		remove_effect = {
+			declare_war_on = {
+				target = YUG
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = BOS
+				type = annex_everything
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	YUG_civil_war = { #塞尔维亚专属-内战
+		cost = 0
+        visible = {
+			original_tag = YUG
+        }
+		available = {
+			SER = {
+				exists = no
+			}
+        }
+		fire_only_once = yes
+		days_remove = 0
+		modifier = {
+			
+		}
+		remove_effect = {
+			annex_country = {
+				target = BOS
+				transfer_troops = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	ENG_variables_of_conference_of_polymouth = { #英国专属-普利茅斯大会的结局
+		cost = 0
+        visible = {
+			original_tag = ENG
+			OR = {
+				has_completed_focus = ENG_land_army_4
+				is_debug = yes
+			}
+        }
+		complete_effect = {
+			
+		}
+		available = {
+			hidden_effect = {
+				always = no
+			}
+			always = no
+        }
+		fire_only_once = yes
+		days_remove = 0
+		modifier = {
+			
+		}
+		remove_effect = {
+			
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	ENG_cfrply_ask_for_remilitalized = { #英国专属-普利茅斯大会的结局
+		cost = 50
+        visible = {
+			original_tag = ENG
+			OR = {
+				has_completed_focus = ENG_land_army_4
+				is_debug = yes
+			}
+        }
+		complete_effect = {
+			custom_effect_tooltip = ENG_political_tip.21
+			hidden_effect = {
+				set_country_flag = ENG_remili_flag
+				set_variable = {
+					ENG_ply_rml_french_attitude = 20
+				}
+				set_variable = {
+					ENG_ply_rml_french_effective = 40
+				}
+				set_variable = {
+					ENG_ply_rml_german_attitude = 50
+				}
+				set_variable = {
+					ENG_ply_rml_german_effective = 10
+				}
+				set_variable = {
+					ENG_ply_rml_british_effective = 40
+				}
+				add_to_variable = {
+					ENG_ply_rml_amout_of_treaty = 1
+				}
+			}
+		}
+		available = {
+			
+        }
+		fire_only_once = yes
+		days_remove = 0
+		modifier = {
+			
+		}
+		remove_effect = {
+			
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	ENG_cfrply_ask_for_remilitalized_end = { #英国专属-普利茅斯大会的结局
+		cost = 50
+        visible = {
+			original_tag = ENG
+			OR = {
+				has_completed_focus = ENG_land_army_4
+				is_debug = yes
+			}
+			has_country_flag = ENG_remili_flag
+        }
+		complete_effect = {
+			custom_effect_tooltip = ENG_political_tip.22
+			hidden_effect = {
+				country_lock_all_division_template = no
+			}
+		}
+		available = {
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = ENG_fr.3
+					check_variable = {
+						ENG_ply_rml_french_effective > 50
+						ENG_ply_rml_french_attitude > 50
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = ENG_ge.3
+					check_variable = {
+						ENG_ply_rml_german_effective > 50
+						ENG_ply_rml_german_attitude > 50
+					}
+				}
+			}
+        }
+		fire_only_once = yes
+		days_remove = 0
+		modifier = {
+			
+		}
+		remove_effect = {
+			
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	ENG_negotiate_in_other_topics = { #英国专属-普利茅斯大会的结局
+		cost = 10
+        visible = {
+			original_tag = ENG
+			OR = {
+				has_completed_focus = ENG_land_army_4
+				is_debug = yes
+			}
+			OR = {
+				has_country_flag = ENG_remili_flag
+			}
+        }
+		complete_effect = {
+			custom_effect_tooltip = ENG_fr.1
+			hidden_effect = {
+				add_to_variable = {
+					ENG_ply_rml_french_effective = 5
+				}
+			}
+			custom_effect_tooltip = ENG_fr.2
+			hidden_effect = {
+				add_to_variable = {
+					ENG_ply_rml_french_attitude = 5
+				}
+			}
+		}
+		available = {
+			
+        }
+		fire_only_once = yes
+		days_remove = 0
+		days_re_enable = 10
+		modifier = {
+			
+		}
+		remove_effect = {
+			
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	ENG_invest_ger = { #英国专属-普利茅斯大会的结局
+		cost = 10
+        visible = {
+			original_tag = ENG
+			OR = {
+				has_completed_focus = ENG_land_army_4
+				is_debug = yes
+			}
+			OR = {
+				has_country_flag = ENG_remili_flag
+			}
+        }
+		complete_effect = {
+			custom_effect_tooltip = ENG_ge.1
+			hidden_effect = {
+				add_to_variable = {
+					ENG_ply_rml_german_effective = 5
+				}
+			}
+			custom_effect_tooltip = ENG_ge.2
+			hidden_effect = {
+				add_to_variable = {
+					ENG_ply_rml_german_attitude = 5
+				}
+			}
+			custom_effect_tooltip = ENG_a_litle_bit_of_storage_decrease
+			hidden_effect = {
+				add_to_variable = {
+					ENG_economics_stored = -5
+				}
+			}
+		}
+		available = {
+			
+        }
+		fire_only_once = yes
+		days_remove = 0
+		days_re_enable = 10
+		modifier = {
+			
+		}
+		remove_effect = {
+			
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+}

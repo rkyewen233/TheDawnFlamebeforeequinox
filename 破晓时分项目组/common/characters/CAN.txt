@@ -1,0 +1,81 @@
+characters={
+
+	CAN_Louis={
+		name=CAN_Louis_name
+		portraits={
+			civilian={
+				large="gfx/leaders/CAN/Dawn_Louis_saintLorent.png"
+			}
+		}
+		country_leader={
+			ideology=social_democratic
+			traits={ }
+			expire="1938.1.1.1"
+			id=-1
+		}
+	}
+	CMG_fuller={
+		name=CMG_fuller
+		portraits={
+			civilian={
+				large="gfx/leaders/CAN/Dawn_J_F_C_fuller.png"
+			}
+		}
+		country_leader={
+			ideology=military_aboslute
+			traits = {
+
+			}
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CM4_diefenbacker={
+		name=CM4_diefenbacker
+		portraits={
+			civilian={
+				large="gfx/leaders/CAN/Dawn_John_George_Diefenbaker.png"
+			}
+		}
+		country_leader={
+			ideology=british_conservatism
+			traits = {
+
+			}
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CM1_Arthur={
+		name=CM1_Arthur
+		portraits={
+			civilian={
+				large="gfx/leaders/CAN/Dawn_Arthur_Meighen.png"
+			}
+		}
+		country_leader={
+			ideology=colonial_libertism
+			traits = {
+
+			}
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CM2_Robert_Laird_Borden={
+		name=CM2_Robert_Laird_Borden
+		portraits={
+			civilian={
+				large="gfx/leaders/CAN/Dawn_Robert_Laird_Borden.png"
+			}
+		}
+		country_leader={
+			ideology=british_succesor_liberitism
+			traits = {
+
+			}
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

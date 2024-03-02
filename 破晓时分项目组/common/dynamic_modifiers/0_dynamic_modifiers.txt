@@ -1,0 +1,77 @@
+#	Example:
+# 
+#	example_dynamic_modifier = {
+#		icon = "GFX_idea_unknown" # optional, will show up in guis if icon is specified
+#		enable = { always = yes } #optional, the modifier won't apply if not enabled
+#		remove_trigger = { always = no } #optional, will remove the modifier if true
+#       attacker_modifier = no  # if yes this modifier will also be read in combat for 
+#                               # people engaging in the combat even if not in the state
+#
+#		# list of modifiers
+#		fuel_cost = 321
+#		max_fuel = var_max_fuel # will be taken from a variable
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		add_dynamic_modifier = {
+#			modifier = example_dynamic_modifier
+#			scope = GER # optional, if you specify this your dynamic modifier scoped to this scope (root is the effect scope)
+#			days = 14 # optional, will be removed after this many days passes
+#		}
+#	}
+#
+#	can be added to countries, states or unit leaders
+#	will only updated daily, unless forced by force_update_dynamic_modifier effect
+
+ENG_industry_develop = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_unknown
+
+	attacker_modifier = no  # if yes this modifier will also be read in combat for 
+
+	#INITIAL
+	production_speed_buildings_factor = ENG_local_building_speed_factor
+	local_building_slots_factor = ENG_local_building_slots_factor
+	production_speed_arms_factory_factor = ENG_local_building_speed_factor
+	production_speed_industrial_complex_factor = ENG_local_building_speed_factor
+	production_speed_synthetic_refinery_factor = ENG_local_building_speed_factor
+	production_speed_dockyard_factor = ENG_local_building_speed_factor
+	production_speed_bunker_factor = ENG_local_building_speed_factor
+	production_speed_infrastructure_factor = ENG_local_building_speed_factor
+	stability_factor = ENG_stability_factor
+	production_speed_rail_way_factor = ENG_local_building_speed_factor
+	production_speed_supply_node_factor = ENG_local_building_speed_factor
+	industrial_capacity_factory = ENG_industry_production_factor
+	line_change_production_efficiency_factor = ENG_industry_production_factor
+	production_factory_max_efficiency_factor = ENG_industry_production_factor
+	production_factory_efficiency_gain_factor = ENG_industry_production_factor
+}
+ENG_social_democratic = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_unknown
+
+	attacker_modifier = no  # if yes this modifier will also be read in combat for 
+
+	#INITIAL
+	stability_factor = ENG_stability_factor_sd
+	consumer_goods_factor = ENG_consumer_goods_factor_sd
+	local_building_slots_factor = ENG_local_building_slots_factor_sd
+	min_export = ENG_min_export_factor_sd
+	economy_cost_factor = ENG_economy_cost_factor_sd
+	trade_laws_cost_factor = ENG_trade_laws_cost_factor_sd
+	monthly_population = ENG_monthly_population_factor_sd
+	research_speed_factor = ENG_research_speed_factor_sd
+	opinion_gain_monthly_factor = ENG_opinion_gain_monthly_factor_sd
+	production_speed_buildings_factor = ENG_production_speed_buildings_factor_sd
+	stability_weekly = ENG_stability_weekly_sd
+	production_factory_max_efficiency_factor = ENG_production_factory_max_efficiency_factor_sd
+	industrial_capacity_factory = ENG_industrial_capacity_factory_sd
+	production_speed_rail_way_factor = ENG_production_speed_rail_way_factor_sd
+	production_speed_arms_factory_factor = ENG_production_speed_arms_factory_factor_sd
+	production_speed_industrial_complex_factor = ENG_production_speed_industrial_complex_factor_sd
+}

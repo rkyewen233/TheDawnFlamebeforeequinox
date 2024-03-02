@@ -1,0 +1,24 @@
+state={
+	id=909
+	name="STATE_909"
+	history={
+		owner = MAN
+		add_core_of = MAN
+		add_core_of = PRC
+		add_core_of = GDG
+		victory_points = {
+			7314 3
+		}
+		buildings = {
+			infrastructure = 1
+		}
+
+	}
+	provinces={
+		1458 7314 7659 10880 
+	}
+	manpower=1600000
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

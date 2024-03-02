@@ -1,0 +1,25 @@
+state={
+	id=948
+	name="STATE_948"
+	history=
+	{
+		owner = ZHX
+		add_core_of = MAN
+		add_core_of = XBZ
+		add_core_of = GDG
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = { 
+			5042 1
+		}
+	}
+	provinces={
+		5042
+	}
+	manpower=44000
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

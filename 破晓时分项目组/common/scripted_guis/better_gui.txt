@@ -1,0 +1,12 @@
+scripted_gui = {
+    ITA_senet_categories = { #英国决议
+        context_type = decision_category
+        window_name = "ITA_backboard"
+        triggers = {
+            always = yes
+        }
+        effects = {
+
+        }
+    }
+}

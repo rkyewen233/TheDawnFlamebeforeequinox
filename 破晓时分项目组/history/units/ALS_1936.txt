@@ -1,0 +1,193 @@
+﻿division_template = {
+	name = "旧式步兵师"		# Represents two-division infantry corps (generally poorly-equipped militias), and local militia groups
+	division_names_group = ALS_GAR_01
+
+	regiments = {					
+		infantry = { x = 0 y = 0 }	# Note: Chinese divisions were brigade-sized compared other nations' armies
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "旧式骑兵师"				# Represents two-division cavalry corps (generally poorly-equipped)
+	division_names_group = ALS_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+	}
+}
+
+
+units = {
+	division = { # "80 旧式步兵师"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1554
+		division_template = "旧式步兵师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+
+	}
+	division = { # "81 旧式步兵师"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1554
+		division_template = "旧式步兵师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+
+	}
+	division = { # "82 旧式步兵师"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 12529
+		division_template = "旧式步兵师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+
+	}
+	division = { # "83 旧式步兵师"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 13197
+		division_template = "旧式步兵师"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+
+	}
+	division = { # "1旧式步兵师"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12662
+		division_template = "旧式步兵师"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+
+	}
+	division = { # "2旧式步兵师"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 10610
+		division_template = "旧式步兵师"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+
+	}
+	division = { # "3旧式步兵师"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 1818
+		division_template = "旧式步兵师"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 1749
+		division_template = "旧式步兵师"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1554
+		division_template = "旧式骑兵师"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1554
+		division_template = "旧式骑兵师"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 1554
+		division_template = "旧式骑兵师"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 1614
+		division_template = "旧式骑兵师"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 1614
+		division_template = "旧式骑兵师"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 1576
+		division_template = "旧式骑兵师"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+}
+
+### STARTING PRODUCTION ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "ALS"
+		}
+		requested_factories = 1
+		progress = 0.74
+		efficiency = 100
+	}
+}

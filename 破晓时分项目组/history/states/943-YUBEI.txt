@@ -1,0 +1,27 @@
+state={
+	id=943
+	name="STATE_943"
+	history={
+		owner = ZHI
+		add_core_of = MAN
+		add_core_of = GDG
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2 #was: 5
+			industrial_complex = 1
+		}
+		victory_points = {
+			7074 5 
+		}
+		victory_points = {
+			1139 5
+		}
+	}
+	provinces={
+		1139 4058 4114 4144 4606 7074
+	}
+	manpower=9428980
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

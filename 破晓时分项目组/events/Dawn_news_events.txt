@@ -1,0 +1,881 @@
+add_namespace = Dawn_event_news
+news_event = {
+    id = Dawn_event_news.1
+    picture = GFX_report_event_Dawn_5
+    title = Dawn_event_news.1.t
+    desc = Dawn_event_news.1.d
+    is_triggered_only = yes
+    major = yes
+    option = {
+        name = Dawn_event_news.1.a
+        trigger = {
+            tag = PRE
+        }
+    }
+    option = {
+        name = Dawn_event_news.1.b
+        trigger = {
+            tag = FRA
+        }
+    }
+    option = {
+        name = Dawn_event_news.1.c
+        trigger = {
+            tag = GER
+        }
+    }
+    option = {
+        name = Dawn_event_news.1.dd
+        trigger = {
+            NOT = {
+                tag = PRE
+                tag = FRA
+                tag = GER
+            }
+        }
+    }
+}
+news_event = { #伊比利亚战争爆发
+    id = Dawn_event_news.2
+    picture = GFX_report_event_Dawn_4
+    title = Dawn_event_news.2.t
+    desc = Dawn_event_news.2.d
+    is_triggered_only = yes
+
+    major = yes
+    
+    option = {
+        name = Dawn_event_news.2.a
+        trigger = {
+            tag = SPR
+        }
+    }
+    option = {
+        name = Dawn_event_news.2.b
+        trigger = {
+            tag = NAV
+        }
+    }
+    option = {
+        name = Dawn_event_news.2.c
+        trigger = {
+            OR = {
+                tag = GER
+                tag = ENG
+                tag = SER
+                tag = AUS
+            }
+        }
+    }
+    option = {
+        name = Dawn_event_news.2.dd
+        trigger = {
+            NOT = {
+                tag = SPR
+                tag = NAV
+                tag = GER
+                tag = ENG
+                tag = SER
+                tag = AUS
+            }
+        }
+    }
+}
+news_event = { #波兰吞并立陶宛
+    id = Dawn_event_news.3
+    picture = GFX_jap_918_event
+    title = Dawn_event_news.3.t
+    desc = Dawn_event_news.3.d
+    is_triggered_only = yes
+
+    major = yes
+    
+    option = {
+        name = Dawn_event_news.3.a
+        trigger = {
+            tag = POL
+        }
+    }
+    option = {
+        name = Dawn_event_news.3.b
+        trigger = {
+            tag = FRA
+        }
+    }
+    option = {
+        name = Dawn_event_news.3.D
+        trigger = {
+            NOT = {
+                tag = POL
+                tag = FRA
+            }
+        }
+    }
+}
+news_event = { #波兰入侵乌克兰
+    id = Dawn_event_news.4
+    picture = GFX_jap_918_event
+    title = Dawn_event_news.4.t
+    desc = Dawn_event_news.4.d
+    is_triggered_only = yes
+
+    major = yes
+    
+    option = {
+        name = Dawn_event_news.4.a
+        trigger = {
+            tag = POL
+        }
+    }
+    option = {
+        name = Dawn_event_news.4.b
+        trigger = {
+            tag = FRA
+        }
+    }
+    option = {
+        name = Dawn_event_news.4.c
+        trigger = {
+            tag = UKR
+        }
+    }
+    option = {
+        name = Dawn_event_news.4.D
+        trigger = {
+            NOT = {
+                tag = POL
+                tag = FRA
+                tag = UKR
+            }
+        }
+    }
+}
+news_event = { #葡萄牙叛乱
+    id = Dawn_event_news.5
+    picture = GFX_report_event_Dawn_2
+    title = Dawn_event_news.5.t
+    desc = Dawn_event_news.5.dd
+    is_triggered_only = yes
+
+    major = yes
+    
+    option = {
+        name = Dawn_event_news.5.a
+        trigger = {
+            tag = SPR
+        }
+    }
+    option = {
+        name = Dawn_event_news.5.b
+        trigger = {
+            tag = POR
+        }
+    }
+    option = {
+        name = Dawn_event_news.5.c
+        trigger = {
+            OR = {
+                tag = CAT
+                tag = GLC
+            }
+        }
+    }
+    option = {
+        name = Dawn_event_news.5.D
+        trigger = {
+            NOT = {
+                tag = SPR
+                tag = POR
+                tag = CAT
+                tag = GLC
+            }
+        }
+    }
+}
+news_event = { #英国社民党当选
+    id = Dawn_event_news.6
+    picture = GFX_report_event_Dawn_1
+    title = Dawn_event_news.6.t
+    desc = Dawn_event_news.6.d
+    is_triggered_only = yes
+
+    major = yes
+    
+    option = {
+        name = Dawn_event_news.6.a
+        trigger = {
+            tag = ENG
+        }
+    }
+    option = {
+        name = Dawn_event_news.6.b
+        trigger = {
+            tag = FRA
+        }
+    }
+    option = {
+        name = Dawn_event_news.6.c
+        trigger = {
+            OR = {
+               ideology = communism 
+               ideology = socialism
+               ideology = radical_socialism 
+            }
+        }
+    }
+    option = {
+        name = Dawn_event_news.6.D
+        trigger = {
+            NOT = {
+                tag = ENG
+                tag = FRA
+                ideology = communism 
+                ideology = socialism
+                ideology = radical_socialism 
+            }
+        }
+    }
+}
+news_event = { #加泰罗尼亚大起义
+    id = Dawn_event_news.7
+    picture = GFX_report_event_Dawn_3
+    title = Dawn_event_news.7.t
+    desc = Dawn_event_news.7.d
+    is_triggered_only = yes
+
+    major = yes
+    
+    option = {
+        name = Dawn_event_news.7.a
+        trigger = {
+            tag = SPR
+        }
+    }
+    option = {
+        name = Dawn_event_news.7.b
+        trigger = {
+            tag = POR
+        }
+    }
+    option = {
+        name = Dawn_event_news.7.c
+        trigger = {
+            tag = CAT
+        }
+    }
+    option = {
+        name = Dawn_event_news.7.D
+        trigger = {
+            NOT = {
+                tag = SPR
+                tag = POR
+                tag = CAT
+            }
+        }
+    }
+}
+news_event = { #加泰罗尼亚大起义
+    id = Dawn_event_news.8
+    picture = GFX_report_event_Dawn_3
+    title = Dawn_event_news.8.t
+    desc = Dawn_event_news.8.d
+    is_triggered_only = yes
+
+    major = yes
+    
+    option = {
+        name = Dawn_event_news.8.a
+        trigger = {
+            tag = NAV
+        }
+    }
+    option = {
+        name = Dawn_event_news.8.b
+        trigger = {
+            tag = POR
+        }
+    }
+    option = {
+        name = Dawn_event_news.8.c
+        trigger = {
+            tag = CAT
+        }
+    }
+    option = {
+        name = Dawn_event_news.8.D
+        trigger = {
+            NOT = {
+                tag = NAV
+                tag = POR
+                tag = CAT
+            }
+        }
+    }
+}
+news_event = { #反击
+    id = Dawn_event_news.9
+    picture = GFX_jap_918_event
+    title = "罗马王国政府绝境反击"
+    desc = Dawn_event_news.9.d
+    is_triggered_only = yes
+
+    major = yes
+    
+    option = {
+        name = "哈！共产党也不是无敌的嘛"
+        trigger = {
+            tag = ITA
+        }
+    }
+    option = {
+        name = "革命之花历经风雪洗礼必将更加艳丽"
+        trigger = {
+            tag = LBV
+        }
+    }
+    option = {
+        name = "致函庆祝！顺便联系一下什么时候参加撒丁大会"
+        trigger = {
+            tag = SPM
+        }
+    }
+    option = {
+        name = "意大利王国政府什么时候这么强硬了"
+        trigger = {
+            NOT = {
+                tag = ITA
+                tag = SPM
+                tag = LBV
+            }
+        }
+    }
+}
+news_event = { #反击
+    id = Dawn_event_news.10
+    picture = GFX_jap_918_event
+    title = "里窝那停战协定"
+    desc = Dawn_event_news.10.d
+    is_triggered_only = yes
+
+    major = yes
+    
+    option = {
+        name = "救亡图存，我们做到了"
+        trigger = {
+            tag = ITA
+        }
+    }
+    option = {
+        name = "这只是一场停战，一场短暂地停战"
+        trigger = {
+            tag = LBV
+        }
+    }
+    option = {
+        name = "亚平宁回归平静？"
+        trigger = {
+            NOT = {
+                tag = ITA
+                tag = LBV
+            }
+        }
+    }
+}
+
+news_event = { #反击
+    id = Dawn_event_news.11
+    picture = GFX_report_event_Dawn_1
+    title = "撕毁康沃尔条约"
+    desc = Dawn_event_news.11.d
+    is_triggered_only = yes
+
+    major = yes
+    
+    option = {
+        name = "这只是一个开始"
+        trigger = {
+            tag = ENG
+        }
+    }
+    option = {
+        name = "勒令英国立刻停止行动！"
+        trigger = {
+            tag = FRA
+        }
+    }
+    option = {
+        name = "哈？旧大陆又开始了？"
+        trigger = {
+            tag = USA
+        }
+    }
+    option = {
+        name = "对法帝国主义的重拳一击"
+        trigger = {
+            tag = GER
+        }
+    }
+    option = {
+        name = "法国人会就此放过英国吗？"
+        trigger = {
+            NOT = {
+                tag = ENG
+                tag = FRA
+                tag = USA
+                tag = GER
+            }
+        }
+    }
+}
+news_event = { #反击
+    id = Dawn_event_news.12
+    picture = GFX_report_event_Dawn_6
+    title = "北美诸邦归一统"
+    desc = Dawn_event_news.12.d
+    is_triggered_only = yes
+
+    major = yes
+    
+    option = {
+        name = "这真是欧洲文明的低谷"
+        trigger = {
+            any_state = {
+                is_owned_by = ROOT
+                is_on_continent = europe
+                is_capital = yes
+            }
+        }
+    }
+    option = {
+        name = "这就是美洲人自己的美洲"
+        trigger = {
+            any_state = {
+                is_owned_by = ROOT
+                OR = {
+                    is_on_continent = north_america
+                    is_on_continent = south_america
+                }
+                is_capital = yes
+            }
+        }
+    }
+    option = {
+        name = "这对帝国主义者来说意味着什么？"
+        trigger = {
+            any_state = {
+                is_owned_by = ROOT
+                OR = {
+                    is_on_continent = asia
+                    is_on_continent = middle_east
+                }
+                is_capital = yes
+            }
+        }
+    }
+}
+news_event = { #反击
+    id = Dawn_event_news.13
+    picture = GFX_report_event_Dawn_5
+    title = Dawn_event_news.13.t
+    desc = Dawn_event_news.13.d
+    is_triggered_only = yes
+
+    major = yes
+    
+    option = {
+        name = Dawn_event_news.13.1
+        trigger = {
+            tag = ENG
+        }
+    }
+    option = {
+        name = Dawn_event_news.13.2
+        trigger = {
+            tag = FRA
+        }
+    }
+    option = {
+        name = Dawn_event_news.13.3
+        trigger = {
+            tag = USA
+        }
+    }
+    option = {
+        name = Dawn_event_news.13.4
+        trigger = {
+            tag = GER
+        }
+    }
+    option = {
+        name = Dawn_event_news.13.5
+        trigger = {
+            OR = {
+                tag = ITA
+                tag = LBV
+                tag = TTS
+            }
+        }
+    }
+    option = {
+        name = Dawn_event_news.13.6
+        trigger = {
+            OR = {
+                tag = SPR
+                tag = NAV
+                tag = POR
+            }
+        }
+    }
+    option = {
+        name = Dawn_event_news.13.7
+        trigger = {
+            NOT = {
+                tag = ENG
+                tag = FRA
+                tag = USA
+                tag = GER
+                tag = ITA
+                tag = LBV
+                tag = TTS
+                tag = SPR
+                tag = NAV
+                tag = POR
+            }
+        }
+    }
+}
+news_event = { #普洛耶什蒂工人大罢工
+    id = Dawn_event_news.14
+    picture = GFX_report_event_Dawn_7
+    title = Dawn_event_news.14.t
+    desc = Dawn_event_news.14.d
+    is_triggered_only = yes
+
+    major = yes
+    
+    option = {
+        name = Dawn_event_news.14.1
+        trigger = {
+            tag = FRA
+        }
+    }
+    option = {
+        name = Dawn_event_news.14.2
+        trigger = {
+            tag = ROM
+        }
+    }
+    option = {
+        name = Dawn_event_news.14.3
+        trigger = {
+            tag = BUL
+        }
+    }
+    option = {
+        name = Dawn_event_news.14.4
+        trigger = {
+            tag = GER
+        }
+    }
+    option = {
+        name = Dawn_event_news.14.5
+        trigger = {
+            NOT = {
+                tag = FRA
+                tag = BUL
+                tag = GER
+                tag = ROM
+            }
+        }
+    }
+}
+news_event = { #联邦解体
+    id = Dawn_event_news.15
+    picture = GFX_report_event_Dawn_7
+    title = Dawn_event_news.15.t
+    desc = Dawn_event_news.15.d
+    is_triggered_only = yes
+
+    major = yes
+    
+    option = {
+        name = Dawn_event_news.15.1
+        trigger = {
+            tag = FRA
+        }
+    }
+    option = {
+        name = Dawn_event_news.15.2
+        trigger = {
+            tag = ROM
+        }
+    }
+    option = {
+        name = Dawn_event_news.15.3
+        trigger = {
+            tag = POL
+        }
+    }
+    option = {
+        name = Dawn_event_news.15.4
+        trigger = {
+            tag = GER
+        }
+    }
+    option = {
+        name = Dawn_event_news.15.5
+        trigger = {
+            NOT = {
+                tag = FRA
+                tag = POL
+                tag = GER
+                tag = ROM
+            }
+        }
+    }
+}
+
+news_event = { #联邦解体
+    id = Dawn_event_news.16
+    picture = GFX_report_event_Dawn_7
+    title = Dawn_event_news.16.t
+    desc = Dawn_event_news.16.d
+    is_triggered_only = yes
+
+    major = yes
+    
+    option = {
+        name = Dawn_event_news.16.1
+        trigger = {
+            tag = FRA
+        }
+    }
+    option = {
+        name = Dawn_event_news.16.2
+        trigger = {
+            tag = ROM
+        }
+    }
+    option = {
+        name = Dawn_event_news.16.3
+        trigger = {
+            tag = POL
+        }
+    }
+    option = {
+        name = Dawn_event_news.16.4
+        trigger = {
+            tag = GER
+        }
+    }
+    option = {
+        name = Dawn_event_news.16.5
+        trigger = {
+            NOT = {
+                tag = FRA
+                tag = POL
+                tag = GER
+                tag = ROM
+            }
+        }
+    }
+}
+
+news_event = { #罗马尼亚内战开打
+    id = Dawn_event_news.17
+    picture = GFX_report_event_Dawn_7
+    title = Dawn_event_news.17.t
+    desc = Dawn_event_news.17.d
+    is_triggered_only = yes
+
+    major = yes
+    
+    option = {
+        name = Dawn_event_news.17.1
+        trigger = {
+            tag = FRA
+        }
+    }
+    option = {
+        name = Dawn_event_news.17.2
+        trigger = {
+            tag = ROM
+        }
+    }
+    option = {
+        name = Dawn_event_news.17.3
+        trigger = {
+            tag = POL
+        }
+    }
+    option = {
+        name = Dawn_event_news.17.4
+        trigger = {
+            tag = GER
+        }
+    }
+    option = {
+        name = Dawn_event_news.17.5
+        trigger = {
+            NOT = {
+                tag = FRA
+                tag = POL
+                tag = GER
+                tag = ROM
+            }
+        }
+    }
+}
+
+news_event = { #共产国际成立
+    id = Dawn_event_news.18
+    picture = GFX_report_event_Dawn_8
+    title = Dawn_event_news.18.t
+    desc = Dawn_event_news.18.d
+    is_triggered_only = yes
+
+    major = yes
+    
+    option = {
+        name = Dawn_event_news.18.1
+        trigger = {
+            tag = FRA
+        }
+    }
+    option = {
+        name = Dawn_event_news.18.2
+        trigger = {
+            tag = GER
+        }
+    }
+    option = {
+        name = Dawn_event_news.18.3
+        trigger = {
+            tag = ENG
+        }
+    }
+    option = {
+        name = Dawn_event_news.18.4
+        trigger = {
+            tag = ALG
+        }
+    }
+    option = {
+        name = Dawn_event_news.18.5
+        trigger = {
+            NOT = {
+                tag = FRA
+                tag = ENG
+                tag = GER
+                tag = ALG
+            }
+        }
+    }
+}
+
+news_event = { #国际联盟解体
+    id = Dawn_event_news.19
+    picture = GFX_report_event_Dawn_9
+    title = Dawn_event_news.19.t
+    desc = Dawn_event_news.19.d
+    is_triggered_only = yes
+
+    major = yes
+    
+    option = {
+        name = Dawn_event_news.19.1
+        trigger = {
+            tag = FRA
+        }
+        complete_national_focus = FRA_meeting_of_LON
+    }
+    option = {
+        name = Dawn_event_news.19.2
+        trigger = {
+            tag = GER
+        }
+    }
+    option = {
+        name = Dawn_event_news.19.3
+        trigger = {
+            tag = ENG
+        }
+    }
+    option = {
+        name = Dawn_event_news.19.4
+        trigger = {
+            tag = SPR
+        }
+    }
+    option = {
+        name = Dawn_event_news.19.5
+        trigger = {
+            tag = SOV
+        }
+    }
+    option = {
+        name = Dawn_event_news.19.6
+        trigger = {
+            tag = USA
+        }
+    }
+    option = {
+        name = Dawn_event_news.19.7
+        trigger = {
+            NOT = {
+                tag = FRA
+                tag = GER
+                tag = ENG
+                tag = SPR
+                tag = SOV
+                tag = USA
+            }
+        }
+    }
+}
+
+news_event = { #莱茵兰再军事化
+    id = Dawn_event_news.20
+    picture = GFX_report_event_Dawn_9
+    title = Dawn_event_news.20.t
+    desc = Dawn_event_news.20.d
+    is_triggered_only = yes
+
+    major = yes
+    
+    option = {
+        name = Dawn_event_news.20.1
+        trigger = {
+            tag = FRA
+        }
+    }
+    option = {
+        name = Dawn_event_news.20.2
+        trigger = {
+            tag = GER
+        }
+    }
+    option = {
+        name = Dawn_event_news.20.3
+        trigger = {
+            tag = ENG
+        }
+    }
+    option = {
+        name = Dawn_event_news.20.4
+        trigger = {
+            tag = F12
+        }
+    }
+    option = {
+        name = Dawn_event_news.20.5
+        trigger = {
+            NOT = {
+                tag = FRA
+                tag = ENG
+                tag = GER
+                tag = F12
+            }
+        }
+    }
+}

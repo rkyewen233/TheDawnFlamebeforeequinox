@@ -1,0 +1,161 @@
+ENG_economics = {
+    ENG_stick = { #英国专属
+		name = "固定决议"
+		cost = 0 #花费（政治点）
+        visible = { #什么情况可见
+			always = yes
+        }
+        available = { #满足什么条件能点
+			always = no
+        }
+        fire_only_once = no #只能选择一次（yes/no)
+        days_remove = 0 #几天后移除
+		select_effect = { #选择时的效果
+		}
+		modifier = { #持续时间内的效果
+
+		}
+        remove_effect = { #移除后的效果
+        }
+		ai_will_do = { #AI倾向
+			factor = 0
+		}
+	}
+	add_income = { #英国专属
+		name = "测试决议"
+		cost = 0 #花费（政治点）
+        visible = { #什么情况可见
+			always = yes
+        }
+        available = { #满足什么条件能点
+
+        }
+        fire_only_once = no #只能选择一次（yes/no)
+        days_remove = 0 #几天后移除
+		complete_effect = { #选择时的效果
+			add_to_variable = {
+				Dawn_national_staored_money = Dawn_total_income_1
+			}
+		}
+		modifier = { #持续时间内的效果
+
+		}
+        remove_effect = { #移除后的效果
+        }
+		ai_will_do = { #AI倾向
+			factor = 0
+		}
+	}
+	ENG_military = { #英国专属-提升军事开支
+		cost = 0 #花费（政治点）
+		name = "调整军事开支"
+        visible = { #什么情况可见
+			original_tag = ENG		
+        }
+        available = { #满足什么条件能点
+			
+        }
+        fire_only_once = no #只能选择一次（yes/no)
+        days_remove = 0 #几天后移除
+		select_effect = { #选择时的效果
+			country_event = {
+				id  = Dawn_event_eng.31
+			}
+		}
+		modifier = { #持续时间内的效果
+
+		}
+        remove_effect = { #移除后的效果
+			country_event = {
+				id  = Dawn_event_eng.31
+			}
+        }
+		ai_will_do = { #AI倾向
+			factor = 0
+		}
+	}
+	ENG_education = { #英国专属-提升军事开支
+		cost = 0 #花费（政治点）
+		name = "调整公共教育开支"
+        visible = { #什么情况可见
+			original_tag = ENG		
+        }
+        available = { #满足什么条件能点
+			
+        }
+        fire_only_once = no #只能选择一次（yes/no)
+        days_remove = 0 #几天后移除
+		select_effect = { #选择时的效果
+			country_event = {
+				id  = Dawn_event_eng.31
+			}
+		}
+		modifier = { #持续时间内的效果
+
+		}
+        remove_effect = { #移除后的效果
+			country_event = {
+				id  = Dawn_event_eng.32
+			}
+        }
+		ai_will_do = { #AI倾向
+			factor = 0
+		}
+	}
+	ENG_others = { #英国专属-提升军事开支
+		cost = 0 #花费（政治点）
+		name = "调整其他开支"
+        visible = { #什么情况可见
+			original_tag = ENG		
+        }
+        available = { #满足什么条件能点
+			
+        }
+        fire_only_once = no #只能选择一次（yes/no)
+        days_remove = 0 #几天后移除
+		select_effect = { #选择时的效果
+			country_event = {
+				id  = Dawn_event_eng.31
+			}
+		}
+		modifier = { #持续时间内的效果
+
+		}
+        remove_effect = { #移除后的效果
+			country_event = {
+				id  = Dawn_event_eng.33
+			}
+        }
+		ai_will_do = { #AI倾向
+			factor = 0
+		}
+	}
+	ENG_politics = { #英国专属-提升军事开支
+		cost = 0 #花费（政治点）
+		name = "调整政治开支"
+        visible = { #什么情况可见
+			original_tag = ENG		
+        }
+        available = { #满足什么条件能点
+			
+        }
+        fire_only_once = no #只能选择一次（yes/no)
+        days_remove = 0 #几天后移除
+		select_effect = { #选择时的效果
+			country_event = {
+				id  = Dawn_event_eng.34
+			}
+		}
+		modifier = { #持续时间内的效果
+
+		}
+        remove_effect = { #移除后的效果
+			country_event = {
+				id  = Dawn_event_eng.33
+			}
+        }
+		ai_will_do = { #AI倾向
+			factor = 0
+		}
+	}
+}

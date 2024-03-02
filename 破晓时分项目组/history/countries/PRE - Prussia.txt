@@ -1,0 +1,152 @@
+capital = 64
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	mobile_warfare = 1
+	trade_interdiction = 1
+	formation_flying = 1
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	oil_processing = 1
+	fuel_refining = 1
+}
+if = {
+	limit = {
+		NOT = { has_dlc = "By Blood Alone" }
+	}
+	set_technology = {
+		early_fighter = 1
+		fighter1 = 1
+		early_bomber = 1
+		tactical_bomber1 = 1
+		strategic_bomber1 = 1
+		CAS1 = 1
+		naval_bomber1 = 1
+	}
+}
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+		improved_light_tank = 1
+		basic_heavy_tank = 1
+	}
+}
+if = {
+	limit = {
+		
+		has_dlc = "No Step Back"
+		
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		improved_light_tank_chassis = 1
+		basic_heavy_tank_chassis = 1
+	}
+}
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		mtg_transport = 1
+	}
+}
+
+
+
+
+set_research_slots = 3
+set_convoys = 50
+set_stability = 0.75
+
+recruit_character = GER_wilhelm_second
+
+set_politics = {
+	ruling_party = classicism_4
+	last_election = "1936.1.1"
+	election_frequency = 0
+	elections_allowed = no
+
+}
+set_popularities = {
+	classicism_1 = 22 #22
+	classicism_2 = 14 #36
+	classicism_3 = 10 #46
+	classicism_4 = 8  #54
+	nationalism_1 = 13 #67
+	nationalism_2 = 8 #75
+	nationalism_3 = 4  #79
+	nationalism_4 = 5  #84
+	democratic_1 = 3 #87
+	democratic_2 = 6 #93
+	democratic_3 = 7 #100
+}
+
+add_ideas = {
+	PRE_fail_of_1932
+}
+
+
+
+#create_country_leader = {
+#	name = "Dennis Fredauer"
+#	desc = ""
+#	picture = "Portrait_Germany_Konrad_Adenauer.dds"
+#	expire = "1965.1.1"
+#	ideology = conservatism
+#	traits = {
+#	}
+#}
+#
+
+#create_country_leader = {
+#	name = "Otto Wels"
+#	desc = "POLITICS_OTTO_WELS_DESC"
+#	picture = "Portrait_Germany_Adolf_Hitler.dds"
+#	expire = "1939.1.16"
+#	ideology = socialism
+#	traits = {
+#		exiled
+#		union_man
+#	}
+#}
+#
+#create_country_leader = {
+#	name = "Ernst Thälmann"
+#	desc = "POLITICS_ERNST_THALMANN_DESC"
+#	picture = "Portrait_Germany_Adolf_Hitler.dds"
+#	expire = "1956.1.1"
+#	ideology = stalinism
+#	traits = {
+#		assassination_survivor
+#		stalins_puppet
+#		political_prisoner
+#	}
+#}
+
+

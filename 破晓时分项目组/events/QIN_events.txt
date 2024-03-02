@@ -1,0 +1,348 @@
+add_namespace = QIN
+#军队哗变
+country_event = {
+	id = QIN.0
+	title = QIN.0.t
+	desc = QIN.0.d
+	picture = GFX_report_event_china_chiang_mao
+	fire_only_once = yes
+	trigger = {
+		date > 1936.2.1
+		tag = MAN
+	}
+	option = {
+		add_stability = -0.05
+		name = QIN.0.a	
+	}
+
+}
+
+#政变成功
+country_event = {
+	id = QIN.2
+	title = QIN.2.t
+	desc = QIN.2.d
+	picture = GFX_report_event_china_chiang_mao
+	fire_only_once = yes
+	trigger = {
+		tag = MAN
+	}
+	immediate = {
+		
+		set_autonomy = {
+			target = ADF
+			autonomous_state = autonomy_free
+		}
+		ADF = {
+			leave_faction = yes
+			create_faction = 天朝体制
+		}
+		MAN = {
+			set_faction_name = 北洋集团
+			add_to_faction = ZHI
+			set_country_flag = zhenbian
+			mark_focus_tree_layout_dirty = yes
+		}
+		ADF = { set_cosmetic_tag = Dongbei }
+		MAN = { set_cosmetic_tag = Beiyang }
+		
+	
+	}
+	option = {
+		name = QIN.2.a
+		add_war_support = 0.05
+		hidden_effect = {
+			every_country = {
+				limit = { 
+				any_owned_state = {
+				is_core_of = MAN
+				}		
+			}
+			country_event = {
+			id = QIN.3
+			days = 5
+			}
+		}
+		}
+		}
+	
+	option = {
+		name = QIN.2.b
+		ADF = {
+			set_country_flag = choice_made
+			change_tag_from = MAN
+			add_stability = 0.03
+		}
+		hidden_effect = {
+			every_country = {
+				limit = { 
+				any_owned_state = {
+				is_core_of = MAN
+				}		
+			}
+			country_event = {
+			id = QIN.3
+			days = 5
+			}
+		}
+		}
+	}
+}
+#进军辽宁
+country_event = {
+	id = QIN.3
+	title = QIN.3.t
+	desc = QIN.3.d
+	picture = GFX_report_event_china_chiang_mao
+	is_triggered_only = yes
+	immediate = {	
+		ADF = {
+			transfer_state = 715
+		}
+	}
+	option = {
+		name = QIN.3.a	
+			country_event = {
+			id = QIN.4
+			days = 3
+			}
+		}
+	}
+#华南独立
+country_event = {
+	id = QIN.4
+	title = QIN.4.t
+	desc = QIN.4.d
+	picture = GFX_report_event_china_chiang_mao
+	is_triggered_only = yes
+	immediate = {	
+		if = {
+			limit = {
+				tag = MAN
+			}
+			set_autonomy = {
+				target = GXC
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = YUN
+				autonomy_state = autonomy_free
+			}
+			GXC = {
+				leave_faction = yes
+			}
+			YUN = {
+				leave_faction = yes
+			}
+		}
+	}
+	option = {
+		name = QIN.4.a	
+		country_event = {
+			id = QIN.5
+			days = 5
+		}
+		country_event = {
+			id = QIN.42
+			days = 3
+			}
+		}
+}
+
+#青藏独立
+country_event = {
+	id = QIN.42
+	title = QIN.42.t
+	desc = QIN.42.d
+	picture = GFX_report_event_china_chiang_mao
+	is_triggered_only = yes
+	immediate = {	
+		if = {
+			limit = {
+				tag = MAN
+			}
+			set_autonomy = {
+				target = TIB
+				autonomy_state = autonomy_free
+			}
+			TIB = {
+				leave_faction = yes
+			}
+			XBZ = {
+				transfer_state = 754
+				transfer_state = 755
+			}
+		}
+	}
+	option = {
+		name = QIN.4.a	
+		}
+	}
+
+#南直隶独立
+country_event = {
+	id = QIN.5
+	title = QIN.5.t
+	desc = QIN.5.d
+	picture = GFX_report_event_china_chiang_mao
+	is_triggered_only = yes
+	immediate = {	
+		if = {
+			limit = {
+				tag = MAN
+			}
+			set_autonomy = {
+				target = NIX
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = WAX
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = XIX
+				autonomy_state = autonomy_free
+			}
+			NIX = {
+				leave_faction = yes
+			}
+			WAX = {
+				leave_faction = yes
+			}
+			XIX = {
+				leave_faction = yes
+			}
+		}
+		
+	}
+	option = {
+		name = QIN.5.a	
+			country_event = {
+			id = QIN.6
+			days = 3
+			}
+		}
+	}
+country_event = {
+	id = QIN.51
+	title = QIN.51.t
+	desc = QIN.51.d
+	picture = GFX_report_event_china_chiang_mao
+	is_triggered_only = yes
+	immediate = {	
+
+			set_autonomy = {
+				target = NIX
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = WAX
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = XIX
+				autonomy_state = autonomy_free
+			}
+			NIX = {
+				leave_faction = yes
+			}
+			WAX = {
+				leave_faction = yes
+			}
+			XIX = {
+				leave_faction = yes
+			}
+		
+	}
+	option = {
+		name = QIN.51.a	
+	}
+}
+#西北归顺大清
+country_event = {
+	id = QIN.6
+	title = QIN.6.t
+	desc = QIN.6.d
+	picture = GFX_report_event_china_chiang_mao
+	is_triggered_only = yes
+	immediate = {	
+		if = {
+			limit = {
+				tag = MAN
+			}
+			set_autonomy = {
+				target = XBJ
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = ZHX
+				autonomy_state = autonomy_free
+			}
+			XBJ = {
+				leave_faction = yes
+			}
+			ZHX = {
+				leave_faction = yes
+			}
+			ADF = {
+				add_to_faction = XBJ
+				add_to_faction = ZHX
+				set_autonomy = {
+					target = ZHX
+					autonomy_state = autonomy_duhufu
+				}
+				set_autonomy = {
+					target = XBJ
+					autonomy_state = autonomy_duhufu
+				}
+			}
+		}	
+	}
+	option = {
+		name = QIN.6.a	
+		country_event = {
+			id = QIN.7
+			days = 3
+		}
+	}
+}
+#博克多汗国
+country_event = {
+	id = QIN.7
+	title = QIN.6.t
+	desc = QIN.6.d
+	picture = GFX_report_event_china_chiang_mao
+	is_triggered_only = yes
+	immediate = {	
+		XBJ = {
+			leave_faction = yes
+			XBJ = { set_cosmetic_tag = Hanguo }
+		}
+		MEN = {
+			transfer_state = 612
+			transfer_state = 621
+			transfer_state = 746
+			transfer_state = 968
+			every_owned_state = {
+				add_core_of  = MEN
+			}
+		}
+		MAN = {
+			set_autonomy = {
+				target = XBJ
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = MEN
+				autonomy_state = autonomy_difang
+			}	
+		}
+		ADF = {
+			add_to_faction = MEN
+		}
+	}
+	option = {
+		name = QIN.7.a	
+		
+	}
+}

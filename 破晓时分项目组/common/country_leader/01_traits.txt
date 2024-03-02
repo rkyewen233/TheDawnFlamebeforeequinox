@@ -1,0 +1,74 @@
+@tier1 = 30
+@tier2 = 20
+@tier3 = 10
+
+@experience_gain_low = 0.03
+@experience_gain_medium = 0.06
+@experience_gain_high = 0.08
+
+@chief_experience_gain_low = 0.20
+@chief_experience_gain_medium = 0.30
+@chief_experience_gain_high = 0.40
+
+###Todo remove commented advisor experience gains
+
+leader_traits = {
+
+	man_of_holy = { #神圣之人
+		political_power_factor = 0.25
+		stability_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	mist_transpiration = { #雾气蒸腾（丘吉尔）
+		random = no
+		political_power_factor = 0.25
+		stability_factor = 0.1
+		ai_desired_divisions_factor = 1.00
+		war_support_factor = 0.05
+		army_morale_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	leader_of_laborers_party = { #赤旗高扬，胜利就在前方（艾德礼）
+		random = no
+		stability_factor = 0.15
+		production_speed_industrial_complex_factor = 0.05
+		consumer_goods_factor = -0.05
+		war_support_factor = -0.10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	roi_de_france = { #法兰西国王
+		random = no
+		
+		stability_factor = 0.10
+		war_support_factor = 0.10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	temp_ruler_de_algere = { #阿尔及利亚临时委员会委员长
+		random = no
+		
+		stability_factor = -0.05
+		war_support_factor = 0.10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	
+}

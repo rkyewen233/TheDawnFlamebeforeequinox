@@ -1,0 +1,131 @@
+ideas = {
+    country = {
+        Generic_canadian_gemstone_of_British = { #加拿大通用：不列颠王冠上的明珠
+            name = Generic_canadian_gemstone_of_British_name
+            picture = ENG_idea_29
+            allowed = { always = yes }
+            modifier = {
+                production_factory_max_efficiency_factor = -0.05
+                consumer_goods_factor = 0.10
+                production_speed_arms_factory_factor = -0.10
+                production_speed_industrial_complex_factor = 0.05
+                production_speed_infrastructure_factor = 0.05
+                production_factory_efficiency_gain_factor = 0.05
+            }
+        }
+    }
+    country = {
+        canadian_N_W_snow = { #西北孤胜雪
+            name = canadian_N_W_snow_name
+            picture = ENG_idea_30
+            allowed = { always = yes }
+            modifier = {
+                conscription_factor = -0.20
+                monthly_population = 0.05
+            }
+        }
+        canadian_nova_terra = { #万里寻新疆
+            name = canadian_nova_terra_name
+            picture = ENG_idea_31
+            allowed = { always = yes }
+            modifier = {
+                industrial_capacity_dockyard = 0.05
+                production_speed_dockyard_factor = 0.10
+            }
+        }
+        canadian_quebec = { #凛地踏风雪
+            name = canadian_quebec_name
+            picture = ENG_idea_32
+            allowed = { always = yes }
+            modifier = {
+                monthly_population = 0.05
+                political_power_factor = 0.10
+            }
+        }
+        canadian_port_of_east = { #珠港耀寒东
+            name = canadian_port_of_east_name
+            picture = ENG_idea_33
+            allowed = { always = yes }
+            modifier = {
+                production_speed_dockyard_factor = 0.10
+                trade_opinion_factor = 0.1
+                production_speed_industrial_complex_factor = 0.025
+            }
+        }
+        canadian_lack_water_to_trees = { #湖水浇柏松
+            name = canadian_lack_water_to_trees_name
+            picture = ENG_idea_34
+            allowed = { always = yes }
+            modifier = {
+                production_speed_industrial_complex_factor = 0.15
+                consumer_goods_factor = -0.05
+            }
+        }
+    }
+    country = {
+        CM4_expand_vanvouver = { #西北孤胜雪
+            name = CM4_expand_vanvouver_name
+            picture = ENG_idea_35
+            allowed = { always = yes }
+            modifier = {
+                production_speed_buildings_factor = 0.05
+                production_speed_infrastructure_factor = 0.05
+                consumer_goods_factor = 0.10
+                civilian_factory_use = 1
+            }
+        }
+        canadian_N_W_snow_1 = { #西北孤胜雪
+            name = canadian_N_W_snow_name
+            picture = ENG_idea_30
+            allowed = { always = yes }
+            modifier = {
+                conscription_factor = -0.05
+                monthly_population = 0.10
+                conversion_cost_mil_to_civ_factor = -0.15
+                conversion_cost_civ_to_mil_factor = 0.4
+            }
+        }
+        canadian_N_W_snow_2_1 = { #西北孤胜雪
+            name = canadian_N_W_snow_name
+            picture = ENG_idea_30
+            allowed = { always = yes }
+            modifier = {
+                conscription_factor = 0.05
+                monthly_population = 0.10
+                consumer_goods_factor = 0.10
+                conversion_cost_mil_to_civ_factor = 0.5
+                conversion_cost_civ_to_mil_factor = -0.15
+            }
+        }
+        canadian_N_W_snow_2_2 = { #西北孤胜雪
+            name = canadian_N_W_snow_name
+            picture = ENG_idea_30
+            allowed = { always = yes }
+            modifier = {
+                conscription_factor = 0.15
+                conversion_cost_mil_to_civ_factor = 0.5
+                conversion_cost_civ_to_mil_factor = -0.15
+            }
+        }
+        CM4_snow_covered = { #西北孤胜雪
+            name = CM4_snow_covered_name
+            picture = ENG_idea_36
+            allowed = { always = yes }
+            modifier = {
+                monthly_population = 0.05
+                conscription = 0.01
+                command_power_gain = 0.5
+                conservatism_group_drift = 0.01
+            }
+        }
+    }
+    state = {
+        name = CM4_vancouver_developing
+        allowed = { always = yes }
+        modifier = {
+            monthly_population = 0.10
+            production_speed_industrial_complex_factor = 0.05
+            production_speed_buildings_factor = 0.10
+        }
+    }
+}

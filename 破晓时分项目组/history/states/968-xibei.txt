@@ -1,0 +1,24 @@
+
+state={
+	id=968
+	name="STATE_968"
+
+	history={
+		owner = XBJ
+		add_core_of = XBJ
+		add_core_of = MAN
+		add_core_of = GDG
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		4783 7803 8055 10899 12750 
+	}
+	manpower=2000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

@@ -1,0 +1,17 @@
+characters = {
+	TMS_Zaki_Walidi_Togan = {
+		name = Zaki_Walidi_Togan
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TMS/GFX_portrait_Zaki_Walidi_Togan.png"
+			}
+		}
+		country_leader = {
+			ideology = paternalistic_conservatism
+			expire = "1944.1.1.1"
+			id = -1
+		}
+	}
+	
+}
+	

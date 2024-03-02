@@ -1,0 +1,124 @@
+add_namespace = SPR
+country_event = {
+    id = SPR.1 #西部暴乱
+    picture = GFX_report_event_generic_italian_fascists
+    title = SPR.1.t
+    desc = SPR.1.d
+    trigger = {
+        date > 1935.1.5
+    }
+    fire_only_once = yes
+    option = {
+        name = SPR.1.a
+        171 = {
+            set_demilitarized_zone = yes    
+        }
+        174 = {
+            set_demilitarized_zone = yes    
+        }
+        791 = {
+            set_demilitarized_zone = yes    
+        }
+        176 = {
+            set_demilitarized_zone = yes    
+        }
+        788 = {
+            set_demilitarized_zone = yes    
+        }
+        170 = {
+            set_demilitarized_zone = yes    
+        }
+        792 = {
+            set_demilitarized_zone = yes    
+        }
+        172 = {
+            set_demilitarized_zone = yes    
+        }
+        169 = {
+            set_demilitarized_zone = yes    
+        }
+        789 = {
+            set_demilitarized_zone = yes    
+        }
+    }
+}
+country_event = {
+    id = SPR.2 #工人占据西部城市
+    picture = GFX_report_event_generic_italian_fascists
+    title = SPR.2.t
+    desc = SPR.2.d
+    trigger = {
+        date > 1935.1.20
+    }
+    fire_only_once = yes
+    option = {
+        name = SPR.1.a
+        SAA = {
+            transfer_state = 171
+            transfer_state = 174
+            transfer_state = 791
+            transfer_state = 176
+            transfer_state = 788
+            transfer_state = 170
+            transfer_state = 792
+            transfer_state = 172
+            transfer_state = 169
+            transfer_state = 789
+            declare_war_on = {
+                target = SPR
+                type = annex_everything
+            }
+        }
+        171 = {
+            set_demilitarized_zone = no   
+            add_core_of = SAA 
+        }
+        174 = {
+            set_demilitarized_zone = no    
+            add_core_of = SAA 
+        }
+        791 = {
+            set_demilitarized_zone = no  
+            add_core_of = SAA   
+        }
+        176 = {
+            set_demilitarized_zone = no  
+            add_core_of = SAA   
+        }
+        788 = {
+            set_demilitarized_zone = no  
+            add_core_of = SAA   
+        }
+        170 = {
+            set_demilitarized_zone = no    
+            add_core_of = SAA 
+        }
+        792 = {
+            set_demilitarized_zone = no    
+            add_core_of = SAA 
+        }
+        172 = {
+            set_demilitarized_zone = no  
+            add_core_of = SAA   
+        }
+        169 = {
+            set_demilitarized_zone = no
+            add_core_of = SAA 
+        }
+        789 = {
+            set_demilitarized_zone = no  
+            add_core_of = SAA   
+        }
+    }
+}
+country_event = {
+    id = SPR.3
+    picture = non
+    title = SPR.3.t
+    desc = SPR.3.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = SPR.3.a
+    }
+}

@@ -1,0 +1,21 @@
+FRA_faction_effect_categories = {
+    FRA_refresn = {
+		cost = 0 #花费（政治点）
+        visible = { #什么情况可见
+			always = yes		
+        }
+        available = { #满足什么条件能点
+			always = no
+        }
+        fire_only_once = no #只能选择一次（yes/no)
+        days_remove = 0 #几天后移除
+		select_effect = { #选择时的效果
+			
+		}
+		modifier = { #持续时间内的效果
+    
+		}
+        remove_effect = { #移除后的效果
+	   }
+    }
+}

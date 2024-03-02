@@ -1,0 +1,32 @@
+state={
+	id=941
+	name="STATE_941"
+	history={
+		owner = WAX
+		add_core_of = WAX
+		add_core_of = WAX
+		add_core_of = GDG
+		add_core_of = PRC
+		add_core_of = MAN
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			air_base = 6
+			dockyard = 1
+		}
+		victory_points = {
+			11913 35
+		}
+		victory_points = {
+			10076 10 
+		}
+
+	}
+	provinces={
+		996 1089 4001 4091 11928 7120 10034 10076 11913 11982 12052 
+	}
+	manpower=1006968
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

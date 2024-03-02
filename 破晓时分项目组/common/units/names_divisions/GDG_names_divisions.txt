@@ -1,0 +1,455 @@
+﻿
+GDG_INF_01 = 
+{
+	name = "步兵师"
+	for_countries = { GDG XIX NIX SIC YUN GXC XBZ GUI WAX XSM }
+	can_use = { always = yes }
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GDG_INF_01 }
+
+	fallback_name = "第%d步兵师"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "第%d步兵师" }			# Chinese "corps" were division-strength units (2-3 Chinese "divisions" = 2-3 HOI4 regiments)
+		2 = { "第%d步兵师" }
+		3 = { "第%d步兵师" }
+		4 = { "第%d步兵师" }
+		9 = { "第%d步兵师" }
+		12 = { "第%d步兵师" }
+		13 = { "第%d步兵师" }
+		14 = { "第%d步兵师" }
+		17 = { "第%d步兵师" }
+		18 = { "第%d步兵师" }
+		25 = { "第%d步兵师" }
+		39 = { "第%d步兵师" }
+		40 = { "第%d步兵师" }
+		43 = { "第%d步兵师" }
+		52 = { "第%d步兵师" }
+		54 = { "第%d步兵师" }
+		73 = { "第%d步兵师" }
+		74 = { "第%d步兵师" }
+		403 = { "3步兵师" }		# German-trained divisions (traditional division strength)
+		406 = { "6步兵师" }		
+		409 = { "9步兵师" }		
+		414 = { "14步兵师" }		
+		436 = { "36步兵师" }		
+		487 = { "87步兵师" }		
+		488 = { "88步兵师" }		
+		498 = { "Peixun Shi" }		
+		402 = { "2步兵师" }		
+		404 = { "4步兵师" }		
+		410 = { "10步兵师" }		
+		411 = { "11步兵师" }		
+		425 = { "25步兵师" }		
+		427 = { "27步兵师" }		
+		457 = { "57步兵师" }		
+		467 = { "67步兵师" }		
+		480 = { "80步兵师" }		
+		483 = { "83步兵师" }		
+		489 = { "89步兵师" }		
+		499 = { "Shui Jing Tuan" }		
+		6 = { "第%d步兵师" }
+		7 = { "第%d步兵师" }
+		8 = { "第%d步兵师" }
+		10 = { "第%d步兵师" }
+		15 = { "第%d步兵师" }
+		16 = { "第%d步兵师" }
+		19 = { "第%d步兵师" }
+		20 = { "第%d步兵师" }
+		21 = { "第%d步兵师" }
+		22 = { "第%d步兵师" }
+		23 = { "第%d步兵师" }
+		26 = { "第%d步兵师" }
+		28 = { "第%d步兵师" }
+		29 = { "第%d步兵师" }
+		30 = { "第%d步兵师" }
+		31 = { "第%d步兵师" }
+		32 = { "第%d步兵师" }
+		33 = { "第%d步兵师" }
+		34 = { "第%d步兵师" }
+		35 = { "第%d步兵师" }
+		37 = { "第%d步兵师" }
+		38 = { "第%d步兵师" }
+		41 = { "第%d步兵师" }
+		42 = { "第%d步兵师" }
+		44 = { "第%d步兵师" }
+		45 = { "第%d步兵师" }
+		46 = { "第%d步兵师" }
+		47 = { "第%d步兵师" }
+		48 = { "第%d步兵师" }
+		49 = { "第%d步兵师" }
+		51 = { "第%d步兵师" }
+		53 = { "第%d步兵师" }
+		55 = { "第%d步兵师" }
+		56 = { "第%d步兵师" }
+		57 = { "第%d步兵师" }
+		59 = { "第%d步兵师" }
+		60 = { "第%d步兵师" }
+		61 = { "第%d步兵师" }
+		62 = { "第%d步兵师" }
+		63 = { "第%d步兵师" }
+		64 = { "第%d步兵师" }
+		65 = { "第%d步兵师" }
+		66 = { "第%d步兵师" }
+		67 = { "第%d步兵师" }
+		68 = { "第%d步兵师" }
+		70 = { "第%d步兵师" }
+		71 = { "第%d步兵师" }
+		72 = { "第%d步兵师" }
+		75 = { "第%d步兵师" }
+		76 = { "第%d步兵师" }
+		77 = { "第%d步兵师" }
+		78 = { "第%d步兵师" }
+		79 = { "第%d步兵师" }
+		80 = { "第%d步兵师" }
+		81 = { "第%d步兵师" }
+		82 = { "第%d步兵师" }
+		83 = { "第%d步兵师" }
+		84 = { "第%d步兵师" }
+		85 = { "第%d步兵师" }
+		86 = { "第%d步兵师" }
+		87 = { "第%d步兵师" }
+		89 = { "第%d步兵师" }
+		92 = { "第%d步兵师" }
+		93 = { "第%d步兵师" }
+		94 = { "第%d步兵师" }
+		98 = { "第%d步兵师" }
+		201 = { "新第1师" }
+		5 = { "第%d步兵师" }
+		27 = { "第%d步兵师" }
+		50 = { "第%d步兵师" }
+		58 = { "第%d步兵师" }
+		69 = { "第%d步兵师" }
+		90 = { "第%d步兵师" }
+		91 = { "第%d步兵师" }
+		96 = { "第%d步兵师" }
+		99 = { "第%d步兵师" }
+		100 = { "第%d步兵师" }
+		202 = { "新第2师" }
+		203 = { "新第3师" }
+		205 = { "新第5师" }
+		206 = { "新第6师" }
+		36 = { "第%d步兵师" }
+		301 = { "第1临时步兵师" }
+		302 = { "第2临时步兵师" }
+		430 = { "新第30步兵师" }		# American-trained (full) divisions of historical 'X Force'
+		438 = { "新第38步兵师" }		
+		422 = { "新第22步兵师" }		
+		450 = { "第50步兵师" }		
+		88 = { "第%d步兵师" }
+		207 = { "新第7师" }
+		304 = { "第4临时步兵师" }
+		305 = { "第5临时步兵师" }
+		309 = { "第9临时步兵师" }
+		11 = { "第%d步兵师" }
+		95 = { "第%d步兵师" }
+		208 = { "新第8师" }
+		303 = { "第3临时步兵师" }
+		315 = { "第15临时步兵师" }
+		209 = { "新第9师" }			# fictional additional corps here
+		210 = { "新第10师" }
+		211 = { "新第11师" }
+		212 = { "新第12师" }
+		213 = { "新第13师" }
+		214 = { "新第14师" }
+		215 = { "新第15师" }
+		306 = { "6临时步兵师" }
+		307 = { "7临时步兵师" }
+		308 = { "8临时步兵师" }
+		310 = { "9临时步兵师" }
+		311 = { "10临时步兵师" }
+		312 = { "11临时步兵师" }
+		313 = { "12临时步兵师" }
+		314 = { "13临时步兵师" }
+	}
+}
+
+GDG_CAV_01 = 
+{
+	name = "骑兵师"
+	for_countries = { GDG XIX NIX SIC YUN GXC XBZ GUI WAX XSM }
+	can_use = { always = yes }
+	division_types = { "cavalry" }
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GDG_INF_01 }
+	fallback_name = "第%d骑兵师"
+	ordered =
+	{
+		1 = { "第%d骑兵师" }
+		2 = { "第%d骑兵师" }
+		3 = { "第%d骑兵师" }
+		4 = { "第%d骑兵师" }
+		6 = { "第%d骑兵师" }
+		5 = { "第%d骑兵师" }
+		101 = { "新第1骑兵师" }
+		102 = { "新第2骑兵师" }
+		103 = { "新第3骑兵师" }
+		104 = { "新第4骑兵师" }
+		7 = { "第%d骑兵师" }
+		8 = { "第%d骑兵师" }
+		9 = { "第%d骑兵师" }
+		10 = { "第%d骑兵师" }
+	}
+}
+
+GDG_MOT_01 = 
+{
+	name = "摩托化部队"
+
+	for_countries = { GDG XIX NIX SIC YUN GXC XBZ GUI WAX XSM }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { GDG_INF_01 }
+
+	fallback_name = "第%d机械化师"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		500 = { "第200 机械化步兵师" }		# only historical motorized division for NRA
+		430 = { "新第30 机械化步兵师" }		# American-trained (full) divisions of historical 'X Force'
+		438 = { "新第38 机械化步兵师" }		
+		422 = { "新第22 机械化步兵师" }		
+		414 = { "第14 机械化步兵师" }		
+		450 = { "第50 机械化步兵师" }		
+		403 = { "第3 机械化步兵师" }			# German-trained divisions (traditional division strength)
+		406 = { "第6 机械化步兵师" }		
+		409 = { "第9 机械化步兵师" }		
+		436 = { "第36 机械化步兵师" }		
+		487 = { "第87 机械化步兵师" }		
+		488 = { "第88 机械化步兵师" }		
+		402 = { "第2 机械化步兵师" }		
+		404 = { "第4 机械化步兵师" }		
+		410 = { "第10 机械化步兵师" }		
+		411 = { "第11 机械化步兵师" }		
+		425 = { "第25 机械化步兵师" }		
+		427 = { "第27 机械化步兵师" }		
+		457 = { "第57 机械化步兵师" }		
+		467 = { "第67 机械化步兵师" }		
+		480 = { "第80 机械化步兵师" }		
+		483 = { "第83 机械化步兵师" }		
+		489 = { "第89 机械化步兵师" }		
+		5 = { "第%d机械化师" }						# fictional names for motorized corps
+		1 = { "第%d机械化师" }						
+		2 = { "第%d机械化师" }
+		3 = { "第%d机械化师" }
+		4 = { "第%d机械化师" }
+		9 = { "第%d机械化师" }
+		12 = { "第%d机械化师" }
+		13 = { "第%d机械化师" }
+		14 = { "第%d机械化师" }
+		17 = { "第%d机械化师" }
+		18 = { "第%d机械化师" }
+		6 = { "第%d机械化师" }
+		7 = { "第%d机械化师" }
+		8 = { "第%d机械化师" }
+		10 = { "第%d机械化师" }
+		15 = { "第%d机械化师" }
+		16 = { "第%d机械化师" }
+		19 = { "第%d机械化师" }
+		20 = { "第%d机械化师" }
+		11 = { "第%d机械化师" }
+	}
+}
+
+GDG_MEC_01 = 
+{
+	name = "机械化部队"
+
+	for_countries = { GDG XIX NIX SIC YUN GXC XBZ GUI WAX XSM }
+
+	can_use = { always = yes }
+
+	division_types = { "mechanized" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { GDG_INF_01 }
+
+	fallback_name = "第%d机械化师"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		500 = { "第200机械化步兵师" }
+		430 = { "新第30机械化步兵师" }		# American-trained (full) divisions of historical 'X Force'
+		438 = { "新第38机械化步兵师" }		
+		422 = { "新第22机械化步兵师" }		
+		414 = { "第14机械化步兵师" }		
+		450 = { "第50机械化步兵师" }		
+		403 = { "第3机械化步兵师" }			# German-trained divisions (traditional division strength)
+		406 = { "第6机械化步兵师" }		
+		409 = { "第9机械化步兵师" }		
+		436 = { "第36机械化步兵师" }		
+		487 = { "第87机械化步兵师" }		
+		488 = { "第88机械化步兵师" }		
+		402 = { "第2机械化步兵师" }		
+		404 = { "第4机械化步兵师" }		
+		410 = { "第10机械化步兵师" }		
+		411 = { "第11机械化步兵师" }		
+		425 = { "第25机械化步兵师" }		
+		427 = { "第27机械化步兵师" }		
+		457 = { "第57机械化步兵师" }		
+		467 = { "第67机械化步兵师" }		
+		480 = { "第80机械化步兵师" }		
+		483 = { "第83机械化步兵师" }		
+		489 = { "第89机械化步兵师" }		
+		5 = { "第%d机械化师" }				# fictional names for mechanized corps
+		1 = { "第%d机械化师" }						
+		2 = { "第%d机械化师" }
+		3 = { "第%d机械化师" }
+		4 = { "第%d机械化师" }
+		9 = { "第%d机械化师" }
+		12 = { "第%d机械化师" }
+		13 = { "第%d机械化师" }
+		14 = { "第%d机械化师" }
+		17 = { "第%d机械化师" }
+		18 = { "第%d机械化师" }
+		6 = { "第%d机械化师" }
+		7 = { "第%d机械化师" }
+		8 = { "第%d机械化师" }
+		10 = { "第%d机械化师" }
+		15 = { "第%d机械化师" }
+		16 = { "第%d机械化师" }
+		19 = { "第%d机械化师" }
+		20 = { "第%d机械化师" }
+		11 = { "第%d机械化师" }
+	}
+}
+
+GDG_ARM_01 = 
+{
+	name = "装甲部队"
+
+	for_countries = { GDG XIX NIX SIC YUN GXC XBZ GUI WAX XSM }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GDG_INF_01 }
+
+	fallback_name = "第%d装甲师"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "第%d装甲师" }
+		2 = { "第%d装甲师" }
+		3 = { "第%d装甲师" }
+		4 = { "第%d装甲师" }
+		5 = { "第%d装甲师" }
+		6 = { "第%d装甲师" }
+		7 = { "第%d装甲师" }
+		8 = { "第%d装甲师" }
+		9 = { "第%d装甲师" }
+		10 = { "第%d装甲师" }
+		11 = { "第%d装甲师" }
+		12 = { "第%d装甲师" }
+		13 = { "第%d装甲师" }
+		14 = { "第%d装甲师" }
+		15 = { "第%d装甲师" }
+	}
+}
+
+GDG_PAR_01 = 
+{
+	name = "伞降部队"
+
+	for_countries = { GDG XIX NIX SIC YUN GXC XBZ GUI WAX XSM }
+
+	can_use = { always = yes }
+
+	division_types = { "paratrooper" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GDG_INF_01 }
+
+	fallback_name = "第%d伞兵师"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+	}
+}
+
+GDG_MAR_01 = 
+{
+	name = "陆战队部队"
+
+	for_countries = { GDG XIX NIX SIC YUN GXC XBZ GUI WAX XSM }
+
+	can_use = { always = yes }
+
+	division_types = { "marine" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GDG_INF_01 }
+
+	fallback_name = "第%d陆战队师"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+
+	}
+}
+
+GDG_MNT_01 = 
+{
+	name =  "山地部队"
+
+	for_countries = { GDG XIX NIX SIC YUN GXC XBZ GUI WAX XSM }
+
+	can_use = { always = yes }
+
+	division_types = { "mountaineers" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { GDG_INF_01 }
+
+	fallback_name = "第%d步兵师"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+	}
+}
+
+GDG_GAR_01 = 
+{
+	name = "警备部队"
+
+	for_countries = { GDG XIX NIX SIC YUN GXC XBZ GUI WAX XSM }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GDG_INF_01 }
+
+	fallback_name = "第%d警备师"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+	}
+}
+

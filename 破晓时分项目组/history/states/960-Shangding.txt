@@ -1,0 +1,21 @@
+state={
+	id=960
+	name="STATE_960"
+	history={
+		owner = F11
+		add_core_of = F11
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			12475 1 
+		}
+	}
+	provinces={
+		1324 1620 4596 7645 12167 12447 12475 
+	}
+	manpower=1311250
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

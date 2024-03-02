@@ -1,0 +1,9 @@
+﻿l_simp_chinese:
+ ENG_economics_stored:0 "专款专项"
+ ENG_a_litle_bit_of_storage_increase:0 "这将§G增加§!§Y5m§!英镑\n"
+ ENG_a_lot_of_storage_increase:0 "这将§G增加§!§Y20m§!英镑\n"
+ ENG_a_litle_bit_of_storage_decrease:0 "这将§R花费§!§Y5m§!英镑\n"
+ ENG_a_lot_of_storage_decrease:0 "这将§R花费§!§Y20m§!英镑\n"
+ ENG_one_unit_per_month_increase:0 "这将让政府每月拨款§G额外§!§Y1m§!英镑\n"
+ ENG_a_huge_of_storage_decrease:0 "这将§R花费§!§Y50m§!英镑"
+ ENG_decision:0 "§Y[?ENG_economics_stored]§!"

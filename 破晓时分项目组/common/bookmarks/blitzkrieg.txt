@@ -1,0 +1,58 @@
+bookmarks = {
+	bookmark = {
+		name = "Occident"
+		desc = "Occident_DESC"
+		date = 1934.1.1.12
+		picture = "GFX_select_date_1939"
+		default_country = "FRA"
+	
+		FRA = {
+			history = FRA_Occident_DESC
+			ideology = absolutism
+			ideas={
+				FRA_victors_of_wwi
+				FRA_disjointed_government
+				FRA_protected_by_the_maginot_line
+			}
+			focuses = {
+				FRA_strengthen_government_support
+				FRA_arms_purchases_in_the_us
+				FRA_french_union
+			}
+		}
+		ENG = {
+			history = ENG_Occident_DESC
+			ideology = progressism
+			ideas = {
+				ENG_from_1928
+				ENG_treaty_of_cornwell
+				ENG_ganshezhuyi
+			}
+			focuses = {
+				ENG_land_army_1
+				ENG_industry_35
+				ENG_industry_35
+			}
+			
+		}
+		GER = {
+			history = GER_Orient_DESC
+			ideology = authority_socialism
+			ideas = {
+				sour_loser
+				general_staff
+				GER_mefo_bills_15
+				GER_autarky_idea
+			}
+			focuses = {
+				GER_weserubung
+				GER_plan_z
+				GER_ussr_war_goal
+			}
+		}
+
+		"---"={
+			history = "OTHER_BLITZKRIEG_DESC"
+		}
+	}
+}

@@ -1,0 +1,25 @@
+state={
+	id=936
+	name="STATE_936"
+	history={
+		owner = XBZ
+		add_core_of = XBZ
+		add_core_of = MAN
+		add_core_of = PRC
+		add_core_of = GDG
+		victory_points = {
+			5025 3
+		}
+		buildings = {
+			infrastructure = 2
+		}
+
+	}
+	provinces={
+		517 1647 1985 3745 4939 5025 
+	}
+	manpower=705400
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

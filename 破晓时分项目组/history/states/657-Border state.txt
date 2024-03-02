@@ -1,0 +1,32 @@
+
+state={
+	id=657
+	name="STATE_657"
+	resources={
+		steel=18.000
+	}
+
+	history={
+		owner = HSW
+		buildings = {
+			infrastructure = 2
+			air_base = 2
+
+		}
+		victory_points = {
+			4725 5
+		}
+		add_core_of = ADF
+		add_core_of = MAN
+		add_core_of = GDG
+
+	}
+
+	provinces={
+		675 1739 1802 4246 4701 4725 4779 4805 4829 7616 7672 7763 7801 10655 10722 12192 12261 12263 12654 12657 12678 
+	}
+	manpower=308380
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

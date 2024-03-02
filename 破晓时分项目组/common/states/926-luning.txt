@@ -1,0 +1,21 @@
+state={
+	id=926
+	name="STATE_926"
+	provinces={
+		1300 1328 1400 4334 4363 7380 
+	}
+	history = {
+		add_core_of = VIN
+		owner = FRA
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			1400 1 
+		}
+	}
+	manpower=2622500
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

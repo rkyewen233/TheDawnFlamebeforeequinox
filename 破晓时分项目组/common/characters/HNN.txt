@@ -1,0 +1,16 @@
+characters={
+	HNN_Cheng_Qian={
+		name = HNN_Cheng_Qian
+		portraits={
+			civilian={
+				large = "gfx/leaders/HNN/HNN_Cheng_Qian.png"
+			}
+		}
+		country_leader={
+			ideology = sunism
+			traits = {  }
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

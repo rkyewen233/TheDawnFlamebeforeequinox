@@ -1,0 +1,166 @@
+FRA_decision_category_ECO = {
+
+    FRA_eco_di_1 = { #强力工业化-1
+        icon = GFX_decision_generic_factory
+        cost = 0
+        days_remove = 20
+        visible = {
+            always = yes
+        }
+        available = {
+            NOT = {
+                has_country_flag = FRA_eco_di_1_flag
+            }
+        }
+        ai_will_do = {
+            base = 100
+        }
+        remove_effect = {
+            set_country_flag = FRA_eco_di_1_flag
+            add_stability = 0.05
+            random_owned_state = {
+                limit = {
+                    is_on_continent = europe
+                }
+                add_building_construction = {
+                    add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 2
+                        instant = yes
+                    }
+                }
+            }
+        }
+    }
+
+    FRA_eco_di_1 = { #强力工业化-2
+        icon = GFX_decision_generic_factory
+        cost = 50
+        days_remove = 40
+        visible = {
+            always = yes
+            has_country_flag = FRA_eco_di_1_flag
+        }
+        available = {
+            NOT = {
+                has_country_flag = FRA_eco_di_2_flag
+            }
+        }
+        ai_will_do = {
+            base = 100
+        }
+        remove_effect = {
+            set_country_flag = FRA_eco_di_2_flag
+            add_stability = 0.05
+            random_owned_state = {
+                limit = {
+                    is_on_continent = europe
+                }
+                add_building_construction = {
+                    add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 2
+                        instant = yes
+                    }
+                }
+            }
+            random_owned_state = {
+                limit = {
+                    is_on_continent = europe
+                }
+                add_building_construction = {
+                    add_extra_state_shared_building_slots = 3
+                    add_building_construction = {
+                        type = arms_factory
+                        level = 3
+                        instant = yes
+                    }
+                }
+            }
+        }
+    }
+
+    FRA_eco_di_1 = { #减消费品-1
+        icon = GFX_decision_generic_factory
+        cost = 25
+        days_remove = 80
+        days_re_enable = 120
+        visible = {
+            always = yes
+        }
+        available = {
+            always = yes
+        }
+        ai_will_do = {
+            base = 100
+            if = {
+                limit = {
+                    num_of_civilian_factories_available_for_projects > 10
+                }
+                add_modifier = 50
+            }
+        }
+        modifier = {
+            consumer_goods_factor = -0.2
+        }
+        remove_effect = {
+            add_stability = 0.05
+            random_owned_state = {
+                limit = {
+                    is_on_continent = europe
+                }
+                add_building_construction = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = arms_factory
+                        level = 1
+                        instant = yes
+                    }
+                }
+            }
+        }
+    }
+
+    FRA_eco_di_1 = { #减消费品-1
+        icon = GFX_decision_generic_factory
+        cost = 25
+        days_remove = 80
+        days_re_enable = 120
+        visible = {
+            always = yes
+        }
+        available = {
+            always = yes
+        }
+        ai_will_do = {
+            base = 100
+            if = {
+                limit = {
+                    num_of_civilian_factories_available_for_projects > 10
+                }
+                add_modifier = 50
+            }
+        }
+        modifier = {
+            consumer_goods_factor = -0.2
+        }
+        remove_effect = {
+            add_stability = 0.05
+            random_owned_state = {
+                limit = {
+                    is_on_continent = europe
+                }
+                add_building_construction = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = arms_factory
+                        level = 1
+                        instant = yes
+                    }
+                }
+            }
+        }
+    }
+}

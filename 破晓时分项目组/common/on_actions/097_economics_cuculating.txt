@@ -1,0 +1,89 @@
+on_actions = {
+    #在开局时的效果
+
+    on_startup = {
+        effect = {
+
+            every_country = {
+                # ——————————
+                # 积攒的钱
+                # ——————————
+                set_variable = { #The money stored
+                    #攒起来的钱
+                    Dawn_national_staored_money = 0.0
+                }
+            }
+
+        }
+    }
+    
+    on_monthly = {
+        effect = {
+            every_country = {
+
+                # ——————————
+                # 收入
+                # ——————————
+
+                #税收
+
+
+                set_variable = { #It is a constant
+                    #国家个人平均税
+                    PERSONAL_MEAN_TAX_CONSTANT = 10.0
+                }
+                set_variable = {
+                    Dawn_total_income_1 = 0
+                }
+
+                set_variable = { #Store total manpower(included army)
+                    temp_max_manpower = max_manpower_k
+                }
+                multiply_variable = {
+                    temp_max_manpower = PERSONAL_MEAN_TAX_CONSTANT
+                }
+                divide_variable = {
+                    temp_max_manpower = 1000
+                }
+                set_variable = {
+                    tax_income_1 = temp_max_manpower
+                }
+                #国营工厂
+                set_variable = { #It is a constant
+                    SINGLE_FACTORY_PROFITS_CONSTANT = 5.0
+                }
+                set_variable = {
+                    #获取民用工厂数量
+                    temp_variable_ci_fa_available = num_of_civilian_factories_available_for_projects
+                }
+                set_variable = { #设置收入变量
+                    cifa_income = temp_variable_ci_fa_available
+                }
+                multiply_variable = { #计算收益
+                    cifa_income = SINGLE_FACTORY_PROFITS_CONSTANT
+                }
+                set_variable = {
+                    factory_income_1 = cifa_income
+                }
+
+
+
+                add_to_variable = {
+                    Dawn_total_income_1 = factory_income_1
+                }
+                add_to_variable = {
+                    Dawn_total_income_1 = tax_income_1
+                }
+            }
+        }
+    }
+    on_monthly = {
+        effect = {
+            every_country = {
+                add_to_variable = {
+                    Dawn_national_staored_money = Dawn_total_income_1
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+﻿l_simp_chinese:
+ third_class_opinion_added_5:0 "(§Y三级会议§!)：\n   §Y第三阶级§!支持度: §G+5§!"
+ second_class_opinion_added_5:0 "(§Y三级会议§!)：\n   §Y第二阶级§!支持度: §G+5§!"
+ first_class_opinion_added_5:0 "(§Y三级会议§!)：\n   §Y第一阶级§!支持度: §G+5§!"
+ all_class_opinion_added_5:0 "(§Y三级会议§!)：\n   §Y第一阶级§!支持度: §G+5§!\n   §Y第二阶级§!支持度: §G+5§!\n   §Y第三阶级§!支持度: §G+5§!"
+
+ third_class_opinion_minus_5:0 "(§Y三级会议§!)：\n   §Y第三阶级§!支持度: §R-5§!"
+ second_class_opinion_minus_5:0 "(§Y三级会议§!)：\n   §Y第二阶级§!支持度: §R-5§!"
+ first_class_opinion_minus_5:0 "(§Y三级会议§!)：\n   §Y第一阶级§!支持度: §R-5§!"
+ all_class_opinion_minus_5:0 "(§Y三级会议§!)：\n   §Y第一阶级§!支持度: §R-5§!\n   §Y第二阶级§!支持度: §R-5§!\n   §Y第三阶级§!支持度: §R-5§!"

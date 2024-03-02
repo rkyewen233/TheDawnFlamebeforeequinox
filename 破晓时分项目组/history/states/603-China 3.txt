@@ -1,0 +1,30 @@
+
+state={
+	id=603
+	name="STATE_603"
+
+	history={
+		owner = YUN
+		add_core_of = YUN
+		add_core_of = GDG
+		add_core_of = PRC
+		add_core_of = MAN
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 2
+		}
+		victory_points = {
+			4504 5 
+		}
+
+	}
+
+	provinces={
+		1884 4192 4504 4532 10616 10763 
+	}
+	manpower=7543200
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=3.000
+}

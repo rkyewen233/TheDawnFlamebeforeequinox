@@ -1,0 +1,519 @@
+division_template = {
+	name = "Infantry Division 1936-A"
+	division_names_group = ENG_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+        infantry = { x = 0 y = 3 }
+        infantry = { x = 1 y = 0 }
+        artillery_brigade = { x = 2 y = 0 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Infantry Division 1936-B"
+	division_names_group = ENG_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+        infantry = { x = 0 y = 3 }
+        infantry = { x = 1 y = 0 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Infantry Division 1936-C"
+	division_names_group = ENG_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+        infantry = { x = 0 y = 3 }
+        infantry = { x = 1 y = 0 }
+        infantry = { x = 1 y = 1 }
+        infantry = { x = 1 y = 2 }
+        infantry = { x = 1 y = 3 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Infantry Division 1936-D"
+	division_names_group = ENG_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+        infantry = { x = 0 y = 3 }
+        infantry = { x = 1 y = 0 }
+        infantry = { x = 1 y = 1 }
+        infantry = { x = 1 y = 2 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Infantry Division 1936-E"
+	division_names_group = ENG_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+        infantry = { x = 0 y = 3 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "Motorised Division 1936"
+	division_names_group = ENG_INF_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+        motorized = { x = 0 y = 1 }
+        motorized = { x = 0 y = 2 }
+        motorized = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+        motorized = { x = 1 y = 1 }
+        motorized = { x = 1 y = 2 }
+        motorized = { x = 1 y = 3 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "Armour main-forced Division 1936"
+	division_names_group = ENG_AMR_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+        motorized = { x = 0 y = 1 }
+        motorized = { x = 0 y = 2 }
+        motorized = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+        motorized = { x = 1 y = 1 }
+        motorized = { x = 1 y = 2 }
+        motorized = { x = 1 y = 3 }
+		mot_artillery_brigade = { x = 2 y = 0 }
+		mot_artillery_brigade = { x = 2 y = 1 }
+		mot_artillery_brigade = { x = 2 y = 2 }
+		mot_artillery_brigade = { x = 2 y = 3 }
+		light_armor = { x = 3 y = 0 }
+		light_armor = { x = 3 y = 1 }
+	}
+	support = {
+		light_tank_recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		anti_air = { x = 0 y = 2 }
+	}
+}
+units = {
+	#多佛尔
+	division= {	
+		name = "1a Infantry Division 'Dover/'"
+		location = 3501
+		division_template = "Infantry Division 1936-A"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "2a Infantry Division 'Dover/'"
+		location = 3501
+		division_template = "Infantry Division 1936-A"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "3a Infantry Division 'Dover/'"
+		location = 3501
+		division_template = "Infantry Division 1936-A"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "4a Infantry Division 'Dover/'"
+		location = 3501
+		division_template = "Infantry Division 1936-A"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "5a Infantry Division 'Dover/'"
+		location = 3501
+		division_template = "Infantry Division 1936-A"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	#朴次茅斯
+	division= {	
+		name = "1b Infantry Division 'Portsmouth/'"
+		location = 9458
+		division_template = "Infantry Division 1936-A"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "2b Infantry Division 'Portsmouth/'"
+		location = 9458
+		division_template = "Infantry Division 1936-A"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "3b Infantry Division 'Portsmouth/'"
+		location = 9458
+		division_template = "Infantry Division 1936-B"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "3b Infantry Division 'Portsmouth/'"
+		location = 9458
+		division_template = "Infantry Division 1936-D"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "4b Infantry Division 'Portsmouth/'"
+		location = 9458
+		division_template = "Infantry Division 1936-B"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "5b Infantry Division 'Portsmouth/'"
+		location = 9458
+		division_template = "Infantry Division 1936-C"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "6b Infantry Division 'Portsmouth/'"
+		location = 9458
+		division_template = "Infantry Division 1936-C"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	#普利茅斯
+	division= {	
+		name = "1c Infantry Division 'Plymouth/'"
+		location = 540
+		division_template = "Infantry Division 1936-A"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "2c Infantry Division 'Plymouth/'"
+		location = 540
+		division_template = "Infantry Division 1936-A"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "3c Infantry Division 'Plymouth/'"
+		location = 540
+		division_template = "Infantry Division 1936-A"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "3c Infantry Division 'Plymouth/'"
+		location = 540
+		division_template = "Infantry Division 1936-A"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "3c Infantry Division 'Plymouth/'"
+		location = 540
+		division_template = "Infantry Division 1936-A"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	#布里斯托/布里斯托尔
+	division= {	
+		name = "1d Infantry Division 'Bristol/'"
+		location = 3369
+		division_template = "Infantry Division 1936-C"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "2d Infantry Division 'Bristol/'"
+		location = 3369
+		division_template = "Infantry Division 1936-A"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	#加的夫/卡迪夫
+	division= {	
+		name = "1e Infantry Division 'Cardiff/'"
+		location = 377
+		division_template = "Infantry Division 1936-A"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	#利物浦
+	division= {	
+		name = "1f Infantry Division 'Liverpool/'"
+		location = 6384
+		division_template = "Infantry Division 1936-A"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "2f Infantry Division 'Liverpool/'"
+		location = 6384
+		division_template = "Infantry Division 1936-A"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "3f Infantry Division 'Liverpool/'"
+		location = 6384
+		division_template = "Infantry Division 1936-B"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "4f Infantry Division 'Liverpool/'"
+		location = 6384
+		division_template = "Infantry Division 1936-D"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "5f Infantry Division 'Liverpool/'"
+		location = 6384
+		division_template = "Infantry Division 1936-B"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "6f Infantry Division 'Liverpool/'"
+		location = 6384
+		division_template = "Infantry Division 1936-C"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "7f Infantry Division 'Liverpool/'"
+		location = 6384
+		division_template = "Infantry Division 1936-C"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	#伯明翰
+	division= {	
+		name = "1g Infantry Division 'Birmingham/'"
+		location = 9297
+		division_template = "Infantry Division 1936-A"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "2g Infantry Division 'Birmingham/'"
+		location = 9297
+		division_template = "Infantry Division 1936-A"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "3g Infantry Division 'Birmingham/'"
+		location = 9297
+		division_template = "Infantry Division 1936-B"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "4g Infantry Division 'Birmingham/'"
+		location = 9297
+		division_template = "Infantry Division 1936-D"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "5g Infantry Division 'Birmingham/'"
+		location = 9297
+		division_template = "Infantry Division 1936-B"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "6f Infantry Division 'Birmingham/'"
+		location = 9297
+		division_template = "Infantry Division 1936-C"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "7f Infantry Division 'Birmingham/'"
+		location = 9297
+		division_template = "Infantry Division 1936-C"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	#伦敦！
+	division= {	
+		name = "1h Infantry Division 'London/'"
+		location = 6103
+		division_template = "Infantry Division 1936-A"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "2h Infantry Division 'London/'"
+		location = 6103
+		division_template = "Infantry Division 1936-A"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "3h Infantry Division 'London/'"
+		location = 6103
+		division_template = "Infantry Division 1936-C"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "4h Infantry Division 'London/'"
+		location = 6103
+		division_template = "Infantry Division 1936-C"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "5h Infantry Division 'London/'"
+		location = 6103
+		division_template = "Infantry Division 1936-C"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "6h Infantry Division 'London/'"
+		location = 6103
+		division_template = "Infantry Division 1936-C"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "7h Infantry Division 'London/'"
+		location = 6103
+		division_template = "Infantry Division 1936-C"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "1h Motorised Division 'London/'"
+		location = 11333
+		division_template = "Motorised Division 1936"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "2h Motorised Division 'London/'"
+		location = 11333
+		division_template = "Motorised Division 1936"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "3h Motorised Division 'London/'"
+		location = 11374
+		division_template = "Motorised Division 1936"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "4h Motorised Division 'London/'"
+		location = 11374
+		division_template = "Motorised Division 1936"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "1h Armoured Division 'London/'"
+		location = 6103
+		division_template = "Armour main-forced Division 1936"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	#谢菲尔德
+	division= {	
+		name = "1i Armoured Division 'Sheffield/'"
+		location = 9315
+		division_template = "Armour main-forced Division 1936"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	#斯旺西
+	division= {	
+		name = "1j Armoured Division 'Swansea/'"
+		location = 407
+		division_template = "Armour main-forced Division 1936"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+}

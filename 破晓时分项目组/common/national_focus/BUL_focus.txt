@@ -1,0 +1,277 @@
+focus_tree = {
+	id = BUL_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BUL
+		}
+	}
+	default = no
+	focus = {
+		id = f_BUL_1
+		icon = GFX_goal_unknown
+		cost = 15.00
+		x = 16
+		y = 0
+
+	}
+	focus = {
+		id = BUL_8
+		icon = GFX_BUL_1
+		cost = 15.00
+		x = 25
+		y = 0
+		available = {
+			has_completed_focus = BUL_7
+			OR = {
+				has_completed_focus = BUL_17
+				has_completed_focus = BUL_18
+			}
+		}
+	}
+	focus = {
+		id = BUL_14
+		icon = GFX_goal_unknown
+		cost = 15.00
+		x = 34
+		y = 0
+
+	}
+	focus = {
+		id = BUL_2
+		icon = GFX_goal_unknown
+		cost = 15.00
+		prerequisite = {
+			focus = f_BUL_1
+		}
+		mutually_exclusive = {
+			focus = BUL_3
+		}
+		x = 14
+		y = 1
+
+	}
+	focus = {
+		id = BUL_4
+		icon = GFX_goal_unknown
+		cost = 15.00
+		prerequisite = {
+			focus = BUL_2
+		}
+		x = 14
+		y = 2
+
+	}
+	focus = {
+		id = BUL_3
+		icon = GFX_goal_unknown
+		cost = 15.00
+		prerequisite = {
+			focus = f_BUL_1
+		}
+		mutually_exclusive = {
+			focus = BUL_2
+		}
+		x = 18
+		y = 1
+
+	}
+	focus = {
+		id = BUL_6
+		icon = GFX_goal_unknown
+		cost = 15.00
+		prerequisite = {
+			focus = BUL_3
+			focus = BUL_2
+		}
+		x = 16
+		y = 2
+
+	}
+	focus = {
+		id = BUL_5
+		icon = GFX_goal_unknown
+		cost = 15.00
+		prerequisite = {
+			focus = BUL_3
+		}
+		x = 18
+		y = 2
+
+	}
+	focus = {
+		id = BUL_10
+		icon = GFX_goal_unknown
+		cost = 15.00
+		prerequisite = {
+			focus = BUL_8
+		}
+		completion_reward = {
+			ROM = {
+				leave_faction = yes
+			}
+			declare_war_on = {
+				target = ROM
+				type = annex_everything
+			}
+		}
+		x = 23
+		y = 1
+
+	}
+	focus = {
+		id = BUL_9
+		icon = GFX_BUL_2
+		cost = 15.00
+		prerequisite = {
+			focus = BUL_8
+		}
+		completion_reward = {
+			GRE = {
+				leave_faction = yes
+			}
+			declare_war_on = {
+				target = GRE
+				type = annex_everything
+			}
+		}
+		x = 25
+		y = 1
+
+	}
+	focus = {
+		id = BUL_11
+		icon = GFX_goal_unknown
+		cost = 15.00
+		prerequisite = {
+			focus = BUL_9
+			focus = BUL_10
+		}
+		completion_reward = {
+			YUG = {
+				leave_faction = yes
+			}
+			declare_war_on = {
+				target = YUG
+				type = annex_everything
+			}
+		}
+		x = 24
+		y = 2
+
+	}
+	focus = {
+		id = BUL_13
+		icon = GFX_BUL_3
+		cost = 15.00
+		prerequisite = {
+			focus = BUL_8
+		}
+		x = 27
+		y = 1
+
+	}
+	focus = {
+		id = BUL_15
+		icon = GFX_goal_unknown
+		cost = 15.00
+		prerequisite = {
+			focus = BUL_14
+		}
+		mutually_exclusive = {
+			focus = BUL_16
+		}
+		x = 32
+		y = 1
+
+	}
+	focus = {
+		id = BUL_17
+		icon = GFX_goal_unknown
+		cost = 15.00
+		prerequisite = {
+			focus = BUL_15
+		}
+		x = 32
+		y = 2
+
+	}
+	focus = {
+		id = BUL_7
+		icon = GFX_goal_unknown
+		cost = 15.00
+		prerequisite = {
+			focus = BUL_6
+		}
+		x = 16
+		y = 3
+
+	}
+	focus = {
+		id = BUL_12
+		icon = GFX_goal_unknown
+		cost = 15.00
+		prerequisite = {
+			focus = BUL_9
+		}
+		x = 25
+		y = 3
+		completion_reward = {
+			TUR = {
+				leave_faction = yes
+			}
+			declare_war_on = {
+				target = TUR
+				type = annex_country
+			}
+		}
+	}
+	focus = {
+		id = BUL_16
+		icon = GFX_goal_unknown
+		cost = 15.00
+		prerequisite = {
+			focus = BUL_14
+		}
+		mutually_exclusive = {
+			focus = BUL_15
+		}
+		x = 36
+		y = 1
+
+	}
+	focus = {
+		id = BUL_18
+		icon = GFX_goal_unknown
+		cost = 15.00
+		prerequisite = {
+			focus = BUL_16
+		}
+		x = 36
+		y = 2
+
+	}
+	focus = {
+		id = BUL_19
+		icon = GFX_goal_unknown
+		cost = 15.00
+		allow_branch = {
+			always = no
+		}
+		x = 100
+		y = 100
+
+	}
+	focus = {
+		id = BUL_20
+		icon = GFX_goal_unknown
+		cost = 15.00
+		allow_branch = {
+			always = no
+		}
+		x = 100
+		y = 100
+
+	}
+}

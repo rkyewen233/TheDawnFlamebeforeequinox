@@ -1,0 +1,23 @@
+scripted_gui = {
+	PRC_yihui_window = {
+		window_name = "PRC_yihui_window"
+		context_type = decision_category
+		dynamic_lists = {
+			PRC_yihui_grid = {
+				array = gribx_PRC_yihui_array
+				index = i
+				value = v
+				entry_container = PRC_yihui_entry
+				change_scope = no
+			}
+		}
+		effects = {
+			refresh_button_click = { refresh_seat = yes }
+		}
+		properties = {
+			PRC_yihui_icon = {
+				frame = gribx_PRC_yihui_array^i
+			}
+		}
+	}
+}

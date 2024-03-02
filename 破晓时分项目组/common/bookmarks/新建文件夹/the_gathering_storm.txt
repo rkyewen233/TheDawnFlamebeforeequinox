@@ -1,0 +1,25 @@
+bookmarks = { #终焉
+	bookmark = {
+		name = "THE_END_TEST_NAME"
+		desc = "THE_END_TEST_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "FRA"
+		default = yes
+		"FRA"={
+			history = "FRA_THE_END_TEST_DESC"
+			ideology = monarchism
+			available = {}
+			ideas = {
+				FRA_eco_disaster_name
+				FRA_win_WWI
+				FRA_super_industrialization
+			}
+			focuses = {
+				FRA_begain
+				FRA_ECO.12
+				FRA_ECO.20
+			}
+		}
+	}
+}

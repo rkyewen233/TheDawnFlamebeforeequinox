@@ -1,0 +1,379 @@
+on_actions = {
+    on_capitulation = {
+        #ROOT = 投降国家
+        #FROM = 战胜国家
+        #注意都要写在limit内
+        effect = {
+            if = { #中华
+                limit = {
+                    FROM = {
+                        OR= {
+                            original_tag = MAN
+                            original_tag = GDG
+                            original_tag = SIC
+                            original_tag = YUN
+                            original_tag = GUI
+                            original_tag = GXC
+                            original_tag = XIX
+                            original_tag = WAX
+                            original_tag = NIX
+                            original_tag = HNN
+                        }
+                    }
+                    ROOT = {
+                        OR = {
+                            original_tag = SIC
+                            original_tag = YUN
+                            original_tag = GUI
+                            original_tag = GXC
+                            original_tag = XIX
+                            original_tag = WAX
+                            original_tag = NIX
+                            original_tag = HNN
+                            original_tag = MAN
+                            original_tag = GDG
+                        }
+                    }
+                }
+                FROM = {
+                    white_peace = ROOT
+                    annex_country = {
+                        target = ROOT
+                        transfer_troops = no
+                    }
+                }
+            }
+            if = { #越南战争
+                limit = {
+                    FROM = {
+                        original_tag = FRA
+                    }
+                    ROOT = {
+                        original_tag = VIN  
+                    }
+                }
+                FRA = {
+                    white_peace = ROOT
+                    annex_country = {
+                        target = VIN
+                        transfer_troops = no
+                    }
+                }
+            }
+            if = { #英国镇压康沃尔
+                limit = {
+                    FROM = {
+                        original_tag = ENG
+                    }
+                    ROOT = {
+                        original_tag = FK1  
+                    }
+                }
+                FROM = {
+                    white_peace = ROOT
+                    annex_country = {
+                        target = ROOT
+                        transfer_troops = no
+                    }
+                }
+            }
+            if = { #阿尔及利亚-法国赢
+                limit = {
+                    FROM = {
+                        original_tag = F10
+                    }
+                    ROOT = {
+                        original_tag = ALG
+                    }
+                }
+                FROM = {
+                    white_peace = ROOT
+                    annex_country = {
+                        target = ROOT
+                        transfer_troops = no
+                    }
+
+                }
+                every_state = {
+                    limit = {
+                        is_core_of = ROOT
+                    }
+                    add_core_of = FROM
+                }
+                FRA = {
+                    country_event = {
+                        id = Dawn_event_fra.13
+                    }
+                    set_autonomy = {
+                        target = FROM
+                        autonomy_state = autonomy_colony #autonomy_free #autonomy_colony（殖民地） #autonomy_dominion（自治领） #autonomy_puppet（傀儡） #autonomy_integrated_puppet（半吞傀儡）
+                    }
+                }
+            }
+            if = { #阿尔及利亚-公社赢
+                limit = {
+                    FROM = {
+                        original_tag = ENG
+                    }
+                    ROOT = {
+                        original_tag = FK1  
+                    }
+                }
+                FROM = {
+                    white_peace = ROOT
+                    annex_country = {
+                        target = ROOT
+                        transfer_troops = no
+                    }
+                }
+            }
+            if = { #大波兰联邦-吞并乌克兰
+                limit = {
+                    FROM = {
+                        original_tag = POL
+                    }
+                    ROOT = {
+                        original_tag = UKR
+                    }
+                }
+                POL = {
+                    white_peace = ROOT
+                    every_state = {
+                        limit = {
+                            is_owned_and_controlled_by = ROOT
+                        }
+                        add_core_of = POL
+                    }
+                    annex_country = {
+                        target = UKR
+                        transfer_troops = no
+                    }
+                }
+            }
+            if = { #伊比利亚战争-工人获胜
+                limit = {
+                    FROM = {
+                        original_tag = NAV
+                    }
+                    ROOT = {
+                        original_tag = SPR
+                    }
+                }
+                NAV = {
+                    white_peace = ROOT
+                    every_state = {
+                        limit = {
+                            is_owned_and_controlled_by = ROOT
+                        }
+                        add_core_of = NAV
+                    }
+                    annex_country = {
+                        target = SPR
+                        transfer_troops = no
+                    }
+                }
+            }
+            if = { #伊比利亚战争
+                limit = {
+                    FROM = {
+                        OR = {
+                            original_tag = SPR
+                            original_tag = GLC
+                            original_tag = NAV
+                            original_tag = CAT
+                            original_tag = POR
+                        }
+                    }
+                    ROOT = {
+                        OR = {
+                            original_tag = SPR
+                            original_tag = GLC
+                            original_tag = NAV
+                            original_tag = CAT
+                            original_tag = POR
+                        }
+                    }
+                }
+                FROM = {
+                    annex_country = {
+                        target = ROOT
+                        transfer_troops = no
+                    }
+                }
+            }
+            if = { #伊比利亚战争-联邦获胜
+                limit = {
+                    FROM = {
+                        original_tag = SPR
+                    }
+                    ROOT = {
+                        original_tag = NAV  
+                    }
+                }
+                SPR = {
+                    white_peace = ROOT
+                    annex_country = {
+                        target = NAV
+                        transfer_troops = no
+                    }
+                }
+            }
+            if = { #伊比利亚战争-工人获胜
+                limit = {
+                    FROM = {
+                        original_tag = NAV
+                    }
+                    ROOT = {
+                        original_tag = SPR
+                    }
+                }
+                news_event = Dawn_event_news.8
+                NAV = {
+                    white_peace = ROOT
+                    every_state = {
+                        limit = {
+                            is_owned_and_controlled_by = ROOT
+                        }
+                        add_core_of = NAV
+                    }
+                    annex_country = {
+                        target = SPR
+                        transfer_troops = no
+                    }
+                    country_event = {
+                        id = SPR.5
+                        days = 50
+                    }
+                }
+            }
+            if = { #伊比利亚战争-工人获胜
+                limit = {
+                    FROM = {
+                        original_tag = NAV
+                    }
+                    ROOT = {
+                        original_tag = POR
+                    }
+                }
+                NAV = {
+                    white_peace = ROOT
+                    every_state = {
+                        limit = {
+                            is_core_of = ROOT
+                        }
+                        add_core_of = NAV
+                    }
+                    GER = {
+                        add_to_faction = FROM
+                    }
+                }
+            }
+            if = { #法荷战争
+                limit = {
+                    FROM = {
+                        OR = {
+                            original_tag = FRA
+                            original_tag = BEL
+                        }
+                    }
+                    ROOT = {
+                        original_tag = HOL
+                    }
+                }
+                FRA = {
+                    white_peace = ROOT
+                    set_autonomy = {
+                        target = ROOT
+                        autonomy_state = autonomy_integrated_puppet
+                    }
+                }
+                F11 = {
+                    transfer_state = 672
+                    transfer_state = 667
+                    transfer_state = 335
+                    transfer_state = 334
+                    transfer_state = 673
+                    transfer_state = 668
+                    transfer_state = 738
+                    transfer_state = 669                    
+                }
+            }
+            if = { #二战
+                limit = {
+                    FROM = {
+                        OR = {
+                            original_tag = PRE
+                            original_tag = FRA 
+                        }
+                    }
+                    ROOT = {
+                        original_tag = GER
+                    }
+                }
+                FRA = {
+                    transfer_state = 28
+                    transfer_state = 8
+                }
+                PRE = {
+                    annex_country = {
+                        target = GER
+                        transfer_troops = no 
+                    }
+                }
+                42 = {
+                    set_demilitarized_zone = yes
+                }
+                51 = {
+                    set_demilitarized_zone = yes
+                }
+            }
+            if = { #法国内战
+                limit = {
+                    FROM = {
+                        original_tag = FRA
+                    }
+                    ROOT = {
+                        original_tag = OCC
+                    }
+                }
+                FRA = {
+                    white_peace = ROOT
+                    transfer_state = 26
+                    transfer_state = 20
+                    transfer_state = 22
+                    transfer_state = 31
+                    transfer_state = 21
+                    transfer_state = 32
+                    transfer_state = 915
+                    transfer_state = 735
+                    transfer_state = 911
+                }
+                OCC = {
+                    transfer_state = 779
+                    transfer_state = 780
+                    transfer_state = 899
+                    transfer_state = 557
+                    transfer_state = 272
+                    transfer_state = 556
+                    transfer_state = 898
+                    transfer_state = 778
+                    transfer_state = 781
+                    transfer_state = 776
+                    transfer_state = 777
+                    transfer_state = 461
+                    transfer_state = 462
+                    transfer_state = 774
+                    transfer_state = 773
+                    transfer_state = 539
+                    transfer_state = 660
+                    transfer_state = 772
+                    transfer_state = 782
+                    transfer_state = 786
+                    transfer_state = 515
+                    transfer_state = 775
+                    transfer_state = 514
+                }
+            }
+        }
+    }
+}

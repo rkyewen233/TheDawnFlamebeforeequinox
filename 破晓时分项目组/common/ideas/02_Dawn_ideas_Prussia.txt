@@ -1,0 +1,62 @@
+ideas = {
+    country = {
+
+        PRE_backhome = {
+            picture = FRA_idea_4
+            allowed = { always = yes }
+            name = PRE_backhome_name
+            modifier = {
+                conscription = 0.03
+            }
+            targeted_modifier = {
+                tag = GER
+                attack_bonus_against = 0.2
+                defense_bonus_against = 0.2
+                trade_cost_for_target_factor = 0.5
+            }
+        }
+
+        PRE_fail_of_1932 = {
+            picture = ENG_idea_19
+            allowed = { always = yes }
+            name = PRE_fail_of_1932_name
+            modifier = {
+                stability_factor = -0.10
+                surrender_limit = 0.2
+                experience_loss_factor = -0.2
+                experience_gain_army_factor = -0.2
+            }
+        }
+
+        PRE_absolutism = {
+            picture = ENG_idea_19
+            allowed = { always = yes }
+            name = PRE_absolutism_name
+            modifier = {
+                classicism_4_drift = 0.01
+                stability_factor = 0.1
+                political_advisor_cost_factor = -0.1
+                military_leader_cost_factor = -0.1
+                trade_laws_cost_factor = -0.1
+                conscription = 0.01
+            }
+        }
+
+        PRE_absolutism_1 = {
+            picture = ENG_idea_19
+            allowed = { always = yes }
+            name = PRE_absolutism_name
+            modifier = {
+                classicism_4_drift = 0.01
+                stability_factor = 0.15
+                political_advisor_cost_factor = -0.1
+                military_leader_cost_factor = -0.1
+                trade_laws_cost_factor = -0.1
+                conscription = 0.01
+                command_power_gain = 1
+                research_speed_factor = 0.05
+            }
+        }
+
+    }
+}

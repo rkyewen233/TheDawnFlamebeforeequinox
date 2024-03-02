@@ -1,0 +1,65 @@
+shared_focus = { #荷兰危急
+	id = ENG_holand_crisis_hol
+	icon = GFX_ENG_1000
+
+	prerequisite = {
+		
+	}
+
+	cost = 1.00
+
+	allow_branch = {
+		has_country_flag = ENG_holand_crisis_tree
+	}
+
+	x = 38
+	y = 10
+
+	completion_reward = {
+		custom_effect_tooltip = ENG_hol_tip.1
+	}
+}
+
+shared_focus = { #施压法国
+	id = ENG_holand_crisis_fra
+	icon = GFX_ENG_1000
+
+	prerequisite = {
+        focus = ENG_holand_crisis_hol
+	}
+
+	cost = 1.00
+
+	allow_branch = {
+		has_country_flag = ENG_holand_crisis_tree
+	}
+
+	x = 37
+	y = 11
+
+	completion_reward = {
+		add_political_power = 15
+	}
+}
+
+shared_focus = { #要求德国行动
+	id = ENG_holand_crisis_ger
+	icon = GFX_ENG_1000
+
+	prerequisite = {
+        focus = ENG_holand_crisis_hol
+	}
+
+	cost = 1.00
+
+	allow_branch = {
+		has_country_flag = ENG_holand_crisis_tree
+	}
+
+	x = 39
+	y = 11
+
+	completion_reward = {
+		add_political_power = 15
+	}
+}

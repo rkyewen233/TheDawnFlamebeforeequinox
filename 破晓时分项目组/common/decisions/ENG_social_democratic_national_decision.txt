@@ -1,0 +1,97 @@
+ENG_social_democratic_national_decision_catagories = {
+    ENG_social_democratic_always_here = { #永远在
+		cost = 0 #花费（政治点）
+        visible = { #什么情况可见
+			original_tag = ENG		
+        }
+        available = { #满足什么条件能点
+			always = no
+        }
+        fire_only_once = yes #只能选择一次（yes/no)
+        days_remove = 0 #几天后移除
+		select_effect = { #选择时的效果
+			
+		}
+		modifier = { #持续时间内的效果
+
+		}
+        remove_effect = { #移除后的效果
+	    }
+    }
+    ENG_social_democratic_maintain_authority_of_party = { #巩固党的权威
+		cost = 0 #花费（政治点）
+        visible = { #什么情况可见
+			original_tag = ENG	
+            has_completed_focus = ENG_laborer_18	
+        }
+        available = { #满足什么条件能点
+			
+        }
+        fire_only_once = yes #只能选择一次（yes/no)
+        days_remove = 15 #几天后移除
+		select_effect = { #选择时的效果
+			
+		}
+		modifier = { #持续时间内的效果
+
+		}
+        remove_effect = { #移除后的效果
+			add_popularity = {
+				ideology = social_democratic
+				popularity = 0.05
+			}
+            add_stability = 0.05
+	    }
+    }
+    ENG_social_democratic_meet_capitalists = { #会晤资本家
+		cost = 0 #花费（政治点）
+        visible = { #什么情况可见
+			original_tag = ENG	
+            has_completed_focus = ENG_laborer_10	
+        }
+        available = { #满足什么条件能点
+			
+        }
+        fire_only_once = yes #只能选择一次（yes/no)
+        days_remove = 0 #几天后移除
+		select_effect = { #选择时的效果
+			
+		}
+		modifier = { #持续时间内的效果
+
+		}
+        remove_effect = { #移除后的效果
+			country_event = {
+                id = Dawn_event_eng.22
+            }
+            hidden_effect = {
+                set_country_flag = ENG_sd_met_fi
+            }
+	    }
+    }
+    ENG_social_democratic_handle_churchill = { #钝刀割肉
+		cost = 0 #花费（政治点）
+        visible = { #什么情况可见
+			original_tag = ENG	
+            has_completed_focus = ENG_laborer_21
+            absolutism > 0
+        }
+        available = { #满足什么条件能点
+			
+        }
+        fire_only_once = no #只能选择一次（yes/no)
+        days_remove = 20 #几天后移除
+		select_effect = { #选择时的效果
+			
+		}
+		modifier = { #持续时间内的效果
+
+		}
+        remove_effect = { #移除后的效果
+			add_popularity = {
+                ideology = absolutism
+                popularity = -0.01
+            }
+	    }
+    }
+}

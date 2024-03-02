@@ -1,0 +1,18 @@
+spriteTypes = {	
+	
+	spriteType = {
+		name = "ENG_start_picture"
+		texturefile = "gfx/interface/start_pictures/ENG_start_picture.png"
+	}
+
+	spriteType = {
+		name = "ENG_td_logo"
+		texturefile = "gfx/interface/td_logo.png"
+	}
+
+	spriteType = {
+		name = "ENG_start_picture_2"
+		texturefile = "gfx/interface/start_pictures/ENG_start_picture_2.png"
+	}
+	
+}

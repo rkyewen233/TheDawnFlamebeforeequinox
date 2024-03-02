@@ -1,0 +1,618 @@
+focus_tree = {
+	id = CM4_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CM4
+		}
+	}
+	default = no
+	focus = { #与冰雪为伴
+		id = CM4_aprt_with_ice
+		icon = GFX_CAN_1
+		cost = 3.60
+		x = 20
+		y = 0
+		available = {
+			
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_ideas = CM4_snow_covered
+			swap_ideas = {
+				add_idea = canadian_N_W_snow_1
+				remove_idea = canadian_N_W_snow
+			}
+		}
+	}
+	focus = { #
+		id = CM4_Vancouver_integrated_develop
+		icon = GFX_CAN_2
+		cost = 3.60
+		relative_position_id = CM4_aprt_with_ice
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = CM4_aprt_with_ice
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			add_ideas = CM4_expand_vanvouver
+			473 = {
+				set_state_category = city
+				add_manpower = 12000
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_victory_points = {
+				province = 1408
+				value = 20
+			}
+			add_popularity = {
+				ideology = conservatism_group
+				popularity = 0.03
+			}
+		}
+	}
+	focus = { #
+		id = CM4_frist_stage_of_plan_W
+		icon = GFX_CAN_3
+		cost = 3.60
+		relative_position_id = CM4_Vancouver_integrated_develop
+		x = -4
+		y = 1
+		prerequisite = {
+			focus = CM4_Vancouver_integrated_develop
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			473 = {
+				add_manpower = 12000
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_state_modifier = {
+					modifier = {
+						monthly_population = 0.10
+					}
+				}
+			}
+		}
+	}
+	focus = { #
+		id = CM4_expand_vancouver
+		icon = GFX_FRA_70
+		cost = 3.60
+		relative_position_id = CM4_frist_stage_of_plan_W
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = CM4_frist_stage_of_plan_W
+		}
+		available = {
+			NOT = {
+				has_completed_focus = CM4_souhthern_defensive_focus
+			}
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = { #
+		id = CM4_chinese
+		icon = GFX_FRA_70
+		cost = 3.60
+		relative_position_id = CM4_expand_vancouver
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = CM4_expand_vancouver
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = { #
+		id = CM4_chinese_be_official_language_in_law
+		icon = GFX_FRA_70
+		cost = 3.60
+		relative_position_id = CM4_chinese
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = CM4_chinese
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = { #
+		id = CM4_Oregon_nw_treaty
+		icon = GFX_FRA_70
+		cost = 3.60
+		relative_position_id = CM4_chinese
+		x = 0
+		y = 1
+		mutually_exclusive = {
+			focus = CM4_limit_the_borders
+		}
+		prerequisite = {
+			focus = CM4_chinese
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = { #
+		id = CM4_dig_in_south
+		icon = GFX_FRA_70
+		cost = 3.60
+		relative_position_id = CM4_Oregon_nw_treaty
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = CM4_Oregon_nw_treaty
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = { #
+		id = CM4_souhthern_defensive_focus
+		icon = GFX_CAN_4
+		cost = 3.60
+		relative_position_id = CM4_frist_stage_of_plan_W
+		x = 0
+		y = 1
+		mutually_exclusive = {
+			focus = CM4_southern_develop_act
+		}
+		prerequisite = {
+			focus = CM4_frist_stage_of_plan_W
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			remove_ideas = CM4_expand_vanvouver
+			custom_effect_tooltip = CM4_tip.1
+			add_ideas = partial_economic_mobilisation
+			add_ideas = limited_conscription
+			swap_ideas = {
+				add_idea = canadian_N_W_snow_2_1
+				remove_idea = canadian_N_W_snow_1
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_war_support = 0.15
+			473 = {
+				add_building_construction = {
+					type = bunker
+					province = 4428
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 7753
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 7677
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 12578
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = { #
+		id = CM4_northern_residenting_act
+		icon = GFX_FRA_70
+		cost = 3.60
+		relative_position_id = CM4_frist_stage_of_plan_W
+		x = 4
+		y = 2
+		prerequisite = {
+			focus = CM4_souhthern_defensive_focus
+			focus = CM4_southern_develop_act
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = { #
+		id = CM4_army_moving_act
+		icon = GFX_FRA_70
+		cost = 3.60
+		relative_position_id = CM4_northern_residenting_act
+		x = 0
+		y = 5
+		prerequisite = {
+			focus = CM4_northern_residenting_act
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = { #
+		id = CM4_limit_the_borders
+		icon = GFX_FRA_70
+		cost = 3.60
+		relative_position_id = CM4_souhthern_defensive_focus
+		x = 0
+		y = 2
+		mutually_exclusive = {
+			focus = CM4_Oregon_nw_treaty
+		}
+		prerequisite = {
+			focus = CM4_souhthern_defensive_focus
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = canadian_N_W_snow_2_2
+				remove_idea = canadian_N_W_snow_2_1
+			}
+		}
+	}
+	focus = { #
+		id = CM4_boundary_secure
+		icon = GFX_FRA_70
+		cost = 3.60
+		relative_position_id = CM4_limit_the_borders
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = CM4_limit_the_borders
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = { #
+		id = CM4_department_of_city_develop
+		icon = GFX_FRA_70
+		cost = 3.60
+		relative_position_id = CM4_Vancouver_integrated_develop
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = CM4_Vancouver_integrated_develop
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = { #
+		id = CM4_southern_develop_act
+		icon = GFX_FRA_70
+		cost = 3.60
+		relative_position_id = CM4_department_of_city_develop
+		x = 0
+		y = 1
+		mutually_exclusive = {
+			focus = CM4_souhthern_defensive_focus
+		}
+		prerequisite = {
+			focus = CM4_department_of_city_develop
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = { #
+		id = CM4_western_high_speed
+		icon = GFX_FRA_70
+		cost = 3.60
+		relative_position_id = CM4_southern_develop_act
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = CM4_southern_develop_act
+		}
+		available = {
+			
+		}
+		completion_reward = {
+		}
+	}
+	focus = { #
+		id = CM4_land_develop_act
+		icon = GFX_FRA_70
+		cost = 3.60
+		relative_position_id = CM4_southern_develop_act
+		x = 3
+		y = 1
+		prerequisite = {
+			focus = CM4_souhthern_defensive_focus
+			focus = CM4_southern_develop_act
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			swap_ideas = {
+				
+			}
+		}
+	}
+	focus = { #
+		id = CM4_meet_in_new_orlean
+		icon = GFX_FRA_70
+		cost = 3.60
+		relative_position_id = CM4_western_high_speed
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = CM4_western_high_speed
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = { #
+		id = CM4_strategical_peacty_treaty
+		icon = GFX_FRA_70
+		cost = 3.60
+		relative_position_id = CM4_meet_in_new_orlean
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = CM4_meet_in_new_orlean
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = { #
+		id = CM4_port_shortly_arrive
+		icon = GFX_FRA_70
+		cost = 3.60
+		relative_position_id = CM4_western_high_speed
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = CM4_western_high_speed
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = { #
+		id = CM4_mineral_develop
+		icon = GFX_FRA_70
+		cost = 3.60
+		relative_position_id = CM4_western_high_speed
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = CM4_western_high_speed
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = { #
+		id = CM4_buy_industry_materials
+		icon = GFX_FRA_70
+		cost = 3.60
+		relative_position_id = CM4_mineral_develop
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = CM4_mineral_develop
+			focus = CM4_boundary_secure
+			focus = CM4_dig_in_south
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = { #
+		id = CM4_establish_of_forestration_department
+		icon = GFX_FRA_70
+		cost = 3.60
+		relative_position_id = CM4_buy_industry_materials
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = CM4_buy_industry_materials
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = { #
+		id = CM4_invest_oil_develop
+		icon = GFX_FRA_70
+		cost = 3.60
+		relative_position_id = CM4_mineral_develop
+		x = 4
+		y = 1
+		prerequisite = {
+			focus = CM4_mineral_develop
+			focus = CM4_boundary_secure
+			focus = CM4_dig_in_south
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = { #
+		id = CM4_artificial_oilling
+		icon = GFX_FRA_70
+		cost = 3.60
+		relative_position_id = CM4_invest_oil_develop
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = CM4_invest_oil_develop
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = { #
+		id = CM4_combiened_industry_develop
+		icon = GFX_FRA_70
+		cost = 3.60
+		relative_position_id = CM4_artificial_oilling
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = CM4_artificial_oilling
+		}
+		prerequisite = {
+			focus = CM4_establish_of_forestration_department
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = { #
+		id = CM4_Yukon_problem
+		icon = GFX_FRA_70
+		cost = 3.60
+		relative_position_id = CM4_Vancouver_integrated_develop
+		x = 4
+		y = 1
+		prerequisite = {
+			focus = CM4_Vancouver_integrated_develop
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = { #
+		id = CM4_second_develop_plan
+		icon = GFX_FRA_70
+		cost = 3.60
+		relative_position_id = CM4_Yukon_problem
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = CM4_Yukon_problem
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = { #
+		id = CM4_eastern_alieska_defensive_line
+		icon = GFX_FRA_70
+		cost = 3.60
+		relative_position_id = CM4_Yukon_problem
+		x = 4
+		y = 1
+		prerequisite = {
+			focus = CM4_Yukon_problem
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+}

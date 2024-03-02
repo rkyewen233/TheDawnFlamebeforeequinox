@@ -1,0 +1,97 @@
+LKMT_North_War_categories = {
+	xiaomie_chuan = {
+        cost = 100
+        visible = {
+            country_exists = SIC
+        }
+        available = {
+        }
+        fire_only_once = yes
+        days_remove = 20
+        remove_effect = {
+			declare_war_on = { 
+				target = SIC
+				type = annex_everything
+			} 
+        }
+		ai_will_do = {
+			factor = 10
+		}
+    }
+	xiaomie_wanxi = {
+        cost = 100
+        visible = {
+            country_exists = WAX
+        }
+        available = {
+        }
+        fire_only_once = yes
+        days_remove = 20
+        remove_effect = {
+			declare_war_on = { 
+				target = WAX
+				type = annex_everything
+			} 
+        }
+		ai_will_do = {
+			factor = 10
+		}
+    } 
+	xiaomie_ningxi = {
+        cost = 100
+        visible = {
+            country_exists = NIX
+        }
+        available = {
+        }
+        fire_only_once = yes
+        days_remove = 20
+        remove_effect = {
+			declare_war_on = { 
+				target = NIX
+				type = annex_everything
+			} 
+        }
+		ai_will_do = {
+			factor = 10
+		}
+    } 
+	xiaomie_majia = {
+        cost = 100
+        visible = {
+            country_exists = XSM
+        }
+        available = {
+        }
+        fire_only_once = yes
+        days_remove = 20
+        remove_effect = {
+			declare_war_on = { 
+				target = XSM
+				type = annex_everything
+			} 
+        }
+		ai_will_do = {
+			factor = 10
+		}
+    }  
+    xiaomie_xiangxi = {
+        cost = 100
+        visible = {
+            country_exists = XIX
+        }
+        available = {
+        }
+        fire_only_once = yes
+        days_remove = 20
+        remove_effect = {
+			declare_war_on = { 
+				target = XIX
+				type = annex_everything
+			} 
+        }
+		ai_will_do = {
+			factor = 10
+		}
+    }  
+}

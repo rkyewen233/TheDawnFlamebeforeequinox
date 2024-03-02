@@ -1,0 +1,202 @@
+spriteTypes = {	
+	
+	SpriteType = {
+		name = "Sunism_1"
+		texturefile = "gfx/interface/goals/Sunism_1.png"			
+	}
+
+	SpriteType = {
+		name = "sunism_2"
+		texturefile = "gfx/interface/goals/sunism_2.png"			
+	}
+
+	SpriteType = {
+		name = "sunism_3"
+		texturefile = "gfx/interface/goals/sunism_3.png"			
+	}
+
+	SpriteType = {
+		name = "sunism_4"
+		texturefile = "gfx/interface/goals/sunism_4.png"			
+	}
+
+	SpriteType = {
+		name = "sunism_5"
+		texturefile = "gfx/interface/goals/sunism_5.png"			
+	}
+
+	SpriteType = {
+		name = "sunism_6"
+		texturefile = "gfx/interface/goals/sunism_6.png"			
+	}
+
+	SpriteType = {
+		name = "sunism_7"
+		texturefile = "gfx/interface/goals/sunism_7.png"			
+	}
+
+	SpriteType = {
+		name = "sunism_8"
+		texturefile = "gfx/interface/goals/sunism_8.png"			
+	}
+	SpriteType = {
+		name = "sunism_9"
+		texturefile = "gfx/interface/goals/sunism_9.png"			
+	}
+	SpriteType = {
+		name = "sunism_10"
+		texturefile = "gfx/interface/goals/sunism_10.png"			
+	}
+	SpriteType = {
+		name = "sunism_11"
+		texturefile = "gfx/interface/goals/sunism_11.png"			
+	}
+	SpriteType = {
+		name = "sunism_12"
+		texturefile = "gfx/interface/goals/sunism_12.png"			
+	}
+	SpriteType = {
+		name = "sunism_13"
+		texturefile = "gfx/interface/goals/sunism_13.png"			
+	}
+	SpriteType = {
+		name = "sunism_14"
+		texturefile = "gfx/interface/goals/sunism_14.png"			
+	}
+	SpriteType = {
+		name = "sunism_15"
+		texturefile = "gfx/interface/goals/sunism_15.png"			
+	}
+	SpriteType = {
+		name = "sunism_16"
+		texturefile = "gfx/interface/goals/sunism_16.png"			
+	}
+	SpriteType = {
+		name = "sunism_17"
+		texturefile = "gfx/interface/goals/sunism_17.png"			
+	}
+	SpriteType = {
+		name = "sunism_18"
+		texturefile = "gfx/interface/goals/sunism_18.png"			
+	}
+	SpriteType = {
+		name = "sunism_19"
+		texturefile = "gfx/interface/goals/sunism_19.png"			
+	}
+	SpriteType = {
+		name = "sunism_20"
+		texturefile = "gfx/interface/goals/sunism_20.png"			
+	}
+	SpriteType = {
+		name = "sunism_21"
+		texturefile = "gfx/interface/goals/sunism_21.png"			
+	}
+	SpriteType = {
+		name = "sunism_22"
+		texturefile = "gfx/interface/goals/sunism_22.png"			
+	}
+	SpriteType = {
+		name = "sunism_23"
+		texturefile = "gfx/interface/goals/sunism_23.png"			
+	}
+	SpriteType = {
+		name = "sunism_24"
+		texturefile = "gfx/interface/goals/sunism_24.png"			
+	}
+	SpriteType = {
+		name = "sunism_25"
+		texturefile = "gfx/interface/goals/sunism_25.png"			
+	}
+	SpriteType = {
+		name = "sunism_26"
+		texturefile = "gfx/interface/goals/sunism_26.png"			
+	}
+	SpriteType = {
+		name = "sunism_27"
+		texturefile = "gfx/interface/goals/sunism_27.png"			
+	}
+	SpriteType = {
+		name = "sunism_28"
+		texturefile = "gfx/interface/goals/sunism_28.png"			
+	}
+	SpriteType = {
+		name = "sunism_29"
+		texturefile = "gfx/interface/goals/sunism_29.png"			
+	}
+	SpriteType = {
+		name = "sunism_30"
+		texturefile = "gfx/interface/goals/sunism_30.png"			
+	}
+	SpriteType = {
+		name = "sunism_31"
+		texturefile = "gfx/interface/goals/sunism_31.png"			
+	}
+	SpriteType = {
+		name = "sunism_32"
+		texturefile = "gfx/interface/goals/sunism_32.png"			
+	}
+	SpriteType = {
+		name = "sunism_33"
+		texturefile = "gfx/interface/goals/sunism_33.png"			
+	}
+	SpriteType = {
+		name = "sunism_34"
+		texturefile = "gfx/interface/goals/sunism_34.png"			
+	}
+	SpriteType = {
+		name = "sunism_35"
+		texturefile = "gfx/interface/goals/sunism_35.png"			
+	}
+	SpriteType = {
+		name = "sunism_36"
+		texturefile = "gfx/interface/goals/sunism_36.png"			
+	}
+	SpriteType = {
+		name = "sunism_37"
+		texturefile = "gfx/interface/goals/sunism_37.png"			
+	}
+	SpriteType = {
+		name = "sunism_38"
+		texturefile = "gfx/interface/goals/sunism_38.png"			
+	}
+	SpriteType = {
+		name = "sunism_39"
+		texturefile = "gfx/interface/goals/sunism_39.png"			
+	}
+	SpriteType = {
+		name = "sunism_40"
+		texturefile = "gfx/interface/goals/sunism_40.png"			
+	}
+	SpriteType = {
+		name = "sunism_41"
+		texturefile = "gfx/interface/goals/sunism_41.png"			
+	}
+	SpriteType = {
+		name = "sunism_42"
+		texturefile = "gfx/interface/goals/sunism_42.png"			
+	}
+	SpriteType = {
+		name = "sunism_43"
+		texturefile = "gfx/interface/goals/sunism_43.png"			
+	}
+	SpriteType = {
+		name = "sunism_44"
+		texturefile = "gfx/interface/goals/sunism_44.png"			
+	}
+	SpriteType = {
+		name = "sunism_45"
+		texturefile = "gfx/interface/goals/sunism_45.png"			
+	}
+	SpriteType = {
+		name = "sunism_46"
+		texturefile = "gfx/interface/goals/sunism_46.png"			
+	}
+	SpriteType = {
+		name = "sunism_47"
+		texturefile = "gfx/interface/goals/sunism_47.png"			
+	}
+	SpriteType = {
+		name = "sunism_48"
+		texturefile = "gfx/interface/goals/sunism_48.png"			
+	}
+}

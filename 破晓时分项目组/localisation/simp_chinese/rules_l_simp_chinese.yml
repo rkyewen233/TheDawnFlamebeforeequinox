@@ -1,0 +1,8 @@
+﻿l_simp_chinese:
+ RULE_GROUP_PRE_SETS:0 "世界背景预设"
+
+ FRA_great_exhibition_of_end:0 "@FRA法兰西终焉大萧条处理情况"
+ PRESETS_OPTION_BENIGN_FRA:0 "良性处理"
+ PRESETS_OPTION_BENIGN_FRA_DESC:0 "良性处理为默认模式，在该情况下法国会高效的处理终焉大萧条及其影响，有效的稳定了政府权威，压制了共产党、激进党和社会党等左翼势力。"
+ PRESETS_OPTION_MALIGNANT_FRA:0 "恶性处理"
+ PRESETS_OPTION_MALIGNANT_FRA_DESC:0 "在该幻想模式下，法国政府无力应对大萧条，左翼政党以及工人游行彻底摧毁了法兰西王国的霸业。社会党以及共产党组成的工人阵线亟需发动革命，法兰西内战迫在眉睫。"

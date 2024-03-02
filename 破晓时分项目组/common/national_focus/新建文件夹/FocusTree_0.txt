@@ -1,0 +1,1121 @@
+focus_tree = {
+	id = FocusTree_0
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = 
+		}
+	}
+	default = no
+	focus = {
+		id = ENG_laborer_0
+		icon = GFX_goal_unknown
+		cost = 1.00
+		x = 42
+		y = 1
+
+	}
+	focus = {
+		id = ENG_laborer_3
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_0
+		}
+		x = 36
+		y = 2
+
+	}
+	focus = {
+		id = ENG_laborer_4
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_3
+		}
+		x = 35
+		y = 3
+
+	}
+	focus = {
+		id = ENG_laborer_5
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_4
+		}
+		x = 35
+		y = 4
+
+	}
+	focus = {
+		id = ENG_laborer_2
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_0
+		}
+		x = 38
+		y = 2
+
+	}
+	focus = {
+		id = ENG_laborer_6
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_3
+		}
+		prerequisite = {
+			focus = ENG_laborer_2
+		}
+		x = 37
+		y = 3
+
+	}
+	focus = {
+		id = ENG_laborer_7
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_6
+		}
+		x = 37
+		y = 4
+
+	}
+	focus = {
+		id = ENG_laborer_12
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_7
+		}
+		prerequisite = {
+			focus = ENG_laborer_5
+		}
+		x = 36
+		y = 5
+
+	}
+	focus = {
+		id = ENG_laborer_1
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_0
+		}
+		x = 40
+		y = 2
+
+	}
+	focus = {
+		id = ENG_laborer_14
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_2
+		}
+		prerequisite = {
+			focus = ENG_laborer_1
+		}
+		prerequisite = {
+			focus = ENG_laborer_3
+		}
+		x = 38
+		y = 5
+
+	}
+	focus = {
+		id = ENG_laborer_8
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_2
+		}
+		prerequisite = {
+			focus = ENG_laborer_1
+		}
+		x = 39
+		y = 3
+
+	}
+	focus = {
+		id = ENG_laborer_9
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_8
+		}
+		x = 39
+		y = 4
+
+	}
+	focus = {
+		id = ENG_laborer_16
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_14
+		}
+		mutually_exclusive = {
+			focus = ENG_laborer_15
+		}
+		x = 40
+		y = 6
+
+	}
+	focus = {
+		id = ENG_laborer_30
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_16
+		}
+		x = 39
+		y = 7
+
+	}
+	focus = {
+		id = ENG_laborer_32
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_30
+		}
+		x = 38
+		y = 8
+
+	}
+	focus = {
+		id = ENG_laborer_33
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_30
+		}
+		x = 39
+		y = 9
+
+	}
+	focus = {
+		id = ENG_laborer_10
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_1
+		}
+		x = 41
+		y = 3
+
+	}
+	focus = {
+		id = ENG_laborer_11
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_10
+		}
+		x = 41
+		y = 4
+
+	}
+	focus = {
+		id = ENG_laborer_13
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_11
+		}
+		prerequisite = {
+			focus = ENG_laborer_9
+		}
+		x = 40
+		y = 5
+
+	}
+	focus = {
+		id = ENG_laborer_31
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_16
+		}
+		x = 41
+		y = 7
+
+	}
+	focus = {
+		id = ENG_laborer_34
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_31
+		}
+		x = 41
+		y = 8
+
+	}
+	focus = {
+		id = ENG_laborer_36
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_0
+		}
+		x = 44
+		y = 2
+
+	}
+	focus = {
+		id = ENG_laborer_37
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_36
+		}
+		x = 43
+		y = 3
+
+	}
+	focus = {
+		id = ENG_laborer_38
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_36
+		}
+		x = 45
+		y = 3
+
+	}
+	focus = {
+		id = ENG_laborer_39
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_37
+		}
+		prerequisite = {
+			focus = ENG_laborer_38
+		}
+		x = 44
+		y = 4
+
+	}
+	focus = {
+		id = ENG_laborer_40
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_39
+		}
+		x = 43
+		y = 5
+
+	}
+	focus = {
+		id = ENG_laborer_49
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_40
+		}
+		x = 42
+		y = 6
+
+	}
+	focus = {
+		id = ENG_laborer_50
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_40
+		}
+		x = 44
+		y = 6
+
+	}
+	focus = {
+		id = ENG_laborer_53
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_39
+		}
+		x = 45
+		y = 5
+
+	}
+	focus = {
+		id = ENG_laborer_55
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_53
+		}
+		x = 45
+		y = 8
+
+	}
+	focus = {
+		id = ENG_laborer_54
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_39
+		}
+		x = 47
+		y = 5
+
+	}
+	focus = {
+		id = ENG_laborer_56
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_54
+		}
+		x = 46
+		y = 6
+
+	}
+	focus = {
+		id = ENG_laborer_57
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_56
+		}
+		x = 46
+		y = 7
+
+	}
+	focus = {
+		id = ENG_laborer_78
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_0
+		}
+		x = 48
+		y = 2
+
+	}
+	focus = {
+		id = ENG_laborer_79
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_78
+		}
+		mutually_exclusive = {
+			focus = ENG_laborer_80
+		}
+		x = 47
+		y = 3
+
+	}
+	focus = {
+		id = ENG_laborer_60
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_54
+		}
+		x = 47
+		y = 8
+
+	}
+	focus = {
+		id = ENG_laborer_61
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_60
+		}
+		x = 47
+		y = 9
+
+	}
+	focus = {
+		id = ENG_laborer_62
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_61
+		}
+		x = 47
+		y = 10
+
+	}
+	focus = {
+		id = ENG_laborer_69
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_62
+		}
+		x = 47
+		y = 12
+
+	}
+	focus = {
+		id = ENG_laborer_80
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_78
+		}
+		mutually_exclusive = {
+			focus = ENG_laborer_79
+		}
+		x = 49
+		y = 3
+
+	}
+	focus = {
+		id = ENG_laborer_81
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_80
+			focus = ENG_laborer_79
+		}
+		x = 48
+		y = 4
+
+	}
+	focus = {
+		id = ENG_laborer_58
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_54
+		}
+		x = 48
+		y = 6
+
+	}
+	focus = {
+		id = ENG_laborer_59
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_58
+		}
+		x = 48
+		y = 7
+
+	}
+	focus = {
+		id = ENG_laborer_92
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_39
+		}
+		x = 49
+		y = 5
+
+	}
+	focus = {
+		id = ENG_laborer_63
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_60
+		}
+		x = 49
+		y = 9
+
+	}
+	focus = {
+		id = ENG_laborer_66
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_63
+		}
+		x = 49
+		y = 10
+
+	}
+	focus = {
+		id = ENG_laborer_71
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_66
+		}
+		x = 48
+		y = 11
+
+	}
+	focus = {
+		id = ENG_laborer_70
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_66
+		}
+		x = 49
+		y = 12
+
+	}
+	focus = {
+		id = ENG_laborer_64
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_60
+		}
+		x = 51
+		y = 9
+
+	}
+	focus = {
+		id = ENG_laborer_72
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_64
+		}
+		x = 51
+		y = 10
+
+	}
+	focus = {
+		id = ENG_laborer_73
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_72
+		}
+		x = 51
+		y = 11
+
+	}
+	focus = {
+		id = ENG_laborer_65
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_60
+		}
+		x = 53
+		y = 9
+
+	}
+	focus = {
+		id = ENG_laborer_74
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_65
+		}
+		x = 53
+		y = 10
+
+	}
+	focus = {
+		id = ENG_laborer_75
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_74
+		}
+		x = 53
+		y = 11
+
+	}
+	focus = {
+		id = ENG_laborer_76
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_75
+		}
+		x = 52
+		y = 12
+
+	}
+	focus = {
+		id = ENG_laborer_15
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_14
+		}
+		mutually_exclusive = {
+			focus = ENG_laborer_16
+		}
+		x = 36
+		y = 6
+
+	}
+	focus = {
+		id = ENG_laborer_17
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_15
+		}
+		x = 36
+		y = 7
+
+	}
+	focus = {
+		id = ENG_laborer_18
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_17
+		}
+		x = 36
+		y = 8
+
+	}
+	focus = {
+		id = ENG_laborer_19
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_18
+		}
+		x = 37
+		y = 9
+
+	}
+	focus = {
+		id = ENG_laborer_20
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_18
+		}
+		x = 35
+		y = 9
+
+	}
+	focus = {
+		id = ENG_laborer_21
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_18
+		}
+		x = 33
+		y = 9
+
+	}
+	focus = {
+		id = ENG_laborer_22
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_21
+		}
+		x = 32
+		y = 10
+
+	}
+	focus = {
+		id = ENG_laborer_23
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_21
+		}
+		x = 34
+		y = 10
+
+	}
+	focus = {
+		id = ENG_laborer_24
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_23
+		}
+		prerequisite = {
+			focus = ENG_laborer_22
+		}
+		x = 33
+		y = 11
+
+	}
+	focus = {
+		id = ENG_laborer_25
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_23
+		}
+		x = 34
+		y = 12
+
+	}
+	focus = {
+		id = ENG_laborer_26
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_20
+		}
+		prerequisite = {
+			focus = ENG_laborer_19
+		}
+		x = 36
+		y = 10
+
+	}
+	focus = {
+		id = ENG_laborer_27
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_20
+		}
+		x = 35
+		y = 11
+
+	}
+	focus = {
+		id = ENG_laborer_28
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_19
+		}
+		x = 37
+		y = 11
+
+	}
+	focus = {
+		id = ENG_laborer_29
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_26
+		}
+		x = 36
+		y = 12
+
+	}
+	focus = {
+		id = ENG_laborer_35
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = ENG_laborer_31
+			focus = ENG_laborer_30
+		}
+		x = 40
+		y = 10
+
+	}
+	focus = {
+		id = ENG_laborer_41
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_52
+		}
+		mutually_exclusive = {
+			focus = ENG_laborer_43
+			focus = ENG_laborer_43
+		}
+		x = 43
+		y = 9
+
+	}
+	focus = {
+		id = ENG_laborer_43
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_52
+		}
+		mutually_exclusive = {
+			focus = ENG_laborer_41
+		}
+		x = 45
+		y = 9
+
+	}
+	focus = {
+		id = ENG_laborer_43
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_52
+		}
+		mutually_exclusive = {
+			focus = ENG_laborer_41
+		}
+		x = 41
+		y = 9
+
+	}
+	focus = {
+		id = ENG_laborer_44
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_41
+			focus = ENG_laborer_43
+			focus = ENG_laborer_43
+		}
+		x = 42
+		y = 10
+
+	}
+	focus = {
+		id = ENG_laborer_45
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_43
+			focus = ENG_laborer_41
+			focus = ENG_laborer_43
+		}
+		x = 44
+		y = 10
+
+	}
+	focus = {
+		id = ENG_laborer_46
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_44
+		}
+		x = 42
+		y = 11
+
+	}
+	focus = {
+		id = ENG_laborer_47
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_45
+		}
+		x = 44
+		y = 11
+
+	}
+	focus = {
+		id = ENG_laborer_48
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_41
+			focus = ENG_laborer_43
+			focus = ENG_laborer_43
+		}
+		x = 43
+		y = 12
+
+	}
+	focus = {
+		id = ENG_laborer_51
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_50
+		}
+		prerequisite = {
+			focus = ENG_laborer_49
+		}
+		x = 43
+		y = 7
+
+	}
+	focus = {
+		id = ENG_laborer_52
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_51
+		}
+		x = 43
+		y = 8
+
+	}
+	focus = {
+		id = ENG_laborer_67
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_45
+		}
+		prerequisite = {
+			focus = ENG_laborer_61
+		}
+		x = 46
+		y = 11
+
+	}
+	focus = {
+		id = ENG_laborer_68
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_67
+		}
+		prerequisite = {
+			focus = ENG_laborer_47
+		}
+		x = 45
+		y = 12
+
+	}
+	focus = {
+		id = ENG_laborer_77
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_75
+		}
+		x = 54
+		y = 12
+
+	}
+	focus = {
+		id = ENG_laborer_82
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_70
+		}
+		prerequisite = {
+			focus = ENG_laborer_69
+		}
+		prerequisite = {
+			focus = ENG_laborer_76
+		}
+		prerequisite = {
+			focus = ENG_laborer_77
+		}
+		prerequisite = {
+			focus = ENG_laborer_73
+		}
+		x = 51
+		y = 13
+
+	}
+	focus = {
+		id = ENG_laborer_83
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_29
+		}
+		x = 35
+		y = 13
+
+	}
+	focus = {
+		id = ENG_laborer_84
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_29
+		}
+		prerequisite = {
+			focus = ENG_laborer_48
+		}
+		x = 37
+		y = 13
+
+	}
+	focus = {
+		id = ENG_laborer_85
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_29
+		}
+		prerequisite = {
+			focus = ENG_laborer_48
+		}
+		x = 39
+		y = 13
+
+	}
+	focus = {
+		id = ENG_laborer_86
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_48
+		}
+		prerequisite = {
+			focus = ENG_laborer_29
+		}
+		x = 41
+		y = 13
+
+	}
+	focus = {
+		id = ENG_laborer_87
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_48
+		}
+		x = 43
+		y = 13
+
+	}
+	focus = {
+		id = ENG_laborer_88
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_48
+		}
+		prerequisite = {
+			focus = ENG_laborer_68
+		}
+		x = 45
+		y = 13
+
+	}
+	focus = {
+		id = ENG_laborer_89
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_84
+		}
+		x = 37
+		y = 14
+
+	}
+	focus = {
+		id = ENG_laborer_90
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_89
+		}
+		x = 37
+		y = 15
+
+	}
+	focus = {
+		id = ENG_laborer_91
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_laborer_86
+		}
+		x = 41
+		y = 14
+
+	}
+}

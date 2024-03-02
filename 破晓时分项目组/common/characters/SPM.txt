@@ -1,0 +1,16 @@
+characters={
+	SPM_Tomislav={
+		name = "托米斯拉夫II 迪 托林诺 迪 萨伏依"
+		portraits={
+			civilian={
+				large = "gfx/leaders/SPM/SPM_Tomislav.png"
+			}
+		}
+		country_leader={
+			ideology = monarchism_s
+			traits = {  }
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

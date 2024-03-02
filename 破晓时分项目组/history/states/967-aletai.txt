@@ -1,0 +1,23 @@
+state={
+	id=967
+	name="STATE_967"
+
+	history={
+		owner = ZHX
+		add_core_of = ZHX
+		add_core_of = MAN
+		add_core_of = GDG
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		1749 1818 1864 4674 10610 12427 12564 
+	}
+	manpower=2000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.00
+}

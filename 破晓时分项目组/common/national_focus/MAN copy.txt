@@ -1,0 +1,266 @@
+focus_tree = {
+	id = FocusTree_0
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			add = 5
+			or = {
+				tag = SIC
+				tag = MAN
+				tag = XBZ
+				tag = XBJ
+				tag = GXC
+				tag = NIX
+				tag = WAX
+				tag = XIX
+				tag = HNN
+				tag = ZHI
+				tag = ADF
+				tag = ZHX
+				tag = YUN
+				tag = XSM
+				tag = MON
+				tag = GUI
+			}
+		}
+	}
+	default = no
+	focus = {
+		id = MAN_5
+		icon = GFX_goal_unknown
+		cost = 20
+		x = 12
+		y = 0
+		
+		completion_reward = {
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = MAN_6
+		prerequisite = {
+			focus = MAN_5
+		}
+		icon = GFX_goal_unknown
+		cost = 20
+		x = 12
+		y = 1
+		completion_reward = {
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = MAN_7
+		prerequisite = {
+			focus = MAN_6
+		}
+		icon = GFX_goal_unknown
+		cost = 20
+		x = 12
+		y = 2
+		completion_reward = {
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = MAN_8
+		icon = GFX_goal_unknown
+		cost = 20
+		x = 14
+		y = 0
+		
+		completion_reward = {
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = MAN_9
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = MAN_8
+		}
+		cost = 20
+		x = 14
+		y = 1
+		completion_reward = {
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = MAN_10
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = MAN_9
+		}
+		cost = 20
+		x = 14
+		y = 2
+		completion_reward = {
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = MAN_11
+		icon = GFX_goal_unknown
+		cost = 20
+		x = 16
+		y = 0
+		
+		completion_reward = {
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = MAN_12
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = MAN_11
+		}
+		cost = 20
+		x = 16
+		y = 1
+		completion_reward = {
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = MAN_13
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = MAN_12
+		}
+		cost = 20
+		x = 16
+		y = 2
+		completion_reward = {
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
+	}
+}

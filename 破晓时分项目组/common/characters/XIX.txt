@@ -1,0 +1,30 @@
+characters={
+	XIX_Cheng_Qian={
+		name = XIX_Cheng_Qian
+		portraits={
+			civilian={
+				large = "gfx/leaders/XIX/XIX_Cheng_Qian.png"
+			}
+		}
+		country_leader={
+			ideology = sunism
+			traits = {  }
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+	XIX_He_jian={
+		name = XIX_He_jian
+		portraits={
+			civilian={
+				large = "gfx/leaders/XIX/XIX_He_jian.png"
+			}
+		}
+		country_leader={
+			ideology = paternalistic_conservatism
+			traits = {  }
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

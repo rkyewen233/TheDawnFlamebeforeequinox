@@ -1,0 +1,18 @@
+characters = {
+	KKD_Enver_Pash = {
+		name = Enver_Pash 
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KKD/GFX_portrait_Enver_Pasha.png"
+			}
+		}
+		country_leader = {
+			ideology = paternalistic_conservatism
+			expire = "1938.1.1.1"
+			id = -1
+		}
+	}
+
+}
+
+	

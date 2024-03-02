@@ -1,0 +1,18 @@
+scripted_gui = {
+	welcome_container = {
+		window_name = welcome_container
+		context_type = player_context
+		visible = {
+			has_country_flag = welcome_flg
+			is_ai = no
+		}
+		triggers = {
+            
+        }
+		effects = {
+			start_button_click = {
+				clr_country_flag = welcome_flg
+			}
+		}
+	}
+}

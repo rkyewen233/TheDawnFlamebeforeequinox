@@ -1,0 +1,32 @@
+POLITCOM = {
+    color = rgb { 117 21 57 }
+    color_ui = rgb { 117 21 57 }
+}
+UK_peoples_republic_of_britain = {
+    color = rgb { 137 31 67 }
+    color_ui = rgb { 137 31 67 }
+}
+NAV_iberia_federation = {
+    color = rgb { 142 0 24 }
+    color_ui = rgb { 142 0 24 }
+}
+POR_SPR_colony = {
+    color = rgb { 160 138 33 }
+	color_ui = rgb { 160 138 33 }   
+}
+FIN_1 = {
+	color = rgb { 13 79 10 }
+	color_ui = rgb { 13 79 10 }
+}
+Dongbei = {
+	color = rgb { 234 183 0 }
+	color_ui = rgb { 234 183 0 }
+}
+Beiyang = {
+    color = rgb { 0 70 127 }
+	color_ui = rgb { 0 70 127 }
+}
+Hanguo = {
+    color = rgb { 73 16 6 }
+	color_ui = rgb { 73 16 6 }
+}

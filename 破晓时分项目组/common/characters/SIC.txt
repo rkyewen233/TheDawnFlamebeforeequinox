@@ -1,0 +1,16 @@
+characters={
+	SIC_Xiong_Ke_Wu = {
+		name = SIC_Xiong_Ke_Wu
+		portraits={
+			civilian={
+				large = "gfx/leaders/SIC/SIC_Xiong_Ke_Wu.png"
+			}
+		}
+		country_leader={
+			ideology = paternalistic_conservatism
+			traits = { warrior_code }
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

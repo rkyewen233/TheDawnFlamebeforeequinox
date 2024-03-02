@@ -1,0 +1,13 @@
+ENG_FRA_global_hargemony_categories = {
+	icon = SOV_paranoia
+	visible = {
+		always = yes
+		OR = {
+			tag = FRA
+			tag = ENG
+		}
+	}
+	priority = 5000
+
+	scripted_gui = ENG_FRA_global_hargemony_categories
+}

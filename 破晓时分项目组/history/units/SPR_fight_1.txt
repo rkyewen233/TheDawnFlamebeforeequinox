@@ -1,0 +1,46 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "后方登陆军" 		# Used for both regular infantry divisions and larger garrison divisions
+	division_names_group = SPR_INF_01
+	# Note: Spanish divisions were 2x brigades of 2x2 rgts each, + support
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		artillery = { x = 1 y = 4 }
+		artillery = { x = 2 y = 0 }
+		artillery = { x = 2 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }  # Spanish Arty Rgt/Bge had 2 Bn 105mm arty
+		engineer = { x = 0 y = 1 }   # Eng Bn
+	}
+}
+
+units = {
+	division = { # "1a División de Infantería"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13218  # Madrid
+		division_template = "后方登陆军"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}		
+	division = { # "1a División de Infantería"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13218  # Madrid
+		division_template = "后方登陆军"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}		
+}

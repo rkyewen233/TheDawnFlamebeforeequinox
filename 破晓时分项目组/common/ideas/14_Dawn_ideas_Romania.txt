@@ -1,0 +1,113 @@
+ideas = {
+    country = {
+        RMN_profits_of_ploiesti = { #普洛耶什蒂的利润
+            name = RMN_profits_of_ploiesti_name
+            picture = ENG_idea_29
+            allowed = { always = yes }
+            modifier = {
+                consumer_goods_factor = -0.10
+                political_power_factor = 0.10
+                opinion_gain_monthly_factor = 0.20
+            }
+        }
+        RMN_dniestria_separatism = { #德涅斯特里亚分离主义者
+            name = RMN_dniestria_separatism_name
+            picture = ENG_idea_29
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.05
+                conscription_factor = -0.10
+            }
+        }
+        RMN_unstable_banat = { #不稳定的巴纳特
+            name = RMN_unstable_banat_name
+            picture = ENG_idea_29
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.05
+            }
+        }
+        RMN_over_expanded_army = { #臃肿的军队
+            name = RMN_over_expanded_army_name
+            picture = ENG_idea_29
+            allowed = { always = yes }
+            modifier = {
+                army_attack_factor = -0.10
+                army_defence_factor = -0.10
+                army_org_factor = -0.05
+                army_experience = -0.10
+                navy_experience = -0.10
+                air_experience = -0.10
+            }
+        }
+        RMN_dream_of_balkan_hargemony = { #巴尔干霸权之梦
+            name = RMN_dream_of_balkan_hargemony_name
+            picture = ENG_idea_29
+            allowed = { always = yes }
+            modifier = {
+                war_support_factor = -0.15
+                consumer_goods_factor = -0.10
+            }
+        }
+        RMN_intermarium = { #intermarium
+            name = RMN_intermarium_name
+            picture = ENG_idea_29
+            allowed = { always = yes }
+            modifier = {
+                industrial_capacity_dockyard = 0.05
+                navy_max_range_factor = 0.10
+            }
+        }
+        RMN_Carol = { #绯色卡罗尔
+            name = RMN_Carol_name
+            picture = ENG_idea_29
+            allowed = { always = yes }
+            modifier = {
+                consumer_goods_factor = 0.05
+                political_power_factor = -0.20
+            }
+        }
+        RMN_last_depression = { #最后的萧条
+            name = RMN_last_depression_name
+            picture = ENG_idea_29
+            allowed = { always = yes }
+            modifier = {
+                production_speed_buildings_factor = -0.30
+                stability_factor = -0.10
+                industrial_capacity_factory = -0.15
+            }
+        }
+    }
+    country = {
+        RMN_marching_of_arbeiters = { #工人大游行
+            name = RMN_marching_of_arbeiters_name
+            picture = ENG_idea_29
+            allowed = { always = yes }
+            modifier = {
+                consumer_goods_factor = 0.15
+                production_speed_buildings_factor = -0.1
+                industrial_capacity_factory = -0.10
+                local_resources_factor = -1.00
+            }
+        }
+        RMN_dniestria_marchings = { #德涅斯特里亚人的迫切
+            name = RMN_dniestria_marchings_name
+            picture = ENG_idea_29
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.15
+                conscription_factor = -0.15
+                industrial_capacity_factory = -0.05
+            }
+        }
+        RMN_extre_unstable_banat = { #巴纳特人蓄势待发
+            name = RMN_extre_unstable_banat_name
+            picture = ENG_idea_29
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.15
+                conscription_factor = -0.05
+            }
+        }
+    }
+}

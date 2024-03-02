@@ -1,0 +1,63 @@
+spriteTypes = {	
+	
+	SpriteType = {
+		name = "GFX_generic_election_go_in_botton"
+		texturefile = "gfx/interface/generic_elections/bottom_generic_election.dds"	
+		noOfFrames = 3
+		transparencecheck = yes		
+	}
+	SpriteType = {
+		name = "GFX_election_closed_botton"
+		texturefile = "gfx/interface/generic_elections/election_closed_botton.png"	
+		noOfFrames = 3
+		transparencecheck = yes		
+	}
+	SpriteType = {
+		name = "GFX_parties_join_election_title"
+		texturefile = "gfx/interface/generic_elections/parties_join_election_title.png"	
+		noOfFrames = 3
+		transparencecheck = yes		
+	}
+	SpriteType = {
+		name = "GFX_party_info"
+		texturefile = "gfx/interface/generic_elections/party_info.png"	
+		noOfFrames = 1
+		transparencecheck = yes		
+	}
+	SpriteType = {
+		name = "GFX_act_info"
+		texturefile = "gfx/interface/generic_elections/act_info.png"	
+		noOfFrames = 1
+		transparencecheck = yes		
+	}
+	SpriteType = {
+		name = "GFX_party_title"
+		texturefile = "gfx/interface/generic_elections/party_title.png"	
+		noOfFrames = 1
+		transparencecheck = yes		
+	}
+	SpriteType = {
+		name = "GFX_national_symbol"
+		texturefile = "gfx/interface/generic_elections/national_symbol.dds"	
+		noOfFrames = 1
+		transparencecheck = yes		
+	}
+	SpriteType = {
+		name = "GFX_politicalpower_investment"
+		texturefile = "gfx/interface/generic_elections/politicalpower_investment.png"	
+		noOfFrames = 1
+		transparencecheck = yes		
+	}
+	SpriteType = {
+		name = "GFX_pie_chart_cover"
+		texturefile = "gfx/interface/generic_elections/pie_chart_cover.png"		
+	}
+	SpriteType = {
+		name = "GFX_confirm_act"
+		texturefile = "gfx/interface/generic_elections/confirm_act.png"		
+	}
+	SpriteType = {
+		name = "GFX_passed_act"
+		texturefile = "gfx/interface/generic_elections/passed_act.png"		
+	}
+}

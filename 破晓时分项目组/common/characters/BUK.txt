@@ -1,0 +1,29 @@
+characters = {
+	BUK_mohammed_alim_khan = {
+		name = Sayyid_Mir_Muhammad_Alim_Khan
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BUK/GFX_portrait_Sayyid_Mir_Muhammad_Alim_Khan.png"
+			}
+		}
+		country_leader = {
+			ideology = paternalistic_conservatism
+			expire = "1944.1.1.1"
+			id = -1
+		}
+	}
+	BUK_polat_usmon = {
+		name = "Polat Usmon Khodzhayev" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Polat_Usmon_Khodzhayev
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			expire = "1944.1.1.1"
+			id = -1
+		}
+	}
+}
+	

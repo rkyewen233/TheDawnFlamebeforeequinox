@@ -1,0 +1,127 @@
+capital = 608
+
+oob = "MAN_1936"
+set_stability = 0.4
+set_war_support = 0.4
+set_technology = { 
+	infantry_weapons = 1
+	gw_artillery = 1
+	
+}
+
+recruit_character = MAN_aisin_gioro_puyi
+recruit_character = MAN_zhang_haipeng
+recruit_character = MAN_zhang_jinghui
+recruit_character = MAN_aisin_gioro_xiqia
+recruit_character = MAN_yoshiko_kawashima
+recruit_character = MAN_zhao_shangzhi
+recruit_character = MAN_changlin_linge
+recruit_character = MAN_kyoiji_tomonaga
+recruit_character = MAN_yonimitsu_kasahara
+recruit_character = MAN_deng_linge
+recruit_character = MAN_hung_zhehuang
+recruit_character = MAN_nakajima_kesago
+recruit_character = MAN_yin_zuoqian
+recruit_character = MAN_hesehn_tiemei
+recruit_character = MAN_xian_yuan
+recruit_character = MAN_guan_xingde
+recruit_character = MAN_megata_toshiro
+if = {
+	limit = { has_dlc = "No Step Back" }
+	recruit_character = SOV_grigory_semyonov
+	SOV_grigory_semyonov = { 
+		set_character_flag = SOV_exiled_army_leader
+	}
+}
+
+set_convoys = 5
+
+328 = { #Kirin
+	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
+}
+715 = { #Liaoning
+	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
+}
+714 = { #Heilungkiang
+	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
+}
+717 = { #Hungkiang
+	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
+}
+761 = { #Hulunbuir
+	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
+}
+
+set_party_name = {
+	ideology = imperialism_1
+	long_name = "清朝保皇党"
+	name = "清保守派"
+}
+
+set_autonomy = {
+	target = XBZ
+	autonomous_state =  autonomy_duhufu
+}
+set_autonomy = {
+	target = XBJ
+	autonomous_state = autonomy_duhufu
+}
+set_autonomy = {
+	target = ADF
+	autonomous_state = autonomy_duhufu
+}
+set_autonomy = {
+	target = WAX
+	autonomous_state = autonomy_duhufu
+}
+set_autonomy = {
+	target = NIX
+	autonomous_state = autonomy_duhufu
+}
+set_autonomy = {
+	target = XIX
+	autonomous_state = autonomy_duhufu
+}
+set_autonomy = {
+	target = GXC
+	autonomous_state = autonomy_duhufu
+}
+set_autonomy = {
+	target = SIC
+	autonomous_state = autonomy_duhufu
+}
+set_autonomy = {
+	target = TIB
+	autonomous_state = autonomy_duhufu
+}
+set_autonomy = {
+	target = YUN
+	autonomous_state = autonomy_duhufu
+}
+set_autonomy = {
+	target = ZHI
+	autonomous_state = autonomy_duhufu
+}
+set_autonomy = {
+	target = ZHX
+	autonomous_state = autonomy_duhufu
+}
+set_country_flag = baoluan
+create_faction = 大清
+MAN = {
+	add_to_faction = ROOT
+}
+set_politics = {
+	ruling_party = imperialism_1
+	last_election = "1936.1.1"
+	elections_allowed = no
+}
+set_popularities = {
+	nationalism_1 = 20
+	imperialism_1 = 35
+	reformist_socialism_1 = 5
+	classical_socialism = 5
+	totalitarian_socialism_1 = 5
+	democratic_1 = 15
+	reformist_democratic = 15
+}

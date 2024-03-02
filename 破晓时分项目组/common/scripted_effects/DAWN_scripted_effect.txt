@@ -1,0 +1,54 @@
+third_class_opinion_added_5 = {
+	add_to_variable = {
+        FRA_french_third_class_support_rate = 5
+    }
+}
+second_class_opinion_added_5 = {
+	add_to_variable = {
+        FRA_french_second_class_support_rate = 5
+    }
+}
+first_class_opinion_added_5 = {
+	add_to_variable = {
+        FRA_french_first_class_support_rate = 5
+    }
+}
+all_class_opinion_added_5 = {
+	add_to_variable = {
+        FRA_french_third_class_support_rate = 5
+    }
+    add_to_variable = {
+        FRA_french_second_class_support_rate = 5
+    }
+    add_to_variable = {
+        FRA_french_first_class_support_rate = 5
+    }
+}
+
+
+third_class_opinion_minus_5 = {
+	add_to_variable = {
+        FRA_french_third_class_support_rate = -5
+    }
+}
+second_class_opinion_minus_5 = {
+	add_to_variable = {
+        FRA_french_second_class_support_rate = -5
+    }
+}
+first_class_opinion_minus_5 = {
+	add_to_variable = {
+        FRA_french_first_class_support_rate = -5
+    }
+}
+all_class_opinion_minus_5 = {
+	add_to_variable = {
+        FRA_french_third_class_support_rate = -5
+    }
+    add_to_variable = {
+        FRA_french_second_class_support_rate = -5
+    }
+    add_to_variable = {
+        FRA_french_first_class_support_rate = -5
+    }
+}

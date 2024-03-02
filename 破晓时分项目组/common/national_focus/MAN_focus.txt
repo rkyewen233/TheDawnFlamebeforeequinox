@@ -1,0 +1,1358 @@
+focus_tree = {
+	id = MAN_focus
+	country = {
+		factor = 0
+		modifier = {
+		
+		}
+	}
+	default = no
+	focus = {
+		id = a1
+		icon = GFX_goal_unknown
+		cost = 1.00
+		x = 20
+		y = 1
+    completion_reward = {
+            add_stability = 0.05
+			add_war_support = 0.05
+			country_event = {
+                id = MAN.1
+            }
+			}
+	}
+	focus = {
+		id = a2
+		icon = GFX_goal_generic_air_doctrine
+		cost = 0.00
+		available = {
+            has_country_flag = MAN_flag_1
+		}
+		prerequisite = {
+			focus = a1
+		}
+		mutually_exclusive = {
+			focus = a3
+		}
+		x = 14
+		y = 2
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = a4
+		icon = GFX_goal_anschluss
+		cost = 5.00
+		prerequisite = {
+			focus = a2
+		}
+		x = 10
+		y = 3
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = jiushidai_de_jundui_MAN_ideas
+				add_idea = jiushidai_de_jundui1_MAN_ideas
+			}
+			set_country_flag = Army
+		}
+	}
+	focus = {
+		id = a6
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 5.00
+		prerequisite = {
+			focus = a2
+		}
+		completion_reward = {
+			add_stability = 0.05
+			swap_ideas = {
+				remove_idea = fubai_dezhengfu_MAN_ideas
+				add_idea = fubai_dezhengfu_1_MAN_ideas
+			}
+			set_country_flag = Fubai
+		}
+		x = 18
+		y = 3
+
+	}
+	focus = {
+		id = a10
+		icon = GFX_goal_generic_demand_territory
+		cost = 5.00
+		prerequisite = {
+			focus = a4
+		}
+		prerequisite = {
+			focus = a5
+		}
+		completion_reward = {
+			if = {
+				limit ={ has_country_flag = MAN_min_2 }
+					remove_ideas = bude_minxin_2_MAN_ideas
+			}
+			else_if = {
+				limit = {
+					has_country_flag = MAN_min_1
+				}
+				swap_ideas = {
+				remove_idea = bude_minxin_1_MAN_ideas
+				add_idea = bude_minxin_2_MAN_ideas
+				}	
+				set_country_flag = MAN_min_2
+				
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = bude_minxin_MAN_ideas
+					add_idea = bude_minxin_1_MAN_ideas
+					}
+					set_country_flag = MAN_min_1
+			}
+		}
+		x = 12
+		y = 4
+
+	}
+	focus = {
+		id = a5
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5.00
+		prerequisite = {
+			focus = a2
+		}
+		completion_reward = {
+			716 = {
+				add_extra_state_shared_building_slots = 3
+                add_building_construction = {
+                    type = arms_factory
+                    level = 3
+                    instant_build = yes
+				}
+			}
+			328 = {
+				add_extra_state_shared_building_slots = 3
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 3
+                    instant_build = yes
+				}
+			}
+		}
+		x = 14
+		y = 3
+
+	}
+	focus = {
+		id = a11
+		icon = GFX_goal_generic_demand_territory
+		cost = 5.00
+		prerequisite = {
+			focus = a6
+		}
+		prerequisite = {
+			focus = a5
+		}
+		x = 16
+		y = 4
+		completion_reward = {
+			if = {
+				limit ={ has_country_flag = MAN_min_2 }
+					remove_ideas = bude_minxin_2_MAN_ideas
+			}
+			else_if = {
+				limit = {
+					has_country_flag = MAN_min_1
+				}
+				swap_ideas = {
+				remove_idea = bude_minxin_1_MAN_ideas
+				add_idea = bude_minxin_2_MAN_ideas
+				}	
+				set_country_flag = MAN_min_2
+				
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = bude_minxin_MAN_ideas
+					add_idea = bude_minxin_1_MAN_ideas
+					}
+					set_country_flag = MAN_min_1
+			}
+		}
+	}
+	focus = {
+		id = a19
+		icon = GFX_goal_generic_demand_territory
+		cost = 5.00
+		prerequisite = {
+			focus = a11
+		}
+		prerequisite = {
+			focus = a10
+		}
+		completion_reward = {
+			set_country_flag = MAN_flag_SOUTH
+			add_war_support = 0.1
+		}
+		x = 14
+		y = 5
+
+	}
+	focus = {
+		id = a18
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = a10
+		}
+		x = 10
+		y = 5
+		completion_reward = {
+			756 = {
+				add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+				}
+			}
+			621 = {
+				add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+				}
+			}
+			909 = {
+				add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+				}
+			}
+			622 = {
+				add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+				}
+			}
+			918 = {
+				add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+				}
+			}
+			611 = {
+				add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = arms_factory
+                    level = 2
+                    instant_build = yes
+				}
+			}
+			610 = {
+				add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = arms_factory
+                    level = 2
+                    instant_build = yes
+				}
+			}
+			609 = {
+				add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = arms_factory
+                    level = 2
+                    instant_build = yes
+				}
+			}
+			
+		}
+	}
+	focus = {
+		id = a32
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = a18
+			focus = a27
+		}
+		x = 11
+		y = 7
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = tank_MAN_ideas
+				add_idea = tank1_MAN_ideas
+			}
+		}
+	}
+	focus = {
+		id = a27
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = a18
+			focus = a19
+		}
+		mutually_exclusive = {
+			focus = a28
+		}
+		x = 12
+		y = 6
+		completion_reward = {
+			add_ideas = tank_MAN_ideas
+		}
+	}
+	focus = {
+		id = a35
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = a27
+		}
+		completion_reward = {
+			add_ideas = gongchang_MAN_ideas
+		}
+		x = 13
+		y = 8
+
+	}
+	focus = {
+		id = a41
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = a32
+		}
+		prerequisite = {
+			focus = a35
+		}
+		x = 12
+		y = 9
+		completion_reward = {
+			add_ideas = huoli_MAN_ideas
+		}
+	}
+	focus = {
+		id = a20
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = a11
+		}
+		x = 18
+		y = 5
+		completion_reward = {
+			if = {
+				limit ={ has_country_flag = MAN_min_2 }
+					remove_ideas = bude_minxin_2_MAN_ideas
+			}
+			else_if = {
+				limit = {
+					has_country_flag = MAN_min_1
+				}
+				swap_ideas = {
+				remove_idea = bude_minxin_1_MAN_ideas
+				add_idea = bude_minxin_2_MAN_ideas
+				}	
+				set_country_flag = MAN_min_2
+				
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = bude_minxin_MAN_ideas
+					add_idea = bude_minxin_1_MAN_ideas
+					}
+					set_country_flag = MAN_min_1
+			}
+			add_ideas = wenhuachuantong_MAN_ideas
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = a28
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = a20
+			focus = a19
+		}
+		mutually_exclusive = {
+			focus = a27
+		}
+		x = 16
+		y = 6
+		completion_reward = {
+			add_ideas = horse_MAN_ideas
+		}
+	}
+	focus = {
+		id = a33
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = a20
+			focus = a28
+		}
+		x = 17
+		y = 7
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = horse_MAN_ideas
+				add_idea = horse1_MAN_ideas
+			}
+		}
+	}
+	focus = {
+		id = a36
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = a28
+		}
+		x = 15
+		y = 8
+		completion_reward = {
+			add_ideas = nengdong_MAN_ideas
+		}
+	}
+	focus = {
+		id = a42
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = a33
+		}
+		prerequisite = {
+			focus = a36
+		}
+		x = 16
+		y = 9
+		completion_reward = {
+			add_ideas = jidong_MAN_ideas
+		}
+	}
+	focus = {
+		id = a46
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = a41
+			focus = a42
+		}
+		x = 14
+		y = 11
+		completion_reward = {
+			add_ideas = honor_MAN_ideas
+		}
+	}
+	focus = {
+		id = a3
+		icon = GFX_goal_generic_cavalry
+		cost = 0
+		available = {
+			has_country_flag = MAN_flag_2
+		}
+		prerequisite = {
+			focus = a1
+		}
+		mutually_exclusive = {
+			focus = a2
+		}
+		x = 26
+		y = 2
+		completion_reward = {
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = a7
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = a3
+		}
+		completion_reward = {
+			add_political_power = 100	
+		}
+		x = 22
+		y = 3
+
+	}
+	focus = {
+		id = a12
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = a7
+		}
+		mutually_exclusive = {
+			focus = a13
+		}
+		x = 21
+		y = 4
+		completion_reward = {
+			add_stability = -0.1
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = a21
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = a12
+		}
+		completion_reward = {
+			set_country_flag = MAN_flag_SOUTH
+			add_war_support = 0.05
+		}
+		x = 21
+		y = 5
+
+	}
+	focus = {
+		id = a13
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = a7
+		}
+		mutually_exclusive = {
+			focus = a12
+		}
+		x = 23
+		y = 4
+		completion_reward = {
+			add_stability = 0.15
+			add_war_support = -0.1
+		}
+	}
+	focus = {
+		id = a22
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = a13
+		}
+		x = 23
+		y = 5
+		completion_reward = {
+			set_country_flag = South
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = a29
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = a21
+			focus = a22
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+		}
+		x = 22
+		y = 6
+
+	}
+	focus = {
+		id = a8
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = a3
+		}
+		x = 26
+		y = 3
+		completion_reward = {
+			add_stability = -0.05
+			country_event = MAN.4
+		}
+	}
+	focus = {
+		id = a14
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = a8
+		}
+		x = 25
+		y = 4
+		completion_reward = {
+			add_stability = -0.05
+			country_event = {
+				id = MAN.4
+			}
+		}
+	}
+	focus = {
+		id = a23
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = a14
+		}
+		x = 25
+		y = 5
+		completion_reward = {
+			add_stability = -0.05
+			country_event = MAN.4
+		}
+	}
+	focus = {
+		id = a15
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = a8
+		}
+		x = 27
+		y = 4
+		completion_reward = {
+			add_stability = -0.05
+			country_event = MAN.4
+		}
+	}
+	focus = {
+		id = a24
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = a15
+		}
+		x = 27
+		y = 5
+		completion_reward = {
+			add_stability = -0.05
+			country_event = MAN.4
+		}
+	}
+	focus = {
+		id = a30
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = a23
+		}
+		prerequisite = {
+			focus = a24
+		}
+		x = 26
+		y = 6
+		completion_reward = {
+			add_stability = 0.1
+			country_event = MAN.5
+		}
+	}
+	focus = {
+		id = a9
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = a3
+		}
+		x = 30
+		y = 3
+		completion_reward = {
+			add_political_power = 25
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = a16
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = a9
+		}
+		mutually_exclusive = {
+			focus = a17
+		}
+		x = 29
+		y = 4
+		completion_reward = {
+			add_stability =  0.05
+			add_popularity = { 
+				ideology = neutrality
+				popularity = -0.2
+			}
+			add_popularity = { 
+				ideology = monarchism
+				popularity = 0.2
+			}
+		}
+	}
+	focus = {
+		id = a25
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = a16
+		}
+		x = 29
+		y = 5
+		completion_reward = {
+			add_stability =  -0.05
+			add_war_support = -0.05
+		}
+	}
+	focus = {
+		id = a17
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = a9
+		}
+		mutually_exclusive = {
+			focus = a16
+		}
+		x = 31
+		y = 4
+		completion_reward = {
+			add_stability =  -0.05
+			add_popularity = { 
+				ideology = neutrality
+				popularity = 0.35
+			}
+			add_popularity = { 
+				ideology = monarchism
+				popularity = -0.20
+			}
+		}
+	}
+	focus = {
+		id = a26
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = a17
+		}
+		x = 31
+		y = 5
+		completion_reward = {
+			add_stability =  0.1
+			add_manpower = 1000
+		}
+	}
+	focus = {
+		id = a31
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = a25
+			focus = a26
+		}
+		x = 30
+		y = 6
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = a39
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = a34
+		}
+		mutually_exclusive = {
+			focus = a40
+		}
+		x = 29
+		y = 8
+		completion_reward = {
+			add_ideas = youliangjundui_MAN_ideas
+		}
+	}
+	focus = {
+		id = a45
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = a34
+		}
+		prerequisite = {
+			focus = a43
+		}
+		prerequisite = {
+			focus = a44
+		}
+		completion_reward = {
+			add_stability = 0.05
+		}
+		x = 26
+		y = 10
+
+	}
+	focus = {
+		id = a40
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = a34
+		}
+		mutually_exclusive = {
+			focus = a39
+		}
+		x = 31
+		y = 8
+		completion_reward = {
+			add_ideas = horse1_MAN_ideas
+		}
+	}
+	focus = {
+		id = a38
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = a34
+		}
+		mutually_exclusive = {
+			focus = a37
+		}
+		x = 23
+		y = 8
+		completion_reward = {
+			add_ideas = hezuo_MAN_ideas
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.2
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.2
+			}
+		}
+	}
+	focus = {
+		id = a37
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = a34
+		}
+		mutually_exclusive = {
+			focus = a38
+		}
+		x = 21
+		y = 8
+		completion_reward = {
+			add_ideas = against_MAN_ideas
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.2
+			}
+		}
+	}
+	focus = {
+		id = a43
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = a37
+			focus = a38
+		}
+		completion_reward = {
+			add_stability = 0.05
+		}
+		x = 22
+		y = 9
+
+	}
+	focus = {
+		id = a44
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = a39
+			focus = a40
+		}
+		completion_reward = {
+			add_stability = 0.05
+		}
+		x = 30
+		y = 9
+
+	}
+	focus = {
+		id = a47
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = a45
+		}
+		x = 26
+		y = 11
+		completion_reward = {
+			add_ideas = light_MAN_ideas
+			add_stability = 0.15
+		}
+	}
+	focus = {
+		id = a34
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = a29
+		}
+		prerequisite = {
+			focus = a30
+		}
+		prerequisite = {
+			focus = a31
+		}
+		x = 26
+		y = 7
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = a48
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = a46
+			focus = a47
+		}
+		available = {
+			has_country_flag = HAO
+		}
+		x = 20
+		y = 12
+		completion_reward = {
+		add_ideas = future_MAN_ideas	
+		}
+	}
+	focus = {
+		id = b1
+		icon = GFX_goal_unknown
+		cost = 1
+		available = {
+			has_country_flag = MAN_flag_SOUTH
+		}
+		x = 35
+		y = 1
+		completion_reward = {
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = b2
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = b1
+		}
+		x = 32
+		y = 2
+		completion_reward = {
+			add_manpower = -1000
+			add_stability = -0.05
+			TAN = {
+				country_event = {
+					id = wtt_china.10
+				}
+			}
+		}
+	}
+	focus = {
+		id = b3
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = b1
+		}
+		x = 38
+		y = 2
+		completion_reward = {
+			add_manpower = -1000
+			add_stability = -0.05
+			TIB = {
+				country_event = {
+					id = wtt_china.10
+				}
+			}
+		}
+	}
+	focus = {
+		id = b4
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = b1
+		}
+		x = 35
+		y = 2
+		completion_reward = {
+			add_manpower = -100
+			add_stability = -0.1
+			XSM = {
+				country_event = {
+					id = wtt_china.10
+				}
+			}
+		}
+	}
+	focus = {
+		id = b5
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = b4
+		}
+		x = 34
+		y = 3
+		completion_reward = {
+			add_manpower = -100
+			add_stability = -0.1
+			SIC = {
+				country_event = {
+					id = wtt_china.10
+				}
+			}
+		}
+	}
+	focus = {
+		id = b6
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = b4
+		}
+		x = 36
+		y = 3
+		completion_reward = {
+			add_manpower = -100
+			add_stability = -0.1
+			WAX = {
+				country_event = {
+					id = wtt_china.10
+				}
+			}
+		}
+	}
+	focus = {
+		id = b7
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 34
+		y = 4
+		prerequisite = {
+			focus = b5
+			focus = b6
+		}
+		completion_reward = {
+			declare_war_on = { 
+				target = GUI
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = b8
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 36
+		y = 4
+		prerequisite = {
+			focus = b5
+			focus = b6
+		}
+		completion_reward = {
+			declare_war_on = { 
+				target = NIX
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = b9
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 35
+		y = 6
+		prerequisite = {
+			focus = b10
+		}
+		prerequisite = {
+			focus = b11
+		}
+		prerequisite = {
+			focus = b12
+		}
+		completion_reward = {
+			country_event = {
+				id = MAN.3
+			}
+		}
+	}
+	focus = {
+		id = b10
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 33
+		y = 5
+		prerequisite = {
+			focus = b7
+		}
+		prerequisite = {
+			focus = b8
+		}
+		completion_reward = {
+			declare_war_on = { 
+				target = YUN
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = b11
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 37
+		y = 5
+		prerequisite = {
+			focus = b7
+		}
+		prerequisite = {
+			focus = b8
+		}
+		completion_reward = {
+			declare_war_on = { 
+				target = GXC
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = b12
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 35
+		y = 5
+		prerequisite = {
+			focus = b7
+		}
+		prerequisite = {
+			focus = b8
+		}
+		completion_reward = {
+			XIX = {
+				country_event = {
+					id = wtt_china.10
+				}
+			}
+			declare_war_on = { 
+				target = HNN
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = c1
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 35
+		y = 9
+		available = {
+			has_country_flag = Army
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = jiushidai_de_jundui1_MAN_ideas
+				add_idea = luohou_dejundui_MAN_ideas
+			}
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = c2
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 35
+		y = 10
+		available = {
+			has_country_flag = Army
+		}
+		prerequisite = {
+			focus = c1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = luohou_dejundui_MAN_ideas
+				add_idea = luohou_1_dejundui_MAN_ideas
+			}
+		}
+	}
+	focus = {
+		id = c3
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 35
+		y = 11
+		available = {
+			has_country_flag = Army
+		}
+		prerequisite = {
+			focus = c2
+		}
+		completion_reward = {
+				swap_ideas = {
+					remove_idea = luohou_1_dejundui_MAN_ideas
+					add_idea = luohou_2_dejundui_MAN_ideas
+				}
+		}
+	}
+	focus = {
+		id = c4
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 35
+		y = 12
+		available = {
+			has_country_flag = Army
+		}
+		prerequisite = {
+			focus = c3
+		}
+		completion_reward = {
+				remove_ideas = luohou_2_dejundui_MAN_ideas
+				set_country_flag = ARMY111
+		}
+	}
+	focus = {
+		id = d1
+		icon = GFX_goal_generic_air_doctrine
+		cost = 5.00
+		available = {
+            has_country_flag = Fubai
+		}
+		x = 35
+		y = 7
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = fubai_dezhengfu_1_MAN_ideas
+				add_idea = fubai_dezhengfu_2_MAN_ideas
+			}
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = d2
+		icon = GFX_goal_generic_air_doctrine
+		cost = 5.00
+		prerequisite = {
+			focus = d1
+		}
+		x = 35
+		y = 8
+		completion_reward = {
+				remove_ideas = fubai_dezhengfu_2_MAN_ideas
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = e1
+		icon = GFX_goal_generic_air_doctrine
+		cost = 5.00
+		available = {
+            has_country_flag = Fubai
+		}
+		x = 33
+		y = 7
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = wenmanglv_gao_ideas
+				add_idea = wenmanglv_gao_1_ideas
+			}
+			add_stability = -0.1
+		}
+	}
+	focus = {
+		id = e2
+		icon = GFX_goal_generic_air_doctrine
+		cost = 5.00
+		prerequisite = {
+			focus = e1
+		}
+		x = 33
+		y = 8
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = wenmanglv_gao_1_ideas
+				add_idea = wenmanglv_gao_2_ideas
+			}
+			swap_ideas = {
+				remove_idea = guominsuzhi_MAN_ideas
+				add_idea = guominsuzhi_1_MAN_ideas
+			}
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = e3
+		icon = GFX_goal_generic_air_doctrine
+		cost = 5.00
+		prerequisite = {
+			focus = e2
+		}
+		prerequisite = {
+			focus = d2
+		}
+		x = 33
+		y = 9
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = wenmanglv_gao_2_ideas
+				add_idea = wenmanglv_gao_3_ideas
+			}
+			remove_ideas = guominsuzhi_1_MAN_ideas
+		}
+	}
+	focus = {
+		id = e4
+		icon = GFX_goal_generic_air_doctrine
+		cost = 5.00
+		prerequisite = {
+			focus = e3
+		}
+		x = 33
+		y = 10
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = wenmanglv_gao_3_ideas
+				add_idea = wenmanglv_gao_4_ideas
+			}
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = e5
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = e4
+		}
+		x = 33
+		y = 11
+		completion_reward = {
+			remove_ideas = wenmanglv_gao_4_ideas
+			add_stability = 0.1
+			set_country_flag = HAO
+		}
+	}
+}

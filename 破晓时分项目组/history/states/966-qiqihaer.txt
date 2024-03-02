@@ -1,0 +1,31 @@
+
+state={
+	id=966
+	name="STATE_966"
+
+	history={
+		owner = ADF
+		add_core_of = ADF
+		add_core_of = MAN
+		add_core_of = GDG
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 2
+
+		}
+		victory_points = {
+			4506 5 
+		}
+
+	}
+
+	provinces={
+		4506 4561 4876 7894 12485 
+	}
+	manpower=1929315
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.00
+}

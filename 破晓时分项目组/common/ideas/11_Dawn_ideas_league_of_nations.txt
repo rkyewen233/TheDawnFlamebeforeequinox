@@ -1,0 +1,20 @@
+ideas = {
+    country = {
+        league_of_nations_members_1 = {
+            name = "国际联盟成员"
+            picture = ENG_idea_17
+            allowed = { always = yes }
+            modifier = {
+                
+            }
+        }
+        league_of_nations_leader_1 = {
+            name = "国际联盟主席"
+            picture = ENG_idea_17
+            allowed = { always = yes }
+            modifier = {
+                
+            }
+        }
+    }
+}
